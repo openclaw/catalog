@@ -10,10 +10,10 @@ or point it at a mirror (`models.catalogRefresh.url`).
 
 ## How it is produced
 
-The catalog is **not hand-edited**. A [daily workflow](.github/workflows/publish.yml)
+The catalog is **not hand-edited**. A [scheduled workflow](.github/workflows/publish.yml)
 assembles it from the `modelCatalog` blocks in the plugin manifests of
 [openclaw/openclaw](https://github.com/openclaw/openclaw) (`extensions/*/openclaw.plugin.json`),
-enriches per-token pricing, validates it with the same schema the client enforces,
+enriches per-token pricing, checks every 4 hours, validates it with the same schema the client enforces,
 and commits it **only when the content actually changed** — so the file history is a
 readable changelog of model additions and pricing updates.
 

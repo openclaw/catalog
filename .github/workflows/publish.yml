@@ -2,7 +2,7 @@ name: Publish catalog
 
 on:
   schedule:
-    - cron: "23 5 * * *"
+    - cron: "23 */4 * * *"
   workflow_dispatch:
 
 permissions:
