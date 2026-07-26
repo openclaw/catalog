@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785027741938,
+  "generatedAt": 1785044233701,
   "minVersion": "2026.7.0",
   "providers": {
     "anthropic": {
@@ -472,7 +472,7 @@
     },
     "cerebras": {
       "api": "openai-completions",
-      "defaultModel": "gpt-oss-120b",
+      "defaultModel": "gemma-4-31b",
       "models": [
         {
           "contextWindow": 131072,
@@ -1145,7 +1145,7 @@
     },
     "deepseek": {
       "api": "openai-completions",
-      "defaultModel": "deepseek-v4-flash",
+      "defaultModel": "deepseek-v4-pro",
       "models": [
         {
           "compat": {
@@ -2123,7 +2123,7 @@
           "cost": {
             "cacheRead": 0.15,
             "cacheWrite": 0,
-            "input": 0.78,
+            "input": 0.75,
             "output": 3.5
           },
           "id": "kimi-k2.7-code",
@@ -3894,7 +3894,7 @@
     },
     "together": {
       "api": "openai-completions",
-      "defaultModel": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "defaultModel": "moonshotai/Kimi-K2.6",
       "models": [
         {
           "contextWindow": 512000,
@@ -3964,7 +3964,7 @@
     },
     "venice": {
       "api": "openai-completions",
-      "defaultModel": "kimi-k2-6",
+      "defaultModel": "zai-org-glm-4.7",
       "models": [
         {
           "compat": {
@@ -4709,10 +4709,10 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.1339,
+            "cacheRead": 0.13208,
             "cacheWrite": 0,
-            "input": 0.721,
-            "output": 2.266
+            "input": 0.7111999999999999,
+            "output": 2.2352
           },
           "id": "glm-5.2",
           "input": [
@@ -4743,5 +4743,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "908e181f3fc0c61a363cf90a6b090b1a20ef9864"
+  "sourceCommit": "f6131a4fbfa5a7779ae3f2663ba927935d944ce3"
 }
