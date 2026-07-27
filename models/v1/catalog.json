@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785130680578,
+  "generatedAt": 1785145069698,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -13241,7 +13241,8 @@
       "output": 1.56
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-397b-a17b": {
@@ -15764,9 +15765,9 @@
       "output": 3.036
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.15314,
-      "input": 0.8246,
-      "output": 2.5915999999999997
+      "cacheRead": 0.15002,
+      "input": 0.8078000000000001,
+      "output": 2.5388
     },
     "cloudflare-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -29353,7 +29354,8 @@
       "output": 1.56
     },
     "kilocode/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "kilocode/qwen/qwen3.5-397b-a17b": {
@@ -31876,9 +31878,9 @@
       "output": 3.036
     },
     "kilocode/z-ai/glm-5.2": {
-      "cacheRead": 0.15314,
-      "input": 0.8246,
-      "output": 2.5915999999999997
+      "cacheRead": 0.15002,
+      "input": 0.8078000000000001,
+      "output": 2.5388
     },
     "kilocode/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -35992,7 +35994,8 @@
       "output": 1.56
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "openrouter/qwen/qwen3.5-397b-a17b": {
@@ -36230,9 +36233,9 @@
       "output": 3.036
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.15314,
-      "input": 0.8246,
-      "output": 2.5915999999999997
+      "cacheRead": 0.15002,
+      "input": 0.8078000000000001,
+      "output": 2.5388
     },
     "openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -36685,7 +36688,8 @@
       "output": 1.56
     },
     "qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -47704,7 +47708,8 @@
       "output": 1.56
     },
     "vercel-ai-gateway/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "vercel-ai-gateway/qwen/qwen3.5-397b-a17b": {
@@ -50227,9 +50232,9 @@
       "output": 3.036
     },
     "vercel-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.15314,
-      "input": 0.8246,
-      "output": 2.5915999999999997
+      "cacheRead": 0.15002,
+      "input": 0.8078000000000001,
+      "output": 2.5388
     },
     "vercel-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -56334,10 +56339,10 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.15314,
+            "cacheRead": 0.15002,
             "cacheWrite": 0,
-            "input": 0.8246,
-            "output": 2.5915999999999997
+            "input": 0.8078000000000001,
+            "output": 2.5388
           },
           "id": "glm-5.2",
           "input": [
@@ -56368,5 +56373,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "8e4b6623e51bda171f0e15899109141dd0a033a6"
+  "sourceCommit": "2e9621018ad4bcc492b4f044098a7ee999f899eb"
 }
