@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785185455322,
+  "generatedAt": 1785200016150,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -11349,9 +11349,9 @@
       "output": 0.39999999999999997
     },
     "cloudflare-ai-gateway/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2
+      "cacheRead": 0.19999999999999998,
+      "input": 0.6,
+      "output": 3.5999999999999996
     },
     "cloudflare-ai-gateway/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -13242,7 +13242,8 @@
       "output": 1.56
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-397b-a17b": {
@@ -13289,6 +13290,12 @@
       "cacheWrite": 0.40625,
       "input": 0.325,
       "output": 1.95
+    },
+    "cloudflare-ai-gateway/qwen/qwen3.7-flash": {
+      "cacheRead": 0.006,
+      "cacheWrite": 0.038000000000000006,
+      "input": 0.03,
+      "output": 0.13
     },
     "cloudflare-ai-gateway/qwen/qwen3.7-max": {
       "cacheRead": 0.295,
@@ -15765,9 +15772,9 @@
       "output": 3.036
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.14065999999999998,
-      "input": 0.7574000000000001,
-      "output": 2.3804000000000003
+      "cacheRead": 0.1365,
+      "input": 0.735,
+      "output": 2.31
     },
     "cloudflare-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -27462,9 +27469,9 @@
       "output": 0.39999999999999997
     },
     "kilocode/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2
+      "cacheRead": 0.19999999999999998,
+      "input": 0.6,
+      "output": 3.5999999999999996
     },
     "kilocode/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -29355,7 +29362,8 @@
       "output": 1.56
     },
     "kilocode/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "kilocode/qwen/qwen3.5-397b-a17b": {
@@ -29402,6 +29410,12 @@
       "cacheWrite": 0.40625,
       "input": 0.325,
       "output": 1.95
+    },
+    "kilocode/qwen/qwen3.7-flash": {
+      "cacheRead": 0.006,
+      "cacheWrite": 0.038000000000000006,
+      "input": 0.03,
+      "output": 0.13
     },
     "kilocode/qwen/qwen3.7-max": {
       "cacheRead": 0.295,
@@ -31878,9 +31892,9 @@
       "output": 3.036
     },
     "kilocode/z-ai/glm-5.2": {
-      "cacheRead": 0.14065999999999998,
-      "input": 0.7574000000000001,
-      "output": 2.3804000000000003
+      "cacheRead": 0.1365,
+      "input": 0.735,
+      "output": 2.31
     },
     "kilocode/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -33692,9 +33706,9 @@
       "output": 0
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2
+      "cacheRead": 0.19999999999999998,
+      "input": 0.6,
+      "output": 3.5999999999999996
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
       "input": 0,
@@ -35489,9 +35503,9 @@
       "output": 0.39999999999999997
     },
     "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2
+      "cacheRead": 0.19999999999999998,
+      "input": 0.6,
+      "output": 3.5999999999999996
     },
     "openrouter/openai/gpt-3.5-turbo": {
       "input": 0.5,
@@ -35986,7 +36000,8 @@
       "output": 1.56
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "openrouter/qwen/qwen3.5-397b-a17b": {
@@ -36033,6 +36048,12 @@
       "cacheWrite": 0.40625,
       "input": 0.325,
       "output": 1.95
+    },
+    "openrouter/qwen/qwen3.7-flash": {
+      "cacheRead": 0.006,
+      "cacheWrite": 0.038000000000000006,
+      "input": 0.03,
+      "output": 0.13
     },
     "openrouter/qwen/qwen3.7-max": {
       "cacheRead": 0.295,
@@ -36224,9 +36245,9 @@
       "output": 3.036
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.14065999999999998,
-      "input": 0.7574000000000001,
-      "output": 2.3804000000000003
+      "cacheRead": 0.1365,
+      "input": 0.735,
+      "output": 2.31
     },
     "openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -36679,7 +36700,8 @@
       "output": 1.56
     },
     "qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -36726,6 +36748,12 @@
       "cacheWrite": 0.40625,
       "input": 0.325,
       "output": 1.95
+    },
+    "qwen/qwen3.7-flash": {
+      "cacheRead": 0.006,
+      "cacheWrite": 0.038000000000000006,
+      "input": 0.03,
+      "output": 0.13
     },
     "qwen/qwen3.7-max": {
       "cacheRead": 0.295,
@@ -45806,9 +45834,9 @@
       "output": 0.39999999999999997
     },
     "vercel-ai-gateway/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2
+      "cacheRead": 0.19999999999999998,
+      "input": 0.6,
+      "output": 3.5999999999999996
     },
     "vercel-ai-gateway/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -47699,7 +47727,8 @@
       "output": 1.56
     },
     "vercel-ai-gateway/qwen/qwen3.5-35b-a3b": {
-      "input": 0.14,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
       "output": 1
     },
     "vercel-ai-gateway/qwen/qwen3.5-397b-a17b": {
@@ -47746,6 +47775,12 @@
       "cacheWrite": 0.40625,
       "input": 0.325,
       "output": 1.95
+    },
+    "vercel-ai-gateway/qwen/qwen3.7-flash": {
+      "cacheRead": 0.006,
+      "cacheWrite": 0.038000000000000006,
+      "input": 0.03,
+      "output": 0.13
     },
     "vercel-ai-gateway/qwen/qwen3.7-max": {
       "cacheRead": 0.295,
@@ -50222,9 +50257,9 @@
       "output": 3.036
     },
     "vercel-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.14065999999999998,
-      "input": 0.7574000000000001,
-      "output": 2.3804000000000003
+      "cacheRead": 0.1365,
+      "input": 0.735,
+      "output": 2.31
     },
     "vercel-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -56372,10 +56407,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.14065999999999998,
+            "cacheRead": 0.1365,
             "cacheWrite": 0,
-            "input": 0.7574000000000001,
-            "output": 2.3804000000000003
+            "input": 0.735,
+            "output": 2.31
           },
           "id": "glm-5.2",
           "input": [
@@ -56406,5 +56441,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "c656e73065a35279755d4e1cba167d8e67d80280"
+  "sourceCommit": "5c50d2ff7061808c6a03e708a89db3d092a534ae"
 }
