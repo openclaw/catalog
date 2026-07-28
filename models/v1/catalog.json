@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785230464246,
+  "generatedAt": 1785243654387,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -11349,9 +11349,9 @@
       "output": 0.39999999999999997
     },
     "cloudflare-ai-gateway/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.6,
-      "output": 3.5999999999999996
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2.2
     },
     "cloudflare-ai-gateway/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -13175,9 +13175,9 @@
       "output": 0.975
     },
     "cloudflare-ai-gateway/qwen/qwen3-coder-next": {
-      "cacheRead": 0.07,
-      "input": 0.11,
-      "output": 0.7999999999999999
+      "cacheRead": 0.036,
+      "input": 0.18,
+      "output": 0.8999999999999999
     },
     "cloudflare-ai-gateway/qwen/qwen3-coder-plus": {
       "cacheRead": 0.13,
@@ -27468,9 +27468,9 @@
       "output": 0.39999999999999997
     },
     "kilocode/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.6,
-      "output": 3.5999999999999996
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2.2
     },
     "kilocode/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -29294,9 +29294,9 @@
       "output": 0.975
     },
     "kilocode/qwen/qwen3-coder-next": {
-      "cacheRead": 0.07,
-      "input": 0.11,
-      "output": 0.7999999999999999
+      "cacheRead": 0.036,
+      "input": 0.18,
+      "output": 0.8999999999999999
     },
     "kilocode/qwen/qwen3-coder-plus": {
       "cacheRead": 0.13,
@@ -33704,9 +33704,9 @@
       "output": 0
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.6,
-      "output": 3.5999999999999996
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2.2
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
       "input": 0,
@@ -35501,9 +35501,9 @@
       "output": 0.39999999999999997
     },
     "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.6,
-      "output": 3.5999999999999996
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2.2
     },
     "openrouter/openai/gpt-3.5-turbo": {
       "input": 0.5,
@@ -35931,9 +35931,9 @@
       "output": 0.975
     },
     "openrouter/qwen/qwen3-coder-next": {
-      "cacheRead": 0.07,
-      "input": 0.11,
-      "output": 0.7999999999999999
+      "cacheRead": 0.036,
+      "input": 0.18,
+      "output": 0.8999999999999999
     },
     "openrouter/qwen/qwen3-coder-plus": {
       "cacheRead": 0.13,
@@ -36630,9 +36630,9 @@
       "output": 0.975
     },
     "qwen/qwen3-coder-next": {
-      "cacheRead": 0.07,
-      "input": 0.11,
-      "output": 0.7999999999999999
+      "cacheRead": 0.036,
+      "input": 0.18,
+      "output": 0.8999999999999999
     },
     "qwen/qwen3-coder-plus": {
       "cacheRead": 0.13,
@@ -45830,9 +45830,9 @@
       "output": 0.39999999999999997
     },
     "vercel-ai-gateway/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.6,
-      "output": 3.5999999999999996
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2.2
     },
     "vercel-ai-gateway/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -47656,9 +47656,9 @@
       "output": 0.975
     },
     "vercel-ai-gateway/qwen/qwen3-coder-next": {
-      "cacheRead": 0.07,
-      "input": 0.11,
-      "output": 0.7999999999999999
+      "cacheRead": 0.036,
+      "input": 0.18,
+      "output": 0.8999999999999999
     },
     "vercel-ai-gateway/qwen/qwen3-coder-plus": {
       "cacheRead": 0.13,
@@ -52937,6 +52937,9 @@
       "models": [
         {
           "api": "anthropic-messages",
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 1,
@@ -52992,6 +52995,9 @@
         },
         {
           "api": "anthropic-messages",
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.5,
@@ -53030,6 +53036,9 @@
         },
         {
           "api": "anthropic-messages",
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.2,
@@ -53172,6 +53181,9 @@
           "status": "deprecated"
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextTokens": 272000,
           "contextWindow": 1050000,
           "cost": {
@@ -53192,6 +53204,9 @@
           "status": "deprecated"
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextTokens": 922000,
           "contextWindow": 1050000,
           "cost": {
@@ -53210,6 +53225,9 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextTokens": 922000,
           "contextWindow": 1050000,
           "cost": {
@@ -53228,6 +53246,9 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextTokens": 922000,
           "contextWindow": 1050000,
           "cost": {
@@ -53563,6 +53584,104 @@
           ],
           "maxTokens": 65536,
           "name": "Auto Balanced",
+          "reasoning": true
+        }
+      ]
+    },
+    "kimi": {
+      "api": "anthropic-messages",
+      "defaultModel": "kimi-for-coding",
+      "models": [
+        {
+          "compat": {
+            "codeMode": "preferred"
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.3,
+            "cacheWrite": 0,
+            "input": 3,
+            "output": 15
+          },
+          "id": "k3",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Kimi K3",
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "high": "high",
+            "low": "low",
+            "max": "max",
+            "medium": "high",
+            "minimal": "low",
+            "off": null,
+            "xhigh": "max"
+          }
+        },
+        {
+          "compat": {
+            "codeMode": "preferred"
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0.3,
+            "cacheWrite": 0,
+            "input": 3,
+            "output": 15
+          },
+          "id": "k3-256k",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Kimi K3 (256k)",
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "high": "high",
+            "low": "low",
+            "max": "max",
+            "medium": "high",
+            "minimal": "low",
+            "off": null,
+            "xhigh": "max"
+          }
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "kimi-for-coding",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Kimi Code",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "kimi-for-coding-highspeed",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Kimi K2.7 Code HighSpeed",
           "reasoning": true
         }
       ]
@@ -54210,6 +54329,7 @@
       "models": [
         {
           "compat": {
+            "codeMode": "capable",
             "supportsTools": true,
             "supportsUsageInStreaming": true
           },
@@ -54230,6 +54350,7 @@
         },
         {
           "compat": {
+            "codeMode": "capable",
             "supportsTools": true,
             "supportsUsageInStreaming": true
           },
@@ -54532,6 +54653,7 @@
         {
           "api": "anthropic-messages",
           "compat": {
+            "codeMode": "capable",
             "maxTokensField": "max_tokens",
             "supportsReasoningEffort": true,
             "supportsUsageInStreaming": true
@@ -54557,6 +54679,7 @@
         {
           "api": "anthropic-messages",
           "compat": {
+            "codeMode": "capable",
             "maxTokensField": "max_tokens",
             "supportsReasoningEffort": true,
             "supportsUsageInStreaming": true
@@ -54671,6 +54794,7 @@
         {
           "api": "openai-responses",
           "compat": {
+            "codeMode": "capable",
             "maxTokensField": "max_tokens",
             "supportsReasoningEffort": true,
             "supportsUsageInStreaming": true
@@ -54717,6 +54841,7 @@
         {
           "api": "openai-responses",
           "compat": {
+            "codeMode": "capable",
             "maxTokensField": "max_tokens",
             "supportedReasoningEfforts": [
               "none",
@@ -54945,6 +55070,7 @@
       "models": [
         {
           "compat": {
+            "codeMode": "capable",
             "maxTokensField": "max_tokens",
             "supportsReasoningEffort": true,
             "supportsUsageInStreaming": true
@@ -54974,6 +55100,7 @@
         },
         {
           "compat": {
+            "codeMode": "capable",
             "maxTokensField": "max_tokens",
             "supportsReasoningEffort": true,
             "supportsUsageInStreaming": true
@@ -55047,6 +55174,9 @@
           "statusReason": "Still available by exact reference; use deepseek-v4-pro for new Qianfan setups."
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.147663,
@@ -55628,6 +55758,7 @@
       "models": [
         {
           "compat": {
+            "codeMode": "capable",
             "supportsUsageInStreaming": false
           },
           "contextWindow": 1000000,
@@ -55648,6 +55779,7 @@
         },
         {
           "compat": {
+            "codeMode": "capable",
             "supportsUsageInStreaming": false
           },
           "contextWindow": 1000000,
@@ -56207,6 +56339,9 @@
           "name": "Ark Coding Plan"
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1024000,
           "cost": {
             "cacheRead": 0,
@@ -56223,6 +56358,9 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1024000,
           "cost": {
             "cacheRead": 0,
@@ -56256,6 +56394,9 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "codeMode": "capable"
+          },
           "contextWindow": 1024000,
           "cost": {
             "cacheRead": 0,
@@ -56436,5 +56577,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "ac157b3af0cd80a9f7aad47b771dd9abf9b194b0"
+  "sourceCommit": "2cdd1246ed76a7985d5aebcd1acf7c133fafc5d7"
 }
