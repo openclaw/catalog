@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785257708496,
+  "generatedAt": 1785271641812,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -528,12 +528,6 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50
-    },
-    "anthropic/claude-opus-5:batch": {
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
-      "input": 2.5,
-      "output": 12.5
     },
     "anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
@@ -4259,12 +4253,6 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50
-    },
-    "cloudflare-ai-gateway/anthropic/claude-opus-5:batch": {
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
-      "input": 2.5,
-      "output": 12.5
     },
     "cloudflare-ai-gateway/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
@@ -10492,6 +10480,11 @@
       "input": 0.3,
       "output": 1.2
     },
+    "cloudflare-ai-gateway/minimax/minimax-m3:batch": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.6
+    },
     "cloudflare-ai-gateway/mistral/codestral-2405": {
       "input": 1,
       "output": 3
@@ -13308,14 +13301,14 @@
       "output": 1
     },
     "cloudflare-ai-gateway/qwen/qwen-plus": {
-      "cacheRead": 0.052000000000000005,
-      "cacheWrite": 0.325,
-      "input": 0.26,
-      "output": 0.78
+      "cacheRead": 0.0338,
+      "cacheWrite": 0.21125,
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "cloudflare-ai-gateway/qwen/qwen-plus-2025-07-28": {
-      "input": 0.26,
-      "output": 0.78
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "cloudflare-ai-gateway/qwen/qwen-plus-2025-07-28:thinking": {
       "cacheWrite": 0.325,
@@ -13328,12 +13321,12 @@
       "output": 1
     },
     "cloudflare-ai-gateway/qwen/qwen3-14b": {
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999
+      "input": 0.14787499999999998,
+      "output": 0.5914999999999999
     },
     "cloudflare-ai-gateway/qwen/qwen3-235b-a22b": {
-      "input": 0.45499999999999996,
-      "output": 1.8199999999999998
+      "input": 0.29574999999999996,
+      "output": 1.1829999999999998
     },
     "cloudflare-ai-gateway/qwen/qwen3-235b-a22b-2507": {
       "input": 0.09,
@@ -13360,8 +13353,8 @@
       "output": 0.28
     },
     "cloudflare-ai-gateway/qwen/qwen3-8b": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "cloudflare-ai-gateway/qwen/qwen3-coder": {
       "cacheRead": 0.09999999999999999,
@@ -13373,10 +13366,10 @@
       "output": 0.27
     },
     "cloudflare-ai-gateway/qwen/qwen3-coder-flash": {
-      "cacheRead": 0.039,
-      "cacheWrite": 0.24375,
-      "input": 0.195,
-      "output": 0.975
+      "cacheRead": 0.025349999999999998,
+      "cacheWrite": 0.15843749999999998,
+      "input": 0.12675,
+      "output": 0.6337499999999999
     },
     "cloudflare-ai-gateway/qwen/qwen3-coder-next": {
       "cacheRead": 0.036,
@@ -13384,20 +13377,20 @@
       "output": 0.8999999999999999
     },
     "cloudflare-ai-gateway/qwen/qwen3-coder-plus": {
-      "cacheRead": 0.13,
-      "cacheWrite": 0.8125,
-      "input": 0.65,
-      "output": 3.25
+      "cacheRead": 0.08449999999999999,
+      "cacheWrite": 0.5281250000000001,
+      "input": 0.4225,
+      "output": 2.1125000000000003
     },
     "cloudflare-ai-gateway/qwen/qwen3-max": {
-      "cacheRead": 0.156,
-      "cacheWrite": 0.975,
-      "input": 0.78,
-      "output": 3.9
+      "cacheRead": 0.10139999999999999,
+      "cacheWrite": 0.6337499999999999,
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "cloudflare-ai-gateway/qwen/qwen3-max-thinking": {
-      "input": 0.78,
-      "output": 3.9
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "cloudflare-ai-gateway/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -13426,49 +13419,49 @@
       "output": 1.56
     },
     "cloudflare-ai-gateway/qwen/qwen3-vl-32b-instruct": {
-      "input": 0.10400000000000001,
-      "output": 0.41600000000000004
+      "input": 0.0676,
+      "output": 0.2704
     },
     "cloudflare-ai-gateway/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "cloudflare-ai-gateway/qwen/qwen3-vl-8b-thinking": {
       "input": 0.117,
       "output": 1.365
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.16899999999999998,
+      "output": 1.3519999999999999
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-27b": {
-      "input": 0.195,
-      "output": 1.56
+      "input": 0.12675,
+      "output": 1.014
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-35b-a3b": {
       "input": 0.14,
       "output": 1
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-397b-a17b": {
-      "input": 0.39,
-      "output": 2.34
+      "input": 0.2535,
+      "output": 1.521
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-9b": {
       "input": 0.09999999999999999,
       "output": 0.15
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-flash-02-23": {
-      "input": 0.065,
-      "output": 0.26
+      "input": 0.042249999999999996,
+      "output": 0.16899999999999998
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-plus-02-15": {
-      "input": 0.26,
-      "output": 1.56
+      "input": 0.16899999999999998,
+      "output": 1.014
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-plus-20260420": {
-      "cacheWrite": 0.375,
-      "input": 0.3,
-      "output": 1.7999999999999998
+      "cacheWrite": 0.28125,
+      "input": 0.22499999999999998,
+      "output": 1.35
     },
     "cloudflare-ai-gateway/qwen/qwen3.6-27b": {
       "cacheRead": 0.15,
@@ -13480,19 +13473,19 @@
       "output": 1
     },
     "cloudflare-ai-gateway/qwen/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125
+      "cacheWrite": 0.17578125,
+      "input": 0.140625,
+      "output": 0.84375
     },
     "cloudflare-ai-gateway/qwen/qwen3.6-max-preview": {
-      "cacheWrite": 1.3,
-      "input": 1.04,
-      "output": 6.24
+      "cacheWrite": 1.04,
+      "input": 0.8320000000000001,
+      "output": 4.992
     },
     "cloudflare-ai-gateway/qwen/qwen3.6-plus": {
-      "cacheWrite": 0.40625,
-      "input": 0.325,
-      "output": 1.95
+      "cacheWrite": 0.26406250000000003,
+      "input": 0.21125,
+      "output": 1.2674999999999998
     },
     "cloudflare-ai-gateway/qwen/qwen3.7-flash": {
       "cacheRead": 0.006,
@@ -13501,16 +13494,16 @@
       "output": 0.13
     },
     "cloudflare-ai-gateway/qwen/qwen3.7-max": {
-      "cacheRead": 0.295,
-      "cacheWrite": 1.84375,
-      "input": 1.475,
-      "output": 4.425
+      "cacheRead": 0.1475,
+      "cacheWrite": 0.921875,
+      "input": 0.7375,
+      "output": 2.2125
     },
     "cloudflare-ai-gateway/qwen/qwen3.7-plus": {
-      "cacheRead": 0.064,
-      "cacheWrite": 0.39999999999999997,
-      "input": 0.32,
-      "output": 1.28
+      "cacheRead": 0.0512,
+      "cacheWrite": 0.32,
+      "input": 0.256,
+      "output": 1.024
     },
     "cloudflare-ai-gateway/rekaai/reka-edge": {
       "input": 0.09999999999999999,
@@ -20611,12 +20604,6 @@
       "input": 10,
       "output": 50
     },
-    "kilocode/anthropic/claude-opus-5:batch": {
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
-      "input": 2.5,
-      "output": 12.5
-    },
     "kilocode/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -26843,6 +26830,11 @@
       "input": 0.3,
       "output": 1.2
     },
+    "kilocode/minimax/minimax-m3:batch": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.6
+    },
     "kilocode/mistral/codestral-2405": {
       "input": 1,
       "output": 3
@@ -29659,14 +29651,14 @@
       "output": 1
     },
     "kilocode/qwen/qwen-plus": {
-      "cacheRead": 0.052000000000000005,
-      "cacheWrite": 0.325,
-      "input": 0.26,
-      "output": 0.78
+      "cacheRead": 0.0338,
+      "cacheWrite": 0.21125,
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "kilocode/qwen/qwen-plus-2025-07-28": {
-      "input": 0.26,
-      "output": 0.78
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "kilocode/qwen/qwen-plus-2025-07-28:thinking": {
       "cacheWrite": 0.325,
@@ -29679,12 +29671,12 @@
       "output": 1
     },
     "kilocode/qwen/qwen3-14b": {
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999
+      "input": 0.14787499999999998,
+      "output": 0.5914999999999999
     },
     "kilocode/qwen/qwen3-235b-a22b": {
-      "input": 0.45499999999999996,
-      "output": 1.8199999999999998
+      "input": 0.29574999999999996,
+      "output": 1.1829999999999998
     },
     "kilocode/qwen/qwen3-235b-a22b-2507": {
       "input": 0.09,
@@ -29711,8 +29703,8 @@
       "output": 0.28
     },
     "kilocode/qwen/qwen3-8b": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "kilocode/qwen/qwen3-coder": {
       "cacheRead": 0.09999999999999999,
@@ -29724,10 +29716,10 @@
       "output": 0.27
     },
     "kilocode/qwen/qwen3-coder-flash": {
-      "cacheRead": 0.039,
-      "cacheWrite": 0.24375,
-      "input": 0.195,
-      "output": 0.975
+      "cacheRead": 0.025349999999999998,
+      "cacheWrite": 0.15843749999999998,
+      "input": 0.12675,
+      "output": 0.6337499999999999
     },
     "kilocode/qwen/qwen3-coder-next": {
       "cacheRead": 0.036,
@@ -29735,20 +29727,20 @@
       "output": 0.8999999999999999
     },
     "kilocode/qwen/qwen3-coder-plus": {
-      "cacheRead": 0.13,
-      "cacheWrite": 0.8125,
-      "input": 0.65,
-      "output": 3.25
+      "cacheRead": 0.08449999999999999,
+      "cacheWrite": 0.5281250000000001,
+      "input": 0.4225,
+      "output": 2.1125000000000003
     },
     "kilocode/qwen/qwen3-max": {
-      "cacheRead": 0.156,
-      "cacheWrite": 0.975,
-      "input": 0.78,
-      "output": 3.9
+      "cacheRead": 0.10139999999999999,
+      "cacheWrite": 0.6337499999999999,
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "kilocode/qwen/qwen3-max-thinking": {
-      "input": 0.78,
-      "output": 3.9
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "kilocode/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -29777,49 +29769,49 @@
       "output": 1.56
     },
     "kilocode/qwen/qwen3-vl-32b-instruct": {
-      "input": 0.10400000000000001,
-      "output": 0.41600000000000004
+      "input": 0.0676,
+      "output": 0.2704
     },
     "kilocode/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "kilocode/qwen/qwen3-vl-8b-thinking": {
       "input": 0.117,
       "output": 1.365
     },
     "kilocode/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.16899999999999998,
+      "output": 1.3519999999999999
     },
     "kilocode/qwen/qwen3.5-27b": {
-      "input": 0.195,
-      "output": 1.56
+      "input": 0.12675,
+      "output": 1.014
     },
     "kilocode/qwen/qwen3.5-35b-a3b": {
       "input": 0.14,
       "output": 1
     },
     "kilocode/qwen/qwen3.5-397b-a17b": {
-      "input": 0.39,
-      "output": 2.34
+      "input": 0.2535,
+      "output": 1.521
     },
     "kilocode/qwen/qwen3.5-9b": {
       "input": 0.09999999999999999,
       "output": 0.15
     },
     "kilocode/qwen/qwen3.5-flash-02-23": {
-      "input": 0.065,
-      "output": 0.26
+      "input": 0.042249999999999996,
+      "output": 0.16899999999999998
     },
     "kilocode/qwen/qwen3.5-plus-02-15": {
-      "input": 0.26,
-      "output": 1.56
+      "input": 0.16899999999999998,
+      "output": 1.014
     },
     "kilocode/qwen/qwen3.5-plus-20260420": {
-      "cacheWrite": 0.375,
-      "input": 0.3,
-      "output": 1.7999999999999998
+      "cacheWrite": 0.28125,
+      "input": 0.22499999999999998,
+      "output": 1.35
     },
     "kilocode/qwen/qwen3.6-27b": {
       "cacheRead": 0.15,
@@ -29831,19 +29823,19 @@
       "output": 1
     },
     "kilocode/qwen/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125
+      "cacheWrite": 0.17578125,
+      "input": 0.140625,
+      "output": 0.84375
     },
     "kilocode/qwen/qwen3.6-max-preview": {
-      "cacheWrite": 1.3,
-      "input": 1.04,
-      "output": 6.24
+      "cacheWrite": 1.04,
+      "input": 0.8320000000000001,
+      "output": 4.992
     },
     "kilocode/qwen/qwen3.6-plus": {
-      "cacheWrite": 0.40625,
-      "input": 0.325,
-      "output": 1.95
+      "cacheWrite": 0.26406250000000003,
+      "input": 0.21125,
+      "output": 1.2674999999999998
     },
     "kilocode/qwen/qwen3.7-flash": {
       "cacheRead": 0.006,
@@ -29852,16 +29844,16 @@
       "output": 0.13
     },
     "kilocode/qwen/qwen3.7-max": {
-      "cacheRead": 0.295,
-      "cacheWrite": 1.84375,
-      "input": 1.475,
-      "output": 4.425
+      "cacheRead": 0.1475,
+      "cacheWrite": 0.921875,
+      "input": 0.7375,
+      "output": 2.2125
     },
     "kilocode/qwen/qwen3.7-plus": {
-      "cacheRead": 0.064,
-      "cacheWrite": 0.39999999999999997,
-      "input": 0.32,
-      "output": 1.28
+      "cacheRead": 0.0512,
+      "cacheWrite": 0.32,
+      "input": 0.256,
+      "output": 1.024
     },
     "kilocode/rekaai/reka-edge": {
       "input": 0.09999999999999999,
@@ -33049,6 +33041,11 @@
       "input": 0.3,
       "output": 1.2
     },
+    "minimax/minimax-m3:batch": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.6
+    },
     "mistral.devstral-2-123b": {
       "input": 0.39999999999999997,
       "output": 2
@@ -35446,12 +35443,6 @@
       "input": 10,
       "output": 50
     },
-    "openrouter/anthropic/claude-opus-5:batch": {
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
-      "input": 2.5,
-      "output": 12.5
-    },
     "openrouter/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -35918,6 +35909,11 @@
       "cacheRead": 0.06,
       "input": 0.3,
       "output": 1.2
+    },
+    "openrouter/minimax/minimax-m3:batch": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -36485,14 +36481,14 @@
       "output": 1
     },
     "openrouter/qwen/qwen-plus": {
-      "cacheRead": 0.052000000000000005,
-      "cacheWrite": 0.325,
-      "input": 0.26,
-      "output": 0.78
+      "cacheRead": 0.0338,
+      "cacheWrite": 0.21125,
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "openrouter/qwen/qwen-plus-2025-07-28": {
-      "input": 0.26,
-      "output": 0.78
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "openrouter/qwen/qwen-plus-2025-07-28:thinking": {
       "cacheWrite": 0.325,
@@ -36505,12 +36501,12 @@
       "output": 1
     },
     "openrouter/qwen/qwen3-14b": {
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999
+      "input": 0.14787499999999998,
+      "output": 0.5914999999999999
     },
     "openrouter/qwen/qwen3-235b-a22b": {
-      "input": 0.45499999999999996,
-      "output": 1.8199999999999998
+      "input": 0.29574999999999996,
+      "output": 1.1829999999999998
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
       "input": 0.09,
@@ -36537,8 +36533,8 @@
       "output": 0.28
     },
     "openrouter/qwen/qwen3-8b": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "openrouter/qwen/qwen3-coder": {
       "cacheRead": 0.09999999999999999,
@@ -36550,10 +36546,10 @@
       "output": 0.27
     },
     "openrouter/qwen/qwen3-coder-flash": {
-      "cacheRead": 0.039,
-      "cacheWrite": 0.24375,
-      "input": 0.195,
-      "output": 0.975
+      "cacheRead": 0.025349999999999998,
+      "cacheWrite": 0.15843749999999998,
+      "input": 0.12675,
+      "output": 0.6337499999999999
     },
     "openrouter/qwen/qwen3-coder-next": {
       "cacheRead": 0.036,
@@ -36561,20 +36557,20 @@
       "output": 0.8999999999999999
     },
     "openrouter/qwen/qwen3-coder-plus": {
-      "cacheRead": 0.13,
-      "cacheWrite": 0.8125,
-      "input": 0.65,
-      "output": 3.25
+      "cacheRead": 0.08449999999999999,
+      "cacheWrite": 0.5281250000000001,
+      "input": 0.4225,
+      "output": 2.1125000000000003
     },
     "openrouter/qwen/qwen3-max": {
-      "cacheRead": 0.156,
-      "cacheWrite": 0.975,
-      "input": 0.78,
-      "output": 3.9
+      "cacheRead": 0.10139999999999999,
+      "cacheWrite": 0.6337499999999999,
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "openrouter/qwen/qwen3-max-thinking": {
-      "input": 0.78,
-      "output": 3.9
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -36603,49 +36599,49 @@
       "output": 1.56
     },
     "openrouter/qwen/qwen3-vl-32b-instruct": {
-      "input": 0.10400000000000001,
-      "output": 0.41600000000000004
+      "input": 0.0676,
+      "output": 0.2704
     },
     "openrouter/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "openrouter/qwen/qwen3-vl-8b-thinking": {
       "input": 0.117,
       "output": 1.365
     },
     "openrouter/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.16899999999999998,
+      "output": 1.3519999999999999
     },
     "openrouter/qwen/qwen3.5-27b": {
-      "input": 0.195,
-      "output": 1.56
+      "input": 0.12675,
+      "output": 1.014
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
       "input": 0.14,
       "output": 1
     },
     "openrouter/qwen/qwen3.5-397b-a17b": {
-      "input": 0.39,
-      "output": 2.34
+      "input": 0.2535,
+      "output": 1.521
     },
     "openrouter/qwen/qwen3.5-9b": {
       "input": 0.09999999999999999,
       "output": 0.15
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
-      "input": 0.065,
-      "output": 0.26
+      "input": 0.042249999999999996,
+      "output": 0.16899999999999998
     },
     "openrouter/qwen/qwen3.5-plus-02-15": {
-      "input": 0.26,
-      "output": 1.56
+      "input": 0.16899999999999998,
+      "output": 1.014
     },
     "openrouter/qwen/qwen3.5-plus-20260420": {
-      "cacheWrite": 0.375,
-      "input": 0.3,
-      "output": 1.7999999999999998
+      "cacheWrite": 0.28125,
+      "input": 0.22499999999999998,
+      "output": 1.35
     },
     "openrouter/qwen/qwen3.6-27b": {
       "cacheRead": 0.15,
@@ -36657,19 +36653,19 @@
       "output": 1
     },
     "openrouter/qwen/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125
+      "cacheWrite": 0.17578125,
+      "input": 0.140625,
+      "output": 0.84375
     },
     "openrouter/qwen/qwen3.6-max-preview": {
-      "cacheWrite": 1.3,
-      "input": 1.04,
-      "output": 6.24
+      "cacheWrite": 1.04,
+      "input": 0.8320000000000001,
+      "output": 4.992
     },
     "openrouter/qwen/qwen3.6-plus": {
-      "cacheWrite": 0.40625,
-      "input": 0.325,
-      "output": 1.95
+      "cacheWrite": 0.26406250000000003,
+      "input": 0.21125,
+      "output": 1.2674999999999998
     },
     "openrouter/qwen/qwen3.7-flash": {
       "cacheRead": 0.006,
@@ -36678,16 +36674,16 @@
       "output": 0.13
     },
     "openrouter/qwen/qwen3.7-max": {
-      "cacheRead": 0.295,
-      "cacheWrite": 1.84375,
-      "input": 1.475,
-      "output": 4.425
+      "cacheRead": 0.1475,
+      "cacheWrite": 0.921875,
+      "input": 0.7375,
+      "output": 2.2125
     },
     "openrouter/qwen/qwen3.7-plus": {
-      "cacheRead": 0.064,
-      "cacheWrite": 0.39999999999999997,
-      "input": 0.32,
-      "output": 1.28
+      "cacheRead": 0.0512,
+      "cacheWrite": 0.32,
+      "input": 0.256,
+      "output": 1.024
     },
     "openrouter/rekaai/reka-edge": {
       "input": 0.09999999999999999,
@@ -37175,14 +37171,14 @@
       "output": 1
     },
     "qwen/qwen-plus": {
-      "cacheRead": 0.052000000000000005,
-      "cacheWrite": 0.325,
-      "input": 0.26,
-      "output": 0.78
+      "cacheRead": 0.0338,
+      "cacheWrite": 0.21125,
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "qwen/qwen-plus-2025-07-28": {
-      "input": 0.26,
-      "output": 0.78
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "qwen/qwen-plus-2025-07-28:thinking": {
       "cacheWrite": 0.325,
@@ -37195,12 +37191,12 @@
       "output": 1
     },
     "qwen/qwen3-14b": {
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999
+      "input": 0.14787499999999998,
+      "output": 0.5914999999999999
     },
     "qwen/qwen3-235b-a22b": {
-      "input": 0.45499999999999996,
-      "output": 1.8199999999999998
+      "input": 0.29574999999999996,
+      "output": 1.1829999999999998
     },
     "qwen/qwen3-235b-a22b-2507": {
       "input": 0.09,
@@ -37227,8 +37223,8 @@
       "output": 0.28
     },
     "qwen/qwen3-8b": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "qwen/qwen3-coder": {
       "cacheRead": 0.09999999999999999,
@@ -37240,10 +37236,10 @@
       "output": 0.27
     },
     "qwen/qwen3-coder-flash": {
-      "cacheRead": 0.039,
-      "cacheWrite": 0.24375,
-      "input": 0.195,
-      "output": 0.975
+      "cacheRead": 0.025349999999999998,
+      "cacheWrite": 0.15843749999999998,
+      "input": 0.12675,
+      "output": 0.6337499999999999
     },
     "qwen/qwen3-coder-next": {
       "cacheRead": 0.036,
@@ -37251,20 +37247,20 @@
       "output": 0.8999999999999999
     },
     "qwen/qwen3-coder-plus": {
-      "cacheRead": 0.13,
-      "cacheWrite": 0.8125,
-      "input": 0.65,
-      "output": 3.25
+      "cacheRead": 0.08449999999999999,
+      "cacheWrite": 0.5281250000000001,
+      "input": 0.4225,
+      "output": 2.1125000000000003
     },
     "qwen/qwen3-max": {
-      "cacheRead": 0.156,
-      "cacheWrite": 0.975,
-      "input": 0.78,
-      "output": 3.9
+      "cacheRead": 0.10139999999999999,
+      "cacheWrite": 0.6337499999999999,
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "qwen/qwen3-max-thinking": {
-      "input": 0.78,
-      "output": 3.9
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -37293,49 +37289,49 @@
       "output": 1.56
     },
     "qwen/qwen3-vl-32b-instruct": {
-      "input": 0.10400000000000001,
-      "output": 0.41600000000000004
+      "input": 0.0676,
+      "output": 0.2704
     },
     "qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "qwen/qwen3-vl-8b-thinking": {
       "input": 0.117,
       "output": 1.365
     },
     "qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.16899999999999998,
+      "output": 1.3519999999999999
     },
     "qwen/qwen3.5-27b": {
-      "input": 0.195,
-      "output": 1.56
+      "input": 0.12675,
+      "output": 1.014
     },
     "qwen/qwen3.5-35b-a3b": {
       "input": 0.14,
       "output": 1
     },
     "qwen/qwen3.5-397b-a17b": {
-      "input": 0.39,
-      "output": 2.34
+      "input": 0.2535,
+      "output": 1.521
     },
     "qwen/qwen3.5-9b": {
       "input": 0.09999999999999999,
       "output": 0.15
     },
     "qwen/qwen3.5-flash-02-23": {
-      "input": 0.065,
-      "output": 0.26
+      "input": 0.042249999999999996,
+      "output": 0.16899999999999998
     },
     "qwen/qwen3.5-plus-02-15": {
-      "input": 0.26,
-      "output": 1.56
+      "input": 0.16899999999999998,
+      "output": 1.014
     },
     "qwen/qwen3.5-plus-20260420": {
-      "cacheWrite": 0.375,
-      "input": 0.3,
-      "output": 1.7999999999999998
+      "cacheWrite": 0.28125,
+      "input": 0.22499999999999998,
+      "output": 1.35
     },
     "qwen/qwen3.6-27b": {
       "cacheRead": 0.15,
@@ -37347,19 +37343,19 @@
       "output": 1
     },
     "qwen/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125
+      "cacheWrite": 0.17578125,
+      "input": 0.140625,
+      "output": 0.84375
     },
     "qwen/qwen3.6-max-preview": {
-      "cacheWrite": 1.3,
-      "input": 1.04,
-      "output": 6.24
+      "cacheWrite": 1.04,
+      "input": 0.8320000000000001,
+      "output": 4.992
     },
     "qwen/qwen3.6-plus": {
-      "cacheWrite": 0.40625,
-      "input": 0.325,
-      "output": 1.95
+      "cacheWrite": 0.26406250000000003,
+      "input": 0.21125,
+      "output": 1.2674999999999998
     },
     "qwen/qwen3.7-flash": {
       "cacheRead": 0.006,
@@ -37368,16 +37364,16 @@
       "output": 0.13
     },
     "qwen/qwen3.7-max": {
-      "cacheRead": 0.295,
-      "cacheWrite": 1.84375,
-      "input": 1.475,
-      "output": 4.425
+      "cacheRead": 0.1475,
+      "cacheWrite": 0.921875,
+      "input": 0.7375,
+      "output": 2.2125
     },
     "qwen/qwen3.7-plus": {
-      "cacheRead": 0.064,
-      "cacheWrite": 0.39999999999999997,
-      "input": 0.32,
-      "output": 1.28
+      "cacheRead": 0.0512,
+      "cacheWrite": 0.32,
+      "input": 0.256,
+      "output": 1.024
     },
     "rekaai/reka-edge": {
       "input": 0.09999999999999999,
@@ -39296,12 +39292,6 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50
-    },
-    "vercel-ai-gateway/anthropic/claude-opus-5:batch": {
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125,
-      "input": 2.5,
-      "output": 12.5
     },
     "vercel-ai-gateway/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
@@ -45529,6 +45519,11 @@
       "input": 0.3,
       "output": 1.2
     },
+    "vercel-ai-gateway/minimax/minimax-m3:batch": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.6
+    },
     "vercel-ai-gateway/mistral/codestral-2405": {
       "input": 1,
       "output": 3
@@ -48345,14 +48340,14 @@
       "output": 1
     },
     "vercel-ai-gateway/qwen/qwen-plus": {
-      "cacheRead": 0.052000000000000005,
-      "cacheWrite": 0.325,
-      "input": 0.26,
-      "output": 0.78
+      "cacheRead": 0.0338,
+      "cacheWrite": 0.21125,
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "vercel-ai-gateway/qwen/qwen-plus-2025-07-28": {
-      "input": 0.26,
-      "output": 0.78
+      "input": 0.16899999999999998,
+      "output": 0.507
     },
     "vercel-ai-gateway/qwen/qwen-plus-2025-07-28:thinking": {
       "cacheWrite": 0.325,
@@ -48365,12 +48360,12 @@
       "output": 1
     },
     "vercel-ai-gateway/qwen/qwen3-14b": {
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999
+      "input": 0.14787499999999998,
+      "output": 0.5914999999999999
     },
     "vercel-ai-gateway/qwen/qwen3-235b-a22b": {
-      "input": 0.45499999999999996,
-      "output": 1.8199999999999998
+      "input": 0.29574999999999996,
+      "output": 1.1829999999999998
     },
     "vercel-ai-gateway/qwen/qwen3-235b-a22b-2507": {
       "input": 0.09,
@@ -48397,8 +48392,8 @@
       "output": 0.28
     },
     "vercel-ai-gateway/qwen/qwen3-8b": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "vercel-ai-gateway/qwen/qwen3-coder": {
       "cacheRead": 0.09999999999999999,
@@ -48410,10 +48405,10 @@
       "output": 0.27
     },
     "vercel-ai-gateway/qwen/qwen3-coder-flash": {
-      "cacheRead": 0.039,
-      "cacheWrite": 0.24375,
-      "input": 0.195,
-      "output": 0.975
+      "cacheRead": 0.025349999999999998,
+      "cacheWrite": 0.15843749999999998,
+      "input": 0.12675,
+      "output": 0.6337499999999999
     },
     "vercel-ai-gateway/qwen/qwen3-coder-next": {
       "cacheRead": 0.036,
@@ -48421,20 +48416,20 @@
       "output": 0.8999999999999999
     },
     "vercel-ai-gateway/qwen/qwen3-coder-plus": {
-      "cacheRead": 0.13,
-      "cacheWrite": 0.8125,
-      "input": 0.65,
-      "output": 3.25
+      "cacheRead": 0.08449999999999999,
+      "cacheWrite": 0.5281250000000001,
+      "input": 0.4225,
+      "output": 2.1125000000000003
     },
     "vercel-ai-gateway/qwen/qwen3-max": {
-      "cacheRead": 0.156,
-      "cacheWrite": 0.975,
-      "input": 0.78,
-      "output": 3.9
+      "cacheRead": 0.10139999999999999,
+      "cacheWrite": 0.6337499999999999,
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "vercel-ai-gateway/qwen/qwen3-max-thinking": {
-      "input": 0.78,
-      "output": 3.9
+      "input": 0.507,
+      "output": 2.5349999999999997
     },
     "vercel-ai-gateway/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -48463,49 +48458,49 @@
       "output": 1.56
     },
     "vercel-ai-gateway/qwen/qwen3-vl-32b-instruct": {
-      "input": 0.10400000000000001,
-      "output": 0.41600000000000004
+      "input": 0.0676,
+      "output": 0.2704
     },
     "vercel-ai-gateway/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "input": 0.07604999999999999,
+      "output": 0.29574999999999996
     },
     "vercel-ai-gateway/qwen/qwen3-vl-8b-thinking": {
       "input": 0.117,
       "output": 1.365
     },
     "vercel-ai-gateway/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.16899999999999998,
+      "output": 1.3519999999999999
     },
     "vercel-ai-gateway/qwen/qwen3.5-27b": {
-      "input": 0.195,
-      "output": 1.56
+      "input": 0.12675,
+      "output": 1.014
     },
     "vercel-ai-gateway/qwen/qwen3.5-35b-a3b": {
       "input": 0.14,
       "output": 1
     },
     "vercel-ai-gateway/qwen/qwen3.5-397b-a17b": {
-      "input": 0.39,
-      "output": 2.34
+      "input": 0.2535,
+      "output": 1.521
     },
     "vercel-ai-gateway/qwen/qwen3.5-9b": {
       "input": 0.09999999999999999,
       "output": 0.15
     },
     "vercel-ai-gateway/qwen/qwen3.5-flash-02-23": {
-      "input": 0.065,
-      "output": 0.26
+      "input": 0.042249999999999996,
+      "output": 0.16899999999999998
     },
     "vercel-ai-gateway/qwen/qwen3.5-plus-02-15": {
-      "input": 0.26,
-      "output": 1.56
+      "input": 0.16899999999999998,
+      "output": 1.014
     },
     "vercel-ai-gateway/qwen/qwen3.5-plus-20260420": {
-      "cacheWrite": 0.375,
-      "input": 0.3,
-      "output": 1.7999999999999998
+      "cacheWrite": 0.28125,
+      "input": 0.22499999999999998,
+      "output": 1.35
     },
     "vercel-ai-gateway/qwen/qwen3.6-27b": {
       "cacheRead": 0.15,
@@ -48517,19 +48512,19 @@
       "output": 1
     },
     "vercel-ai-gateway/qwen/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125
+      "cacheWrite": 0.17578125,
+      "input": 0.140625,
+      "output": 0.84375
     },
     "vercel-ai-gateway/qwen/qwen3.6-max-preview": {
-      "cacheWrite": 1.3,
-      "input": 1.04,
-      "output": 6.24
+      "cacheWrite": 1.04,
+      "input": 0.8320000000000001,
+      "output": 4.992
     },
     "vercel-ai-gateway/qwen/qwen3.6-plus": {
-      "cacheWrite": 0.40625,
-      "input": 0.325,
-      "output": 1.95
+      "cacheWrite": 0.26406250000000003,
+      "input": 0.21125,
+      "output": 1.2674999999999998
     },
     "vercel-ai-gateway/qwen/qwen3.7-flash": {
       "cacheRead": 0.006,
@@ -48538,16 +48533,16 @@
       "output": 0.13
     },
     "vercel-ai-gateway/qwen/qwen3.7-max": {
-      "cacheRead": 0.295,
-      "cacheWrite": 1.84375,
-      "input": 1.475,
-      "output": 4.425
+      "cacheRead": 0.1475,
+      "cacheWrite": 0.921875,
+      "input": 0.7375,
+      "output": 2.2125
     },
     "vercel-ai-gateway/qwen/qwen3.7-plus": {
-      "cacheRead": 0.064,
-      "cacheWrite": 0.39999999999999997,
-      "input": 0.32,
-      "output": 1.28
+      "cacheRead": 0.0512,
+      "cacheWrite": 0.32,
+      "input": 0.256,
+      "output": 1.024
     },
     "vercel-ai-gateway/rekaai/reka-edge": {
       "input": 0.09999999999999999,
@@ -57377,5 +57372,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "f308af8a344a30432e1b13fa348533e54cd190c8"
+  "sourceCommit": "d239a59d82ea929c92df2fff716a70c8e5d6bf1e"
 }
