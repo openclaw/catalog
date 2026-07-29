@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785330314248,
+  "generatedAt": 1785343841375,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -15969,9 +15969,9 @@
       "output": 3.036
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.13572,
-      "input": 0.7308,
-      "output": 2.2968
+      "cacheRead": 0.12974,
+      "input": 0.6986,
+      "output": 2.1956
     },
     "cloudflare-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -19810,40 +19810,20 @@
       "input": 1.75,
       "output": 14
     },
-    "gpt-5.4": {
-      "cacheRead": 0.25,
-      "input": 2.5,
-      "output": 15
-    },
     "gpt-5.4-2026-03-05": {
       "cacheRead": 0.25,
       "input": 2.5,
       "output": 15
-    },
-    "gpt-5.4-mini": {
-      "cacheRead": 0.075,
-      "input": 0.75,
-      "output": 4.5
     },
     "gpt-5.4-mini-2026-03-17": {
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 4.5
     },
-    "gpt-5.4-nano": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.25
-    },
     "gpt-5.4-nano-2026-03-17": {
       "cacheRead": 0.02,
       "input": 0.19999999999999998,
       "output": 1.25
-    },
-    "gpt-5.4-pro": {
-      "cacheRead": 3,
-      "input": 30,
-      "output": 180
     },
     "gpt-5.4-pro-2026-03-05": {
       "cacheRead": 3,
@@ -32318,9 +32298,9 @@
       "output": 3.036
     },
     "kilocode/z-ai/glm-5.2": {
-      "cacheRead": 0.13572,
-      "input": 0.7308,
-      "output": 2.2968
+      "cacheRead": 0.12974,
+      "input": 0.6986,
+      "output": 2.1956
     },
     "kilocode/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -34891,11 +34871,6 @@
       "input": 1.75,
       "output": 14
     },
-    "openai/gpt-5.4": {
-      "cacheRead": 0.25,
-      "input": 2.5,
-      "output": 15
-    },
     "openai/gpt-5.4-2026-03-05": {
       "cacheRead": 0.25,
       "input": 2.5,
@@ -34905,11 +34880,6 @@
       "cacheRead": 2,
       "input": 8,
       "output": 15
-    },
-    "openai/gpt-5.4-mini": {
-      "cacheRead": 0.075,
-      "input": 0.75,
-      "output": 4.5
     },
     "openai/gpt-5.4-mini-2026-03-17": {
       "cacheRead": 0.075,
@@ -34921,11 +34891,6 @@
       "input": 0.375,
       "output": 2.25
     },
-    "openai/gpt-5.4-nano": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.25
-    },
     "openai/gpt-5.4-nano-2026-03-17": {
       "cacheRead": 0.02,
       "input": 0.19999999999999998,
@@ -34935,10 +34900,6 @@
       "cacheRead": 0.01,
       "input": 0.09999999999999999,
       "output": 0.625
-    },
-    "openai/gpt-5.4-pro": {
-      "input": 30,
-      "output": 180
     },
     "openai/gpt-5.4-pro-2026-03-05": {
       "cacheRead": 3,
@@ -36866,9 +36827,9 @@
       "output": 3.036
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.13572,
-      "input": 0.7308,
-      "output": 2.2968
+      "cacheRead": 0.12974,
+      "input": 0.6986,
+      "output": 2.1956
     },
     "openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -51011,9 +50972,9 @@
       "output": 3.036
     },
     "vercel-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.13572,
-      "input": 0.7308,
-      "output": 2.2968
+      "cacheRead": 0.12974,
+      "input": 0.6986,
+      "output": 2.1956
     },
     "vercel-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -55211,6 +55172,74 @@
       "defaultUtilityModel": "gpt-5.6-luna",
       "models": [
         {
+          "contextWindow": 1050000,
+          "cost": {
+            "cacheRead": 0.25,
+            "cacheWrite": 0,
+            "input": 2.5,
+            "output": 15
+          },
+          "id": "gpt-5.4",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 128000,
+          "name": "GPT-5.4",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 400000,
+          "cost": {
+            "cacheRead": 0.075,
+            "cacheWrite": 0,
+            "input": 0.75,
+            "output": 4.5
+          },
+          "id": "gpt-5.4-mini",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 128000,
+          "name": "GPT-5.4 Mini",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 400000,
+          "cost": {
+            "cacheRead": 0.02,
+            "cacheWrite": 0,
+            "input": 0.19999999999999998,
+            "output": 1.25
+          },
+          "id": "gpt-5.4-nano",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 128000,
+          "name": "GPT-5.4 Nano",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1050000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 30,
+            "output": 180
+          },
+          "id": "gpt-5.4-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 128000,
+          "name": "GPT-5.4 Pro",
+          "reasoning": true
+        },
+        {
           "compat": {
             "codeMode": "preferred"
           },
@@ -57342,10 +57371,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.13572,
+            "cacheRead": 0.12974,
             "cacheWrite": 0,
-            "input": 0.7308,
-            "output": 2.2968
+            "input": 0.6986,
+            "output": 2.1956
           },
           "id": "glm-5.2",
           "input": [
@@ -57376,5 +57405,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "f65c933287eba7e6dc3f759b966f95edda603bad"
+  "sourceCommit": "030dbe9a7e6a09070e4027bebe8dd4c5a5091126"
 }
