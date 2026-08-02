@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1785661599121,
+  "generatedAt": 1785674572244,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -15782,9 +15782,9 @@
       "output": 3.036
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.05304,
-      "input": 0.2856,
-      "output": 0.8976
+      "cacheRead": 0.05278,
+      "input": 0.2842,
+      "output": 0.8932
     },
     "cloudflare-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -31897,9 +31897,9 @@
       "output": 3.036
     },
     "kilocode/z-ai/glm-5.2": {
-      "cacheRead": 0.05304,
-      "input": 0.2856,
-      "output": 0.8976
+      "cacheRead": 0.05278,
+      "input": 0.2842,
+      "output": 0.8932
     },
     "kilocode/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -36207,9 +36207,9 @@
       "output": 3.036
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.05304,
-      "input": 0.2856,
-      "output": 0.8976
+      "cacheRead": 0.05278,
+      "input": 0.2842,
+      "output": 0.8932
     },
     "openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -50219,9 +50219,9 @@
       "output": 3.036
     },
     "vercel-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.05304,
-      "input": 0.2856,
-      "output": 0.8976
+      "cacheRead": 0.05278,
+      "input": 0.2842,
+      "output": 0.8932
     },
     "vercel-ai-gateway/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -54258,7 +54258,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3.5 397B A17B",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "NVIDIA retired this model and no longer lists it in its model catalog."
         },
         {
           "compat": {
@@ -56618,10 +56620,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.05304,
+            "cacheRead": 0.05278,
             "cacheWrite": 0,
-            "input": 0.2856,
-            "output": 0.8976
+            "input": 0.2842,
+            "output": 0.8932
           },
           "id": "glm-5.2",
           "input": [
@@ -56652,5 +56654,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "0138f5b5e37d164e20b643d39f1d384297af13af"
+  "sourceCommit": "aa02128acafd05164610ae6a6906b1158897de1c"
 }
