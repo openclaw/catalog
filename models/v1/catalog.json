@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1786466477914,
+  "generatedAt": 1786480614298,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -27,9 +27,9 @@
       "output": 10
     },
     "~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.01596,
-      "input": 0.0798,
-      "output": 0.1596
+      "cacheRead": 0.0144,
+      "input": 0.072,
+      "output": 0.144
     },
     "~google/gemini-flash-latest": {
       "cacheRead": 0.15,
@@ -3719,6 +3719,10 @@
       "input": 0.075,
       "output": 0.3
     },
+    "bytedance-seed/seed-2.0-code": {
+      "input": 0.5,
+      "output": 3
+    },
     "bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
       "output": 2
@@ -3905,9 +3909,9 @@
       "output": 10
     },
     "cloudflare-ai-gateway/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.01596,
-      "input": 0.0798,
-      "output": 0.1596
+      "cacheRead": 0.0144,
+      "input": 0.072,
+      "output": 0.144
     },
     "cloudflare-ai-gateway/~google/gemini-flash-latest": {
       "cacheRead": 0.15,
@@ -7376,6 +7380,10 @@
     "cloudflare-ai-gateway/bytedance-seed/seed-1.6-flash": {
       "input": 0.075,
       "output": 0.3
+    },
+    "cloudflare-ai-gateway/bytedance-seed/seed-2.0-code": {
+      "input": 0.5,
+      "output": 3
     },
     "cloudflare-ai-gateway/bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
@@ -11583,6 +11591,11 @@
       "cacheRead": 0.09999999999999999,
       "input": 0.3,
       "output": 1.7999999999999998
+    },
+    "cloudflare-ai-gateway/nvidia/nemotron-3.5-lightning": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09999999999999999,
+      "output": 0.25
     },
     "cloudflare-ai-gateway/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -16181,9 +16194,9 @@
       "output": 2.992
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.09074,
-      "input": 0.4886,
-      "output": 1.5355999999999999
+      "cacheRead": 0.0754,
+      "input": 0.406,
+      "output": 1.276
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -20080,6 +20093,12 @@
       "input": 30,
       "output": 180
     },
+    "gpt-5.6": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
     "gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -20462,9 +20481,9 @@
       "output": 10
     },
     "kilocode/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.01596,
-      "input": 0.0798,
-      "output": 0.1596
+      "cacheRead": 0.0144,
+      "input": 0.072,
+      "output": 0.144
     },
     "kilocode/~google/gemini-flash-latest": {
       "cacheRead": 0.15,
@@ -23933,6 +23952,10 @@
     "kilocode/bytedance-seed/seed-1.6-flash": {
       "input": 0.075,
       "output": 0.3
+    },
+    "kilocode/bytedance-seed/seed-2.0-code": {
+      "input": 0.5,
+      "output": 3
     },
     "kilocode/bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
@@ -28140,6 +28163,11 @@
       "cacheRead": 0.09999999999999999,
       "input": 0.3,
       "output": 1.7999999999999998
+    },
+    "kilocode/nvidia/nemotron-3.5-lightning": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09999999999999999,
+      "output": 0.25
     },
     "kilocode/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -32738,9 +32766,9 @@
       "output": 2.992
     },
     "kilocode/z-ai/glm-5.2": {
-      "cacheRead": 0.09074,
-      "input": 0.4886,
-      "output": 1.5355999999999999
+      "cacheRead": 0.0754,
+      "input": 0.406,
+      "output": 1.276
     },
     "kilocode/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -33388,11 +33416,6 @@
       "cacheRead": 0.04,
       "input": 0.35,
       "output": 1.5
-    },
-    "meta/muse-spark-1.2": {
-      "cacheRead": 0.15,
-      "input": 1.25,
-      "output": 4.25
     },
     "microsoft/phi-4": {
       "input": 0.07,
@@ -34604,6 +34627,11 @@
       "input": 0,
       "output": 0
     },
+    "nvidia/nemotron-3.5-lightning": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09999999999999999,
+      "output": 0.25
+    },
     "nvidia/nemotron-3.5-lightning:free": {
       "input": 0,
       "output": 0
@@ -35448,6 +35476,12 @@
       "input": 2.5,
       "output": 15
     },
+    "openai/gpt-5.6": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
     "openai/gpt-5.6-luna-pro": {
       "cacheRead": 0.01,
       "cacheWrite": 0.125,
@@ -35792,9 +35826,9 @@
       "output": 10
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.01596,
-      "input": 0.0798,
-      "output": 0.1596
+      "cacheRead": 0.0144,
+      "input": 0.072,
+      "output": 0.144
     },
     "openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.15,
@@ -36069,6 +36103,10 @@
     "openrouter/bytedance-seed/seed-1.6-flash": {
       "input": 0.075,
       "output": 0.3
+    },
+    "openrouter/bytedance-seed/seed-2.0-code": {
+      "input": 0.5,
+      "output": 3
     },
     "openrouter/bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
@@ -36681,6 +36719,11 @@
       "cacheRead": 0.09999999999999999,
       "input": 0.3,
       "output": 1.7999999999999998
+    },
+    "openrouter/nvidia/nemotron-3.5-lightning": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09999999999999999,
+      "output": 0.25
     },
     "openrouter/openai/gpt-3.5-turbo": {
       "input": 0.5,
@@ -37583,9 +37626,9 @@
       "output": 2.992
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.09074,
-      "input": 0.4886,
-      "output": 1.5355999999999999
+      "cacheRead": 0.0754,
+      "input": 0.406,
+      "output": 1.276
     },
     "openrouter/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -39678,9 +39721,9 @@
       "output": 10
     },
     "vercel-ai-gateway/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.01596,
-      "input": 0.0798,
-      "output": 0.1596
+      "cacheRead": 0.0144,
+      "input": 0.072,
+      "output": 0.144
     },
     "vercel-ai-gateway/~google/gemini-flash-latest": {
       "cacheRead": 0.15,
@@ -43149,6 +43192,10 @@
     "vercel-ai-gateway/bytedance-seed/seed-1.6-flash": {
       "input": 0.075,
       "output": 0.3
+    },
+    "vercel-ai-gateway/bytedance-seed/seed-2.0-code": {
+      "input": 0.5,
+      "output": 3
     },
     "vercel-ai-gateway/bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
@@ -47356,6 +47403,11 @@
       "cacheRead": 0.09999999999999999,
       "input": 0.3,
       "output": 1.7999999999999998
+    },
+    "vercel-ai-gateway/nvidia/nemotron-3.5-lightning": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09999999999999999,
+      "output": 0.25
     },
     "vercel-ai-gateway/oci/cohere.command-a-03-2025": {
       "input": 1.56,
@@ -51954,9 +52006,9 @@
       "output": 2.992
     },
     "vercel-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.09074,
-      "input": 0.4886,
-      "output": 1.5355999999999999
+      "cacheRead": 0.0754,
+      "input": 0.406,
+      "output": 1.276
     },
     "vercel-ai-gateway/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -55492,6 +55544,78 @@
             "off": "minimal",
             "xhigh": "xhigh"
           }
+        },
+        {
+          "compat": {
+            "supportedReasoningEfforts": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "supportsReasoningEffort": true,
+            "supportsTools": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.15,
+            "cacheWrite": 0,
+            "input": 1.25,
+            "output": 4.25
+          },
+          "id": "muse-spark-1.2",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Muse Spark 1.2",
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium",
+            "minimal": "minimal",
+            "off": "minimal",
+            "xhigh": "xhigh"
+          }
+        },
+        {
+          "compat": {
+            "supportedReasoningEfforts": [
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ],
+            "supportsReasoningEffort": true,
+            "supportsTools": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.002,
+            "cacheWrite": 0,
+            "input": 0.1,
+            "output": 0.2
+          },
+          "id": "muse-spark-1.2-contributor",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Muse Spark 1.2 Contributor",
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "high": "high",
+            "low": "low",
+            "medium": "medium",
+            "minimal": "minimal",
+            "off": "minimal",
+            "xhigh": "xhigh"
+          }
         }
       ]
     },
@@ -56265,7 +56389,7 @@
           },
           "name": "GPT-5.5",
           "reasoning": true,
-          "replacedBy": "gpt-5.6",
+          "replacedBy": "gpt-5.6-sol",
           "status": "deprecated"
         },
         {
@@ -56295,44 +56419,8 @@
           },
           "name": "gpt-5.5-pro",
           "reasoning": true,
-          "replacedBy": "gpt-5.6",
+          "replacedBy": "gpt-5.6-sol",
           "status": "deprecated"
-        },
-        {
-          "compat": {
-            "codeMode": "preferred",
-            "supportedReasoningEfforts": [
-              "none",
-              "low",
-              "medium",
-              "high",
-              "xhigh",
-              "max"
-            ],
-            "supportsReasoningEffort": true,
-            "supportsTemperature": false
-          },
-          "contextTokens": 272000,
-          "contextWindow": 1050000,
-          "cost": {
-            "cacheRead": 0.5,
-            "cacheWrite": 6.25,
-            "input": 5,
-            "output": 30
-          },
-          "id": "gpt-5.6",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 128000,
-          "name": "GPT-5.6",
-          "reasoning": true,
-          "thinkingLevelMap": {
-            "max": "max",
-            "off": "none",
-            "xhigh": "xhigh"
-          }
         },
         {
           "compat": {
@@ -58640,10 +58728,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.09074,
+            "cacheRead": 0.0754,
             "cacheWrite": 0,
-            "input": 0.4886,
-            "output": 1.5355999999999999
+            "input": 0.406,
+            "output": 1.276
           },
           "id": "glm-5.2",
           "input": [
@@ -58674,5 +58762,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "18f126326a397b4ecfe0aa4b319bfb60740f52ed"
+  "sourceCommit": "e74be5d41db4afbdd382db6a3bc60a32d805579b"
 }
