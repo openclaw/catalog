@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1786495395043,
+  "generatedAt": 1786510770120,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -3800,6 +3800,12 @@
       "input": 1,
       "output": 5
     },
+    "claude-mythos-preview": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "claude-opus-4-1": {
       "cacheRead": 1.5,
       "cacheWrite": 18.75,
@@ -4129,6 +4135,18 @@
       "cacheWrite": 0.625,
       "input": 0.5,
       "output": 2.5
+    },
+    "cloudflare-ai-gateway/anthropic/claude-mythos-5": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
+    "cloudflare-ai-gateway/anthropic/claude-mythos-preview": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
     },
     "cloudflare-ai-gateway/anthropic/claude-opus-4": {
       "cacheRead": 1.5,
@@ -9698,6 +9716,10 @@
       "input": 2,
       "output": 10
     },
+    "cloudflare-ai-gateway/gemini/gemini-robotics-er-2-streaming-preview": {
+      "input": 2,
+      "output": 10
+    },
     "cloudflare-ai-gateway/gemini/gemma-3-27b-it": {
       "input": 0,
       "output": 0
@@ -10610,6 +10632,10 @@
       "input": 0.09999999999999999,
       "output": 0.3
     },
+    "cloudflare-ai-gateway/mistral/labs-leanstral-1-5": {
+      "input": 0,
+      "output": 0
+    },
     "cloudflare-ai-gateway/mistral/magistral-medium-1-2-2509": {
       "input": 2,
       "output": 5
@@ -10714,9 +10740,17 @@
       "input": 1.5,
       "output": 7.5
     },
+    "cloudflare-ai-gateway/mistral/mistral-moderation-2603": {
+      "input": 0,
+      "output": 0
+    },
     "cloudflare-ai-gateway/mistral/mistral-small": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "cloudflare-ai-gateway/mistral/mistral-small-2603": {
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/mistral/mistral-small-3-2-2506": {
       "input": 0.06,
@@ -16070,25 +16104,35 @@
       "input": 3,
       "output": 15
     },
+    "cloudflare-ai-gateway/xai/grok-4.20-0309-non-reasoning": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
+    },
     "cloudflare-ai-gateway/xai/grok-4.20-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "cloudflare-ai-gateway/xai/grok-4.20-beta-0309-non-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "cloudflare-ai-gateway/xai/grok-4.20-beta-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
+    },
+    "cloudflare-ai-gateway/xai/grok-4.20-multi-agent-0309": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
     },
     "cloudflare-ai-gateway/xai/grok-4.20-multi-agent-beta-0309": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "cloudflare-ai-gateway/xai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -16101,12 +16145,12 @@
       "output": 2.5
     },
     "cloudflare-ai-gateway/xai/grok-4.5": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
     "cloudflare-ai-gateway/xai/grok-4.5-latest": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
@@ -16114,20 +16158,25 @@
       "input": 5,
       "output": 15
     },
+    "cloudflare-ai-gateway/xai/grok-build-0.1": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
+    },
     "cloudflare-ai-gateway/xai/grok-code-fast": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "cloudflare-ai-gateway/xai/grok-code-fast-1": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "cloudflare-ai-gateway/xai/grok-code-fast-1-0825": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "cloudflare-ai-gateway/xai/grok-vision-beta": {
       "input": 5,
@@ -16194,9 +16243,9 @@
       "output": 4.4
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.07,
+      "input": 0.42,
+      "output": 1.4
     },
     "cloudflare-ai-gateway/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -19141,6 +19190,10 @@
       "input": 2,
       "output": 10
     },
+    "gemini/gemini-robotics-er-2-streaming-preview": {
+      "input": 2,
+      "output": 10
+    },
     "gemini/gemma-3-27b-it": {
       "input": 0,
       "output": 0
@@ -20701,6 +20754,18 @@
       "cacheWrite": 0.625,
       "input": 0.5,
       "output": 2.5
+    },
+    "kilocode/anthropic/claude-mythos-5": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
+    "kilocode/anthropic/claude-mythos-preview": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
     },
     "kilocode/anthropic/claude-opus-4": {
       "cacheRead": 1.5,
@@ -26270,6 +26335,10 @@
       "input": 2,
       "output": 10
     },
+    "kilocode/gemini/gemini-robotics-er-2-streaming-preview": {
+      "input": 2,
+      "output": 10
+    },
     "kilocode/gemini/gemma-3-27b-it": {
       "input": 0,
       "output": 0
@@ -27182,6 +27251,10 @@
       "input": 0.09999999999999999,
       "output": 0.3
     },
+    "kilocode/mistral/labs-leanstral-1-5": {
+      "input": 0,
+      "output": 0
+    },
     "kilocode/mistral/magistral-medium-1-2-2509": {
       "input": 2,
       "output": 5
@@ -27286,9 +27359,17 @@
       "input": 1.5,
       "output": 7.5
     },
+    "kilocode/mistral/mistral-moderation-2603": {
+      "input": 0,
+      "output": 0
+    },
     "kilocode/mistral/mistral-small": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "kilocode/mistral/mistral-small-2603": {
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/mistral/mistral-small-3-2-2506": {
       "input": 0.06,
@@ -32642,25 +32723,35 @@
       "input": 3,
       "output": 15
     },
+    "kilocode/xai/grok-4.20-0309-non-reasoning": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
+    },
     "kilocode/xai/grok-4.20-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "kilocode/xai/grok-4.20-beta-0309-non-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "kilocode/xai/grok-4.20-beta-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
+    },
+    "kilocode/xai/grok-4.20-multi-agent-0309": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
     },
     "kilocode/xai/grok-4.20-multi-agent-beta-0309": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "kilocode/xai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -32673,12 +32764,12 @@
       "output": 2.5
     },
     "kilocode/xai/grok-4.5": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
     "kilocode/xai/grok-4.5-latest": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
@@ -32686,20 +32777,25 @@
       "input": 5,
       "output": 15
     },
+    "kilocode/xai/grok-build-0.1": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
+    },
     "kilocode/xai/grok-code-fast": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "kilocode/xai/grok-code-fast-1": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "kilocode/xai/grok-code-fast-1-0825": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "kilocode/xai/grok-vision-beta": {
       "input": 5,
@@ -32766,9 +32862,9 @@
       "output": 4.4
     },
     "kilocode/z-ai/glm-5.2": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.07,
+      "input": 0.42,
+      "output": 1.4
     },
     "kilocode/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -33610,6 +33706,10 @@
       "input": 0.09999999999999999,
       "output": 0.3
     },
+    "mistral/labs-leanstral-1-5": {
+      "input": 0,
+      "output": 0
+    },
     "mistral/magistral-medium-1-2-2509": {
       "input": 2,
       "output": 5
@@ -33701,6 +33801,10 @@
     "mistral/mistral-medium-latest": {
       "input": 1.5,
       "output": 7.5
+    },
+    "mistral/mistral-moderation-2603": {
+      "input": 0,
+      "output": 0
     },
     "mistral/mistral-small": {
       "input": 0.09999999999999999,
@@ -37631,9 +37735,9 @@
       "output": 4.4
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.07,
+      "input": 0.42,
+      "output": 1.4
     },
     "openrouter/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -39945,6 +40049,18 @@
       "cacheWrite": 0.625,
       "input": 0.5,
       "output": 2.5
+    },
+    "vercel-ai-gateway/anthropic/claude-mythos-5": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
+    "vercel-ai-gateway/anthropic/claude-mythos-preview": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
     },
     "vercel-ai-gateway/anthropic/claude-opus-4": {
       "cacheRead": 1.5,
@@ -45514,6 +45630,10 @@
       "input": 2,
       "output": 10
     },
+    "vercel-ai-gateway/gemini/gemini-robotics-er-2-streaming-preview": {
+      "input": 2,
+      "output": 10
+    },
     "vercel-ai-gateway/gemini/gemma-3-27b-it": {
       "input": 0,
       "output": 0
@@ -46426,6 +46546,10 @@
       "input": 0.09999999999999999,
       "output": 0.3
     },
+    "vercel-ai-gateway/mistral/labs-leanstral-1-5": {
+      "input": 0,
+      "output": 0
+    },
     "vercel-ai-gateway/mistral/magistral-medium-1-2-2509": {
       "input": 2,
       "output": 5
@@ -46530,9 +46654,17 @@
       "input": 1.5,
       "output": 7.5
     },
+    "vercel-ai-gateway/mistral/mistral-moderation-2603": {
+      "input": 0,
+      "output": 0
+    },
     "vercel-ai-gateway/mistral/mistral-small": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "vercel-ai-gateway/mistral/mistral-small-2603": {
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/mistral/mistral-small-3-2-2506": {
       "input": 0.06,
@@ -51886,25 +52018,35 @@
       "input": 3,
       "output": 15
     },
+    "vercel-ai-gateway/xai/grok-4.20-0309-non-reasoning": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
+    },
     "vercel-ai-gateway/xai/grok-4.20-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "vercel-ai-gateway/xai/grok-4.20-beta-0309-non-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "vercel-ai-gateway/xai/grok-4.20-beta-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
+    },
+    "vercel-ai-gateway/xai/grok-4.20-multi-agent-0309": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
     },
     "vercel-ai-gateway/xai/grok-4.20-multi-agent-beta-0309": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "vercel-ai-gateway/xai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -51917,12 +52059,12 @@
       "output": 2.5
     },
     "vercel-ai-gateway/xai/grok-4.5": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
     "vercel-ai-gateway/xai/grok-4.5-latest": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
@@ -51930,20 +52072,25 @@
       "input": 5,
       "output": 15
     },
+    "vercel-ai-gateway/xai/grok-build-0.1": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
+    },
     "vercel-ai-gateway/xai/grok-code-fast": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "vercel-ai-gateway/xai/grok-code-fast-1": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "vercel-ai-gateway/xai/grok-code-fast-1-0825": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "vercel-ai-gateway/xai/grok-vision-beta": {
       "input": 5,
@@ -52010,9 +52157,9 @@
       "output": 4.4
     },
     "vercel-ai-gateway/z-ai/glm-5.2": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.07,
+      "input": 0.42,
+      "output": 1.4
     },
     "vercel-ai-gateway/z-ai/glm-5.2:batch": {
       "cacheRead": 0.13,
@@ -53216,25 +53363,35 @@
       "input": 3,
       "output": 15
     },
+    "xai/grok-4.20-0309-non-reasoning": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
+    },
     "xai/grok-4.20-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "xai/grok-4.20-beta-0309-non-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "xai/grok-4.20-beta-0309-reasoning": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
+    },
+    "xai/grok-4.20-multi-agent-0309": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1.25,
+      "output": 2.5
     },
     "xai/grok-4.20-multi-agent-beta-0309": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 6
+      "input": 1.25,
+      "output": 2.5
     },
     "xai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -53247,12 +53404,12 @@
       "output": 2.5
     },
     "xai/grok-4.5": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
     "xai/grok-4.5-latest": {
-      "cacheRead": 0.5,
+      "cacheRead": 0.3,
       "input": 2,
       "output": 6
     },
@@ -53260,20 +53417,25 @@
       "input": 5,
       "output": 15
     },
+    "xai/grok-build-0.1": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
+    },
     "xai/grok-code-fast": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "xai/grok-code-fast-1": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "xai/grok-code-fast-1-0825": {
-      "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 1.5
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 2
     },
     "xai/grok-vision-beta": {
       "input": 5,
@@ -55713,7 +55875,7 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.015,
+            "cacheRead": 0,
             "cacheWrite": 0,
             "input": 0.15,
             "output": 0.6
@@ -58732,10 +58894,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.10374,
+            "cacheRead": 0.07,
             "cacheWrite": 0,
-            "input": 0.5586,
-            "output": 1.7556
+            "input": 0.42,
+            "output": 1.4
           },
           "id": "glm-5.2",
           "input": [
@@ -58766,5 +58928,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "22b3c2530f113b0a1b4beb265d7959905edecb76"
+  "sourceCommit": "7ecad45a7dde8fc58ef3dfd543f7a646f0695a37"
 }
