@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1786683595637,
+  "generatedAt": 1786689708912,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -17372,10 +17372,6 @@
     "dolphin": {
       "input": 0.5,
       "output": 0.5
-    },
-    "dots-studio/dots-3-note-preview:free": {
-      "input": 0,
-      "output": 0
     },
     "doubao-embedding": {
       "input": 0,
@@ -59362,6 +59358,25 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "codeMode": "preferred"
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "glm-5.3",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3",
+          "reasoning": true
+        },
+        {
           "contextWindow": 200000,
           "cost": {
             "cacheRead": 0.24,
@@ -59382,5 +59397,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "3e6f08eab9d5ee9650d49d402627e16f28ed7a14"
+  "sourceCommit": "312397ab4d6874af9c02489629a5b7b80819d98d"
 }
