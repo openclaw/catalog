@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787142988206,
+  "generatedAt": 1787157314599,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -63,6 +63,11 @@
       "cacheRead": 0.5,
       "input": 2,
       "output": 6
+    },
+    "~z-ai/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
     },
     "ai21.j2-mid-v1": {
       "input": 12.5,
@@ -4030,6 +4035,11 @@
       "cacheRead": 0.5,
       "input": 2,
       "output": 6
+    },
+    "cloudflare-ai-gateway/~z-ai/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -10841,8 +10851,8 @@
       "output": 2.4
     },
     "cloudflare-ai-gateway/minimax/minimax-m2.5": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.22,
+      "cacheRead": 0.06,
+      "input": 0.22499999999999998,
       "output": 0.8999999999999999
     },
     "cloudflare-ai-gateway/minimax/MiniMax-M2.5": {
@@ -11297,9 +11307,9 @@
       "output": 2.25
     },
     "cloudflare-ai-gateway/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "cloudflare-ai-gateway/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -21046,6 +21056,11 @@
       "input": 2,
       "output": 6
     },
+    "kilocode/~z-ai/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
     "kilocode/ai21/j2-light": {
       "input": 3,
       "output": 3
@@ -27856,8 +27871,8 @@
       "output": 2.4
     },
     "kilocode/minimax/minimax-m2.5": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.22,
+      "cacheRead": 0.06,
+      "input": 0.22499999999999998,
       "output": 0.8999999999999999
     },
     "kilocode/minimax/MiniMax-M2.5": {
@@ -28312,9 +28327,9 @@
       "output": 2.25
     },
     "kilocode/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "kilocode/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -33701,9 +33716,9 @@
       "output": 2.25
     },
     "kimi-coding/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "kimi-coding/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -33828,9 +33843,9 @@
       "output": 2.25
     },
     "kimi/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "kimi/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -34075,10 +34090,6 @@
       "input": 0.15,
       "output": 0.5
     },
-    "liquid/lfm-2.5-2.6b:free": {
-      "input": 0,
-      "output": 0
-    },
     "llamagate/codellama-7b": {
       "input": 0.06,
       "output": 0.12
@@ -34307,8 +34318,8 @@
       "output": 2.4
     },
     "minimax/minimax-m2.5": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.22,
+      "cacheRead": 0.06,
+      "input": 0.22499999999999998,
       "output": 0.8999999999999999
     },
     "minimax/MiniMax-M2.5": {
@@ -34711,9 +34722,9 @@
       "output": 2.25
     },
     "moonshot/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "moonshot/kimi-k2.7-code:batch": {
       "cacheRead": 0.19,
@@ -34808,9 +34819,9 @@
       "output": 2.25
     },
     "moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "moonshotai/kimi-k2.7-code:batch": {
       "cacheRead": 0.19,
@@ -36701,9 +36712,10 @@
       "input": 2,
       "output": 6
     },
-    "openrouter/ai21/jamba-large-1.7": {
-      "input": 2,
-      "output": 8
+    "openrouter/~z-ai/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -37381,8 +37393,8 @@
       "output": 1.2
     },
     "openrouter/minimax/minimax-m2.5": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.22,
+      "cacheRead": 0.06,
+      "input": 0.22499999999999998,
       "output": 0.8999999999999999
     },
     "openrouter/minimax/minimax-m2.7": {
@@ -37504,9 +37516,9 @@
       "output": 2.25
     },
     "openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -40644,6 +40656,11 @@
       "cacheRead": 0.5,
       "input": 2,
       "output": 6
+    },
+    "vercel-ai-gateway/~z-ai/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
     },
     "vercel-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -47455,8 +47472,8 @@
       "output": 2.4
     },
     "vercel-ai-gateway/minimax/minimax-m2.5": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.22,
+      "cacheRead": 0.06,
+      "input": 0.22499999999999998,
       "output": 0.8999999999999999
     },
     "vercel-ai-gateway/minimax/MiniMax-M2.5": {
@@ -47911,9 +47928,9 @@
       "output": 2.25
     },
     "vercel-ai-gateway/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0944,
+      "input": 0.5605,
+      "output": 2.36
     },
     "vercel-ai-gateway/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -60004,5 +60021,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "7a82d8b0f25fdfafbdcd2fbe40e9e8d68b981fc3"
+  "sourceCommit": "16ff0dd699d5d239e14e77f3427949e7596670bb"
 }
