@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787099850098,
+  "generatedAt": 1787114139509,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -8009,6 +8009,10 @@
       "input": 5.00003,
       "output": 25.000010000000003
     },
+    "cloudflare-ai-gateway/databricks/databricks-claude-opus-4-6": {
+      "input": 5.00003,
+      "output": 25.000010000000003
+    },
     "cloudflare-ai-gateway/databricks/databricks-claude-sonnet-4": {
       "input": 2.9999900000000004,
       "output": 15.000020000000001
@@ -8021,6 +8025,10 @@
       "input": 2.9999900000000004,
       "output": 15.000020000000001
     },
+    "cloudflare-ai-gateway/databricks/databricks-claude-sonnet-4-6": {
+      "input": 2.9999900000000004,
+      "output": 15.000020000000001
+    },
     "cloudflare-ai-gateway/databricks/databricks-gemini-2-5-flash": {
       "input": 0.30001999999999995,
       "output": 2.49998
@@ -8028,6 +8036,22 @@
     "cloudflare-ai-gateway/databricks/databricks-gemini-2-5-pro": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gemini-3-1-flash-lite": {
+      "input": 0.31248,
+      "output": 1.87502
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gemini-3-1-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gemini-3-flash": {
+      "input": 0.6250300000000001,
+      "output": 3.7499700000000002
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gemini-3-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
     },
     "cloudflare-ai-gateway/databricks/databricks-gemma-3-12b": {
       "input": 0.15000999999999998,
@@ -8040,6 +8064,38 @@
     "cloudflare-ai-gateway/databricks/databricks-gpt-5-1": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-1-codex-max": {
+      "input": 1.24999,
+      "output": 9.999990000000002
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-1-codex-mini": {
+      "input": 0.24997,
+      "output": 1.99997
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-2": {
+      "input": 1.75,
+      "output": 14
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-2-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-3-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-4": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-4-mini": {
+      "input": 0.74998,
+      "output": 4.50002
+    },
+    "cloudflare-ai-gateway/databricks/databricks-gpt-5-4-nano": {
+      "input": 0.19999,
+      "output": 1.24999
     },
     "cloudflare-ai-gateway/databricks/databricks-gpt-5-mini": {
       "input": 0.24997000000000005,
@@ -9851,9 +9907,9 @@
       "output": 2.5
     },
     "cloudflare-ai-gateway/gemini/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "cloudflare-ai-gateway/gemini/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -15387,9 +15443,9 @@
       "output": 2.5
     },
     "cloudflare-ai-gateway/vertex_ai-language-models/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "cloudflare-ai-gateway/vertex_ai-language-models/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -15725,9 +15781,9 @@
       "output": 2.5
     },
     "cloudflare-ai-gateway/vertex_ai/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "cloudflare-ai-gateway/vertex_ai/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -17080,6 +17136,10 @@
       "input": 5.00003,
       "output": 25.000010000000003
     },
+    "databricks/databricks-claude-opus-4-6": {
+      "input": 5.00003,
+      "output": 25.000010000000003
+    },
     "databricks/databricks-claude-sonnet-4": {
       "input": 2.9999900000000004,
       "output": 15.000020000000001
@@ -17092,6 +17152,10 @@
       "input": 2.9999900000000004,
       "output": 15.000020000000001
     },
+    "databricks/databricks-claude-sonnet-4-6": {
+      "input": 2.9999900000000004,
+      "output": 15.000020000000001
+    },
     "databricks/databricks-gemini-2-5-flash": {
       "input": 0.30001999999999995,
       "output": 2.49998
@@ -17099,6 +17163,22 @@
     "databricks/databricks-gemini-2-5-pro": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "databricks/databricks-gemini-3-1-flash-lite": {
+      "input": 0.31248,
+      "output": 1.87502
+    },
+    "databricks/databricks-gemini-3-1-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "databricks/databricks-gemini-3-flash": {
+      "input": 0.6250300000000001,
+      "output": 3.7499700000000002
+    },
+    "databricks/databricks-gemini-3-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
     },
     "databricks/databricks-gemma-3-12b": {
       "input": 0.15000999999999998,
@@ -17111,6 +17191,38 @@
     "databricks/databricks-gpt-5-1": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "databricks/databricks-gpt-5-1-codex-max": {
+      "input": 1.24999,
+      "output": 9.999990000000002
+    },
+    "databricks/databricks-gpt-5-1-codex-mini": {
+      "input": 0.24997,
+      "output": 1.99997
+    },
+    "databricks/databricks-gpt-5-2": {
+      "input": 1.75,
+      "output": 14
+    },
+    "databricks/databricks-gpt-5-2-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "databricks/databricks-gpt-5-3-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "databricks/databricks-gpt-5-4": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "databricks/databricks-gpt-5-4-mini": {
+      "input": 0.74998,
+      "output": 4.50002
+    },
+    "databricks/databricks-gpt-5-4-nano": {
+      "input": 0.19999,
+      "output": 1.24999
     },
     "databricks/databricks-gpt-5-mini": {
       "input": 0.24997000000000005,
@@ -19239,9 +19351,9 @@
       "output": 2.5
     },
     "gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -19454,9 +19566,9 @@
       "output": 2.5
     },
     "gemini/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "gemini/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -24914,6 +25026,10 @@
       "input": 5.00003,
       "output": 25.000010000000003
     },
+    "kilocode/databricks/databricks-claude-opus-4-6": {
+      "input": 5.00003,
+      "output": 25.000010000000003
+    },
     "kilocode/databricks/databricks-claude-sonnet-4": {
       "input": 2.9999900000000004,
       "output": 15.000020000000001
@@ -24926,6 +25042,10 @@
       "input": 2.9999900000000004,
       "output": 15.000020000000001
     },
+    "kilocode/databricks/databricks-claude-sonnet-4-6": {
+      "input": 2.9999900000000004,
+      "output": 15.000020000000001
+    },
     "kilocode/databricks/databricks-gemini-2-5-flash": {
       "input": 0.30001999999999995,
       "output": 2.49998
@@ -24933,6 +25053,22 @@
     "kilocode/databricks/databricks-gemini-2-5-pro": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "kilocode/databricks/databricks-gemini-3-1-flash-lite": {
+      "input": 0.31248,
+      "output": 1.87502
+    },
+    "kilocode/databricks/databricks-gemini-3-1-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "kilocode/databricks/databricks-gemini-3-flash": {
+      "input": 0.6250300000000001,
+      "output": 3.7499700000000002
+    },
+    "kilocode/databricks/databricks-gemini-3-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
     },
     "kilocode/databricks/databricks-gemma-3-12b": {
       "input": 0.15000999999999998,
@@ -24945,6 +25081,38 @@
     "kilocode/databricks/databricks-gpt-5-1": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "kilocode/databricks/databricks-gpt-5-1-codex-max": {
+      "input": 1.24999,
+      "output": 9.999990000000002
+    },
+    "kilocode/databricks/databricks-gpt-5-1-codex-mini": {
+      "input": 0.24997,
+      "output": 1.99997
+    },
+    "kilocode/databricks/databricks-gpt-5-2": {
+      "input": 1.75,
+      "output": 14
+    },
+    "kilocode/databricks/databricks-gpt-5-2-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "kilocode/databricks/databricks-gpt-5-3-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "kilocode/databricks/databricks-gpt-5-4": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "kilocode/databricks/databricks-gpt-5-4-mini": {
+      "input": 0.74998,
+      "output": 4.50002
+    },
+    "kilocode/databricks/databricks-gpt-5-4-nano": {
+      "input": 0.19999,
+      "output": 1.24999
     },
     "kilocode/databricks/databricks-gpt-5-mini": {
       "input": 0.24997000000000005,
@@ -26756,9 +26924,9 @@
       "output": 2.5
     },
     "kilocode/gemini/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "kilocode/gemini/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -32292,9 +32460,9 @@
       "output": 2.5
     },
     "kilocode/vertex_ai-language-models/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "kilocode/vertex_ai-language-models/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -32630,9 +32798,9 @@
       "output": 2.5
     },
     "kilocode/vertex_ai/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "kilocode/vertex_ai/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -33909,10 +34077,6 @@
     "libertai/qwen3.6-35b-a3b-thinking": {
       "input": 0.15,
       "output": 0.5
-    },
-    "liquid/lfm-2.5-2.6b:free": {
-      "input": 0,
-      "output": 0
     },
     "llamagate/codellama-7b": {
       "input": 0.06,
@@ -44459,6 +44623,10 @@
       "input": 5.00003,
       "output": 25.000010000000003
     },
+    "vercel-ai-gateway/databricks/databricks-claude-opus-4-6": {
+      "input": 5.00003,
+      "output": 25.000010000000003
+    },
     "vercel-ai-gateway/databricks/databricks-claude-sonnet-4": {
       "input": 2.9999900000000004,
       "output": 15.000020000000001
@@ -44471,6 +44639,10 @@
       "input": 2.9999900000000004,
       "output": 15.000020000000001
     },
+    "vercel-ai-gateway/databricks/databricks-claude-sonnet-4-6": {
+      "input": 2.9999900000000004,
+      "output": 15.000020000000001
+    },
     "vercel-ai-gateway/databricks/databricks-gemini-2-5-flash": {
       "input": 0.30001999999999995,
       "output": 2.49998
@@ -44478,6 +44650,22 @@
     "vercel-ai-gateway/databricks/databricks-gemini-2-5-pro": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "vercel-ai-gateway/databricks/databricks-gemini-3-1-flash-lite": {
+      "input": 0.31248,
+      "output": 1.87502
+    },
+    "vercel-ai-gateway/databricks/databricks-gemini-3-1-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "vercel-ai-gateway/databricks/databricks-gemini-3-flash": {
+      "input": 0.6250300000000001,
+      "output": 3.7499700000000002
+    },
+    "vercel-ai-gateway/databricks/databricks-gemini-3-pro": {
+      "input": 2.49998,
+      "output": 15.000020000000001
     },
     "vercel-ai-gateway/databricks/databricks-gemma-3-12b": {
       "input": 0.15000999999999998,
@@ -44490,6 +44678,38 @@
     "vercel-ai-gateway/databricks/databricks-gpt-5-1": {
       "input": 1.24999,
       "output": 9.999990000000002
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-1-codex-max": {
+      "input": 1.24999,
+      "output": 9.999990000000002
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-1-codex-mini": {
+      "input": 0.24997,
+      "output": 1.99997
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-2": {
+      "input": 1.75,
+      "output": 14
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-2-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-3-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-4": {
+      "input": 2.49998,
+      "output": 15.000020000000001
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-4-mini": {
+      "input": 0.74998,
+      "output": 4.50002
+    },
+    "vercel-ai-gateway/databricks/databricks-gpt-5-4-nano": {
+      "input": 0.19999,
+      "output": 1.24999
     },
     "vercel-ai-gateway/databricks/databricks-gpt-5-mini": {
       "input": 0.24997000000000005,
@@ -46301,9 +46521,9 @@
       "output": 2.5
     },
     "vercel-ai-gateway/gemini/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "vercel-ai-gateway/gemini/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -51837,9 +52057,9 @@
       "output": 2.5
     },
     "vercel-ai-gateway/vertex_ai-language-models/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "vercel-ai-gateway/vertex_ai-language-models/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -52175,9 +52395,9 @@
       "output": 2.5
     },
     "vercel-ai-gateway/vertex_ai/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "vercel-ai-gateway/vertex_ai/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -53207,9 +53427,9 @@
       "output": 2.5
     },
     "vertex_ai-language-models/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "vertex_ai-language-models/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -53545,9 +53765,9 @@
       "output": 2.5
     },
     "vertex_ai/gemini-3.6-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
     },
     "vertex_ai/gemini-3.7-flash": {
       "cacheRead": 0.075,
@@ -59785,5 +60005,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "a3cbb62ca7c8415a49d6564c2e762a4b7c204334"
+  "sourceCommit": "d16c2858bf8339727cc808329366efa90be259d5"
 }
