@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787214953033,
+  "generatedAt": 1787240978811,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -8485,6 +8485,7 @@
       "output": 1.1
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v3.1-terminus": {
+      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1
     },
@@ -8498,9 +8499,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017721200000000003,
-      "input": 0.088606,
-      "output": 0.177212
+      "cacheRead": 0.016800000000000002,
+      "input": 0.08399999999999999,
+      "output": 0.16799999999999998
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
@@ -11303,9 +11304,9 @@
       "output": 2.25
     },
     "cloudflare-ai-gateway/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "cloudflare-ai-gateway/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -14541,6 +14542,14 @@
       "input": 0.14,
       "output": 0.5700000000000001
     },
+    "cloudflare-ai-gateway/tencent/hy-mt2-1.8b": {
+      "input": 0.044,
+      "output": 0.17700000000000002
+    },
+    "cloudflare-ai-gateway/tencent/hy-mt2-30b-a3b": {
+      "input": 0.074,
+      "output": 0.295
+    },
     "cloudflare-ai-gateway/tencent/hy3": {
       "cacheRead": 0.032999999999999995,
       "input": 0.13199999999999998,
@@ -17633,6 +17642,7 @@
       "output": 1.1
     },
     "deepseek/deepseek-v3.1-terminus": {
+      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1
     },
@@ -25501,6 +25511,7 @@
       "output": 1.1
     },
     "kilocode/deepseek/deepseek-v3.1-terminus": {
+      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1
     },
@@ -25514,9 +25525,9 @@
       "output": 0.41
     },
     "kilocode/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017721200000000003,
-      "input": 0.088606,
-      "output": 0.177212
+      "cacheRead": 0.016800000000000002,
+      "input": 0.08399999999999999,
+      "output": 0.16799999999999998
     },
     "kilocode/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
@@ -28319,9 +28330,9 @@
       "output": 2.25
     },
     "kilocode/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "kilocode/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -31557,6 +31568,14 @@
       "input": 0.14,
       "output": 0.5700000000000001
     },
+    "kilocode/tencent/hy-mt2-1.8b": {
+      "input": 0.044,
+      "output": 0.17700000000000002
+    },
+    "kilocode/tencent/hy-mt2-30b-a3b": {
+      "input": 0.074,
+      "output": 0.295
+    },
     "kilocode/tencent/hy3": {
       "cacheRead": 0.032999999999999995,
       "input": 0.13199999999999998,
@@ -33708,9 +33727,9 @@
       "output": 2.25
     },
     "kimi-coding/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "kimi-coding/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -33835,9 +33854,9 @@
       "output": 2.25
     },
     "kimi/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "kimi/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -34714,9 +34733,9 @@
       "output": 2.25
     },
     "moonshot/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "moonshot/kimi-k2.7-code:batch": {
       "cacheRead": 0.19,
@@ -34811,9 +34830,9 @@
       "output": 2.25
     },
     "moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "moonshotai/kimi-k2.7-code:batch": {
       "cacheRead": 0.19,
@@ -37018,6 +37037,7 @@
       "output": 0.7999999999999999
     },
     "openrouter/deepseek/deepseek-v3.1-terminus": {
+      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1
     },
@@ -37031,9 +37051,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017721200000000003,
-      "input": 0.088606,
-      "output": 0.177212
+      "cacheRead": 0.016800000000000002,
+      "input": 0.08399999999999999,
+      "output": 0.16799999999999998
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
@@ -37504,9 +37524,9 @@
       "output": 2.25
     },
     "openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -38345,6 +38365,14 @@
     "openrouter/tencent/hunyuan-a13b-instruct": {
       "input": 0.14,
       "output": 0.5700000000000001
+    },
+    "openrouter/tencent/hy-mt2-1.8b": {
+      "input": 0.044,
+      "output": 0.17700000000000002
+    },
+    "openrouter/tencent/hy-mt2-30b-a3b": {
+      "input": 0.074,
+      "output": 0.295
     },
     "openrouter/tencent/hy3": {
       "cacheRead": 0.032999999999999995,
@@ -39532,6 +39560,14 @@
     "tencent/hunyuan-a13b-instruct": {
       "input": 0.14,
       "output": 0.5700000000000001
+    },
+    "tencent/hy-mt2-1.8b": {
+      "input": 0.044,
+      "output": 0.17700000000000002
+    },
+    "tencent/hy-mt2-30b-a3b": {
+      "input": 0.074,
+      "output": 0.295
     },
     "tencent/hy3": {
       "cacheRead": 0.032999999999999995,
@@ -45094,6 +45130,7 @@
       "output": 1.1
     },
     "vercel-ai-gateway/deepseek/deepseek-v3.1-terminus": {
+      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1
     },
@@ -45107,9 +45144,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017721200000000003,
-      "input": 0.088606,
-      "output": 0.177212
+      "cacheRead": 0.016800000000000002,
+      "input": 0.08399999999999999,
+      "output": 0.16799999999999998
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
@@ -47912,9 +47949,9 @@
       "output": 2.25
     },
     "vercel-ai-gateway/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4
+      "cacheRead": 0.0976,
+      "input": 0.5795,
+      "output": 2.44
     },
     "vercel-ai-gateway/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
@@ -51149,6 +51186,14 @@
     "vercel-ai-gateway/tencent/hunyuan-a13b-instruct": {
       "input": 0.14,
       "output": 0.5700000000000001
+    },
+    "vercel-ai-gateway/tencent/hy-mt2-1.8b": {
+      "input": 0.044,
+      "output": 0.17700000000000002
+    },
+    "vercel-ai-gateway/tencent/hy-mt2-30b-a3b": {
+      "input": 0.074,
+      "output": 0.295
     },
     "vercel-ai-gateway/tencent/hy3": {
       "cacheRead": 0.032999999999999995,
@@ -54657,7 +54702,6 @@
           "thinkingLevelMap": {
             "max": "max",
             "minimal": "low",
-            "off": "low",
             "xhigh": "xhigh"
           }
         },
@@ -54717,7 +54761,6 @@
           "thinkingLevelMap": {
             "max": "max",
             "minimal": "low",
-            "off": "low",
             "xhigh": "xhigh"
           }
         },
@@ -55806,10 +55849,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.017721200000000003,
+            "cacheRead": 0.016800000000000002,
             "cacheWrite": 0,
-            "input": 0.088606,
-            "output": 0.177212
+            "input": 0.08399999999999999,
+            "output": 0.16799999999999998
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -57434,6 +57477,170 @@
             "supportsTools": true,
             "supportsUsageInStreaming": true
           },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "deepseek-v4-flash",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-v4-flash",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "deepseek-v4-flash:0731",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-v4-flash:0731",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "deepseek-v4-flash:preview",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-v4-flash:preview",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "codeMode": "capable",
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "deepseek-v4-pro",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-v4-pro",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "deepseek-v4-pro:0813",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-v4-pro:0813",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 524288,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "deepseek-v4-pro:preview",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "deepseek-v4-pro:preview",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "gemma4",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "gemma4",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "gemma4:31b",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "gemma4:31b",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "codeMode": "capable",
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
           "contextWindow": 202752,
           "cost": {
             "cacheRead": 0,
@@ -57475,6 +57682,46 @@
             "supportsTools": true,
             "supportsUsageInStreaming": true
           },
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "gpt-oss:120b",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "gpt-oss:120b",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "gpt-oss:20b",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "gpt-oss:20b",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
@@ -57497,6 +57744,69 @@
             "supportsTools": true,
             "supportsUsageInStreaming": true
           },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "kimi-k2.6",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "kimi-k2.6",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "kimi-k2.7-code",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "kimi-k2.7-code",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "codeMode": "capable",
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.3,
+            "input": 3,
+            "output": 15
+          },
+          "id": "kimi-k3",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "kimi-k3",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
           "contextWindow": 196608,
           "cost": {
             "cacheRead": 0,
@@ -57510,6 +57820,150 @@
           ],
           "maxTokens": 8192,
           "name": "minimax-m2.7",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 524288,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "minimax-m3",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "minimax-m3",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "mistral-large-3:675b",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "mistral-large-3:675b",
+          "reasoning": false
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "nemotron-3-nano:30b",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "nemotron-3-nano:30b",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "nemotron-3-super",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "nemotron-3-super",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "nemotron-3-ultra",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "nemotron-3-ultra",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "qwen3.5",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "qwen3.5",
+          "reasoning": true
+        },
+        {
+          "compat": {
+            "supportsTools": true,
+            "supportsUsageInStreaming": true
+          },
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "qwen3.5:397b",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "qwen3.5:397b",
           "reasoning": true
         }
       ]
@@ -60005,5 +60459,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "1d2986b06fbe5d85bab5fda799abb880d28f3827"
+  "sourceCommit": "4fdfb8b1bf69c4b74656ada6c1f5bd7c970c5f48"
 }
