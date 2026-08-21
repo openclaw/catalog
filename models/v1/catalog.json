@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787272675682,
+  "generatedAt": 1787286945132,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -2494,6 +2494,11 @@
       "input": 2,
       "output": 10
     },
+    "bedrock_converse/global.xai.grok-4.6": {
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6
+    },
     "bedrock_converse/google.gemma-3-12b-it": {
       "input": 0.09,
       "output": 0.29
@@ -2820,6 +2825,11 @@
       "input": 0.6,
       "output": 6
     },
+    "bedrock_converse/us.xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
+    },
     "bedrock_converse/writer.palmyra-x4-v1:0": {
       "input": 2.5,
       "output": 10
@@ -2900,6 +2910,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1.25,
       "output": 2.5
+    },
+    "bedrock_mantle/xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
     },
     "bedrock/ai21.j2-mid-v1": {
       "input": 12.5,
@@ -3839,6 +3854,11 @@
     "cerebras/zai-glm-4.6": {
       "input": 2.25,
       "output": 2.75
+    },
+    "chat-latest": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30
     },
     "chatdolphin": {
       "input": 0.5,
@@ -6258,6 +6278,11 @@
       "input": 2,
       "output": 10
     },
+    "cloudflare-ai-gateway/bedrock_converse/global.xai.grok-4.6": {
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6
+    },
     "cloudflare-ai-gateway/bedrock_converse/google.gemma-3-12b-it": {
       "input": 0.09,
       "output": 0.29
@@ -6584,6 +6609,11 @@
       "input": 0.6,
       "output": 6
     },
+    "cloudflare-ai-gateway/bedrock_converse/us.xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
+    },
     "cloudflare-ai-gateway/bedrock_converse/writer.palmyra-x4-v1:0": {
       "input": 2.5,
       "output": 10
@@ -6664,6 +6694,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1.25,
       "output": 2.5
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
     },
     "cloudflare-ai-gateway/bedrock/ai21.j2-mid-v1": {
       "input": 12.5,
@@ -7743,6 +7778,16 @@
       "input": 0,
       "output": 0
     },
+    "cloudflare-ai-gateway/cognition/swe-1.6": {
+      "cacheRead": 0.19999999999999998,
+      "input": 0.5,
+      "output": 2.5
+    },
+    "cloudflare-ai-gateway/cognition/swe-1.7": {
+      "cacheRead": 1,
+      "input": 2.5,
+      "output": 12.5
+    },
     "cloudflare-ai-gateway/cognitivecomputations/dolphin-mistral-24b-venice-edition": {
       "input": 0.19999999999999998,
       "output": 0.8999999999999999
@@ -8731,6 +8776,11 @@
       "input": 0.14,
       "output": 0.28
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
       "cacheRead": 0.145,
       "input": 1.74,
@@ -8948,6 +8998,11 @@
       "input": 0.95,
       "output": 4
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/llama-guard-2-8b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
@@ -9163,8 +9218,23 @@
       "input": 0.5,
       "output": 0.5
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/mythomax-l2-13b": {
       "input": 0.19999999999999998,
+      "output": 0.19999999999999998
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
       "output": 0.19999999999999998
     },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/nemotron-nano-v2-12b-vl": {
@@ -9536,6 +9606,11 @@
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/qwq-32b": {
       "input": 0.8999999999999999,
       "output": 0.8999999999999999
@@ -9613,6 +9688,16 @@
       "input": 2.8,
       "output": 8.8
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -9623,7 +9708,22 @@
       "input": 1.9,
       "output": 8
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "cloudflare-ai-gateway/fireworks_ai/deepseek-v4-flash": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "cloudflare-ai-gateway/fireworks_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.14,
       "output": 0.28
@@ -9677,6 +9777,16 @@
       "input": 1.4,
       "output": 4.4
     },
+    "cloudflare-ai-gateway/fireworks_ai/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "cloudflare-ai-gateway/fireworks_ai/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "cloudflare-ai-gateway/fireworks_ai/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -9712,6 +9822,21 @@
       "input": 1.9,
       "output": 8
     },
+    "cloudflare-ai-gateway/fireworks_ai/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "cloudflare-ai-gateway/fireworks_ai/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "cloudflare-ai-gateway/fireworks_ai/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "cloudflare-ai-gateway/fireworks_ai/minimax-m2p1": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -9727,6 +9852,21 @@
       "input": 0.3,
       "output": 1.2
     },
+    "cloudflare-ai-gateway/fireworks_ai/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
+    "cloudflare-ai-gateway/fireworks_ai/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "cloudflare-ai-gateway/fireworks_ai/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
+      "output": 0.19999999999999998
+    },
     "cloudflare-ai-gateway/fireworks_ai/nomic-ai/nomic-embed-text-v1": {
       "input": 0.008,
       "output": 0
@@ -9739,6 +9879,11 @@
       "cacheRead": 0.08,
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
+    },
+    "cloudflare-ai-gateway/fireworks_ai/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "cloudflare-ai-gateway/fireworks_ai/thenlper/gte-base": {
       "input": 0.008,
@@ -9871,15 +10016,19 @@
       "output": 12
     },
     "cloudflare-ai-gateway/gemini/gemini-3.1-flash-image": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "cloudflare-ai-gateway/gemini/gemini-3.1-flash-image-preview": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "cloudflare-ai-gateway/gemini/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "cloudflare-ai-gateway/gemini/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -9915,6 +10064,10 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5
+    },
+    "cloudflare-ai-gateway/gemini/gemini-3.5-live-translate-preview": {
+      "input": 3.5,
+      "output": 21
     },
     "cloudflare-ai-gateway/gemini/gemini-3.6-flash": {
       "cacheRead": 0.075,
@@ -10852,9 +11005,9 @@
       "output": 2.4
     },
     "cloudflare-ai-gateway/minimax/minimax-m2.5": {
-      "cacheRead": 0.06,
-      "input": 0.22499999999999998,
-      "output": 0.8999999999999999
+      "cacheRead": 0.03,
+      "input": 0.27,
+      "output": 0.95
     },
     "cloudflare-ai-gateway/minimax/MiniMax-M2.5": {
       "cacheRead": 0.03,
@@ -10897,8 +11050,8 @@
       "output": 0.8999999999999999
     },
     "cloudflare-ai-gateway/mistral/codestral-latest": {
-      "input": 1,
-      "output": 3
+      "input": 0.3,
+      "output": 0.8999999999999999
     },
     "cloudflare-ai-gateway/mistral/codestral-mamba-latest": {
       "input": 0.25,
@@ -10931,6 +11084,11 @@
     "cloudflare-ai-gateway/mistral/devstral-small-latest": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "cloudflare-ai-gateway/mistral/glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "cloudflare-ai-gateway/mistral/labs-devstral-small-2512": {
       "input": 0.09999999999999999,
@@ -11061,8 +11219,8 @@
       "output": 0.18
     },
     "cloudflare-ai-gateway/mistral/mistral-small-latest": {
-      "input": 0.06,
-      "output": 0.18
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/mistral/mistral-tiny": {
       "input": 0.25,
@@ -11103,6 +11261,11 @@
     "cloudflare-ai-gateway/mistral/pixtral-large-latest": {
       "input": 2,
       "output": 6
+    },
+    "cloudflare-ai-gateway/mistral/zai-glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "cloudflare-ai-gateway/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -11227,6 +11390,11 @@
       "cacheRead": 0.16,
       "input": 0.95,
       "output": 4
+    },
+    "cloudflare-ai-gateway/moonshot/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "cloudflare-ai-gateway/moonshot/kimi-latest": {
       "cacheRead": 0.15,
@@ -12231,6 +12399,11 @@
       "input": 0,
       "output": 0
     },
+    "cloudflare-ai-gateway/openai/chat-latest": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30
+    },
     "cloudflare-ai-gateway/openai/chatgpt-4o-latest": {
       "input": 5,
       "output": 15
@@ -12239,6 +12412,18 @@
       "cacheRead": 0.375,
       "input": 1.5,
       "output": 6
+    },
+    "cloudflare-ai-gateway/openai/daybreak-blue-latest": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
+    "cloudflare-ai-gateway/openai/daybreak-red-latest": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "cloudflare-ai-gateway/openai/ft:gpt-3.5-turbo": {
       "input": 3,
@@ -12821,6 +13006,12 @@
       "input": 5,
       "output": 30
     },
+    "cloudflare-ai-gateway/openai/gpt-5.6-cyber": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
+    },
     "cloudflare-ai-gateway/openai/gpt-5.6-luna": {
       "cacheRead": 0.02,
       "cacheWrite": 0.25,
@@ -13203,6 +13394,12 @@
       "input": 5,
       "output": 25
     },
+    "cloudflare-ai-gateway/openrouter/anthropic/claude-opus-5": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25
+    },
     "cloudflare-ai-gateway/openrouter/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -13252,6 +13449,14 @@
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v3.2-exp": {
       "input": 0.19999999999999998,
       "output": 0.39999999999999997
+    },
+    "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
+      "input": 1.32,
+      "output": 3.9600000000000004
+    },
+    "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
+      "input": 1.32,
+      "output": 3.9600000000000004
     },
     "cloudflare-ai-gateway/openrouter/google/gemini-2.0-flash-001": {
       "input": 0.09999999999999999,
@@ -13701,6 +13906,26 @@
       "input": 0.07,
       "output": 0.28
     },
+    "cloudflare-ai-gateway/perplexity/perplexity/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.13,
+      "output": 0.26
+    },
+    "cloudflare-ai-gateway/perplexity/perplexity/glm-5.2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "cloudflare-ai-gateway/perplexity/perplexity/kimi-k2.7-code": {
+      "cacheRead": 0.19,
+      "input": 0.95,
+      "output": 4
+    },
+    "cloudflare-ai-gateway/perplexity/perplexity/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "cloudflare-ai-gateway/perplexity/pplx-70b-chat": {
       "input": 0.7,
       "output": 2.8
@@ -13716,6 +13941,14 @@
     "cloudflare-ai-gateway/perplexity/pplx-7b-online": {
       "input": 0,
       "output": 0.28
+    },
+    "cloudflare-ai-gateway/perplexity/pplx-embed-context-v1-0.6b": {
+      "input": 0.008,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/perplexity/pplx-embed-context-v1-4b": {
+      "input": 0.049999999999999996,
+      "output": 0
     },
     "cloudflare-ai-gateway/perplexity/pplx-embed-v1-0.6b": {
       "input": 0.004,
@@ -15439,6 +15672,10 @@
       "input": 0.25,
       "output": 1.5
     },
+    "cloudflare-ai-gateway/vertex_ai-language-models/gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "output": 1.5
+    },
     "cloudflare-ai-gateway/vertex_ai-language-models/gemini-3.1-flash-lite-preview": {
       "cacheRead": 0.024999999999999998,
       "input": 0.25,
@@ -15734,8 +15971,8 @@
       "output": 5.4
     },
     "cloudflare-ai-gateway/vertex_ai/deepseek-ai/deepseek-v3.1-maas": {
-      "input": 1.35,
-      "output": 5.4
+      "input": 0.6,
+      "output": 1.7
     },
     "cloudflare-ai-gateway/vertex_ai/deepseek-ai/deepseek-v3.2-maas": {
       "input": 0.56,
@@ -15774,6 +16011,10 @@
     },
     "cloudflare-ai-gateway/vertex_ai/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "cloudflare-ai-gateway/vertex_ai/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -15953,20 +16194,20 @@
       "output": 2.5
     },
     "cloudflare-ai-gateway/vertex_ai/openai/gpt-oss-120b-maas": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.09,
+      "output": 0.36
     },
     "cloudflare-ai-gateway/vertex_ai/openai/gpt-oss-20b-maas": {
       "input": 0.075,
       "output": 0.3
     },
     "cloudflare-ai-gateway/vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas": {
-      "input": 0.25,
-      "output": 1
+      "input": 0.22,
+      "output": 0.88
     },
     "cloudflare-ai-gateway/vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas": {
-      "input": 1,
-      "output": 4
+      "input": 0.22,
+      "output": 1.7999999999999998
     },
     "cloudflare-ai-gateway/vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas": {
       "input": 0.15,
@@ -16077,6 +16318,18 @@
       "input": 0.02,
       "output": 0
     },
+    "cloudflare-ai-gateway/voyage/voyage-4": {
+      "input": 0.06,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/voyage/voyage-4-large": {
+      "input": 0.12,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/voyage/voyage-4-lite": {
+      "input": 0.02,
+      "output": 0
+    },
     "cloudflare-ai-gateway/voyage/voyage-code-2": {
       "input": 0.12,
       "output": 0
@@ -16085,8 +16338,16 @@
       "input": 0.18,
       "output": 0
     },
+    "cloudflare-ai-gateway/voyage/voyage-code-4": {
+      "input": 0.12,
+      "output": 0
+    },
     "cloudflare-ai-gateway/voyage/voyage-context-3": {
       "input": 0.18,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/voyage/voyage-context-4": {
+      "input": 0.12,
       "output": 0
     },
     "cloudflare-ai-gateway/voyage/voyage-finance-2": {
@@ -16110,6 +16371,10 @@
       "output": 0
     },
     "cloudflare-ai-gateway/voyage/voyage-multimodal-3": {
+      "input": 0.12,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/voyage/voyage-multimodal-3.5": {
       "input": 0.12,
       "output": 0
     },
@@ -16806,6 +17071,16 @@
       "input": 1.5,
       "output": 6
     },
+    "cognition/swe-1.6": {
+      "cacheRead": 0.19999999999999998,
+      "input": 0.5,
+      "output": 2.5
+    },
+    "cognition/swe-1.7": {
+      "cacheRead": 1,
+      "input": 2.5,
+      "output": 12.5
+    },
     "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
       "input": 0.19999999999999998,
       "output": 0.8999999999999999
@@ -17305,6 +17580,18 @@
     "davinci-002": {
       "input": 2,
       "output": 2
+    },
+    "daybreak-blue-latest": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
+    "daybreak-red-latest": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "deep-research-pro-preview-12-2025": {
       "input": 2,
@@ -18104,6 +18391,11 @@
       "input": 0.14,
       "output": 0.28
     },
+    "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
     "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
       "cacheRead": 0.145,
       "input": 1.74,
@@ -18321,6 +18613,11 @@
       "input": 0.95,
       "output": 4
     },
+    "fireworks_ai/accounts/fireworks/models/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "fireworks_ai/accounts/fireworks/models/llama-guard-2-8b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
@@ -18536,8 +18833,23 @@
       "input": 0.5,
       "output": 0.5
     },
+    "fireworks_ai/accounts/fireworks/models/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
     "fireworks_ai/accounts/fireworks/models/mythomax-l2-13b": {
       "input": 0.19999999999999998,
+      "output": 0.19999999999999998
+    },
+    "fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
       "output": 0.19999999999999998
     },
     "fireworks_ai/accounts/fireworks/models/nemotron-nano-v2-12b-vl": {
@@ -18909,6 +19221,11 @@
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
     },
+    "fireworks_ai/accounts/fireworks/models/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "fireworks_ai/accounts/fireworks/models/qwq-32b": {
       "input": 0.8999999999999999,
       "output": 0.8999999999999999
@@ -18986,6 +19303,16 @@
       "input": 2.8,
       "output": 8.8
     },
+    "fireworks_ai/accounts/fireworks/routers/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "fireworks_ai/accounts/fireworks/routers/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -18996,7 +19323,22 @@
       "input": 1.9,
       "output": 8
     },
+    "fireworks_ai/accounts/fireworks/routers/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "fireworks_ai/accounts/fireworks/routers/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "fireworks_ai/deepseek-v4-flash": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "fireworks_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.14,
       "output": 0.28
@@ -19050,6 +19392,16 @@
       "input": 1.4,
       "output": 4.4
     },
+    "fireworks_ai/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "fireworks_ai/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "fireworks_ai/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -19085,6 +19437,21 @@
       "input": 1.9,
       "output": 8
     },
+    "fireworks_ai/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "fireworks_ai/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "fireworks_ai/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "fireworks_ai/minimax-m2p1": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -19100,6 +19467,21 @@
       "input": 0.3,
       "output": 1.2
     },
+    "fireworks_ai/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
+    "fireworks_ai/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "fireworks_ai/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
+      "output": 0.19999999999999998
+    },
     "fireworks_ai/nomic-ai/nomic-embed-text-v1": {
       "input": 0.008,
       "output": 0
@@ -19112,6 +19494,11 @@
       "cacheRead": 0.08,
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
+    },
+    "fireworks_ai/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "fireworks_ai/thenlper/gte-base": {
       "input": 0.008,
@@ -19343,6 +19730,10 @@
       "input": 0.25,
       "output": 1.5
     },
+    "gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "output": 1.5
+    },
     "gemini-3.1-flash-lite-preview": {
       "cacheRead": 0.024999999999999998,
       "input": 0.25,
@@ -19542,15 +19933,19 @@
       "output": 12
     },
     "gemini/gemini-3.1-flash-image": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "gemini/gemini-3.1-flash-image-preview": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "gemini/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "gemini/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -19586,6 +19981,10 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5
+    },
+    "gemini/gemini-3.5-live-translate-preview": {
+      "input": 3.5,
+      "output": 21
     },
     "gemini/gemini-3.6-flash": {
       "cacheRead": 0.075,
@@ -19787,6 +20186,11 @@
       "cacheWrite": 2.5,
       "input": 2,
       "output": 10
+    },
+    "global.xai.grok-4.6": {
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6
     },
     "gmi/anthropic/claude-opus-4": {
       "input": 15,
@@ -20646,6 +21050,12 @@
       "cacheWrite": 6.25,
       "input": 5,
       "output": 30
+    },
+    "gpt-5.6-cyber": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "gpt-audio": {
       "input": 2.5,
@@ -23292,6 +23702,11 @@
       "input": 2,
       "output": 10
     },
+    "kilocode/bedrock_converse/global.xai.grok-4.6": {
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6
+    },
     "kilocode/bedrock_converse/google.gemma-3-12b-it": {
       "input": 0.09,
       "output": 0.29
@@ -23618,6 +24033,11 @@
       "input": 0.6,
       "output": 6
     },
+    "kilocode/bedrock_converse/us.xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
+    },
     "kilocode/bedrock_converse/writer.palmyra-x4-v1:0": {
       "input": 2.5,
       "output": 10
@@ -23698,6 +24118,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1.25,
       "output": 2.5
+    },
+    "kilocode/bedrock_mantle/xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
     },
     "kilocode/bedrock/ai21.j2-mid-v1": {
       "input": 12.5,
@@ -24777,6 +25202,16 @@
       "input": 0,
       "output": 0
     },
+    "kilocode/cognition/swe-1.6": {
+      "cacheRead": 0.19999999999999998,
+      "input": 0.5,
+      "output": 2.5
+    },
+    "kilocode/cognition/swe-1.7": {
+      "cacheRead": 1,
+      "input": 2.5,
+      "output": 12.5
+    },
     "kilocode/cognitivecomputations/dolphin-mistral-24b-venice-edition": {
       "input": 0.19999999999999998,
       "output": 0.8999999999999999
@@ -25765,6 +26200,11 @@
       "input": 0.14,
       "output": 0.28
     },
+    "kilocode/fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
     "kilocode/fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
       "cacheRead": 0.145,
       "input": 1.74,
@@ -25982,6 +26422,11 @@
       "input": 0.95,
       "output": 4
     },
+    "kilocode/fireworks_ai/accounts/fireworks/models/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "kilocode/fireworks_ai/accounts/fireworks/models/llama-guard-2-8b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
@@ -26197,8 +26642,23 @@
       "input": 0.5,
       "output": 0.5
     },
+    "kilocode/fireworks_ai/accounts/fireworks/models/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
     "kilocode/fireworks_ai/accounts/fireworks/models/mythomax-l2-13b": {
       "input": 0.19999999999999998,
+      "output": 0.19999999999999998
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
       "output": 0.19999999999999998
     },
     "kilocode/fireworks_ai/accounts/fireworks/models/nemotron-nano-v2-12b-vl": {
@@ -26570,6 +27030,11 @@
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
     },
+    "kilocode/fireworks_ai/accounts/fireworks/models/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "kilocode/fireworks_ai/accounts/fireworks/models/qwq-32b": {
       "input": 0.8999999999999999,
       "output": 0.8999999999999999
@@ -26647,6 +27112,16 @@
       "input": 2.8,
       "output": 8.8
     },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "kilocode/fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -26657,7 +27132,22 @@
       "input": 1.9,
       "output": 8
     },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "kilocode/fireworks_ai/deepseek-v4-flash": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "kilocode/fireworks_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.14,
       "output": 0.28
@@ -26711,6 +27201,16 @@
       "input": 1.4,
       "output": 4.4
     },
+    "kilocode/fireworks_ai/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "kilocode/fireworks_ai/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "kilocode/fireworks_ai/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -26746,6 +27246,21 @@
       "input": 1.9,
       "output": 8
     },
+    "kilocode/fireworks_ai/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "kilocode/fireworks_ai/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "kilocode/fireworks_ai/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "kilocode/fireworks_ai/minimax-m2p1": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -26761,6 +27276,21 @@
       "input": 0.3,
       "output": 1.2
     },
+    "kilocode/fireworks_ai/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
+    "kilocode/fireworks_ai/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "kilocode/fireworks_ai/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
+      "output": 0.19999999999999998
+    },
     "kilocode/fireworks_ai/nomic-ai/nomic-embed-text-v1": {
       "input": 0.008,
       "output": 0
@@ -26773,6 +27303,11 @@
       "cacheRead": 0.08,
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
+    },
+    "kilocode/fireworks_ai/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "kilocode/fireworks_ai/thenlper/gte-base": {
       "input": 0.008,
@@ -26905,15 +27440,19 @@
       "output": 12
     },
     "kilocode/gemini/gemini-3.1-flash-image": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "kilocode/gemini/gemini-3.1-flash-image-preview": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "kilocode/gemini/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "kilocode/gemini/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -26949,6 +27488,10 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5
+    },
+    "kilocode/gemini/gemini-3.5-live-translate-preview": {
+      "input": 3.5,
+      "output": 21
     },
     "kilocode/gemini/gemini-3.6-flash": {
       "cacheRead": 0.075,
@@ -27886,9 +28429,9 @@
       "output": 2.4
     },
     "kilocode/minimax/minimax-m2.5": {
-      "cacheRead": 0.06,
-      "input": 0.22499999999999998,
-      "output": 0.8999999999999999
+      "cacheRead": 0.03,
+      "input": 0.27,
+      "output": 0.95
     },
     "kilocode/minimax/MiniMax-M2.5": {
       "cacheRead": 0.03,
@@ -27931,8 +28474,8 @@
       "output": 0.8999999999999999
     },
     "kilocode/mistral/codestral-latest": {
-      "input": 1,
-      "output": 3
+      "input": 0.3,
+      "output": 0.8999999999999999
     },
     "kilocode/mistral/codestral-mamba-latest": {
       "input": 0.25,
@@ -27965,6 +28508,11 @@
     "kilocode/mistral/devstral-small-latest": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "kilocode/mistral/glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "kilocode/mistral/labs-devstral-small-2512": {
       "input": 0.09999999999999999,
@@ -28095,8 +28643,8 @@
       "output": 0.18
     },
     "kilocode/mistral/mistral-small-latest": {
-      "input": 0.06,
-      "output": 0.18
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/mistral/mistral-tiny": {
       "input": 0.25,
@@ -28137,6 +28685,11 @@
     "kilocode/mistral/pixtral-large-latest": {
       "input": 2,
       "output": 6
+    },
+    "kilocode/mistral/zai-glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "kilocode/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -28261,6 +28814,11 @@
       "cacheRead": 0.16,
       "input": 0.95,
       "output": 4
+    },
+    "kilocode/moonshot/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "kilocode/moonshot/kimi-latest": {
       "cacheRead": 0.15,
@@ -29265,6 +29823,11 @@
       "input": 0,
       "output": 0
     },
+    "kilocode/openai/chat-latest": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30
+    },
     "kilocode/openai/chatgpt-4o-latest": {
       "input": 5,
       "output": 15
@@ -29273,6 +29836,18 @@
       "cacheRead": 0.375,
       "input": 1.5,
       "output": 6
+    },
+    "kilocode/openai/daybreak-blue-latest": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
+    "kilocode/openai/daybreak-red-latest": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "kilocode/openai/ft:gpt-3.5-turbo": {
       "input": 3,
@@ -29855,6 +30430,12 @@
       "input": 5,
       "output": 30
     },
+    "kilocode/openai/gpt-5.6-cyber": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
+    },
     "kilocode/openai/gpt-5.6-luna": {
       "cacheRead": 0.02,
       "cacheWrite": 0.25,
@@ -30237,6 +30818,12 @@
       "input": 5,
       "output": 25
     },
+    "kilocode/openrouter/anthropic/claude-opus-5": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25
+    },
     "kilocode/openrouter/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -30286,6 +30873,14 @@
     "kilocode/openrouter/deepseek/deepseek-v3.2-exp": {
       "input": 0.19999999999999998,
       "output": 0.39999999999999997
+    },
+    "kilocode/openrouter/deepseek/deepseek-v4-pro": {
+      "input": 1.32,
+      "output": 3.9600000000000004
+    },
+    "kilocode/openrouter/deepseek/deepseek-v4-pro-0813": {
+      "input": 1.32,
+      "output": 3.9600000000000004
     },
     "kilocode/openrouter/google/gemini-2.0-flash-001": {
       "input": 0.09999999999999999,
@@ -30735,6 +31330,26 @@
       "input": 0.07,
       "output": 0.28
     },
+    "kilocode/perplexity/perplexity/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.13,
+      "output": 0.26
+    },
+    "kilocode/perplexity/perplexity/glm-5.2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "kilocode/perplexity/perplexity/kimi-k2.7-code": {
+      "cacheRead": 0.19,
+      "input": 0.95,
+      "output": 4
+    },
+    "kilocode/perplexity/perplexity/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "kilocode/perplexity/pplx-70b-chat": {
       "input": 0.7,
       "output": 2.8
@@ -30750,6 +31365,14 @@
     "kilocode/perplexity/pplx-7b-online": {
       "input": 0,
       "output": 0.28
+    },
+    "kilocode/perplexity/pplx-embed-context-v1-0.6b": {
+      "input": 0.008,
+      "output": 0
+    },
+    "kilocode/perplexity/pplx-embed-context-v1-4b": {
+      "input": 0.049999999999999996,
+      "output": 0
     },
     "kilocode/perplexity/pplx-embed-v1-0.6b": {
       "input": 0.004,
@@ -32473,6 +33096,10 @@
       "input": 0.25,
       "output": 1.5
     },
+    "kilocode/vertex_ai-language-models/gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "output": 1.5
+    },
     "kilocode/vertex_ai-language-models/gemini-3.1-flash-lite-preview": {
       "cacheRead": 0.024999999999999998,
       "input": 0.25,
@@ -32768,8 +33395,8 @@
       "output": 5.4
     },
     "kilocode/vertex_ai/deepseek-ai/deepseek-v3.1-maas": {
-      "input": 1.35,
-      "output": 5.4
+      "input": 0.6,
+      "output": 1.7
     },
     "kilocode/vertex_ai/deepseek-ai/deepseek-v3.2-maas": {
       "input": 0.56,
@@ -32808,6 +33435,10 @@
     },
     "kilocode/vertex_ai/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "kilocode/vertex_ai/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -32987,20 +33618,20 @@
       "output": 2.5
     },
     "kilocode/vertex_ai/openai/gpt-oss-120b-maas": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.09,
+      "output": 0.36
     },
     "kilocode/vertex_ai/openai/gpt-oss-20b-maas": {
       "input": 0.075,
       "output": 0.3
     },
     "kilocode/vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas": {
-      "input": 0.25,
-      "output": 1
+      "input": 0.22,
+      "output": 0.88
     },
     "kilocode/vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas": {
-      "input": 1,
-      "output": 4
+      "input": 0.22,
+      "output": 1.7999999999999998
     },
     "kilocode/vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas": {
       "input": 0.15,
@@ -33111,6 +33742,18 @@
       "input": 0.02,
       "output": 0
     },
+    "kilocode/voyage/voyage-4": {
+      "input": 0.06,
+      "output": 0
+    },
+    "kilocode/voyage/voyage-4-large": {
+      "input": 0.12,
+      "output": 0
+    },
+    "kilocode/voyage/voyage-4-lite": {
+      "input": 0.02,
+      "output": 0
+    },
     "kilocode/voyage/voyage-code-2": {
       "input": 0.12,
       "output": 0
@@ -33119,8 +33762,16 @@
       "input": 0.18,
       "output": 0
     },
+    "kilocode/voyage/voyage-code-4": {
+      "input": 0.12,
+      "output": 0
+    },
     "kilocode/voyage/voyage-context-3": {
       "input": 0.18,
+      "output": 0
+    },
+    "kilocode/voyage/voyage-context-4": {
+      "input": 0.12,
       "output": 0
     },
     "kilocode/voyage/voyage-finance-2": {
@@ -33144,6 +33795,10 @@
       "output": 0
     },
     "kilocode/voyage/voyage-multimodal-3": {
+      "input": 0.12,
+      "output": 0
+    },
+    "kilocode/voyage/voyage-multimodal-3.5": {
       "input": 0.12,
       "output": 0
     },
@@ -34349,9 +35004,9 @@
       "output": 2.4
     },
     "minimax/minimax-m2.5": {
-      "cacheRead": 0.06,
-      "input": 0.22499999999999998,
-      "output": 0.8999999999999999
+      "cacheRead": 0.03,
+      "input": 0.27,
+      "output": 0.95
     },
     "minimax/MiniMax-M2.5": {
       "cacheRead": 0.03,
@@ -34472,6 +35127,11 @@
     "mistral/devstral-small-latest": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "mistral/glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "mistral/labs-devstral-small-2512": {
       "input": 0.09999999999999999,
@@ -34624,6 +35284,11 @@
     "mistral/pixtral-large-latest": {
       "input": 2,
       "output": 6
+    },
+    "mistral/zai-glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -35803,6 +36468,11 @@
       "input": 0.07,
       "output": 0.19999999999999998
     },
+    "openai/chat-latest": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30
+    },
     "openai/chatgpt-4o-latest": {
       "input": 5,
       "output": 15
@@ -35811,6 +36481,18 @@
       "cacheRead": 0.375,
       "input": 1.5,
       "output": 6
+    },
+    "openai/daybreak-blue-latest": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
+    "openai/daybreak-red-latest": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "openai/ft:gpt-3.5-turbo": {
       "input": 3,
@@ -36364,6 +37046,12 @@
       "cacheWrite": 6.25,
       "input": 5,
       "output": 30
+    },
+    "openai/gpt-5.6-cyber": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "openai/gpt-5.6-luna-pro": {
       "cacheRead": 0.02,
@@ -37429,9 +38117,9 @@
       "output": 1.2
     },
     "openrouter/minimax/minimax-m2.5": {
-      "cacheRead": 0.06,
-      "input": 0.22499999999999998,
-      "output": 0.8999999999999999
+      "cacheRead": 0.03,
+      "input": 0.27,
+      "output": 0.95
     },
     "openrouter/minimax/minimax-m2.7": {
       "cacheRead": 0.06,
@@ -38693,6 +39381,26 @@
       "input": 0.07,
       "output": 0.28
     },
+    "perplexity/perplexity/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.13,
+      "output": 0.26
+    },
+    "perplexity/perplexity/glm-5.2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "perplexity/perplexity/kimi-k2.7-code": {
+      "cacheRead": 0.19,
+      "input": 0.95,
+      "output": 4
+    },
+    "perplexity/perplexity/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "perplexity/pplx-70b-chat": {
       "input": 0.7,
       "output": 2.8
@@ -38708,6 +39416,14 @@
     "perplexity/pplx-7b-online": {
       "input": 0,
       "output": 0.28
+    },
+    "perplexity/pplx-embed-context-v1-0.6b": {
+      "input": 0.008,
+      "output": 0
+    },
+    "perplexity/pplx-embed-context-v1-4b": {
+      "input": 0.049999999999999996,
+      "output": 0
     },
     "perplexity/pplx-embed-v1-0.6b": {
       "input": 0.004,
@@ -40194,6 +40910,11 @@
     "us.writer.palmyra-x5-v1:0": {
       "input": 0.6,
       "output": 6
+    },
+    "us.xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
     },
     "v0/v0-1.0-md": {
       "input": 3,
@@ -42939,6 +43660,11 @@
       "input": 2,
       "output": 10
     },
+    "vercel-ai-gateway/bedrock_converse/global.xai.grok-4.6": {
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6
+    },
     "vercel-ai-gateway/bedrock_converse/google.gemma-3-12b-it": {
       "input": 0.09,
       "output": 0.29
@@ -43265,6 +43991,11 @@
       "input": 0.6,
       "output": 6
     },
+    "vercel-ai-gateway/bedrock_converse/us.xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
+    },
     "vercel-ai-gateway/bedrock_converse/writer.palmyra-x4-v1:0": {
       "input": 2.5,
       "output": 10
@@ -43345,6 +44076,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1.25,
       "output": 2.5
+    },
+    "vercel-ai-gateway/bedrock_mantle/xai.grok-4.6": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 6.6000000000000005
     },
     "vercel-ai-gateway/bedrock/ai21.j2-mid-v1": {
       "input": 12.5,
@@ -44424,6 +45160,16 @@
       "input": 0,
       "output": 0
     },
+    "vercel-ai-gateway/cognition/swe-1.6": {
+      "cacheRead": 0.19999999999999998,
+      "input": 0.5,
+      "output": 2.5
+    },
+    "vercel-ai-gateway/cognition/swe-1.7": {
+      "cacheRead": 1,
+      "input": 2.5,
+      "output": 12.5
+    },
     "vercel-ai-gateway/cognitivecomputations/dolphin-mistral-24b-venice-edition": {
       "input": 0.19999999999999998,
       "output": 0.8999999999999999
@@ -45412,6 +46158,11 @@
       "input": 0.14,
       "output": 0.28
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/deepseek-v4-pro": {
       "cacheRead": 0.145,
       "input": 1.74,
@@ -45629,6 +46380,11 @@
       "input": 0.95,
       "output": 4
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/llama-guard-2-8b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
@@ -45844,8 +46600,23 @@
       "input": 0.5,
       "output": 0.5
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/mythomax-l2-13b": {
       "input": 0.19999999999999998,
+      "output": 0.19999999999999998
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
       "output": 0.19999999999999998
     },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/nemotron-nano-v2-12b-vl": {
@@ -46217,6 +46988,11 @@
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/qwq-32b": {
       "input": 0.8999999999999999,
       "output": 0.8999999999999999
@@ -46294,6 +47070,16 @@
       "input": 2.8,
       "output": 8.8
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -46304,7 +47090,22 @@
       "input": 1.9,
       "output": 8
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "vercel-ai-gateway/fireworks_ai/deepseek-v4-flash": {
+      "cacheRead": 0.028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "vercel-ai-gateway/fireworks_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.14,
       "output": 0.28
@@ -46358,6 +47159,16 @@
       "input": 1.4,
       "output": 4.4
     },
+    "vercel-ai-gateway/fireworks_ai/glm-5p2-fast": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "vercel-ai-gateway/fireworks_ai/glm-5p2-fast-us": {
+      "cacheRead": 0.21,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
     "vercel-ai-gateway/fireworks_ai/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -46393,6 +47204,21 @@
       "input": 1.9,
       "output": 8
     },
+    "vercel-ai-gateway/fireworks_ai/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "vercel-ai-gateway/fireworks_ai/kimi-k3-fast": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
+    "vercel-ai-gateway/fireworks_ai/kimi-k3-us": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 16.5
+    },
     "vercel-ai-gateway/fireworks_ai/minimax-m2p1": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -46408,6 +47234,21 @@
       "input": 0.3,
       "output": 1.2
     },
+    "vercel-ai-gateway/fireworks_ai/muse-glimmer-30b": {
+      "cacheRead": 0.04,
+      "input": 0.35,
+      "output": 1.5
+    },
+    "vercel-ai-gateway/fireworks_ai/nemotron-3-ultra-nvfp4": {
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4
+    },
+    "vercel-ai-gateway/fireworks_ai/nemotron-lightning-3p5-30b-a3b": {
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
+      "output": 0.19999999999999998
+    },
     "vercel-ai-gateway/fireworks_ai/nomic-ai/nomic-embed-text-v1": {
       "input": 0.008,
       "output": 0
@@ -46420,6 +47261,11 @@
       "cacheRead": 0.08,
       "input": 0.39999999999999997,
       "output": 1.5999999999999999
+    },
+    "vercel-ai-gateway/fireworks_ai/qwen3p8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "vercel-ai-gateway/fireworks_ai/thenlper/gte-base": {
       "input": 0.008,
@@ -46552,15 +47398,19 @@
       "output": 12
     },
     "vercel-ai-gateway/gemini/gemini-3.1-flash-image": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "vercel-ai-gateway/gemini/gemini-3.1-flash-image-preview": {
-      "input": 0.25,
-      "output": 1.5
+      "input": 0.5,
+      "output": 3
     },
     "vercel-ai-gateway/gemini/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "vercel-ai-gateway/gemini/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -46596,6 +47446,10 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5
+    },
+    "vercel-ai-gateway/gemini/gemini-3.5-live-translate-preview": {
+      "input": 3.5,
+      "output": 21
     },
     "vercel-ai-gateway/gemini/gemini-3.6-flash": {
       "cacheRead": 0.075,
@@ -47533,9 +48387,9 @@
       "output": 2.4
     },
     "vercel-ai-gateway/minimax/minimax-m2.5": {
-      "cacheRead": 0.06,
-      "input": 0.22499999999999998,
-      "output": 0.8999999999999999
+      "cacheRead": 0.03,
+      "input": 0.27,
+      "output": 0.95
     },
     "vercel-ai-gateway/minimax/MiniMax-M2.5": {
       "cacheRead": 0.03,
@@ -47578,8 +48432,8 @@
       "output": 0.8999999999999999
     },
     "vercel-ai-gateway/mistral/codestral-latest": {
-      "input": 1,
-      "output": 3
+      "input": 0.3,
+      "output": 0.8999999999999999
     },
     "vercel-ai-gateway/mistral/codestral-mamba-latest": {
       "input": 0.25,
@@ -47612,6 +48466,11 @@
     "vercel-ai-gateway/mistral/devstral-small-latest": {
       "input": 0.09999999999999999,
       "output": 0.3
+    },
+    "vercel-ai-gateway/mistral/glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "vercel-ai-gateway/mistral/labs-devstral-small-2512": {
       "input": 0.09999999999999999,
@@ -47742,8 +48601,8 @@
       "output": 0.18
     },
     "vercel-ai-gateway/mistral/mistral-small-latest": {
-      "input": 0.06,
-      "output": 0.18
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/mistral/mistral-tiny": {
       "input": 0.25,
@@ -47784,6 +48643,11 @@
     "vercel-ai-gateway/mistral/pixtral-large-latest": {
       "input": 2,
       "output": 6
+    },
+    "vercel-ai-gateway/mistral/zai-glm-5-2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
     },
     "vercel-ai-gateway/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -47908,6 +48772,11 @@
       "cacheRead": 0.16,
       "input": 0.95,
       "output": 4
+    },
+    "vercel-ai-gateway/moonshot/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "vercel-ai-gateway/moonshot/kimi-latest": {
       "cacheRead": 0.15,
@@ -48912,6 +49781,11 @@
       "input": 0,
       "output": 0
     },
+    "vercel-ai-gateway/openai/chat-latest": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30
+    },
     "vercel-ai-gateway/openai/chatgpt-4o-latest": {
       "input": 5,
       "output": 15
@@ -48920,6 +49794,18 @@
       "cacheRead": 0.375,
       "input": 1.5,
       "output": 6
+    },
+    "vercel-ai-gateway/openai/daybreak-blue-latest": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 30
+    },
+    "vercel-ai-gateway/openai/daybreak-red-latest": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
     },
     "vercel-ai-gateway/openai/ft:gpt-3.5-turbo": {
       "input": 3,
@@ -49502,6 +50388,12 @@
       "input": 5,
       "output": 30
     },
+    "vercel-ai-gateway/openai/gpt-5.6-cyber": {
+      "cacheRead": 1.25,
+      "cacheWrite": 15.625,
+      "input": 12.5,
+      "output": 75
+    },
     "vercel-ai-gateway/openai/gpt-5.6-luna": {
       "cacheRead": 0.02,
       "cacheWrite": 0.25,
@@ -49884,6 +50776,12 @@
       "input": 5,
       "output": 25
     },
+    "vercel-ai-gateway/openrouter/anthropic/claude-opus-5": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25
+    },
     "vercel-ai-gateway/openrouter/anthropic/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -49933,6 +50831,14 @@
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v3.2-exp": {
       "input": 0.19999999999999998,
       "output": 0.39999999999999997
+    },
+    "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
+      "input": 1.32,
+      "output": 3.9600000000000004
+    },
+    "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
+      "input": 1.32,
+      "output": 3.9600000000000004
     },
     "vercel-ai-gateway/openrouter/google/gemini-2.0-flash-001": {
       "input": 0.09999999999999999,
@@ -50382,6 +51288,26 @@
       "input": 0.07,
       "output": 0.28
     },
+    "vercel-ai-gateway/perplexity/perplexity/deepseek-v4-flash-0731": {
+      "cacheRead": 0.028,
+      "input": 0.13,
+      "output": 0.26
+    },
+    "vercel-ai-gateway/perplexity/perplexity/glm-5.2": {
+      "cacheRead": 0.14,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "vercel-ai-gateway/perplexity/perplexity/kimi-k2.7-code": {
+      "cacheRead": 0.19,
+      "input": 0.95,
+      "output": 4
+    },
+    "vercel-ai-gateway/perplexity/perplexity/kimi-k3": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
     "vercel-ai-gateway/perplexity/pplx-70b-chat": {
       "input": 0.7,
       "output": 2.8
@@ -50397,6 +51323,14 @@
     "vercel-ai-gateway/perplexity/pplx-7b-online": {
       "input": 0,
       "output": 0.28
+    },
+    "vercel-ai-gateway/perplexity/pplx-embed-context-v1-0.6b": {
+      "input": 0.008,
+      "output": 0
+    },
+    "vercel-ai-gateway/perplexity/pplx-embed-context-v1-4b": {
+      "input": 0.049999999999999996,
+      "output": 0
     },
     "vercel-ai-gateway/perplexity/pplx-embed-v1-0.6b": {
       "input": 0.004,
@@ -52120,6 +53054,10 @@
       "input": 0.25,
       "output": 1.5
     },
+    "vercel-ai-gateway/vertex_ai-language-models/gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "output": 1.5
+    },
     "vercel-ai-gateway/vertex_ai-language-models/gemini-3.1-flash-lite-preview": {
       "cacheRead": 0.024999999999999998,
       "input": 0.25,
@@ -52415,8 +53353,8 @@
       "output": 5.4
     },
     "vercel-ai-gateway/vertex_ai/deepseek-ai/deepseek-v3.1-maas": {
-      "input": 1.35,
-      "output": 5.4
+      "input": 0.6,
+      "output": 1.7
     },
     "vercel-ai-gateway/vertex_ai/deepseek-ai/deepseek-v3.2-maas": {
       "input": 0.56,
@@ -52455,6 +53393,10 @@
     },
     "vercel-ai-gateway/vertex_ai/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "vercel-ai-gateway/vertex_ai/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -52634,20 +53576,20 @@
       "output": 2.5
     },
     "vercel-ai-gateway/vertex_ai/openai/gpt-oss-120b-maas": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.09,
+      "output": 0.36
     },
     "vercel-ai-gateway/vertex_ai/openai/gpt-oss-20b-maas": {
       "input": 0.075,
       "output": 0.3
     },
     "vercel-ai-gateway/vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas": {
-      "input": 0.25,
-      "output": 1
+      "input": 0.22,
+      "output": 0.88
     },
     "vercel-ai-gateway/vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas": {
-      "input": 1,
-      "output": 4
+      "input": 0.22,
+      "output": 1.7999999999999998
     },
     "vercel-ai-gateway/vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas": {
       "input": 0.15,
@@ -52758,6 +53700,18 @@
       "input": 0.02,
       "output": 0
     },
+    "vercel-ai-gateway/voyage/voyage-4": {
+      "input": 0.06,
+      "output": 0
+    },
+    "vercel-ai-gateway/voyage/voyage-4-large": {
+      "input": 0.12,
+      "output": 0
+    },
+    "vercel-ai-gateway/voyage/voyage-4-lite": {
+      "input": 0.02,
+      "output": 0
+    },
     "vercel-ai-gateway/voyage/voyage-code-2": {
       "input": 0.12,
       "output": 0
@@ -52766,8 +53720,16 @@
       "input": 0.18,
       "output": 0
     },
+    "vercel-ai-gateway/voyage/voyage-code-4": {
+      "input": 0.12,
+      "output": 0
+    },
     "vercel-ai-gateway/voyage/voyage-context-3": {
       "input": 0.18,
+      "output": 0
+    },
+    "vercel-ai-gateway/voyage/voyage-context-4": {
+      "input": 0.12,
       "output": 0
     },
     "vercel-ai-gateway/voyage/voyage-finance-2": {
@@ -52791,6 +53753,10 @@
       "output": 0
     },
     "vercel-ai-gateway/voyage/voyage-multimodal-3": {
+      "input": 0.12,
+      "output": 0
+    },
+    "vercel-ai-gateway/voyage/voyage-multimodal-3.5": {
       "input": 0.12,
       "output": 0
     },
@@ -53490,6 +54456,10 @@
       "input": 0.25,
       "output": 1.5
     },
+    "vertex_ai-language-models/gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "output": 1.5
+    },
     "vertex_ai-language-models/gemini-3.1-flash-lite-preview": {
       "cacheRead": 0.024999999999999998,
       "input": 0.25,
@@ -53785,8 +54755,8 @@
       "output": 5.4
     },
     "vertex_ai/deepseek-ai/deepseek-v3.1-maas": {
-      "input": 1.35,
-      "output": 5.4
+      "input": 0.6,
+      "output": 1.7
     },
     "vertex_ai/deepseek-ai/deepseek-v3.2-maas": {
       "input": 0.56,
@@ -53825,6 +54795,10 @@
     },
     "vertex_ai/gemini-3.1-flash-lite": {
       "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 1.5
+    },
+    "vertex_ai/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5
     },
@@ -54004,20 +54978,20 @@
       "output": 2.5
     },
     "vertex_ai/openai/gpt-oss-120b-maas": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.09,
+      "output": 0.36
     },
     "vertex_ai/openai/gpt-oss-20b-maas": {
       "input": 0.075,
       "output": 0.3
     },
     "vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas": {
-      "input": 0.25,
-      "output": 1
+      "input": 0.22,
+      "output": 0.88
     },
     "vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas": {
-      "input": 1,
-      "output": 4
+      "input": 0.22,
+      "output": 1.7999999999999998
     },
     "vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas": {
       "input": 0.15,
@@ -54120,6 +55094,18 @@
       "input": 0.02,
       "output": 0
     },
+    "voyage/voyage-4": {
+      "input": 0.06,
+      "output": 0
+    },
+    "voyage/voyage-4-large": {
+      "input": 0.12,
+      "output": 0
+    },
+    "voyage/voyage-4-lite": {
+      "input": 0.02,
+      "output": 0
+    },
     "voyage/voyage-code-2": {
       "input": 0.12,
       "output": 0
@@ -54128,8 +55114,16 @@
       "input": 0.18,
       "output": 0
     },
+    "voyage/voyage-code-4": {
+      "input": 0.12,
+      "output": 0
+    },
     "voyage/voyage-context-3": {
       "input": 0.18,
+      "output": 0
+    },
+    "voyage/voyage-context-4": {
+      "input": 0.12,
       "output": 0
     },
     "voyage/voyage-finance-2": {
@@ -54153,6 +55147,10 @@
       "output": 0
     },
     "voyage/voyage-multimodal-3": {
+      "input": 0.12,
+      "output": 0
+    },
+    "voyage/voyage-multimodal-3.5": {
       "input": 0.12,
       "output": 0
     },
@@ -56939,8 +57937,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 1,
-            "output": 3
+            "input": 0.3,
+            "output": 0.8999999999999999
           },
           "id": "codestral-latest",
           "input": [
@@ -57039,8 +58037,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.06,
-            "output": 0.18
+            "input": 0.15,
+            "output": 0.6
           },
           "id": "mistral-small-latest",
           "input": [
@@ -60341,5 +61339,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "3d77a28da8041fdefb4d128d219689d795d04998"
+  "sourceCommit": "1aa211be4a858168e8ac6ea68ba7fae9c0d33215"
 }
