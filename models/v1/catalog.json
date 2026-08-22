@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787416449042,
+  "generatedAt": 1787430811737,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -8560,9 +8560,9 @@
       "output": 0.827544
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.039599999999999996,
-      "input": 1.1880000000000002,
-      "output": 3.564
+      "cacheRead": 0.037399999999999996,
+      "input": 1.122,
+      "output": 3.366
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -13131,8 +13131,7 @@
       "output": 10
     },
     "cloudflare-ai-gateway/openai/gpt-oss-120b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
+      "input": 0.037,
       "output": 0.16999999999999998
     },
     "cloudflare-ai-gateway/openai/gpt-oss-20b": {
@@ -17961,9 +17960,9 @@
       "output": 0.66
     },
     "deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.039599999999999996,
-      "input": 1.1880000000000002,
-      "output": 3.564
+      "cacheRead": 0.037399999999999996,
+      "input": 1.122,
+      "output": 3.366
     },
     "dolphin": {
       "input": 0.5,
@@ -25989,9 +25988,9 @@
       "output": 0.827544
     },
     "kilocode/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.039599999999999996,
-      "input": 1.1880000000000002,
-      "output": 3.564
+      "cacheRead": 0.037399999999999996,
+      "input": 1.122,
+      "output": 3.366
     },
     "kilocode/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -30560,8 +30559,7 @@
       "output": 10
     },
     "kilocode/openai/gpt-oss-120b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
+      "input": 0.037,
       "output": 0.16999999999999998
     },
     "kilocode/openai/gpt-oss-20b": {
@@ -37162,8 +37160,7 @@
       "output": 10
     },
     "openai/gpt-oss-120b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
+      "input": 0.037,
       "output": 0.16999999999999998
     },
     "openai/gpt-oss-20b": {
@@ -37786,9 +37783,9 @@
       "output": 0.827544
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.039599999999999996,
-      "input": 1.1880000000000002,
-      "output": 3.564
+      "cacheRead": 0.037399999999999996,
+      "input": 1.122,
+      "output": 3.366
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -38693,8 +38690,7 @@
       "output": 30
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
+      "input": 0.037,
       "output": 0.16999999999999998
     },
     "openrouter/openai/gpt-oss-20b": {
@@ -45967,9 +45963,9 @@
       "output": 0.827544
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.039599999999999996,
-      "input": 1.1880000000000002,
-      "output": 3.564
+      "cacheRead": 0.037399999999999996,
+      "input": 1.122,
+      "output": 3.366
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -50538,8 +50534,7 @@
       "output": 10
     },
     "vercel-ai-gateway/openai/gpt-oss-120b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
+      "input": 0.037,
       "output": 0.16999999999999998
     },
     "vercel-ai-gateway/openai/gpt-oss-20b": {
@@ -55749,6 +55744,19 @@
             "codeMode": "preferred"
           },
           "contextWindow": 1000000,
+          "contextWindowDefault": "1m",
+          "contextWindows": [
+            {
+              "contextWindow": 200000,
+              "id": "200k",
+              "label": "200K"
+            },
+            {
+              "contextWindow": 1000000,
+              "id": "1m",
+              "label": "1M"
+            }
+          ],
           "cost": {
             "cacheRead": 1,
             "cacheWrite": 12.5,
@@ -55869,6 +55877,19 @@
             "codeMode": "preferred"
           },
           "contextWindow": 1000000,
+          "contextWindowDefault": "1m",
+          "contextWindows": [
+            {
+              "contextWindow": 200000,
+              "id": "200k",
+              "label": "200K"
+            },
+            {
+              "contextWindow": 1000000,
+              "id": "1m",
+              "label": "1M"
+            }
+          ],
           "cost": {
             "cacheRead": 0.5,
             "cacheWrite": 6.25,
@@ -55900,6 +55921,19 @@
             "codeMode": "preferred"
           },
           "contextWindow": 1000000,
+          "contextWindowDefault": "1m",
+          "contextWindows": [
+            {
+              "contextWindow": 200000,
+              "id": "200k",
+              "label": "200K"
+            },
+            {
+              "contextWindow": 1000000,
+              "id": "1m",
+              "label": "1M"
+            }
+          ],
           "cost": {
             "cacheRead": 0.19999999999999998,
             "cacheWrite": 2.5,
@@ -56415,6 +56449,19 @@
       "models": [
         {
           "contextWindow": 1000000,
+          "contextWindowDefault": "1m",
+          "contextWindows": [
+            {
+              "contextWindow": 200000,
+              "id": "200k",
+              "label": "200K"
+            },
+            {
+              "contextWindow": 1000000,
+              "id": "1m",
+              "label": "1M"
+            }
+          ],
           "id": "claude-fable-5",
           "input": [
             "text",
@@ -56453,6 +56500,19 @@
         },
         {
           "contextWindow": 1000000,
+          "contextWindowDefault": "1m",
+          "contextWindows": [
+            {
+              "contextWindow": 200000,
+              "id": "200k",
+              "label": "200K"
+            },
+            {
+              "contextWindow": 1000000,
+              "id": "1m",
+              "label": "1M"
+            }
+          ],
           "id": "claude-opus-5",
           "input": [
             "text",
@@ -56471,6 +56531,19 @@
         },
         {
           "contextWindow": 1000000,
+          "contextWindowDefault": "1m",
+          "contextWindows": [
+            {
+              "contextWindow": 200000,
+              "id": "200k",
+              "label": "200K"
+            },
+            {
+              "contextWindow": 1000000,
+              "id": "1m",
+              "label": "1M"
+            }
+          ],
           "id": "claude-sonnet-5",
           "input": [
             "text",
@@ -61368,5 +61441,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "31ce436b5f69e3343144f55b4a7cba9a656da1a9"
+  "sourceCommit": "53aa9414fe671bac33d7bcc44156c2eac3eb9507"
 }
