@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787773361070,
+  "generatedAt": 1787775910059,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -58208,7 +58208,15 @@
         {
           "api": "anthropic-messages",
           "compat": {
-            "codeMode": "capable"
+            "codeMode": "capable",
+            "supportedReasoningEfforts": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "supportsReasoningEffort": true
           },
           "contextWindow": 1000000,
           "cost": {
@@ -62145,5 +62153,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "a665f9ab498dd509789af38b018554267552f352"
+  "sourceCommit": "64113d0fdc5939a30d20faf99e82ed655b7aabd5"
 }
