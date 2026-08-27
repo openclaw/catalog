@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787860960204,
+  "generatedAt": 1787863111653,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -58460,6 +58460,15 @@
           }
         },
         {
+          "compat": {
+            "supportedReasoningEfforts": [
+              "none",
+              "low",
+              "medium",
+              "high",
+              "xhigh"
+            ]
+          },
           "contextTokens": 272000,
           "contextWindow": 400000,
           "cost": {
@@ -58477,7 +58486,12 @@
           "name": "GPT-5.4 mini",
           "reasoning": true,
           "replacedBy": "gpt-5.6-luna",
-          "status": "deprecated"
+          "status": "deprecated",
+          "thinkingLevelMap": {
+            "max": null,
+            "minimal": "low",
+            "xhigh": "xhigh"
+          }
         },
         {
           "compat": {
@@ -62283,5 +62297,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "937a31c4a473c802466d73cd4e3afa8ce2e71048"
+  "sourceCommit": "97f66133c5e3e5bcb1dcc5b2815c19221d031768"
 }
