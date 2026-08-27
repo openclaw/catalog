@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787860433199,
+  "generatedAt": 1787860960204,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -58300,6 +58300,13 @@
           "reasoning": true
         },
         {
+          "api": "openai-completions",
+          "compat": {
+            "maxTokensField": "max_tokens",
+            "supportsDeveloperRole": false,
+            "supportsStore": false,
+            "supportsUsageInStreaming": false
+          },
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.125,
@@ -58318,6 +58325,13 @@
           "status": "deprecated"
         },
         {
+          "api": "openai-completions",
+          "compat": {
+            "maxTokensField": "max_tokens",
+            "supportsDeveloperRole": false,
+            "supportsStore": false,
+            "supportsUsageInStreaming": false
+          },
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.2,
@@ -58334,6 +58348,13 @@
           "name": "Gemini 3.1 Pro Preview"
         },
         {
+          "api": "openai-completions",
+          "compat": {
+            "maxTokensField": "max_tokens",
+            "supportsDeveloperRole": false,
+            "supportsStore": false,
+            "supportsUsageInStreaming": false
+          },
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.15,
@@ -58352,6 +58373,13 @@
           "status": "deprecated"
         },
         {
+          "api": "openai-completions",
+          "compat": {
+            "maxTokensField": "max_tokens",
+            "supportsDeveloperRole": false,
+            "supportsStore": false,
+            "supportsUsageInStreaming": false
+          },
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.15,
@@ -62255,5 +62283,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "cad34e612f0d23db922191f1f4be5c7248de97e9"
+  "sourceCommit": "937a31c4a473c802466d73cd4e3afa8ce2e71048"
 }
