@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1787900203915,
+  "generatedAt": 1787919224261,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -9101,9 +9101,9 @@
       "output": 1
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.13,
-      "input": 0.26,
-      "output": 0.38
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -9115,14 +9115,14 @@
       "output": 0.177212
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.012,
-      "input": 0.06,
-      "output": 0.12
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.014,
-      "input": 0.44,
-      "output": 1.32
+      "cacheRead": 0.007,
+      "input": 0.22,
+      "output": 0.66
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.0725,
@@ -9130,9 +9130,9 @@
       "output": 1.74
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -11867,6 +11867,11 @@
       "input": 0.3,
       "output": 0.8999999999999999
     },
+    "cloudflare-ai-gateway/mistralai/codestral-2508:batch": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 0.8999999999999999
+    },
     "cloudflare-ai-gateway/mistralai/devstral-2512": {
       "cacheRead": 0.044,
       "input": 0.44,
@@ -11887,6 +11892,11 @@
       "input": 0.15,
       "output": 0.15
     },
+    "cloudflare-ai-gateway/mistralai/ministral-8b-2512:batch": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15
+    },
     "cloudflare-ai-gateway/mistralai/mistral-large": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
@@ -11902,6 +11912,11 @@
       "input": 0.5,
       "output": 1.5
     },
+    "cloudflare-ai-gateway/mistralai/mistral-large-2512:batch": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1.5
+    },
     "cloudflare-ai-gateway/mistralai/mistral-medium-3": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
@@ -11911,7 +11926,16 @@
       "input": 1.5,
       "output": 7.5
     },
+    "cloudflare-ai-gateway/mistralai/mistral-medium-3-5:batch": {
+      "input": 0.75,
+      "output": 3.75
+    },
     "cloudflare-ai-gateway/mistralai/mistral-medium-3.1": {
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
+      "output": 2
+    },
+    "cloudflare-ai-gateway/mistralai/mistral-medium-3.1:batch": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
       "output": 2
@@ -11930,6 +11954,11 @@
       "output": 0.08
     },
     "cloudflare-ai-gateway/mistralai/mistral-small-2603": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
+    },
+    "cloudflare-ai-gateway/mistralai/mistral-small-2603:batch": {
       "cacheRead": 0.015,
       "input": 0.15,
       "output": 0.6
@@ -14864,8 +14893,8 @@
       "output": 2.0999999999999996
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.29,
+      "output": 2.4
     },
     "cloudflare-ai-gateway/qwen/qwen3.5-27b": {
       "input": 0.195,
@@ -19187,23 +19216,23 @@
       "output": 1
     },
     "deepseek/deepseek-v3.2": {
-      "cacheRead": 0.13,
-      "input": 0.26,
-      "output": 0.38
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
       "output": 0.41
     },
     "deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.012,
-      "input": 0.06,
-      "output": 0.12
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "dolphin": {
       "input": 0.5,
@@ -27724,9 +27753,9 @@
       "output": 1
     },
     "kilocode/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.13,
-      "input": 0.26,
-      "output": 0.38
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "kilocode/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -27738,14 +27767,14 @@
       "output": 0.177212
     },
     "kilocode/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.012,
-      "input": 0.06,
-      "output": 0.12
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "kilocode/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.014,
-      "input": 0.44,
-      "output": 1.32
+      "cacheRead": 0.007,
+      "input": 0.22,
+      "output": 0.66
     },
     "kilocode/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.0725,
@@ -27753,9 +27782,9 @@
       "output": 1.74
     },
     "kilocode/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "kilocode/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -30490,6 +30519,11 @@
       "input": 0.3,
       "output": 0.8999999999999999
     },
+    "kilocode/mistralai/codestral-2508:batch": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 0.8999999999999999
+    },
     "kilocode/mistralai/devstral-2512": {
       "cacheRead": 0.044,
       "input": 0.44,
@@ -30510,6 +30544,11 @@
       "input": 0.15,
       "output": 0.15
     },
+    "kilocode/mistralai/ministral-8b-2512:batch": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15
+    },
     "kilocode/mistralai/mistral-large": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
@@ -30525,6 +30564,11 @@
       "input": 0.5,
       "output": 1.5
     },
+    "kilocode/mistralai/mistral-large-2512:batch": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1.5
+    },
     "kilocode/mistralai/mistral-medium-3": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
@@ -30534,7 +30578,16 @@
       "input": 1.5,
       "output": 7.5
     },
+    "kilocode/mistralai/mistral-medium-3-5:batch": {
+      "input": 0.75,
+      "output": 3.75
+    },
     "kilocode/mistralai/mistral-medium-3.1": {
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
+      "output": 2
+    },
+    "kilocode/mistralai/mistral-medium-3.1:batch": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
       "output": 2
@@ -30553,6 +30606,11 @@
       "output": 0.08
     },
     "kilocode/mistralai/mistral-small-2603": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
+    },
+    "kilocode/mistralai/mistral-small-2603:batch": {
       "cacheRead": 0.015,
       "input": 0.15,
       "output": 0.6
@@ -33487,8 +33545,8 @@
       "output": 2.0999999999999996
     },
     "kilocode/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.29,
+      "output": 2.4
     },
     "kilocode/qwen/qwen3.5-27b": {
       "input": 0.195,
@@ -37381,6 +37439,11 @@
       "input": 0.3,
       "output": 0.8999999999999999
     },
+    "mistralai/codestral-2508:batch": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 0.8999999999999999
+    },
     "mistralai/devstral-2512": {
       "cacheRead": 0.044,
       "input": 0.44,
@@ -37401,6 +37464,11 @@
       "input": 0.15,
       "output": 0.15
     },
+    "mistralai/ministral-8b-2512:batch": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15
+    },
     "mistralai/mistral-large": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
@@ -37416,6 +37484,11 @@
       "input": 0.5,
       "output": 1.5
     },
+    "mistralai/mistral-large-2512:batch": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1.5
+    },
     "mistralai/mistral-medium-3": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
@@ -37425,7 +37498,16 @@
       "input": 1.5,
       "output": 7.5
     },
+    "mistralai/mistral-medium-3-5:batch": {
+      "input": 0.75,
+      "output": 3.75
+    },
     "mistralai/mistral-medium-3.1": {
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
+      "output": 2
+    },
+    "mistralai/mistral-medium-3.1:batch": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
       "output": 2
@@ -37444,6 +37526,11 @@
       "output": 0.08
     },
     "mistralai/mistral-small-2603": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
+    },
+    "mistralai/mistral-small-2603:batch": {
       "cacheRead": 0.015,
       "input": 0.15,
       "output": 0.6
@@ -39838,9 +39925,9 @@
       "output": 1
     },
     "openrouter/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.13,
-      "input": 0.26,
-      "output": 0.38
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "openrouter/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -39852,14 +39939,14 @@
       "output": 0.177212
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.012,
-      "input": 0.06,
-      "output": 0.12
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.014,
-      "input": 0.44,
-      "output": 1.32
+      "cacheRead": 0.007,
+      "input": 0.22,
+      "output": 0.66
     },
     "openrouter/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.0725,
@@ -39867,9 +39954,9 @@
       "output": 1.74
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -40218,6 +40305,11 @@
       "input": 0.3,
       "output": 0.8999999999999999
     },
+    "openrouter/mistralai/codestral-2508:batch": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 0.8999999999999999
+    },
     "openrouter/mistralai/devstral-2512": {
       "cacheRead": 0.044,
       "input": 0.44,
@@ -40238,6 +40330,11 @@
       "input": 0.15,
       "output": 0.15
     },
+    "openrouter/mistralai/ministral-8b-2512:batch": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15
+    },
     "openrouter/mistralai/mistral-large": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
@@ -40253,6 +40350,11 @@
       "input": 0.5,
       "output": 1.5
     },
+    "openrouter/mistralai/mistral-large-2512:batch": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1.5
+    },
     "openrouter/mistralai/mistral-medium-3": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
@@ -40262,7 +40364,16 @@
       "input": 1.5,
       "output": 7.5
     },
+    "openrouter/mistralai/mistral-medium-3-5:batch": {
+      "input": 0.75,
+      "output": 3.75
+    },
     "openrouter/mistralai/mistral-medium-3.1": {
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
+      "output": 2
+    },
+    "openrouter/mistralai/mistral-medium-3.1:batch": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
       "output": 2
@@ -40281,6 +40392,11 @@
       "output": 0.08
     },
     "openrouter/mistralai/mistral-small-2603": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
+    },
+    "openrouter/mistralai/mistral-small-2603:batch": {
       "cacheRead": 0.015,
       "input": 0.15,
       "output": 0.6
@@ -40845,8 +40961,8 @@
       "output": 2.0999999999999996
     },
     "openrouter/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.29,
+      "output": 2.4
     },
     "openrouter/qwen/qwen3.5-27b": {
       "input": 0.195,
@@ -41620,8 +41736,8 @@
       "output": 2.0999999999999996
     },
     "qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.29,
+      "output": 2.4
     },
     "qwen/qwen3.5-27b": {
       "input": 0.195,
@@ -48446,9 +48562,9 @@
       "output": 1
     },
     "vercel-ai-gateway/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.13,
-      "input": 0.26,
-      "output": 0.38
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "vercel-ai-gateway/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -48460,14 +48576,14 @@
       "output": 0.177212
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.012,
-      "input": 0.06,
-      "output": 0.12
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.014,
-      "input": 0.44,
-      "output": 1.32
+      "cacheRead": 0.007,
+      "input": 0.22,
+      "output": 0.66
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.0725,
@@ -48475,9 +48591,9 @@
       "output": 1.74
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -51212,6 +51328,11 @@
       "input": 0.3,
       "output": 0.8999999999999999
     },
+    "vercel-ai-gateway/mistralai/codestral-2508:batch": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 0.8999999999999999
+    },
     "vercel-ai-gateway/mistralai/devstral-2512": {
       "cacheRead": 0.044,
       "input": 0.44,
@@ -51232,6 +51353,11 @@
       "input": 0.15,
       "output": 0.15
     },
+    "vercel-ai-gateway/mistralai/ministral-8b-2512:batch": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15
+    },
     "vercel-ai-gateway/mistralai/mistral-large": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
@@ -51247,6 +51373,11 @@
       "input": 0.5,
       "output": 1.5
     },
+    "vercel-ai-gateway/mistralai/mistral-large-2512:batch": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1.5
+    },
     "vercel-ai-gateway/mistralai/mistral-medium-3": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
@@ -51256,7 +51387,16 @@
       "input": 1.5,
       "output": 7.5
     },
+    "vercel-ai-gateway/mistralai/mistral-medium-3-5:batch": {
+      "input": 0.75,
+      "output": 3.75
+    },
     "vercel-ai-gateway/mistralai/mistral-medium-3.1": {
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
+      "output": 2
+    },
+    "vercel-ai-gateway/mistralai/mistral-medium-3.1:batch": {
       "cacheRead": 0.04,
       "input": 0.39999999999999997,
       "output": 2
@@ -51275,6 +51415,11 @@
       "output": 0.08
     },
     "vercel-ai-gateway/mistralai/mistral-small-2603": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
+    },
+    "vercel-ai-gateway/mistralai/mistral-small-2603:batch": {
       "cacheRead": 0.015,
       "input": 0.15,
       "output": 0.6
@@ -54209,8 +54354,8 @@
       "output": 2.0999999999999996
     },
     "vercel-ai-gateway/qwen/qwen3.5-122b-a10b": {
-      "input": 0.26,
-      "output": 2.08
+      "input": 0.29,
+      "output": 2.4
     },
     "vercel-ai-gateway/qwen/qwen3.5-27b": {
       "input": 0.195,
@@ -59864,10 +60009,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.014,
+            "cacheRead": 0.007,
             "cacheWrite": 0,
-            "input": 0.44,
-            "output": 1.32
+            "input": 0.22,
+            "output": 0.66
           },
           "id": "deepseek-v4-flash-vision-exp",
           "input": [
@@ -64436,5 +64581,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "345b2235e3c0b2f702bc1ccf06ce42a397dc0991"
+  "sourceCommit": "426763145635db88cf227f40f093860172bcb37b"
 }
