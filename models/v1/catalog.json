@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788107262219,
+  "generatedAt": 1788120558178,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -13507,7 +13507,7 @@
       "output": 1.5999999999999999
     },
     "cloudflare-ai-gateway/openai/gpt-4.1-nano": {
-      "cacheRead": 0.03,
+      "cacheRead": 0.024999999999999998,
       "input": 0.09999999999999999,
       "output": 0.39999999999999997
     },
@@ -32391,7 +32391,7 @@
       "output": 1.5999999999999999
     },
     "kilocode/openai/gpt-4.1-nano": {
-      "cacheRead": 0.03,
+      "cacheRead": 0.024999999999999998,
       "input": 0.09999999999999999,
       "output": 0.39999999999999997
     },
@@ -39455,7 +39455,7 @@
       "output": 1.5999999999999999
     },
     "openai/gpt-4.1-nano": {
-      "cacheRead": 0.03,
+      "cacheRead": 0.024999999999999998,
       "input": 0.09999999999999999,
       "output": 0.39999999999999997
     },
@@ -41055,7 +41055,7 @@
       "output": 1.5999999999999999
     },
     "openrouter/openai/gpt-4.1-nano": {
-      "cacheRead": 0.03,
+      "cacheRead": 0.024999999999999998,
       "input": 0.09999999999999999,
       "output": 0.39999999999999997
     },
@@ -53526,7 +53526,7 @@
       "output": 1.5999999999999999
     },
     "vercel-ai-gateway/openai/gpt-4.1-nano": {
-      "cacheRead": 0.03,
+      "cacheRead": 0.024999999999999998,
       "input": 0.09999999999999999,
       "output": 0.39999999999999997
     },
@@ -64643,7 +64643,28 @@
             "cacheRead": 0.34,
             "cacheWrite": 0,
             "input": 2.27,
-            "output": 6.8
+            "output": 6.8,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.34,
+                "cacheWrite": 0,
+                "input": 2.27,
+                "output": 6.8,
+                "range": [
+                  0,
+                  200001
+                ]
+              },
+              {
+                "cacheRead": 0.68,
+                "cacheWrite": 0,
+                "input": 4.53,
+                "output": 13.6,
+                "range": [
+                  200001
+                ]
+              }
+            ]
           },
           "id": "grok-4-5",
           "input": [
@@ -64745,7 +64766,28 @@
             "cacheRead": 0.05,
             "cacheWrite": 0.625,
             "input": 0.5,
-            "output": 2
+            "output": 2,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.05,
+                "cacheWrite": 0.625,
+                "input": 0.5,
+                "output": 2,
+                "range": [
+                  0,
+                  256001
+                ]
+              },
+              {
+                "cacheRead": 0.15,
+                "cacheWrite": 1.875,
+                "input": 1.5,
+                "output": 6,
+                "range": [
+                  256001
+                ]
+              }
+            ]
           },
           "id": "qwen-3-7-plus",
           "input": [
@@ -65371,5 +65413,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "96a114611a907a511ba58be46d1541283d7ea260"
+  "sourceCommit": "02c095ff389dd4f503d72a16c44d33f3fc87ce68"
 }
