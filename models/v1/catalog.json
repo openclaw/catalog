@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788251959905,
+  "generatedAt": 1788253131762,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -19946,13 +19946,33 @@
       "input": 2,
       "output": 12
     },
+    "deepinfra/allenai/Olmo-3.1-32B-Instruct": {
+      "input": 0.2,
+      "output": 0.6
+    },
+    "deepinfra/allenai/olmOCR-2": {
+      "input": 0.13999999999999999,
+      "output": 0.8
+    },
+    "deepinfra/allenai/olmOCR-2-7B-1025": {
+      "input": 0.09,
+      "output": 0.19
+    },
     "deepinfra/allenai/olmOCR-7B-0725-FP8": {
-      "input": 0.27,
-      "output": 1.5
+      "input": 0.26999999999999996,
+      "output": 1.4999999999999998
+    },
+    "deepinfra/allenai/olmOCR-7B-0825": {
+      "input": 0.13999999999999999,
+      "output": 0.8
+    },
+    "deepinfra/allenai/olmOCR-7B-1025": {
+      "input": 0.13999999999999999,
+      "output": 0.8
     },
     "deepinfra/anthropic/claude-3-7-sonnet-latest": {
       "cacheRead": 0.33,
-      "input": 3.3000000000000003,
+      "input": 3.3,
       "output": 16.5
     },
     "deepinfra/anthropic/claude-4-opus": {
@@ -19960,7 +19980,7 @@
       "output": 82.5
     },
     "deepinfra/anthropic/claude-4-sonnet": {
-      "input": 3.3000000000000003,
+      "input": 3.3,
       "output": 16.5
     },
     "deepinfra/anthropic/claude-fable-5": {
@@ -19984,57 +20004,70 @@
       "output": 25
     },
     "deepinfra/anthropic/claude-sonnet-4-6": {
-      "input": 3,
+      "input": 2.9999999999999996,
       "output": 15
     },
     "deepinfra/anthropic/claude-sonnet-5": {
-      "input": 2,
-      "output": 10
+      "input": 2.9999999999999996,
+      "output": 15
     },
-    "deepinfra/ByteDance/Seed-1.8": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.25,
-      "output": 2
+    "deepinfra/Austism/chronos-hermes-13b-v2": {
+      "input": 0.13,
+      "output": 0.13
     },
-    "deepinfra/ByteDance/Seed-2.0-code": {
-      "cacheRead": 0.09999999999999999,
+    "deepinfra/bigcode/starcoder2-15b-instruct-v0.1": {
+      "input": 0.15,
+      "output": 0.15
+    },
+    "deepinfra/cognitivecomputations/dolphin-2.6-mixtral-8x7b": {
+      "input": 0.24000000000000002,
+      "output": 0.24000000000000002
+    },
+    "deepinfra/cognitivecomputations/dolphin-2.9.1-llama-3-70b": {
+      "input": 0.35,
+      "output": 0.4
+    },
+    "deepinfra/deepinfra/airoboros-70b": {
+      "input": 0.7,
+      "output": 0.9
+    },
+    "deepinfra/deepreinforce-ai/Ornith-1.0-35B": {
+      "cacheRead": 0.05,
+      "input": 0.1,
+      "output": 0.7499999999999999
+    },
+    "deepinfra/deepseek-ai/DeepSeek-OCR": {
+      "input": 0.030000000000000002,
+      "output": 0.1
+    },
+    "deepinfra/deepseek-ai/DeepSeek-Prover-V2-671B": {
       "input": 0.5,
-      "output": 3
-    },
-    "deepinfra/ByteDance/Seed-2.0-mini": {
-      "cacheRead": 0.02,
-      "input": 0.09999999999999999,
-      "output": 0.39999999999999997
-    },
-    "deepinfra/ByteDance/Seed-2.0-pro": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 3
+      "output": 2.18
     },
     "deepinfra/deepseek-ai/DeepSeek-R1": {
       "input": 0.7,
       "output": 2.4
     },
     "deepinfra/deepseek-ai/DeepSeek-R1-0528": {
-      "cacheRead": 0.39999999999999997,
+      "cacheRead": 0.35,
       "input": 0.5,
-      "output": 2.1500000000000004
+      "output": 2.15
     },
     "deepinfra/deepseek-ai/DeepSeek-R1-0528-Turbo": {
       "input": 1,
-      "output": 3
+      "output": 2.9999999999999996
     },
     "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B": {
-      "input": 0.19999999999999998,
-      "output": 0.6
+      "input": 0.7,
+      "output": 0.8
     },
     "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
-      "input": 0.27,
-      "output": 0.27
+      "input": 0.26999999999999996,
+      "output": 0.26999999999999996
     },
     "deepinfra/deepseek-ai/DeepSeek-R1-Turbo": {
       "input": 1,
-      "output": 3
+      "output": 2.9999999999999996
     },
     "deepinfra/deepseek-ai/DeepSeek-V3": {
       "input": 0.32,
@@ -20042,18 +20075,27 @@
     },
     "deepinfra/deepseek-ai/DeepSeek-V3-0324": {
       "cacheRead": 0.135,
-      "input": 0.24,
-      "output": 0.8999999999999999
+      "input": 0.24000000000000002,
+      "output": 0.9
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V3-0324-Turbo": {
+      "input": 1,
+      "output": 2.9999999999999996
     },
     "deepinfra/deepseek-ai/DeepSeek-V3.1": {
-      "cacheRead": 0.216,
+      "cacheRead": 0.13,
       "input": 0.25,
-      "output": 0.95
+      "output": 0.9500000000000001
     },
     "deepinfra/deepseek-ai/DeepSeek-V3.1-Terminus": {
-      "cacheRead": 0.216,
-      "input": 0.27,
-      "output": 1
+      "cacheRead": 0.1299999996,
+      "input": 0.26999999999999996,
+      "output": 0.9500000000000001
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V3.2-Exp": {
+      "cacheRead": 0.168,
+      "input": 0.21,
+      "output": 0.32
     },
     "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731": {
       "cacheRead": 0.016,
@@ -20061,13 +20103,17 @@
       "output": 0.18
     },
     "deepinfra/deepseek-ai/DeepSeek-V4-Pro-0813": {
-      "cacheRead": 0.09999999999999999,
-      "input": 1.3,
-      "output": 2.6
+      "cacheRead": 0.10000000399999999,
+      "input": 1.2999999999999998,
+      "output": 2.5999999999999996
+    },
+    "deepinfra/google/codegemma-7b-it": {
+      "input": 0.06999999999999999,
+      "output": 0.06999999999999999
     },
     "deepinfra/google/gemini-2.0-flash-001": {
-      "input": 0.09999999999999999,
-      "output": 0.39999999999999997
+      "input": 0.1,
+      "output": 0.4
     },
     "deepinfra/google/gemini-2.5-flash": {
       "input": 0.3,
@@ -20079,22 +20125,34 @@
     },
     "deepinfra/google/gemini-3.1-flash-lite": {
       "input": 0.25,
-      "output": 1.5
+      "output": 1.4999999999999998
     },
     "deepinfra/google/gemini-3.1-pro": {
       "input": 2,
-      "output": 12
+      "output": 11.999999999999998
     },
     "deepinfra/google/gemini-3.5-flash": {
-      "input": 1.5,
+      "input": 1.4999999999999998,
       "output": 9
     },
     "deepinfra/google/gemini-3.7-flash": {
-      "input": 0.75,
+      "input": 0.7499999999999999,
       "output": 3.75
     },
+    "deepinfra/google/gemma-1.1-7b-it": {
+      "input": 0.06999999999999999,
+      "output": 0.06999999999999999
+    },
+    "deepinfra/google/gemma-2-27b-it": {
+      "input": 0.26999999999999996,
+      "output": 0.26999999999999996
+    },
+    "deepinfra/google/gemma-2-9b-it": {
+      "input": 0.030000000000000002,
+      "output": 0.060000000000000005
+    },
     "deepinfra/google/gemma-3-12b-it": {
-      "input": 0.049999999999999996,
+      "input": 0.05,
       "output": 0.15
     },
     "deepinfra/google/gemma-3-27b-it": {
@@ -20102,61 +20160,112 @@
       "output": 0.16
     },
     "deepinfra/google/gemma-3-4b-it": {
-      "input": 0.049999999999999996,
-      "output": 0.09999999999999999
+      "input": 0.05,
+      "output": 0.1
     },
     "deepinfra/google/gemma-4-26B-A4B-it": {
-      "input": 0.07,
-      "output": 0.33999999999999997
+      "input": 0.06999999999999999,
+      "output": 0.34
     },
     "deepinfra/google/gemma-4-31B-it": {
       "input": 0.13,
       "output": 0.38
     },
     "deepinfra/google/gemma-4-31B-it-turbo": {
-      "cacheRead": 0.049999999999999996,
+      "cacheRead": 0.050000000399999994,
       "input": 0.09,
-      "output": 0.33999999999999997
+      "output": 0.34
     },
     "deepinfra/google/gemma-4-31B-it-Ultra": {
-      "input": 0.27,
+      "input": 0.26999999999999996,
       "output": 0.76
     },
     "deepinfra/google/gemma-4-E4B-it": {
       "input": 0.02,
-      "output": 0.09999999999999999
+      "output": 0.1
     },
     "deepinfra/Gryphe/MythoMax-L2-13b": {
-      "input": 0.39999999999999997,
-      "output": 0.39999999999999997
+      "input": 0.4,
+      "output": 0.4
+    },
+    "deepinfra/Gryphe/MythoMax-L2-13b-turbo": {
+      "input": 0.13,
+      "output": 0.13
+    },
+    "deepinfra/ibm-granite/granite-4.2-30b": {
+      "cacheRead": 0.04,
+      "input": 0.16,
+      "output": 0.6499999999999999
+    },
+    "deepinfra/ibm-granite/granite-4.2-3b": {
+      "cacheRead": 0.007500000000000001,
+      "input": 0.030000000000000002,
+      "output": 0.12000000000000001
+    },
+    "deepinfra/ibm-granite/granite-4.2-8b": {
+      "cacheRead": 0.015000000000000001,
+      "input": 0.060000000000000005,
+      "output": 0.25
     },
     "deepinfra/inclusionAI/Ling-3.0-flash": {
-      "cacheRead": 0.012,
-      "input": 0.06,
+      "cacheRead": 0.012000000000000002,
+      "input": 0.060000000000000005,
       "output": 0.18
     },
+    "deepinfra/KoboldAI/LLaMA2-13B-Tiefighter": {
+      "input": 0.1,
+      "output": 0.1
+    },
+    "deepinfra/lizpreciatior/lzlv_70b_fp16_hf": {
+      "input": 0.35,
+      "output": 0.4
+    },
+    "deepinfra/mattshumer/Reflection-Llama-3.1-70B": {
+      "input": 0.35,
+      "output": 0.4
+    },
+    "deepinfra/meta-llama/Llama-2-13b-chat-hf": {
+      "input": 0.13,
+      "output": 0.13
+    },
+    "deepinfra/meta-llama/Llama-2-70b-chat-hf": {
+      "input": 0.64,
+      "output": 0.8
+    },
     "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct": {
-      "input": 0.049,
-      "output": 0.049
+      "input": 0.345,
+      "output": 0.345
+    },
+    "deepinfra/meta-llama/Llama-3.2-1B-Instruct": {
+      "input": 0.005,
+      "output": 0.01
     },
     "deepinfra/meta-llama/Llama-3.2-3B-Instruct": {
       "input": 0.02,
       "output": 0.02
     },
+    "deepinfra/meta-llama/Llama-3.2-90B-Vision-Instruct": {
+      "input": 0.35,
+      "output": 0.4
+    },
     "deepinfra/meta-llama/Llama-3.3-70B-Instruct": {
-      "input": 0.22999999999999998,
-      "output": 0.39999999999999997
+      "input": 0.23,
+      "output": 0.4
     },
     "deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
-      "input": 0.09999999999999999,
+      "input": 0.1,
       "output": 0.32
     },
     "deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-      "input": 0.19999999999999998,
-      "output": 0.7999999999999999
+      "input": 0.2,
+      "output": 0.8
+    },
+    "deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-Turbo": {
+      "input": 0.5,
+      "output": 0.5
     },
     "deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct": {
-      "input": 0.09999999999999999,
+      "input": 0.1,
       "output": 0.3
     },
     "deepinfra/meta-llama/Llama-Guard-3-8B": {
@@ -20167,82 +20276,159 @@
       "input": 0.18,
       "output": 0.18
     },
+    "deepinfra/meta-llama/Meta-Llama-3-70B-Instruct": {
+      "input": 0.3,
+      "output": 0.4
+    },
     "deepinfra/meta-llama/Meta-Llama-3-8B-Instruct": {
-      "input": 0.03,
-      "output": 0.06
+      "input": 0.030000000000000002,
+      "output": 0.04
+    },
+    "deepinfra/meta-llama/Meta-Llama-3.1-405B-Instruct": {
+      "input": 0.8,
+      "output": 0.8
     },
     "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct": {
-      "input": 0.39999999999999997,
-      "output": 0.39999999999999997
+      "input": 0.4,
+      "output": 0.4
     },
     "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo": {
-      "input": 0.39999999999999997,
-      "output": 0.39999999999999997
+      "input": 0.4,
+      "output": 0.4
     },
     "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct": {
-      "input": 0.03,
-      "output": 0.049999999999999996
+      "input": 0.02,
+      "output": 0.05
     },
     "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
       "input": 0.02,
       "output": 0.04
     },
     "deepinfra/meta-models/Muse-Glimmer-30B": {
-      "cacheRead": 0.04,
+      "cacheRead": 0.039999999,
       "input": 0.3,
       "output": 1.2
     },
+    "deepinfra/microsoft/Phi-3-medium-4k-instruct": {
+      "input": 0.13999999999999999,
+      "output": 0.13999999999999999
+    },
     "deepinfra/microsoft/phi-4": {
-      "input": 0.07,
-      "output": 0.14
+      "input": 0.06999999999999999,
+      "output": 0.13999999999999999
+    },
+    "deepinfra/microsoft/Phi-4-multimodal-instruct": {
+      "input": 0.05,
+      "output": 0.1
+    },
+    "deepinfra/microsoft/phi-4-reasoning-plus": {
+      "input": 0.06999999999999999,
+      "output": 0.35
+    },
+    "deepinfra/microsoft/WizardLM-2-7B": {
+      "input": 0.055,
+      "output": 0.055
     },
     "deepinfra/microsoft/WizardLM-2-8x22B": {
-      "input": 0.48,
-      "output": 0.48
+      "input": 0.48000000000000004,
+      "output": 0.48000000000000004
+    },
+    "deepinfra/MiniMaxAI/MiniMax-M2": {
+      "cacheRead": 0.127,
+      "input": 0.254,
+      "output": 1.02
+    },
+    "deepinfra/MiniMaxAI/MiniMax-M2.1": {
+      "cacheRead": 0.029000000699999993,
+      "input": 0.26999999999999996,
+      "output": 0.9500000000000001
+    },
+    "deepinfra/MiniMaxAI/MiniMax-M2.5": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 1.1500000000000001
     },
     "deepinfra/MiniMaxAI/MiniMax-M2.7": {
-      "cacheRead": 0.049999999999999996,
+      "cacheRead": 0.05,
       "input": 0.25,
       "output": 1
     },
     "deepinfra/MiniMaxAI/MiniMax-M2.7-Turbo": {
-      "cacheRead": 0.07,
+      "cacheRead": 0.07000000140000001,
       "input": 0.38,
-      "output": 1.7
+      "output": 1.7000000000000002
     },
     "deepinfra/MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.056,
-      "input": 0.28,
+      "cacheRead": 0.055999999999999994,
+      "input": 0.27999999999999997,
       "output": 1.1
     },
+    "deepinfra/mistralai/Devstral-Small-2505": {
+      "input": 0.060000000000000005,
+      "output": 0.12000000000000001
+    },
+    "deepinfra/mistralai/Devstral-Small-2507": {
+      "input": 0.06999999999999999,
+      "output": 0.27999999999999997
+    },
+    "deepinfra/mistralai/Mistral-7B-Instruct-v0.1": {
+      "input": 0.055,
+      "output": 0.055
+    },
+    "deepinfra/mistralai/Mistral-7B-Instruct-v0.2": {
+      "input": 0.055,
+      "output": 0.055
+    },
+    "deepinfra/mistralai/Mistral-7B-Instruct-v0.3": {
+      "input": 0.027999999999999997,
+      "output": 0.054
+    },
     "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
-      "input": 0.019000000000000003,
-      "output": 0.03
+      "input": 0.019,
+      "output": 0.030000000000000002
     },
     "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501": {
-      "input": 0.049999999999999996,
+      "input": 0.05,
       "output": 0.08
+    },
+    "deepinfra/mistralai/Mistral-Small-3.1-24B-Instruct-2503": {
+      "input": 0.05,
+      "output": 0.1
     },
     "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506": {
       "input": 0.075,
-      "output": 0.19999999999999998
+      "output": 0.2
+    },
+    "deepinfra/mistralai/Mixtral-8x22B-Instruct-v0.1": {
+      "input": 0.6499999999999999,
+      "output": 0.6499999999999999
     },
     "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1": {
-      "input": 0.39999999999999997,
-      "output": 0.39999999999999997
+      "input": 0.5399999999999999,
+      "output": 0.5399999999999999
     },
     "deepinfra/moonshotai/Kimi-K2-Instruct": {
       "input": 0.5,
       "output": 2
     },
     "deepinfra/moonshotai/Kimi-K2-Instruct-0905": {
-      "cacheRead": 0.39999999999999997,
-      "input": 0.5,
+      "cacheRead": 0.15000000000000002,
+      "input": 0.4,
       "output": 2
+    },
+    "deepinfra/moonshotai/Kimi-K2-Thinking": {
+      "cacheRead": 0.141,
+      "input": 0.47,
+      "output": 2
+    },
+    "deepinfra/moonshotai/Kimi-K2.5-Turbo": {
+      "cacheRead": 0.10000000199999999,
+      "input": 0.6,
+      "output": 2.9999999999999996
     },
     "deepinfra/moonshotai/Kimi-K3": {
       "cacheRead": 0.28500000000000003,
-      "input": 2.8499999999999996,
+      "input": 2.85,
       "output": 14.25
     },
     "deepinfra/NousResearch/Hermes-3-Llama-3.1-405B": {
@@ -20253,27 +20439,48 @@
       "input": 0.7,
       "output": 0.7
     },
+    "deepinfra/NovaSky-AI/Sky-T1-32B-Preview": {
+      "input": 0.12000000000000001,
+      "output": 0.18
+    },
     "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct": {
-      "input": 0.6,
-      "output": 0.6
+      "input": 1.2,
+      "output": 1.2
     },
     "deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5": {
-      "input": 0.09999999999999999,
-      "output": 0.39999999999999997
+      "input": 0.4,
+      "output": 0.4
     },
     "deepinfra/nvidia/Nemotron-3-Nano-30B-A3B": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.049999999999999996,
-      "output": 0.19999999999999998
+      "cacheRead": 0.025,
+      "input": 0.05,
+      "output": 0.2
+    },
+    "deepinfra/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning": {
+      "input": 0.2,
+      "output": 0.8
+    },
+    "deepinfra/nvidia/Nemotron-4-340B-Instruct": {
+      "input": 4.2,
+      "output": 4.2
     },
     "deepinfra/nvidia/Nemotron-Content-Safety-3.5": {
-      "input": 0.19999999999999998,
-      "output": 0.19999999999999998
+      "input": 0.2,
+      "output": 0.2
+    },
+    "deepinfra/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+      "cacheRead": 0.3,
+      "input": 1,
+      "output": 5
     },
     "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.19999999999999998
+      "output": 0.2
+    },
+    "deepinfra/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL": {
+      "input": 0.2,
+      "output": 0.6
     },
     "deepinfra/nvidia/NVIDIA-Nemotron-Nano-9B-v2": {
       "input": 0.04,
@@ -20281,91 +20488,150 @@
     },
     "deepinfra/openai/gpt-oss-120b": {
       "input": 0.037,
-      "output": 0.16999999999999998
+      "output": 0.17
     },
     "deepinfra/openai/gpt-oss-120b-Turbo": {
       "input": 0.15,
       "output": 0.6
     },
     "deepinfra/openai/gpt-oss-120b-Ultra": {
-      "input": 0.19999999999999998,
-      "output": 0.95
+      "input": 0.2,
+      "output": 0.9500000000000001
     },
     "deepinfra/openai/gpt-oss-20b": {
-      "input": 0.03,
-      "output": 0.14
+      "input": 0.030000000000000002,
+      "output": 0.13999999999999999
+    },
+    "deepinfra/openbmb/MiniCPM-Llama3-V-2_5": {
+      "input": 0.34,
+      "output": 0.34
+    },
+    "deepinfra/openchat/openchat_3.5": {
+      "input": 0.055,
+      "output": 0.055
+    },
+    "deepinfra/openchat/openchat-3.6-8b": {
+      "input": 0.055,
+      "output": 0.055
+    },
+    "deepinfra/PaddlePaddle/PaddleOCR-VL-0.9B": {
+      "input": 0.13999999999999999,
+      "output": 0.8
+    },
+    "deepinfra/Phind/Phind-CodeLlama-34B-v2": {
+      "input": 0.6,
+      "output": 0.6
+    },
+    "deepinfra/Qwen/QVQ-72B-Preview": {
+      "input": 0.25,
+      "output": 0.5
+    },
+    "deepinfra/Qwen/Qwen2-72B-Instruct": {
+      "input": 0.35,
+      "output": 0.4
+    },
+    "deepinfra/Qwen/Qwen2-7B-Instruct": {
+      "input": 0.055,
+      "output": 0.055
     },
     "deepinfra/Qwen/Qwen2.5-72B-Instruct": {
       "input": 0.36,
-      "output": 0.39999999999999997
+      "output": 0.4
     },
     "deepinfra/Qwen/Qwen2.5-7B-Instruct": {
       "input": 0.04,
-      "output": 0.09999999999999999
+      "output": 0.1
+    },
+    "deepinfra/Qwen/Qwen2.5-Coder-32B-Instruct": {
+      "input": 0.060000000000000005,
+      "output": 0.15
+    },
+    "deepinfra/Qwen/Qwen2.5-Coder-7B": {
+      "input": 0.025,
+      "output": 0.05
     },
     "deepinfra/Qwen/Qwen2.5-VL-32B-Instruct": {
-      "input": 0.19999999999999998,
+      "input": 0.2,
       "output": 0.6
     },
     "deepinfra/Qwen/Qwen3-14B": {
-      "input": 0.12,
-      "output": 0.24
+      "input": 0.12000000000000001,
+      "output": 0.24000000000000002
     },
     "deepinfra/Qwen/Qwen3-235B-A22B": {
       "input": 0.18,
-      "output": 0.54
+      "output": 0.5399999999999999
     },
     "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507": {
       "input": 0.09,
       "output": 0.55
     },
     "deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507": {
-      "input": 0.3,
-      "output": 2.9000000000000004
+      "cacheRead": 0.2000000006,
+      "input": 0.23,
+      "output": 2.3000000000000003
     },
     "deepinfra/Qwen/Qwen3-30B-A3B": {
-      "input": 0.12,
+      "input": 0.12000000000000001,
       "output": 0.5
     },
     "deepinfra/Qwen/Qwen3-32B": {
       "input": 0.08,
-      "output": 0.28
+      "output": 0.27999999999999997
+    },
+    "deepinfra/Qwen/Qwen3-Coder-30B-A3B-Instruct": {
+      "input": 0.06999999999999999,
+      "output": 0.26
     },
     "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
-      "input": 0.39999999999999997,
-      "output": 1.5999999999999999
+      "input": 0.4,
+      "output": 1.6
     },
     "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo": {
-      "cacheRead": 0.09999999999999999,
+      "cacheRead": 0.09999999899999999,
       "input": 0.3,
       "output": 1
-    },
-    "deepinfra/Qwen/Qwen3-Max": {
-      "cacheRead": 0.24,
-      "input": 1.2,
-      "output": 6
-    },
-    "deepinfra/Qwen/Qwen3-Max-Thinking": {
-      "cacheRead": 0.24,
-      "input": 1.2,
-      "output": 6
     },
     "deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct": {
       "input": 0.09,
       "output": 1.1
     },
-    "deepinfra/Qwen/Qwen3-Next-80B-A3B-Thinking": {
-      "input": 0.14,
-      "output": 1.4
-    },
     "deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct": {
-      "cacheRead": 0.11,
-      "input": 0.19999999999999998,
+      "cacheRead": 0.11000000000000001,
+      "input": 0.2,
       "output": 0.88
+    },
+    "deepinfra/Qwen/Qwen3-VL-235B-A22B-Thinking": {
+      "input": 0.45,
+      "output": 3.49
     },
     "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
       "input": 0.15,
       "output": 0.6
+    },
+    "deepinfra/Qwen/Qwen3-VL-30B-A3B-Thinking": {
+      "input": 0.29,
+      "output": 0.99
+    },
+    "deepinfra/Qwen/Qwen3-VL-4B-Instruct": {
+      "input": 0.1,
+      "output": 0.6
+    },
+    "deepinfra/Qwen/Qwen3-VL-4B-Thinking": {
+      "input": 0.1,
+      "output": 1
+    },
+    "deepinfra/Qwen/Qwen3-VL-8B-Instruct": {
+      "input": 0.18,
+      "output": 0.69
+    },
+    "deepinfra/Qwen/Qwen3-VL-8B-Thinking": {
+      "input": 0.18,
+      "output": 2.0900000000000003
+    },
+    "deepinfra/Qwen/Qwen3.5-0.8B": {
+      "input": 0.01,
+      "output": 0.05
     },
     "deepinfra/Qwen/Qwen3.5-122B-A10B": {
       "input": 0.29,
@@ -20373,114 +20639,147 @@
     },
     "deepinfra/Qwen/Qwen3.5-27B": {
       "input": 0.26,
-      "output": 2.6
+      "output": 2.5999999999999996
+    },
+    "deepinfra/Qwen/Qwen3.5-2B": {
+      "input": 0.02,
+      "output": 0.1
     },
     "deepinfra/Qwen/Qwen3.5-35B-A3B": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.14,
+      "cacheRead": 0.050000000399999994,
+      "input": 0.13999999999999999,
       "output": 1
     },
     "deepinfra/Qwen/Qwen3.5-397B-A17B": {
-      "cacheRead": 0.22,
-      "input": 0.44999999999999996,
-      "output": 3
+      "cacheRead": 0.22000000050000001,
+      "input": 0.45,
+      "output": 2.9999999999999996
+    },
+    "deepinfra/Qwen/Qwen3.5-4B": {
+      "input": 0.030000000000000002,
+      "output": 0.15
     },
     "deepinfra/Qwen/Qwen3.5-9B": {
-      "input": 0.09999999999999999,
+      "input": 0.1,
       "output": 0.15
     },
     "deepinfra/Qwen/Qwen3.6-27B": {
       "input": 0.32,
-      "output": 3.1999999999999997
+      "output": 3.2
     },
     "deepinfra/Qwen/Qwen3.6-35B-A3B": {
-      "input": 0.09999999999999999,
-      "output": 0.95
-    },
-    "deepinfra/Qwen/Qwen3.7-Max": {
-      "cacheRead": 0.5,
-      "input": 2.5,
-      "output": 7.5
+      "input": 0.1,
+      "output": 0.9500000000000001
     },
     "deepinfra/Qwen/Qwen3.8-2.4T-A95B": {
-      "cacheRead": 0.19999999999999998,
+      "cacheRead": 0.2,
       "input": 2,
-      "output": 6
+      "output": 5.999999999999999
     },
     "deepinfra/Qwen/Qwen3.8-27B": {
-      "cacheRead": 0.04,
-      "input": 0.39999999999999997,
-      "output": 3
+      "cacheRead": 0.04000000000000001,
+      "input": 0.4,
+      "output": 2.9999999999999996
     },
     "deepinfra/Qwen/Qwen3.8-Max": {
-      "cacheRead": 0.206,
-      "input": 1.6500000000000001,
-      "output": 4.951
+      "cacheRead": 0.205999992,
+      "input": 1.65,
+      "output": 4.9510000000000005
     },
     "deepinfra/Qwen/QwQ-32B": {
       "input": 0.15,
-      "output": 0.39999999999999997
+      "output": 0.4
+    },
+    "deepinfra/Qwen/QwQ-32B-Preview": {
+      "input": 0.12000000000000001,
+      "output": 0.18
+    },
+    "deepinfra/Sao10K/L3-70B-Euryale-v2.1": {
+      "input": 0.7,
+      "output": 0.8
+    },
+    "deepinfra/Sao10K/L3-8B-Lunaris-v1": {
+      "input": 0.030000000000000002,
+      "output": 0.060000000000000005
     },
     "deepinfra/Sao10K/L3-8B-Lunaris-v1-Turbo": {
       "input": 0.04,
-      "output": 0.049999999999999996
+      "output": 0.05
     },
     "deepinfra/Sao10K/L3.1-70B-Euryale-v2.2": {
-      "input": 0.85,
-      "output": 0.85
+      "input": 0.8500000000000001,
+      "output": 0.8500000000000001
     },
     "deepinfra/Sao10K/L3.3-70B-Euryale-v2.3": {
-      "input": 0.65,
-      "output": 0.75
+      "input": 0.8500000000000001,
+      "output": 0.8500000000000001
     },
     "deepinfra/tencent/Hy3": {
-      "cacheRead": 0.035,
-      "input": 0.14,
+      "cacheRead": 0.034999999999999996,
+      "input": 0.13999999999999999,
       "output": 0.58
     },
     "deepinfra/thinkingmachines/Inkling": {
-      "cacheRead": 0.16,
-      "input": 0.95,
+      "cacheRead": 0.1599999975,
+      "input": 0.9500000000000001,
       "output": 4.05
     },
     "deepinfra/thinkingmachines/Inkling-Small": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.44999999999999996,
+      "cacheRead": 0.099999999,
+      "input": 0.45,
       "output": 1.2
     },
     "deepinfra/XiaomiMiMo/MiMo-V2.5": {
-      "cacheRead": 0.08,
-      "input": 0.39999999999999997,
+      "cacheRead": 0.08000000000000002,
+      "input": 0.4,
       "output": 2
     },
     "deepinfra/XiaomiMiMo/MiMo-V2.5-Pro": {
-      "cacheRead": 0.19999999999999998,
-      "input": 1,
-      "output": 3
+      "cacheRead": 0.07800000000000001,
+      "input": 0.39,
+      "output": 1.17
     },
     "deepinfra/zai-org/GLM-4.5": {
-      "input": 0.39999999999999997,
-      "output": 1.5999999999999999
+      "input": 0.38,
+      "output": 1.6
+    },
+    "deepinfra/zai-org/GLM-4.5-Air": {
+      "input": 0.2,
+      "output": 1.1
     },
     "deepinfra/zai-org/GLM-4.6": {
-      "cacheRead": 0.09999999999999999,
+      "cacheRead": 0.1,
       "input": 0.5,
       "output": 2
     },
+    "deepinfra/zai-org/GLM-4.6V": {
+      "input": 0.3,
+      "output": 0.9
+    },
     "deepinfra/zai-org/GLM-4.7": {
-      "cacheRead": 0.08,
-      "input": 0.39999999999999997,
+      "cacheRead": 0.08000000000000002,
+      "input": 0.4,
       "output": 1.75
     },
     "deepinfra/zai-org/GLM-4.7-Flash": {
-      "cacheRead": 0.01,
-      "input": 0.06,
-      "output": 0.39999999999999997
+      "cacheRead": 0.0100000002,
+      "input": 0.060000000000000005,
+      "output": 0.4
     },
     "deepinfra/zai-org/GLM-5": {
       "cacheRead": 0.12,
       "input": 0.6,
       "output": 2.08
+    },
+    "deepinfra/zai-org/GLM-5.3": {
+      "cacheRead": 0.12,
+      "input": 1.2,
+      "output": 4
+    },
+    "deepinfra/zai-org/GLM-5.3-Flash": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "deepseek-chat": {
       "cacheRead": 0.028,
@@ -67229,10 +67528,10 @@
           },
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.09999999999999999,
+            "cacheRead": 0.10000000399999999,
             "cacheWrite": 0,
-            "input": 1.3,
-            "output": 2.6
+            "input": 1.2999999999999998,
+            "output": 2.5999999999999996
           },
           "id": "deepseek-ai/DeepSeek-V4-Pro",
           "input": [
@@ -67248,9 +67547,9 @@
           },
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.07,
+            "cacheRead": 0.070000002,
             "cacheWrite": 0,
-            "input": 0.44999999999999996,
+            "input": 0.45,
             "output": 2.25
           },
           "id": "moonshotai/Kimi-K2.5",
@@ -67272,7 +67571,7 @@
           "cost": {
             "cacheRead": 0.15,
             "cacheWrite": 0,
-            "input": 0.75,
+            "input": 0.7499999999999999,
             "output": 3.5
           },
           "id": "moonshotai/Kimi-K2.6",
@@ -67292,8 +67591,8 @@
           "cost": {
             "cacheRead": 0.136,
             "cacheWrite": 0,
-            "input": 0.6799999999999999,
-            "output": 3.4
+            "input": 0.68,
+            "output": 3.4000000000000004
           },
           "id": "moonshotai/Kimi-K2.7-Code",
           "input": [
@@ -67312,8 +67611,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.08499999999999999,
-            "output": 0.39999999999999997
+            "input": 0.085,
+            "output": 0.4
           },
           "id": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
           "input": [
@@ -67329,7 +67628,7 @@
           },
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.09999999999999999,
+            "cacheRead": 0.1,
             "cacheWrite": 0,
             "input": 0.5,
             "output": 2.2
@@ -67349,9 +67648,9 @@
           },
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.02,
+            "cacheRead": 0.019999999799999998,
             "cacheWrite": 0,
-            "input": 0.1,
+            "input": 0.09,
             "output": 0.3
           },
           "id": "stepfun-ai/Step-3.5-Flash",
@@ -67370,10 +67669,10 @@
           },
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.04,
+            "cacheRead": 0.04000000000000001,
             "cacheWrite": 0,
-            "input": 0.19999999999999998,
-            "output": 1.15
+            "input": 0.2,
+            "output": 1.1500000000000001
           },
           "id": "stepfun-ai/Step-3.7-Flash",
           "input": [
@@ -67391,9 +67690,9 @@
           },
           "contextWindow": 202752,
           "cost": {
-            "cacheRead": 0.205,
+            "cacheRead": 0.205000005,
             "cacheWrite": 0,
-            "input": 1.0499999999999998,
+            "input": 1.05,
             "output": 3.5
           },
           "id": "zai-org/GLM-5.1",
@@ -67413,10 +67712,10 @@
           },
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.14,
+            "cacheRead": 0.091000001625,
             "cacheWrite": 0,
-            "input": 0.75,
-            "output": 2.4
+            "input": 0.48749999999999993,
+            "output": 1.56
           },
           "id": "zai-org/GLM-5.2",
           "input": [
@@ -72317,5 +72616,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "e4d3bf6583bd3dfedb9363b4bb2d63d5f448d16c"
+  "sourceCommit": "d9031e4648a492c1a093ed10c5ed3dbca08cd5b5"
 }
