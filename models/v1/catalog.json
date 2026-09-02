@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788311021407,
+  "generatedAt": 1788323767733,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -126,6 +126,11 @@
           ]
         }
       ]
+    },
+    "~z-ai/glm-flash-latest": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "~z-ai/glm-latest": {
       "cacheRead": 0.234,
@@ -4495,6 +4500,11 @@
           ]
         }
       ]
+    },
+    "cloudflare-ai-gateway/~z-ai/glm-flash-latest": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
       "cacheRead": 0.234,
@@ -25202,6 +25212,11 @@
         }
       ]
     },
+    "kilocode/~z-ai/glm-flash-latest": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
+    },
     "kilocode/~z-ai/glm-latest": {
       "cacheRead": 0.234,
       "input": 1.17,
@@ -43762,6 +43777,12 @@
       "input": 10,
       "output": 50
     },
+    "opencode/claude-fable-5-1": {
+      "cacheRead": 0.25,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "opencode/claude-haiku-4-5": {
       "cacheRead": 0.1,
       "cacheWrite": 1.25,
@@ -44505,6 +44526,11 @@
           ]
         }
       ]
+    },
+    "openrouter/~z-ai/glm-flash-latest": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "openrouter/~z-ai/glm-latest": {
       "cacheRead": 0.234,
@@ -51097,6 +51123,11 @@
           ]
         }
       ]
+    },
+    "vercel-ai-gateway/~z-ai/glm-flash-latest": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
       "cacheRead": 0.234,
@@ -69040,10 +69071,10 @@
           },
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.04000000000000001,
+            "cacheRead": 0.03200000000000001,
             "cacheWrite": 0,
-            "input": 0.2,
-            "output": 1.1500000000000001
+            "input": 0.16000000000000003,
+            "output": 0.9200000000000002
           },
           "id": "stepfun-ai/Step-3.7-Flash",
           "input": [
@@ -73987,5 +74018,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "9853a1a767ca3c2bd626f570e347a8dc07298948"
+  "sourceCommit": "9ef8016d6b7881caee01f4e5e9f06e53ea439c7c"
 }
