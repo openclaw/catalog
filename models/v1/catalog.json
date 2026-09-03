@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788453095119,
+  "generatedAt": 1788467369704,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -65,9 +65,9 @@
       ]
     },
     "~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -128,14 +128,14 @@
       ]
     },
     "~z-ai/glm-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.01425,
+      "input": 0.07125000000000001,
+      "output": 0.2375
     },
     "~z-ai/glm-latest": {
-      "cacheRead": 0.1863,
-      "input": 1.1340000000000001,
-      "output": 3.564
+      "cacheRead": 0.18860000000000002,
+      "input": 1.1480000000000001,
+      "output": 3.608
     },
     "ai21.j2-mid-v1": {
       "input": 12.5,
@@ -1033,15 +1033,17 @@
       "output": 1.68
     },
     "azure_ai/deepseek-v4-flash": {
-      "input": 0.19,
-      "output": 0.51
-    },
-    "azure_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.19,
       "output": 0.51
     },
+    "azure_ai/DeepSeek-V4-Flash-0731": {
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
+    },
     "azure_ai/deepseek-v4-pro": {
+      "cacheRead": 0.145,
       "input": 1.74,
       "output": 3.48
     },
@@ -1227,10 +1229,17 @@
       "output": 0.7
     },
     "azure_ai/kimi-k2.5": {
+      "cacheRead": 0.09999999999999999,
       "input": 0.6,
       "output": 3
     },
     "azure_ai/kimi-k2.6": {
+      "cacheRead": 0.16,
+      "input": 0.95,
+      "output": 4
+    },
+    "azure_ai/kimi-k2.7-code": {
+      "cacheRead": 0.19,
       "input": 0.95,
       "output": 4
     },
@@ -2099,6 +2108,24 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "azure/us-gov/gpt-5.1": {
+      "cacheRead": 0.171875,
+      "input": 1.71875,
+      "output": 13.75
+    },
+    "azure/us-gov/o3-mini": {
+      "cacheRead": 0.757,
+      "input": 1.513,
+      "output": 6.05
+    },
+    "azure/us-gov/text-embedding-3-large": {
+      "input": 0.16299999999999998,
+      "output": 0
+    },
+    "azure/us-gov/text-embedding-3-small": {
+      "input": 0.024999999999999998,
+      "output": 0
+    },
     "azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
@@ -2897,11 +2924,23 @@
       "input": 0.53,
       "output": 2.66
     },
+    "bedrock_converse/us-gov.anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "bedrock_converse/us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "bedrock_converse/us-gov.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "bedrock_converse/us.amazon.nova-2-lite-v1:0": {
       "cacheRead": 0.0825,
@@ -3155,6 +3194,33 @@
     "bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.075,
       "output": 0.3
+    },
+    "bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "bedrock_mantle/us-gov-west-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna": {
+      "cacheRead": 0.0264,
+      "cacheWrite": 0.33,
+      "input": 0.26399999999999996,
+      "output": 1.584
+    },
+    "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra": {
+      "cacheRead": 0.26399999999999996,
+      "cacheWrite": 3.3000000000000003,
+      "input": 2.64,
+      "output": 15.840000000000002
+    },
+    "bedrock_mantle/us-gov-west-1/xai.grok-4.3": {
+      "cacheRead": 0.24,
+      "input": 1.5,
+      "output": 3
     },
     "bedrock_mantle/xai.grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -3848,11 +3914,23 @@
       "input": 1.2,
       "output": 6
     },
+    "bedrock/us-gov-east-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "bedrock/us-gov-east-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -3867,6 +3945,26 @@
     "bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
       "output": 2.65
+    },
+    "bedrock/us-gov-east-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "bedrock/us-gov-east-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "bedrock/us-gov-east-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "bedrock/us-gov-west-1/amazon.nova-pro-v1:0": {
       "input": 0.96,
@@ -3916,11 +4014,23 @@
       "input": 1.2,
       "output": 6
     },
+    "bedrock/us-gov-west-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "bedrock/us-gov-west-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -3934,7 +4044,27 @@
     },
     "bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
-      "output": 2.65
+      "output": 0.6
+    },
+    "bedrock/us-gov-west-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "bedrock/us-gov-west-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "bedrock/us-gov-west-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "bedrock/us-west-1/meta.llama3-70b-instruct-v1:0": {
       "input": 2.65,
@@ -4449,9 +4579,9 @@
       ]
     },
     "cloudflare-ai-gateway/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "cloudflare-ai-gateway/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -4512,14 +4642,14 @@
       ]
     },
     "cloudflare-ai-gateway/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.01425,
+      "input": 0.07125000000000001,
+      "output": 0.2375
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.1863,
-      "input": 1.1340000000000001,
-      "output": 3.564
+      "cacheRead": 0.18860000000000002,
+      "input": 1.1480000000000001,
+      "output": 3.608
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -5156,15 +5286,17 @@
       "output": 1.68
     },
     "cloudflare-ai-gateway/azure_ai/deepseek-v4-flash": {
-      "input": 0.19,
-      "output": 0.51
-    },
-    "cloudflare-ai-gateway/azure_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.19,
       "output": 0.51
     },
+    "cloudflare-ai-gateway/azure_ai/DeepSeek-V4-Flash-0731": {
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
+    },
     "cloudflare-ai-gateway/azure_ai/deepseek-v4-pro": {
+      "cacheRead": 0.145,
       "input": 1.74,
       "output": 3.48
     },
@@ -5350,10 +5482,17 @@
       "output": 0.7
     },
     "cloudflare-ai-gateway/azure_ai/kimi-k2.5": {
+      "cacheRead": 0.09999999999999999,
       "input": 0.6,
       "output": 3
     },
     "cloudflare-ai-gateway/azure_ai/kimi-k2.6": {
+      "cacheRead": 0.16,
+      "input": 0.95,
+      "output": 4
+    },
+    "cloudflare-ai-gateway/azure_ai/kimi-k2.7-code": {
+      "cacheRead": 0.19,
       "input": 0.95,
       "output": 4
     },
@@ -6222,6 +6361,24 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "cloudflare-ai-gateway/azure/us-gov/gpt-5.1": {
+      "cacheRead": 0.171875,
+      "input": 1.71875,
+      "output": 13.75
+    },
+    "cloudflare-ai-gateway/azure/us-gov/o3-mini": {
+      "cacheRead": 0.757,
+      "input": 1.513,
+      "output": 6.05
+    },
+    "cloudflare-ai-gateway/azure/us-gov/text-embedding-3-large": {
+      "input": 0.16299999999999998,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/azure/us-gov/text-embedding-3-small": {
+      "input": 0.024999999999999998,
+      "output": 0
+    },
     "cloudflare-ai-gateway/azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
@@ -7024,11 +7181,23 @@
       "input": 0.53,
       "output": 2.66
     },
+    "cloudflare-ai-gateway/bedrock_converse/us-gov.anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "cloudflare-ai-gateway/bedrock_converse/us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "cloudflare-ai-gateway/bedrock_converse/us-gov.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "cloudflare-ai-gateway/bedrock_converse/us.amazon.nova-2-lite-v1:0": {
       "cacheRead": 0.0825,
@@ -7282,6 +7451,33 @@
     "cloudflare-ai-gateway/bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.075,
       "output": 0.3
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/us-gov-west-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna": {
+      "cacheRead": 0.0264,
+      "cacheWrite": 0.33,
+      "input": 0.26399999999999996,
+      "output": 1.584
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra": {
+      "cacheRead": 0.26399999999999996,
+      "cacheWrite": 3.3000000000000003,
+      "input": 2.64,
+      "output": 15.840000000000002
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/us-gov-west-1/xai.grok-4.3": {
+      "cacheRead": 0.24,
+      "input": 1.5,
+      "output": 3
     },
     "cloudflare-ai-gateway/bedrock_mantle/xai.grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -7963,11 +8159,23 @@
       "input": 1.2,
       "output": 6
     },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "cloudflare-ai-gateway/bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "cloudflare-ai-gateway/bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -7982,6 +8190,26 @@
     "cloudflare-ai-gateway/bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
       "output": 2.65
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "cloudflare-ai-gateway/bedrock/us-gov-west-1/amazon.nova-pro-v1:0": {
       "input": 0.96,
@@ -8031,11 +8259,23 @@
       "input": 1.2,
       "output": 6
     },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "cloudflare-ai-gateway/bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "cloudflare-ai-gateway/bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -8049,7 +8289,27 @@
     },
     "cloudflare-ai-gateway/bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
-      "output": 2.65
+      "output": 0.6
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "cloudflare-ai-gateway/bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "cloudflare-ai-gateway/bedrock/us-west-1/meta.llama3-70b-instruct-v1:0": {
       "input": 2.65,
@@ -9604,9 +9864,9 @@
       "output": 1
     },
     "cloudflare-ai-gateway/deepseek/deepseek-chat-v3.1": {
-      "cacheRead": 0.13,
-      "input": 0.25,
-      "output": 0.95
+      "cacheRead": 0.55,
+      "input": 0.55,
+      "output": 1.6500000000000001
     },
     "cloudflare-ai-gateway/deepseek/deepseek-coder": {
       "input": 0.14,
@@ -9650,9 +9910,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -9670,9 +9930,9 @@
       "output": 0.66
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.086333,
-      "input": 1.035996,
-      "output": 2.071992
+      "cacheRead": 0.085898,
+      "input": 1.030776,
+      "output": 2.061552
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -10044,6 +10304,11 @@
       "input": 1.4,
       "output": 4.4
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/glm-5p3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -10065,6 +10330,11 @@
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/hermes-2-pro-mistral-7b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/inkling": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1,
+      "output": 4.05
     },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/models/internvl3-38b": {
       "input": 0.8999999999999999,
@@ -11196,6 +11466,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "cloudflare-ai-gateway/gemini/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "cloudflare-ai-gateway/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -11902,6 +12177,11 @@
       "input": 0.020999999999999998,
       "output": 0.063
     },
+    "cloudflare-ai-gateway/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
+    },
     "cloudflare-ai-gateway/jina_ai/jina-reranker-v2-base-multilingual": {
       "input": 0.018,
       "output": 0.018
@@ -12338,8 +12618,9 @@
       "output": 5
     },
     "cloudflare-ai-gateway/mistral/magistral-medium-latest": {
-      "input": 2,
-      "output": 5
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "cloudflare-ai-gateway/mistral/magistral-small-1-2-2509": {
       "input": 0.5,
@@ -12350,8 +12631,9 @@
       "output": 1.5
     },
     "cloudflare-ai-gateway/mistral/magistral-small-latest": {
-      "input": 0.5,
-      "output": 1.5
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/mistral/ministral-14b-2512": {
       "input": 0.19999999999999998,
@@ -12436,8 +12718,9 @@
       "output": 1.5
     },
     "cloudflare-ai-gateway/mistral/mistral-medium": {
-      "input": 2.7,
-      "output": 8.1
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "cloudflare-ai-gateway/mistral/mistral-medium-2312": {
       "input": 2.7,
@@ -14901,6 +15184,12 @@
         }
       ]
     },
+    "cloudflare-ai-gateway/openai/gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "cloudflare-ai-gateway/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -14985,7 +15274,7 @@
     "cloudflare-ai-gateway/openai/gpt-realtime-2": {
       "cacheRead": 0.39999999999999997,
       "input": 4,
-      "output": 16
+      "output": 24
     },
     "cloudflare-ai-gateway/openai/gpt-realtime-2.1": {
       "cacheRead": 0.39999999999999997,
@@ -16470,9 +16759,8 @@
     },
     "cloudflare-ai-gateway/qwen/qwen3.8-27b": {
       "cacheRead": 0.08499999999999999,
-      "cacheWrite": 0.53125,
-      "input": 0.425,
-      "output": 2.5500000000000003
+      "input": 0.42,
+      "output": 3
     },
     "cloudflare-ai-gateway/qwen/qwen3.8-flash": {
       "cacheRead": 0.016,
@@ -16892,6 +17180,15 @@
     "cloudflare-ai-gateway/scaleway/BAAI/bge-multilingual-gemma2": {
       "input": 0.09999999999999999,
       "output": 0
+    },
+    "cloudflare-ai-gateway/scaleway/deepseek-v4-flash-0731": {
+      "cacheRead": 0.08,
+      "input": 0.39999999999999997,
+      "output": 0.7999999999999999
+    },
+    "cloudflare-ai-gateway/scaleway/glm-5.2": {
+      "input": 1.7999999999999998,
+      "output": 5.5
     },
     "cloudflare-ai-gateway/scaleway/google/gemma-3-27b-it": {
       "input": 0.25,
@@ -17397,9 +17694,9 @@
       "output": 1.28
     },
     "cloudflare-ai-gateway/together_ai/Qwen/Qwen3.8-2.4T-A95B": {
-      "cacheRead": 0.5,
-      "input": 2.5,
-      "output": 6.25
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "cloudflare-ai-gateway/together_ai/Qwen/Qwen3.8-Flash": {
       "input": 0.15,
@@ -18127,6 +18424,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "cloudflare-ai-gateway/vertex_ai-language-models/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "cloudflare-ai-gateway/vertex_ai-language-models/gemini-live-2.5-flash-native-audio": {
       "input": 0.5,
       "output": 2
@@ -18490,6 +18792,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "cloudflare-ai-gateway/vertex_ai/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "cloudflare-ai-gateway/vertex_ai/gemini-embedding-2": {
       "input": 0.19999999999999998,
       "output": 0
@@ -18672,6 +18979,14 @@
       "output": 0
     },
     "cloudflare-ai-gateway/voyage/rerank-2.5-lite": {
+      "input": 0.02,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/voyage/rerank-3": {
+      "input": 0.049999999999999996,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/voyage/rerank-3-lite": {
       "input": 0.02,
       "output": 0
     },
@@ -19382,6 +19697,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1,
       "output": 2
+    },
+    "cloudflare-ai-gateway/xai/grok-build-latest": {
+      "cacheRead": 0.3,
+      "input": 2,
+      "output": 6
     },
     "cloudflare-ai-gateway/xai/grok-code-fast": {
       "cacheRead": 0.19999999999999998,
@@ -21224,9 +21544,9 @@
       "output": 1
     },
     "deepseek/deepseek-chat-v3.1": {
-      "cacheRead": 0.13,
-      "input": 0.25,
-      "output": 0.95
+      "cacheRead": 0.55,
+      "input": 0.55,
+      "output": 1.6500000000000001
     },
     "deepseek/deepseek-coder": {
       "input": 0.14,
@@ -21881,6 +22201,11 @@
       "input": 1.4,
       "output": 4.4
     },
+    "fireworks_ai/accounts/fireworks/models/glm-5p3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "fireworks_ai/accounts/fireworks/models/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -21902,6 +22227,11 @@
     "fireworks_ai/accounts/fireworks/models/hermes-2-pro-mistral-7b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
+    },
+    "fireworks_ai/accounts/fireworks/models/inkling": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1,
+      "output": 4.05
     },
     "fireworks_ai/accounts/fireworks/models/internvl3-38b": {
       "input": 0.8999999999999999,
@@ -23133,6 +23463,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -23364,6 +23699,11 @@
       "output": 3.75
     },
     "gemini/gemini-3.7-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
+    "gemini/gemini-3.8-flash": {
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
@@ -24791,6 +25131,12 @@
       "input": 12.5,
       "output": 75
     },
+    "gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -24848,7 +25194,7 @@
     "gpt-realtime-2": {
       "cacheRead": 0.39999999999999997,
       "input": 4,
-      "output": 16
+      "output": 24
     },
     "gpt-realtime-2.1": {
       "cacheRead": 0.39999999999999997,
@@ -25053,6 +25399,11 @@
       "input": 0.020999999999999998,
       "output": 0.063
     },
+    "inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
+    },
     "inclusionai/ling-3.0-flash-fin:free": {
       "input": 0,
       "output": 0
@@ -25218,9 +25569,9 @@
       ]
     },
     "kilocode/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "kilocode/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -25281,14 +25632,14 @@
       ]
     },
     "kilocode/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.01425,
+      "input": 0.07125000000000001,
+      "output": 0.2375
     },
     "kilocode/~z-ai/glm-latest": {
-      "cacheRead": 0.1863,
-      "input": 1.1340000000000001,
-      "output": 3.564
+      "cacheRead": 0.18860000000000002,
+      "input": 1.1480000000000001,
+      "output": 3.608
     },
     "kilocode/ai21/j2-light": {
       "input": 3,
@@ -25925,15 +26276,17 @@
       "output": 1.68
     },
     "kilocode/azure_ai/deepseek-v4-flash": {
-      "input": 0.19,
-      "output": 0.51
-    },
-    "kilocode/azure_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.19,
       "output": 0.51
     },
+    "kilocode/azure_ai/DeepSeek-V4-Flash-0731": {
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
+    },
     "kilocode/azure_ai/deepseek-v4-pro": {
+      "cacheRead": 0.145,
       "input": 1.74,
       "output": 3.48
     },
@@ -26119,10 +26472,17 @@
       "output": 0.7
     },
     "kilocode/azure_ai/kimi-k2.5": {
+      "cacheRead": 0.09999999999999999,
       "input": 0.6,
       "output": 3
     },
     "kilocode/azure_ai/kimi-k2.6": {
+      "cacheRead": 0.16,
+      "input": 0.95,
+      "output": 4
+    },
+    "kilocode/azure_ai/kimi-k2.7-code": {
+      "cacheRead": 0.19,
       "input": 0.95,
       "output": 4
     },
@@ -26991,6 +27351,24 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "kilocode/azure/us-gov/gpt-5.1": {
+      "cacheRead": 0.171875,
+      "input": 1.71875,
+      "output": 13.75
+    },
+    "kilocode/azure/us-gov/o3-mini": {
+      "cacheRead": 0.757,
+      "input": 1.513,
+      "output": 6.05
+    },
+    "kilocode/azure/us-gov/text-embedding-3-large": {
+      "input": 0.16299999999999998,
+      "output": 0
+    },
+    "kilocode/azure/us-gov/text-embedding-3-small": {
+      "input": 0.024999999999999998,
+      "output": 0
+    },
     "kilocode/azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
@@ -27793,11 +28171,23 @@
       "input": 0.53,
       "output": 2.66
     },
+    "kilocode/bedrock_converse/us-gov.anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "kilocode/bedrock_converse/us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "kilocode/bedrock_converse/us-gov.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "kilocode/bedrock_converse/us.amazon.nova-2-lite-v1:0": {
       "cacheRead": 0.0825,
@@ -28051,6 +28441,33 @@
     "kilocode/bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.075,
       "output": 0.3
+    },
+    "kilocode/bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "kilocode/bedrock_mantle/us-gov-west-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "kilocode/bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna": {
+      "cacheRead": 0.0264,
+      "cacheWrite": 0.33,
+      "input": 0.26399999999999996,
+      "output": 1.584
+    },
+    "kilocode/bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra": {
+      "cacheRead": 0.26399999999999996,
+      "cacheWrite": 3.3000000000000003,
+      "input": 2.64,
+      "output": 15.840000000000002
+    },
+    "kilocode/bedrock_mantle/us-gov-west-1/xai.grok-4.3": {
+      "cacheRead": 0.24,
+      "input": 1.5,
+      "output": 3
     },
     "kilocode/bedrock_mantle/xai.grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -28732,11 +29149,23 @@
       "input": 1.2,
       "output": 6
     },
+    "kilocode/bedrock/us-gov-east-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "kilocode/bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "kilocode/bedrock/us-gov-east-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "kilocode/bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -28751,6 +29180,26 @@
     "kilocode/bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
       "output": 2.65
+    },
+    "kilocode/bedrock/us-gov-east-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "kilocode/bedrock/us-gov-east-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "kilocode/bedrock/us-gov-east-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "kilocode/bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "kilocode/bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "kilocode/bedrock/us-gov-west-1/amazon.nova-pro-v1:0": {
       "input": 0.96,
@@ -28800,11 +29249,23 @@
       "input": 1.2,
       "output": 6
     },
+    "kilocode/bedrock/us-gov-west-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "kilocode/bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "kilocode/bedrock/us-gov-west-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "kilocode/bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -28818,7 +29279,27 @@
     },
     "kilocode/bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
-      "output": 2.65
+      "output": 0.6
+    },
+    "kilocode/bedrock/us-gov-west-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "kilocode/bedrock/us-gov-west-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "kilocode/bedrock/us-gov-west-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "kilocode/bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "kilocode/bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "kilocode/bedrock/us-west-1/meta.llama3-70b-instruct-v1:0": {
       "input": 2.65,
@@ -30373,9 +30854,9 @@
       "output": 1
     },
     "kilocode/deepseek/deepseek-chat-v3.1": {
-      "cacheRead": 0.13,
-      "input": 0.25,
-      "output": 0.95
+      "cacheRead": 0.55,
+      "input": 0.55,
+      "output": 1.6500000000000001
     },
     "kilocode/deepseek/deepseek-coder": {
       "input": 0.14,
@@ -30419,9 +30900,9 @@
       "output": 0.41
     },
     "kilocode/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "kilocode/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -30439,9 +30920,9 @@
       "output": 0.66
     },
     "kilocode/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.086333,
-      "input": 1.035996,
-      "output": 2.071992
+      "cacheRead": 0.085898,
+      "input": 1.030776,
+      "output": 2.061552
     },
     "kilocode/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -30813,6 +31294,11 @@
       "input": 1.4,
       "output": 4.4
     },
+    "kilocode/fireworks_ai/accounts/fireworks/models/glm-5p3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "kilocode/fireworks_ai/accounts/fireworks/models/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -30834,6 +31320,11 @@
     "kilocode/fireworks_ai/accounts/fireworks/models/hermes-2-pro-mistral-7b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/models/inkling": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1,
+      "output": 4.05
     },
     "kilocode/fireworks_ai/accounts/fireworks/models/internvl3-38b": {
       "input": 0.8999999999999999,
@@ -31965,6 +32456,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "kilocode/gemini/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "kilocode/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -32671,6 +33167,11 @@
       "input": 0.020999999999999998,
       "output": 0.063
     },
+    "kilocode/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
+    },
     "kilocode/jina_ai/jina-reranker-v2-base-multilingual": {
       "input": 0.018,
       "output": 0.018
@@ -33107,8 +33608,9 @@
       "output": 5
     },
     "kilocode/mistral/magistral-medium-latest": {
-      "input": 2,
-      "output": 5
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "kilocode/mistral/magistral-small-1-2-2509": {
       "input": 0.5,
@@ -33119,8 +33621,9 @@
       "output": 1.5
     },
     "kilocode/mistral/magistral-small-latest": {
-      "input": 0.5,
-      "output": 1.5
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/mistral/ministral-14b-2512": {
       "input": 0.19999999999999998,
@@ -33205,8 +33708,9 @@
       "output": 1.5
     },
     "kilocode/mistral/mistral-medium": {
-      "input": 2.7,
-      "output": 8.1
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "kilocode/mistral/mistral-medium-2312": {
       "input": 2.7,
@@ -35670,6 +36174,12 @@
         }
       ]
     },
+    "kilocode/openai/gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "kilocode/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -35754,7 +36264,7 @@
     "kilocode/openai/gpt-realtime-2": {
       "cacheRead": 0.39999999999999997,
       "input": 4,
-      "output": 16
+      "output": 24
     },
     "kilocode/openai/gpt-realtime-2.1": {
       "cacheRead": 0.39999999999999997,
@@ -37239,9 +37749,8 @@
     },
     "kilocode/qwen/qwen3.8-27b": {
       "cacheRead": 0.08499999999999999,
-      "cacheWrite": 0.53125,
-      "input": 0.425,
-      "output": 2.5500000000000003
+      "input": 0.42,
+      "output": 3
     },
     "kilocode/qwen/qwen3.8-flash": {
       "cacheRead": 0.016,
@@ -37661,6 +38170,15 @@
     "kilocode/scaleway/BAAI/bge-multilingual-gemma2": {
       "input": 0.09999999999999999,
       "output": 0
+    },
+    "kilocode/scaleway/deepseek-v4-flash-0731": {
+      "cacheRead": 0.08,
+      "input": 0.39999999999999997,
+      "output": 0.7999999999999999
+    },
+    "kilocode/scaleway/glm-5.2": {
+      "input": 1.7999999999999998,
+      "output": 5.5
     },
     "kilocode/scaleway/google/gemma-3-27b-it": {
       "input": 0.25,
@@ -38166,9 +38684,9 @@
       "output": 1.28
     },
     "kilocode/together_ai/Qwen/Qwen3.8-2.4T-A95B": {
-      "cacheRead": 0.5,
-      "input": 2.5,
-      "output": 6.25
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "kilocode/together_ai/Qwen/Qwen3.8-Flash": {
       "input": 0.15,
@@ -38896,6 +39414,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "kilocode/vertex_ai-language-models/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "kilocode/vertex_ai-language-models/gemini-live-2.5-flash-native-audio": {
       "input": 0.5,
       "output": 2
@@ -39259,6 +39782,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "kilocode/vertex_ai/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "kilocode/vertex_ai/gemini-embedding-2": {
       "input": 0.19999999999999998,
       "output": 0
@@ -39441,6 +39969,14 @@
       "output": 0
     },
     "kilocode/voyage/rerank-2.5-lite": {
+      "input": 0.02,
+      "output": 0
+    },
+    "kilocode/voyage/rerank-3": {
+      "input": 0.049999999999999996,
+      "output": 0
+    },
+    "kilocode/voyage/rerank-3-lite": {
       "input": 0.02,
       "output": 0
     },
@@ -40151,6 +40687,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1,
       "output": 2
+    },
+    "kilocode/xai/grok-build-latest": {
+      "cacheRead": 0.3,
+      "input": 2,
+      "output": 6
     },
     "kilocode/xai/grok-code-fast": {
       "cacheRead": 0.19999999999999998,
@@ -41134,8 +41675,9 @@
       "output": 5
     },
     "mistral/magistral-medium-latest": {
-      "input": 2,
-      "output": 5
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "mistral/magistral-small-1-2-2509": {
       "input": 0.5,
@@ -41146,8 +41688,9 @@
       "output": 1.5
     },
     "mistral/magistral-small-latest": {
-      "input": 0.5,
-      "output": 1.5
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "mistral/ministral-14b-2512": {
       "input": 0.19999999999999998,
@@ -41227,8 +41770,9 @@
       "output": 1.5
     },
     "mistral/mistral-medium": {
-      "input": 2.7,
-      "output": 8.1
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "mistral/mistral-medium-2312": {
       "input": 2.7,
@@ -43605,6 +44149,12 @@
         }
       ]
     },
+    "openai/gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -43689,7 +44239,7 @@
     "openai/gpt-realtime-2": {
       "cacheRead": 0.39999999999999997,
       "input": 4,
-      "output": 16
+      "output": 24
     },
     "openai/gpt-realtime-2.1": {
       "cacheRead": 0.39999999999999997,
@@ -44570,9 +45120,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "openrouter/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -44633,14 +45183,14 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.01425,
+      "input": 0.07125000000000001,
+      "output": 0.2375
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.1863,
-      "input": 1.1340000000000001,
-      "output": 3.564
+      "cacheRead": 0.18860000000000002,
+      "input": 1.1480000000000001,
+      "output": 3.608
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -45083,9 +45633,9 @@
       "output": 1
     },
     "openrouter/deepseek/deepseek-chat-v3.1": {
-      "cacheRead": 0.13,
-      "input": 0.25,
-      "output": 0.95
+      "cacheRead": 0.55,
+      "input": 0.55,
+      "output": 1.6500000000000001
     },
     "openrouter/deepseek/deepseek-r1": {
       "input": 0.7,
@@ -45115,9 +45665,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -45135,9 +45685,9 @@
       "output": 0.66
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.086333,
-      "input": 1.035996,
-      "output": 2.071992
+      "cacheRead": 0.085898,
+      "input": 1.030776,
+      "output": 2.061552
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -45534,6 +46084,11 @@
       "cacheRead": 0.004200000000000001,
       "input": 0.020999999999999998,
       "output": 0.063
+    },
+    "openrouter/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
     },
     "openrouter/kwaipilot/kat-coder-pro-v2": {
       "cacheRead": 0.06,
@@ -47294,9 +47849,8 @@
     },
     "openrouter/qwen/qwen3.8-27b": {
       "cacheRead": 0.08499999999999999,
-      "cacheWrite": 0.53125,
-      "input": 0.425,
-      "output": 2.5500000000000003
+      "input": 0.42,
+      "output": 3
     },
     "openrouter/qwen/qwen3.8-flash": {
       "cacheRead": 0.016,
@@ -48552,9 +49106,8 @@
     },
     "qwen/qwen3.8-27b": {
       "cacheRead": 0.08499999999999999,
-      "cacheWrite": 0.53125,
-      "input": 0.425,
-      "output": 2.5500000000000003
+      "input": 0.42,
+      "output": 3
     },
     "qwencloud/deepseek-v4-flash": {
       "cacheRead": 0.04,
@@ -49014,6 +49567,15 @@
     "scaleway/BAAI/bge-multilingual-gemma2": {
       "input": 0.09999999999999999,
       "output": 0
+    },
+    "scaleway/deepseek-v4-flash-0731": {
+      "cacheRead": 0.08,
+      "input": 0.39999999999999997,
+      "output": 0.7999999999999999
+    },
+    "scaleway/glm-5.2": {
+      "input": 1.7999999999999998,
+      "output": 5.5
     },
     "scaleway/google/gemma-3-27b-it": {
       "input": 0.25,
@@ -49590,9 +50152,9 @@
       "output": 1.28
     },
     "together_ai/Qwen/Qwen3.8-2.4T-A95B": {
-      "cacheRead": 0.5,
-      "input": 2.5,
-      "output": 6.25
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "together_ai/Qwen/Qwen3.8-Flash": {
       "input": 0.15,
@@ -49717,11 +50279,23 @@
       "input": 0.03,
       "output": 0.12
     },
+    "us-gov.anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "us-gov.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "us.amazon.nova-2-lite-v1:0": {
       "cacheRead": 0.0825,
@@ -51198,9 +51772,9 @@
       ]
     },
     "vercel-ai-gateway/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "vercel-ai-gateway/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -51261,14 +51835,14 @@
       ]
     },
     "vercel-ai-gateway/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.01425,
+      "input": 0.07125000000000001,
+      "output": 0.2375
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.1863,
-      "input": 1.1340000000000001,
-      "output": 3.564
+      "cacheRead": 0.18860000000000002,
+      "input": 1.1480000000000001,
+      "output": 3.608
     },
     "vercel-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -51905,15 +52479,17 @@
       "output": 1.68
     },
     "vercel-ai-gateway/azure_ai/deepseek-v4-flash": {
-      "input": 0.19,
-      "output": 0.51
-    },
-    "vercel-ai-gateway/azure_ai/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
       "input": 0.19,
       "output": 0.51
     },
+    "vercel-ai-gateway/azure_ai/DeepSeek-V4-Flash-0731": {
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
+    },
     "vercel-ai-gateway/azure_ai/deepseek-v4-pro": {
+      "cacheRead": 0.145,
       "input": 1.74,
       "output": 3.48
     },
@@ -52099,10 +52675,17 @@
       "output": 0.7
     },
     "vercel-ai-gateway/azure_ai/kimi-k2.5": {
+      "cacheRead": 0.09999999999999999,
       "input": 0.6,
       "output": 3
     },
     "vercel-ai-gateway/azure_ai/kimi-k2.6": {
+      "cacheRead": 0.16,
+      "input": 0.95,
+      "output": 4
+    },
+    "vercel-ai-gateway/azure_ai/kimi-k2.7-code": {
+      "cacheRead": 0.19,
       "input": 0.95,
       "output": 4
     },
@@ -52971,6 +53554,24 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "vercel-ai-gateway/azure/us-gov/gpt-5.1": {
+      "cacheRead": 0.171875,
+      "input": 1.71875,
+      "output": 13.75
+    },
+    "vercel-ai-gateway/azure/us-gov/o3-mini": {
+      "cacheRead": 0.757,
+      "input": 1.513,
+      "output": 6.05
+    },
+    "vercel-ai-gateway/azure/us-gov/text-embedding-3-large": {
+      "input": 0.16299999999999998,
+      "output": 0
+    },
+    "vercel-ai-gateway/azure/us-gov/text-embedding-3-small": {
+      "input": 0.024999999999999998,
+      "output": 0
+    },
     "vercel-ai-gateway/azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
@@ -53773,11 +54374,23 @@
       "input": 0.53,
       "output": 2.66
     },
+    "vercel-ai-gateway/bedrock_converse/us-gov.anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "vercel-ai-gateway/bedrock_converse/us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "vercel-ai-gateway/bedrock_converse/us-gov.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "vercel-ai-gateway/bedrock_converse/us.amazon.nova-2-lite-v1:0": {
       "cacheRead": 0.0825,
@@ -54031,6 +54644,33 @@
     "vercel-ai-gateway/bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.075,
       "output": 0.3
+    },
+    "vercel-ai-gateway/bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "vercel-ai-gateway/bedrock_mantle/us-gov-west-1/openai.gpt-5.4": {
+      "cacheRead": 0.33,
+      "input": 3.3000000000000003,
+      "output": 19.8
+    },
+    "vercel-ai-gateway/bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna": {
+      "cacheRead": 0.0264,
+      "cacheWrite": 0.33,
+      "input": 0.26399999999999996,
+      "output": 1.584
+    },
+    "vercel-ai-gateway/bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra": {
+      "cacheRead": 0.26399999999999996,
+      "cacheWrite": 3.3000000000000003,
+      "input": 2.64,
+      "output": 15.840000000000002
+    },
+    "vercel-ai-gateway/bedrock_mantle/us-gov-west-1/xai.grok-4.3": {
+      "cacheRead": 0.24,
+      "input": 1.5,
+      "output": 3
     },
     "vercel-ai-gateway/bedrock_mantle/xai.grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -54712,11 +55352,23 @@
       "input": 1.2,
       "output": 6
     },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "vercel-ai-gateway/bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "vercel-ai-gateway/bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -54731,6 +55383,26 @@
     "vercel-ai-gateway/bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
       "output": 2.65
+    },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "vercel-ai-gateway/bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "vercel-ai-gateway/bedrock/us-gov-west-1/amazon.nova-pro-v1:0": {
       "input": 0.96,
@@ -54780,11 +55452,23 @@
       "input": 1.2,
       "output": 6
     },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/anthropic.claude-opus-4-8": {
+      "cacheRead": 0.6,
+      "cacheWrite": 7.5,
+      "input": 6,
+      "output": 30
+    },
     "vercel-ai-gateway/bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
       "input": 3.5999999999999996,
       "output": 18
+    },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12
     },
     "vercel-ai-gateway/bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
@@ -54798,7 +55482,27 @@
     },
     "vercel-ai-gateway/bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0": {
       "input": 0.3,
-      "output": 2.65
+      "output": 0.6
+    },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/nvidia.nemotron-nano-12b-v2": {
+      "input": 0.24,
+      "output": 0.72
+    },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/nvidia.nemotron-nano-3-30b": {
+      "input": 0.072,
+      "output": 0.288
+    },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/nvidia.nemotron-super-3-120b": {
+      "input": 0.18,
+      "output": 0.78
+    },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0": {
+      "input": 0.18,
+      "output": 0.72
+    },
+    "vercel-ai-gateway/bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0": {
+      "input": 0.08399999999999999,
+      "output": 0.36
     },
     "vercel-ai-gateway/bedrock/us-west-1/meta.llama3-70b-instruct-v1:0": {
       "input": 2.65,
@@ -56353,9 +57057,9 @@
       "output": 1
     },
     "vercel-ai-gateway/deepseek/deepseek-chat-v3.1": {
-      "cacheRead": 0.13,
-      "input": 0.25,
-      "output": 0.95
+      "cacheRead": 0.55,
+      "input": 0.55,
+      "output": 1.6500000000000001
     },
     "vercel-ai-gateway/deepseek/deepseek-coder": {
       "input": 0.14,
@@ -56399,9 +57103,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -56419,9 +57123,9 @@
       "output": 0.66
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.086333,
-      "input": 1.035996,
-      "output": 2.071992
+      "cacheRead": 0.085898,
+      "input": 1.030776,
+      "output": 2.061552
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -56793,6 +57497,11 @@
       "input": 1.4,
       "output": 4.4
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/glm-5p3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/gpt-oss-120b": {
       "cacheRead": 0.015,
       "input": 0.15,
@@ -56814,6 +57523,11 @@
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/hermes-2-pro-mistral-7b": {
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/inkling": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1,
+      "output": 4.05
     },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/models/internvl3-38b": {
       "input": 0.8999999999999999,
@@ -57945,6 +58659,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "vercel-ai-gateway/gemini/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "vercel-ai-gateway/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -58651,6 +59370,11 @@
       "input": 0.020999999999999998,
       "output": 0.063
     },
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
+    },
     "vercel-ai-gateway/jina_ai/jina-reranker-v2-base-multilingual": {
       "input": 0.018,
       "output": 0.018
@@ -59087,8 +59811,9 @@
       "output": 5
     },
     "vercel-ai-gateway/mistral/magistral-medium-latest": {
-      "input": 2,
-      "output": 5
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "vercel-ai-gateway/mistral/magistral-small-1-2-2509": {
       "input": 0.5,
@@ -59099,8 +59824,9 @@
       "output": 1.5
     },
     "vercel-ai-gateway/mistral/magistral-small-latest": {
-      "input": 0.5,
-      "output": 1.5
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/mistral/ministral-14b-2512": {
       "input": 0.19999999999999998,
@@ -59185,8 +59911,9 @@
       "output": 1.5
     },
     "vercel-ai-gateway/mistral/mistral-medium": {
-      "input": 2.7,
-      "output": 8.1
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5
     },
     "vercel-ai-gateway/mistral/mistral-medium-2312": {
       "input": 2.7,
@@ -61650,6 +62377,12 @@
         }
       ]
     },
+    "vercel-ai-gateway/openai/gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50
+    },
     "vercel-ai-gateway/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -61734,7 +62467,7 @@
     "vercel-ai-gateway/openai/gpt-realtime-2": {
       "cacheRead": 0.39999999999999997,
       "input": 4,
-      "output": 16
+      "output": 24
     },
     "vercel-ai-gateway/openai/gpt-realtime-2.1": {
       "cacheRead": 0.39999999999999997,
@@ -63219,9 +63952,8 @@
     },
     "vercel-ai-gateway/qwen/qwen3.8-27b": {
       "cacheRead": 0.08499999999999999,
-      "cacheWrite": 0.53125,
-      "input": 0.425,
-      "output": 2.5500000000000003
+      "input": 0.42,
+      "output": 3
     },
     "vercel-ai-gateway/qwen/qwen3.8-flash": {
       "cacheRead": 0.016,
@@ -63641,6 +64373,15 @@
     "vercel-ai-gateway/scaleway/BAAI/bge-multilingual-gemma2": {
       "input": 0.09999999999999999,
       "output": 0
+    },
+    "vercel-ai-gateway/scaleway/deepseek-v4-flash-0731": {
+      "cacheRead": 0.08,
+      "input": 0.39999999999999997,
+      "output": 0.7999999999999999
+    },
+    "vercel-ai-gateway/scaleway/glm-5.2": {
+      "input": 1.7999999999999998,
+      "output": 5.5
     },
     "vercel-ai-gateway/scaleway/google/gemma-3-27b-it": {
       "input": 0.25,
@@ -64146,9 +64887,9 @@
       "output": 1.28
     },
     "vercel-ai-gateway/together_ai/Qwen/Qwen3.8-2.4T-A95B": {
-      "cacheRead": 0.5,
-      "input": 2.5,
-      "output": 6.25
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "vercel-ai-gateway/together_ai/Qwen/Qwen3.8-Flash": {
       "input": 0.15,
@@ -64876,6 +65617,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "vercel-ai-gateway/vertex_ai-language-models/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "vercel-ai-gateway/vertex_ai-language-models/gemini-live-2.5-flash-native-audio": {
       "input": 0.5,
       "output": 2
@@ -65239,6 +65985,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "vercel-ai-gateway/vertex_ai/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "vercel-ai-gateway/vertex_ai/gemini-embedding-2": {
       "input": 0.19999999999999998,
       "output": 0
@@ -65421,6 +66172,14 @@
       "output": 0
     },
     "vercel-ai-gateway/voyage/rerank-2.5-lite": {
+      "input": 0.02,
+      "output": 0
+    },
+    "vercel-ai-gateway/voyage/rerank-3": {
+      "input": 0.049999999999999996,
+      "output": 0
+    },
+    "vercel-ai-gateway/voyage/rerank-3-lite": {
       "input": 0.02,
       "output": 0
     },
@@ -66132,6 +66891,11 @@
       "input": 1,
       "output": 2
     },
+    "vercel-ai-gateway/xai/grok-build-latest": {
+      "cacheRead": 0.3,
+      "input": 2,
+      "output": 6
+    },
     "vercel-ai-gateway/xai/grok-code-fast": {
       "cacheRead": 0.19999999999999998,
       "input": 1,
@@ -66471,6 +67235,11 @@
       "output": 3.75
     },
     "vertex_ai-language-models/gemini-3.7-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
+    "vertex_ai-language-models/gemini-3.8-flash": {
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
@@ -66842,6 +67611,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "vertex_ai/gemini-3.8-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75
+    },
     "vertex_ai/gemini-embedding-2": {
       "input": 0.19999999999999998,
       "output": 0
@@ -67072,6 +67846,14 @@
       "output": 0
     },
     "voyage/rerank-2.5-lite": {
+      "input": 0.02,
+      "output": 0
+    },
+    "voyage/rerank-3": {
+      "input": 0.049999999999999996,
+      "output": 0
+    },
+    "voyage/rerank-3-lite": {
       "input": 0.02,
       "output": 0
     },
@@ -67790,6 +68572,11 @@
       "cacheRead": 0.19999999999999998,
       "input": 1,
       "output": 2
+    },
+    "xai/grok-build-latest": {
+      "cacheRead": 0.3,
+      "input": 2,
+      "output": 6
     },
     "xai/grok-code-fast": {
       "cacheRead": 0.19999999999999998,
@@ -69302,10 +70089,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.016800000000000002,
+            "cacheRead": 0.015875999999999998,
             "cacheWrite": 0,
-            "input": 0.08399999999999999,
-            "output": 0.16799999999999998
+            "input": 0.07938,
+            "output": 0.15876
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -69347,10 +70134,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.086333,
+            "cacheRead": 0.085898,
             "cacheWrite": 0,
-            "input": 1.035996,
-            "output": 2.071992
+            "input": 1.030776,
+            "output": 2.061552
           },
           "id": "deepseek-v4-pro",
           "input": [
@@ -74178,5 +74965,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "b5f9636c016001ce0a43695eaa045b1714d47c05"
+  "sourceCommit": "47c96a6ff09c0d244dc26be1800694d4c8d540c2"
 }
