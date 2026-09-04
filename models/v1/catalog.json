@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788539572538,
+  "generatedAt": 1788553745630,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -9910,9 +9910,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017612,
-      "input": 0.08806,
-      "output": 0.17612
+      "cacheRead": 0.0175,
+      "input": 0.0875,
+      "output": 0.175
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -9930,9 +9930,9 @@
       "output": 0.66
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.084332,
-      "input": 1.011984,
-      "output": 2.023968
+      "cacheRead": 0.08265,
+      "input": 0.9918,
+      "output": 1.9836
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.019316,
@@ -15187,7 +15187,55 @@
       "cacheRead": 1,
       "cacheWrite": 12.5,
       "input": 10,
-      "output": 50
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "cloudflare-ai-gateway/openai/gpt-6-astra-pro": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
     },
     "cloudflare-ai-gateway/openai/gpt-audio": {
       "input": 2.5,
@@ -25421,6 +25469,10 @@
       "input": 0,
       "output": 0
     },
+    "inclusionai/ling-3.0-flash-sante:free": {
+      "input": 0,
+      "output": 0
+    },
     "j2-light": {
       "input": 3,
       "output": 3
@@ -30913,9 +30965,9 @@
       "output": 0.41
     },
     "kilocode/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017612,
-      "input": 0.08806,
-      "output": 0.17612
+      "cacheRead": 0.0175,
+      "input": 0.0875,
+      "output": 0.175
     },
     "kilocode/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -30933,9 +30985,9 @@
       "output": 0.66
     },
     "kilocode/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.084332,
-      "input": 1.011984,
-      "output": 2.023968
+      "cacheRead": 0.08265,
+      "input": 0.9918,
+      "output": 1.9836
     },
     "kilocode/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.019316,
@@ -36190,7 +36242,55 @@
       "cacheRead": 1,
       "cacheWrite": 12.5,
       "input": 10,
-      "output": 50
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "kilocode/openai/gpt-6-astra-pro": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
     },
     "kilocode/openai/gpt-audio": {
       "input": 2.5,
@@ -44180,6 +44280,33 @@
         }
       ]
     },
+    "openai/gpt-6-astra-pro": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -45690,9 +45817,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017612,
-      "input": 0.08806,
-      "output": 0.17612
+      "cacheRead": 0.0175,
+      "input": 0.0875,
+      "output": 0.175
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -45710,9 +45837,9 @@
       "output": 0.66
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.084332,
-      "input": 1.011984,
-      "output": 2.023968
+      "cacheRead": 0.08265,
+      "input": 0.9918,
+      "output": 1.9836
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.019316,
@@ -47190,6 +47317,60 @@
           "cacheWrite": 0,
           "input": 2,
           "output": 9,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6-astra-pro": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
           "range": [
             272001
           ]
@@ -57151,9 +57332,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017612,
-      "input": 0.08806,
-      "output": 0.17612
+      "cacheRead": 0.0175,
+      "input": 0.0875,
+      "output": 0.175
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -57171,9 +57352,9 @@
       "output": 0.66
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.084332,
-      "input": 1.011984,
-      "output": 2.023968
+      "cacheRead": 0.08265,
+      "input": 0.9918,
+      "output": 1.9836
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.019316,
@@ -62428,7 +62609,55 @@
       "cacheRead": 1,
       "cacheWrite": 12.5,
       "input": 10,
-      "output": 50
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "vercel-ai-gateway/openai/gpt-6-astra-pro": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272001
+          ]
+        }
+      ]
     },
     "vercel-ai-gateway/openai/gpt-audio": {
       "input": 2.5,
@@ -70187,10 +70416,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.017612,
+            "cacheRead": 0.0175,
             "cacheWrite": 0,
-            "input": 0.08806,
-            "output": 0.17612
+            "input": 0.0875,
+            "output": 0.175
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -70232,10 +70461,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.084332,
+            "cacheRead": 0.08265,
             "cacheWrite": 0,
-            "input": 1.011984,
-            "output": 2.023968
+            "input": 0.9918,
+            "output": 1.9836
           },
           "id": "deepseek-v4-pro",
           "input": [
@@ -71106,6 +71335,59 @@
           "maxTokens": 16384,
           "name": "Qwen 3.6 27B",
           "reasoning": true
+        }
+      ]
+    },
+    "huggingface": {
+      "api": "openai-completions",
+      "models": [
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 3,
+            "cacheWrite": 3,
+            "input": 3,
+            "output": 7
+          },
+          "id": "deepseek-ai/DeepSeek-R1",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "DeepSeek R1",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0.6,
+            "cacheWrite": 0.6,
+            "input": 0.6,
+            "output": 1.25
+          },
+          "id": "deepseek-ai/DeepSeek-V3.1",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "DeepSeek V3.1",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0,
+            "output": 0
+          },
+          "id": "openai/gpt-oss-120b",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "GPT-OSS 120B",
+          "reasoning": false
         }
       ]
     },
@@ -75192,5 +75474,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "0d2bc80eee0c2bcec52fc01e3727844e4c823759"
+  "sourceCommit": "7b0bc9c9d88f5e9db966fc376cbc253d7fc1a9ea"
 }
