@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788553745630,
+  "generatedAt": 1788570037614,
   "minVersion": "2026.7.0",
   "pricing": {
     "~anthropic/claude-fable-latest": {
@@ -9910,9 +9910,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.175
+      "cacheRead": 0.017444,
+      "input": 0.08721999999999999,
+      "output": 0.17443999999999998
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -9930,14 +9930,14 @@
       "output": 0.66
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.08265,
-      "input": 0.9918,
-      "output": 1.9836
+      "cacheRead": 0.081809,
+      "input": 0.981708,
+      "output": 1.963416
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.019316,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.037356,
+      "input": 1.12068,
+      "output": 3.36204
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.13,
@@ -15237,6 +15237,60 @@
         }
       ]
     },
+    "cloudflare-ai-gateway/openai/gpt-6-astra-pro:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "cloudflare-ai-gateway/openai/gpt-6-astra:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "cloudflare-ai-gateway/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -16329,9 +16383,8 @@
       "output": 1.8199999999999998
     },
     "cloudflare-ai-gateway/qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.35
+      "input": 0.09,
+      "output": 0.55
     },
     "cloudflare-ai-gateway/qwen/qwen3-235b-a22b-thinking-2507": {
       "input": 0.22999999999999998,
@@ -17435,9 +17488,9 @@
       "output": 0.295
     },
     "cloudflare-ai-gateway/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "cloudflare-ai-gateway/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -21672,9 +21725,9 @@
       "output": 0.28
     },
     "deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.019316,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.037356,
+      "input": 1.12068,
+      "output": 3.36204
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.13,
@@ -30965,9 +31018,9 @@
       "output": 0.41
     },
     "kilocode/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.175
+      "cacheRead": 0.017444,
+      "input": 0.08721999999999999,
+      "output": 0.17443999999999998
     },
     "kilocode/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -30985,14 +31038,14 @@
       "output": 0.66
     },
     "kilocode/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.08265,
-      "input": 0.9918,
-      "output": 1.9836
+      "cacheRead": 0.081809,
+      "input": 0.981708,
+      "output": 1.963416
     },
     "kilocode/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.019316,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.037356,
+      "input": 1.12068,
+      "output": 3.36204
     },
     "kilocode/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.13,
@@ -36292,6 +36345,60 @@
         }
       ]
     },
+    "kilocode/openai/gpt-6-astra-pro:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "kilocode/openai/gpt-6-astra:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "kilocode/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -37384,9 +37491,8 @@
       "output": 1.8199999999999998
     },
     "kilocode/qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.35
+      "input": 0.09,
+      "output": 0.55
     },
     "kilocode/qwen/qwen3-235b-a22b-thinking-2507": {
       "input": 0.22999999999999998,
@@ -38490,9 +38596,9 @@
       "output": 0.295
     },
     "kilocode/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "kilocode/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -44307,6 +44413,60 @@
         }
       ]
     },
+    "openai/gpt-6-astra-pro:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openai/gpt-6-astra:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -45817,9 +45977,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.175
+      "cacheRead": 0.017444,
+      "input": 0.08721999999999999,
+      "output": 0.17443999999999998
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -45837,14 +45997,14 @@
       "output": 0.66
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.08265,
-      "input": 0.9918,
-      "output": 1.9836
+      "cacheRead": 0.081809,
+      "input": 0.981708,
+      "output": 1.963416
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.019316,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.037356,
+      "input": 1.12068,
+      "output": 3.36204
     },
     "openrouter/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.13,
@@ -47377,6 +47537,60 @@
         }
       ]
     },
+    "openrouter/openai/gpt-6-astra-pro:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6-astra:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "openrouter/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -47577,9 +47791,8 @@
       "output": 1.8199999999999998
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.35
+      "input": 0.09,
+      "output": 0.55
     },
     "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
       "input": 0.22999999999999998,
@@ -48153,9 +48366,9 @@
       "output": 0.295
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -48986,9 +49199,8 @@
       "output": 1.8199999999999998
     },
     "qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.35
+      "input": 0.09,
+      "output": 0.55
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
       "input": 0.22999999999999998,
@@ -49996,9 +50208,9 @@
       "output": 0.295
     },
     "tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -50879,10 +51091,6 @@
       "input": 0.19,
       "output": 0.88
     },
-    "venice/e2ee-glm-5-1": {
-      "input": 1.1,
-      "output": 4.15
-    },
     "venice/e2ee-glm-5-2-p": {
       "cacheRead": 0.3,
       "input": 1.75,
@@ -51360,6 +51568,33 @@
           "cacheWrite": 7.8125,
           "input": 6.25,
           "output": 28.125,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "venice/openai-gpt-6-astra": {
+      "cacheRead": 1,
+      "cacheWrite": 12.5,
+      "input": 10,
+      "output": 50,
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 25,
+          "input": 20,
+          "output": 75,
           "range": [
             272001
           ]
@@ -57332,9 +57567,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.175
+      "cacheRead": 0.017444,
+      "input": 0.08721999999999999,
+      "output": 0.17443999999999998
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -57352,14 +57587,14 @@
       "output": 0.66
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.08265,
-      "input": 0.9918,
-      "output": 1.9836
+      "cacheRead": 0.081809,
+      "input": 0.981708,
+      "output": 1.963416
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.019316,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.037356,
+      "input": 1.12068,
+      "output": 3.36204
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.13,
@@ -62659,6 +62894,60 @@
         }
       ]
     },
+    "vercel-ai-gateway/openai/gpt-6-astra-pro:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "vercel-ai-gateway/openai/gpt-6-astra:batch": {
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25,
+      "input": 5,
+      "output": 25,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 6.25,
+          "input": 5,
+          "output": 25,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 12.5,
+          "input": 10,
+          "output": 37.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "vercel-ai-gateway/openai/gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -63751,9 +64040,8 @@
       "output": 1.8199999999999998
     },
     "vercel-ai-gateway/qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.0175,
-      "input": 0.0875,
-      "output": 0.35
+      "input": 0.09,
+      "output": 0.55
     },
     "vercel-ai-gateway/qwen/qwen3-235b-a22b-thinking-2507": {
       "input": 0.22999999999999998,
@@ -64857,9 +65145,9 @@
       "output": 0.295
     },
     "vercel-ai-gateway/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "vercel-ai-gateway/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -70416,10 +70704,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.0175,
+            "cacheRead": 0.017444,
             "cacheWrite": 0,
-            "input": 0.0875,
-            "output": 0.175
+            "input": 0.08721999999999999,
+            "output": 0.17443999999999998
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -70461,10 +70749,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.08265,
+            "cacheRead": 0.081809,
             "cacheWrite": 0,
-            "input": 0.9918,
-            "output": 1.9836
+            "input": 0.981708,
+            "output": 1.963416
           },
           "id": "deepseek-v4-pro",
           "input": [
@@ -75474,5 +75762,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "7b0bc9c9d88f5e9db966fc376cbc253d7fc1a9ea"
+  "sourceCommit": "4f695ddcef05fd33094d8c4350eb02cb01ef3d87"
 }
