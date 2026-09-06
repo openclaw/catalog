@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788656912213,
+  "generatedAt": 1788669130913,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -9662,9 +9662,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016492,
-      "input": 0.08245999999999999,
-      "output": 0.16491999999999998
+      "cacheRead": 0.01638,
+      "input": 0.0819,
+      "output": 0.1638
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -9682,9 +9682,9 @@
       "output": 0.66
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.064902,
-      "input": 0.778824,
-      "output": 1.557648
+      "cacheRead": 0.06322000000000001,
+      "input": 0.75864,
+      "output": 1.51728
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.037356,
@@ -44308,9 +44308,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016492,
-      "input": 0.08245999999999999,
-      "output": 0.16491999999999998
+      "cacheRead": 0.01638,
+      "input": 0.0819,
+      "output": 0.1638
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -44328,9 +44328,9 @@
       "output": 0.66
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.064902,
-      "input": 0.778824,
-      "output": 1.557648
+      "cacheRead": 0.06322000000000001,
+      "input": 0.75864,
+      "output": 1.51728
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.037356,
@@ -49018,10 +49018,6 @@
       "input": 0.182,
       "output": 0.373
     },
-    "venice/e2ee-gemma-3-27b-p": {
-      "input": 0.14,
-      "output": 0.5
-    },
     "venice/e2ee-gemma-4-26b-a4b-uncensored-p": {
       "input": 0.19,
       "output": 0.88
@@ -49031,13 +49027,24 @@
       "input": 1.75,
       "output": 5.75
     },
+    "venice/e2ee-glm-5-3-flash": {
+      "cacheRead": 0.016,
+      "input": 0.08,
+      "output": 0.27
+    },
+    "venice/e2ee-glm-5-3-p": {
+      "cacheRead": 0.325,
+      "input": 1.75,
+      "output": 5.5
+    },
     "venice/e2ee-gpt-oss-120b-p": {
       "input": 0.13,
       "output": 0.65
     },
-    "venice/e2ee-gpt-oss-20b-p": {
-      "input": 0.05,
-      "output": 0.19
+    "venice/e2ee-kimi-k2-6": {
+      "cacheRead": 0.44,
+      "input": 0.87,
+      "output": 4.12
     },
     "venice/e2ee-qwen-2-5-7b-p": {
       "input": 0.05,
@@ -49048,9 +49055,10 @@
       "input": 0.182,
       "output": 1.18
     },
-    "venice/e2ee-qwen3-6-35b-a3b-uncensored-p": {
-      "input": 0.38,
-      "output": 1.88
+    "venice/e2ee-qwen3-8-27b": {
+      "cacheRead": 0.047,
+      "input": 0.47,
+      "output": 3.53
     },
     "venice/e2ee-qwen3-vl-30b-a3b-p": {
       "input": 0.25,
@@ -55071,9 +55079,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016492,
-      "input": 0.08245999999999999,
-      "output": 0.16491999999999998
+      "cacheRead": 0.01638,
+      "input": 0.0819,
+      "output": 0.1638
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -55091,9 +55099,9 @@
       "output": 0.66
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.064902,
-      "input": 0.778824,
-      "output": 1.557648
+      "cacheRead": 0.06322000000000001,
+      "input": 0.75864,
+      "output": 1.51728
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.037356,
@@ -70313,10 +70321,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.016492,
+            "cacheRead": 0.01638,
             "cacheWrite": 0,
-            "input": 0.08245999999999999,
-            "output": 0.16491999999999998
+            "input": 0.0819,
+            "output": 0.1638
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -70358,10 +70366,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.064902,
+            "cacheRead": 0.06322000000000001,
             "cacheWrite": 0,
-            "input": 0.778824,
-            "output": 1.557648
+            "input": 0.75864,
+            "output": 1.51728
           },
           "id": "deepseek-v4-pro",
           "input": [
@@ -71889,7 +71897,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 262144,
           "cost": {
             "cacheRead": 0.234,
             "cacheWrite": 0,
@@ -71900,7 +71908,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 235929,
           "name": "Z.ai: GLM Latest",
           "reasoning": true
         },
@@ -72745,10 +72753,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.016492,
+            "cacheRead": 0.01638,
             "cacheWrite": 0,
-            "input": 0.08245999999999999,
-            "output": 0.16491999999999998
+            "input": 0.0819,
+            "output": 0.1638
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
@@ -72794,10 +72802,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.064902,
+            "cacheRead": 0.06322000000000001,
             "cacheWrite": 0,
-            "input": 0.778824,
-            "output": 1.557648
+            "input": 0.75864,
+            "output": 1.51728
           },
           "id": "deepseek/deepseek-v4-pro",
           "input": [
@@ -84748,10 +84756,31 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.02666667,
-            "cacheWrite": 0.33333334,
-            "input": 0.26666667,
-            "output": 1.6
+            "cacheRead": 0.025,
+            "cacheWrite": 0.3125,
+            "input": 0.25,
+            "output": 1.5,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.025,
+                "cacheWrite": 0.3125,
+                "input": 0.25,
+                "output": 1.5,
+                "range": [
+                  0,
+                  272001
+                ]
+              },
+              {
+                "cacheRead": 0.05,
+                "cacheWrite": 0.625,
+                "input": 0.5,
+                "output": 2.25,
+                "range": [
+                  272001
+                ]
+              }
+            ]
           },
           "id": "openai-gpt-56-luna",
           "input": [
@@ -84765,26 +84794,26 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.125,
-            "cacheWrite": 1.5625,
-            "input": 1.25,
-            "output": 7.5,
+            "cacheRead": 0.025,
+            "cacheWrite": 0.3125,
+            "input": 0.25,
+            "output": 1.5,
             "tieredPricing": [
               {
-                "cacheRead": 0.125,
-                "cacheWrite": 1.5625,
-                "input": 1.25,
-                "output": 7.5,
+                "cacheRead": 0.025,
+                "cacheWrite": 0.3125,
+                "input": 0.25,
+                "output": 1.5,
                 "range": [
                   0,
                   272001
                 ]
               },
               {
-                "cacheRead": 0.25,
-                "cacheWrite": 3.125,
-                "input": 2.5,
-                "output": 11.25,
+                "cacheRead": 0.05,
+                "cacheWrite": 0.625,
+                "input": 0.5,
+                "output": 2.25,
                 "range": [
                   272001
                 ]
@@ -84806,10 +84835,31 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.625,
-            "cacheWrite": 7.8125,
-            "input": 6.25,
-            "output": 37.5
+            "cacheRead": 0.25,
+            "cacheWrite": 3.125,
+            "input": 2.5,
+            "output": 12.5,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.25,
+                "cacheWrite": 3.125,
+                "input": 2.5,
+                "output": 12.5,
+                "range": [
+                  0,
+                  272001
+                ]
+              },
+              {
+                "cacheRead": 0.5,
+                "cacheWrite": 6.25,
+                "input": 5,
+                "output": 18.75,
+                "range": [
+                  272001
+                ]
+              }
+            ]
           },
           "id": "openai-gpt-56-sol",
           "input": [
@@ -84823,26 +84873,26 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.625,
-            "cacheWrite": 7.8125,
-            "input": 6.25,
-            "output": 37.5,
+            "cacheRead": 0.25,
+            "cacheWrite": 3.125,
+            "input": 2.5,
+            "output": 12.5,
             "tieredPricing": [
               {
-                "cacheRead": 0.625,
-                "cacheWrite": 7.8125,
-                "input": 6.25,
-                "output": 37.5,
+                "cacheRead": 0.25,
+                "cacheWrite": 3.125,
+                "input": 2.5,
+                "output": 12.5,
                 "range": [
                   0,
                   272001
                 ]
               },
               {
-                "cacheRead": 1.25,
-                "cacheWrite": 15.625,
-                "input": 12.5,
-                "output": 56.25,
+                "cacheRead": 0.5,
+                "cacheWrite": 6.25,
+                "input": 5,
+                "output": 18.75,
                 "range": [
                   272001
                 ]
@@ -84861,10 +84911,31 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.3125,
-            "cacheWrite": 3.90625,
-            "input": 3.125,
-            "output": 18.75
+            "cacheRead": 0.25,
+            "cacheWrite": 3.125,
+            "input": 2.5,
+            "output": 15,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.25,
+                "cacheWrite": 3.125,
+                "input": 2.5,
+                "output": 15,
+                "range": [
+                  0,
+                  272001
+                ]
+              },
+              {
+                "cacheRead": 0.5,
+                "cacheWrite": 6.25,
+                "input": 5,
+                "output": 22.5,
+                "range": [
+                  272001
+                ]
+              }
+            ]
           },
           "id": "openai-gpt-56-terra",
           "input": [
@@ -84878,26 +84949,26 @@
         {
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.3125,
-            "cacheWrite": 3.90625,
-            "input": 3.125,
-            "output": 18.75,
+            "cacheRead": 0.25,
+            "cacheWrite": 3.125,
+            "input": 2.5,
+            "output": 15,
             "tieredPricing": [
               {
-                "cacheRead": 0.3125,
-                "cacheWrite": 3.90625,
-                "input": 3.125,
-                "output": 18.75,
+                "cacheRead": 0.25,
+                "cacheWrite": 3.125,
+                "input": 2.5,
+                "output": 15,
                 "range": [
                   0,
                   272001
                 ]
               },
               {
-                "cacheRead": 0.625,
-                "cacheWrite": 7.8125,
-                "input": 6.25,
-                "output": 28.125,
+                "cacheRead": 0.5,
+                "cacheWrite": 6.25,
+                "input": 5,
+                "output": 22.5,
                 "range": [
                   272001
                 ]
@@ -86383,5 +86454,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "d85142c70935e793dc5818e5ac545bbb9cf72dd7"
+  "sourceCommit": "b3bdf3e11da5671dac9b6033edd49673c129f511"
 }
