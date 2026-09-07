@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788798615791,
+  "generatedAt": 1788812960759,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4188,9 +4188,9 @@
       ]
     },
     "cloudflare-ai-gateway/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "cloudflare-ai-gateway/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -9612,8 +9612,9 @@
       "output": 0.8899999999999999
     },
     "cloudflare-ai-gateway/deepseek/deepseek-chat-v3-0324": {
-      "input": 0.25,
-      "output": 1
+      "cacheRead": 0.11,
+      "input": 0.29,
+      "output": 1.1400000000000001
     },
     "cloudflare-ai-gateway/deepseek/deepseek-chat-v3.1": {
       "cacheRead": 0.55,
@@ -40764,10 +40765,6 @@
       "input": 0.3,
       "output": 2.4
     },
-    "minimax/minimax-m2.7:free": {
-      "input": 0,
-      "output": 0
-    },
     "minimax/MiniMax-M3": {
       "cacheRead": 0.06,
       "input": 0.3,
@@ -40777,10 +40774,6 @@
       "cacheRead": 0.06,
       "input": 0.3,
       "output": 1.2
-    },
-    "minimax/minimax-m3:free": {
-      "input": 0,
-      "output": 0
     },
     "mistral.devstral-2-123b": {
       "input": 0.39999999999999997,
@@ -43792,9 +43785,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "openrouter/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -44301,8 +44294,9 @@
       "output": 0.8899999999999999
     },
     "openrouter/deepseek/deepseek-chat-v3-0324": {
-      "input": 0.25,
-      "output": 1
+      "cacheRead": 0.11,
+      "input": 0.29,
+      "output": 1.1400000000000001
     },
     "openrouter/deepseek/deepseek-chat-v3.1": {
       "cacheRead": 0.55,
@@ -49633,9 +49627,9 @@
       ]
     },
     "vercel-ai-gateway/~moonshotai/kimi-latest": {
-      "cacheRead": 0.25599998999999996,
-      "input": 2.5500000000000003,
-      "output": 12.75
+      "cacheRead": 0.29,
+      "input": 2.5,
+      "output": 14
     },
     "vercel-ai-gateway/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -55057,8 +55051,9 @@
       "output": 0.8899999999999999
     },
     "vercel-ai-gateway/deepseek/deepseek-chat-v3-0324": {
-      "input": 0.25,
-      "output": 1
+      "cacheRead": 0.11,
+      "input": 0.29,
+      "output": 1.1400000000000001
     },
     "vercel-ai-gateway/deepseek/deepseek-chat-v3.1": {
       "cacheRead": 0.55,
@@ -70497,17 +70492,17 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1000000,
+          "contextWindow": 1048573,
           "id": "accounts/fireworks/models/glm-5p3",
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 262144,
           "name": "GLM 5.3",
           "reasoning": true
         },
         {
-          "contextWindow": 1000000,
+          "contextWindow": 1048573,
           "id": "accounts/fireworks/models/glm-5p3-flash",
           "input": [
             "text",
@@ -70665,6 +70660,16 @@
           ],
           "maxTokens": 256000,
           "name": "GLM 5.2 Fast",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048572,
+          "id": "accounts/fireworks/routers/glm-5p3-fast",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 262144,
+          "name": "GLM 5.3 Fast",
           "reasoning": true
         },
         {
@@ -72056,10 +72061,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.25599998999999996,
+            "cacheRead": 0.29,
             "cacheWrite": 0,
-            "input": 2.5500000000000003,
-            "output": 12.75
+            "input": 2.5,
+            "output": 14
           },
           "id": "~moonshotai/kimi-latest",
           "input": [
@@ -72928,10 +72933,10 @@
         {
           "contextWindow": 163840,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.11,
             "cacheWrite": 0,
-            "input": 0.25,
-            "output": 1
+            "input": 0.29,
+            "output": 1.1400000000000001
           },
           "id": "deepseek/deepseek-chat-v3-0324",
           "input": [
@@ -74080,16 +74085,6 @@
           "reasoning": true
         },
         {
-          "contextWindow": 196608,
-          "id": "minimax/minimax-m2.7:free",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 176947,
-          "name": "MiniMax: MiniMax M2.7 (free)",
-          "reasoning": true
-        },
-        {
           "contextWindow": 524288,
           "cost": {
             "cacheRead": 0.06,
@@ -74104,17 +74099,6 @@
           ],
           "maxTokens": 512000,
           "name": "MiniMax-M3",
-          "reasoning": true
-        },
-        {
-          "contextWindow": 1048576,
-          "id": "minimax/minimax-m3:free",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 943718,
-          "name": "MiniMax: MiniMax M3 (free)",
           "reasoning": true
         },
         {
@@ -86645,5 +86629,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "64e65c816044aa02d617a798af6344a01679741f"
+  "sourceCommit": "399caa03a17b7b9e80f88592a98d41fa040032b2"
 }
