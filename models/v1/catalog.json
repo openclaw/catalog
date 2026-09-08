@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788842002317,
+  "generatedAt": 1788856638352,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -9668,9 +9668,9 @@
       "output": 0.177212
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "cacheRead": 0.016,
+      "input": 0.065,
+      "output": 0.18
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.03,
@@ -9678,9 +9678,9 @@
       "output": 0.28
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.007,
-      "input": 0.22,
-      "output": 0.66
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.07960500000000001,
@@ -44331,9 +44331,9 @@
       "output": 0.177212
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "cacheRead": 0.016,
+      "input": 0.065,
+      "output": 0.18
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.03,
@@ -44341,9 +44341,9 @@
       "output": 0.28
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.007,
-      "input": 0.22,
-      "output": 0.66
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
     },
     "openrouter/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.07960500000000001,
@@ -55100,9 +55100,9 @@
       "output": 0.177212
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "cacheRead": 0.016,
+      "input": 0.065,
+      "output": 0.18
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.03,
@@ -55110,9 +55110,9 @@
       "output": 0.28
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.007,
-      "input": 0.22,
-      "output": 0.66
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.07960500000000001,
@@ -70369,10 +70369,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.007,
+            "cacheRead": 0.014,
             "cacheWrite": 0,
-            "input": 0.22,
-            "output": 0.66
+            "input": 0.44,
+            "output": 1.32
           },
           "id": "deepseek-v4-flash-vision-exp",
           "input": [
@@ -73052,26 +73052,26 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.028,
+            "cacheRead": 0.016,
             "cacheWrite": 0,
-            "input": 0.14,
-            "output": 0.28
+            "input": 0.065,
+            "output": 0.18
           },
           "id": "deepseek/deepseek-v4-flash-0731",
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 943718,
           "name": "DeepSeek V4 Flash 0731",
           "reasoning": true
         },
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.007,
+            "cacheRead": 0.014,
             "cacheWrite": 0,
-            "input": 0.22,
-            "output": 0.66
+            "input": 0.44,
+            "output": 1.32
           },
           "id": "deepseek/deepseek-v4-flash-vision-exp",
           "input": [
@@ -86620,5 +86620,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "ade9cce816fabe84c268933da2cd8e2bba2db6a4"
+  "sourceCommit": "ea21d360924a53b8ec941c84c29423739d31725f"
 }
