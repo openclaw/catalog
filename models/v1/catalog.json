@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788971554615,
+  "generatedAt": 1788985812764,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -9909,9 +9909,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -44717,9 +44717,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -55654,9 +55654,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.016800000000000002,
-      "input": 0.08399999999999999,
-      "output": 0.16799999999999998
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -70905,10 +70905,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.016800000000000002,
+            "cacheRead": 0.014,
             "cacheWrite": 0,
-            "input": 0.08399999999999999,
-            "output": 0.16799999999999998
+            "input": 0.07,
+            "output": 0.14
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -72733,7 +72733,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 131072,
           "name": "Z.ai: GLM Flash Latest",
           "reasoning": true
         },
@@ -73594,10 +73594,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.016800000000000002,
+            "cacheRead": 0.014,
             "cacheWrite": 0,
-            "input": 0.08399999999999999,
-            "output": 0.16799999999999998
+            "input": 0.07,
+            "output": 0.14
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
@@ -75062,7 +75062,8 @@
           "contextWindow": 262144,
           "id": "nex-agi/nex-n2.5-mini:free",
           "input": [
-            "text"
+            "text",
+            "image"
           ],
           "maxTokens": 235929,
           "name": "Nex AGI: Nex-N2.5-Mini (free)",
@@ -78380,7 +78381,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 1024000,
           "cost": {
             "cacheRead": 0.052000000000000005,
             "cacheWrite": 0,
@@ -78391,7 +78392,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 128000,
           "name": "GLM-5.2",
           "reasoning": true
         },
@@ -87314,5 +87315,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "651775ba8d2c7b10f37c5372d3528b41ecfbc804"
+  "sourceCommit": "227e2f4fe1c279f429138bce53d5015a8a398f7d"
 }
