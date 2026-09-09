@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788942974988,
+  "generatedAt": 1788957650264,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -9939,9 +9939,9 @@
       "output": 1.9105199999999998
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.018438,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.03498,
+      "input": 1.0494,
+      "output": 3.1482
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.022,
@@ -17420,8 +17420,8 @@
       "output": 0.5
     },
     "cloudflare-ai-gateway/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.3
+      "input": 0.04815,
+      "output": 0.19305
     },
     "cloudflare-ai-gateway/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -44759,9 +44759,9 @@
       "output": 1.9105199999999998
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.018438,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.03498,
+      "input": 1.0494,
+      "output": 3.1482
     },
     "openrouter/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.022,
@@ -46549,8 +46549,8 @@
       "output": 0.5
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.3
+      "input": 0.04815,
+      "output": 0.19305
     },
     "openrouter/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -55700,9 +55700,9 @@
       "output": 1.9105199999999998
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.018438,
-      "input": 0.57948,
-      "output": 1.73844
+      "cacheRead": 0.03498,
+      "input": 1.0494,
+      "output": 3.1482
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.022,
@@ -63181,8 +63181,8 @@
       "output": 0.5
     },
     "vercel-ai-gateway/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.3
+      "input": 0.04815,
+      "output": 0.19305
     },
     "vercel-ai-gateway/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -73677,18 +73677,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.018438,
+            "cacheRead": 0.03498,
             "cacheWrite": 0,
-            "input": 0.57948,
-            "output": 1.73844
+            "input": 1.0494,
+            "output": 3.1482
           },
           "id": "deepseek/deepseek-v4-pro-0813",
           "input": [
             "text"
           ],
-          "maxTokens": 393216,
+          "maxTokens": 384000,
           "name": "DeepSeek V4 Pro 0813",
           "reasoning": true
         },
@@ -76705,18 +76705,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 262144,
+          "contextWindow": 128000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.09,
-            "output": 0.3
+            "input": 0.04815,
+            "output": 0.19305
           },
           "id": "qwen/qwen3-30b-a3b-instruct-2507",
           "input": [
             "text"
           ],
-          "maxTokens": 235929,
+          "maxTokens": 32000,
           "name": "Qwen: Qwen3 30B A3B Instruct 2507",
           "reasoning": false
         },
@@ -87334,5 +87334,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "008cf5d9b0a4b1dcae5517706ea06d31ec1082ff"
+  "sourceCommit": "f7a36e6e878cac0461001eb47907727162849ff1"
 }
