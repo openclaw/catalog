@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1788928438298,
+  "generatedAt": 1788942974988,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -17420,8 +17420,8 @@
       "output": 0.5
     },
     "cloudflare-ai-gateway/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.04815,
-      "output": 0.19305
+      "input": 0.09,
+      "output": 0.3
     },
     "cloudflare-ai-gateway/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -46549,8 +46549,8 @@
       "output": 0.5
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.04815,
-      "output": 0.19305
+      "input": 0.09,
+      "output": 0.3
     },
     "openrouter/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -63181,8 +63181,8 @@
       "output": 0.5
     },
     "vercel-ai-gateway/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.04815,
-      "output": 0.19305
+      "input": 0.09,
+      "output": 0.3
     },
     "vercel-ai-gateway/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -74396,7 +74396,7 @@
             "text"
           ],
           "maxTokens": 16384,
-          "name": "Meta: Llama 3.1 70B Instruct",
+          "name": "Llama-3.1-70B-Instruct",
           "reasoning": false
         },
         {
@@ -76705,18 +76705,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 128000,
+          "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.04815,
-            "output": 0.19305
+            "input": 0.09,
+            "output": 0.3
           },
           "id": "qwen/qwen3-30b-a3b-instruct-2507",
           "input": [
             "text"
           ],
-          "maxTokens": 32000,
+          "maxTokens": 235929,
           "name": "Qwen: Qwen3 30B A3B Instruct 2507",
           "reasoning": false
         },
@@ -87334,5 +87334,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "30be4e3f31fba18b97f9d30b1aafba6185fde87c"
+  "sourceCommit": "008cf5d9b0a4b1dcae5517706ea06d31ec1082ff"
 }
