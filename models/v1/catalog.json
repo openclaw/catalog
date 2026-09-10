@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789014832759,
+  "generatedAt": 1789029459978,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4439,9 +4439,9 @@
       "output": 0.25
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.20279999999999998,
-      "input": 1.092,
-      "output": 3.432
+      "cacheRead": 0.20149999999999998,
+      "input": 1.085,
+      "output": 3.41
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -10067,6 +10067,11 @@
       "cacheRead": 0.022,
       "input": 0.66,
       "output": 1.9800000000000002
+    },
+    "cloudflare-ai-gateway/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -22222,6 +22227,11 @@
       "cacheRead": 0.168,
       "input": 0.21,
       "output": 0.32
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2
     },
     "deepinfra/google/codegemma-7b-it": {
       "input": 0.06999999999999999,
@@ -44556,9 +44566,9 @@
       "output": 0.25
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.20279999999999998,
-      "input": 1.092,
-      "output": 3.432
+      "cacheRead": 0.20149999999999998,
+      "input": 1.085,
+      "output": 3.41
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -45072,6 +45082,11 @@
       "cacheRead": 0.022,
       "input": 0.66,
       "output": 1.9800000000000002
+    },
+    "openrouter/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -50485,9 +50500,9 @@
       "output": 0.25
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.20279999999999998,
-      "input": 1.092,
-      "output": 3.432
+      "cacheRead": 0.20149999999999998,
+      "input": 1.085,
+      "output": 3.41
     },
     "vercel-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -56113,6 +56128,11 @@
       "cacheRead": 0.022,
       "input": 0.66,
       "output": 1.9800000000000002
+    },
+    "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -73221,18 +73241,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.20279999999999998,
+            "cacheRead": 0.20149999999999998,
             "cacheWrite": 0,
-            "input": 1.092,
-            "output": 3.432
+            "input": 1.085,
+            "output": 3.41
           },
           "id": "~z-ai/glm-latest",
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 128000,
           "name": "Z.ai: GLM Latest",
           "reasoning": true
         },
@@ -74153,6 +74173,23 @@
           ],
           "maxTokens": 384000,
           "name": "DeepSeek V4 Pro 0813",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.006,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 1.2
+          },
+          "id": "deepseek/deepseek-v4.1-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4.1 Flash",
           "reasoning": true
         },
         {
@@ -85636,10 +85673,10 @@
         {
           "contextWindow": 260000,
           "cost": {
-            "cacheRead": 0.025,
+            "cacheRead": 0.004999999999999999,
             "cacheWrite": 0,
-            "input": 0.25,
-            "output": 0.9375
+            "input": 0.04999999999999999,
+            "output": 0.18749999999999994
           },
           "id": "mercury-2-5",
           "input": [
@@ -87815,5 +87852,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "780b04f43877820f885db53729011fdea5dacbd6"
+  "sourceCommit": "cb3cc63432bda4421d183271d4ebaa900f608537"
 }
