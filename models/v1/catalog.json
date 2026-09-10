@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789029459978,
+  "generatedAt": 1789044066752,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4440,7 +4440,7 @@
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
       "cacheRead": 0.20149999999999998,
-      "input": 1.085,
+      "input": 1.0075,
       "output": 3.41
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
@@ -10069,9 +10069,9 @@
       "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -17567,8 +17567,8 @@
       "output": 0.5
     },
     "cloudflare-ai-gateway/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.3
+      "input": 0.04815,
+      "output": 0.19305
     },
     "cloudflare-ai-gateway/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -21116,9 +21116,9 @@
       "output": 4.4
     },
     "cloudflare-ai-gateway/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
     },
     "cloudflare-ai-gateway/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.015,
@@ -22229,7 +22229,7 @@
       "output": 0.32
     },
     "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash": {
-      "cacheRead": 0.06,
+      "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2
     },
@@ -44567,7 +44567,7 @@
     },
     "openrouter/~z-ai/glm-latest": {
       "cacheRead": 0.20149999999999998,
-      "input": 1.085,
+      "input": 1.0075,
       "output": 3.41
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -45084,9 +45084,9 @@
       "output": 1.9800000000000002
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -46891,8 +46891,8 @@
       "output": 0.5
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.3
+      "input": 0.04815,
+      "output": 0.19305
     },
     "openrouter/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -47777,9 +47777,9 @@
       "output": 4.4
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.015,
@@ -50501,7 +50501,7 @@
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
       "cacheRead": 0.20149999999999998,
-      "input": 1.085,
+      "input": 1.0075,
       "output": 3.41
     },
     "vercel-ai-gateway/ai21/j2-light": {
@@ -56130,9 +56130,9 @@
       "output": 1.9800000000000002
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -63628,8 +63628,8 @@
       "output": 0.5
     },
     "vercel-ai-gateway/qwen/qwen3-30b-a3b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.3
+      "input": 0.04815,
+      "output": 0.19305
     },
     "vercel-ai-gateway/qwen/qwen3-30b-a3b-thinking-2507": {
       "input": 0.19999999999999998,
@@ -67177,9 +67177,9 @@
       "output": 4.4
     },
     "vercel-ai-gateway/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.25
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
     },
     "vercel-ai-gateway/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.015,
@@ -73241,18 +73241,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1024000,
+          "contextWindow": 262144,
           "cost": {
             "cacheRead": 0.20149999999999998,
             "cacheWrite": 0,
-            "input": 1.085,
+            "input": 1.0075,
             "output": 3.41
           },
           "id": "~z-ai/glm-latest",
           "input": [
             "text"
           ],
-          "maxTokens": 128000,
+          "maxTokens": 235929,
           "name": "Z.ai: GLM Latest",
           "reasoning": true
         },
@@ -74178,10 +74178,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.006,
+            "cacheRead": 0.003,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.15,
+            "output": 0.6
           },
           "id": "deepseek/deepseek-v4.1-flash",
           "input": [
@@ -77206,18 +77206,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 262144,
+          "contextWindow": 128000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.09,
-            "output": 0.3
+            "input": 0.04815,
+            "output": 0.19305
           },
           "id": "qwen/qwen3-30b-a3b-instruct-2507",
           "input": [
             "text"
           ],
-          "maxTokens": 235929,
+          "maxTokens": 32000,
           "name": "Qwen: Qwen3 30B A3B Instruct 2507",
           "reasoning": false
         },
@@ -78935,10 +78935,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.015,
+            "cacheRead": 0.03,
             "cacheWrite": 0,
-            "input": 0.075,
-            "output": 0.25
+            "input": 0.15,
+            "output": 0.5
           },
           "id": "z-ai/glm-5.3-flash",
           "input": [
@@ -85025,6 +85025,23 @@
         {
           "contextWindow": 1000000,
           "cost": {
+            "cacheRead": 0.0075,
+            "cacheWrite": 0,
+            "input": 0.375,
+            "output": 1.5
+          },
+          "id": "deepseek-v4-1-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "DeepSeek V4.1 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
             "cacheRead": 0.028,
             "cacheWrite": 0,
             "input": 0.138,
@@ -87817,10 +87834,10 @@
           },
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.015,
+            "cacheRead": 0.03,
             "cacheWrite": 0,
-            "input": 0.075,
-            "output": 0.25
+            "input": 0.15,
+            "output": 0.5
           },
           "id": "glm-5.3-flash",
           "input": [
@@ -87852,5 +87869,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "cb3cc63432bda4421d183271d4ebaa900f608537"
+  "sourceCommit": "c55297caa246aedabd1fe349cc59ee3558f5e07e"
 }
