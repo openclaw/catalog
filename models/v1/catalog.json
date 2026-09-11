@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789101247023,
+  "generatedAt": 1789115802838,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4330,7 +4330,7 @@
     },
     "cloudflare-ai-gateway/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.013000000000000001,
-      "input": 0.04,
+      "input": 0.049999999999999996,
       "output": 0.16
     },
     "cloudflare-ai-gateway/~google/gemini-flash-latest": {
@@ -4367,9 +4367,9 @@
       ]
     },
     "cloudflare-ai-gateway/~moonshotai/kimi-latest": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "cloudflare-ai-gateway/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -4435,9 +4435,9 @@
       "output": 0.25
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 1,
-      "output": 3.41
+      "cacheRead": 0.19399999999999998,
+      "input": 0.9700000000000001,
+      "output": 3.3077
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -9974,9 +9974,8 @@
       "output": 1.0287
     },
     "cloudflare-ai-gateway/deepseek/deepseek-chat-v3-0324": {
-      "cacheRead": 0.11,
-      "input": 0.29,
-      "output": 1.1400000000000001
+      "input": 0.25,
+      "output": 1
     },
     "cloudflare-ai-gateway/deepseek/deepseek-chat-v3.1": {
       "cacheRead": 0.13,
@@ -10055,9 +10054,9 @@
       "output": 1.9105199999999998
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.03498,
-      "input": 1.0494,
-      "output": 3.1482
+      "cacheRead": 0.06599999999999999,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.022,
@@ -10065,9 +10064,9 @@
       "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -13240,9 +13239,9 @@
       "output": 3.5
     },
     "cloudflare-ai-gateway/moonshotai/kimi-k3": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "cloudflare-ai-gateway/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.3,
@@ -18331,7 +18330,38 @@
       "input": 7.199999999999999,
       "output": 36
     },
+    "cloudflare-ai-gateway/sakana/fugu-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "cloudflare-ai-gateway/sakana/fugu-ultra": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 0,
+          "input": 5,
+          "output": 30,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 0,
+          "input": 10,
+          "output": 45,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "cloudflare-ai-gateway/sakana/fugu-ultra-v2": {
       "cacheRead": 0.5,
       "input": 5,
       "output": 30,
@@ -22283,18 +22313,6 @@
     "deepinfra/google/gemma-2-9b-it": {
       "input": 0.030000000000000002,
       "output": 0.060000000000000005
-    },
-    "deepinfra/google/gemma-3-12b-it": {
-      "input": 0.05,
-      "output": 0.15
-    },
-    "deepinfra/google/gemma-3-27b-it": {
-      "input": 0.08,
-      "output": 0.16
-    },
-    "deepinfra/google/gemma-3-4b-it": {
-      "input": 0.05,
-      "output": 0.1
     },
     "deepinfra/google/gemma-4-31B-it-turbo": {
       "cacheRead": 0.050000000399999994,
@@ -40938,9 +40956,9 @@
       "output": 3.5
     },
     "kimi-coding/kimi-k3": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "kimi-coding/kimi-k3:batch": {
       "cacheRead": 0.3,
@@ -41065,9 +41083,9 @@
       "output": 3.5
     },
     "kimi/kimi-k3": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "kimi/kimi-k3:batch": {
       "cacheRead": 0.3,
@@ -44503,7 +44521,7 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.013000000000000001,
-      "input": 0.04,
+      "input": 0.049999999999999996,
       "output": 0.16
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -44540,9 +44558,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "openrouter/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -44608,9 +44626,9 @@
       "output": 0.25
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 1,
-      "output": 3.41
+      "cacheRead": 0.19399999999999998,
+      "input": 0.9700000000000001,
+      "output": 3.3077
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -45049,9 +45067,8 @@
       "output": 1.0287
     },
     "openrouter/deepseek/deepseek-chat-v3-0324": {
-      "cacheRead": 0.11,
-      "input": 0.29,
-      "output": 1.1400000000000001
+      "input": 0.25,
+      "output": 1
     },
     "openrouter/deepseek/deepseek-chat-v3.1": {
       "cacheRead": 0.13,
@@ -45116,9 +45133,9 @@
       "output": 1.9105199999999998
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.03498,
-      "input": 1.0494,
-      "output": 3.1482
+      "cacheRead": 0.06599999999999999,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "openrouter/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.022,
@@ -45126,9 +45143,9 @@
       "output": 1.9800000000000002
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -45801,9 +45818,9 @@
       "output": 3.5
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.3,
@@ -47427,7 +47444,38 @@
       "input": 1,
       "output": 3
     },
+    "openrouter/sakana/fugu-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "openrouter/sakana/fugu-ultra": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 0,
+          "input": 5,
+          "output": 30,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 0,
+          "input": 10,
+          "output": 45,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/sakana/fugu-ultra-v2": {
       "cacheRead": 0.5,
       "input": 5,
       "output": 30,
@@ -50437,7 +50485,7 @@
     },
     "vercel-ai-gateway/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.013000000000000001,
-      "input": 0.04,
+      "input": 0.049999999999999996,
       "output": 0.16
     },
     "vercel-ai-gateway/~google/gemini-flash-latest": {
@@ -50474,9 +50522,9 @@
       ]
     },
     "vercel-ai-gateway/~moonshotai/kimi-latest": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "vercel-ai-gateway/~openai/gpt-latest": {
       "cacheRead": 0.19999999999999998,
@@ -50542,9 +50590,9 @@
       "output": 0.25
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 1,
-      "output": 3.41
+      "cacheRead": 0.19399999999999998,
+      "input": 0.9700000000000001,
+      "output": 3.3077
     },
     "vercel-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -56081,9 +56129,8 @@
       "output": 1.0287
     },
     "vercel-ai-gateway/deepseek/deepseek-chat-v3-0324": {
-      "cacheRead": 0.11,
-      "input": 0.29,
-      "output": 1.1400000000000001
+      "input": 0.25,
+      "output": 1
     },
     "vercel-ai-gateway/deepseek/deepseek-chat-v3.1": {
       "cacheRead": 0.13,
@@ -56162,9 +56209,9 @@
       "output": 1.9105199999999998
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.03498,
-      "input": 1.0494,
-      "output": 3.1482
+      "cacheRead": 0.06599999999999999,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813:batch": {
       "cacheRead": 0.022,
@@ -56172,9 +56219,9 @@
       "output": 1.9800000000000002
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -59347,9 +59394,9 @@
       "output": 3.5
     },
     "vercel-ai-gateway/moonshotai/kimi-k3": {
-      "cacheRead": 0.216,
-      "input": 1.89,
-      "output": 9.48
+      "cacheRead": 0.261,
+      "input": 2.34,
+      "output": 11.7
     },
     "vercel-ai-gateway/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.3,
@@ -64438,7 +64485,38 @@
       "input": 7.199999999999999,
       "output": 36
     },
+    "vercel-ai-gateway/sakana/fugu-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
     "vercel-ai-gateway/sakana/fugu-ultra": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 30,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.5,
+          "cacheWrite": 0,
+          "input": 5,
+          "output": 30,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 1,
+          "cacheWrite": 0,
+          "input": 10,
+          "output": 45,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "vercel-ai-gateway/sakana/fugu-ultra-v2": {
       "cacheRead": 0.5,
       "input": 5,
       "output": 30,
@@ -70640,6 +70718,57 @@
           "reasoning": true
         },
         {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.05,
+            "output": 0.15
+          },
+          "id": "google/gemma-3-12b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Gemma 3 12B IT",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.08,
+            "output": 0.16
+          },
+          "id": "google/gemma-3-27b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Gemma 3 27B IT",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.05,
+            "output": 0.1
+          },
+          "id": "google/gemma-3-4b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Gemma 3 4B IT",
+          "reasoning": false
+        },
+        {
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
@@ -73119,7 +73248,7 @@
           "cost": {
             "cacheRead": 0.013000000000000001,
             "cacheWrite": 0,
-            "input": 0.04,
+            "input": 0.049999999999999996,
             "output": 0.16
           },
           "id": "~deepseek/deepseek-v4-flash-latest",
@@ -73190,10 +73319,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.216,
+            "cacheRead": 0.261,
             "cacheWrite": 0,
-            "input": 1.89,
-            "output": 9.48
+            "input": 2.34,
+            "output": 11.7
           },
           "id": "~moonshotai/kimi-latest",
           "input": [
@@ -73320,10 +73449,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.19999999999999998,
+            "cacheRead": 0.19399999999999998,
             "cacheWrite": 0,
-            "input": 1,
-            "output": 3.41
+            "input": 0.9700000000000001,
+            "output": 3.3077
           },
           "id": "~z-ai/glm-latest",
           "input": [
@@ -74062,10 +74191,10 @@
         {
           "contextWindow": 163840,
           "cost": {
-            "cacheRead": 0.11,
+            "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.29,
-            "output": 1.1400000000000001
+            "input": 0.25,
+            "output": 1
           },
           "id": "deepseek/deepseek-chat-v3-0324",
           "input": [
@@ -74237,28 +74366,28 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1024000,
+          "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.03498,
+            "cacheRead": 0.06599999999999999,
             "cacheWrite": 0,
-            "input": 1.0494,
-            "output": 3.1482
+            "input": 0.66,
+            "output": 1.9800000000000002
           },
           "id": "deepseek/deepseek-v4-pro-0813",
           "input": [
             "text"
           ],
-          "maxTokens": 384000,
+          "maxTokens": 943718,
           "name": "DeepSeek V4 Pro 0813",
           "reasoning": true
         },
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.003,
+            "cacheRead": 0.006,
             "cacheWrite": 0,
-            "input": 0.15,
-            "output": 0.6
+            "input": 0.3,
+            "output": 1.2
           },
           "id": "deepseek/deepseek-v4.1-flash",
           "input": [
@@ -74687,7 +74816,7 @@
             "image"
           ],
           "maxTokens": 16384,
-          "name": "Google: Gemma 3 12B",
+          "name": "Gemma 3 12B IT",
           "reasoning": false
         },
         {
@@ -74704,7 +74833,7 @@
             "image"
           ],
           "maxTokens": 117964,
-          "name": "Google: Gemma 3 27B",
+          "name": "Gemma 3 27B IT",
           "reasoning": false
         },
         {
@@ -75652,10 +75781,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.216,
+            "cacheRead": 0.261,
             "cacheWrite": 0,
-            "input": 1.89,
-            "output": 9.48
+            "input": 2.34,
+            "output": 11.7
           },
           "id": "moonshotai/kimi-k3",
           "input": [
@@ -76905,7 +77034,7 @@
             "text"
           ],
           "maxTokens": 65536,
-          "name": "OpenAI: gpt-oss-safeguard-20b",
+          "name": "GPT OSS Safeguard 20B",
           "reasoning": true
         },
         {
@@ -78274,6 +78403,24 @@
         {
           "contextWindow": 1000000,
           "cost": {
+            "cacheRead": 0.25,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 6
+          },
+          "id": "sakana/fugu-max",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 128000,
+          "name": "Sakana: Fugu Max",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
             "cacheRead": 0.5,
             "cacheWrite": 0,
             "input": 5,
@@ -78307,6 +78454,45 @@
           ],
           "maxTokens": 128000,
           "name": "Fugu Ultra",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.5,
+            "cacheWrite": 0,
+            "input": 5,
+            "output": 30,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.5,
+                "cacheWrite": 0,
+                "input": 5,
+                "output": 30,
+                "range": [
+                  0,
+                  272001
+                ]
+              },
+              {
+                "cacheRead": 1,
+                "cacheWrite": 0,
+                "input": 10,
+                "output": 45,
+                "range": [
+                  272001
+                ]
+              }
+            ]
+          },
+          "id": "sakana/fugu-ultra-v2",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 128000,
+          "name": "Sakana: Fugu Ultra v2",
           "reasoning": true
         },
         {
@@ -79835,10 +80021,10 @@
           },
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.216,
+            "cacheRead": 0.261,
             "cacheWrite": 0,
-            "input": 1.89,
-            "output": 9.48
+            "input": 2.34,
+            "output": 11.7
           },
           "id": "kimi-k3",
           "input": [
@@ -87946,5 +88132,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "01855443a451005e5eb1ad7a46e7e1e959f86c65"
+  "sourceCommit": "bb221a85658ce9d8798f1c2f9e8f6de4391f6512"
 }
