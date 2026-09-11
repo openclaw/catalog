@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789115802838,
+  "generatedAt": 1789130425364,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -10064,9 +10064,9 @@
       "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -12527,8 +12527,8 @@
       "output": 1.2
     },
     "cloudflare-ai-gateway/meta-llama/llama-3.1-70b-instruct": {
-      "input": 0.72,
-      "output": 0.72
+      "input": 0.39999999999999997,
+      "output": 0.39999999999999997
     },
     "cloudflare-ai-gateway/meta-llama/llama-3.1-8b-instruct": {
       "cacheRead": 0.024999999999999998,
@@ -45143,9 +45143,9 @@
       "output": 1.9800000000000002
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -45553,8 +45553,8 @@
       "output": 1.2
     },
     "openrouter/meta-llama/llama-3.1-70b-instruct": {
-      "input": 0.72,
-      "output": 0.72
+      "input": 0.39999999999999997,
+      "output": 0.39999999999999997
     },
     "openrouter/meta-llama/llama-3.1-8b-instruct": {
       "cacheRead": 0.024999999999999998,
@@ -56219,9 +56219,9 @@
       "output": 1.9800000000000002
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -58682,8 +58682,8 @@
       "output": 1.2
     },
     "vercel-ai-gateway/meta-llama/llama-3.1-70b-instruct": {
-      "input": 0.72,
-      "output": 0.72
+      "input": 0.39999999999999997,
+      "output": 0.39999999999999997
     },
     "vercel-ai-gateway/meta-llama/llama-3.1-8b-instruct": {
       "cacheRead": 0.024999999999999998,
@@ -74384,10 +74384,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.006,
+            "cacheRead": 0.003,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.15,
+            "output": 0.6
           },
           "id": "deepseek/deepseek-v4.1-flash",
           "input": [
@@ -75105,14 +75105,14 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.72,
-            "output": 0.72
+            "input": 0.39999999999999997,
+            "output": 0.39999999999999997
           },
           "id": "meta-llama/llama-3.1-70b-instruct",
           "input": [
             "text"
           ],
-          "maxTokens": 8192,
+          "maxTokens": 16384,
           "name": "Llama-3.1-70B-Instruct",
           "reasoning": false
         },
@@ -88132,5 +88132,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "bb221a85658ce9d8798f1c2f9e8f6de4391f6512"
+  "sourceCommit": "4407ed19ac63b1c1c84a0cfe6eb4bbeca9c2322c"
 }
