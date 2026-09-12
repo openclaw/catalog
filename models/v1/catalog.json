@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789201993277,
+  "generatedAt": 1789216536065,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -10130,9 +10130,9 @@
       "output": 0.33
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0665985,
-      "input": 0.7991820000000001,
-      "output": 1.5983640000000001
+      "cacheRead": 0.064902,
+      "input": 0.778824,
+      "output": 1.557648
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.018396000000000003,
@@ -12737,9 +12737,9 @@
       "output": 2.4
     },
     "cloudflare-ai-gateway/minimax/minimax-m2.5": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.027,
+      "input": 0.27,
+      "output": 1.08
     },
     "cloudflare-ai-gateway/minimax/MiniMax-M2.5": {
       "cacheRead": 0.03,
@@ -21252,9 +21252,9 @@
       "output": 4.4
     },
     "cloudflare-ai-gateway/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "cloudflare-ai-gateway/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.015,
@@ -45316,9 +45316,9 @@
       "output": 0.33
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0665985,
-      "input": 0.7991820000000001,
-      "output": 1.5983640000000001
+      "cacheRead": 0.064902,
+      "input": 0.778824,
+      "output": 1.557648
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.018396000000000003,
@@ -45852,9 +45852,9 @@
       "output": 1.2
     },
     "openrouter/minimax/minimax-m2.5": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.027,
+      "input": 0.27,
+      "output": 1.08
     },
     "openrouter/minimax/minimax-m2.7": {
       "cacheRead": 0.06,
@@ -48068,9 +48068,9 @@
       "output": 4.4
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.015,
@@ -56486,9 +56486,9 @@
       "output": 0.33
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0665985,
-      "input": 0.7991820000000001,
-      "output": 1.5983640000000001
+      "cacheRead": 0.064902,
+      "input": 0.778824,
+      "output": 1.557648
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.018396000000000003,
@@ -59093,9 +59093,9 @@
       "output": 2.4
     },
     "vercel-ai-gateway/minimax/minimax-m2.5": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.027,
+      "input": 0.27,
+      "output": 1.08
     },
     "vercel-ai-gateway/minimax/MiniMax-M2.5": {
       "cacheRead": 0.03,
@@ -67608,9 +67608,9 @@
       "output": 4.4
     },
     "vercel-ai-gateway/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25
     },
     "vercel-ai-gateway/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.015,
@@ -71943,10 +71943,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.0665985,
+            "cacheRead": 0.064902,
             "cacheWrite": 0,
-            "input": 0.7991820000000001,
-            "output": 1.5983640000000001
+            "input": 0.778824,
+            "output": 1.557648
           },
           "id": "deepseek-v4-pro",
           "input": [
@@ -73510,7 +73510,7 @@
             "document"
           ],
           "maxTokens": 64000,
-          "name": "Anthropic Claude Haiku Latest",
+          "name": "Anthropic: Claude Haiku Latest",
           "reasoning": true
         },
         {
@@ -73546,7 +73546,7 @@
             "document"
           ],
           "maxTokens": 128000,
-          "name": "Anthropic Claude Sonnet Latest",
+          "name": "Anthropic: Claude Sonnet Latest",
           "reasoning": true
         },
         {
@@ -73562,7 +73562,7 @@
             "text"
           ],
           "maxTokens": 393216,
-          "name": "DeepSeek V4 Flash Latest",
+          "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "reasoning": true
         },
         {
@@ -73580,7 +73580,7 @@
             "document"
           ],
           "maxTokens": 65536,
-          "name": "Google Gemini Flash Latest",
+          "name": "Google: Gemini Flash Latest",
           "reasoning": true
         },
         {
@@ -73619,7 +73619,7 @@
             "text"
           ],
           "maxTokens": 65536,
-          "name": "Google Gemini Pro Latest",
+          "name": "Google: Gemini Pro Latest",
           "reasoning": true
         },
         {
@@ -73636,7 +73636,7 @@
             "image"
           ],
           "maxTokens": 943718,
-          "name": "MoonshotAI Kimi Latest",
+          "name": "MoonshotAI: Kimi Latest",
           "reasoning": true
         },
         {
@@ -73675,7 +73675,7 @@
             "text"
           ],
           "maxTokens": 128000,
-          "name": "OpenAI GPT Astra Latest ($$$$)",
+          "name": "OpenAI: GPT Astra Latest ($$$$)",
           "reasoning": true
         },
         {
@@ -73714,7 +73714,7 @@
             "text"
           ],
           "maxTokens": 128000,
-          "name": "OpenAI GPT Luna Latest",
+          "name": "OpenAI: GPT Luna Latest",
           "reasoning": true
         },
         {
@@ -73732,7 +73732,7 @@
             "text"
           ],
           "maxTokens": 128000,
-          "name": "OpenAI GPT Mini Latest",
+          "name": "OpenAI: GPT Mini Latest",
           "reasoning": true
         },
         {
@@ -73771,7 +73771,7 @@
             "text"
           ],
           "maxTokens": 128000,
-          "name": "OpenAI GPT Sol Latest",
+          "name": "OpenAI: GPT Sol Latest",
           "reasoning": true
         },
         {
@@ -73810,7 +73810,7 @@
             "text"
           ],
           "maxTokens": 128000,
-          "name": "OpenAI GPT Terra Latest",
+          "name": "OpenAI: GPT Terra Latest",
           "reasoning": true
         },
         {
@@ -74775,10 +74775,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.0665985,
+            "cacheRead": 0.064902,
             "cacheWrite": 0,
-            "input": 0.7991820000000001,
-            "output": 1.5983640000000001
+            "input": 0.778824,
+            "output": 1.557648
           },
           "id": "deepseek/deepseek-v4-pro",
           "input": [
@@ -75779,18 +75779,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 204800,
+          "contextWindow": 200000,
           "cost": {
-            "cacheRead": 0.03,
+            "cacheRead": 0.027,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.27,
+            "output": 1.08
           },
           "id": "minimax/minimax-m2.5",
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 128000,
           "name": "MiniMax-M2.5",
           "reasoning": true
         },
@@ -79638,10 +79638,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.03,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.15,
-            "output": 0.5
+            "input": 0.075,
+            "output": 0.25
           },
           "id": "z-ai/glm-5.3-flash",
           "input": [
@@ -88561,10 +88561,10 @@
           },
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.03,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.15,
-            "output": 0.5
+            "input": 0.075,
+            "output": 0.25
           },
           "id": "glm-5.3-flash",
           "input": [
@@ -88596,5 +88596,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "d5936a7bdcb85c4518648857a2211b023f6d2978"
+  "sourceCommit": "1277e3daa14ff299fa6753797d3a01d9dd581541"
 }
