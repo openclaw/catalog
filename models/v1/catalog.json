@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789274582523,
+  "generatedAt": 1789288432926,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4515,9 +4515,9 @@
       "output": 0.25
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.16390000000000002,
-      "input": 0.8727,
-      "output": 3.36
+      "cacheRead": 0.1872,
+      "input": 0.936,
+      "output": 3.168
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -10113,9 +10113,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.013076,
-      "input": 0.06538,
-      "output": 0.13076
+      "cacheRead": 0.009856,
+      "input": 0.049280000000000004,
+      "output": 0.09856000000000001
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.008,
@@ -45191,9 +45191,9 @@
       "output": 0.25
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.16390000000000002,
-      "input": 0.8727,
-      "output": 3.36
+      "cacheRead": 0.1872,
+      "input": 0.936,
+      "output": 3.168
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -45668,9 +45668,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.013076,
-      "input": 0.06538,
-      "output": 0.13076
+      "cacheRead": 0.009856,
+      "input": 0.049280000000000004,
+      "output": 0.09856000000000001
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.008,
@@ -51321,9 +51321,9 @@
       "output": 0.25
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.16390000000000002,
-      "input": 0.8727,
-      "output": 3.36
+      "cacheRead": 0.1872,
+      "input": 0.936,
+      "output": 3.168
     },
     "vercel-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -56919,9 +56919,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.013076,
-      "input": 0.06538,
-      "output": 0.13076
+      "cacheRead": 0.009856,
+      "input": 0.049280000000000004,
+      "output": 0.09856000000000001
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.008,
@@ -72517,10 +72517,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.013076,
+            "cacheRead": 0.009856,
             "cacheWrite": 0,
-            "input": 0.06538,
-            "output": 0.13076
+            "input": 0.049280000000000004,
+            "output": 0.09856000000000001
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -74180,7 +74180,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 131072,
           "name": "DeepSeek: DeepSeek V4 Flash Latest",
           "reasoning": true
         },
@@ -74489,18 +74489,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.16390000000000002,
+            "cacheRead": 0.1872,
             "cacheWrite": 0,
-            "input": 0.8727,
-            "output": 3.36
+            "input": 0.936,
+            "output": 3.168
           },
           "id": "~z-ai/glm-latest",
           "input": [
             "text"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 235929,
           "name": "Z.ai: GLM Latest",
           "reasoning": true
         },
@@ -75345,10 +75345,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.013076,
+            "cacheRead": 0.009856,
             "cacheWrite": 0,
-            "input": 0.06538,
-            "output": 0.13076
+            "input": 0.049280000000000004,
+            "output": 0.09856000000000001
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
@@ -76750,7 +76750,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 100352,
+          "maxTokens": 98304,
           "name": "MoonshotAI: Kimi K2 0711",
           "reasoning": false
         },
@@ -76766,7 +76766,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 100352,
+          "maxTokens": 98304,
           "name": "MoonshotAI: Kimi K2 0905",
           "reasoning": false
         },
@@ -76782,7 +76782,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 100352,
+          "maxTokens": 98304,
           "name": "Kimi K2 Thinking",
           "reasoning": true
         },
@@ -83053,6 +83053,18 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1000000,
+          "id": "z-ai/glm-5.3-flash",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3-Flash",
+          "reasoning": true
+        },
+        {
           "compat": {
             "requiresStringContent": true
           },
@@ -83146,6 +83158,7 @@
             "text"
           ],
           "maxTokens": 8192,
+          "name": "DeepSeek V4 Pro 0813",
           "reasoning": true
         },
         {
@@ -85862,6 +85875,17 @@
           ],
           "maxTokens": 384000,
           "name": "DeepSeek V4 Pro 0813",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4.1 Flash",
           "reasoning": true
         },
         {
@@ -89215,5 +89239,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "8c4ad0b2dab646a0791e0e00593453d23e00f7f9"
+  "sourceCommit": "ce6718fd82a492b7c1f2b068e1c68477fd9a8b7f"
 }
