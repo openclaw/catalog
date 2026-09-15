@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789461541851,
+  "generatedAt": 1789476060404,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4354,9 +4354,9 @@
       "output": 0.6
     },
     "cloudflare-ai-gateway/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.088,
-      "input": 0.96,
-      "output": 2.88
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.01,
@@ -10199,9 +10199,9 @@
       "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -45345,9 +45345,9 @@
       "output": 0.6
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.088,
-      "input": 0.96,
-      "output": 2.88
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.01,
@@ -46054,9 +46054,9 @@
       "output": 1.9800000000000002
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -51545,9 +51545,9 @@
       "output": 0.6
     },
     "vercel-ai-gateway/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.088,
-      "input": 0.96,
-      "output": 2.88
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002
     },
     "vercel-ai-gateway/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.01,
@@ -57390,9 +57390,9 @@
       "output": 1.9800000000000002
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/fireworks_ai-embedding-models/fireworks-ai-embedding-150m-to-350m": {
       "input": 0.016,
@@ -73953,21 +73953,6 @@
             "minimal": "low",
             "xhigh": "xhigh"
           }
-        },
-        {
-          "contextWindow": 128000,
-          "cost": {
-            "cacheRead": 0.025,
-            "cacheWrite": 0,
-            "input": 0.25,
-            "output": 2
-          },
-          "id": "raptor-mini",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 8192,
-          "name": "Raptor mini"
         }
       ]
     },
@@ -74787,16 +74772,16 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.088,
+            "cacheRead": 0.022,
             "cacheWrite": 0,
-            "input": 0.96,
-            "output": 2.88
+            "input": 0.66,
+            "output": 1.9800000000000002
           },
           "id": "~deepseek/deepseek-pro-latest",
           "input": [
             "text"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 384000,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "reasoning": true
         },
@@ -76058,10 +76043,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.006,
+            "cacheRead": 0.003,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.15,
+            "output": 0.6
           },
           "id": "deepseek/deepseek-v4.1-flash",
           "input": [
@@ -89815,5 +89800,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "c9b49f6de83425039a1977644c9773c5b565ada2"
+  "sourceCommit": "c0be265998d07c4e1e11875ed4cb461bdb020cf2"
 }
