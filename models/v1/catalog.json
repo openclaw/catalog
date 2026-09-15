@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789489977234,
+  "generatedAt": 1789504321365,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -10159,9 +10159,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017108,
-      "input": 0.08553999999999999,
-      "output": 0.17107999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.012,
@@ -46014,9 +46014,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017108,
-      "input": 0.08553999999999999,
-      "output": 0.17107999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.012,
@@ -57350,9 +57350,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017108,
-      "input": 0.08553999999999999,
-      "output": 0.17107999999999998
+      "cacheRead": 0.015875999999999998,
+      "input": 0.07938,
+      "output": 0.15876
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.012,
@@ -73121,10 +73121,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.017108,
+            "cacheRead": 0.015875999999999998,
             "cacheWrite": 0,
-            "input": 0.08553999999999999,
-            "output": 0.17107999999999998
+            "input": 0.07938,
+            "output": 0.15876
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -73234,6 +73234,16 @@
           ],
           "maxTokens": 384000,
           "name": "DeepSeek V4 Flash Vision Exp",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "id": "accounts/fireworks/models/deepseek-v4-pro",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4 Pro",
           "reasoning": true
         },
         {
@@ -73349,6 +73359,16 @@
           "reasoning": true
         },
         {
+          "contextWindow": 196608,
+          "id": "accounts/fireworks/models/minimax-m2p7",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "MiniMax-M2.7",
+          "reasoning": true
+        },
+        {
           "contextWindow": 512000,
           "id": "accounts/fireworks/models/minimax-m3",
           "input": [
@@ -73433,6 +73453,27 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1000000,
+          "id": "accounts/fireworks/routers/deepseek-flash-latest",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek Flash Latest",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "id": "accounts/fireworks/routers/deepseek-pro-latest",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek Pro Latest",
+          "reasoning": true
+        },
+        {
           "contextWindow": 256000,
           "cost": {
             "cacheRead": 0.21,
@@ -73456,6 +73497,48 @@
           ],
           "maxTokens": 262144,
           "name": "GLM 5.3 Fast",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048572,
+          "id": "accounts/fireworks/routers/glm-fast-latest",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 262144,
+          "name": "GLM 5.3 Fast (Latest)",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048573,
+          "id": "accounts/fireworks/routers/glm-flash-latest",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM Flash Latest (GLM 5.3 Flash)",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048573,
+          "id": "accounts/fireworks/routers/glm-latest",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 262144,
+          "name": "GLM Latest",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "accounts/fireworks/routers/kimi-fast-latest",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Kimi Fast Latest",
           "reasoning": true
         },
         {
@@ -73489,6 +73572,27 @@
           ],
           "maxTokens": 131072,
           "name": "Kimi K3 Fast",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "accounts/fireworks/routers/kimi-latest",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Kimi Latest",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 512000,
+          "id": "accounts/fireworks/routers/minimax-latest",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 512000,
+          "name": "MiniMax Latest",
           "reasoning": true
         }
       ]
@@ -75966,10 +76070,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.017108,
+            "cacheRead": 0.015875999999999998,
             "cacheWrite": 0,
-            "input": 0.08553999999999999,
-            "output": 0.17107999999999998
+            "input": 0.07938,
+            "output": 0.15876
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
@@ -85821,6 +85925,17 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1000000,
+          "id": "deepseek-v4.1-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4.1 Flash",
+          "reasoning": true
+        },
+        {
           "contextWindow": 202752,
           "cost": {
             "cacheRead": 0,
@@ -89804,5 +89919,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "22a07e0abe7f885c1ece6a6c7676065a2e4813c7"
+  "sourceCommit": "be735080d2a884116b705b78576811d535494871"
 }
