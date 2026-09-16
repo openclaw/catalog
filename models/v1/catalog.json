@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789576327044,
+  "generatedAt": 1789581526593,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -1221,14 +1221,14 @@
       "output": 4.84
     },
     "azure_ai/FW-GLM-5.2-Fast": {
-      "cacheRead": 0.21,
-      "input": 2.0999999999999996,
-      "output": 6.6000000000000005
+      "cacheRead": 0.23099999999999998,
+      "input": 2.31,
+      "output": 7.26
     },
     "azure_ai/FW-Inkling": {
-      "cacheRead": 0.16999999999999998,
-      "input": 1,
-      "output": 4.05
+      "cacheRead": 0.19,
+      "input": 1.1,
+      "output": 4.46
     },
     "azure_ai/FW-Kimi-K2.5": {
       "cacheRead": 0.11,
@@ -1261,9 +1261,9 @@
       "output": 1.32
     },
     "azure_ai/FW-Nemotron-3-Ultra-NVFP4": {
-      "cacheRead": 0.119,
-      "input": 0.6,
-      "output": 2.4
+      "cacheRead": 0.13,
+      "input": 0.66,
+      "output": 2.64
     },
     "azure_ai/FW-Nemotron-Lightning-3.5-30B-A3B": {
       "cacheRead": 0.01,
@@ -1431,8 +1431,8 @@
       "output": 0.71
     },
     "azure_ai/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-      "input": 1.4100000000000001,
-      "output": 0.35
+      "input": 0.25,
+      "output": 1
     },
     "azure_ai/Llama-4-Scout-17B-16E-Instruct": {
       "input": 0.19999999999999998,
@@ -1552,8 +1552,8 @@
       "output": 0.3
     },
     "azure_ai/Phi-4-mini-reasoning": {
-      "input": 0.08,
-      "output": 0.32
+      "input": 0.075,
+      "output": 0.3
     },
     "azure_ai/Phi-4-multimodal-instruct": {
       "input": 0.08,
@@ -1585,12 +1585,41 @@
       "input": 3,
       "output": 12
     },
+    "azure/eu/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "azure/eu/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "azure/eu/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "azure/eu/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
+    },
+    "azure/eu/gpt-4.1-nano": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "azure/eu/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
+    },
     "azure/eu/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
       "input": 2.75,
       "output": 11
     },
     "azure/eu/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -1615,50 +1644,122 @@
       "input": 5.5,
       "output": 22
     },
+    "azure/eu/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "azure/eu/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "azure/eu/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "azure/eu/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "azure/eu/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "azure/eu/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "azure/eu/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "azure/eu/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "azure/eu/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "azure/eu/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "azure/eu/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "azure/eu/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "azure/eu/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "azure/eu/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/eu/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/eu/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/eu/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "azure/eu/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/eu/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "azure/eu/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "azure/eu/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "azure/eu/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "azure/eu/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "azure/eu/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "azure/eu/gpt-5.5": {
       "cacheRead": 0.55,
@@ -1683,10 +1784,10 @@
       "output": 1.32
     },
     "azure/eu/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "azure/eu/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -1694,23 +1795,54 @@
       "input": 2.2,
       "output": 13.200000000000001
     },
+    "azure/eu/gpt-6-astra": {
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
+      "input": 11,
+      "output": 55
+    },
     "azure/eu/o1-2024-12-17": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
+    },
+    "azure/eu/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
     },
     "azure/eu/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
+    "azure/eu/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
+    },
     "azure/eu/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
     },
+    "azure/eu/o3-2025-04-16": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "azure/eu/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "azure/eu/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
+    "azure/eu/o4-mini-2025-04-16": {
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -1885,8 +2017,8 @@
     },
     "azure/gpt-4o-2024-11-20": {
       "cacheRead": 1.25,
-      "input": 2.75,
-      "output": 11
+      "input": 2.5,
+      "output": 10
     },
     "azure/gpt-4o-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -1899,8 +2031,8 @@
     },
     "azure/gpt-4o-mini-2024-07-18": {
       "cacheRead": 0.075,
-      "input": 0.165,
-      "output": 0.66
+      "input": 0.15,
+      "output": 0.6
     },
     "azure/gpt-4o-mini-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -2147,10 +2279,10 @@
       "output": 1.2
     },
     "azure/gpt-5.6-sol": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "azure/gpt-5.6-terra": {
       "cacheRead": 0.19999999999999998,
@@ -2239,9 +2371,9 @@
       "output": 60
     },
     "azure/o1-mini": {
-      "cacheRead": 0.605,
-      "input": 1.21,
-      "output": 4.84
+      "cacheRead": 0.55,
+      "input": 1.1,
+      "output": 4.4
     },
     "azure/o1-mini-2024-09-12": {
       "cacheRead": 0.55,
@@ -2331,20 +2463,48 @@
       "input": 0.024999999999999998,
       "output": 0
     },
+    "azure/us/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "azure/us/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "azure/us/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
     "azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
       "output": 8.8
+    },
+    "azure/us/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
     },
     "azure/us/gpt-4.1-mini-2025-04-14": {
       "cacheRead": 0.11,
       "input": 0.44,
       "output": 1.76
     },
-    "azure/us/gpt-4.1-nano-2025-04-14": {
-      "cacheRead": 0.024999999999999998,
+    "azure/us/gpt-4.1-nano": {
+      "cacheRead": 0.028,
       "input": 0.11,
       "output": 0.44
+    },
+    "azure/us/gpt-4.1-nano-2025-04-14": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "azure/us/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
     },
     "azure/us/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
@@ -2352,6 +2512,7 @@
       "output": 11
     },
     "azure/us/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -2376,50 +2537,122 @@
       "input": 5.5,
       "output": 22
     },
+    "azure/us/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "azure/us/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "azure/us/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "azure/us/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "azure/us/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "azure/us/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "azure/us/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "azure/us/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "azure/us/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "azure/us/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "azure/us/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "azure/us/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "azure/us/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "azure/us/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/us/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/us/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/us/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "azure/us/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "azure/us/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "azure/us/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "azure/us/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "azure/us/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "azure/us/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "azure/us/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "azure/us/gpt-5.5": {
       "cacheRead": 0.55,
@@ -2444,10 +2677,10 @@
       "output": 1.32
     },
     "azure/us/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "azure/us/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -2471,10 +2704,20 @@
       "input": 16.5,
       "output": 66
     },
+    "azure/us/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
     "azure/us/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
+    },
+    "azure/us/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
     },
     "azure/us/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
@@ -2486,13 +2729,18 @@
       "input": 2.2,
       "output": 8.8
     },
+    "azure/us/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "azure/us/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
     "azure/us/o4-mini-2025-04-16": {
-      "cacheRead": 0.31,
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -5964,14 +6212,14 @@
       "output": 4.84
     },
     "cloudflare-ai-gateway/azure_ai/FW-GLM-5.2-Fast": {
-      "cacheRead": 0.21,
-      "input": 2.0999999999999996,
-      "output": 6.6000000000000005
+      "cacheRead": 0.23099999999999998,
+      "input": 2.31,
+      "output": 7.26
     },
     "cloudflare-ai-gateway/azure_ai/FW-Inkling": {
-      "cacheRead": 0.16999999999999998,
-      "input": 1,
-      "output": 4.05
+      "cacheRead": 0.19,
+      "input": 1.1,
+      "output": 4.46
     },
     "cloudflare-ai-gateway/azure_ai/FW-Kimi-K2.5": {
       "cacheRead": 0.11,
@@ -6004,9 +6252,9 @@
       "output": 1.32
     },
     "cloudflare-ai-gateway/azure_ai/FW-Nemotron-3-Ultra-NVFP4": {
-      "cacheRead": 0.119,
-      "input": 0.6,
-      "output": 2.4
+      "cacheRead": 0.13,
+      "input": 0.66,
+      "output": 2.64
     },
     "cloudflare-ai-gateway/azure_ai/FW-Nemotron-Lightning-3.5-30B-A3B": {
       "cacheRead": 0.01,
@@ -6174,8 +6422,8 @@
       "output": 0.71
     },
     "cloudflare-ai-gateway/azure_ai/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-      "input": 1.4100000000000001,
-      "output": 0.35
+      "input": 0.25,
+      "output": 1
     },
     "cloudflare-ai-gateway/azure_ai/Llama-4-Scout-17B-16E-Instruct": {
       "input": 0.19999999999999998,
@@ -6295,8 +6543,8 @@
       "output": 0.3
     },
     "cloudflare-ai-gateway/azure_ai/Phi-4-mini-reasoning": {
-      "input": 0.08,
-      "output": 0.32
+      "input": 0.075,
+      "output": 0.3
     },
     "cloudflare-ai-gateway/azure_ai/Phi-4-multimodal-instruct": {
       "input": 0.08,
@@ -6328,12 +6576,41 @@
       "input": 3,
       "output": 12
     },
+    "cloudflare-ai-gateway/azure/eu/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "cloudflare-ai-gateway/azure/eu/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-4.1-nano": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
+    },
     "cloudflare-ai-gateway/azure/eu/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
       "input": 2.75,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/eu/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -6358,50 +6635,122 @@
       "input": 5.5,
       "output": 22
     },
+    "cloudflare-ai-gateway/azure/eu/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "cloudflare-ai-gateway/azure/eu/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "cloudflare-ai-gateway/azure/eu/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "cloudflare-ai-gateway/azure/eu/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "cloudflare-ai-gateway/azure/eu/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "cloudflare-ai-gateway/azure/eu/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "cloudflare-ai-gateway/azure/eu/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "cloudflare-ai-gateway/azure/eu/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.5": {
       "cacheRead": 0.55,
@@ -6426,10 +6775,10 @@
       "output": 1.32
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -6437,23 +6786,54 @@
       "input": 2.2,
       "output": 13.200000000000001
     },
+    "cloudflare-ai-gateway/azure/eu/gpt-6-astra": {
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
+      "input": 11,
+      "output": 55
+    },
     "cloudflare-ai-gateway/azure/eu/o1-2024-12-17": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
+    },
+    "cloudflare-ai-gateway/azure/eu/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
     },
     "cloudflare-ai-gateway/azure/eu/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
+    "cloudflare-ai-gateway/azure/eu/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
+    },
     "cloudflare-ai-gateway/azure/eu/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
     },
+    "cloudflare-ai-gateway/azure/eu/o3-2025-04-16": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "cloudflare-ai-gateway/azure/eu/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "cloudflare-ai-gateway/azure/eu/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
+    "cloudflare-ai-gateway/azure/eu/o4-mini-2025-04-16": {
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -6628,8 +7008,8 @@
     },
     "cloudflare-ai-gateway/azure/gpt-4o-2024-11-20": {
       "cacheRead": 1.25,
-      "input": 2.75,
-      "output": 11
+      "input": 2.5,
+      "output": 10
     },
     "cloudflare-ai-gateway/azure/gpt-4o-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -6642,8 +7022,8 @@
     },
     "cloudflare-ai-gateway/azure/gpt-4o-mini-2024-07-18": {
       "cacheRead": 0.075,
-      "input": 0.165,
-      "output": 0.66
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/azure/gpt-4o-mini-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -6890,10 +7270,10 @@
       "output": 1.2
     },
     "cloudflare-ai-gateway/azure/gpt-5.6-sol": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "cloudflare-ai-gateway/azure/gpt-5.6-terra": {
       "cacheRead": 0.19999999999999998,
@@ -6982,9 +7362,9 @@
       "output": 60
     },
     "cloudflare-ai-gateway/azure/o1-mini": {
-      "cacheRead": 0.605,
-      "input": 1.21,
-      "output": 4.84
+      "cacheRead": 0.55,
+      "input": 1.1,
+      "output": 4.4
     },
     "cloudflare-ai-gateway/azure/o1-mini-2024-09-12": {
       "cacheRead": 0.55,
@@ -7074,20 +7454,48 @@
       "input": 0.024999999999999998,
       "output": 0
     },
+    "cloudflare-ai-gateway/azure/us/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "cloudflare-ai-gateway/azure/us/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
     "cloudflare-ai-gateway/azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
       "output": 8.8
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
     },
     "cloudflare-ai-gateway/azure/us/gpt-4.1-mini-2025-04-14": {
       "cacheRead": 0.11,
       "input": 0.44,
       "output": 1.76
     },
-    "cloudflare-ai-gateway/azure/us/gpt-4.1-nano-2025-04-14": {
-      "cacheRead": 0.024999999999999998,
+    "cloudflare-ai-gateway/azure/us/gpt-4.1-nano": {
+      "cacheRead": 0.028,
       "input": 0.11,
       "output": 0.44
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-4.1-nano-2025-04-14": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
     },
     "cloudflare-ai-gateway/azure/us/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
@@ -7095,6 +7503,7 @@
       "output": 11
     },
     "cloudflare-ai-gateway/azure/us/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -7119,50 +7528,122 @@
       "input": 5.5,
       "output": 22
     },
+    "cloudflare-ai-gateway/azure/us/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "cloudflare-ai-gateway/azure/us/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "cloudflare-ai-gateway/azure/us/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "cloudflare-ai-gateway/azure/us/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "cloudflare-ai-gateway/azure/us/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "cloudflare-ai-gateway/azure/us/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "cloudflare-ai-gateway/azure/us/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "cloudflare-ai-gateway/azure/us/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "cloudflare-ai-gateway/azure/us/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "cloudflare-ai-gateway/azure/us/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.5": {
       "cacheRead": 0.55,
@@ -7187,10 +7668,10 @@
       "output": 1.32
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -7214,10 +7695,20 @@
       "input": 16.5,
       "output": 66
     },
+    "cloudflare-ai-gateway/azure/us/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
     "cloudflare-ai-gateway/azure/us/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
+    },
+    "cloudflare-ai-gateway/azure/us/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
     },
     "cloudflare-ai-gateway/azure/us/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
@@ -7229,13 +7720,18 @@
       "input": 2.2,
       "output": 8.8
     },
+    "cloudflare-ai-gateway/azure/us/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "cloudflare-ai-gateway/azure/us/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
     "cloudflare-ai-gateway/azure/us/o4-mini-2025-04-16": {
-      "cacheRead": 0.31,
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -10875,9 +11371,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017415999999999997,
-      "input": 0.08707999999999999,
-      "output": 0.17415999999999998
+      "cacheRead": 0.017108,
+      "input": 0.08553999999999999,
+      "output": 0.17107999999999998
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.012,
@@ -12496,6 +12992,14 @@
       "input": 0.75,
       "output": 3.75
     },
+    "cloudflare-ai-gateway/gemini/gemini-3.8-live": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "cloudflare-ai-gateway/gemini/gemini-3.8-live-extended-thinking": {
+      "input": 0.75,
+      "output": 4.5
+    },
     "cloudflare-ai-gateway/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -12558,9 +13062,9 @@
       "output": 5
     },
     "cloudflare-ai-gateway/gemini/gemini-robotics-er-2-preview": {
-      "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 10
+      "cacheRead": 0.09999999999999999,
+      "input": 1,
+      "output": 5
     },
     "cloudflare-ai-gateway/gemini/gemini-robotics-er-2-streaming-preview": {
       "input": 2,
@@ -26100,6 +26604,14 @@
       "input": 0.75,
       "output": 3.75
     },
+    "gemini/gemini-3.8-live": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "gemini/gemini-3.8-live-extended-thinking": {
+      "input": 0.75,
+      "output": 4.5
+    },
     "gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -26166,9 +26678,9 @@
       "output": 5
     },
     "gemini/gemini-robotics-er-2-preview": {
-      "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 10
+      "cacheRead": 0.09999999999999999,
+      "input": 1,
+      "output": 5
     },
     "gemini/gemini-robotics-er-2-streaming-preview": {
       "input": 2,
@@ -28402,14 +28914,14 @@
       "output": 4.84
     },
     "kilocode/azure_ai/FW-GLM-5.2-Fast": {
-      "cacheRead": 0.21,
-      "input": 2.0999999999999996,
-      "output": 6.6000000000000005
+      "cacheRead": 0.23099999999999998,
+      "input": 2.31,
+      "output": 7.26
     },
     "kilocode/azure_ai/FW-Inkling": {
-      "cacheRead": 0.16999999999999998,
-      "input": 1,
-      "output": 4.05
+      "cacheRead": 0.19,
+      "input": 1.1,
+      "output": 4.46
     },
     "kilocode/azure_ai/FW-Kimi-K2.5": {
       "cacheRead": 0.11,
@@ -28442,9 +28954,9 @@
       "output": 1.32
     },
     "kilocode/azure_ai/FW-Nemotron-3-Ultra-NVFP4": {
-      "cacheRead": 0.119,
-      "input": 0.6,
-      "output": 2.4
+      "cacheRead": 0.13,
+      "input": 0.66,
+      "output": 2.64
     },
     "kilocode/azure_ai/FW-Nemotron-Lightning-3.5-30B-A3B": {
       "cacheRead": 0.01,
@@ -28612,8 +29124,8 @@
       "output": 0.71
     },
     "kilocode/azure_ai/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-      "input": 1.4100000000000001,
-      "output": 0.35
+      "input": 0.25,
+      "output": 1
     },
     "kilocode/azure_ai/Llama-4-Scout-17B-16E-Instruct": {
       "input": 0.19999999999999998,
@@ -28733,8 +29245,8 @@
       "output": 0.3
     },
     "kilocode/azure_ai/Phi-4-mini-reasoning": {
-      "input": 0.08,
-      "output": 0.32
+      "input": 0.075,
+      "output": 0.3
     },
     "kilocode/azure_ai/Phi-4-multimodal-instruct": {
       "input": 0.08,
@@ -28766,12 +29278,41 @@
       "input": 3,
       "output": 12
     },
+    "kilocode/azure/eu/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "kilocode/azure/eu/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "kilocode/azure/eu/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "kilocode/azure/eu/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
+    },
+    "kilocode/azure/eu/gpt-4.1-nano": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "kilocode/azure/eu/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
+    },
     "kilocode/azure/eu/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
       "input": 2.75,
       "output": 11
     },
     "kilocode/azure/eu/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -28796,50 +29337,122 @@
       "input": 5.5,
       "output": 22
     },
+    "kilocode/azure/eu/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "kilocode/azure/eu/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "kilocode/azure/eu/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "kilocode/azure/eu/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "kilocode/azure/eu/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "kilocode/azure/eu/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "kilocode/azure/eu/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "kilocode/azure/eu/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "kilocode/azure/eu/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "kilocode/azure/eu/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "kilocode/azure/eu/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "kilocode/azure/eu/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "kilocode/azure/eu/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "kilocode/azure/eu/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/eu/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/eu/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/eu/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "kilocode/azure/eu/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/eu/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "kilocode/azure/eu/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "kilocode/azure/eu/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "kilocode/azure/eu/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "kilocode/azure/eu/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "kilocode/azure/eu/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "kilocode/azure/eu/gpt-5.5": {
       "cacheRead": 0.55,
@@ -28864,10 +29477,10 @@
       "output": 1.32
     },
     "kilocode/azure/eu/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "kilocode/azure/eu/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -28875,23 +29488,54 @@
       "input": 2.2,
       "output": 13.200000000000001
     },
+    "kilocode/azure/eu/gpt-6-astra": {
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
+      "input": 11,
+      "output": 55
+    },
     "kilocode/azure/eu/o1-2024-12-17": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
+    },
+    "kilocode/azure/eu/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
     },
     "kilocode/azure/eu/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
+    "kilocode/azure/eu/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
+    },
     "kilocode/azure/eu/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
     },
+    "kilocode/azure/eu/o3-2025-04-16": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "kilocode/azure/eu/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "kilocode/azure/eu/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
+    "kilocode/azure/eu/o4-mini-2025-04-16": {
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -29066,8 +29710,8 @@
     },
     "kilocode/azure/gpt-4o-2024-11-20": {
       "cacheRead": 1.25,
-      "input": 2.75,
-      "output": 11
+      "input": 2.5,
+      "output": 10
     },
     "kilocode/azure/gpt-4o-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -29080,8 +29724,8 @@
     },
     "kilocode/azure/gpt-4o-mini-2024-07-18": {
       "cacheRead": 0.075,
-      "input": 0.165,
-      "output": 0.66
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/azure/gpt-4o-mini-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -29328,10 +29972,10 @@
       "output": 1.2
     },
     "kilocode/azure/gpt-5.6-sol": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "kilocode/azure/gpt-5.6-terra": {
       "cacheRead": 0.19999999999999998,
@@ -29420,9 +30064,9 @@
       "output": 60
     },
     "kilocode/azure/o1-mini": {
-      "cacheRead": 0.605,
-      "input": 1.21,
-      "output": 4.84
+      "cacheRead": 0.55,
+      "input": 1.1,
+      "output": 4.4
     },
     "kilocode/azure/o1-mini-2024-09-12": {
       "cacheRead": 0.55,
@@ -29512,20 +30156,48 @@
       "input": 0.024999999999999998,
       "output": 0
     },
+    "kilocode/azure/us/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "kilocode/azure/us/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "kilocode/azure/us/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
     "kilocode/azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
       "output": 8.8
+    },
+    "kilocode/azure/us/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
     },
     "kilocode/azure/us/gpt-4.1-mini-2025-04-14": {
       "cacheRead": 0.11,
       "input": 0.44,
       "output": 1.76
     },
-    "kilocode/azure/us/gpt-4.1-nano-2025-04-14": {
-      "cacheRead": 0.024999999999999998,
+    "kilocode/azure/us/gpt-4.1-nano": {
+      "cacheRead": 0.028,
       "input": 0.11,
       "output": 0.44
+    },
+    "kilocode/azure/us/gpt-4.1-nano-2025-04-14": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "kilocode/azure/us/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
     },
     "kilocode/azure/us/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
@@ -29533,6 +30205,7 @@
       "output": 11
     },
     "kilocode/azure/us/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -29557,50 +30230,122 @@
       "input": 5.5,
       "output": 22
     },
+    "kilocode/azure/us/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "kilocode/azure/us/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "kilocode/azure/us/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "kilocode/azure/us/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "kilocode/azure/us/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "kilocode/azure/us/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "kilocode/azure/us/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "kilocode/azure/us/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "kilocode/azure/us/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "kilocode/azure/us/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "kilocode/azure/us/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "kilocode/azure/us/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "kilocode/azure/us/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "kilocode/azure/us/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/us/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/us/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/us/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "kilocode/azure/us/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "kilocode/azure/us/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "kilocode/azure/us/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "kilocode/azure/us/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "kilocode/azure/us/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "kilocode/azure/us/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "kilocode/azure/us/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "kilocode/azure/us/gpt-5.5": {
       "cacheRead": 0.55,
@@ -29625,10 +30370,10 @@
       "output": 1.32
     },
     "kilocode/azure/us/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "kilocode/azure/us/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -29652,10 +30397,20 @@
       "input": 16.5,
       "output": 66
     },
+    "kilocode/azure/us/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
     "kilocode/azure/us/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
+    },
+    "kilocode/azure/us/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
     },
     "kilocode/azure/us/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
@@ -29667,13 +30422,18 @@
       "input": 2.2,
       "output": 8.8
     },
+    "kilocode/azure/us/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "kilocode/azure/us/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
     "kilocode/azure/us/o4-mini-2025-04-16": {
-      "cacheRead": 0.31,
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -34731,6 +35491,14 @@
       "input": 0.75,
       "output": 3.75
     },
+    "kilocode/gemini/gemini-3.8-live": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "kilocode/gemini/gemini-3.8-live-extended-thinking": {
+      "input": 0.75,
+      "output": 4.5
+    },
     "kilocode/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -34793,9 +35561,9 @@
       "output": 5
     },
     "kilocode/gemini/gemini-robotics-er-2-preview": {
-      "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 10
+      "cacheRead": 0.09999999999999999,
+      "input": 1,
+      "output": 5
     },
     "kilocode/gemini/gemini-robotics-er-2-streaming-preview": {
       "input": 2,
@@ -47058,9 +47826,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017415999999999997,
-      "input": 0.08707999999999999,
-      "output": 0.17415999999999998
+      "cacheRead": 0.017108,
+      "input": 0.08553999999999999,
+      "output": 0.17107999999999998
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.012,
@@ -53831,14 +54599,14 @@
       "output": 4.84
     },
     "vercel-ai-gateway/azure_ai/FW-GLM-5.2-Fast": {
-      "cacheRead": 0.21,
-      "input": 2.0999999999999996,
-      "output": 6.6000000000000005
+      "cacheRead": 0.23099999999999998,
+      "input": 2.31,
+      "output": 7.26
     },
     "vercel-ai-gateway/azure_ai/FW-Inkling": {
-      "cacheRead": 0.16999999999999998,
-      "input": 1,
-      "output": 4.05
+      "cacheRead": 0.19,
+      "input": 1.1,
+      "output": 4.46
     },
     "vercel-ai-gateway/azure_ai/FW-Kimi-K2.5": {
       "cacheRead": 0.11,
@@ -53871,9 +54639,9 @@
       "output": 1.32
     },
     "vercel-ai-gateway/azure_ai/FW-Nemotron-3-Ultra-NVFP4": {
-      "cacheRead": 0.119,
-      "input": 0.6,
-      "output": 2.4
+      "cacheRead": 0.13,
+      "input": 0.66,
+      "output": 2.64
     },
     "vercel-ai-gateway/azure_ai/FW-Nemotron-Lightning-3.5-30B-A3B": {
       "cacheRead": 0.01,
@@ -54041,8 +54809,8 @@
       "output": 0.71
     },
     "vercel-ai-gateway/azure_ai/Llama-4-Maverick-17B-128E-Instruct-FP8": {
-      "input": 1.4100000000000001,
-      "output": 0.35
+      "input": 0.25,
+      "output": 1
     },
     "vercel-ai-gateway/azure_ai/Llama-4-Scout-17B-16E-Instruct": {
       "input": 0.19999999999999998,
@@ -54162,8 +54930,8 @@
       "output": 0.3
     },
     "vercel-ai-gateway/azure_ai/Phi-4-mini-reasoning": {
-      "input": 0.08,
-      "output": 0.32
+      "input": 0.075,
+      "output": 0.3
     },
     "vercel-ai-gateway/azure_ai/Phi-4-multimodal-instruct": {
       "input": 0.08,
@@ -54195,12 +54963,41 @@
       "input": 3,
       "output": 12
     },
+    "vercel-ai-gateway/azure/eu/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "vercel-ai-gateway/azure/eu/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "vercel-ai-gateway/azure/eu/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "vercel-ai-gateway/azure/eu/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
+    },
+    "vercel-ai-gateway/azure/eu/gpt-4.1-nano": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "vercel-ai-gateway/azure/eu/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
+    },
     "vercel-ai-gateway/azure/eu/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
       "input": 2.75,
       "output": 11
     },
     "vercel-ai-gateway/azure/eu/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -54225,50 +55022,122 @@
       "input": 5.5,
       "output": 22
     },
+    "vercel-ai-gateway/azure/eu/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "vercel-ai-gateway/azure/eu/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "vercel-ai-gateway/azure/eu/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "vercel-ai-gateway/azure/eu/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "vercel-ai-gateway/azure/eu/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "vercel-ai-gateway/azure/eu/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "vercel-ai-gateway/azure/eu/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "vercel-ai-gateway/azure/eu/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "vercel-ai-gateway/azure/eu/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "vercel-ai-gateway/azure/eu/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "vercel-ai-gateway/azure/eu/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "vercel-ai-gateway/azure/eu/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "vercel-ai-gateway/azure/eu/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "vercel-ai-gateway/azure/eu/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "vercel-ai-gateway/azure/eu/gpt-5.5": {
       "cacheRead": 0.55,
@@ -54293,10 +55162,10 @@
       "output": 1.32
     },
     "vercel-ai-gateway/azure/eu/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "vercel-ai-gateway/azure/eu/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -54304,23 +55173,54 @@
       "input": 2.2,
       "output": 13.200000000000001
     },
+    "vercel-ai-gateway/azure/eu/gpt-6-astra": {
+      "cacheRead": 1.1,
+      "cacheWrite": 13.75,
+      "input": 11,
+      "output": 55
+    },
     "vercel-ai-gateway/azure/eu/o1-2024-12-17": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
+    },
+    "vercel-ai-gateway/azure/eu/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
     },
     "vercel-ai-gateway/azure/eu/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
+    "vercel-ai-gateway/azure/eu/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
+    },
     "vercel-ai-gateway/azure/eu/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
       "input": 16.5,
       "output": 66
     },
+    "vercel-ai-gateway/azure/eu/o3-2025-04-16": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
+    "vercel-ai-gateway/azure/eu/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "vercel-ai-gateway/azure/eu/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
+    "vercel-ai-gateway/azure/eu/o4-mini-2025-04-16": {
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -54495,8 +55395,8 @@
     },
     "vercel-ai-gateway/azure/gpt-4o-2024-11-20": {
       "cacheRead": 1.25,
-      "input": 2.75,
-      "output": 11
+      "input": 2.5,
+      "output": 10
     },
     "vercel-ai-gateway/azure/gpt-4o-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -54509,8 +55409,8 @@
     },
     "vercel-ai-gateway/azure/gpt-4o-mini-2024-07-18": {
       "cacheRead": 0.075,
-      "input": 0.165,
-      "output": 0.66
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/azure/gpt-4o-mini-audio-preview-2024-12-17": {
       "input": 2.5,
@@ -54757,10 +55657,10 @@
       "output": 1.2
     },
     "vercel-ai-gateway/azure/gpt-5.6-sol": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "vercel-ai-gateway/azure/gpt-5.6-terra": {
       "cacheRead": 0.19999999999999998,
@@ -54849,9 +55749,9 @@
       "output": 60
     },
     "vercel-ai-gateway/azure/o1-mini": {
-      "cacheRead": 0.605,
-      "input": 1.21,
-      "output": 4.84
+      "cacheRead": 0.55,
+      "input": 1.1,
+      "output": 4.4
     },
     "vercel-ai-gateway/azure/o1-mini-2024-09-12": {
       "cacheRead": 0.55,
@@ -54941,20 +55841,48 @@
       "input": 0.024999999999999998,
       "output": 0
     },
+    "vercel-ai-gateway/azure/us/codex-mini": {
+      "cacheRead": 0.413,
+      "input": 1.6500000000000001,
+      "output": 6.6000000000000005
+    },
+    "vercel-ai-gateway/azure/us/computer-use-preview": {
+      "input": 3.3000000000000003,
+      "output": 13.200000000000001
+    },
+    "vercel-ai-gateway/azure/us/gpt-4.1": {
+      "cacheRead": 0.55,
+      "input": 2.2,
+      "output": 8.8
+    },
     "vercel-ai-gateway/azure/us/gpt-4.1-2025-04-14": {
       "cacheRead": 0.55,
       "input": 2.2,
       "output": 8.8
+    },
+    "vercel-ai-gateway/azure/us/gpt-4.1-mini": {
+      "cacheRead": 0.11,
+      "input": 0.44,
+      "output": 1.76
     },
     "vercel-ai-gateway/azure/us/gpt-4.1-mini-2025-04-14": {
       "cacheRead": 0.11,
       "input": 0.44,
       "output": 1.76
     },
-    "vercel-ai-gateway/azure/us/gpt-4.1-nano-2025-04-14": {
-      "cacheRead": 0.024999999999999998,
+    "vercel-ai-gateway/azure/us/gpt-4.1-nano": {
+      "cacheRead": 0.028,
       "input": 0.11,
       "output": 0.44
+    },
+    "vercel-ai-gateway/azure/us/gpt-4.1-nano-2025-04-14": {
+      "cacheRead": 0.028,
+      "input": 0.11,
+      "output": 0.44
+    },
+    "vercel-ai-gateway/azure/us/gpt-4o-2024-05-13": {
+      "input": 5.5,
+      "output": 16.5
     },
     "vercel-ai-gateway/azure/us/gpt-4o-2024-08-06": {
       "cacheRead": 1.375,
@@ -54962,6 +55890,7 @@
       "output": 11
     },
     "vercel-ai-gateway/azure/us/gpt-4o-2024-11-20": {
+      "cacheRead": 1.375,
       "cacheWrite": 1.38,
       "input": 2.75,
       "output": 11
@@ -54986,50 +55915,122 @@
       "input": 5.5,
       "output": 22
     },
+    "vercel-ai-gateway/azure/us/gpt-5": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
     "vercel-ai-gateway/azure/us/gpt-5-2025-08-07": {
       "cacheRead": 0.1375,
       "input": 1.375,
       "output": 11
+    },
+    "vercel-ai-gateway/azure/us/gpt-5-codex": {
+      "cacheRead": 0.13799999999999998,
+      "input": 1.375,
+      "output": 11
+    },
+    "vercel-ai-gateway/azure/us/gpt-5-mini": {
+      "cacheRead": 0.0275,
+      "input": 0.275,
+      "output": 2.2
     },
     "vercel-ai-gateway/azure/us/gpt-5-mini-2025-08-07": {
       "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "vercel-ai-gateway/azure/us/gpt-5-nano": {
+      "cacheRead": 0.0055,
+      "input": 0.055,
+      "output": 0.44
+    },
     "vercel-ai-gateway/azure/us/gpt-5-nano-2025-08-07": {
       "cacheRead": 0.0055,
       "input": 0.055,
       "output": 0.44
     },
+    "vercel-ai-gateway/azure/us/gpt-5-pro": {
+      "input": 16.5,
+      "output": 132
+    },
     "vercel-ai-gateway/azure/us/gpt-5.1": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "vercel-ai-gateway/azure/us/gpt-5.1-chat": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "vercel-ai-gateway/azure/us/gpt-5.1-codex": {
-      "cacheRead": 0.14,
-      "input": 1.38,
+      "cacheRead": 0.1375,
+      "input": 1.375,
+      "output": 11
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.1-codex-max": {
+      "cacheRead": 0.1375,
+      "input": 1.375,
       "output": 11
     },
     "vercel-ai-gateway/azure/us/gpt-5.1-codex-mini": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.0275,
       "input": 0.275,
       "output": 2.2
     },
+    "vercel-ai-gateway/azure/us/gpt-5.2": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.2-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.2-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.2-pro": {
+      "input": 23.099999999999998,
+      "output": 184.79999999999998
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.3-chat": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.3-codex": {
+      "cacheRead": 0.1925,
+      "input": 1.9250000000000003,
+      "output": 15.400000000000002
+    },
     "vercel-ai-gateway/azure/us/gpt-5.4": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
     },
     "vercel-ai-gateway/azure/us/gpt-5.4-2026-03-05": {
-      "cacheRead": 0.28,
+      "cacheRead": 0.275,
       "input": 2.75,
       "output": 16.5
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.4-mini": {
+      "cacheRead": 0.0825,
+      "input": 0.8250000000000001,
+      "output": 4.95
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.4-nano": {
+      "cacheRead": 0.022,
+      "input": 0.22,
+      "output": 1.375
+    },
+    "vercel-ai-gateway/azure/us/gpt-5.4-pro": {
+      "input": 33,
+      "output": 198
     },
     "vercel-ai-gateway/azure/us/gpt-5.5": {
       "cacheRead": 0.55,
@@ -55054,10 +56055,10 @@
       "output": 1.32
     },
     "vercel-ai-gateway/azure/us/gpt-5.6-sol": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "vercel-ai-gateway/azure/us/gpt-5.6-terra": {
       "cacheRead": 0.22,
@@ -55081,10 +56082,20 @@
       "input": 16.5,
       "output": 66
     },
+    "vercel-ai-gateway/azure/us/o1-mini": {
+      "cacheRead": 0.605,
+      "input": 1.21,
+      "output": 4.84
+    },
     "vercel-ai-gateway/azure/us/o1-mini-2024-09-12": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
+    },
+    "vercel-ai-gateway/azure/us/o1-preview": {
+      "cacheRead": 8.25,
+      "input": 16.5,
+      "output": 66
     },
     "vercel-ai-gateway/azure/us/o1-preview-2024-09-12": {
       "cacheRead": 8.25,
@@ -55096,13 +56107,18 @@
       "input": 2.2,
       "output": 8.8
     },
+    "vercel-ai-gateway/azure/us/o3-deep-research": {
+      "cacheRead": 2.75,
+      "input": 11,
+      "output": 44
+    },
     "vercel-ai-gateway/azure/us/o3-mini-2025-01-31": {
       "cacheRead": 0.605,
       "input": 1.21,
       "output": 4.84
     },
     "vercel-ai-gateway/azure/us/o4-mini-2025-04-16": {
-      "cacheRead": 0.31,
+      "cacheRead": 0.303,
       "input": 1.21,
       "output": 4.84
     },
@@ -58742,9 +59758,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017415999999999997,
-      "input": 0.08707999999999999,
-      "output": 0.17415999999999998
+      "cacheRead": 0.017108,
+      "input": 0.08553999999999999,
+      "output": 0.17107999999999998
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.012,
@@ -60363,6 +61379,14 @@
       "input": 0.75,
       "output": 3.75
     },
+    "vercel-ai-gateway/gemini/gemini-3.8-live": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "vercel-ai-gateway/gemini/gemini-3.8-live-extended-thinking": {
+      "input": 0.75,
+      "output": 4.5
+    },
     "vercel-ai-gateway/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -60425,9 +61449,9 @@
       "output": 5
     },
     "vercel-ai-gateway/gemini/gemini-robotics-er-2-preview": {
-      "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 10
+      "cacheRead": 0.09999999999999999,
+      "input": 1,
+      "output": 5
     },
     "vercel-ai-gateway/gemini/gemini-robotics-er-2-streaming-preview": {
       "input": 2,
@@ -72215,7 +73239,22 @@
         },
         {
           "compat": {
-            "codeMode": "capable"
+            "codeMode": "capable",
+            "reasoningEffortMap": {
+              "adaptive": "max",
+              "none": "none",
+              "off": "none"
+            },
+            "supportedReasoningEfforts": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "supportsReasoningEffort": true
           },
           "contextWindow": 262000,
           "cost": {
@@ -72348,6 +73387,23 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "reasoningEffortMap": {
+              "adaptive": "max",
+              "none": "none",
+              "off": "none"
+            },
+            "supportedReasoningEfforts": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "supportsReasoningEffort": true
+          },
           "contextWindow": 128000,
           "cost": {
             "cacheRead": 0,
@@ -72364,6 +73420,23 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "reasoningEffortMap": {
+              "adaptive": "max",
+              "none": "none",
+              "off": "none"
+            },
+            "supportedReasoningEfforts": [
+              "none",
+              "minimal",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "supportsReasoningEffort": true
+          },
           "contextWindow": 1048000,
           "cost": {
             "cacheRead": 0.17,
@@ -72435,7 +73508,22 @@
         },
         {
           "compat": {
-            "codeMode": "capable"
+            "codeMode": "capable",
+            "reasoningEffortMap": {
+              "adaptive": "max",
+              "low": "high",
+              "medium": "high",
+              "minimal": "high",
+              "none": "none",
+              "off": "none",
+              "xhigh": "high"
+            },
+            "supportedReasoningEfforts": [
+              "none",
+              "high",
+              "max"
+            ],
+            "supportsReasoningEffort": true
           },
           "contextWindow": 524000,
           "cost": {
@@ -72453,6 +73541,23 @@
           "reasoning": true
         },
         {
+          "compat": {
+            "reasoningEffortMap": {
+              "adaptive": "max",
+              "low": "high",
+              "medium": "high",
+              "minimal": "high",
+              "none": "none",
+              "off": "none",
+              "xhigh": "high"
+            },
+            "supportedReasoningEfforts": [
+              "none",
+              "high",
+              "max"
+            ],
+            "supportsReasoningEffort": true
+          },
           "contextWindow": 524000,
           "cost": {
             "cacheRead": 0.21,
@@ -74500,10 +75605,10 @@
           },
           "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0.017415999999999997,
+            "cacheRead": 0.017108,
             "cacheWrite": 0,
-            "input": 0.08707999999999999,
-            "output": 0.17415999999999998
+            "input": 0.08553999999999999,
+            "output": 0.17107999999999998
           },
           "id": "deepseek-v4-flash",
           "input": [
@@ -77460,10 +78565,10 @@
         {
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.017415999999999997,
+            "cacheRead": 0.017108,
             "cacheWrite": 0,
-            "input": 0.08707999999999999,
-            "output": 0.17415999999999998
+            "input": 0.08553999999999999,
+            "output": 0.17107999999999998
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
@@ -82288,7 +83393,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 128000,
+          "maxTokens": 131072,
           "name": "GLM-5.2",
           "reasoning": true
         },
@@ -82373,7 +83478,6 @@
             "max": "max",
             "medium": "high",
             "minimal": "low",
-            "off": null,
             "xhigh": "max"
           }
         },
@@ -82402,7 +83506,6 @@
             "max": "max",
             "medium": "high",
             "minimal": "low",
-            "off": null,
             "xhigh": "max"
           }
         },
@@ -91287,5 +92390,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "a2cbcc25aa4f3dfd0e6682ba4ab22619e87cebb7"
+  "sourceCommit": "f024e6786025e99fd01360542e2c33d8be580e08"
 }
