@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1789520629490,
+  "generatedAt": 1789533297064,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -4904,9 +4904,9 @@
       "output": 0.25
     },
     "cloudflare-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.16999999999999998,
-      "input": 0.85,
-      "output": 2.8985
+      "cacheRead": 0.1755,
+      "input": 0.8775,
+      "output": 2.9699999999999998
     },
     "cloudflare-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -10880,9 +10880,9 @@
       "output": 0.177212
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.011,
-      "input": 0.055,
-      "output": 0.11
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.12
     },
     "cloudflare-ai-gateway/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.0035,
@@ -18697,8 +18697,8 @@
       "output": 4
     },
     "cloudflare-ai-gateway/qwen/qwen3-vl-30b-a3b-instruct": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.13,
+      "output": 0.52
     },
     "cloudflare-ai-gateway/qwen/qwen3-vl-30b-a3b-thinking": {
       "input": 0.19999999999999998,
@@ -46573,9 +46573,9 @@
       "output": 0.25
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.16999999999999998,
-      "input": 0.85,
-      "output": 2.8985
+      "cacheRead": 0.1755,
+      "input": 0.8775,
+      "output": 2.9699999999999998
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -47055,9 +47055,9 @@
       "output": 0.177212
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.011,
-      "input": 0.055,
-      "output": 0.11
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.12
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.0035,
@@ -49068,8 +49068,8 @@
       "output": 4
     },
     "openrouter/qwen/qwen3-vl-30b-a3b-instruct": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.13,
+      "output": 0.52
     },
     "openrouter/qwen/qwen3-vl-30b-a3b-thinking": {
       "input": 0.19999999999999998,
@@ -52755,9 +52755,9 @@
       "output": 0.25
     },
     "vercel-ai-gateway/~z-ai/glm-latest": {
-      "cacheRead": 0.16999999999999998,
-      "input": 0.85,
-      "output": 2.8985
+      "cacheRead": 0.1755,
+      "input": 0.8775,
+      "output": 2.9699999999999998
     },
     "vercel-ai-gateway/ai21/j2-light": {
       "input": 3,
@@ -58731,9 +58731,9 @@
       "output": 0.177212
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.011,
-      "input": 0.055,
-      "output": 0.11
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.12
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.0035,
@@ -66548,8 +66548,8 @@
       "output": 4
     },
     "vercel-ai-gateway/qwen/qwen3-vl-30b-a3b-instruct": {
-      "input": 0.15,
-      "output": 0.6
+      "input": 0.13,
+      "output": 0.52
     },
     "vercel-ai-gateway/qwen/qwen3-vl-30b-a3b-thinking": {
       "input": 0.19999999999999998,
@@ -76224,7 +76224,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1000000,
+          "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.015,
             "cacheWrite": 0,
@@ -76236,7 +76236,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 393216,
+          "maxTokens": 943718,
           "name": "DeepSeek: DeepSeek Flash Latest",
           "reasoning": true
         },
@@ -76252,7 +76252,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 393216,
+          "maxTokens": 384000,
           "name": "DeepSeek: DeepSeek Pro Latest",
           "reasoning": true
         },
@@ -76579,10 +76579,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.16999999999999998,
+            "cacheRead": 0.1755,
             "cacheWrite": 0,
-            "input": 0.85,
-            "output": 2.8985
+            "input": 0.8775,
+            "output": 2.9699999999999998
           },
           "id": "~z-ai/glm-latest",
           "input": [
@@ -77449,10 +77449,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.011,
+            "cacheRead": 0.012,
             "cacheWrite": 0,
-            "input": 0.055,
-            "output": 0.11
+            "input": 0.06,
+            "output": 0.12
           },
           "id": "deepseek/deepseek-v4-flash-0731",
           "input": [
@@ -77496,7 +77496,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 1024000,
           "cost": {
             "cacheRead": 0.03278,
             "cacheWrite": 0,
@@ -77507,7 +77507,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 393216,
+          "maxTokens": 384000,
           "name": "DeepSeek V4 Pro 0813",
           "reasoning": true
         },
@@ -78737,7 +78737,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 128000,
+          "contextWindow": 256000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
@@ -78979,7 +78979,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 202800,
+          "contextWindow": 256000,
           "cost": {
             "cacheRead": 0.1875,
             "cacheWrite": 0,
@@ -78990,7 +78990,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 182520,
+          "maxTokens": 32768,
           "name": "Nemotron 3 Ultra 550B A55B",
           "reasoning": true
         },
@@ -80880,19 +80880,19 @@
           "reasoning": true
         },
         {
-          "contextWindow": 262144,
+          "contextWindow": 131072,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.15,
-            "output": 0.6
+            "input": 0.13,
+            "output": 0.52
           },
           "id": "qwen/qwen3-vl-30b-a3b-instruct",
           "input": [
             "text",
             "image"
           ],
-          "maxTokens": 16384,
+          "maxTokens": 32768,
           "name": "Qwen: Qwen3 VL 30B A3B Instruct",
           "reasoning": false
         },
@@ -91282,5 +91282,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "c3d408bc009ec09b9dcacf4bdd8dfbd213ff8fca"
+  "sourceCommit": "924bb1f2288acc695cd0fd285ba663b9281e3035"
 }
