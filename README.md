@@ -21,6 +21,62 @@ Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those
 constraints are enforced client-side.
 
+## Hosting and publication
+
+Cloudflare Workers Static Assets serves the catalog directly from the CDN. There
+is no Worker script, R2 bucket, or request-time catalog assembly. Unlike the docs
+site, this feed does not need HTML routing, Markdown negotiation, or search.
+
+`node scripts/build.mjs` stages exactly the catalog and `static/_headers` in
+`dist/`. Repository files and the upstream OpenClaw checkout never become assets.
+The response is UTF-8 JSON with public CORS, an exposed native `ETag`, and
+`X-Content-Type-Options: nosniff`. Its mutable URL uses
+`Cache-Control: public, max-age=0, must-revalidate`: clients revalidate their cached
+copy, and unchanged content returns `304`. Cloudflare manages its asset cache
+and deployment invalidation; the catalog does not use an immutable browser TTL.
+
+The publish workflow deploys an isolated `openclaw-catalog-preview` first, verifies
+it, then deploys the same staged bytes to `catalog.openclaw.ai`. It verifies the
+actual post-commit `main` SHA before deployment and fails if another push made
+the run stale. Deployments share the generator's concurrency group and also run
+when generation found no change, so a failed deployment can be retried without
+manufacturing a catalog update. Hosting changes pushed to `main` deploy the
+committed catalog without regenerating it.
+
+Repository Actions secrets:
+
+- `CLOUDFLARE_ACCOUNT_ID`: the existing OpenClaw Cloudflare account.
+- `CLOUDFLARE_API_TOKEN`: the deployment token for that account, with Workers
+  Scripts edit and zone read access; custom-domain setup also needs the existing
+  authorized domain/DNS access. Never commit either value.
+
+Local validation needs Node and Wrangler 4.131.1:
+
+```sh
+node --test scripts/hosting.test.mjs
+node scripts/build.mjs
+wrangler deploy --dry-run --env preview
+wrangler dev --env preview --ip 127.0.0.1 --port 8787
+# In another terminal:
+node scripts/smoke.mjs http://127.0.0.1:8787
+```
+
+The smoke check verifies byte equality, content type, cache/CORS headers, GET,
+HEAD, conditional `304`, and `404` for missing and repository-only files. It also
+runs against the public hostname after each deployment.
+
+For the first cutover, record the existing `catalog.openclaw.ai` DNS and GitHub
+Pages settings, deploy with `--env preview` (whose routes are explicitly empty),
+and pass the smoke check before attaching the production custom domain. Keep the
+Pages configuration available until production verification passes.
+
+Rollback is a forward deployment: revert the broken hosting change on `main`,
+retain the latest `models/v1/catalog.json`, and rerun the publish workflow. Do not
+roll back an entire old asset version and silently downgrade catalog data. If a
+Cloudflare outage requires returning to GitHub Pages, restore the recorded DNS
+and Pages settings, ensure Pages has published the current catalog commit, and
+verify the public JSON bytes before declaring recovery.
+
 ## Discussing changes
 
 Every change is an ordinary commit — use the commit history to see what changed

@@ -1,0 +1,31 @@
+name: Check catalog hosting
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/hosting-check.yml"
+      - ".github/workflows/publish.yml"
+      - "models/v1/catalog.json"
+      - "scripts/**"
+      - "static/**"
+      - "wrangler.jsonc"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24.20.0"
+      - run: node --test scripts/hosting.test.mjs
+      - run: node scripts/build.mjs
+      - run: npx --yes wrangler@4.131.1 deploy --dry-run --env preview
+        env:
+          WRANGLER_SEND_METRICS: "false"
