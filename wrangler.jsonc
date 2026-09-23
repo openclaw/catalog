@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "openclaw-catalog",
+  "compatibility_date": "2026-07-15",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "catalog.openclaw.ai", "custom_domain": true }],
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
+  "env": {
+    "preview": {
+      "name": "openclaw-catalog-preview",
+      "workers_dev": true,
+      "preview_urls": false,
+      "routes": []
+    }
+  }
+}

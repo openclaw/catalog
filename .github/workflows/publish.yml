@@ -1,6 +1,14 @@
 name: Publish catalog
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish.yml"
+      - "models/v1/catalog.json"
+      - "scripts/**"
+      - "static/**"
+      - "wrangler.jsonc"
   schedule:
     - cron: "23 */4 * * *"
   workflow_dispatch:
@@ -14,6 +22,7 @@ concurrency:
 
 jobs:
   publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -21,6 +30,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Checkout openclaw
+        if: github.event_name != 'push'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: openclaw/openclaw
@@ -34,16 +44,19 @@ jobs:
           node-version: "24.20.0"
 
       - name: Install dependencies
+        if: github.event_name != 'push'
         working-directory: openclaw
         run: |
           corepack enable
           pnpm install --frozen-lockfile
 
       - name: Assemble catalog
+        if: github.event_name != 'push'
         working-directory: openclaw
         run: node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json
 
       - name: Commit on change only
+        if: github.event_name != 'push'
         run: |
           set -euo pipefail
           new=models/v1/catalog.next.json
@@ -59,4 +72,63 @@ jobs:
           git config user.email "catalog@openclaw.ai"
           git add "$cur"
           git commit -m "catalog: $(jq -r '"\(.providers | length) providers, \([.providers[].models | length] | add) models"' "$cur")"
-          git push
+          git push origin HEAD:main
+
+      # GITHUB_TOKEN commits do not trigger push workflows. Keep deployment in
+      # this serialized job, including unchanged runs that retry a failed deploy.
+      - name: Verify deployment source
+        id: source
+        run: |
+          set -euo pipefail
+          head=$(git rev-parse HEAD)
+          remote=$(git ls-remote --exit-code origin refs/heads/main | cut -f1)
+          if [ "$head" != "$remote" ]; then
+            echo "::error::main advanced; refusing to deploy stale catalog $head"
+            exit 1
+          fi
+          echo "sha=$head" >> "$GITHUB_OUTPUT"
+
+      - name: Test and stage static assets
+        run: |
+          node --test scripts/hosting.test.mjs
+          node scripts/build.mjs
+          npx --yes wrangler@4.131.1 deploy --dry-run --env preview
+
+      - name: Deploy and verify isolated preview
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          WRANGLER_SEND_METRICS: "false"
+          WRANGLER_OUTPUT_FILE_PATH: ${{ runner.temp }}/catalog-preview.jsonl
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          set -euo pipefail
+          npx --yes wrangler@4.131.1 deploy --env preview --message "$SOURCE_SHA"
+          preview_url=$(node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+          const records = readFileSync(process.env.WRANGLER_OUTPUT_FILE_PATH, 'utf8').trim().split('\n').map(JSON.parse);
+          const deploy = records.findLast((entry) => entry.type === 'deploy' && entry.worker_name === 'openclaw-catalog-preview');
+          const url = deploy?.targets?.find((target) => /^https:\/\/openclaw-catalog-preview\.[a-z0-9-]+\.workers\.dev$/.test(target));
+          if (!url) throw new Error('Preview deployment URL missing from Wrangler receipt');
+          console.log(url);
+          NODE
+          )
+          node scripts/smoke.mjs "$preview_url"
+
+      - name: Deploy production
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          WRANGLER_SEND_METRICS: "false"
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          set -euo pipefail
+          remote=$(git ls-remote --exit-code origin refs/heads/main | cut -f1)
+          if [ "$SOURCE_SHA" != "$remote" ]; then
+            echo "::error::main advanced during preview; refusing to deploy stale catalog $SOURCE_SHA"
+            exit 1
+          fi
+          npx --yes wrangler@4.131.1 deploy --env "" --message "$SOURCE_SHA"
+
+      - name: Verify production
+        run: node scripts/smoke.mjs https://catalog.openclaw.ai
