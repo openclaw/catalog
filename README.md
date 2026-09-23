@@ -5,7 +5,10 @@ The hosted model catalog served at **https://catalog.openclaw.ai/models/v1/catal
 **https://catalog.openclaw.ai/models/catalog.json** is a direct, byte-identical
 alias of the v1 catalog. Both URLs refresh together and use the v1 format.
 
-Every OpenClaw install fetches this file in the background (every 6h, or via
+The v2 catalog is served at **https://catalog.openclaw.ai/models/v2/catalog.json**.
+It has its own versioned format; the unversioned alias continues to serve v1.
+
+OpenClaw fetches catalog updates in the background (every 6h, or via
 `openclaw models refresh`) to learn about newly released models without waiting
 for a release. See the [models documentation](https://docs.openclaw.ai/concepts/models)
 for how the overlay works and how to disable it (`models.catalogRefresh.enabled: false`)
@@ -17,8 +20,12 @@ The catalog is **not hand-edited**. A [scheduled workflow](.github/workflows/pub
 assembles it from the `modelCatalog` blocks in the plugin manifests of
 [openclaw/openclaw](https://github.com/openclaw/openclaw) (`extensions/*/openclaw.plugin.json`),
 enriches per-token pricing, checks every 4 hours, validates it with the same schema the client enforces,
-and commits it **only when the content actually changed** — so the file history is a
-readable changelog of model additions and pricing updates.
+and commits both versions **only when either version's content actually changed** —
+so the file history is a readable changelog of model additions and pricing updates.
+
+One publisher invocation generates v1 and v2 from the same source snapshot.
+Changes to generation timestamps or source commit metadata alone do not trigger
+a commit. If either payload changes, both outputs are committed together.
 
 Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those
@@ -30,8 +37,9 @@ Cloudflare Workers Static Assets serves the catalog directly from the CDN. There
 is no Worker script, R2 bucket, or request-time catalog assembly. Unlike the docs
 site, this feed does not need HTML routing, Markdown negotiation, or search.
 
-`node scripts/build.mjs` stages the catalog at both URLs and `static/_headers` in
-`dist/`. Repository files and the upstream OpenClaw checkout never become assets.
+`node scripts/build.mjs` stages the v1 catalog, its alias, the v2 catalog, and
+`static/_headers` in `dist/`. Repository files and the upstream OpenClaw checkout
+never become assets.
 The response is UTF-8 JSON with public CORS, an exposed native `ETag`, and
 `X-Content-Type-Options: nosniff`. Its mutable URL uses
 `Cache-Control: public, max-age=0, must-revalidate`: clients revalidate their cached
@@ -64,9 +72,10 @@ wrangler dev --env preview --ip 127.0.0.1 --port 8787
 node scripts/smoke.mjs http://127.0.0.1:8787
 ```
 
-The smoke check verifies both URLs for byte equality, content type, cache/CORS
-headers, GET, HEAD, and conditional `304`, plus `404` for missing and
-repository-only files. It also runs against the public hostname after each deployment.
+The smoke check verifies all three URLs for version-specific byte equality,
+content type, cache/CORS headers, GET, HEAD, and conditional `304`, plus `404` for
+missing and repository-only files. It also runs against the public hostname after
+each deployment.
 
 For the first cutover, record the existing `catalog.openclaw.ai` DNS and GitHub
 Pages settings, deploy with `--env preview` (whose routes are explicitly empty),
@@ -74,8 +83,9 @@ and pass the smoke check before attaching the production custom domain. Keep the
 Pages configuration available until production verification passes.
 
 Rollback is a forward deployment: revert the broken hosting change on `main`,
-retain the latest `models/v1/catalog.json`, and rerun the publish workflow. Do not
-roll back an entire old asset version and silently downgrade catalog data. If a
+retain the latest `models/v1/catalog.json` and `models/v2/catalog.json` as a pair,
+and rerun the publish workflow. The alias is rebuilt from v1. Do not roll back an
+entire old asset version and silently downgrade catalog data. If a
 Cloudflare outage requires returning to GitHub Pages, restore the recorded DNS
 and Pages settings, ensure Pages has published the current catalog commit, and
 verify the public JSON bytes before declaring recovery.

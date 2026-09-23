@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/publish.yml"
       - "models/v1/catalog.json"
+      - "models/v2/catalog.json"
       - "scripts/**"
       - "static/**"
       - "wrangler.jsonc"
@@ -53,25 +54,35 @@ jobs:
       - name: Assemble catalog
         if: github.event_name != 'push'
         working-directory: openclaw
-        run: node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json
+        run: node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json --out-v2 ../models/v2/catalog.next.json
 
       - name: Commit on change only
         if: github.event_name != 'push'
         run: |
           set -euo pipefail
-          new=models/v1/catalog.next.json
-          cur=models/v1/catalog.json
+          changed=false
           # generatedAt/sourceCommit differ every run; only content changes count.
-          if [ -f "$cur" ] && [ "$(jq -S 'del(.generatedAt, .sourceCommit)' "$cur")" = "$(jq -S 'del(.generatedAt, .sourceCommit)' "$new")" ]; then
-            echo "catalog unchanged; skipping commit"
-            rm "$new"
+          for version in v1 v2; do
+            new=$(jq -S 'del(.generatedAt, .sourceCommit)' "models/$version/catalog.next.json")
+            cur=""
+            if [ -f "models/$version/catalog.json" ]; then
+              cur=$(jq -S 'del(.generatedAt, .sourceCommit)' "models/$version/catalog.json")
+            fi
+            if [ "$cur" != "$new" ]; then changed=true; fi
+          done
+          if [ "$changed" = false ]; then
+            echo "catalogs unchanged; skipping commit"
+            rm models/v1/catalog.next.json models/v2/catalog.next.json
             exit 0
           fi
-          mv "$new" "$cur"
+          # Keep the versioned pair on one source snapshot, even if only one changed.
+          for version in v1 v2; do
+            mv "models/$version/catalog.next.json" "models/$version/catalog.json"
+          done
           git config user.name "openclaw-catalog[bot]"
           git config user.email "catalog@openclaw.ai"
-          git add "$cur"
-          git commit -m "catalog: $(jq -r '"\(.providers | length) providers, \([.providers[].models | length] | add) models"' "$cur")"
+          git add models/v1/catalog.json models/v2/catalog.json
+          git commit -m "catalog: $(jq -r '"\(.providers | length) providers, \([.providers[].models | length] | add) models"' models/v1/catalog.json)"
           git push origin HEAD:main
 
       # GITHUB_TOKEN commits do not trigger push workflows. Keep deployment in

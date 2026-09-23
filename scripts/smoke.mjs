@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
 const base = new URL(process.argv[2]);
-const expected = await readFile(process.argv[3] ?? "models/v1/catalog.json");
+const expectedV1 = await readFile(process.argv[3] ?? "models/v1/catalog.json");
+const expectedV2 = await readFile(process.argv[4] ?? "models/v2/catalog.json");
 const request = (target, options = {}) => fetch(target, {
   ...options,
   redirect: "manual",
@@ -15,7 +16,11 @@ const verifyHeaders = (response) => {
   assert.equal(response.headers.get("x-content-type-options"), "nosniff");
 };
 
-for (const path of ["/models/v1/catalog.json", "/models/catalog.json"]) {
+for (const [path, expected] of [
+  ["/models/v1/catalog.json", expectedV1],
+  ["/models/catalog.json", expectedV1],
+  ["/models/v2/catalog.json", expectedV2],
+]) {
   const url = new URL(path, base);
   const response = await request(url, { headers: { Origin: "https://example.com" } });
   assert.equal(response.status, 200, "catalog GET");
@@ -53,4 +58,4 @@ for (const path of ["/missing.json", "/README.md", "/.git/config", "/_headers"])
   assert.equal(missing.status, 404, `${path} must not be published`);
   await missing.body?.cancel();
 }
-console.log(`Catalog smoke passed: ${base} (both catalog URLs, ${expected.length} bytes).`);
+console.log(`Catalog smoke passed: ${base} (all three catalog URLs).`);
