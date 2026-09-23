@@ -83,8 +83,9 @@ and pass the smoke check before attaching the production custom domain. Keep the
 Pages configuration available until production verification passes.
 
 Rollback is a forward deployment: revert the broken hosting change on `main`,
-retain the latest `models/v1/catalog.json`, and rerun the publish workflow. Do not
-roll back an entire old asset version and silently downgrade catalog data. If a
+retain the latest `models/v1/catalog.json` and `models/v2/catalog.json` as a pair,
+and rerun the publish workflow. The alias is rebuilt from v1. Do not roll back an
+entire old asset version and silently downgrade catalog data. If a
 Cloudflare outage requires returning to GitHub Pages, restore the recorded DNS
 and Pages settings, ensure Pages has published the current catalog commit, and
 verify the public JSON bytes before declaring recovery.
