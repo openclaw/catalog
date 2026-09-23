@@ -2,6 +2,9 @@
 
 The hosted model catalog served at **https://catalog.openclaw.ai/models/v1/catalog.json**.
 
+**https://catalog.openclaw.ai/models/catalog.json** is a direct, byte-identical
+alias of the v1 catalog. Both URLs refresh together and use the v1 format.
+
 Every OpenClaw install fetches this file in the background (every 6h, or via
 `openclaw models refresh`) to learn about newly released models without waiting
 for a release. See the [models documentation](https://docs.openclaw.ai/concepts/models)
@@ -27,7 +30,7 @@ Cloudflare Workers Static Assets serves the catalog directly from the CDN. There
 is no Worker script, R2 bucket, or request-time catalog assembly. Unlike the docs
 site, this feed does not need HTML routing, Markdown negotiation, or search.
 
-`node scripts/build.mjs` stages exactly the catalog and `static/_headers` in
+`node scripts/build.mjs` stages the catalog at both URLs and `static/_headers` in
 `dist/`. Repository files and the upstream OpenClaw checkout never become assets.
 The response is UTF-8 JSON with public CORS, an exposed native `ETag`, and
 `X-Content-Type-Options: nosniff`. Its mutable URL uses
@@ -61,9 +64,9 @@ wrangler dev --env preview --ip 127.0.0.1 --port 8787
 node scripts/smoke.mjs http://127.0.0.1:8787
 ```
 
-The smoke check verifies byte equality, content type, cache/CORS headers, GET,
-HEAD, conditional `304`, and `404` for missing and repository-only files. It also
-runs against the public hostname after each deployment.
+The smoke check verifies both URLs for byte equality, content type, cache/CORS
+headers, GET, HEAD, and conditional `304`, plus `404` for missing and
+repository-only files. It also runs against the public hostname after each deployment.
 
 For the first cutover, record the existing `catalog.openclaw.ai` DNS and GitHub
 Pages settings, deploy with `--env preview` (whose routes are explicitly empty),

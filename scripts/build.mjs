@@ -7,5 +7,6 @@ const headers = await readFile("static/_headers");
 await rm("dist", { recursive: true, force: true });
 await mkdir("dist/models/v1", { recursive: true });
 await writeFile("dist/models/v1/catalog.json", catalog);
+await writeFile("dist/models/catalog.json", catalog);
 await writeFile("dist/_headers", headers);
 console.log(`Staged catalog (${catalog.length} bytes).`);
