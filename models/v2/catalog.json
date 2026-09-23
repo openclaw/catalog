@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790170178886,
+  "generatedAt": 1790174816318,
   "models": [
     {
       "id": "claude-fable-5",
@@ -3544,11 +3544,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.017415999999999997,
+        "cacheRead": 0.017108,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.08707999999999999,
-        "output": 0.17415999999999998,
+        "input": 0.08553999999999999,
+        "output": 0.17107999999999998,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -3599,11 +3599,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.07960500000000001,
+        "cacheRead": 0.079431,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.9552599999999999,
-        "output": 1.9105199999999998,
+        "input": 0.953172,
+        "output": 1.906344,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -5584,7 +5584,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
         "cacheRead": 0.012726,
@@ -6045,6 +6045,48 @@
       ],
       "maxTokens": 32768,
       "name": "AionLabs: Aion-3.0-Mini",
+      "pricing": {
+        "cacheRead": 0.18,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.7,
+        "output": 1.4,
+        "source": "openRouter",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "aion-labs/aion-3.5",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "AionLabs: Aion 3.5",
+      "pricing": {
+        "cacheRead": 0.75,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3,
+        "output": 6,
+        "source": "openRouter",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "aion-labs/aion-3.5-mini",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "AionLabs: Aion 3.5 Mini",
       "pricing": {
         "cacheRead": 0.18,
         "cacheWrite": 0,
@@ -7068,11 +7110,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.017415999999999997,
+        "cacheRead": 0.017108,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.08707999999999999,
-        "output": 0.17415999999999998,
+        "input": 0.08553999999999999,
+        "output": 0.17107999999999998,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7132,11 +7174,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.07960500000000001,
+        "cacheRead": 0.079431,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.9552599999999999,
-        "output": 1.9105199999999998,
+        "input": 0.953172,
+        "output": 1.906344,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7172,14 +7214,14 @@
         "text",
         "image"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 943718,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
-        "cacheRead": 0.003,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.09999999999999999,
+        "output": 0.5,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7932,7 +7974,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 10000,
+      "maxTokens": 32768,
       "name": "Auto Free",
       "pricing": {
         "status": "unknown"
@@ -25028,5 +25070,5 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "55d5902a9de680a1a7f5c67f6e768ea1f0c5803a"
+  "sourceCommit": "d9bf2a328ebed9db90912baf868b52da65dae3fb"
 }
