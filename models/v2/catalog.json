@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790174816318,
+  "generatedAt": 1790195448516,
   "models": [
     {
       "id": "claude-fable-5",
@@ -1034,7 +1034,14 @@
       "maxTokens": 262144,
       "name": "GLM 5.3 Fast",
       "pricing": {
-        "status": "unknown"
+        "cacheRead": 0.21,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.0999999999999996,
+        "output": 6.6000000000000005,
+        "source": "liteLLM",
+        "status": "known",
+        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -3544,11 +3551,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.017108,
+        "cacheRead": 0.015568,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.08553999999999999,
-        "output": 0.17107999999999998,
+        "input": 0.07784,
+        "output": 0.15568,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -3599,11 +3606,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.079431,
+        "cacheRead": 0.0788655,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.953172,
-        "output": 1.906344,
+        "input": 0.946386,
+        "output": 1.892772,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -5587,11 +5594,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.012726,
+        "cacheRead": 0.012516,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.39996,
-        "output": 1.19988,
+        "input": 0.39336000000000004,
+        "output": 1.18008,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7110,11 +7117,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.017108,
+        "cacheRead": 0.015568,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.08553999999999999,
-        "output": 0.17107999999999998,
+        "input": 0.07784,
+        "output": 0.15568,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7174,11 +7181,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.079431,
+        "cacheRead": 0.0788655,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.953172,
-        "output": 1.906344,
+        "input": 0.946386,
+        "output": 1.892772,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7916,21 +7923,6 @@
       "reasoning": true
     },
     {
-      "id": "inclusionai/ling-3.0-flash-vl:free",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "inclusionAI: Ling 3.0 Flash VL (free)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "kilo-auto/balanced",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -8456,28 +8448,6 @@
         "currency": "USD",
         "input": 0.3,
         "output": 0.8999999999999999,
-        "source": "openRouter",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "mistralai/devstral-2512",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "document"
-      ],
-      "maxTokens": 209715,
-      "name": "Devstral 2",
-      "pricing": {
-        "cacheRead": 0.04,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.39999999999999997,
-        "output": 2,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -12331,6 +12301,28 @@
       "reasoning": true
     },
     {
+      "id": "qwen/qwen3.8-max-prime",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen: Qwen3.8 Max Prime",
+      "pricing": {
+        "cacheRead": 0.5,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 4,
+        "output": 12,
+        "source": "openRouter",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "qwen/qwen3.8-omni-flash",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -12629,6 +12621,21 @@
       "reasoning": true
     },
     {
+      "id": "stealth/space-bunny-alpha",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 524288,
+      "name": "Space Bunny Alpha",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "stepfun/step-3.5-flash",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -12696,11 +12703,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.032999999999999995,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13199999999999998,
-        "output": 0.5279999999999999,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -13509,11 +13516,11 @@
       "maxTokens": 131072,
       "name": "GLM-5.3",
       "pricing": {
-        "cacheRead": 0.10425999999999999,
+        "cacheRead": 0.156,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.5614,
-        "output": 1.7644,
+        "input": 0.84,
+        "output": 2.64,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -13553,7 +13560,7 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM 5.3 FlashX",
       "pricing": {
-        "cacheRead": 0.075,
+        "cacheRead": 0.09,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.37,
@@ -20815,6 +20822,48 @@
       "reasoning": true
     },
     {
+      "id": "aion-labs-aion-3-5",
+      "provider": "venice",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "Aion 3.5",
+      "pricing": {
+        "cacheRead": 0.9375,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3.75,
+        "output": 7.5,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "aion-labs-aion-3-5-mini",
+      "provider": "venice",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "Aion 3.5 Mini",
+      "pricing": {
+        "cacheRead": 0.225,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.875,
+        "output": 1.75,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "claude-fable-5",
       "provider": "venice",
       "compat": {
@@ -24833,11 +24882,11 @@
       "maxTokens": 131072,
       "name": "GLM-5.3",
       "pricing": {
-        "cacheRead": 0.10425999999999999,
+        "cacheRead": 0.156,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.5614,
-        "output": 1.7644,
+        "input": 0.84,
+        "output": 2.64,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -24881,7 +24930,7 @@
       "maxTokens": 131072,
       "name": "GLM-5.3-FlashX",
       "pricing": {
-        "cacheRead": 0.075,
+        "cacheRead": 0.09,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.37,
@@ -25070,5 +25119,5 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "d9bf2a328ebed9db90912baf868b52da65dae3fb"
+  "sourceCommit": "c745ff5b92d0c9ede4c3796e4718fcba0d8cbd05"
 }
