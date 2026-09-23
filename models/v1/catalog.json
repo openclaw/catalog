@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790161493603,
+  "generatedAt": 1790167343801,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -41532,11 +41532,6 @@
       "input": 0.35,
       "output": 0.65
     },
-    "kilocode/upstage/solar-mini4": {
-      "cacheRead": 0.005,
-      "input": 0.049999999999999996,
-      "output": 0.19999999999999998
-    },
     "kilocode/v0/v0-1.0-md": {
       "input": 3,
       "output": 15
@@ -52168,11 +52163,6 @@
     "undi95/remm-slerp-l2-13b": {
       "input": 0.35,
       "output": 0.65
-    },
-    "upstage/solar-mini4": {
-      "cacheRead": 0.005,
-      "input": 0.049999999999999996,
-      "output": 0.19999999999999998
     },
     "us-gov.anthropic.claude-fable-5-1": {
       "cacheRead": 0.3,
@@ -83105,6 +83095,22 @@
           "reasoning": false
         },
         {
+          "contextWindow": 524288,
+          "cost": {
+            "cacheRead": 0.005,
+            "cacheWrite": 0,
+            "input": 0.049999999999999996,
+            "output": 0.19999999999999998
+          },
+          "id": "upstage/solar-mini4",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "Upstage: Solar Mini 4",
+          "reasoning": true
+        },
+        {
           "contextWindow": 131072,
           "cost": {
             "cacheRead": 0.015,
@@ -93055,5 +93061,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "12fe32ebbb77d90a2dae6c093ecfdbbce851ff81"
+  "sourceCommit": "5706a0626359b52daa5feb12fe98c260153525c3"
 }
