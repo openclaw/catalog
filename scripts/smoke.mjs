@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 const base = new URL(process.argv[2]);
 const expectedV1 = await readFile(process.argv[3] ?? "models/v1/catalog.json");
 const expectedV2 = await readFile(process.argv[4] ?? "models/v2/catalog.json");
+const expectedV3 = await readFile(process.argv[5] ?? "models/v3/catalog.json");
 const request = (target, options = {}) => fetch(target, {
   ...options,
   redirect: "manual",
@@ -20,6 +21,7 @@ for (const [path, expected] of [
   ["/models/v1/catalog.json", expectedV1],
   ["/models/catalog.json", expectedV1],
   ["/models/v2/catalog.json", expectedV2],
+  ["/models/v3/catalog.json", expectedV3],
 ]) {
   const url = new URL(path, base);
   const response = await request(url, { headers: { Origin: "https://example.com" } });
@@ -53,9 +55,9 @@ for (const [path, expected] of [
   assert.deepEqual(Buffer.from(await changed.arrayBuffer()), expected, "revalidated catalog bytes");
 }
 
-for (const path of ["/missing.json", "/README.md", "/.git/config", "/_headers"]) {
+for (const path of ["/missing.json", "/README.md", "/.git/config", "/_headers", "/scripts/build.mjs", "/openclaw/package.json", "/models/v3/catalog.next.json"]) {
   const missing = await request(new URL(path, base));
   assert.equal(missing.status, 404, `${path} must not be published`);
   await missing.body?.cancel();
 }
-console.log(`Catalog smoke passed: ${base} (all three catalog URLs).`);
+console.log(`Catalog smoke passed: ${base} (all four catalog URLs).`);
