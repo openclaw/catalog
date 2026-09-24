@@ -7,6 +7,7 @@ on:
       - ".github/workflows/publish.yml"
       - "models/v1/catalog.json"
       - "models/v2/catalog.json"
+      - "models/v3/catalog.json"
       - "scripts/**"
       - "static/**"
       - "wrangler.jsonc"
@@ -54,34 +55,44 @@ jobs:
       - name: Assemble catalog
         if: github.event_name != 'push'
         working-directory: openclaw
-        run: node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json --out-v2 ../models/v2/catalog.next.json
+        # Requires openclaw/openclaw#157492 on upstream main. Never pin a PR branch here.
+        run: |
+          set -euo pipefail
+          if ! grep -Fq 'arg === "--out-v3"' scripts/publish-model-catalog.mts; then
+            echo "::error::Upstream main requires openclaw/openclaw#157492 (v3 publisher); no catalogs will be generated or deployed."
+            exit 1
+          fi
+          node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json --out-v2 ../models/v2/catalog.next.json --out-v3 ../models/v3/catalog.next.json
 
       - name: Commit on change only
         if: github.event_name != 'push'
         run: |
           set -euo pipefail
           changed=false
+          catalog_content() {
+            jq -e -S -s 'if length == 1 and (.[0] | type == "object") then .[0] | del(.generatedAt, .sourceCommit) else error("expected one catalog JSON object") end' "$1"
+          }
           # generatedAt/sourceCommit differ every run; only content changes count.
-          for version in v1 v2; do
-            new=$(jq -S 'del(.generatedAt, .sourceCommit)' "models/$version/catalog.next.json")
+          for version in v1 v2 v3; do
+            new=$(catalog_content "models/$version/catalog.next.json")
             cur=""
             if [ -f "models/$version/catalog.json" ]; then
-              cur=$(jq -S 'del(.generatedAt, .sourceCommit)' "models/$version/catalog.json")
+              cur=$(catalog_content "models/$version/catalog.json")
             fi
             if [ "$cur" != "$new" ]; then changed=true; fi
           done
           if [ "$changed" = false ]; then
             echo "catalogs unchanged; skipping commit"
-            rm models/v1/catalog.next.json models/v2/catalog.next.json
+            rm models/v1/catalog.next.json models/v2/catalog.next.json models/v3/catalog.next.json
             exit 0
           fi
-          # Keep the versioned pair on one source snapshot, even if only one changed.
-          for version in v1 v2; do
+          # Keep the complete version set on one source snapshot, even if only one changed.
+          for version in v1 v2 v3; do
             mv "models/$version/catalog.next.json" "models/$version/catalog.json"
           done
           git config user.name "openclaw-catalog[bot]"
           git config user.email "catalog@openclaw.ai"
-          git add models/v1/catalog.json models/v2/catalog.json
+          git add models/v1/catalog.json models/v2/catalog.json models/v3/catalog.json
           git commit -m "catalog: $(jq -r '"\(.providers | length) providers, \([.providers[].models | length] | add) models"' models/v1/catalog.json)"
           git push origin HEAD:main
 
