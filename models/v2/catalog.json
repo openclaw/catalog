@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790211811487,
+  "generatedAt": 1790224526176,
   "models": [
     {
       "id": "claude-fable-5",
@@ -3370,6 +3370,50 @@
       "reasoning": true
     },
     {
+      "id": "XiaomiMiMo/MiMo-V2.6-Flash",
+      "provider": "deepinfra",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Flash",
+      "pricing": {
+        "cacheRead": 0.0028,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.13999999999999999,
+        "output": 0.27999999999999997,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "XiaomiMiMo/MiMo-V2.6-Pro",
+      "provider": "deepinfra",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Pro",
+      "pricing": {
+        "cacheRead": 0.0035999990999999996,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.435,
+        "output": 0.87,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "zai-org/GLM-4.6",
       "provider": "deepinfra",
       "contextWindow": 202752,
@@ -3657,6 +3701,21 @@
       ],
       "maxTokens": 384000,
       "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "accounts/fireworks/models/ember-1",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Ember-1",
       "pricing": {
         "status": "unknown"
       },
@@ -5573,11 +5632,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.06,
+        "cacheRead": 0.005,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.099,
-        "output": 0.6,
+        "input": 0.049999999999999996,
+        "output": 0.25,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -5591,13 +5650,13 @@
       "input": [
         "text"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
         "cacheRead": 0.25,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3865,
+        "input": 0.39,
         "output": 2.9000000000000004,
         "source": "openRouter",
         "status": "known",
@@ -5704,11 +5763,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.195,
+        "cacheRead": 0.3,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.9099999999999999,
-        "output": 6.9875,
+        "input": 1.4,
+        "output": 10.75,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -5969,11 +6028,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.075,
-        "output": 0.25,
+        "input": 0.045,
+        "output": 0.14,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7142,7 +7201,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.04,
-        "output": 0.64,
+        "output": 0.32,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -7221,7 +7280,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 131072,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.004200000000000001,
@@ -8329,11 +8388,11 @@
     {
       "id": "minimax/minimax-m2",
       "provider": "kilocode",
-      "contextWindow": 204800,
+      "contextWindow": 196608,
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 176947,
       "name": "MiniMax-M2",
       "pricing": {
         "cacheRead": 0,
@@ -8963,14 +9022,7 @@
       "maxTokens": 235929,
       "name": "Nex AGI: Nex-N2.5-Pro",
       "pricing": {
-        "cacheRead": 0.015,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.075,
-        "output": 0.25,
-        "source": "openRouter",
-        "status": "known",
-        "unit": "million_tokens"
+        "status": "unknown"
       },
       "reasoning": true
     },
@@ -11502,7 +11554,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 235929,
       "name": "Qwen3-Next 80B-A3B Instruct",
       "pricing": {
         "cacheRead": 0.07,
@@ -12309,7 +12361,7 @@
         "image"
       ],
       "maxTokens": 131072,
-      "name": "Qwen: Qwen3.8 Max Prime",
+      "name": "Qwen 3.8 Max Prime",
       "pricing": {
         "cacheRead": 0.5,
         "cacheWrite": 0,
@@ -25140,5 +25192,5 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "0880709bf687830e9b7e9e9b607d0ff1189edf8e"
+  "sourceCommit": "441c3df8b7e2f6316ede9e6f6f75f16abaadd068"
 }
