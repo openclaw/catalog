@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790224526176,
+  "generatedAt": 1790239166990,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5632,11 +5632,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.005,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.049999999999999996,
-        "output": 0.25,
+        "input": 0.04,
+        "output": 1,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -5674,11 +5674,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.022799999999999997,
+        "cacheRead": 0.016,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.038000000000000006,
-        "output": 0.55,
+        "input": 0.03,
+        "output": 0.32,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -6025,7 +6025,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 128000,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
         "cacheRead": 0.01,
@@ -7200,7 +7200,7 @@
         "cacheRead": 0.016,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
+        "input": 0.03,
         "output": 0.32,
         "source": "openRouter",
         "status": "known",
@@ -7306,6 +7306,28 @@
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "pricing": {
         "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "fireworks/ember-1",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 943718,
+      "name": "Fireworks: Ember-1",
+      "pricing": {
+        "cacheRead": 0.3,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3,
+        "output": 15,
+        "source": "openRouter",
+        "status": "known",
+        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -8966,7 +8988,7 @@
         "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7062,
+        "input": 0.6562,
         "output": 3.3000000000000003,
         "source": "openRouter",
         "status": "known",
@@ -9006,21 +9028,6 @@
       ],
       "maxTokens": 235929,
       "name": "Nex AGI: Nex-N2.5-Mini (free)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "nex-agi/nex-n2.5-pro",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 235929,
-      "name": "Nex AGI: Nex-N2.5-Pro",
       "pricing": {
         "status": "unknown"
       },
@@ -11195,18 +11202,18 @@
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "provider": "kilocode",
-      "contextWindow": 128000,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 32000,
+      "maxTokens": 235929,
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04815,
-        "output": 0.19305,
+        "input": 0.09999999999999999,
+        "output": 0.3,
         "source": "openRouter",
         "status": "known",
         "unit": "million_tokens"
@@ -14532,7 +14539,7 @@
         "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7062,
+        "input": 0.6562,
         "output": 3.3000000000000003,
         "source": "openRouter",
         "status": "known",
@@ -25192,5 +25199,5 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "441c3df8b7e2f6316ede9e6f6f75f16abaadd068"
+  "sourceCommit": "5331425e597912be4b7113a4e045d60b3b5d9170"
 }
