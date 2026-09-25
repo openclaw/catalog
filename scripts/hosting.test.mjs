@@ -43,9 +43,9 @@ test("preview cannot claim production routes or introduce request-time code", as
   assert.equal(config.assets.run_worker_first, undefined);
 });
 
-function run(script, args, cwd) {
+function run(script, args, cwd, env = {}) {
   return new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, [script, ...args], { cwd });
+    const child = spawn(process.execPath, [script, ...args], { cwd, env: { ...process.env, ...env } });
     let output = "";
     child.stdout.on("data", (data) => { output += data; });
     child.stderr.on("data", (data) => { output += data; });
@@ -109,12 +109,17 @@ test("smoke rejects broken content, headers, validators, or redirects at every U
   await writeFile(expectedV2, catalogV2);
   let mode = "valid";
   let target = catalogPaths[0];
+  let staleOnceServed = false;
   const server = createServer((request, response) => {
     if (!catalogPaths.includes(request.url)) {
       response.writeHead(404).end();
       return;
     }
-    const activeMode = request.url === target ? mode : "valid";
+    let activeMode = request.url === target ? mode : "valid";
+    if (activeMode === "stale-once") {
+      activeMode = staleOnceServed ? "valid" : "stale";
+      staleOnceServed = true;
+    }
     if (activeMode === "redirect") {
       response.writeHead(302, { Location: catalogPaths[0] }).end();
       return;
@@ -134,11 +139,22 @@ test("smoke rejects broken content, headers, validators, or redirects at every U
   await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
   t.after(() => new Promise((resolve) => server.close(resolve)));
   const url = `http://127.0.0.1:${server.address().port}`;
-  const valid = await run(smoke, [url, expected, expectedV2], cwd);
+  const noDelay = { CATALOG_SMOKE_RETRY_DELAY_MS: "0" };
+  const valid = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
   assert.equal(valid.code, 0, valid.output);
   for (target of catalogPaths) {
     for (mode of ["stale", "missing-cors", "wrong-precedence", "redirect"]) {
-      assert.notEqual((await run(smoke, [url, expected, expectedV2], cwd)).code, 0, `${target}: ${mode}`);
+      const result = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
+      assert.notEqual(result.code, 0, `${target}: ${mode}`);
+      if (mode === "stale") {
+        // A byte mismatch reports sizes and hashes; a Buffer diff would exhaust the runner.
+        assert.match(result.output, /deployed catalog bytes: got \d+ bytes sha256 [0-9a-f]{16}, expected/);
+      }
     }
+    // The edge may briefly serve the previous catalog right after a deploy.
+    mode = "stale-once";
+    staleOnceServed = false;
+    const recovered = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
+    assert.equal(recovered.code, 0, `${target}: ${recovered.output}`);
   }
 });

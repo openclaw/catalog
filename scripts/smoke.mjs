@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
+import { setTimeout as sleep } from "node:timers/promises";
 
 const base = new URL(process.argv[2]);
 const expectedV1 = await readFile(process.argv[3] ?? "models/v1/catalog.json");
@@ -9,6 +11,27 @@ const request = (target, options = {}) => fetch(target, {
   redirect: "manual",
   signal: AbortSignal.timeout(30_000),
 });
+// assert.deepEqual on multi-megabyte Buffers builds a full diff on mismatch, which
+// exhausts the runner's memory and kills it. Compare bytes and report sizes and hashes.
+const digest = (bytes) => createHash("sha256").update(bytes).digest("hex").slice(0, 16);
+const assertBytes = (actual, expected, label) => {
+  assert.ok(
+    actual.equals(expected),
+    `${label}: got ${actual.length} bytes sha256 ${digest(actual)}, expected ${expected.length} bytes sha256 ${digest(expected)}`,
+  );
+};
+// Right after a deploy the edge can still serve the previous catalog; wait for the new bytes.
+const retryDelayMs = Number(process.env.CATALOG_SMOKE_RETRY_DELAY_MS ?? 10_000);
+const fetchDeployed = async (url, expected) => {
+  for (let attempt = 1; ; attempt++) {
+    const response = await request(url, { headers: { Origin: "https://example.com" } });
+    const body = Buffer.from(await response.arrayBuffer());
+    if (response.status !== 200 || body.equals(expected) || attempt === 6) {
+      return { response, body };
+    }
+    await sleep(retryDelayMs);
+  }
+};
 const verifyHeaders = (response) => {
   assert.equal(response.headers.get("cache-control"), "public, max-age=0, must-revalidate");
   assert.equal(response.headers.get("access-control-allow-origin"), "*");
@@ -22,11 +45,11 @@ for (const [path, expected] of [
   ["/models/v2/catalog.json", expectedV2],
 ]) {
   const url = new URL(path, base);
-  const response = await request(url, { headers: { Origin: "https://example.com" } });
+  const { response, body } = await fetchDeployed(url, expected);
   assert.equal(response.status, 200, "catalog GET");
   verifyHeaders(response);
   assert.match(response.headers.get("content-type") ?? "", /^application\/json;\s*charset=utf-8$/i);
-  assert.deepEqual(Buffer.from(await response.arrayBuffer()), expected, "deployed catalog bytes");
+  assertBytes(body, expected, `${path} deployed catalog bytes`);
   const etag = response.headers.get("etag");
   assert.ok(etag, "native ETag");
 
@@ -50,7 +73,7 @@ for (const [path, expected] of [
   } });
   assert.equal(changed.status, 200, "nonmatching ETag takes precedence over date");
   verifyHeaders(changed);
-  assert.deepEqual(Buffer.from(await changed.arrayBuffer()), expected, "revalidated catalog bytes");
+  assertBytes(Buffer.from(await changed.arrayBuffer()), expected, `${path} revalidated catalog bytes`);
 }
 
 for (const path of ["/missing.json", "/README.md", "/.git/config", "/_headers"]) {
