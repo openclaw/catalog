@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790325566474,
+  "generatedAt": 1790340153263,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -22281,7 +22281,7 @@
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.08832,
-      "input": 0.09984,
+      "input": 0.25279999999999997,
       "output": 2.88
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -23003,9 +23003,9 @@
       "output": 1.386
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -23736,7 +23736,7 @@
     },
     "cloudflare-ai-gateway/openrouter/nvidia/nemotron-3.5-lightning": {
       "cacheRead": 0.04,
-      "input": 0.08,
+      "input": 0.07,
       "output": 0.19999999999999998
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-3.5-turbo": {
@@ -52441,7 +52441,7 @@
     },
     "kilocode/openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.08832,
-      "input": 0.09984,
+      "input": 0.25279999999999997,
       "output": 2.88
     },
     "kilocode/openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -53163,9 +53163,9 @@
       "output": 1.386
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -53896,7 +53896,7 @@
     },
     "kilocode/openrouter/nvidia/nemotron-3.5-lightning": {
       "cacheRead": 0.04,
-      "input": 0.08,
+      "input": 0.07,
       "output": 0.19999999999999998
     },
     "kilocode/openrouter/openai/gpt-3.5-turbo": {
@@ -65280,6 +65280,12 @@
       "input": 0.15,
       "output": 0.47
     },
+    "opencode/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 6
+    },
     "opencode/ring-2.6-1t-free": {
       "input": 0,
       "output": 0
@@ -65327,7 +65333,7 @@
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.08832,
-      "input": 0.09984,
+      "input": 0.25279999999999997,
       "output": 2.88
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -66041,9 +66047,9 @@
       "output": 1.386
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -66745,7 +66751,7 @@
     },
     "openrouter/nvidia/nemotron-3.5-lightning": {
       "cacheRead": 0.04,
-      "input": 0.08,
+      "input": 0.07,
       "output": 0.19999999999999998
     },
     "openrouter/openai/gpt-3.5-turbo": {
@@ -89104,7 +89110,7 @@
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.08832,
-      "input": 0.09984,
+      "input": 0.25279999999999997,
       "output": 2.88
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -89826,9 +89832,9 @@
       "output": 1.386
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -90559,7 +90565,7 @@
     },
     "vercel-ai-gateway/openrouter/nvidia/nemotron-3.5-lightning": {
       "cacheRead": 0.04,
-      "input": 0.08,
+      "input": 0.07,
       "output": 0.19999999999999998
     },
     "vercel-ai-gateway/openrouter/openai/gpt-3.5-turbo": {
@@ -104978,7 +104984,7 @@
           "cost": {
             "cacheRead": 0.08832,
             "cacheWrite": 0,
-            "input": 0.09984,
+            "input": 0.2528,
             "output": 2.88
           },
           "id": "~deepseek/deepseek-pro-latest",
@@ -107466,7 +107472,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 235929,
           "name": "Nemotron 3.5 Lightning 30B A3B",
           "reasoning": true
         },
@@ -109672,7 +109678,7 @@
             "image"
           ],
           "maxTokens": 524288,
-          "name": "Space Bunny Alpha",
+          "name": "Space Bunny Alpha (new)",
           "reasoning": true
         },
         {
@@ -120577,5 +120583,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "74b9103096c6b2f99783fbceab0e2de06bd6ec52"
+  "sourceCommit": "9fdb24bbccc7c7aae063edc6b2851736d6726db2"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790325566474,
+  "generatedAt": 1790340153263,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6076,7 +6076,7 @@
         "cacheRead": 0.08832,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.09984,
+        "input": 0.2528,
         "output": 2.88,
         "source": "modelsDev",
         "status": "known",
@@ -9290,7 +9290,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 235929,
       "name": "Nemotron 3.5 Lightning 30B A3B",
       "pricing": {
         "cacheRead": 0,
@@ -12151,7 +12151,7 @@
         "image"
       ],
       "maxTokens": 524288,
-      "name": "Space Bunny Alpha",
+      "name": "Space Bunny Alpha (new)",
       "pricing": {
         "status": "unknown"
       },
@@ -27875,6 +27875,13 @@
       "output": 0.47,
       "source": "openCode"
     },
+    "opencode/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 6,
+      "source": "openCode"
+    },
     "opencode/ring-2.6-1t-free": {
       "input": 0,
       "output": 0,
@@ -27931,7 +27938,7 @@
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.08832,
-      "input": 0.09984,
+      "input": 0.25279999999999997,
       "output": 2.88,
       "source": "openRouter"
     },
@@ -28727,9 +28734,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -29550,7 +29557,7 @@
     },
     "openrouter/nvidia/nemotron-3.5-lightning": {
       "cacheRead": 0.04,
-      "input": 0.08,
+      "input": 0.07,
       "output": 0.19999999999999998,
       "source": "openRouter"
     },
@@ -35574,7 +35581,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "74b9103096c6b2f99783fbceab0e2de06bd6ec52",
+  "sourceCommit": "9fdb24bbccc7c7aae063edc6b2851736d6726db2",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -56264,7 +56271,7 @@
         }
       ],
       "cacheRead": 0.08832,
-      "input": 0.09984,
+      "input": 0.25279999999999997,
       "output": 2.88,
       "source": "openRouter"
     },
@@ -57739,9 +57746,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -59531,7 +59538,7 @@
         }
       ],
       "cacheRead": 0.04,
-      "input": 0.08,
+      "input": 0.07,
       "output": 0.19999999999999998,
       "source": "openRouter"
     },
