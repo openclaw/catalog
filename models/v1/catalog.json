@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790384575334,
+  "generatedAt": 1790397250962,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -2288,8 +2288,10 @@
       "output": 50
     },
     "anthropic.claude-mythos-preview": {
-      "input": 0,
-      "output": 0
+      "cacheRead": 2.75,
+      "cacheWrite": 34.375,
+      "input": 27.5,
+      "output": 137.5
     },
     "anthropic.claude-opus-4-1-20250805-v1:0": {
       "cacheRead": 1.5,
@@ -2742,9 +2744,21 @@
       "input": 0,
       "output": 0
     },
+    "azure_ai/deepseek-r1": {
+      "input": 1.35,
+      "output": 5.4
+    },
     "azure_ai/deepseek-v3": {
       "input": 1.1400000000000001,
       "output": 4.5600000000000005
+    },
+    "azure_ai/deepseek-v3-0324": {
+      "input": 1.1400000000000001,
+      "output": 4.5600000000000005
+    },
+    "azure_ai/deepseek-v3.1": {
+      "input": 1.23,
+      "output": 4.94
     },
     "azure_ai/deepseek-v3.2": {
       "input": 0.58,
@@ -2960,6 +2974,14 @@
       "input": 0.15,
       "output": 0.6
     },
+    "azure_ai/grok-3": {
+      "input": 3,
+      "output": 15
+    },
+    "azure_ai/grok-3-mini": {
+      "input": 0.25,
+      "output": 1.27
+    },
     "azure_ai/grok-4": {
       "input": 3,
       "output": 15
@@ -2981,6 +3003,14 @@
       "cacheRead": 1.25,
       "input": 1.25,
       "output": 2.5
+    },
+    "azure_ai/grok-4-fast-non-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
+    },
+    "azure_ai/grok-4-fast-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
     },
     "azure_ai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -3371,10 +3401,10 @@
       "output": 33
     },
     "azure/eu/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "azure/eu/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -3846,10 +3876,10 @@
       "output": 180
     },
     "azure/gpt-5.6": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "azure/gpt-5.6-luna": {
       "cacheRead": 0.02,
@@ -4305,10 +4335,10 @@
       "output": 33
     },
     "azure/us/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "azure/us/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -5513,6 +5543,10 @@
       "input": 1,
       "output": 5
     },
+    "bedrock_mantle/deepseek.v3.1": {
+      "input": 0.58,
+      "output": 1.68
+    },
     "bedrock_mantle/google.gemma-4-26b-a4b": {
       "input": 0.13,
       "output": 0.39999999999999997
@@ -5524,6 +5558,10 @@
     "bedrock_mantle/google.gemma-4-e2b": {
       "input": 0.04,
       "output": 0.08
+    },
+    "bedrock_mantle/moonshotai.kimi-k2-thinking": {
+      "input": 0.6,
+      "output": 2.5
     },
     "bedrock_mantle/openai.gpt-5.4": {
       "cacheRead": 0.275,
@@ -5598,6 +5636,30 @@
     "bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.07,
       "output": 0.19999999999999998
+    },
+    "bedrock_mantle/qwen.qwen3-235b-a22b-2507": {
+      "input": 0.22,
+      "output": 0.88
+    },
+    "bedrock_mantle/qwen.qwen3-32b": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct": {
+      "input": 0.44999999999999996,
+      "output": 1.7999999999999998
+    },
+    "bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct": {
+      "input": 0.14,
+      "output": 1.2
+    },
+    "bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct": {
+      "input": 0.53,
+      "output": 2.66
     },
     "bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
       "cacheRead": 0.33,
@@ -5769,8 +5831,10 @@
       "output": 2.4
     },
     "bedrock/anthropic.claude-mythos-preview": {
-      "input": 0,
-      "output": 0
+      "cacheRead": 2.75,
+      "cacheWrite": 34.375,
+      "input": 27.5,
+      "output": 137.5
     },
     "bedrock/anthropic.claude-v1": {
       "input": 8,
@@ -6617,6 +6681,10 @@
     "bedrock/us.meta.llama3-2-90b-instruct-v1:0": {
       "input": 2,
       "output": 2
+    },
+    "c4ai-aya-expanse-32b": {
+      "input": 0.5,
+      "output": 1.5
     },
     "chat-latest": {
       "cacheRead": 0.5,
@@ -9102,9 +9170,21 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "cloudflare-ai-gateway/azure_ai/deepseek-r1": {
+      "input": 1.35,
+      "output": 5.4
+    },
     "cloudflare-ai-gateway/azure_ai/deepseek-v3": {
       "input": 1.1400000000000001,
       "output": 4.5600000000000005
+    },
+    "cloudflare-ai-gateway/azure_ai/deepseek-v3-0324": {
+      "input": 1.1400000000000001,
+      "output": 4.5600000000000005
+    },
+    "cloudflare-ai-gateway/azure_ai/deepseek-v3.1": {
+      "input": 1.23,
+      "output": 4.94
     },
     "cloudflare-ai-gateway/azure_ai/deepseek-v3.2": {
       "input": 0.58,
@@ -9320,6 +9400,14 @@
       "input": 0.15,
       "output": 0.6
     },
+    "cloudflare-ai-gateway/azure_ai/grok-3": {
+      "input": 3,
+      "output": 15
+    },
+    "cloudflare-ai-gateway/azure_ai/grok-3-mini": {
+      "input": 0.25,
+      "output": 1.27
+    },
     "cloudflare-ai-gateway/azure_ai/grok-4": {
       "input": 3,
       "output": 15
@@ -9341,6 +9429,14 @@
       "cacheRead": 1.25,
       "input": 1.25,
       "output": 2.5
+    },
+    "cloudflare-ai-gateway/azure_ai/grok-4-fast-non-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
+    },
+    "cloudflare-ai-gateway/azure_ai/grok-4-fast-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
     },
     "cloudflare-ai-gateway/azure_ai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -9731,10 +9827,10 @@
       "output": 33
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "cloudflare-ai-gateway/azure/eu/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -10206,10 +10302,10 @@
       "output": 180
     },
     "cloudflare-ai-gateway/azure/gpt-5.6": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "cloudflare-ai-gateway/azure/gpt-5.6-luna": {
       "cacheRead": 0.02,
@@ -10665,10 +10761,10 @@
       "output": 33
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "cloudflare-ai-gateway/azure/us/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -11968,6 +12064,10 @@
       "input": 1,
       "output": 5
     },
+    "cloudflare-ai-gateway/bedrock_mantle/deepseek.v3.1": {
+      "input": 0.58,
+      "output": 1.68
+    },
     "cloudflare-ai-gateway/bedrock_mantle/google.gemma-4-26b-a4b": {
       "input": 0.13,
       "output": 0.39999999999999997
@@ -11979,6 +12079,10 @@
     "cloudflare-ai-gateway/bedrock_mantle/google.gemma-4-e2b": {
       "input": 0.04,
       "output": 0.08
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/moonshotai.kimi-k2-thinking": {
+      "input": 0.6,
+      "output": 2.5
     },
     "cloudflare-ai-gateway/bedrock_mantle/openai.gpt-5.4": {
       "cacheRead": 0.275,
@@ -12053,6 +12157,30 @@
     "cloudflare-ai-gateway/bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.07,
       "output": 0.19999999999999998
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/qwen.qwen3-235b-a22b-2507": {
+      "input": 0.22,
+      "output": 0.88
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/qwen.qwen3-32b": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct": {
+      "input": 0.44999999999999996,
+      "output": 1.7999999999999998
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct": {
+      "input": 0.14,
+      "output": 1.2
+    },
+    "cloudflare-ai-gateway/bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct": {
+      "input": 0.53,
+      "output": 2.66
     },
     "cloudflare-ai-gateway/bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
       "cacheRead": 0.33,
@@ -12218,6 +12346,12 @@
     "cloudflare-ai-gateway/bedrock/anthropic.claude-instant-v1": {
       "input": 0.7999999999999999,
       "output": 2.4
+    },
+    "cloudflare-ai-gateway/bedrock/anthropic.claude-mythos-preview": {
+      "cacheRead": 2.75,
+      "cacheWrite": 34.375,
+      "input": 27.5,
+      "output": 137.5
     },
     "cloudflare-ai-gateway/bedrock/anthropic.claude-v1": {
       "input": 8,
@@ -13210,6 +13344,10 @@
       "cacheRead": 1,
       "input": 2.5,
       "output": 12.5
+    },
+    "cloudflare-ai-gateway/cohere_chat/c4ai-aya-expanse-32b": {
+      "input": 0.5,
+      "output": 1.5
     },
     "cloudflare-ai-gateway/cohere_chat/command-a-03-2025": {
       "input": 2.5,
@@ -15934,11 +16072,6 @@
       "input": 0.22,
       "output": 0.66
     },
-    "cloudflare-ai-gateway/fireworks-ai/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
-    },
     "cloudflare-ai-gateway/fireworks-ai/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
       "input": 2.1,
@@ -16103,11 +16236,6 @@
       "cacheRead": 0.007,
       "input": 0.22,
       "output": 0.66
-    },
-    "cloudflare-ai-gateway/fireworks/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
     },
     "cloudflare-ai-gateway/fireworks/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
@@ -19351,6 +19479,10 @@
       "input": 1.32,
       "output": 3.9600000000000004
     },
+    "cloudflare-ai-gateway/nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.3,
+      "output": 1.2
+    },
     "cloudflare-ai-gateway/nebius/google/gemma-3-27b-it": {
       "input": 0.09999999999999999,
       "output": 0.3
@@ -22286,7 +22418,7 @@
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "cloudflare-ai-gateway/openrouter/~google/gemini-flash-latest": {
@@ -22467,14 +22599,14 @@
       ]
     },
     "cloudflare-ai-gateway/openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "cloudflare-ai-gateway/openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.08814,
+      "input": 0.47459999999999997,
+      "output": 1.4916
     },
     "cloudflare-ai-gateway/openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -22984,7 +23116,7 @@
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -26039,9 +26171,9 @@
       "output": 4.4
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.012,
@@ -31286,6 +31418,10 @@
       "input": 2.5,
       "output": 12.5
     },
+    "cohere_chat/c4ai-aya-expanse-32b": {
+      "input": 0.5,
+      "output": 1.5
+    },
     "cohere_chat/command-a-03-2025": {
       "input": 2.5,
       "output": 10
@@ -34385,11 +34521,6 @@
       "cacheRead": 0.007,
       "input": 0.22,
       "output": 0.66
-    },
-    "fireworks-ai/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
     },
     "fireworks-ai/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
@@ -39792,9 +39923,21 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "kilocode/azure_ai/deepseek-r1": {
+      "input": 1.35,
+      "output": 5.4
+    },
     "kilocode/azure_ai/deepseek-v3": {
       "input": 1.1400000000000001,
       "output": 4.5600000000000005
+    },
+    "kilocode/azure_ai/deepseek-v3-0324": {
+      "input": 1.1400000000000001,
+      "output": 4.5600000000000005
+    },
+    "kilocode/azure_ai/deepseek-v3.1": {
+      "input": 1.23,
+      "output": 4.94
     },
     "kilocode/azure_ai/deepseek-v3.2": {
       "input": 0.58,
@@ -40010,6 +40153,14 @@
       "input": 0.15,
       "output": 0.6
     },
+    "kilocode/azure_ai/grok-3": {
+      "input": 3,
+      "output": 15
+    },
+    "kilocode/azure_ai/grok-3-mini": {
+      "input": 0.25,
+      "output": 1.27
+    },
     "kilocode/azure_ai/grok-4": {
       "input": 3,
       "output": 15
@@ -40031,6 +40182,14 @@
       "cacheRead": 1.25,
       "input": 1.25,
       "output": 2.5
+    },
+    "kilocode/azure_ai/grok-4-fast-non-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
+    },
+    "kilocode/azure_ai/grok-4-fast-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
     },
     "kilocode/azure_ai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -40421,10 +40580,10 @@
       "output": 33
     },
     "kilocode/azure/eu/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "kilocode/azure/eu/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -40896,10 +41055,10 @@
       "output": 180
     },
     "kilocode/azure/gpt-5.6": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "kilocode/azure/gpt-5.6-luna": {
       "cacheRead": 0.02,
@@ -41355,10 +41514,10 @@
       "output": 33
     },
     "kilocode/azure/us/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "kilocode/azure/us/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -42662,6 +42821,10 @@
       "input": 1,
       "output": 5
     },
+    "kilocode/bedrock_mantle/deepseek.v3.1": {
+      "input": 0.58,
+      "output": 1.68
+    },
     "kilocode/bedrock_mantle/google.gemma-4-26b-a4b": {
       "input": 0.13,
       "output": 0.39999999999999997
@@ -42673,6 +42836,10 @@
     "kilocode/bedrock_mantle/google.gemma-4-e2b": {
       "input": 0.04,
       "output": 0.08
+    },
+    "kilocode/bedrock_mantle/moonshotai.kimi-k2-thinking": {
+      "input": 0.6,
+      "output": 2.5
     },
     "kilocode/bedrock_mantle/openai.gpt-5.4": {
       "cacheRead": 0.275,
@@ -42747,6 +42914,30 @@
     "kilocode/bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.07,
       "output": 0.19999999999999998
+    },
+    "kilocode/bedrock_mantle/qwen.qwen3-235b-a22b-2507": {
+      "input": 0.22,
+      "output": 0.88
+    },
+    "kilocode/bedrock_mantle/qwen.qwen3-32b": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "kilocode/bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "kilocode/bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct": {
+      "input": 0.44999999999999996,
+      "output": 1.7999999999999998
+    },
+    "kilocode/bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct": {
+      "input": 0.14,
+      "output": 1.2
+    },
+    "kilocode/bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct": {
+      "input": 0.53,
+      "output": 2.66
     },
     "kilocode/bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
       "cacheRead": 0.33,
@@ -42912,6 +43103,12 @@
     "kilocode/bedrock/anthropic.claude-instant-v1": {
       "input": 0.7999999999999999,
       "output": 2.4
+    },
+    "kilocode/bedrock/anthropic.claude-mythos-preview": {
+      "cacheRead": 2.75,
+      "cacheWrite": 34.375,
+      "input": 27.5,
+      "output": 137.5
     },
     "kilocode/bedrock/anthropic.claude-v1": {
       "input": 8,
@@ -43913,6 +44110,10 @@
     "kilocode/cognitivecomputations/dolphin-mistral-24b-venice-edition": {
       "input": 0.2,
       "output": 0.9
+    },
+    "kilocode/cohere_chat/c4ai-aya-expanse-32b": {
+      "input": 0.5,
+      "output": 1.5
     },
     "kilocode/cohere_chat/command-a-03-2025": {
       "input": 2.5,
@@ -46607,11 +46808,6 @@
       "input": 0.22,
       "output": 0.66
     },
-    "kilocode/fireworks-ai/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
-    },
     "kilocode/fireworks-ai/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
       "input": 2.1,
@@ -46776,11 +46972,6 @@
       "cacheRead": 0.007,
       "input": 0.22,
       "output": 0.66
-    },
-    "kilocode/fireworks/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
     },
     "kilocode/fireworks/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
@@ -49908,6 +50099,10 @@
       "input": 1.32,
       "output": 3.9600000000000004
     },
+    "kilocode/nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.3,
+      "output": 1.2
+    },
     "kilocode/nebius/google/gemma-3-27b-it": {
       "input": 0.09999999999999999,
       "output": 0.3
@@ -52454,7 +52649,7 @@
     },
     "kilocode/openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "kilocode/openrouter/~google/gemini-flash-latest": {
@@ -52635,14 +52830,14 @@
       ]
     },
     "kilocode/openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "kilocode/openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.08814,
+      "input": 0.47459999999999997,
+      "output": 1.4916
     },
     "kilocode/openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -53152,7 +53347,7 @@
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -56207,9 +56402,9 @@
       "output": 4.4
     },
     "kilocode/openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "kilocode/openrouter/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.012,
@@ -61982,6 +62177,10 @@
       "input": 1.32,
       "output": 3.9600000000000004
     },
+    "nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.3,
+      "output": 1.2
+    },
     "nebius/google/gemma-3-27b-it": {
       "input": 0.09999999999999999,
       "output": 0.3
@@ -65349,7 +65548,7 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -65530,14 +65729,14 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.08814,
+      "input": 0.47459999999999997,
+      "output": 1.4916
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -65592,12 +65791,6 @@
     "openrouter/anthracite-org/magnum-v4-72b": {
       "input": 2.5,
       "output": 5
-    },
-    "openrouter/anthropic/claude-3-haiku": {
-      "cacheRead": 0.03,
-      "cacheWrite": 0.3,
-      "input": 0.25,
-      "output": 1.25
     },
     "openrouter/anthropic/claude-fable-5": {
       "cacheRead": 1,
@@ -66039,7 +66232,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -69020,9 +69213,9 @@
       "output": 4.4
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.012,
@@ -75383,9 +75576,21 @@
       "input": 0.09999999999999999,
       "output": 0
     },
+    "vercel-ai-gateway/azure_ai/deepseek-r1": {
+      "input": 1.35,
+      "output": 5.4
+    },
     "vercel-ai-gateway/azure_ai/deepseek-v3": {
       "input": 1.1400000000000001,
       "output": 4.5600000000000005
+    },
+    "vercel-ai-gateway/azure_ai/deepseek-v3-0324": {
+      "input": 1.1400000000000001,
+      "output": 4.5600000000000005
+    },
+    "vercel-ai-gateway/azure_ai/deepseek-v3.1": {
+      "input": 1.23,
+      "output": 4.94
     },
     "vercel-ai-gateway/azure_ai/deepseek-v3.2": {
       "input": 0.58,
@@ -75601,6 +75806,14 @@
       "input": 0.15,
       "output": 0.6
     },
+    "vercel-ai-gateway/azure_ai/grok-3": {
+      "input": 3,
+      "output": 15
+    },
+    "vercel-ai-gateway/azure_ai/grok-3-mini": {
+      "input": 0.25,
+      "output": 1.27
+    },
     "vercel-ai-gateway/azure_ai/grok-4": {
       "input": 3,
       "output": 15
@@ -75622,6 +75835,14 @@
       "cacheRead": 1.25,
       "input": 1.25,
       "output": 2.5
+    },
+    "vercel-ai-gateway/azure_ai/grok-4-fast-non-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
+    },
+    "vercel-ai-gateway/azure_ai/grok-4-fast-reasoning": {
+      "input": 0.19999999999999998,
+      "output": 0.5
     },
     "vercel-ai-gateway/azure_ai/grok-4.3": {
       "cacheRead": 0.19999999999999998,
@@ -76012,10 +76233,10 @@
       "output": 33
     },
     "vercel-ai-gateway/azure/eu/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "vercel-ai-gateway/azure/eu/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -76487,10 +76708,10 @@
       "output": 180
     },
     "vercel-ai-gateway/azure/gpt-5.6": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 30
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20
     },
     "vercel-ai-gateway/azure/gpt-5.6-luna": {
       "cacheRead": 0.02,
@@ -76946,10 +77167,10 @@
       "output": 33
     },
     "vercel-ai-gateway/azure/us/gpt-5.6": {
-      "cacheRead": 0.55,
-      "cacheWrite": 6.875,
-      "input": 5.5,
-      "output": 33
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22
     },
     "vercel-ai-gateway/azure/us/gpt-5.6-luna": {
       "cacheRead": 0.022,
@@ -78249,6 +78470,10 @@
       "input": 1,
       "output": 5
     },
+    "vercel-ai-gateway/bedrock_mantle/deepseek.v3.1": {
+      "input": 0.58,
+      "output": 1.68
+    },
     "vercel-ai-gateway/bedrock_mantle/google.gemma-4-26b-a4b": {
       "input": 0.13,
       "output": 0.39999999999999997
@@ -78260,6 +78485,10 @@
     "vercel-ai-gateway/bedrock_mantle/google.gemma-4-e2b": {
       "input": 0.04,
       "output": 0.08
+    },
+    "vercel-ai-gateway/bedrock_mantle/moonshotai.kimi-k2-thinking": {
+      "input": 0.6,
+      "output": 2.5
     },
     "vercel-ai-gateway/bedrock_mantle/openai.gpt-5.4": {
       "cacheRead": 0.275,
@@ -78334,6 +78563,30 @@
     "vercel-ai-gateway/bedrock_mantle/openai.gpt-oss-safeguard-20b": {
       "input": 0.07,
       "output": 0.19999999999999998
+    },
+    "vercel-ai-gateway/bedrock_mantle/qwen.qwen3-235b-a22b-2507": {
+      "input": 0.22,
+      "output": 0.88
+    },
+    "vercel-ai-gateway/bedrock_mantle/qwen.qwen3-32b": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "vercel-ai-gateway/bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "vercel-ai-gateway/bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct": {
+      "input": 0.44999999999999996,
+      "output": 1.7999999999999998
+    },
+    "vercel-ai-gateway/bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct": {
+      "input": 0.14,
+      "output": 1.2
+    },
+    "vercel-ai-gateway/bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct": {
+      "input": 0.53,
+      "output": 2.66
     },
     "vercel-ai-gateway/bedrock_mantle/us-gov-east-1/openai.gpt-5.4": {
       "cacheRead": 0.33,
@@ -78499,6 +78752,12 @@
     "vercel-ai-gateway/bedrock/anthropic.claude-instant-v1": {
       "input": 0.7999999999999999,
       "output": 2.4
+    },
+    "vercel-ai-gateway/bedrock/anthropic.claude-mythos-preview": {
+      "cacheRead": 2.75,
+      "cacheWrite": 34.375,
+      "input": 27.5,
+      "output": 137.5
     },
     "vercel-ai-gateway/bedrock/anthropic.claude-v1": {
       "input": 8,
@@ -79548,6 +79807,10 @@
       "cacheRead": 1,
       "input": 2.5,
       "output": 12.5
+    },
+    "vercel-ai-gateway/cohere_chat/c4ai-aya-expanse-32b": {
+      "input": 0.5,
+      "output": 1.5
     },
     "vercel-ai-gateway/cohere_chat/command-a-03-2025": {
       "input": 2.5,
@@ -82303,11 +82566,6 @@
       "input": 0.22,
       "output": 0.66
     },
-    "vercel-ai-gateway/fireworks-ai/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
-    },
     "vercel-ai-gateway/fireworks-ai/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
       "input": 2.1,
@@ -82472,11 +82730,6 @@
       "cacheRead": 0.007,
       "input": 0.22,
       "output": 0.66
-    },
-    "vercel-ai-gateway/fireworks/accounts/fireworks/routers/deepseek-pro-latest": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.96
     },
     "vercel-ai-gateway/fireworks/accounts/fireworks/routers/glm-5p2-fast": {
       "cacheRead": 0.21,
@@ -85888,6 +86141,10 @@
       "input": 1.32,
       "output": 3.9600000000000004
     },
+    "vercel-ai-gateway/nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.3,
+      "output": 1.2
+    },
     "vercel-ai-gateway/nebius/google/gemma-3-27b-it": {
       "input": 0.09999999999999999,
       "output": 0.3
@@ -89129,7 +89386,7 @@
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "vercel-ai-gateway/openrouter/~google/gemini-flash-latest": {
@@ -89310,14 +89567,14 @@
       ]
     },
     "vercel-ai-gateway/openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "vercel-ai-gateway/openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.10374,
-      "input": 0.5586,
-      "output": 1.7556
+      "cacheRead": 0.08814,
+      "input": 0.47459999999999997,
+      "output": 1.4916
     },
     "vercel-ai-gateway/openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -89827,7 +90084,7 @@
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
-      "input": 0.022,
+      "input": 0.020999999999999998,
       "output": 0.32
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -92882,9 +93139,9 @@
       "output": 4.4
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.01,
-      "input": 0.045,
-      "output": 0.14
+      "cacheRead": 0.015,
+      "input": 0.04,
+      "output": 0.5
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3-flash:batch": {
       "cacheRead": 0.012,
@@ -103320,22 +103577,6 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1000000,
-          "cost": {
-            "cacheRead": 0.044,
-            "cacheWrite": 0,
-            "input": 1.32,
-            "output": 3.96
-          },
-          "id": "accounts/fireworks/routers/deepseek-pro-latest",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 384000,
-          "name": "DeepSeek Pro Latest",
-          "reasoning": true
-        },
-        {
           "contextWindow": 256000,
           "cost": {
             "cacheRead": 0.21,
@@ -105017,7 +105258,7 @@
           "cost": {
             "cacheRead": 0.016,
             "cacheWrite": 0,
-            "input": 0.022,
+            "input": 0.021,
             "output": 0.32
           },
           "id": "~deepseek/deepseek-v4-flash-latest",
@@ -105192,27 +105433,27 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.01,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.045,
-            "output": 0.14
+            "input": 0.04,
+            "output": 0.5
           },
           "id": "~z-ai/glm-flash-latest",
           "input": [
             "text",
             "image"
           ],
-          "maxTokens": 128000,
+          "maxTokens": 131072,
           "name": "Z.ai: GLM Flash Latest",
           "reasoning": true
         },
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.10374,
+            "cacheRead": 0.08814,
             "cacheWrite": 0,
-            "input": 0.5586,
-            "output": 1.7556
+            "input": 0.4746,
+            "output": 1.4916
           },
           "id": "~z-ai/glm-latest",
           "input": [
@@ -105385,24 +105626,6 @@
           ],
           "maxTokens": 5120,
           "name": "Amazon: Nova Pro 1.0",
-          "reasoning": false
-        },
-        {
-          "contextWindow": 200000,
-          "cost": {
-            "cacheRead": 0.03,
-            "cacheWrite": 0.3,
-            "input": 0.25,
-            "output": 1.25
-          },
-          "id": "anthropic/claude-3-haiku",
-          "input": [
-            "text",
-            "image",
-            "document"
-          ],
-          "maxTokens": 4096,
-          "name": "Anthropic: Claude 3 Haiku",
           "reasoning": false
         },
         {
@@ -110336,7 +110559,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 128000,
+          "maxTokens": 131072,
           "name": "GLM-5.3-Flash",
           "reasoning": true
         },
@@ -120595,5 +120818,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "0e926158bee25d12953777ab09c16c27beae7998"
+  "sourceCommit": "b458b9f1c6bc60389c7f88161262e5d39e23dcce"
 }
