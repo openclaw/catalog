@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790440313759,
+  "generatedAt": 1790454586344,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6122,8 +6122,8 @@
         "cacheRead": 0.3,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.0301,
-        "output": 9.043,
+        "input": 1,
+        "output": 9,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7356,12 +7356,12 @@
     {
       "id": "deepseek/deepseek-v4.1-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1040000,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 384000,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -11311,7 +11311,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 65536,
+      "maxTokens": 235929,
       "name": "Qwen3.5 122B-A10B",
       "pricing": {
         "cacheRead": 0,
@@ -27922,8 +27922,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 1.0301,
-      "output": 9.043,
+      "input": 1,
+      "output": 9,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -28664,9 +28664,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -35515,7 +35515,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "810d015512176055e157105f27c6c7243973208a",
+  "sourceCommit": "15990e691f4c20f9fb33b942de96cd65af4930da",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -56237,8 +56237,8 @@
         }
       ],
       "cacheRead": 0.3,
-      "input": 1.0301,
-      "output": 9.043,
+      "input": 1,
+      "output": 9,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -57622,9 +57622,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -65564,6 +65564,78 @@
     "replicate/xai/grok-4": {
       "input": 7.199999999999999,
       "output": 36,
+      "source": "liteLLM"
+    },
+    "sail/deepseek-ai/DeepSeek-V4-Flash-0731": {
+      "cacheRead": 0.02,
+      "input": 0.09,
+      "output": 0.18,
+      "source": "liteLLM"
+    },
+    "sail/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "cacheRead": 0.04,
+      "input": 0.9199999999999999,
+      "output": 2.77,
+      "source": "liteLLM"
+    },
+    "sail/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "cacheRead": 0.006,
+      "input": 0.15,
+      "output": 0.6,
+      "source": "liteLLM"
+    },
+    "sail/google/gemma-4-12B-it": {
+      "cacheRead": 0.15,
+      "input": 0.3,
+      "output": 2,
+      "source": "liteLLM"
+    },
+    "sail/google/gemma-4-31B-it": {
+      "cacheRead": 0.19999999999999998,
+      "input": 0.39999999999999997,
+      "output": 0.6,
+      "source": "liteLLM"
+    },
+    "sail/moonshotai/Kimi-K2.6": {
+      "cacheRead": 0.19999999999999998,
+      "input": 1,
+      "output": 4,
+      "source": "liteLLM"
+    },
+    "sail/moonshotai/Kimi-K3": {
+      "cacheRead": 0.25,
+      "input": 2.5,
+      "output": 12.5,
+      "source": "liteLLM"
+    },
+    "sail/nvidia/Gemma-4-31B-IT-NVFP4": {
+      "cacheRead": 0.07,
+      "input": 0.14,
+      "output": 0.39999999999999997,
+      "source": "liteLLM"
+    },
+    "sail/openai/gpt-oss-120b": {
+      "cacheRead": 0.03,
+      "input": 0.06,
+      "output": 0.39999999999999997,
+      "source": "liteLLM"
+    },
+    "sail/Qwen/Qwen3.6-35B-A3B": {
+      "cacheRead": 0.02,
+      "input": 0.049999999999999996,
+      "output": 0.39999999999999997,
+      "source": "liteLLM"
+    },
+    "sail/zai-org/GLM-5.3": {
+      "cacheRead": 0.18,
+      "input": 0.98,
+      "output": 3.08,
+      "source": "liteLLM"
+    },
+    "sail/zai-org/GLM-5.3-Flash": {
+      "cacheRead": 0.02,
+      "input": 0.11,
+      "output": 0.35,
       "source": "liteLLM"
     },
     "sambanova/DeepSeek-R1": {
