@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790454586344,
+  "generatedAt": 1790471582594,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6030,11 +6030,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.007938,
+        "cacheRead": 0.007812,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.24948,
-        "output": 0.74844,
+        "input": 0.24552,
+        "output": 0.73656,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6297,14 +6297,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.07046,
+        "cacheRead": 0.0391,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3794,
-        "output": 1.1924,
+        "input": 0.238,
+        "output": 0.748,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7335,11 +7335,11 @@
     {
       "id": "deepseek/deepseek-v4-pro-0813",
       "provider": "kilocode",
-      "contextWindow": 1024000,
+      "contextWindow": 1048576,
       "input": [
         "text"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 943718,
       "name": "DeepSeek V4 Pro 0813",
       "pricing": {
         "cacheRead": 0.044,
@@ -8428,11 +8428,11 @@
     {
       "id": "minimax/minimax-m2",
       "provider": "kilocode",
-      "contextWindow": 196608,
+      "contextWindow": 204800,
       "input": [
         "text"
       ],
-      "maxTokens": 176947,
+      "maxTokens": 131072,
       "name": "MiniMax-M2",
       "pricing": {
         "cacheRead": 0,
@@ -8491,11 +8491,11 @@
     {
       "id": "minimax/minimax-m2.7",
       "provider": "kilocode",
-      "contextWindow": 204800,
+      "contextWindow": 196608,
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 176947,
       "name": "MiniMax-M2.7",
       "pricing": {
         "cacheRead": 0.06,
@@ -10858,11 +10858,11 @@
     {
       "id": "qwen/qwen3-30b-a3b",
       "provider": "kilocode",
-      "contextWindow": 40960,
+      "contextWindow": 131072,
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 8192,
       "name": "Qwen3 30B A3B",
       "pricing": {
         "cacheRead": 0,
@@ -12151,11 +12151,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.020625,
+        "cacheRead": 0.033,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0825,
-        "output": 0.33,
+        "input": 0.13,
+        "output": 0.53,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12877,7 +12877,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "GLM-5.3",
       "pricing": {
         "cacheRead": 0.26,
@@ -27874,9 +27874,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.007937999999999999,
-      "input": 0.24947999999999998,
-      "output": 0.7484400000000001,
+      "cacheRead": 0.007812,
+      "input": 0.24552,
+      "output": 0.73656,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -28078,9 +28078,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.07046,
-      "input": 0.3794,
-      "output": 1.1924,
+      "cacheRead": 0.0391,
+      "input": 0.238,
+      "output": 0.748,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -28658,9 +28658,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.008799999999999999,
-      "input": 0.26399999999999996,
-      "output": 0.792,
+      "cacheRead": 0.24583999999999998,
+      "input": 0.24634000000000003,
+      "output": 3.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
@@ -29214,8 +29214,8 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.255,
+      "output": 1.02,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2-her": {
@@ -29237,9 +29237,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2.7": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.21,
+      "output": 0.84,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3": {
@@ -30908,8 +30908,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b": {
-      "input": 0.12,
-      "output": 0.5,
+      "input": 0.13,
+      "output": 0.52,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
@@ -31567,9 +31567,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -31959,9 +31959,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.07046,
-      "input": 0.3794,
-      "output": 1.1924,
+      "cacheRead": 0.0391,
+      "input": 0.238,
+      "output": 0.748,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -35515,7 +35515,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "15990e691f4c20f9fb33b942de96cd65af4930da",
+  "sourceCommit": "768b28c060fa4627e8f80e203b77893c13ed5180",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -39572,8 +39572,8 @@
     },
     "azure/gpt-4o-mini": {
       "cacheRead": 0.075,
-      "input": 0.165,
-      "output": 0.66,
+      "input": 0.15,
+      "output": 0.6,
       "source": "liteLLM"
     },
     "azure/gpt-4o-mini-2024-07-18": {
@@ -39599,7 +39599,7 @@
       "source": "liteLLM"
     },
     "azure/gpt-4o-mini-tts": {
-      "input": 2.5,
+      "input": 0.6,
       "output": 10,
       "source": "liteLLM"
     },
@@ -56155,9 +56155,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.007937999999999999,
-      "input": 0.24947999999999998,
-      "output": 0.7484400000000001,
+      "cacheRead": 0.007812,
+      "input": 0.24552,
+      "output": 0.73656,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -56461,9 +56461,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.07046,
-      "input": 0.3794,
-      "output": 1.1924,
+      "cacheRead": 0.0391,
+      "input": 0.238,
+      "output": 0.748,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -57561,7 +57561,7 @@
       "alternatives": [
         {
           "cacheRead": 0.016,
-          "input": 0.022,
+          "input": 0.020999999999999998,
           "output": 0.32,
           "source": "liteLLM"
         }
@@ -57588,9 +57588,9 @@
     "openrouter/deepseek/deepseek-v4-pro": {
       "alternatives": [
         {
-          "cacheRead": 0.03828,
-          "input": 0.45936,
-          "output": 0.91872,
+          "cacheRead": 0.029,
+          "input": 0.348,
+          "output": 0.696,
           "source": "liteLLM"
         }
       ],
@@ -57602,23 +57602,23 @@
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "alternatives": [
         {
-          "cacheRead": 0.008799999999999999,
-          "input": 0.26399999999999996,
-          "output": 0.792,
+          "cacheRead": 0.24750000000000003,
+          "input": 0.24760000000000001,
+          "output": 3.5,
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.008799999999999999,
-      "input": 0.26399999999999996,
-      "output": 0.792,
+      "cacheRead": 0.24583999999999998,
+      "input": 0.24634000000000003,
+      "output": 3.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "alternatives": [
         {
-          "cacheRead": 0.004200000000000001,
-          "input": 0.14,
-          "output": 0.42,
+          "cacheRead": 0.001,
+          "input": 0.035,
+          "output": 0.29,
           "source": "liteLLM"
         }
       ],
@@ -58750,13 +58750,13 @@
     "openrouter/minimax/minimax-m2": {
       "alternatives": [
         {
-          "input": 0.3,
-          "output": 1.2,
+          "input": 0.255,
+          "output": 1.02,
           "source": "liteLLM"
         }
       ],
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.255,
+      "output": 1.02,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2-her": {
@@ -58804,15 +58804,15 @@
     "openrouter/minimax/minimax-m2.7": {
       "alternatives": [
         {
-          "cacheRead": 0.06,
-          "input": 0.3,
-          "output": 1.2,
+          "cacheRead": 0.041999999999999996,
+          "input": 0.21,
+          "output": 0.84,
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.21,
+      "output": 0.84,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3": {
@@ -61314,7 +61314,6 @@
     "openrouter/openai/gpt-oss-20b": {
       "alternatives": [
         {
-          "cacheRead": 0.03,
           "input": 0.018,
           "output": 0.09,
           "source": "liteLLM"
@@ -61804,13 +61803,13 @@
     "openrouter/qwen/qwen3-30b-a3b": {
       "alternatives": [
         {
-          "input": 0.12,
-          "output": 0.5,
+          "input": 0.13,
+          "output": 0.52,
           "source": "liteLLM"
         }
       ],
-      "input": 0.12,
-      "output": 0.5,
+      "input": 0.13,
+      "output": 0.52,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
@@ -62938,9 +62937,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -63646,23 +63645,23 @@
     "openrouter/z-ai/glm-5.3": {
       "alternatives": [
         {
-          "cacheRead": 0.26,
-          "input": 1.4,
-          "output": 4.4,
+          "cacheRead": 0.0391,
+          "input": 0.238,
+          "output": 0.748,
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.07046,
-      "input": 0.3794,
-      "output": 1.1924,
+      "cacheRead": 0.0391,
+      "input": 0.238,
+      "output": 0.748,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "alternatives": [
         {
-          "cacheRead": 0.01,
-          "input": 0.045,
-          "output": 0.14,
+          "cacheRead": 0.015,
+          "input": 0.04,
+          "output": 0.5,
           "source": "liteLLM"
         }
       ],
@@ -66265,6 +66264,11 @@
       "output": 0.88,
       "source": "liteLLM"
     },
+    "together_ai/meta-llama/Meta-Llama-3.1-8B": {
+      "input": 0.19999999999999998,
+      "output": 0.19999999999999998,
+      "source": "liteLLM"
+    },
     "together_ai/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
       "input": 0.18,
       "output": 0.18,
@@ -66488,6 +66492,11 @@
     "together_ai/Qwen/QwQ-32B": {
       "input": 1.2,
       "output": 1.2,
+      "source": "liteLLM"
+    },
+    "together_ai/Salesforce/Llama-Rank-V1": {
+      "input": 0.09999999999999999,
+      "output": 0,
       "source": "liteLLM"
     },
     "together_ai/thinkingmachines/Inkling": {
