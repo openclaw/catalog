@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790512811745,
+  "generatedAt": 1790526737947,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6300,10 +6300,10 @@
       "maxTokens": 235929,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.044965,
+        "cacheRead": 0.05951,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2737,
+        "input": 0.3032,
         "output": 2.574,
         "source": "modelsDev",
         "status": "known",
@@ -7082,18 +7082,18 @@
     {
       "id": "deepseek/deepseek-chat",
       "provider": "kilocode",
-      "contextWindow": 163840,
+      "contextWindow": 128000,
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 16000,
       "name": "DeepSeek Chat",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.32,
-        "output": 0.89,
+        "input": 0.2574,
+        "output": 1.0287,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12151,11 +12151,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.53,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -28078,8 +28078,8 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.044965,
-      "input": 0.2737,
+      "cacheRead": 0.0595102,
+      "input": 0.3032,
       "output": 2.574,
       "source": "openRouter"
     },
@@ -28585,8 +28585,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat": {
-      "input": 0.32,
-      "output": 0.8899999999999999,
+      "input": 0.2574,
+      "output": 1.0287,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat-v3-0324": {
@@ -31567,9 +31567,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -35515,7 +35515,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "56760137fc7fa3b86c96f2ed5a7efc5649ea2d5b",
+  "sourceCommit": "98b86f7f6366987bb13b7f4650e61bee1c678330",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -38810,7 +38810,7 @@
     },
     "azure_ai/grok-4.6": {
       "cacheRead": 0.5,
-      "input": 2,
+      "input": 1.25,
       "output": 6,
       "source": "liteLLM"
     },
@@ -38860,6 +38860,12 @@
     "azure_ai/Llama-4-Scout-17B-16E-Instruct": {
       "input": 0.19999999999999998,
       "output": 0.78,
+      "source": "liteLLM"
+    },
+    "azure_ai/MAI-Cyber-1-Flash": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 3.5,
       "source": "liteLLM"
     },
     "azure_ai/MAI-DS-R1": {
@@ -56461,8 +56467,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.044965,
-      "input": 0.2737,
+      "cacheRead": 0.0595102,
+      "input": 0.3032,
       "output": 2.574,
       "source": "openRouter"
     },
@@ -57433,8 +57439,8 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.32,
-      "output": 0.8899999999999999,
+      "input": 0.2574,
+      "output": 1.0287,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat-v3-0324": {
@@ -62937,9 +62943,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
