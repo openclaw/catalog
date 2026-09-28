@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790557967576,
+  "generatedAt": 1790570460713,
   "models": [
     {
       "id": "claude-fable-5",
@@ -3325,6 +3325,27 @@
       "reasoning": true
     },
     {
+      "id": "tencent/Hy4-preview",
+      "provider": "deepinfra",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 64000,
+      "name": "Hy4 preview",
+      "pricing": {
+        "cacheRead": 0.04199999814,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.834,
+        "output": 2.501,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "thinkingmachines/Inkling",
       "provider": "deepinfra",
       "contextWindow": 524288,
@@ -6001,19 +6022,19 @@
     {
       "id": "~deepseek/deepseek-flash-latest",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1040000,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 384000,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.02678,
+        "cacheRead": 0.001,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.02975,
-        "output": 0.6,
+        "input": 0.035,
+        "output": 0.29,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6122,7 +6143,7 @@
         "cacheRead": 0.3,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1,
+        "input": 0.97,
         "output": 9,
         "source": "modelsDev",
         "status": "known",
@@ -6293,18 +6314,18 @@
     {
       "id": "~z-ai/glm-latest",
       "provider": "kilocode",
-      "contextWindow": 262144,
+      "contextWindow": 1048576,
       "input": [
         "text"
       ],
-      "maxTokens": 235929,
+      "maxTokens": 943718,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.06604,
+        "cacheRead": 0.146625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3556,
-        "output": 2.574,
+        "input": 0.4522,
+        "output": 2.805,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7356,12 +7377,12 @@
     {
       "id": "deepseek/deepseek-v4.1-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1040000,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 384000,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -8428,11 +8449,11 @@
     {
       "id": "minimax/minimax-m2",
       "provider": "kilocode",
-      "contextWindow": 204800,
+      "contextWindow": 196608,
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 176947,
       "name": "MiniMax-M2",
       "pricing": {
         "cacheRead": 0,
@@ -9026,11 +9047,11 @@
       "maxTokens": 235929,
       "name": "Kimi K2.6",
       "pricing": {
-        "cacheRead": 0.16,
+        "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.95,
-        "output": 4,
+        "input": 0.65,
+        "output": 3.41,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10774,12 +10795,12 @@
     {
       "id": "qwen/qwen3-14b",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 40960,
       "input": [
         "text"
       ],
-      "maxTokens": 8192,
-      "name": "Qwen: Qwen3 14B (retires Oct 9)",
+      "maxTokens": 16384,
+      "name": "Qwen: Qwen3 14B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -10858,11 +10879,11 @@
     {
       "id": "qwen/qwen3-30b-a3b",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 40960,
       "input": [
         "text"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 16384,
       "name": "Qwen3 30B A3B",
       "pricing": {
         "cacheRead": 0,
@@ -15589,69 +15610,6 @@
       "reasoning": true
     },
     {
-      "id": "abacusai/dracarys-llama-3.1-70b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "dracarys-llama-3.1-70b-instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "bytedance/seed-oss-36b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 262000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 262000,
-      "name": "ByteDance-Seed/Seed-OSS-36B-Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "deepseek-ai/deepseek-v4-flash",
-      "provider": "nvidia",
-      "contextWindow": 1048576,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 393216,
-      "name": "DeepSeek V4 Flash",
-      "pricing": {
-        "cacheRead": 0.0028,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.14,
-        "output": 0.28,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "deepseek-ai/deepseek-v4-flash-0731",
-      "provider": "nvidia",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 384000,
-      "name": "DeepSeek V4 Flash 0731",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "deepseek-ai/deepseek-v4-pro",
       "provider": "nvidia",
       "compat": {
@@ -15675,34 +15633,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "deepseek-ai/deepseek-v4-pro-0813",
-      "provider": "nvidia",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 384000,
-      "name": "DeepSeek V4 Pro 0813",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "google/gemma-2-2b-it",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 4096,
-      "name": "Gemma 2 2b It",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
     },
     {
       "id": "google/gemma-3-12b-it",
@@ -15735,36 +15665,6 @@
       "reasoning": false
     },
     {
-      "id": "google/gemma-3n-e2b-it",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 4096,
-      "name": "Gemma 3n E2b It",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "google/gemma-3n-e4b-it",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 4096,
-      "name": "Gemma 3n E4b It",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
       "id": "google/gemma-4-31b-it",
       "provider": "nvidia",
       "contextWindow": 256000,
@@ -15780,34 +15680,6 @@
       "reasoning": true
     },
     {
-      "id": "meta/llama-3.1-70b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 4096,
-      "name": "Llama 3.1 70b Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "meta/llama-3.1-8b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 16000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 4096,
-      "name": "Llama 3.1 8B Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
       "id": "meta/llama-3.2-11b-vision-instruct",
       "provider": "nvidia",
       "contextWindow": 128000,
@@ -15817,20 +15689,6 @@
       ],
       "maxTokens": 4096,
       "name": "Llama 3.2 11b Vision Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "meta/llama-3.2-1b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 4096,
-      "name": "Llama 3.2 1b Instruct",
       "pricing": {
         "status": "unknown"
       },
@@ -15852,35 +15710,6 @@
       "reasoning": false
     },
     {
-      "id": "meta/llama-3.3-70b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 4096,
-      "name": "Llama 3.3 70b Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "meta/llama-4-maverick-17b-128e-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 4096,
-      "name": "Llama 4 Maverick 17b 128e Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
       "id": "meta/muse-glimmer-30b",
       "provider": "nvidia",
       "contextWindow": 131072,
@@ -15894,20 +15723,6 @@
         "status": "unknown"
       },
       "reasoning": true
-    },
-    {
-      "id": "microsoft/phi-4-mini-instruct",
-      "provider": "nvidia",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "Phi-4-Mini",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
     },
     {
       "id": "minimaxai/minimax-m2.7",
@@ -15948,21 +15763,6 @@
       "reasoning": true
     },
     {
-      "id": "mistralai/ministral-14b-instruct-2512",
-      "provider": "nvidia",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "Ministral 3 14B Instruct 2512",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
       "id": "mistralai/mistral-7b-instruct-v0.3",
       "provider": "nvidia",
       "contextWindow": 65536,
@@ -15977,36 +15777,6 @@
       "reasoning": false
     },
     {
-      "id": "mistralai/mistral-large-3-675b-instruct-2512",
-      "provider": "nvidia",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "Mistral Large 3 675B Instruct 2512",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "mistralai/mistral-medium-3.5-128b",
-      "provider": "nvidia",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Mistral Medium 3.5",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "mistralai/mistral-nemotron",
       "provider": "nvidia",
       "contextWindow": 128000,
@@ -16019,21 +15789,6 @@
         "status": "unknown"
       },
       "reasoning": false
-    },
-    {
-      "id": "mistralai/mistral-small-4-119b-2603",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 8192,
-      "name": "mistral-small-4-119b-2603",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
@@ -16147,35 +15902,6 @@
       "reasoning": false
     },
     {
-      "id": "nvidia/llama-3.1-nemotron-nano-8b-v1",
-      "provider": "nvidia",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16384,
-      "name": "Llama 3.1 Nemotron Nano 8B v1",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
-      "provider": "nvidia",
-      "contextWindow": 32768,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "Llama 3.1 Nemotron Nano VL 8B v1",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
       "provider": "nvidia",
       "contextWindow": 128000,
@@ -16184,48 +15910,6 @@
       ],
       "maxTokens": 16384,
       "name": "Llama 3.1 Nemotron Ultra 253B",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
-      "provider": "nvidia",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Llama 3.3 Nemotron Super 49B v1",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-      "provider": "nvidia",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Llama 3.3 Nemotron Super 49B v1.5",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "nvidia/nemotron-3-nano-30b-a3b",
-      "provider": "nvidia",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131072,
-      "name": "nemotron-3-nano-30b-a3b",
       "pricing": {
         "status": "unknown"
       },
@@ -16312,35 +15996,6 @@
       "reasoning": true
     },
     {
-      "id": "nvidia/nemotron-mini-4b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "nemotron-mini-4b-instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "nvidia/nemotron-nano-12b-v2-vl",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "name": "Nemotron Nano 12B v2 VL",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "nvidia/nemotron-voicechat",
       "provider": "nvidia",
       "contextWindow": 128000,
@@ -16353,34 +16008,6 @@
         "status": "unknown"
       },
       "reasoning": false
-    },
-    {
-      "id": "nvidia/nvidia-nemotron-nano-9b-v2",
-      "provider": "nvidia",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131072,
-      "name": "nvidia-nemotron-nano-9b-v2",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "openai/gpt-oss-120b",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "GPT-OSS-120B",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
     },
     {
       "id": "openai/gpt-oss-20b",
@@ -16411,63 +16038,6 @@
       "reasoning": true
     },
     {
-      "id": "qwen/qwen2.5-coder-32b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 4096,
-      "name": "Qwen2.5 Coder 32b Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3-coder-480b-a35b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 66536,
-      "name": "Qwen3 Coder 480B A35B Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3-next-80b-a3b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16384,
-      "name": "Qwen3-Next-80B-A3B-Instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3.5-122b-a10b",
-      "provider": "nvidia",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3.5 122B-A10B",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "qwen/qwen3.5-397b-a17b",
       "provider": "nvidia",
       "compat": {
@@ -16486,78 +16056,6 @@
       "reasoning": true,
       "status": "deprecated",
       "statusReason": "NVIDIA retired this model and no longer lists it in its model catalog."
-    },
-    {
-      "id": "sarvamai/sarvam-m",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "sarvam-m",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "stepfun-ai/step-3.5-flash",
-      "provider": "nvidia",
-      "contextWindow": 256000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16384,
-      "name": "Step 3.5 Flash",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "stepfun-ai/step-3.7-flash",
-      "provider": "nvidia",
-      "contextWindow": 256000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "Step 3.7 Flash",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "thinkingmachines/inkling",
-      "provider": "nvidia",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "Inkling",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "upstage/solar-10.7b-instruct",
-      "provider": "nvidia",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "solar-10.7b-instruct",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
     },
     {
       "id": "z-ai/glm-5.1",
@@ -18152,6 +17650,72 @@
       }
     },
     {
+      "id": "gpt-daybreak-blue-latest",
+      "provider": "openai",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Daybreak Blue",
+      "pricing": {
+        "cacheRead": 0.4,
+        "cacheWrite": 5,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.4,
+            "cacheWrite": 5,
+            "input": 4,
+            "output": 20,
+            "range": [
+              0,
+              272000
+            ]
+          },
+          {
+            "cacheRead": 0.8,
+            "cacheWrite": 10,
+            "input": 8,
+            "output": 30,
+            "range": [
+              272000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "gpt-daybreak-red-latest",
+      "provider": "openai",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 128000,
+      "name": "Daybreak Red",
+      "pricing": {
+        "cacheRead": 1.25,
+        "cacheWrite": 15.625,
+        "currency": "USD",
+        "input": 12.5,
+        "output": 75,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "gpt-realtime-2.1",
       "provider": "openai",
       "contextWindow": 128000,
@@ -19048,7 +18612,6 @@
         "image"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3.6 Flash",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0.234375,
@@ -19112,7 +18675,6 @@
         "text"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3.7 Max",
       "pricing": {
         "cacheRead": 0.5,
         "cacheWrite": 3.125,
@@ -19136,29 +18698,29 @@
       "maxTokens": 65536,
       "name": "Qwen3.7 Plus",
       "pricing": {
-        "cacheRead": 0.05,
-        "cacheWrite": 0.625,
+        "cacheRead": 0.04,
+        "cacheWrite": 0.5,
         "currency": "USD",
-        "input": 0.5,
-        "output": 3,
+        "input": 0.4,
+        "output": 1.6,
         "source": "modelsDev",
         "status": "known",
         "tieredPricing": [
           {
-            "cacheRead": 0.05,
-            "cacheWrite": 0.625,
-            "input": 0.5,
-            "output": 3,
+            "cacheRead": 0.04,
+            "cacheWrite": 0.5,
+            "input": 0.4,
+            "output": 1.6,
             "range": [
               0,
               256000
             ]
           },
           {
-            "cacheRead": 0.2,
-            "cacheWrite": 2.5,
-            "input": 2,
-            "output": 6,
+            "cacheRead": 0.12,
+            "cacheWrite": 1.5,
+            "input": 1.2,
+            "output": 4.8,
             "range": [
               256000
             ]
@@ -19574,29 +19136,29 @@
       "maxTokens": 65536,
       "name": "qwen3.7-plus",
       "pricing": {
-        "cacheRead": 0.05,
-        "cacheWrite": 0.625,
+        "cacheRead": 0.04,
+        "cacheWrite": 0.5,
         "currency": "USD",
-        "input": 0.5,
-        "output": 3,
+        "input": 0.4,
+        "output": 1.6,
         "source": "modelsDev",
         "status": "known",
         "tieredPricing": [
           {
-            "cacheRead": 0.05,
-            "cacheWrite": 0.625,
-            "input": 0.5,
-            "output": 3,
+            "cacheRead": 0.04,
+            "cacheWrite": 0.5,
+            "input": 0.4,
+            "output": 1.6,
             "range": [
               0,
               256000
             ]
           },
           {
-            "cacheRead": 0.2,
-            "cacheWrite": 2.5,
-            "input": 2,
-            "output": 6,
+            "cacheRead": 0.12,
+            "cacheWrite": 1.5,
+            "input": 1.2,
+            "output": 4.8,
             "range": [
               256000
             ]
@@ -26093,12 +25655,6 @@
       "output": 0.8500000000000001,
       "source": "deepinfra"
     },
-    "deepinfra/tencent/Hy4-preview": {
-      "cacheRead": 0.04199999814,
-      "input": 0.834,
-      "output": 2.501,
-      "source": "deepinfra"
-    },
     "deepinfra/zai-org/GLM-4.5": {
       "input": 0.38,
       "output": 1.6,
@@ -27868,9 +27424,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.026779999999999998,
-      "input": 0.02975,
-      "output": 0.6,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -28078,9 +27634,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.06604,
-      "input": 0.35559999999999997,
-      "output": 2.574,
+      "cacheRead": 0.067,
+      "input": 0.37,
+      "output": 1.1400000000000001,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -28653,9 +28209,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -28665,9 +28221,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.026779999999999998,
-      "input": 0.02975,
-      "output": 0.6,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -29215,8 +28771,8 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2": {
-      "input": 0.255,
-      "output": 1.02,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2-her": {
@@ -29416,9 +28972,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4,
+      "cacheRead": 0.15,
+      "input": 0.65,
+      "output": 3.41,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
@@ -30888,8 +30444,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-14b": {
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999,
+      "input": 0.12,
+      "output": 0.24,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b": {
@@ -30909,8 +30465,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b": {
-      "input": 0.13,
-      "output": 0.52,
+      "input": 0.12,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
@@ -31959,9 +31515,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.26,
-      "input": 1.4,
-      "output": 4.4,
+      "cacheRead": 0.067,
+      "input": 0.37,
+      "output": 1.1400000000000001,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -32278,6 +31834,13 @@
       "output": 3.6,
       "source": "modelsDev"
     },
+    "qwen-token-plan/qwen3.5-flash": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.1,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
     "qwen-token-plan/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
@@ -32298,6 +31861,50 @@
       "cacheWrite": 1.625,
       "input": 1.3,
       "output": 7.8,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/qwen3.7-flash": {
+      "cacheRead": 0.003,
+      "cacheWrite": 0.0375,
+      "input": 0.03,
+      "output": 0.13,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.003,
+          "cacheWrite": 0.0375,
+          "input": 0.03,
+          "output": 0.13,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "input": 0.1,
+          "output": 0.4,
+          "range": [
+            32000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.02,
+          "cacheWrite": 0.25,
+          "input": 0.2,
+          "output": 0.8,
+          "range": [
+            256000
+          ]
+        }
+      ]
+    },
+    "qwen-token-plan/qwen3.8-omni-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwq-plus": {
@@ -32590,6 +32197,13 @@
       "output": 3.6,
       "source": "modelsDev"
     },
+    "qwen/qwen3.5-flash": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.1,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
     "qwen/qwen3.6-27b": {
       "input": 0.6,
       "output": 3.6,
@@ -32605,6 +32219,50 @@
       "cacheWrite": 1.625,
       "input": 1.3,
       "output": 7.8,
+      "source": "modelsDev"
+    },
+    "qwen/qwen3.7-flash": {
+      "cacheRead": 0.003,
+      "cacheWrite": 0.0375,
+      "input": 0.03,
+      "output": 0.13,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.003,
+          "cacheWrite": 0.0375,
+          "input": 0.03,
+          "output": 0.13,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "input": 0.1,
+          "output": 0.4,
+          "range": [
+            32000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.02,
+          "cacheWrite": 0.25,
+          "input": 0.2,
+          "output": 0.8,
+          "range": [
+            256000
+          ]
+        }
+      ]
+    },
+    "qwen/qwen3.8-omni-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
       "source": "modelsDev"
     },
     "qwen/qwq-plus": {
@@ -33006,14 +32664,14 @@
       "cacheRead": 0.04,
       "cacheWrite": 0.5,
       "input": 0.4,
-      "output": 2.5,
+      "output": 2.4,
       "source": "modelsDev",
       "tieredPricing": [
         {
           "cacheRead": 0.04,
           "cacheWrite": 0.5,
           "input": 0.4,
-          "output": 2.5,
+          "output": 2.4,
           "range": [
             0,
             256001
@@ -33171,6 +32829,7 @@
     },
     "vercel-ai-gateway/alibaba/qwen3.8-max-prime": {
       "cacheRead": 0.5,
+      "cacheWrite": 5,
       "input": 4,
       "output": 12,
       "source": "modelsDev"
@@ -33486,9 +33145,9 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.007,
-      "input": 0.22,
-      "output": 0.66,
+      "cacheRead": 0.0068,
+      "input": 0.2156,
+      "output": 0.6468,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4-pro": {
@@ -33507,6 +33166,12 @@
       "cacheRead": 0.007,
       "input": 0.3,
       "output": 1.2,
+      "source": "modelsDev"
+    },
+    "vercel-ai-gateway/fireworks/ember-1": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/google/gemini-2.5-flash": {
@@ -33713,6 +33378,12 @@
       "output": 0.063,
       "source": "modelsDev"
     },
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18,
+      "source": "modelsDev"
+    },
     "vercel-ai-gateway/inclusionai/ling-3.0-flash-vl": {
       "cacheRead": 0.015,
       "input": 0.075,
@@ -33734,6 +33405,12 @@
     "vercel-ai-gateway/interfaze/interfaze-beta": {
       "input": 1.5,
       "output": 3.5,
+      "source": "modelsDev"
+    },
+    "vercel-ai-gateway/meituan/longcat-2.5-preview": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/meta/llama-3.1-70b": {
@@ -33910,7 +33587,7 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/moonshotai/kimi-k2.7-code": {
-      "cacheRead": 0.16,
+      "cacheRead": 0.19,
       "input": 0.95,
       "output": 4,
       "source": "modelsDev"
@@ -35204,7 +34881,7 @@
     },
     "vercel-ai-gateway/thinkingmachines/inkling-small": {
       "cacheRead": 0.1,
-      "input": 0.5,
+      "input": 0.45,
       "output": 1.2,
       "source": "modelsDev"
     },
@@ -35263,7 +34940,6 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/zai/glm-4.7": {
-      "cacheRead": 0.12,
       "input": 0.6,
       "output": 2.2,
       "source": "modelsDev"
@@ -35303,9 +34979,9 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/zai/glm-5.2-fast": {
-      "cacheRead": 0.21,
-      "input": 2.1,
-      "output": 6.6,
+      "cacheRead": 0.56,
+      "input": 2.8,
+      "output": 8.8,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/zai/glm-5.3": {
@@ -35515,7 +35191,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "72b76842012f405400a2b6b694f46bd62b7bca1c",
+  "sourceCommit": "246e575c929fa43dc13d8cdf65c7fea4faf975e9",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -36297,6 +35973,13 @@
       "output": 3.6,
       "source": "modelsDev"
     },
+    "alibaba/qwen3.5-flash": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.1,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
     "alibaba/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
@@ -36353,6 +36036,44 @@
         }
       ]
     },
+    "alibaba/qwen3.7-flash": {
+      "cacheRead": 0.003,
+      "cacheWrite": 0.0375,
+      "input": 0.03,
+      "output": 0.13,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.003,
+          "cacheWrite": 0.0375,
+          "input": 0.03,
+          "output": 0.13,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "input": 0.1,
+          "output": 0.4,
+          "range": [
+            32000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.02,
+          "cacheWrite": 0.25,
+          "input": 0.2,
+          "output": 0.8,
+          "range": [
+            256000
+          ]
+        }
+      ]
+    },
     "alibaba/qwen3.7-max": {
       "cacheRead": 0.5,
       "cacheWrite": 3.125,
@@ -36361,27 +36082,27 @@
       "source": "modelsDev"
     },
     "alibaba/qwen3.7-plus": {
-      "cacheRead": 0.05,
-      "cacheWrite": 0.625,
-      "input": 0.5,
-      "output": 3,
+      "cacheRead": 0.04,
+      "cacheWrite": 0.5,
+      "input": 0.4,
+      "output": 1.6,
       "source": "modelsDev",
       "tieredPricing": [
         {
-          "cacheRead": 0.05,
-          "cacheWrite": 0.625,
-          "input": 0.5,
-          "output": 3,
+          "cacheRead": 0.04,
+          "cacheWrite": 0.5,
+          "input": 0.4,
+          "output": 1.6,
           "range": [
             0,
             256000
           ]
         },
         {
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 6,
+          "cacheRead": 0.12,
+          "cacheWrite": 1.5,
+          "input": 1.2,
+          "output": 4.8,
           "range": [
             256000
           ]
@@ -36400,6 +36121,12 @@
       "cacheWrite": 2.5,
       "input": 2,
       "output": 6,
+      "source": "modelsDev"
+    },
+    "alibaba/qwen3.8-omni-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
       "source": "modelsDev"
     },
     "alibaba/qwq-plus": {
@@ -53986,7 +53713,6 @@
       "cacheRead": 0.0028,
       "input": 0.14,
       "output": 0.28,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "nvidia/deepseek-ai/deepseek-v4-pro": {
@@ -55369,18 +55095,59 @@
       "source": "liteLLM"
     },
     "openai/gpt-daybreak-blue-latest": {
-      "cacheRead": 0.39999999999999997,
+      "alternatives": [
+        {
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.4,
       "cacheWrite": 5,
       "input": 4,
       "output": 20,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.4,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
+          "range": [
+            0,
+            272000
+          ]
+        },
+        {
+          "cacheRead": 0.8,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
+          "range": [
+            272000
+          ]
+        }
+      ]
     },
     "openai/gpt-daybreak-red-latest": {
+      "alternatives": [
+        {
+          "cacheRead": 1.25,
+          "cacheWrite": 15.625,
+          "input": 12.5,
+          "output": 75,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 1.25,
       "cacheWrite": 15.625,
       "input": 12.5,
       "output": 75,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "openai/gpt-image-1.5": {
       "cacheRead": 1.25,
@@ -56147,9 +55914,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.026779999999999998,
-      "input": 0.02975,
-      "output": 0.6,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -56467,9 +56234,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.06604,
-      "input": 0.35559999999999997,
-      "output": 2.574,
+      "cacheRead": 0.067,
+      "input": 0.37,
+      "output": 1.1400000000000001,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -57602,9 +57369,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -57630,9 +57397,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.026779999999999998,
-      "input": 0.02975,
-      "output": 0.6,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -58763,8 +58530,8 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.255,
-      "output": 1.02,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2-her": {
@@ -59241,9 +59008,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4,
+      "cacheRead": 0.15,
+      "input": 0.65,
+      "output": 3.41,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
@@ -61766,8 +61533,8 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.22749999999999998,
-      "output": 0.9099999999999999,
+      "input": 0.12,
+      "output": 0.24,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b": {
@@ -61816,8 +61583,8 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.13,
-      "output": 0.52,
+      "input": 0.12,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
@@ -63658,9 +63425,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.26,
-      "input": 1.4,
-      "output": 4.4,
+      "cacheRead": 0.067,
+      "input": 0.37,
+      "output": 1.1400000000000001,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -64698,6 +64465,13 @@
       "output": 3.6,
       "source": "modelsDev"
     },
+    "qwen-token-plan/qwen3.5-flash": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.1,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
     "qwen-token-plan/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
@@ -64756,6 +64530,44 @@
         }
       ]
     },
+    "qwen-token-plan/qwen3.7-flash": {
+      "cacheRead": 0.003,
+      "cacheWrite": 0.0375,
+      "input": 0.03,
+      "output": 0.13,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.003,
+          "cacheWrite": 0.0375,
+          "input": 0.03,
+          "output": 0.13,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "input": 0.1,
+          "output": 0.4,
+          "range": [
+            32000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.02,
+          "cacheWrite": 0.25,
+          "input": 0.2,
+          "output": 0.8,
+          "range": [
+            256000
+          ]
+        }
+      ]
+    },
     "qwen-token-plan/qwen3.7-max": {
       "cacheRead": 0.5,
       "cacheWrite": 3.125,
@@ -64765,28 +64577,28 @@
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.7-plus": {
-      "cacheRead": 0.05,
-      "cacheWrite": 0.625,
-      "input": 0.5,
-      "output": 3,
+      "cacheRead": 0.04,
+      "cacheWrite": 0.5,
+      "input": 0.4,
+      "output": 1.6,
       "passthroughOnly": true,
       "source": "modelsDev",
       "tieredPricing": [
         {
-          "cacheRead": 0.05,
-          "cacheWrite": 0.625,
-          "input": 0.5,
-          "output": 3,
+          "cacheRead": 0.04,
+          "cacheWrite": 0.5,
+          "input": 0.4,
+          "output": 1.6,
           "range": [
             0,
             256000
           ]
         },
         {
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 6,
+          "cacheRead": 0.12,
+          "cacheWrite": 1.5,
+          "input": 1.2,
+          "output": 4.8,
           "range": [
             256000
           ]
@@ -64807,6 +64619,12 @@
       "input": 2,
       "output": 6,
       "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/qwen3.8-omni-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwq-plus": {
@@ -65119,6 +64937,13 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "qwen/qwen3.5-flash": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.1,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
     "qwen/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
@@ -65181,6 +65006,45 @@
         }
       ]
     },
+    "qwen/qwen3.7-flash": {
+      "cacheRead": 0.003,
+      "cacheWrite": 0.0375,
+      "input": 0.03,
+      "output": 0.13,
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.003,
+          "cacheWrite": 0.0375,
+          "input": 0.03,
+          "output": 0.13,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0.01,
+          "cacheWrite": 0.125,
+          "input": 0.1,
+          "output": 0.4,
+          "range": [
+            32000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.02,
+          "cacheWrite": 0.25,
+          "input": 0.2,
+          "output": 0.8,
+          "range": [
+            256000
+          ]
+        }
+      ]
+    },
     "qwen/qwen3.7-max": {
       "cacheRead": 0.5,
       "cacheWrite": 3.125,
@@ -65190,28 +65054,28 @@
       "source": "modelsDev"
     },
     "qwen/qwen3.7-plus": {
-      "cacheRead": 0.05,
-      "cacheWrite": 0.625,
-      "input": 0.5,
-      "output": 3,
+      "cacheRead": 0.04,
+      "cacheWrite": 0.5,
+      "input": 0.4,
+      "output": 1.6,
       "passthroughOnly": true,
       "source": "modelsDev",
       "tieredPricing": [
         {
-          "cacheRead": 0.05,
-          "cacheWrite": 0.625,
-          "input": 0.5,
-          "output": 3,
+          "cacheRead": 0.04,
+          "cacheWrite": 0.5,
+          "input": 0.4,
+          "output": 1.6,
           "range": [
             0,
             256000
           ]
         },
         {
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 6,
+          "cacheRead": 0.12,
+          "cacheWrite": 1.5,
+          "input": 1.2,
+          "output": 4.8,
           "range": [
             256000
           ]
@@ -65231,6 +65095,13 @@
       "cacheWrite": 2.5,
       "input": 2,
       "output": 6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "qwen/qwen3.8-omni-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
