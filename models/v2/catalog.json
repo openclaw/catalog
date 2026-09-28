@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790613387804,
+  "generatedAt": 1790627547111,
   "models": [
     {
       "id": "claude-fable-5",
@@ -535,6 +535,29 @@
         "max": "max",
         "xhigh": "xhigh"
       }
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "provider": "anthropic",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Sonnet 5.5",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 2.5,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -6001,19 +6024,19 @@
     {
       "id": "~deepseek/deepseek-flash-latest",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1040000,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 384000,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.001,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.03,
-        "output": 0.6,
+        "input": 0.035,
+        "output": 0.29,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6051,11 +6074,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.016,
+        "cacheRead": 0.014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.021,
-        "output": 0.32,
+        "input": 0.019,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6119,11 +6142,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.176987,
+        "cacheRead": 0.29,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.97575,
-        "output": 8.5442,
+        "input": 0.875,
+        "output": 11.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6257,11 +6280,11 @@
       "maxTokens": 450000,
       "name": "xAI: Grok Latest",
       "pricing": {
-        "cacheRead": 0.4,
+        "cacheRead": 0.5,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.6,
-        "output": 4.8,
+        "input": 2,
+        "output": 6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6297,14 +6320,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.146625,
+        "cacheRead": 0.1,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1785,
-        "output": 2.805,
+        "input": 0.15,
+        "output": 3.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6849,6 +6872,29 @@
       "reasoning": true
     },
     {
+      "id": "anthropic/claude-sonnet-5.5",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Sonnet 5.5",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 2.5,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "arcee-ai/trinity-large-thinking",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -7236,11 +7282,11 @@
       "maxTokens": 147456,
       "name": "DeepSeek: DeepSeek V3.2 Exp",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.0672,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.27,
-        "output": 0.41,
+        "input": 0.1344,
+        "output": 0.2016,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7939,11 +7985,11 @@
       "maxTokens": 235929,
       "name": "inclusionAI: Ling 3.0 Flash Fin",
       "pricing": {
-        "cacheRead": 0.012,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.06,
-        "output": 0.18,
+        "input": 0.075,
+        "output": 0.22,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9202,7 +9248,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 32768,
       "name": "Nemotron 3.5 Lightning 30B A3B",
       "pricing": {
         "cacheRead": 0,
@@ -12460,11 +12506,11 @@
       "maxTokens": 450000,
       "name": "Grok 4.7",
       "pricing": {
-        "cacheRead": 0.4,
+        "cacheRead": 0.5,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.6,
-        "output": 4.8,
+        "input": 2,
+        "output": 6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12612,10 +12658,10 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Pro",
       "pricing": {
-        "cacheRead": 0.004,
+        "cacheRead": 0.0036,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.435,
+        "input": 0.43,
         "output": 0.87,
         "source": "modelsDev",
         "status": "known",
@@ -20421,6 +20467,28 @@
       "reasoning": true
     },
     {
+      "id": "claude-opus-5-5-fast",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Opus 5.5 Fast",
+      "pricing": {
+        "cacheRead": 0.48,
+        "cacheWrite": 12,
+        "currency": "USD",
+        "input": 9.6,
+        "output": 48,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "claude-opus-5-fast",
       "provider": "venice",
       "contextWindow": 1000000,
@@ -20505,6 +20573,28 @@
         "currency": "USD",
         "input": 3,
         "output": 15,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Sonnet 5.5",
+      "pricing": {
+        "cacheRead": 0.375,
+        "cacheWrite": 4.6875,
+        "currency": "USD",
+        "input": 3.75,
+        "output": 18.75,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -22772,6 +22862,28 @@
         "currency": "USD",
         "input": 0.4,
         "output": 2,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "xiaomi-mimo-v2-6-flash",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Flash",
+      "pricing": {
+        "cacheRead": 0.00375,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.175,
+        "output": 0.35,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -27108,26 +27220,26 @@
       ]
     },
     "opencode/grok-4.7": {
-      "cacheRead": 0.35,
-      "input": 1.4,
-      "output": 4.2,
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6,
       "source": "openCode",
       "tieredPricing": [
         {
-          "cacheRead": 0.35,
+          "cacheRead": 0.5,
           "cacheWrite": 0,
-          "input": 1.4,
-          "output": 4.2,
+          "input": 2,
+          "output": 6,
           "range": [
             0,
             200000
           ]
         },
         {
-          "cacheRead": 0.7,
+          "cacheRead": 1,
           "cacheWrite": 0,
-          "input": 2.8,
-          "output": 8.4,
+          "input": 4,
+          "output": 12,
           "range": [
             200000
           ]
@@ -27412,9 +27524,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.01,
-      "input": 0.03,
-      "output": 0.6,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -27424,9 +27536,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.016,
-      "input": 0.020999999999999998,
-      "output": 0.32,
+      "cacheRead": 0.014,
+      "input": 0.019000000000000003,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -27465,8 +27577,8 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.232,
-      "input": 0.9757499999999999,
+      "cacheRead": 0.29,
+      "input": 0.875,
       "output": 11.2,
       "source": "openRouter"
     },
@@ -27589,26 +27701,26 @@
       ]
     },
     "openrouter/~x-ai/grok-latest": {
-      "cacheRead": 0.39999999999999997,
-      "input": 1.5999999999999999,
-      "output": 4.8,
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
+          "cacheRead": 0.5,
           "cacheWrite": 0,
-          "input": 1.5999999999999999,
-          "output": 4.8,
+          "input": 2,
+          "output": 6,
           "range": [
             0,
             200001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
+          "cacheRead": 1,
           "cacheWrite": 0,
-          "input": 3.1999999999999997,
-          "output": 9.6,
+          "input": 4,
+          "output": 12,
           "range": [
             200001
           ]
@@ -27622,9 +27734,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.146625,
-      "input": 0.1785,
-      "output": 2.8049999999999997,
+      "cacheRead": 0.09999999999999999,
+      "input": 0.15,
+      "output": 3.3000000000000003,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -27945,6 +28057,20 @@
       "output": 5,
       "source": "openRouter"
     },
+    "openrouter/anthropic/claude-sonnet-5.5": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "openRouter"
+    },
+    "openrouter/anthropic/claude-sonnet-5.5:batch": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "output": 5,
+      "source": "openRouter"
+    },
     "openrouter/arcee-ai/trinity-large-thinking": {
       "cacheRead": 0.06,
       "input": 0.25,
@@ -28168,14 +28294,15 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.2-exp": {
-      "input": 0.27,
-      "output": 0.41,
+      "cacheRead": 0.06720000000000001,
+      "input": 0.13440000000000002,
+      "output": 0.2016,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.014308,
-      "input": 0.07154,
-      "output": 0.14308,
+      "cacheRead": 0.011228,
+      "input": 0.056139999999999995,
+      "output": 0.11227999999999999,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -28197,8 +28324,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.399,
-      "input": 0.3995,
+      "cacheRead": 0.3175,
+      "input": 0.3968,
       "output": 4.199999999999999,
       "source": "openRouter"
     },
@@ -29674,27 +29801,27 @@
       ]
     },
     "openrouter/openai/gpt-5.6-sol-pro": {
-      "cacheRead": 0.19999999999999998,
-      "cacheWrite": 2.5,
-      "input": 2,
-      "output": 10,
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.19999999999999998,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 10,
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 15,
+          "cacheRead": 0.7999999999999999,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
           "range": [
             272001
           ]
@@ -31360,26 +31487,26 @@
       ]
     },
     "openrouter/x-ai/grok-4.7": {
-      "cacheRead": 0.39999999999999997,
-      "input": 1.5999999999999999,
-      "output": 4.8,
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
+          "cacheRead": 0.5,
           "cacheWrite": 0,
-          "input": 1.5999999999999999,
-          "output": 4.8,
+          "input": 2,
+          "output": 6,
           "range": [
             0,
             200001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
+          "cacheRead": 1,
           "cacheWrite": 0,
-          "input": 3.1999999999999997,
-          "output": 9.6,
+          "input": 4,
+          "output": 12,
           "range": [
             200001
           ]
@@ -32364,12 +32491,6 @@
       "output": 3,
       "source": "venice"
     },
-    "venice/xiaomi-mimo-v2-6-flash": {
-      "cacheRead": 0.00375,
-      "input": 0.175,
-      "output": 0.35,
-      "source": "venice"
-    },
     "vercel-ai-gateway/alibaba/qwen-3-14b": {
       "input": 0.12,
       "output": 0.24,
@@ -33029,6 +33150,13 @@
       ]
     },
     "vercel-ai-gateway/anthropic/claude-sonnet-5": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "vercel-ai-gateway/anthropic/claude-sonnet-5.5": {
       "cacheRead": 0.2,
       "cacheWrite": 2.5,
       "input": 2,
@@ -34775,26 +34903,26 @@
       ]
     },
     "vercel-ai-gateway/spacexai/grok-4.7": {
-      "cacheRead": 0.3,
-      "input": 1.2,
-      "output": 3.6,
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6,
       "source": "modelsDev",
       "tieredPricing": [
         {
-          "cacheRead": 0.3,
+          "cacheRead": 0.5,
           "cacheWrite": 0,
-          "input": 1.2,
-          "output": 3.6,
+          "input": 2,
+          "output": 6,
           "range": [
             0,
             200001
           ]
         },
         {
-          "cacheRead": 0.6,
+          "cacheRead": 1,
           "cacheWrite": 0,
-          "input": 2.4,
-          "output": 7.2,
+          "input": 4,
+          "output": 12,
           "range": [
             200001
           ]
@@ -35191,7 +35319,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "6e58f09860883469084f78f0bd8b3da6f5336c20",
+  "sourceCommit": "dcafd64abcc2db7fd5694de7aa186bcc80aa0014",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -36575,6 +36703,13 @@
       "source": "modelsDev"
     },
     "amazon-bedrock/global.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "amazon-bedrock/global.anthropic.claude-sonnet-5-5": {
       "cacheRead": 0.2,
       "cacheWrite": 2.5,
       "input": 2,
@@ -37988,6 +38123,23 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "anthropic/claude-sonnet-5-5": {
+      "alternatives": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 10,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "anyscale/codellama/CodeLlama-34b-Instruct-hf": {
       "input": 1,
       "output": 1,
@@ -38174,6 +38326,13 @@
       "output": 10,
       "source": "liteLLM"
     },
+    "azure_ai/claude-sonnet-5-5": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
     "azure_ai/Codestral-2501": {
       "input": 0.3,
       "output": 0.8999999999999999,
@@ -38254,9 +38413,9 @@
       "source": "liteLLM"
     },
     "azure_ai/deepseek-v4.1-flash": {
-      "cacheRead": 0.008,
-      "input": 0.375,
-      "output": 1.5,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "liteLLM"
     },
     "azure_ai/embed-v-4-0": {
@@ -38674,12 +38833,6 @@
     "azure_ai/model-router": {
       "input": 0.14,
       "output": 0,
-      "source": "liteLLM"
-    },
-    "azure_ai/muse-spark-1.3": {
-      "cacheRead": 0.15,
-      "input": 1.25,
-      "output": 4.25,
       "source": "liteLLM"
     },
     "azure_ai/Phi-3-medium-128k-instruct": {
@@ -40736,6 +40889,13 @@
       "output": 10,
       "source": "liteLLM"
     },
+    "bedrock_converse/anthropic.claude-sonnet-5-5": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
     "bedrock_converse/apac.amazon.nova-2-lite-v1:0": {
       "cacheRead": 0.0825,
       "input": 0.33,
@@ -40836,6 +40996,13 @@
       "output": 11,
       "source": "liteLLM"
     },
+    "bedrock_converse/apac.anthropic.claude-sonnet-5-5": {
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
+      "input": 2.2,
+      "output": 11,
+      "source": "liteLLM"
+    },
     "bedrock_converse/au.anthropic.claude-fable-5": {
       "cacheRead": 1.1,
       "cacheWrite": 13.75,
@@ -40907,6 +41074,13 @@
       "source": "liteLLM"
     },
     "bedrock_converse/au.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
+      "input": 2.2,
+      "output": 11,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/au.anthropic.claude-sonnet-5-5": {
       "cacheRead": 0.22,
       "cacheWrite": 2.75,
       "input": 2.2,
@@ -41063,6 +41237,13 @@
       "output": 11,
       "source": "liteLLM"
     },
+    "bedrock_converse/eu.anthropic.claude-sonnet-5-5": {
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
+      "input": 2.2,
+      "output": 11,
+      "source": "liteLLM"
+    },
     "bedrock_converse/eu.deepseek.v3.2": {
       "input": 0.74,
       "output": 2.2199999999999998,
@@ -41171,6 +41352,13 @@
       "source": "liteLLM"
     },
     "bedrock_converse/global.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/global.anthropic.claude-sonnet-5-5": {
       "cacheRead": 0.19999999999999998,
       "cacheWrite": 2.5,
       "input": 2,
@@ -41309,6 +41497,13 @@
       "source": "liteLLM"
     },
     "bedrock_converse/jp.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
+      "input": 2.2,
+      "output": 11,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/jp.anthropic.claude-sonnet-5-5": {
       "cacheRead": 0.22,
       "cacheWrite": 2.75,
       "input": 2.2,
@@ -41538,6 +41733,13 @@
       "output": 12,
       "source": "liteLLM"
     },
+    "bedrock_converse/us-gov.anthropic.claude-sonnet-5-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12,
+      "source": "liteLLM"
+    },
     "bedrock_converse/us-gov.nvidia.nemotron-nano-12b-v2": {
       "input": 0.24,
       "output": 0.72,
@@ -41731,6 +41933,13 @@
       "source": "liteLLM"
     },
     "bedrock_converse/us.anthropic.claude-sonnet-5": {
+      "cacheRead": 0.22,
+      "cacheWrite": 2.75,
+      "input": 2.2,
+      "output": 11,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/us.anthropic.claude-sonnet-5-5": {
       "cacheRead": 0.22,
       "cacheWrite": 2.75,
       "input": 2.2,
@@ -42936,6 +43145,13 @@
       "output": 12,
       "source": "liteLLM"
     },
+    "bedrock/us-gov-east-1/anthropic.claude-sonnet-5-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12,
+      "source": "liteLLM"
+    },
     "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0": {
       "cacheRead": 0.36,
       "cacheWrite": 4.5,
@@ -43074,6 +43290,13 @@
       "source": "liteLLM"
     },
     "bedrock/us-gov-west-1/anthropic.claude-sonnet-5": {
+      "cacheRead": 0.24,
+      "cacheWrite": 3,
+      "input": 2.4,
+      "output": 12,
+      "source": "liteLLM"
+    },
+    "bedrock/us-gov-west-1/anthropic.claude-sonnet-5-5": {
       "cacheRead": 0.24,
       "cacheWrite": 3,
       "input": 2.4,
@@ -48651,6 +48874,13 @@
       "cacheWrite": 3.75,
       "input": 3,
       "output": 15,
+      "source": "modelsDev"
+    },
+    "google-vertex/claude-sonnet-5-5@default": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
       "source": "modelsDev"
     },
     "google-vertex/claude-sonnet-5@default": {
@@ -55843,9 +56073,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.01,
-      "input": 0.03,
-      "output": 0.6,
+      "cacheRead": 0.001,
+      "input": 0.035,
+      "output": 0.29,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -55871,9 +56101,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.016,
-      "input": 0.020999999999999998,
-      "output": 0.32,
+      "cacheRead": 0.014,
+      "input": 0.019000000000000003,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -55938,8 +56168,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.232,
-      "input": 0.9757499999999999,
+      "cacheRead": 0.29,
+      "input": 0.875,
       "output": 11.2,
       "source": "openRouter"
     },
@@ -56114,26 +56344,26 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.39999999999999997,
-      "input": 1.5999999999999999,
-      "output": 4.8,
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
+          "cacheRead": 0.5,
           "cacheWrite": 0,
-          "input": 1.5999999999999999,
-          "output": 4.8,
+          "input": 2,
+          "output": 6,
           "range": [
             0,
             200001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
+          "cacheRead": 1,
           "cacheWrite": 0,
-          "input": 3.1999999999999997,
-          "output": 9.6,
+          "input": 4,
+          "output": 12,
           "range": [
             200001
           ]
@@ -56163,9 +56393,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.146625,
-      "input": 0.1785,
-      "output": 2.8049999999999997,
+      "cacheRead": 0.09999999999999999,
+      "input": 0.15,
+      "output": 3.3000000000000003,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -56836,6 +57066,29 @@
       "output": 5,
       "source": "openRouter"
     },
+    "openrouter/anthropic/claude-sonnet-5.5": {
+      "alternatives": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 10,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "openRouter"
+    },
+    "openrouter/anthropic/claude-sonnet-5.5:batch": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "output": 5,
+      "source": "openRouter"
+    },
     "openrouter/arcee-ai/trinity-large-thinking": {
       "alternatives": [
         {
@@ -57235,8 +57488,9 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.27,
-      "output": 0.41,
+      "cacheRead": 0.06720000000000001,
+      "input": 0.13440000000000002,
+      "output": 0.2016,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
@@ -57248,9 +57502,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.014308,
-      "input": 0.07154,
-      "output": 0.14308,
+      "cacheRead": 0.011228,
+      "input": 0.056139999999999995,
+      "output": 0.11227999999999999,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -57304,8 +57558,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.399,
-      "input": 0.3995,
+      "cacheRead": 0.3175,
+      "input": 0.3968,
       "output": 4.199999999999999,
       "source": "openRouter"
     },
@@ -60270,27 +60524,27 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.19999999999999998,
-      "cacheWrite": 2.5,
-      "input": 2,
-      "output": 10,
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.19999999999999998,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 10,
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 15,
+          "cacheRead": 0.7999999999999999,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
           "range": [
             272001
           ]
@@ -63058,26 +63312,26 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.39999999999999997,
-      "input": 1.5999999999999999,
-      "output": 4.8,
+      "cacheRead": 0.5,
+      "input": 2,
+      "output": 6,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
+          "cacheRead": 0.5,
           "cacheWrite": 0,
-          "input": 1.5999999999999999,
-          "output": 4.8,
+          "input": 2,
+          "output": 6,
           "range": [
             0,
             200001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
+          "cacheRead": 1,
           "cacheWrite": 0,
-          "input": 3.1999999999999997,
-          "output": 9.6,
+          "input": 4,
+          "output": 12,
           "range": [
             200001
           ]
@@ -63611,6 +63865,12 @@
       "source": "liteLLM"
     },
     "perplexity/anthropic/claude-sonnet-5": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
+    "perplexity/anthropic/claude-sonnet-5-5": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
       "output": 10,
@@ -67862,6 +68122,20 @@
       "source": "liteLLM"
     },
     "vertex_ai/claude-sonnet-5": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
+    "vertex_ai/claude-sonnet-5-5": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
+    "vertex_ai/claude-sonnet-5-5@default": {
       "cacheRead": 0.19999999999999998,
       "cacheWrite": 2.5,
       "input": 2,
