@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790599678875,
+  "generatedAt": 1790613387804,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6001,19 +6001,19 @@
     {
       "id": "~deepseek/deepseek-flash-latest",
       "provider": "kilocode",
-      "contextWindow": 1040000,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.001,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.035,
-        "output": 0.29,
+        "input": 0.03,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6119,11 +6119,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.3,
+        "cacheRead": 0.176987,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1,
-        "output": 9,
+        "input": 0.97575,
+        "output": 8.5442,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7131,11 +7131,11 @@
       "maxTokens": 32768,
       "name": "DeepSeek: DeepSeek V3.1",
       "pricing": {
-        "cacheRead": 0.135,
+        "cacheRead": 0.13,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.27,
-        "output": 1,
+        "input": 0.25,
+        "output": 0.95,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7187,14 +7187,14 @@
     {
       "id": "deepseek/deepseek-v3.1-terminus",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 163840,
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
-      "name": "DeepSeek: DeepSeek V3.1 Terminus (retires Sep 28)",
+      "maxTokens": 147456,
+      "name": "DeepSeek: DeepSeek V3.1 Terminus",
       "pricing": {
-        "cacheRead": 0.135,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.27,
@@ -7215,11 +7215,11 @@
       "maxTokens": 65536,
       "name": "DeepSeek V3.2",
       "pricing": {
-        "cacheRead": 0.1345,
+        "cacheRead": 0.028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.269,
-        "output": 0.4,
+        "input": 0.28,
+        "output": 0.42,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7233,8 +7233,8 @@
       "input": [
         "text"
       ],
-      "maxTokens": 65536,
-      "name": "DeepSeek: DeepSeek V3.2 Exp (retires Sep 28)",
+      "maxTokens": 147456,
+      "name": "DeepSeek: DeepSeek V3.2 Exp",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -7356,12 +7356,12 @@
     {
       "id": "deepseek/deepseek-v4.1-flash",
       "provider": "kilocode",
-      "contextWindow": 1040000,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 943718,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -7947,20 +7947,6 @@
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
-      "pricing": {
-        "status": "unknown"
       },
       "reasoning": true
     },
@@ -9075,6 +9061,28 @@
         "currency": "USD",
         "input": 3,
         "output": 15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 235929,
+      "name": "Nex AGI: Nex-N2.5-Pro",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.25,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12151,11 +12159,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.53,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12582,11 +12590,11 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.007,
+        "cacheRead": 0.04,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.07,
-        "output": 0.14,
+        "input": 0.12,
+        "output": 1.28,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -26001,11 +26009,6 @@
       "output": 0.15,
       "source": "modelsDev"
     },
-    "kilocode/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8,
-      "source": "modelsDev"
-    },
     "kilocode/google/gemini-2.5-flash-image": {
       "cacheRead": 0.015,
       "cacheWrite": 0.041667,
@@ -26121,6 +26124,12 @@
     "kilocode/morph/morph-v3-large": {
       "input": 0.9,
       "output": 1.9,
+      "source": "modelsDev"
+    },
+    "kilocode/nex-agi/nex-n2.5-mini": {
+      "cacheRead": 0.0025,
+      "input": 0.025,
+      "output": 0.1,
       "source": "modelsDev"
     },
     "kilocode/nousresearch/hermes-3-llama-3.1-405b": {
@@ -27403,9 +27412,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.004,
-      "input": 0.014,
-      "output": 0.39999999999999997,
+      "cacheRead": 0.01,
+      "input": 0.03,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -27456,9 +27465,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.3,
-      "input": 1,
-      "output": 9,
+      "cacheRead": 0.232,
+      "input": 0.9757499999999999,
+      "output": 11.2,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -28147,13 +28156,7 @@
       "output": 2.1500000000000004,
       "source": "openRouter"
     },
-    "openrouter/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.7999999999999999,
-      "output": 0.7999999999999999,
-      "source": "openRouter"
-    },
     "openrouter/deepseek/deepseek-v3.1-terminus": {
-      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1,
       "source": "openRouter"
@@ -28170,9 +28173,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.017696,
-      "input": 0.08847999999999999,
-      "output": 0.17695999999999998,
+      "cacheRead": 0.014308,
+      "input": 0.07154,
+      "output": 0.14308,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -28188,9 +28191,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079431,
-      "input": 0.953172,
-      "output": 1.906344,
+      "cacheRead": 0.06525,
+      "input": 0.7829999999999999,
+      "output": 1.5659999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -28200,9 +28203,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004,
-      "input": 0.014,
-      "output": 0.39999999999999997,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -28982,6 +28985,18 @@
     "openrouter/morph/morph-v3-large": {
       "input": 0.8999999999999999,
       "output": 1.9,
+      "source": "openRouter"
+    },
+    "openrouter/nex-agi/nex-n2.5-mini": {
+      "cacheRead": 0.0025,
+      "input": 0.024999999999999998,
+      "output": 0.09999999999999999,
+      "source": "openRouter"
+    },
+    "openrouter/nex-agi/nex-n2.5-pro": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.25,
       "source": "openRouter"
     },
     "openrouter/nousresearch/hermes-3-llama-3.1-405b": {
@@ -31102,9 +31117,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -32347,6 +32362,12 @@
     "venice/hermes-3-llama-3.1-405b": {
       "input": 1.1,
       "output": 3,
+      "source": "venice"
+    },
+    "venice/xiaomi-mimo-v2-6-flash": {
+      "cacheRead": 0.00375,
+      "input": 0.175,
+      "output": 0.35,
       "source": "venice"
     },
     "vercel-ai-gateway/alibaba/qwen-3-14b": {
@@ -35170,7 +35191,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "8b3f9bd1d69059f1ba8cbcdfb788cfa21bc24c13",
+  "sourceCommit": "6e58f09860883469084f78f0bd8b3da6f5336c20",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -55822,9 +55843,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.004,
-      "input": 0.014,
-      "output": 0.39999999999999997,
+      "cacheRead": 0.01,
+      "input": 0.03,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -55917,9 +55938,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.3,
-      "input": 1,
-      "output": 9,
+      "cacheRead": 0.232,
+      "input": 0.9757499999999999,
+      "output": 11.2,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -57174,16 +57195,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-r1-distill-llama-70b": {
-      "alternatives": [
-        {
-          "input": 0.7999999999999999,
-          "output": 0.7999999999999999,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.7999999999999999,
       "output": 0.7999999999999999,
-      "source": "openRouter"
+      "source": "liteLLM"
     },
     "openrouter/deepseek/deepseek-v3.1-terminus": {
       "alternatives": [
@@ -57194,7 +57208,6 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.135,
       "input": 0.27,
       "output": 1,
       "source": "openRouter"
@@ -57235,9 +57248,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.017696,
-      "input": 0.08847999999999999,
-      "output": 0.17695999999999998,
+      "cacheRead": 0.014308,
+      "input": 0.07154,
+      "output": 0.14308,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -57277,9 +57290,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.079431,
-      "input": 0.953172,
-      "output": 1.906344,
+      "cacheRead": 0.06525,
+      "input": 0.7829999999999999,
+      "output": 1.5659999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -57305,9 +57318,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.004,
-      "input": 0.014,
-      "output": 0.39999999999999997,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -58988,16 +59001,32 @@
       "source": "openRouter"
     },
     "openrouter/nex-agi/nex-n2.5-mini": {
+      "alternatives": [
+        {
+          "cacheRead": 0.0025,
+          "input": 0.024999999999999998,
+          "output": 0.09999999999999999,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.0025,
       "input": 0.024999999999999998,
       "output": 0.09999999999999999,
-      "source": "liteLLM"
+      "source": "openRouter"
     },
     "openrouter/nex-agi/nex-n2.5-pro": {
+      "alternatives": [
+        {
+          "cacheRead": 0.015,
+          "input": 0.075,
+          "output": 0.25,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.25,
-      "source": "liteLLM"
+      "source": "openRouter"
     },
     "openrouter/nousresearch/hermes-3-llama-3.1-405b": {
       "alternatives": [
@@ -62619,9 +62648,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
