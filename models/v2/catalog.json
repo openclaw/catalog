@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1790671294204,
+  "generatedAt": 1790686006288,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6118,7 +6118,7 @@
         "cacheRead": 0.07488,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15808,
+        "input": 0.096,
         "output": 1.9584,
         "source": "modelsDev",
         "status": "known",
@@ -10974,11 +10974,11 @@
     {
       "id": "qwen/qwen3-30b-a3b",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 40960,
       "input": [
         "text"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 16384,
       "name": "Qwen3 30B A3B",
       "pricing": {
         "cacheRead": 0,
@@ -11427,7 +11427,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 235929,
+      "maxTokens": 65536,
       "name": "Qwen3.5 122B-A10B",
       "pricing": {
         "cacheRead": 0,
@@ -27558,7 +27558,7 @@
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.07488,
-      "input": 0.15808,
+      "input": 0.096,
       "output": 1.9584000000000001,
       "source": "openRouter"
     },
@@ -28327,9 +28327,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28,
+      "cacheRead": 0.017696,
+      "input": 0.08847999999999999,
+      "output": 0.17695999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -28345,9 +28345,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.079431,
+      "input": 0.953172,
+      "output": 1.906344,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -30614,8 +30614,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b": {
-      "input": 0.13,
-      "output": 0.52,
+      "input": 0.12,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
@@ -31108,8 +31108,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.048400000000000006,
-      "input": 0.060500000000000005,
+      "cacheRead": 0.032600000000000004,
+      "input": 0.0407,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -31658,8 +31658,8 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.25989999999999996,
-      "input": 0.39,
+      "cacheRead": 0.1559,
+      "input": 0.19490000000000002,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -35354,7 +35354,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "e43402af0e29a3c3d5efc9077ce2559ab091a15a",
+  "sourceCommit": "c374040735c9c4fa6e9dd21efe55b136db782693",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -56177,7 +56177,7 @@
         }
       ],
       "cacheRead": 0.07488,
-      "input": 0.15808,
+      "input": 0.096,
       "output": 1.9584000000000001,
       "source": "openRouter"
     },
@@ -57591,9 +57591,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28,
+      "cacheRead": 0.017696,
+      "input": 0.08847999999999999,
+      "output": 0.17695999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -57633,9 +57633,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.079431,
+      "input": 0.953172,
+      "output": 1.906344,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -61864,8 +61864,8 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.13,
-      "output": 0.52,
+      "input": 0.12,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
@@ -62650,8 +62650,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.048400000000000006,
-      "input": 0.060500000000000005,
+      "cacheRead": 0.032600000000000004,
+      "input": 0.0407,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -63692,8 +63692,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.25989999999999996,
-      "input": 0.39,
+      "cacheRead": 0.1559,
+      "input": 0.19490000000000002,
       "output": 4.4,
       "source": "openRouter"
     },
