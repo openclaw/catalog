@@ -75,7 +75,9 @@ node scripts/smoke.mjs http://127.0.0.1:8787
 The smoke check verifies all three URLs for version-specific byte equality,
 content type, cache/CORS headers, GET, HEAD, and conditional `304`, plus `404` for
 missing and repository-only files. It also runs against the public hostname after
-each deployment.
+each deployment. Edges pick up a deployment gradually, so the check retries
+responses that still carry the previous deployment's bytes or ETag for up to a
+minute; every response from the new deployment must pass.
 
 For the first cutover, record the existing `catalog.openclaw.ai` DNS and GitHub
 Pages settings, deploy with `--env preview` (whose routes are explicitly empty),

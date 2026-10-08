@@ -32,6 +32,18 @@ const fetchDeployed = async (url, expected) => {
     await sleep(retryDelayMs);
   }
 };
+// Edges converge on a deploy gradually, so later requests can still reach the previous
+// catalog. Its ETag differs; retry those, but hold every current-version response to the checks.
+// Compression weakens the ETag on 200s while 304s carry the strong form, so compare opaque tags.
+const opaqueTag = (etag) => etag?.replace(/^W\//, "");
+const fetchCurrent = async (url, etag, options) => {
+  for (let attempt = 1; ; attempt++) {
+    const response = await request(url, options);
+    if (opaqueTag(response.headers.get("etag")) === opaqueTag(etag) || attempt === 6) return response;
+    await response.body?.cancel();
+    await sleep(retryDelayMs);
+  }
+};
 const verifyHeaders = (response) => {
   assert.equal(response.headers.get("cache-control"), "public, max-age=0, must-revalidate");
   assert.equal(response.headers.get("access-control-allow-origin"), "*");
@@ -53,20 +65,20 @@ for (const [path, expected] of [
   const etag = response.headers.get("etag");
   assert.ok(etag, "native ETag");
 
-  const head = await request(url, { method: "HEAD", headers: { Origin: "https://example.com" } });
+  const head = await fetchCurrent(url, etag, { method: "HEAD", headers: { Origin: "https://example.com" } });
   assert.equal(head.status, 200, "catalog HEAD");
   verifyHeaders(head);
   assert.equal(head.headers.get("etag"), etag, "HEAD ETag");
   assert.equal(head.headers.get("content-type"), response.headers.get("content-type"), "HEAD content type");
   assert.equal((await head.arrayBuffer()).byteLength, 0, "HEAD body");
 
-  const conditional = await request(url, { headers: { "If-None-Match": etag, Origin: "https://example.com" } });
+  const conditional = await fetchCurrent(url, etag, { headers: { "If-None-Match": etag, Origin: "https://example.com" } });
   assert.equal(conditional.status, 304, "unchanged catalog revalidation");
   verifyHeaders(conditional);
   assert.equal((await conditional.arrayBuffer()).byteLength, 0, "304 body");
 
   // OpenClaw sends both validators. ETag must win when the date suggests freshness.
-  const changed = await request(url, { headers: {
+  const changed = await fetchCurrent(url, etag, { headers: {
     "If-None-Match": '"not-the-current-catalog"',
     "If-Modified-Since": "Fri, 31 Dec 9999 23:59:59 GMT",
     Origin: "https://example.com",

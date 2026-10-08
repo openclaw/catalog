@@ -109,17 +109,17 @@ test("smoke rejects broken content, headers, validators, or redirects at every U
   await writeFile(expectedV2, catalogV2);
   let mode = "valid";
   let target = catalogPaths[0];
-  let staleOnceServed = false;
+  let targetRequests = 0;
   const server = createServer((request, response) => {
     if (!catalogPaths.includes(request.url)) {
       response.writeHead(404).end();
       return;
     }
     let activeMode = request.url === target ? mode : "valid";
-    if (activeMode === "stale-once") {
-      activeMode = staleOnceServed ? "valid" : "stale";
-      staleOnceServed = true;
-    }
+    if (request.url === target) targetRequests++;
+    if (activeMode === "stale-once") activeMode = targetRequests === 1 ? "stale" : "valid";
+    // Some edges still run the previous deploy: its ETag and bytes, interleaved with the new one.
+    if (activeMode === "lagging") activeMode = targetRequests % 2 === 0 ? "previous" : "valid";
     if (activeMode === "redirect") {
       response.writeHead(302, { Location: catalogPaths[0] }).end();
       return;
@@ -129,12 +129,13 @@ test("smoke rejects broken content, headers, validators, or redirects at every U
     if (activeMode !== "missing-cors") response.setHeader("Access-Control-Allow-Origin", "*");
     response.setHeader("Access-Control-Expose-Headers", "ETag");
     response.setHeader("X-Content-Type-Options", "nosniff");
-    const etag = request.url.includes("/v2/") ? '"fixture-v2"' : '"fixture-v1"';
+    const etag = activeMode === "previous" ? '"previous"'
+      : request.url.includes("/v2/") ? '"fixture-v2"' : '"fixture-v1"';
     response.setHeader("ETag", etag);
-    const unchanged = request.headers["if-none-match"] === etag
+    const unchanged = (activeMode !== "ignores-etag" && request.headers["if-none-match"] === etag)
       || (activeMode === "wrong-precedence" && request.headers["if-modified-since"]);
     response.writeHead(unchanged ? 304 : 200);
-    response.end(activeMode === "stale" ? "{}" : expectedCatalogs.get(request.url));
+    response.end(activeMode === "stale" || activeMode === "previous" ? "{}" : expectedCatalogs.get(request.url));
   });
   await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
   t.after(() => new Promise((resolve) => server.close(resolve)));
@@ -143,7 +144,7 @@ test("smoke rejects broken content, headers, validators, or redirects at every U
   const valid = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
   assert.equal(valid.code, 0, valid.output);
   for (target of catalogPaths) {
-    for (mode of ["stale", "missing-cors", "wrong-precedence", "redirect"]) {
+    for (mode of ["stale", "missing-cors", "ignores-etag", "wrong-precedence", "redirect"]) {
       const result = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
       assert.notEqual(result.code, 0, `${target}: ${mode}`);
       if (mode === "stale") {
@@ -152,9 +153,10 @@ test("smoke rejects broken content, headers, validators, or redirects at every U
       }
     }
     // The edge may briefly serve the previous catalog right after a deploy.
-    mode = "stale-once";
-    staleOnceServed = false;
-    const recovered = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
-    assert.equal(recovered.code, 0, `${target}: ${recovered.output}`);
+    for (mode of ["stale-once", "lagging"]) {
+      targetRequests = 0;
+      const recovered = await run(smoke, [url, expected, expectedV2], cwd, noDelay);
+      assert.equal(recovered.code, 0, `${target}: ${mode}: ${recovered.output}`);
+    }
   }
 });
