@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791563756000,
+  "generatedAt": 1791578058410,
   "models": [
     {
       "id": "claude-fable-5",
@@ -3202,6 +3202,28 @@
       "reasoning": false
     },
     {
+      "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "provider": "deepinfra",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Qwen3 VL 30B A3B Instruct",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "Qwen/Qwen3.5-27B",
       "provider": "deepinfra",
       "contextWindow": 262144,
@@ -6238,11 +6260,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.005,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.016,
-        "output": 1.2,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6259,11 +6281,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.13,
+        "cacheRead": 0.004536,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1282,
-        "output": 8,
+        "input": 0.14256,
+        "output": 0.42768,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6280,11 +6302,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.0079,
+        "cacheRead": 0.00416,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0079,
-        "output": 1.28,
+        "input": 0.00416,
+        "output": 0.011883,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6351,8 +6373,8 @@
         "cacheRead": 0.3,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.49,
-        "output": 13,
+        "input": 0.84,
+        "output": 13.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6508,11 +6530,11 @@
       "maxTokens": 943718,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.02,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.032,
-        "output": 0.264718,
+        "output": 0.113952,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6526,13 +6548,13 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.029,
+        "cacheRead": 0.04,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0312,
+        "input": 0.08,
         "output": 4.4,
         "source": "modelsDev",
         "status": "known",
@@ -7446,7 +7468,7 @@
         "text"
       ],
       "maxTokens": 32768,
-      "name": "DeepSeek: R1 0528",
+      "name": "DeepSeek R1 0528",
       "pricing": {
         "cacheRead": 0.35,
         "cacheWrite": 0,
@@ -7532,11 +7554,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.028,
+        "cacheRead": 0.0057,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.14,
-        "output": 0.28,
+        "input": 0.0057,
+        "output": 1.28,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9265,7 +9287,7 @@
         "text"
       ],
       "maxTokens": 98304,
-      "name": "MoonshotAI: Kimi K2 0905",
+      "name": "Kimi K2 Instruct 0905",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -9285,10 +9307,10 @@
       "input": [
         "text"
       ],
-      "maxTokens": 235929,
+      "maxTokens": 98304,
       "name": "Kimi K2 Thinking",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.6,
@@ -9332,10 +9354,10 @@
       "maxTokens": 235929,
       "name": "Kimi K2.6",
       "pricing": {
-        "cacheRead": 0.1202,
+        "cacheRead": 0.1077,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.4348,
+        "input": 0.4344,
         "output": 2.45,
         "source": "modelsDev",
         "status": "known",
@@ -11125,29 +11147,6 @@
       "reasoning": false
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28",
-      "provider": "kilocode",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen: Qwen Plus 0728 (retires Oct 9)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.26,
-        "output": 0.78,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "qwen/qwen3-14b",
       "provider": "kilocode",
       "contextWindow": 40960,
@@ -11160,36 +11159,13 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2275,
-        "output": 0.91,
+        "input": 0.12,
+        "output": 0.24,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "qwen/qwen3-235b-a22b",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "Qwen3 235B-A22B",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.455,
-        "output": 1.82,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-235b-a22b-2507",
@@ -11204,8 +11180,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1495,
-        "output": 0.598,
+        "input": 0.09,
+        "output": 0.55,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11215,18 +11191,18 @@
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 128000,
       "input": [
         "text"
       ],
-      "maxTokens": 117964,
-      "name": "Qwen: Qwen3 235B A22B Thinking 2507 (retires Oct 9)",
+      "maxTokens": 16384,
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.23,
-        "output": 2.3,
+        "input": 0.45,
+        "output": 3.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11246,8 +11222,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.52,
+        "input": 0.12,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11267,36 +11243,13 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.52,
+        "input": 0.1,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3-30b-a3b-thinking-2507",
-      "provider": "kilocode",
-      "contextWindow": 81920,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen: Qwen3 30B A3B Thinking 2507 (retires Oct 9)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.2,
-        "output": 2.4,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-32b",
@@ -11320,29 +11273,6 @@
       "reasoning": true
     },
     {
-      "id": "qwen/qwen3-8b",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "Qwen: Qwen3 8B (retires Oct 9)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.117,
-        "output": 0.455,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "qwen/qwen3-coder",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -11352,11 +11282,11 @@
       "maxTokens": 65536,
       "name": "Qwen: Qwen3 Coder 480B A35B",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.1,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.975,
-        "output": 4.875,
+        "input": 0.3,
+        "output": 1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11376,8 +11306,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2925,
-        "output": 1.4625,
+        "input": 0.07,
+        "output": 0.28,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11415,85 +11345,16 @@
       "maxTokens": 235929,
       "name": "Qwen3 Coder Next",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.07,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1.5,
+        "input": 0.12,
+        "output": 0.8,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3-coder-plus",
-      "provider": "kilocode",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3 Coder Plus",
-      "pricing": {
-        "cacheRead": 0.13,
-        "cacheWrite": 0.8125,
-        "currency": "USD",
-        "input": 0.65,
-        "output": 3.25,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-max",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3 Max",
-      "pricing": {
-        "cacheRead": 0.156,
-        "cacheWrite": 0.975,
-        "currency": "USD",
-        "input": 0.78,
-        "output": 3.9,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-max-thinking",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen: Qwen3 Max Thinking (retires Oct 9)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.78,
-        "output": 3.9,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -11505,11 +11366,11 @@
       "maxTokens": 235929,
       "name": "Qwen3-Next 80B-A3B Instruct",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.07,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0975,
-        "output": 0.78,
+        "input": 0.1,
+        "output": 1.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11519,11 +11380,11 @@
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 235929,
       "name": "Qwen3-Next 80B-A3B (Thinking)",
       "pricing": {
         "cacheRead": 0,
@@ -11548,40 +11409,16 @@
       "maxTokens": 32768,
       "name": "Qwen3 VL 235B A22B Instruct",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.1,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.26,
-        "output": 1.04,
+        "input": 0.21,
+        "output": 1.9,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3 VL 235B A22B Thinking",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.4,
-        "output": 4,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -11592,13 +11429,13 @@
         "image"
       ],
       "maxTokens": 16384,
-      "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+      "name": "Qwen3 VL 30B A3B Instruct",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.52,
+        "input": 0.15,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11608,19 +11445,19 @@
     {
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 32768,
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Oct 9)",
+      "maxTokens": 235929,
+      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2,
-        "output": 2.4,
+        "input": 0.29,
+        "output": 1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11628,74 +11465,26 @@
       "reasoning": true
     },
     {
-      "id": "qwen/qwen3-vl-32b-instruct",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen: Qwen3 VL 32B Instruct (retires Oct 9)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.104,
-        "output": 0.416,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "qwen/qwen3-vl-8b-instruct",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "input": [
         "image",
         "text"
       ],
-      "maxTokens": 32768,
-      "name": "Qwen: Qwen3 VL 8B Instruct (retires Oct 9)",
+      "maxTokens": 235929,
+      "name": "Qwen: Qwen3 VL 8B Instruct",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.12,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.117,
-        "output": 0.455,
+        "input": 0.25,
+        "output": 0.75,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": false
-    },
-    {
-      "id": "qwen/qwen3-vl-8b-thinking",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "image",
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen: Qwen3 VL 8B Thinking (retires Oct 9)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.18,
-        "output": 2.1,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.5-122b-a10b",
@@ -11938,29 +11727,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "qwen/qwen3.6-max-preview",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3.6 Max Preview",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 1.28375,
-        "currency": "USD",
-        "input": 1.027,
-        "output": 6.162,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.6-plus",
@@ -12532,11 +12298,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12574,11 +12340,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13107,18 +12873,18 @@
     {
       "id": "z-ai/glm-4.6",
       "provider": "kilocode",
-      "contextWindow": 198000,
+      "contextWindow": 202752,
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 131072,
       "name": "GLM-4.6",
       "pricing": {
-        "cacheRead": 0.08,
+        "cacheRead": 0.1,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.43,
-        "output": 1.75,
+        "input": 0.5,
+        "output": 2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14256,6 +14022,41 @@
       }
     },
     {
+      "id": "apodex/apodex-1.1-mini",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "Apodex 1.1 Mini",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "baidu/cobuddy",
+      "provider": "novita",
+      "contextWindow": 131072,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 65536,
+      "name": "CoBuddy",
+      "pricing": {
+        "cacheRead": 0.07,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.28,
+        "output": 1.13,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "baidu/ernie-4.5-21B-a3b",
       "provider": "novita",
       "contextWindow": 120000,
@@ -14277,52 +14078,25 @@
       "reasoning": false
     },
     {
-      "id": "baidu/ernie-4.5-vl-28b-a3b",
+      "id": "deepseek/deepseek_v3",
       "provider": "novita",
-      "contextWindow": 30000,
+      "contextWindow": 64000,
       "input": [
-        "text",
-        "image"
+        "text"
       ],
-      "maxTokens": 8000,
-      "name": "ERNIE 4.5 VL 28B A3B",
+      "maxTokens": 16000,
+      "name": "DeepSeek-V3",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.14,
-        "output": 0.56,
+        "input": 0.89,
+        "output": 0.89,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "baidu/ernie-4.5-vl-28b-a3b-thinking",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 65536,
-      "name": "ERNIE-4.5-VL-28B-A3B-Thinking",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.39,
-        "output": 0.39,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": false
     },
     {
       "id": "deepseek/deepseek-r1-0528",
@@ -14353,7 +14127,7 @@
         "text"
       ],
       "maxTokens": 16000,
-      "name": "DeepSeek R1 (Turbo)\t",
+      "name": "DeepSeek R1 (Turbo)",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -14365,144 +14139,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "deepseek/deepseek-v3-0324",
-      "provider": "novita",
-      "contextWindow": 163840,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 163840,
-      "name": "DeepSeek V3 0324",
-      "pricing": {
-        "cacheRead": 0.135,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.27,
-        "output": 1.12,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "deepseek/deepseek-v3-turbo",
-      "provider": "novita",
-      "contextWindow": 64000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16000,
-      "name": "DeepSeek V3 (Turbo)\t",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.4,
-        "output": 1.3,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "deepseek/deepseek-v3.1",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "DeepSeek V3.1",
-      "pricing": {
-        "cacheRead": 0.135,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.27,
-        "output": 1,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "deepseek/deepseek-v3.1-terminus",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Deepseek V3.1 Terminus",
-      "pricing": {
-        "cacheRead": 0.135,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.27,
-        "output": 1,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "deepseek/deepseek-v3.2",
-      "provider": "novita",
-      "contextWindow": 163840,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Deepseek V3.2",
-      "pricing": {
-        "cacheRead": 0.1345,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.269,
-        "output": 0.4,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "deepseek/deepseek-v3.2-exp",
-      "provider": "novita",
-      "contextWindow": 163840,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Deepseek V3.2 Exp",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.27,
-        "output": 0.41,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "deepseek/deepseek-v4-flash",
@@ -14522,13 +14158,34 @@
         "currency": "USD",
         "input": 0.14,
         "output": 0.28,
-        "source": "modelsDev",
+        "source": "liteLLM",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": true,
       "status": "deprecated",
       "statusReason": "novita no longer lists this model in its public model inventory."
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 393216,
+      "name": "DeepSeek V4 Flash 0731",
+      "pricing": {
+        "cacheRead": 0.028,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.44,
+        "output": 1.32,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "deepseek/deepseek-v4-pro",
@@ -14555,6 +14212,93 @@
       "reasoning": true
     },
     {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 393216,
+      "name": "DeepSeek V4 Pro 0813",
+      "pricing": {
+        "cacheRead": 0.044,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.32,
+        "output": 3.96,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 393216,
+      "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "cacheRead": 0.006,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "provider": "novita",
+      "contextWindow": 131072,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 8192,
+      "name": "Gemma 3 12B IT",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.05,
+        "output": 0.1,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "provider": "novita",
+      "contextWindow": 98304,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 16384,
+      "name": "Gemma 3 27B IT",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.119,
+        "output": 0.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "google/gemma-4-26b-a4b-it",
       "provider": "novita",
       "contextWindow": 262144,
@@ -14563,7 +14307,7 @@
         "image"
       ],
       "maxTokens": 131072,
-      "name": "Gemma 4 26B A4B",
+      "name": "Gemma 4 26B A4B IT",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -14585,7 +14329,7 @@
         "image"
       ],
       "maxTokens": 131072,
-      "name": "Gemma 4 31B",
+      "name": "Gemma 4 31B IT",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -14599,106 +14343,155 @@
       "reasoning": true
     },
     {
-      "id": "inclusionai/ling-2.6-1t",
+      "id": "inclusionai/ling-3.0-flash",
       "provider": "novita",
       "contextWindow": 262144,
       "input": [
         "text"
       ],
       "maxTokens": 32768,
-      "name": "Ling-2.6-1T",
+      "name": "Ling 3.0 Flash",
       "pricing": {
-        "cacheRead": 0.06,
+        "cacheRead": 0.012,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 2.5,
+        "input": 0.06,
+        "output": 0.18,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": true
     },
     {
-      "id": "inclusionai/ling-2.6-flash",
+      "id": "inclusionai/ling-3.0-flash-fin",
       "provider": "novita",
       "contextWindow": 262144,
       "input": [
         "text"
       ],
       "maxTokens": 32768,
-      "name": "Ling-2.6-flash",
+      "name": "Ling 3.0 Flash Fin",
       "pricing": {
-        "cacheRead": 0.02,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.3,
+        "input": 0.075,
+        "output": 0.22,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": true
     },
     {
-      "id": "inclusionai/ring-2.6-1t",
+      "id": "inclusionai/ling-3.0-flash-sante",
       "provider": "novita",
       "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 65536,
-      "name": "Ring-2.6-1T",
+      "maxTokens": 32768,
+      "name": "Ling 3.0 Flash Sante",
       "pricing": {
-        "cacheRead": 0.06,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 2.5,
+        "input": 0.075,
+        "output": 0.22,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": true
     },
     {
-      "id": "kwaipilot/kat-coder-pro",
+      "id": "inclusionai/ling-3.0-flash-vl",
       "provider": "novita",
-      "contextWindow": 256000,
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Ling 3.0 Flash VL",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.22,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash",
+      "provider": "novita",
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 128000,
-      "name": "Kat Coder Pro",
+      "maxTokens": 32768,
+      "name": "Ling 3.1 Flash",
       "pricing": {
-        "cacheRead": 0.06,
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "novita",
+      "contextWindow": 16384,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 16384,
+      "name": "Llama-3.1-8B-Instruct",
+      "pricing": {
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.02,
+        "output": 0.05,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": false
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "provider": "novita",
+      "contextWindow": 131000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32000,
+      "name": "Llama 3.2 1B Instruct",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.02,
+        "output": 0.02,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
       "provider": "novita",
-      "contextWindow": 131072,
+      "contextWindow": 12288,
       "input": [
         "text"
       ],
-      "maxTokens": 120000,
-      "name": "Llama 3.3 70B Instruct",
+      "maxTokens": 12288,
+      "name": "Llama-3.3-70B-Instruct",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -14712,50 +14505,90 @@
       "reasoning": false
     },
     {
-      "id": "minimax/minimax-m2",
+      "id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
       "provider": "novita",
-      "contextWindow": 204800,
+      "contextWindow": 1048576,
       "input": [
-        "text"
+        "text",
+        "image"
       ],
-      "maxTokens": 131072,
-      "name": "MiniMax-M2",
+      "maxTokens": 8192,
+      "name": "Llama 4 Maverick 17B Instruct",
       "pricing": {
-        "cacheRead": 0.03,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.27,
+        "output": 0.85,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": false
     },
     {
-      "id": "minimax/minimax-m2.1",
+      "id": "meta-llama/llama-4-scout-17b-16e-instruct",
       "provider": "novita",
-      "contextWindow": 204800,
+      "contextWindow": 131072,
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "maxTokens": 131072,
-      "name": "Minimax M2.1",
+      "name": "Llama 4 Scout 17B Instruct",
       "pricing": {
-        "cacheRead": 0.03,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.18,
+        "output": 0.59,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": false
+    },
+    {
+      "id": "mindai/macaron-v1-tall",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "Macaron V1 Tall",
+      "pricing": {
+        "cacheRead": 0.044,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2475,
+        "output": 1.43,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "mindai/macaron-v1-venti",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Macaron V1 Venti",
+      "pricing": {
+        "cacheRead": 0.165,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.825,
+        "output": 2.475,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "minimax/minimax-m2.5",
@@ -14764,8 +14597,8 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
-      "name": "MiniMax M2.5",
+      "maxTokens": 131100,
+      "name": "MiniMax-M2.5",
       "pricing": {
         "cacheRead": 0.03,
         "cacheWrite": 0,
@@ -14777,29 +14610,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "minimax/minimax-m2.5-highspeed",
-      "provider": "novita",
-      "contextWindow": 204800,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131072,
-      "name": "MiniMax M2.5 Highspeed",
-      "pricing": {
-        "cacheRead": 0.03,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.6,
-        "output": 2.4,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.7",
@@ -14861,8 +14671,29 @@
         "currency": "USD",
         "input": 0.3,
         "output": 1.2,
-        "source": "liteLLM",
+        "source": "modelsDev",
         "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.06,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 1.2,
+            "range": [
+              0,
+              524288
+            ]
+          },
+          {
+            "cacheRead": 0.12,
+            "cacheWrite": 0,
+            "input": 0.6,
+            "output": 2.4,
+            "range": [
+              524288
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -14875,7 +14706,7 @@
         "text"
       ],
       "maxTokens": 40000,
-      "name": "MiniMax M1",
+      "name": "MiniMax M1 80K",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -14896,7 +14727,7 @@
         "text"
       ],
       "maxTokens": 98304,
-      "name": "Kimi K2 0905",
+      "name": "Kimi K2 Instruct 0905",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -14916,7 +14747,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 98304,
       "name": "Kimi K2 Instruct",
       "pricing": {
         "cacheRead": 0,
@@ -15043,15 +14874,56 @@
       "reasoning": true
     },
     {
+      "id": "nousresearch/hermes-2-pro-llama-3-8b",
+      "provider": "novita",
+      "contextWindow": 8192,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 8192,
+      "name": "Hermes 2 Pro Llama 3 8B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.14,
+        "output": 0.14,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "Nemotron 3 Nano 30B A3B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.05,
+        "output": 0.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-oss-120b",
       "provider": "novita",
       "contextWindow": 131072,
       "input": [
-        "text",
-        "image"
+        "text"
       ],
       "maxTokens": 32768,
-      "name": "OpenAI GPT OSS 120B",
+      "name": "GPT OSS 120B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -15063,260 +14935,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "qwen/qwen-2.5-72b-instruct",
-      "provider": "novita",
-      "contextWindow": 32000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "Qwen 2.5 72B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.38,
-        "output": 0.4,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen2.5-7b-instruct",
-      "provider": "novita",
-      "contextWindow": 32000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32000,
-      "name": "Qwen2.5 7B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.07,
-        "output": 0.07,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-235b-a22b-instruct-2507",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16384,
-      "name": "Qwen3 235B A22B Instruct 2507",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.09,
-        "output": 0.58,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-235b-a22b-thinking-2507",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3 235B A22b Thinking 2507",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.3,
-        "output": 3,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-coder-30b-a3b-instruct",
-      "provider": "novita",
-      "contextWindow": 160000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3 Coder 30b A3B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.07,
-        "output": 0.27,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-coder-480b-a35b-instruct",
-      "provider": "novita",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3 Coder 480B A35B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.38,
-        "output": 1.55,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-coder-next",
-      "provider": "novita",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3 Coder Next",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.2,
-        "output": 1.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-max",
-      "provider": "novita",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Qwen3 Max",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2.11,
-        "output": 8.45,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-next-80b-a3b-instruct",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3 Next 80B A3B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.15,
-        "output": 1.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-next-80b-a3b-thinking",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3 Next 80B A3B Thinking",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.15,
-        "output": 1.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-omni-30b-a3b-instruct",
-      "provider": "novita",
-      "contextWindow": 65536,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "Qwen3 Omni 30B A3B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.25,
-        "output": 0.97,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-omni-30b-a3b-thinking",
@@ -15341,30 +14959,6 @@
       "reasoning": true
     },
     {
-      "id": "qwen/qwen3-vl-235b-a22b-instruct",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3 VL 235B A22B Instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.3,
-        "output": 1.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "provider": "novita",
       "contextWindow": 131072,
@@ -15373,7 +14967,7 @@
         "image"
       ],
       "maxTokens": 32768,
-      "name": "qwen/qwen3-vl-30b-a3b-instruct",
+      "name": "Qwen3 VL 30B A3B Instruct",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -15387,54 +14981,6 @@
       "reasoning": false
     },
     {
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "qwen/qwen3-vl-30b-a3b-thinking",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.2,
-        "output": 1,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "qwen/qwen3-vl-8b-instruct",
-      "provider": "novita",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "qwen/qwen3-vl-8b-instruct",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.08,
-        "output": 0.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
       "id": "qwen/qwen3.5-122b-a10b",
       "provider": "novita",
       "contextWindow": 262144,
@@ -15443,7 +14989,7 @@
         "image"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3.5-122B-A10B",
+      "name": "Qwen3.5 122B-A10B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -15465,7 +15011,7 @@
         "image"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3.5-27B",
+      "name": "Qwen3.5 27B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -15487,7 +15033,7 @@
         "image"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3.5-35B-A3B",
+      "name": "Qwen3.5 35B-A3B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -15508,14 +15054,58 @@
         "text",
         "image"
       ],
-      "maxTokens": 64000,
-      "name": "Qwen3.5-397B-A17B",
+      "maxTokens": 65536,
+      "name": "Qwen3.5 397B-A17B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.6,
         "output": 3.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "qwen/qwen3.6-27b",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Qwen3.6 27B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 3.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "qwen/qwen3.6-35b-a3b",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Qwen3.6 35B-A3B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.248,
+        "output": 1.485,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15533,7 +15123,7 @@
       "name": "Qwen3.7-Max",
       "pricing": {
         "cacheRead": 0.25,
-        "cacheWrite": 1.5625,
+        "cacheWrite": 0,
         "currency": "USD",
         "input": 1.25,
         "output": 3.75,
@@ -15544,136 +15134,177 @@
       "reasoning": true
     },
     {
-      "id": "sao10K/l3-70b-euryale-v2.1",
+      "id": "qwen/qwen3.8-2.4t-a95b",
       "provider": "novita",
-      "contextWindow": 8192,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "L3 70B Euryale V2.1\t",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.48,
-        "output": 1.48,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "sao10K/L3-8B-stheno-v3.2",
-      "provider": "novita",
-      "contextWindow": 8192,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32000,
-      "name": "L3 8B Stheno V3.2",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.05,
-        "output": 0.05,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "sao10K/l31-70b-euryale-v2.2",
-      "provider": "novita",
-      "contextWindow": 8192,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "L31 70B Euryale V2.2",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.48,
-        "output": 1.48,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "xiaomimimo/mimo-v2-flash",
-      "provider": "novita",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32000,
-      "name": "XiaomiMiMo/MiMo-V2-Flash",
-      "pricing": {
-        "cacheRead": 0.3,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.1,
-        "output": 0.3,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "xiaomimimo/mimo-v2-pro",
-      "provider": "novita",
-      "contextWindow": 1048576,
+      "contextWindow": 1000000,
       "input": [
         "text"
       ],
       "maxTokens": 131072,
-      "name": "MiMo-V2-Pro",
+      "name": "Qwen3.8 2.4T A95B",
       "pricing": {
-        "cacheRead": 0.4,
+        "cacheRead": 0.25,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 2,
         "output": 6,
         "source": "modelsDev",
         "status": "known",
-        "tieredPricing": [
-          {
-            "cacheRead": 0.4,
-            "cacheWrite": 0,
-            "input": 2,
-            "output": 6,
-            "range": [
-              0,
-              256000
-            ]
-          },
-          {
-            "cacheRead": 0.4,
-            "cacheWrite": 0,
-            "input": 2,
-            "output": 6,
-            "range": [
-              256000
-            ]
-          }
-        ],
         "unit": "million_tokens"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": true
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "provider": "novita",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen3.8 27B",
+      "pricing": {
+        "cacheRead": 0.085,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.42,
+        "output": 3,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "qwen/qwen3.8-flash",
+      "provider": "novita",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen3.8 Flash",
+      "pricing": {
+        "cacheRead": 0.016,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.47,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "qwen/qwen3.8-max",
+      "provider": "novita",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen3.8 Max",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "stepfun/step-3.7-flash",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Step 3.7 Flash",
+      "pricing": {
+        "cacheRead": 0.04,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 1.15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "tencent/hy3",
+      "provider": "novita",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "Hy3",
+      "pricing": {
+        "cacheRead": 0.035,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.14,
+        "output": 0.58,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "tencent/hy4-preview",
+      "provider": "novita",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 64000,
+      "name": "Hy4 preview",
+      "pricing": {
+        "cacheRead": 0.042,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.834,
+        "output": 2.501,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "xiaomimimo/mimo-v2.5",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.5",
+      "pricing": {
+        "cacheRead": 0.0034,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.168,
+        "output": 0.336,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "xiaomimimo/mimo-v2.5-pro",
@@ -15692,53 +15323,53 @@
         "output": 1.044,
         "source": "modelsDev",
         "status": "known",
-        "tieredPricing": [
-          {
-            "cacheRead": 0.0043,
-            "cacheWrite": 0,
-            "input": 0.522,
-            "output": 1.044,
-            "range": [
-              0,
-              256000
-            ]
-          },
-          {
-            "cacheRead": 0.0043,
-            "cacheWrite": 0,
-            "input": 0.522,
-            "output": 1.044,
-            "range": [
-              256000
-            ]
-          }
-        ],
         "unit": "million_tokens"
       },
       "reasoning": true
     },
     {
-      "id": "zai-org/glm-4.5",
+      "id": "xiaomimimo/mimo-v2.6-flash",
       "provider": "novita",
-      "contextWindow": 131072,
+      "contextWindow": 1048576,
       "input": [
-        "text"
+        "text",
+        "image"
       ],
-      "maxTokens": 98304,
-      "name": "GLM-4.5",
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.11,
+        "cacheRead": 0.0028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.6,
-        "output": 2.2,
+        "input": 0.14,
+        "output": 0.28,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
+      "reasoning": true
+    },
+    {
+      "id": "xiaomimimo/mimo-v2.6-pro",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Pro",
+      "pricing": {
+        "cacheRead": 0.0036,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.435,
+        "output": 0.87,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "zai-org/glm-4.5-air",
@@ -15748,7 +15379,7 @@
         "text"
       ],
       "maxTokens": 98304,
-      "name": "GLM 4.5 Air",
+      "name": "GLM-4.5-Air",
       "pricing": {
         "cacheRead": 0.025,
         "cacheWrite": 0,
@@ -15770,7 +15401,7 @@
         "image"
       ],
       "maxTokens": 16384,
-      "name": "GLM 4.5V",
+      "name": "GLM-4.5V",
       "pricing": {
         "cacheRead": 0.11,
         "cacheWrite": 0,
@@ -15791,7 +15422,7 @@
         "text"
       ],
       "maxTokens": 131072,
-      "name": "GLM 4.6",
+      "name": "GLM-4.6",
       "pricing": {
         "cacheRead": 0.11,
         "cacheWrite": 0,
@@ -15813,7 +15444,7 @@
         "image"
       ],
       "maxTokens": 32768,
-      "name": "GLM 4.6V",
+      "name": "GLM-4.6V",
       "pricing": {
         "cacheRead": 0.055,
         "cacheWrite": 0,
@@ -15928,6 +15559,49 @@
         "currency": "USD",
         "input": 1.4,
         "output": 4.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "zai-org/glm-5.3",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3",
+      "pricing": {
+        "cacheRead": 0.26,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.4,
+        "output": 4.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "zai-org/glm-5.3-flash",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3-Flash",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -26140,11 +25814,6 @@
       "output": 3.49,
       "source": "deepinfra"
     },
-    "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
-      "input": 0.15,
-      "output": 0.6,
-      "source": "deepinfra"
-    },
     "deepinfra/Qwen/Qwen3-VL-30B-A3B-Thinking": {
       "input": 0.29,
       "output": 0.99,
@@ -28125,21 +27794,21 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.01,
+      "cacheRead": 0.005,
       "input": 0.016,
-      "output": 1.2,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.13,
-      "input": 0.1282,
-      "output": 8,
+      "cacheRead": 0.004536,
+      "input": 0.14256,
+      "output": 0.42767999999999995,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00528,
-      "input": 0.00528,
-      "output": 0.020123000000000002,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
+      "output": 1.28,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -28179,8 +27848,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.49,
-      "output": 13,
+      "input": 0.84,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -28329,15 +27998,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "input": 0.032,
-      "output": 0.214422,
+      "output": 0.092301,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.029,
-      "input": 0.031200000000000002,
-      "output": 4.4,
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -28951,14 +28620,14 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0131,
-      "input": 0.0131,
+      "cacheRead": 0.0173,
+      "input": 0.0173,
       "output": 1.28,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.006500000000000001,
-      "input": 0.006500000000000001,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -28969,9 +28638,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0204015,
-      "input": 0.24481799999999998,
-      "output": 0.48963599999999996,
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -29352,9 +29021,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -29733,6 +29402,7 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k2-thinking": {
+      "cacheRead": 0.15,
       "input": 0.6,
       "output": 2.5,
       "source": "openRouter"
@@ -29756,9 +29426,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.82,
-      "output": 13.5,
+      "cacheRead": 0.6,
+      "input": 0.8999999999999999,
+      "output": 14,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -32183,9 +31853,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6": {
-      "cacheRead": 0.08,
-      "input": 0.43,
-      "output": 1.75,
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6v": {
@@ -32230,9 +31900,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.039,
-      "input": 0.04,
-      "output": 7,
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -34315,7 +33985,7 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/mistral/mistral-nemo": {
-      "input": 0.019,
+      "input": 0.029,
       "output": 0.03,
       "source": "modelsDev"
     },
@@ -36046,8 +35716,15 @@
       "defaultModel": "deepseek/deepseek-v4-pro",
       "recommendedModels": [
         "moonshotai/kimi-k3",
+        "deepseek/deepseek-v4.1-flash",
+        "tencent/hy4-preview",
+        "qwen/qwen3.8-max",
+        "zai-org/glm-5.3",
         "deepseek/deepseek-v4-pro",
-        "minimax/minimax-m3"
+        "zai-org/glm-5.3-flash",
+        "qwen/qwen3.8-27b",
+        "minimax/minimax-m3",
+        "xiaomimimo/mimo-v2.6-pro"
       ]
     },
     "nvidia": {
@@ -36228,7 +35905,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "432ade6f500de6cdb0bcd4b0948a07bf466672f1",
+  "sourceCommit": "e69931d6e6a21b0067a9f474db50a86e9563f61e",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -40065,6 +39742,11 @@
     "azure_ai/Meta-Llama-3.1-70B-Instruct": {
       "input": 2.68,
       "output": 3.54,
+      "source": "liteLLM"
+    },
+    "azure_ai/Microsoft-Decision-1": {
+      "input": 0.041999999999999996,
+      "output": 0.041999999999999996,
       "source": "liteLLM"
     },
     "azure_ai/ministral-3b": {
@@ -46541,6 +46223,7 @@
     "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
       "input": 0.15,
       "output": 0.6,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/Qwen/Qwen3.5-122B-A10B": {
@@ -49164,6 +48847,13 @@
       "output": 5,
       "source": "liteLLM"
     },
+    "github_copilot/claude-haiku-5.5": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
     "github_copilot/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -51492,6 +51182,11 @@
       "output": 0.79,
       "source": "modelsDev"
     },
+    "huggingface/MiniMaxAI/MiniMax-M1-80k": {
+      "input": 0.55,
+      "output": 2.2,
+      "source": "modelsDev"
+    },
     "huggingface/MiniMaxAI/MiniMax-M2": {
       "input": 0.3,
       "output": 1.2,
@@ -51643,6 +51338,11 @@
       "output": 3.95,
       "source": "modelsDev"
     },
+    "huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+      "input": 0.2,
+      "output": 0.7,
+      "source": "modelsDev"
+    },
     "huggingface/Qwen/Qwen3.5-122B-A10B": {
       "input": 0.4,
       "output": 3.2,
@@ -51731,6 +51431,11 @@
     "huggingface/XiaomiMiMo/MiMo-V2.5-Pro": {
       "input": 1,
       "output": 3,
+      "source": "modelsDev"
+    },
+    "huggingface/zai-org/AutoGLM-Phone-9B-Multilingual": {
+      "input": 0.035,
+      "output": 0.138,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-4.5": {
@@ -53380,9 +53085,25 @@
       "output": 0.5,
       "source": "liteLLM"
     },
+    "novita-ai/baai/bge-m3": {
+      "input": 0.01,
+      "output": 0,
+      "source": "modelsDev"
+    },
+    "novita-ai/baai/bge-reranker-v2-m3": {
+      "input": 0.01,
+      "output": 0,
+      "source": "modelsDev"
+    },
     "novita-ai/baichuan/baichuan-m2-32b": {
       "input": 0.07,
       "output": 0.07,
+      "source": "modelsDev"
+    },
+    "novita-ai/baidu/cobuddy": {
+      "cacheRead": 0.07,
+      "input": 0.28,
+      "output": 1.13,
       "source": "modelsDev"
     },
     "novita-ai/baidu/ernie-4.5-21B-a3b": {
@@ -53390,44 +53111,14 @@
       "output": 0.28,
       "source": "modelsDev"
     },
-    "novita-ai/baidu/ernie-4.5-21B-a3b-thinking": {
-      "input": 0.07,
-      "output": 0.28,
-      "source": "modelsDev"
-    },
-    "novita-ai/baidu/ernie-4.5-300b-a47b-paddle": {
-      "input": 0.28,
-      "output": 1.1,
-      "source": "modelsDev"
-    },
-    "novita-ai/baidu/ernie-4.5-vl-28b-a3b": {
-      "input": 0.14,
-      "output": 0.56,
-      "source": "modelsDev"
-    },
-    "novita-ai/baidu/ernie-4.5-vl-28b-a3b-thinking": {
-      "input": 0.39,
-      "output": 0.39,
-      "source": "modelsDev"
-    },
-    "novita-ai/baidu/ernie-4.5-vl-424b-a47b": {
-      "input": 0.42,
-      "output": 1.25,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-ocr": {
-      "input": 0.03,
-      "output": 0.03,
+    "novita-ai/deepseek/deepseek_v3": {
+      "input": 0.89,
+      "output": 0.89,
       "source": "modelsDev"
     },
     "novita-ai/deepseek/deepseek-ocr-2": {
       "input": 0.03,
       "output": 0.03,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-prover-v2-671b": {
-      "input": 0.7,
-      "output": 2.5,
       "source": "modelsDev"
     },
     "novita-ai/deepseek/deepseek-r1-0528": {
@@ -53441,70 +53132,33 @@
       "output": 0.09,
       "source": "modelsDev"
     },
-    "novita-ai/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-r1-distill-qwen-14b": {
-      "input": 0.15,
-      "output": 0.15,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-r1-distill-qwen-32b": {
-      "input": 0.3,
-      "output": 0.3,
-      "source": "modelsDev"
-    },
     "novita-ai/deepseek/deepseek-r1-turbo": {
       "input": 0.7,
       "output": 2.5,
       "source": "modelsDev"
     },
-    "novita-ai/deepseek/deepseek-v3-0324": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1.12,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
-      "output": 1.3,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-v3.1": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-v3.1-terminus": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-v3.2-exp": {
-      "input": 0.27,
-      "output": 0.41,
-      "source": "modelsDev"
-    },
-    "novita-ai/deepseek/deepseek-v4-flash": {
+    "novita-ai/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.44,
+      "output": 1.32,
       "source": "modelsDev"
     },
     "novita-ai/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.135,
       "input": 1.6,
       "output": 3.2,
+      "source": "modelsDev"
+    },
+    "novita-ai/deepseek/deepseek-v4-pro-0813": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96,
+      "source": "modelsDev"
+    },
+    "novita-ai/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "modelsDev"
     },
     "novita-ai/google/gemma-3-12b-it": {
@@ -53532,38 +53186,28 @@
       "output": 0.09,
       "source": "modelsDev"
     },
-    "novita-ai/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5,
+    "novita-ai/inclusionai/ling-3.0-flash": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18,
       "source": "modelsDev"
     },
-    "novita-ai/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3,
+    "novita-ai/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22,
       "source": "modelsDev"
     },
-    "novita-ai/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5,
+    "novita-ai/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22,
       "source": "modelsDev"
     },
-    "novita-ai/kwaipilot/kat-coder-pro": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "novita-ai/meta-llama/llama-3-70b-instruct": {
-      "input": 0.51,
-      "output": 0.74,
-      "source": "modelsDev"
-    },
-    "novita-ai/meta-llama/llama-3-8b-instruct": {
-      "input": 0.04,
-      "output": 0.04,
+    "novita-ai/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22,
       "source": "modelsDev"
     },
     "novita-ai/meta-llama/llama-3.1-8b-instruct": {
@@ -53571,9 +53215,9 @@
       "output": 0.05,
       "source": "modelsDev"
     },
-    "novita-ai/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.03,
-      "output": 0.05,
+    "novita-ai/meta-llama/llama-3.2-1b-instruct": {
+      "input": 0.02,
+      "output": 0.02,
       "source": "modelsDev"
     },
     "novita-ai/meta-llama/llama-3.3-70b-instruct": {
@@ -53596,28 +53240,22 @@
       "output": 0.62,
       "source": "modelsDev"
     },
-    "novita-ai/minimax/minimax-m2": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2,
+    "novita-ai/mindai/macaron-v1-tall": {
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43,
       "source": "modelsDev"
     },
-    "novita-ai/minimax/minimax-m2.1": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2,
+    "novita-ai/mindai/macaron-v1-venti": {
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475,
       "source": "modelsDev"
     },
     "novita-ai/minimax/minimax-m2.5": {
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2,
-      "source": "modelsDev"
-    },
-    "novita-ai/minimax/minimax-m2.5-highspeed": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 2.4,
       "source": "modelsDev"
     },
     "novita-ai/minimax/minimax-m2.7": {
@@ -53633,14 +53271,36 @@
       "output": 2.4,
       "source": "modelsDev"
     },
+    "novita-ai/minimax/minimax-m3": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
+    },
     "novita-ai/minimaxai/minimax-m1-80k": {
       "input": 0.55,
       "output": 2.2,
-      "source": "modelsDev"
-    },
-    "novita-ai/mistralai/mistral-nemo": {
-      "input": 0.04,
-      "output": 0.17,
       "source": "modelsDev"
     },
     "novita-ai/moonshotai/kimi-k2-0905": {
@@ -53688,14 +53348,14 @@
       "output": 0.14,
       "source": "modelsDev"
     },
+    "novita-ai/nvidia/nemotron-3-nano-30b-a3b": {
+      "input": 0.05,
+      "output": 0.2,
+      "source": "modelsDev"
+    },
     "novita-ai/openai/gpt-oss-120b": {
       "input": 0.05,
       "output": 0.25,
-      "source": "modelsDev"
-    },
-    "novita-ai/openai/gpt-oss-20b": {
-      "input": 0.04,
-      "output": 0.15,
       "source": "modelsDev"
     },
     "novita-ai/paddlepaddle/paddleocr-vl": {
@@ -53703,94 +53363,14 @@
       "output": 0.02,
       "source": "modelsDev"
     },
-    "novita-ai/qwen/qwen-2.5-72b-instruct": {
-      "input": 0.38,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
     "novita-ai/qwen/qwen-mt-plus": {
       "input": 0.25,
       "output": 0.75,
       "source": "modelsDev"
     },
-    "novita-ai/qwen/qwen2.5-7b-instruct": {
+    "novita-ai/qwen/qwen3-embedding-8b": {
       "input": 0.07,
-      "output": 0.07,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-235b-a22b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.58,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.3,
-      "output": 3,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-30b-a3b-fp8": {
-      "input": 0.09,
-      "output": 0.45,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-4b-fp8": {
-      "input": 0.03,
-      "output": 0.03,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-8b-fp8": {
-      "input": 0.035,
-      "output": 0.138,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.27,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 0.38,
-      "output": 1.55,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-coder-next": {
-      "input": 0.2,
-      "output": 1.5,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.15,
-      "output": 1.5,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.15,
-      "output": 1.5,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-omni-30b-a3b-instruct": {
-      "input": 0.25,
-      "output": 0.97,
+      "output": 0,
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen3-omni-30b-a3b-thinking": {
@@ -53798,29 +53378,14 @@
       "output": 0.97,
       "source": "modelsDev"
     },
-    "novita-ai/qwen/qwen3-vl-235b-a22b-instruct": {
-      "input": 0.3,
-      "output": 1.5,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-vl-235b-a22b-thinking": {
-      "input": 0.98,
-      "output": 3.95,
+    "novita-ai/qwen/qwen3-reranker-8b": {
+      "input": 0.05,
+      "output": 0,
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen3-vl-30b-a3b-instruct": {
       "input": 0.2,
       "output": 0.7,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
-      "output": 1,
-      "source": "modelsDev"
-    },
-    "novita-ai/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.08,
-      "output": 0.5,
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen3.5-122b-a10b": {
@@ -53843,102 +53408,91 @@
       "output": 3.6,
       "source": "modelsDev"
     },
+    "novita-ai/qwen/qwen3.6-27b": {
+      "input": 0.6,
+      "output": 3.6,
+      "source": "modelsDev"
+    },
+    "novita-ai/qwen/qwen3.6-35b-a3b": {
+      "input": 0.248,
+      "output": 1.485,
+      "source": "modelsDev"
+    },
     "novita-ai/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75,
       "source": "modelsDev"
     },
-    "novita-ai/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48,
-      "source": "modelsDev"
-    },
-    "novita-ai/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05,
-      "source": "modelsDev"
-    },
-    "novita-ai/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05,
-      "source": "modelsDev"
-    },
-    "novita-ai/sao10K/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48,
-      "source": "modelsDev"
-    },
-    "novita-ai/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3,
-      "source": "modelsDev"
-    },
-    "novita-ai/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
+    "novita-ai/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
       "input": 2,
       "output": 6,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "source": "modelsDev"
+    },
+    "novita-ai/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3,
+      "source": "modelsDev"
+    },
+    "novita-ai/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
+      "source": "modelsDev"
+    },
+    "novita-ai/qwen/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6,
+      "source": "modelsDev"
+    },
+    "novita-ai/stepfun/step-3.7-flash": {
+      "cacheRead": 0.04,
+      "input": 0.2,
+      "output": 1.15,
+      "source": "modelsDev"
+    },
+    "novita-ai/tencent/hy3": {
+      "cacheRead": 0.035,
+      "input": 0.14,
+      "output": 0.58,
+      "source": "modelsDev"
+    },
+    "novita-ai/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501,
+      "source": "modelsDev"
+    },
+    "novita-ai/xiaomimimo/mimo-v2.5": {
+      "cacheRead": 0.0034,
+      "input": 0.168,
+      "output": 0.336,
+      "source": "modelsDev"
     },
     "novita-ai/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
       "output": 1.044,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "source": "modelsDev"
+    },
+    "novita-ai/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28,
+      "source": "modelsDev"
+    },
+    "novita-ai/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87,
+      "source": "modelsDev"
     },
     "novita-ai/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
       "output": 0.138,
-      "source": "modelsDev"
-    },
-    "novita-ai/zai-org/glm-4.5": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2,
       "source": "modelsDev"
     },
     "novita-ai/zai-org/glm-4.5-air": {
@@ -53995,15 +53549,41 @@
       "output": 4.4,
       "source": "modelsDev"
     },
+    "novita-ai/zai-org/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
+      "source": "modelsDev"
+    },
+    "novita-ai/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
     "novita/baai/bge-m3": {
+      "alternatives": [
+        {
+          "input": 0.01,
+          "output": 0.01,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.01,
-      "output": 0.01,
-      "source": "liteLLM"
+      "output": 0,
+      "source": "modelsDev"
     },
     "novita/baai/bge-reranker-v2-m3": {
+      "alternatives": [
+        {
+          "input": 0.01,
+          "output": 0.01,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.01,
-      "output": 0.01,
-      "source": "liteLLM"
+      "output": 0,
+      "source": "modelsDev"
     },
     "novita/baichuan/baichuan-m2-32b": {
       "alternatives": [
@@ -54018,10 +53598,19 @@
       "source": "modelsDev"
     },
     "novita/baidu/cobuddy": {
+      "alternatives": [
+        {
+          "cacheRead": 0.07,
+          "input": 0.28,
+          "output": 1.13,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.07,
       "input": 0.28,
       "output": 1.13,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/baidu/ernie-4.5-21B-a3b": {
       "alternatives": [
@@ -54037,83 +53626,47 @@
       "source": "modelsDev"
     },
     "novita/baidu/ernie-4.5-21B-a3b-thinking": {
-      "alternatives": [
-        {
-          "input": 0.07,
-          "output": 0.28,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.07,
       "output": 0.28,
-      "source": "modelsDev"
-    },
-    "novita/baidu/ernie-4.5-300b-a47b-paddle": {
-      "alternatives": [
-        {
-          "input": 0.28,
-          "output": 1.1,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.28,
-      "output": 1.1,
-      "source": "modelsDev"
-    },
-    "novita/baidu/ernie-4.5-vl-28b-a3b": {
-      "alternatives": [
-        {
-          "input": 0.14,
-          "output": 0.56,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.14,
-      "output": 0.56,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "novita/baidu/ernie-4.5-vl-28b-a3b-thinking": {
-      "alternatives": [
-        {
-          "input": 0.39,
-          "output": 0.39,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.39,
-      "output": 0.39,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "novita/baidu/ernie-4.5-vl-424b-a47b": {
-      "alternatives": [
-        {
-          "input": 0.42,
-          "output": 1.25,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.42,
-      "output": 1.25,
-      "source": "modelsDev"
-    },
-    "novita/deepseek/deepseek_v3": {
-      "input": 0.89,
-      "output": 0.89,
       "source": "liteLLM"
     },
-    "novita/deepseek/deepseek-ocr": {
+    "novita/baidu/ernie-4.5-300b-a47b-paddle": {
+      "input": 0.28,
+      "output": 1.1,
+      "source": "liteLLM"
+    },
+    "novita/baidu/ernie-4.5-vl-28b-a3b": {
+      "input": 0.14,
+      "output": 0.56,
+      "source": "liteLLM"
+    },
+    "novita/baidu/ernie-4.5-vl-28b-a3b-thinking": {
+      "input": 0.39,
+      "output": 0.39,
+      "source": "liteLLM"
+    },
+    "novita/baidu/ernie-4.5-vl-424b-a47b": {
+      "input": 0.42,
+      "output": 1.25,
+      "source": "liteLLM"
+    },
+    "novita/deepseek/deepseek_v3": {
       "alternatives": [
         {
-          "input": 0.03,
-          "output": 0.03,
+          "input": 0.89,
+          "output": 0.89,
           "source": "liteLLM"
         }
       ],
+      "input": 0.89,
+      "output": 0.89,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/deepseek/deepseek-ocr": {
       "input": 0.03,
       "output": 0.03,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-ocr-2": {
       "alternatives": [
@@ -54128,16 +53681,9 @@
       "source": "modelsDev"
     },
     "novita/deepseek/deepseek-prover-v2-671b": {
-      "alternatives": [
-        {
-          "input": 0.7,
-          "output": 2.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.7,
       "output": 2.5,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-r1": {
       "input": 4,
@@ -54172,40 +53718,19 @@
       "source": "modelsDev"
     },
     "novita/deepseek/deepseek-r1-distill-llama-70b": {
-      "alternatives": [
-        {
-          "input": 0.7999999999999999,
-          "output": 0.7999999999999999,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.8,
-      "output": 0.8,
-      "source": "modelsDev"
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999,
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-r1-distill-qwen-14b": {
-      "alternatives": [
-        {
-          "input": 0.15,
-          "output": 0.15,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.15,
       "output": 0.15,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-r1-distill-qwen-32b": {
-      "alternatives": [
-        {
-          "input": 0.3,
-          "output": 0.3,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.3,
       "output": 0.3,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-r1-turbo": {
       "alternatives": [
@@ -54226,90 +53751,38 @@
       "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3-0324": {
-      "alternatives": [
-        {
-          "cacheRead": 0.135,
-          "input": 0.27,
-          "output": 1.12,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.135,
       "input": 0.27,
       "output": 1.12,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3-turbo": {
-      "alternatives": [
-        {
-          "input": 0.39999999999999997,
-          "output": 1.3,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.4,
+      "input": 0.39999999999999997,
       "output": 1.3,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3.1": {
-      "alternatives": [
-        {
-          "cacheRead": 0.135,
-          "input": 0.27,
-          "output": 1,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.135,
       "input": 0.27,
       "output": 1,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3.1-terminus": {
-      "alternatives": [
-        {
-          "cacheRead": 0.135,
-          "input": 0.27,
-          "output": 1,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.135,
       "input": 0.27,
       "output": 1,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3.2": {
-      "alternatives": [
-        {
-          "cacheRead": 0.13449999999999998,
-          "input": 0.26899999999999996,
-          "output": 0.39999999999999997,
-          "source": "liteLLM"
-        }
-      ],
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997,
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3.2-exp": {
-      "alternatives": [
-        {
-          "input": 0.27,
-          "output": 0.41,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.27,
       "output": 0.41,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v3/community": {
       "input": 0.89,
@@ -54317,25 +53790,26 @@
       "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v4-flash": {
-      "alternatives": [
-        {
-          "cacheRead": 0.028,
-          "input": 0.14,
-          "output": 0.28,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.028,
       "input": 0.14,
       "output": 0.28,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v4-flash-0731": {
+      "alternatives": [
+        {
+          "cacheRead": 0.028,
+          "input": 0.44,
+          "output": 1.32,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.028,
       "input": 0.44,
       "output": 1.32,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/deepseek/deepseek-v4-flash-vision-exp": {
       "cacheRead": 0.028,
@@ -54359,10 +53833,26 @@
       "source": "modelsDev"
     },
     "novita/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.132,
+      "alternatives": [
+        {
+          "cacheRead": 0.132,
+          "input": 1.32,
+          "output": 3.9600000000000004,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.044,
       "input": 1.32,
-      "output": 3.9600000000000004,
-      "source": "liteLLM"
+      "output": 3.96,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/google/gemma-3-12b-it": {
       "alternatives": [
@@ -54374,6 +53864,7 @@
       ],
       "input": 0.05,
       "output": 0.1,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/google/gemma-3-27b-it": {
@@ -54386,6 +53877,7 @@
       ],
       "input": 0.119,
       "output": 0.2,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/google/gemma-4-26b-a4b-it": {
@@ -54426,25 +53918,20 @@
       "output": 0.09,
       "source": "modelsDev"
     },
-    "novita/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "novita/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
     "novita/inclusionai/ling-3.0-flash": {
+      "alternatives": [
+        {
+          "cacheRead": 0.012,
+          "input": 0.06,
+          "output": 0.18,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.012,
       "input": 0.06,
       "output": 0.18,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/inclusionai/ling-3.0-flash-fast": {
       "cacheRead": 0.012,
@@ -54452,51 +53939,42 @@
       "output": 0.18,
       "source": "liteLLM"
     },
-    "novita/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5,
+    "novita/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/kwaipilot/kat-coder-pro": {
-      "alternatives": [
-        {
-          "cacheRead": 0.06,
-          "input": 0.3,
-          "output": 1.2,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.06,
       "input": 0.3,
       "output": 1.2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/meta-llama/llama-3-70b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.51,
-          "output": 0.74,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.51,
       "output": 0.74,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/meta-llama/llama-3-8b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.04,
-          "output": 0.04,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.04,
       "output": 0.04,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/meta-llama/llama-3.1-8b-instruct": {
       "alternatives": [
@@ -54508,24 +53986,26 @@
       ],
       "input": 0.02,
       "output": 0.05,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/meta-llama/llama-3.2-1b-instruct": {
-      "input": 0.02,
-      "output": 0.02,
-      "source": "liteLLM"
-    },
-    "novita/meta-llama/llama-3.2-3b-instruct": {
       "alternatives": [
         {
-          "input": 0.03,
-          "output": 0.049999999999999996,
+          "input": 0.02,
+          "output": 0.02,
           "source": "liteLLM"
         }
       ],
-      "input": 0.03,
-      "output": 0.05,
+      "input": 0.02,
+      "output": 0.02,
+      "passthroughOnly": true,
       "source": "modelsDev"
+    },
+    "novita/meta-llama/llama-3.2-3b-instruct": {
+      "input": 0.03,
+      "output": 0.049999999999999996,
+      "source": "liteLLM"
     },
     "novita/meta-llama/llama-3.3-70b-instruct": {
       "alternatives": [
@@ -54550,6 +54030,7 @@
       ],
       "input": 0.27,
       "output": 0.85,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/meta-llama/llama-4-scout-17b-16e-instruct": {
@@ -54562,6 +54043,7 @@
       ],
       "input": 0.18,
       "output": 0.59,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/microsoft/wizardlm-2-8x22b": {
@@ -54577,46 +54059,46 @@
       "source": "modelsDev"
     },
     "novita/mindai/macaron-v1-tall": {
-      "cacheRead": 0.08,
-      "input": 0.45,
-      "output": 2.6,
-      "source": "liteLLM"
+      "alternatives": [
+        {
+          "cacheRead": 0.08,
+          "input": 0.45,
+          "output": 2.6,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/mindai/macaron-v1-venti": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5,
-      "source": "liteLLM"
+      "alternatives": [
+        {
+          "cacheRead": 0.3,
+          "input": 1.5,
+          "output": 4.5,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/minimax/minimax-m2": {
-      "alternatives": [
-        {
-          "cacheRead": 0.03,
-          "input": 0.3,
-          "output": 1.2,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/minimax/minimax-m2.1": {
-      "alternatives": [
-        {
-          "cacheRead": 0.03,
-          "input": 0.3,
-          "output": 1.2,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/minimax/minimax-m2.5": {
       "alternatives": [
@@ -54634,19 +54116,10 @@
       "source": "modelsDev"
     },
     "novita/minimax/minimax-m2.5-highspeed": {
-      "alternatives": [
-        {
-          "cacheRead": 0.03,
-          "input": 0.6,
-          "output": 2.4,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.03,
       "input": 0.6,
       "output": 2.4,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/minimax/minimax-m2.7": {
       "alternatives": [
@@ -54680,11 +54153,40 @@
       "source": "modelsDev"
     },
     "novita/minimax/minimax-m3": {
+      "alternatives": [
+        {
+          "cacheRead": 0.06,
+          "input": 0.3,
+          "output": 1.2,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.06,
       "input": 0.3,
       "output": 1.2,
       "passthroughOnly": true,
-      "source": "liteLLM"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
     },
     "novita/minimaxai/minimax-m1-80k": {
       "alternatives": [
@@ -54700,16 +54202,9 @@
       "source": "modelsDev"
     },
     "novita/mistralai/mistral-nemo": {
-      "alternatives": [
-        {
-          "input": 0.04,
-          "output": 0.16999999999999998,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.04,
-      "output": 0.17,
-      "source": "modelsDev"
+      "output": 0.16999999999999998,
+      "source": "liteLLM"
     },
     "novita/moonshotai/kimi-k2-0905": {
       "alternatives": [
@@ -54822,12 +54317,21 @@
       ],
       "input": 0.14,
       "output": 0.14,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "novita/nvidia/nemotron-3-nano-30b-a3b": {
+      "alternatives": [
+        {
+          "input": 0.05,
+          "output": 0.2,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.05,
       "output": 0.2,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/openai/gpt-oss-120b": {
       "alternatives": [
@@ -54843,16 +54347,9 @@
       "source": "modelsDev"
     },
     "novita/openai/gpt-oss-20b": {
-      "alternatives": [
-        {
-          "input": 0.04,
-          "output": 0.15,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.04,
       "output": 0.15,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/paddlepaddle/paddleocr-vl": {
       "alternatives": [
@@ -54867,17 +54364,9 @@
       "source": "modelsDev"
     },
     "novita/qwen/qwen-2.5-72b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.38,
-          "output": 0.39999999999999997,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.38,
-      "output": 0.4,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "output": 0.39999999999999997,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen-mt-plus": {
       "alternatives": [
@@ -54892,154 +54381,64 @@
       "source": "modelsDev"
     },
     "novita/qwen/qwen2.5-7b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.07,
-          "output": 0.07,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.07,
       "output": 0.07,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen2.5-vl-72b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.7999999999999999,
-          "output": 0.7999999999999999,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.8,
-      "output": 0.8,
-      "source": "modelsDev"
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-235b-a22b-fp8": {
-      "alternatives": [
-        {
-          "input": 0.19999999999999998,
-          "output": 0.7999999999999999,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.2,
-      "output": 0.8,
-      "source": "modelsDev"
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-235b-a22b-instruct-2507": {
-      "alternatives": [
-        {
-          "input": 0.09,
-          "output": 0.58,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.09,
       "output": 0.58,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-235b-a22b-thinking-2507": {
-      "alternatives": [
-        {
-          "input": 0.3,
-          "output": 3,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.3,
       "output": 3,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-30b-a3b-fp8": {
-      "alternatives": [
-        {
-          "input": 0.09,
-          "output": 0.44999999999999996,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.09,
-      "output": 0.45,
-      "source": "modelsDev"
+      "output": 0.44999999999999996,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-32b-fp8": {
-      "alternatives": [
-        {
-          "input": 0.09999999999999999,
-          "output": 0.44999999999999996,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.1,
-      "output": 0.45,
-      "source": "modelsDev"
+      "input": 0.09999999999999999,
+      "output": 0.44999999999999996,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-4b-fp8": {
-      "alternatives": [
-        {
-          "input": 0.03,
-          "output": 0.03,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.03,
       "output": 0.03,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-8b-fp8": {
-      "alternatives": [
-        {
-          "input": 0.035,
-          "output": 0.13799999999999998,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.035,
-      "output": 0.138,
-      "source": "modelsDev"
+      "output": 0.13799999999999998,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-coder-30b-a3b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.07,
-          "output": 0.27,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.07,
       "output": 0.27,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-coder-480b-a35b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.38,
-          "output": 1.55,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.38,
       "output": 1.55,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-coder-next": {
-      "alternatives": [
-        {
-          "input": 0.2,
-          "output": 1.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.2,
       "output": 1.5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-embedding-0.6b": {
       "input": 0.07,
@@ -55047,61 +54446,36 @@
       "source": "liteLLM"
     },
     "novita/qwen/qwen3-embedding-8b": {
+      "alternatives": [
+        {
+          "input": 0.07,
+          "output": 0,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.07,
       "output": 0,
-      "source": "liteLLM"
+      "source": "modelsDev"
     },
     "novita/qwen/qwen3-max": {
-      "alternatives": [
-        {
-          "input": 2.1100000000000003,
-          "output": 8.450000000000001,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 2.11,
-      "output": 8.45,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "input": 2.1100000000000003,
+      "output": 8.450000000000001,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-next-80b-a3b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.15,
-          "output": 1.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.15,
       "output": 1.5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-next-80b-a3b-thinking": {
-      "alternatives": [
-        {
-          "input": 0.15,
-          "output": 1.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.15,
       "output": 1.5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-omni-30b-a3b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.25,
-          "output": 0.9700000000000001,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.25,
-      "output": 0.97,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "output": 0.9700000000000001,
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-omni-30b-a3b-thinking": {
       "alternatives": [
@@ -55117,34 +54491,26 @@
       "source": "modelsDev"
     },
     "novita/qwen/qwen3-reranker-8b": {
-      "input": 0.049999999999999996,
-      "output": 0.049999999999999996,
-      "source": "liteLLM"
+      "alternatives": [
+        {
+          "input": 0.049999999999999996,
+          "output": 0.049999999999999996,
+          "source": "liteLLM"
+        }
+      ],
+      "input": 0.05,
+      "output": 0,
+      "source": "modelsDev"
     },
     "novita/qwen/qwen3-vl-235b-a22b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.3,
-          "output": 1.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.3,
       "output": 1.5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-vl-235b-a22b-thinking": {
-      "alternatives": [
-        {
-          "input": 0.98,
-          "output": 3.95,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.98,
       "output": 3.95,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-vl-30b-a3b-instruct": {
       "alternatives": [
@@ -55160,30 +54526,14 @@
       "source": "modelsDev"
     },
     "novita/qwen/qwen3-vl-30b-a3b-thinking": {
-      "alternatives": [
-        {
-          "input": 0.19999999999999998,
-          "output": 1,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.2,
+      "input": 0.19999999999999998,
       "output": 1,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3-vl-8b-instruct": {
-      "alternatives": [
-        {
-          "input": 0.08,
-          "output": 0.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.08,
       "output": 0.5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/qwen/qwen3.5-122b-a10b": {
       "alternatives": [
@@ -55238,14 +54588,30 @@
       "source": "modelsDev"
     },
     "novita/qwen/qwen3.6-27b": {
+      "alternatives": [
+        {
+          "input": 0.6,
+          "output": 3.6,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.6,
       "output": 3.6,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/qwen/qwen3.6-35b-a3b": {
+      "alternatives": [
+        {
+          "input": 0.248,
+          "output": 1.485,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.248,
       "output": 1.485,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/qwen/qwen3.7-max": {
       "alternatives": [
@@ -55257,44 +54623,56 @@
         }
       ],
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "novita/qwen/qwen3.8-max": {
+    "novita/qwen/qwen3.8-2.4t-a95b": {
       "cacheRead": 0.25,
       "input": 2,
       "output": 6,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/qwen/qwen3.8-max": {
+      "alternatives": [
+        {
+          "cacheRead": 0.25,
+          "input": 2,
+          "output": 6,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/sao10k/l3-70b-euryale-v2.1": {
       "input": 1.48,
       "output": 1.48,
       "source": "liteLLM"
     },
-    "novita/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
     "novita/sao10k/l3-8b-lunaris": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996,
       "source": "liteLLM"
-    },
-    "novita/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05,
-      "source": "modelsDev"
-    },
-    "novita/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05,
-      "passthroughOnly": true,
-      "source": "modelsDev"
     },
     "novita/Sao10K/L3-8B-Stheno-v3.2": {
       "input": 0.049999999999999996,
@@ -55306,28 +54684,47 @@
       "output": 1.48,
       "source": "liteLLM"
     },
-    "novita/sao10K/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
     "novita/skywork/r1v4-lite": {
       "input": 0.19999999999999998,
       "output": 0.6,
       "source": "liteLLM"
     },
     "novita/stepfun/step-3.7-flash": {
+      "alternatives": [
+        {
+          "cacheRead": 0.04,
+          "input": 0.2,
+          "output": 1.15,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.04,
       "input": 0.2,
       "output": 1.15,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/tencent/hy3": {
+      "alternatives": [
+        {
+          "cacheRead": 0.035,
+          "input": 0.14,
+          "output": 0.58,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.035,
       "input": 0.14,
       "output": 0.58,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/thudm/glm-4-32b-0414": {
       "input": 0.55,
@@ -55335,53 +54732,25 @@
       "source": "liteLLM"
     },
     "novita/xiaomimimo/mimo-v2-flash": {
+      "cacheRead": 0.024,
+      "input": 0.11,
+      "output": 0.33,
+      "source": "liteLLM"
+    },
+    "novita/xiaomimimo/mimo-v2.5": {
       "alternatives": [
         {
-          "cacheRead": 0.024,
-          "input": 0.11,
-          "output": 0.33,
+          "cacheRead": 0.0034,
+          "input": 0.168,
+          "output": 0.336,
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "novita/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
-      "input": 2,
-      "output": 6,
-      "passthroughOnly": true,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
-    },
-    "novita/xiaomimimo/mimo-v2.5": {
       "cacheRead": 0.0034,
       "input": 0.168,
       "output": 0.336,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/xiaomimimo/mimo-v2.5-pro": {
       "alternatives": [
@@ -55396,28 +54765,21 @@
       "input": 0.522,
       "output": 1.044,
       "passthroughOnly": true,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "source": "modelsDev"
+    },
+    "novita/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/zai-org/autoglm-phone-9b-multilingual": {
       "alternatives": [
@@ -55432,19 +54794,10 @@
       "source": "modelsDev"
     },
     "novita/zai-org/glm-4.5": {
-      "alternatives": [
-        {
-          "cacheRead": 0.11,
-          "input": 0.6,
-          "output": 2.2,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.11,
       "input": 0.6,
       "output": 2.2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "novita/zai-org/glm-4.5-air": {
       "alternatives": [
@@ -55594,10 +54947,26 @@
       "source": "modelsDev"
     },
     "novita/zai-org/glm-5.3": {
+      "alternatives": [
+        {
+          "cacheRead": 0.26,
+          "input": 1.4,
+          "output": 4.4,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.26,
       "input": 1.4,
       "output": 4.4,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "novita/zai-org/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -57233,6 +56602,12 @@
       "output": 2.4,
       "source": "liteLLM"
     },
+    "openai/gpt-rosalind-discovery": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25,
+      "source": "liteLLM"
+    },
     "openai/gpt-rosalind-research": {
       "cacheRead": 0.5,
       "input": 5,
@@ -57907,9 +57282,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.01,
+      "cacheRead": 0.005,
       "input": 0.016,
-      "output": 1.2,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -57921,9 +57296,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.13,
-      "input": 0.1282,
-      "output": 8,
+      "cacheRead": 0.004536,
+      "input": 0.14256,
+      "output": 0.42767999999999995,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -57935,9 +57310,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.00528,
-      "input": 0.00528,
-      "output": 0.020123000000000002,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
+      "output": 1.28,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -58003,8 +57378,8 @@
         }
       ],
       "cacheRead": 0.3,
-      "input": 0.49,
-      "output": 13,
+      "input": 0.84,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -58213,9 +57588,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "input": 0.032,
-      "output": 0.214422,
+      "output": 0.092301,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -58227,9 +57602,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.029,
-      "input": 0.031200000000000002,
-      "output": 4.4,
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -59411,8 +58786,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.0131,
-      "input": 0.0131,
+      "cacheRead": 0.0173,
+      "input": 0.0173,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -59425,8 +58800,8 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.006500000000000001,
-      "input": 0.006500000000000001,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -59453,9 +58828,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.0204015,
-      "input": 0.24481799999999998,
-      "output": 0.48963599999999996,
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -60188,9 +59563,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -61100,6 +60475,7 @@
           "source": "liteLLM"
         }
       ],
+      "cacheRead": 0.15,
       "input": 0.6,
       "output": 2.5,
       "source": "openRouter"
@@ -61155,9 +60531,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.55,
-      "input": 0.82,
-      "output": 13.5,
+      "cacheRead": 0.6,
+      "input": 0.8999999999999999,
+      "output": 14,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -65406,9 +64782,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.08,
-      "input": 0.43,
-      "output": 1.75,
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6:exacto": {
@@ -65522,9 +64898,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.039,
-      "input": 0.04,
-      "output": 7,
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -66898,7 +66274,6 @@
     "qwen/qwen3-235b-a22b": {
       "input": 0.7,
       "output": 2.8,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3-32b": {
@@ -66910,7 +66285,6 @@
     "qwen/qwen3-8b": {
       "input": 0.18,
       "output": 0.7,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3-asr-flash": {
@@ -67011,7 +66385,6 @@
     "qwen/qwen3-max": {
       "input": 1.2,
       "output": 6,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3-next-80b-a3b-instruct": {
@@ -67112,7 +66485,6 @@
       "cacheWrite": 1.625,
       "input": 1.3,
       "output": 7.8,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3.6-plus": {

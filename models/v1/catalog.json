@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791563756000,
+  "generatedAt": 1791578058410,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -3504,6 +3504,10 @@
     "azure_ai/Meta-Llama-3.1-70B-Instruct": {
       "input": 2.68,
       "output": 3.54
+    },
+    "azure_ai/Microsoft-Decision-1": {
+      "input": 0.041999999999999996,
+      "output": 0.041999999999999996
     },
     "azure_ai/ministral-3b": {
       "input": 0.04,
@@ -10607,6 +10611,10 @@
     "cloudflare-ai-gateway/azure_ai/Meta-Llama-3.1-70B-Instruct": {
       "input": 2.68,
       "output": 3.54
+    },
+    "cloudflare-ai-gateway/azure_ai/Microsoft-Decision-1": {
+      "input": 0.041999999999999996,
+      "output": 0.041999999999999996
     },
     "cloudflare-ai-gateway/azure_ai/ministral-3b": {
       "input": 0.04,
@@ -17830,6 +17838,12 @@
       "input": 1,
       "output": 5
     },
+    "cloudflare-ai-gateway/github_copilot/claude-haiku-5.5": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5
+    },
     "cloudflare-ai-gateway/github_copilot/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -19802,6 +19816,10 @@
       "input": 0.59,
       "output": 0.79
     },
+    "cloudflare-ai-gateway/huggingface/MiniMaxAI/MiniMax-M1-80k": {
+      "input": 0.55,
+      "output": 2.2
+    },
     "cloudflare-ai-gateway/huggingface/MiniMaxAI/MiniMax-M2": {
       "input": 0.3,
       "output": 1.2
@@ -19923,6 +19941,10 @@
       "input": 0.98,
       "output": 3.95
     },
+    "cloudflare-ai-gateway/huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+      "input": 0.2,
+      "output": 0.7
+    },
     "cloudflare-ai-gateway/huggingface/Qwen/Qwen3.5-122B-A10B": {
       "input": 0.4,
       "output": 3.2
@@ -19994,6 +20016,10 @@
     "cloudflare-ai-gateway/huggingface/XiaomiMiMo/MiMo-V2.5-Pro": {
       "input": 1,
       "output": 3
+    },
+    "cloudflare-ai-gateway/huggingface/zai-org/AutoGLM-Phone-9B-Multilingual": {
+      "input": 0.035,
+      "output": 0.138
     },
     "cloudflare-ai-gateway/huggingface/zai-org/GLM-4.5": {
       "input": 0.6,
@@ -21073,45 +21099,34 @@
       "input": 0.5,
       "output": 0.5
     },
+    "cloudflare-ai-gateway/novita-ai/baai/bge-m3": {
+      "input": 0.01,
+      "output": 0
+    },
+    "cloudflare-ai-gateway/novita-ai/baai/bge-reranker-v2-m3": {
+      "input": 0.01,
+      "output": 0
+    },
     "cloudflare-ai-gateway/novita-ai/baichuan/baichuan-m2-32b": {
       "input": 0.07,
       "output": 0.07
+    },
+    "cloudflare-ai-gateway/novita-ai/baidu/cobuddy": {
+      "cacheRead": 0.07,
+      "input": 0.28,
+      "output": 1.13
     },
     "cloudflare-ai-gateway/novita-ai/baidu/ernie-4.5-21B-a3b": {
       "input": 0.07,
       "output": 0.28
     },
-    "cloudflare-ai-gateway/novita-ai/baidu/ernie-4.5-21B-a3b-thinking": {
-      "input": 0.07,
-      "output": 0.28
-    },
-    "cloudflare-ai-gateway/novita-ai/baidu/ernie-4.5-300b-a47b-paddle": {
-      "input": 0.28,
-      "output": 1.1
-    },
-    "cloudflare-ai-gateway/novita-ai/baidu/ernie-4.5-vl-28b-a3b": {
-      "input": 0.14,
-      "output": 0.56
-    },
-    "cloudflare-ai-gateway/novita-ai/baidu/ernie-4.5-vl-28b-a3b-thinking": {
-      "input": 0.39,
-      "output": 0.39
-    },
-    "cloudflare-ai-gateway/novita-ai/baidu/ernie-4.5-vl-424b-a47b": {
-      "input": 0.42,
-      "output": 1.25
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-ocr": {
-      "input": 0.03,
-      "output": 0.03
+    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek_v3": {
+      "input": 0.89,
+      "output": 0.89
     },
     "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-ocr-2": {
       "input": 0.03,
       "output": 0.03
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-prover-v2-671b": {
-      "input": 0.7,
-      "output": 2.5
     },
     "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-r1-0528": {
       "cacheRead": 0.35,
@@ -21122,59 +21137,29 @@
       "input": 0.06,
       "output": 0.09
     },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-r1-distill-qwen-14b": {
-      "input": 0.15,
-      "output": 0.15
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-r1-distill-qwen-32b": {
-      "input": 0.3,
-      "output": 0.3
-    },
     "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-r1-turbo": {
       "input": 0.7,
       "output": 2.5
     },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v3-0324": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1.12
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
-      "output": 1.3
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v3.1": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v3.1-terminus": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v3.2-exp": {
-      "input": 0.27,
-      "output": 0.41
-    },
-    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v4-flash": {
+    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "input": 0.44,
+      "output": 1.32
     },
     "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.135,
       "input": 1.6,
       "output": 3.2
+    },
+    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v4-pro-0813": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96
+    },
+    "cloudflare-ai-gateway/novita-ai/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "cloudflare-ai-gateway/novita-ai/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -21196,41 +21181,33 @@
       "input": 0.09,
       "output": 0.09
     },
-    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-3.0-flash": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
     },
-    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
+    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "cloudflare-ai-gateway/novita-ai/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "cloudflare-ai-gateway/novita-ai/kwaipilot/kat-coder-pro": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2
-    },
-    "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3-70b-instruct": {
-      "input": 0.51,
-      "output": 0.74
-    },
-    "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3-8b-instruct": {
-      "input": 0.04,
-      "output": 0.04
+    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
     "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
     },
-    "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.03,
-      "output": 0.05
+    "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3.2-1b-instruct": {
+      "input": 0.02,
+      "output": 0.02
     },
     "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -21248,25 +21225,20 @@
       "input": 0.62,
       "output": 0.62
     },
-    "cloudflare-ai-gateway/novita-ai/minimax/minimax-m2": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "cloudflare-ai-gateway/novita-ai/mindai/macaron-v1-tall": {
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
-    "cloudflare-ai-gateway/novita-ai/minimax/minimax-m2.1": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "cloudflare-ai-gateway/novita-ai/mindai/macaron-v1-venti": {
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "cloudflare-ai-gateway/novita-ai/minimax/minimax-m2.5": {
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2
-    },
-    "cloudflare-ai-gateway/novita-ai/minimax/minimax-m2.5-highspeed": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 2.4
     },
     "cloudflare-ai-gateway/novita-ai/minimax/minimax-m2.7": {
       "cacheRead": 0.06,
@@ -21279,13 +21251,35 @@
       "input": 0.6,
       "output": 2.4
     },
+    "cloudflare-ai-gateway/novita-ai/minimax/minimax-m3": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
+    },
     "cloudflare-ai-gateway/novita-ai/minimaxai/minimax-m1-80k": {
       "input": 0.55,
       "output": 2.2
-    },
-    "cloudflare-ai-gateway/novita-ai/mistralai/mistral-nemo": {
-      "input": 0.04,
-      "output": 0.17
     },
     "cloudflare-ai-gateway/novita-ai/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -21324,113 +21318,37 @@
       "input": 0.14,
       "output": 0.14
     },
+    "cloudflare-ai-gateway/novita-ai/nvidia/nemotron-3-nano-30b-a3b": {
+      "input": 0.05,
+      "output": 0.2
+    },
     "cloudflare-ai-gateway/novita-ai/openai/gpt-oss-120b": {
       "input": 0.05,
       "output": 0.25
-    },
-    "cloudflare-ai-gateway/novita-ai/openai/gpt-oss-20b": {
-      "input": 0.04,
-      "output": 0.15
     },
     "cloudflare-ai-gateway/novita-ai/paddlepaddle/paddleocr-vl": {
       "input": 0.02,
       "output": 0.02
     },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen-2.5-72b-instruct": {
-      "input": 0.38,
-      "output": 0.4
-    },
     "cloudflare-ai-gateway/novita-ai/qwen/qwen-mt-plus": {
       "input": 0.25,
       "output": 0.75
     },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen2.5-7b-instruct": {
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-embedding-8b": {
       "input": 0.07,
-      "output": 0.07
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-235b-a22b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.58
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.3,
-      "output": 3
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-30b-a3b-fp8": {
-      "input": 0.09,
-      "output": 0.45
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-4b-fp8": {
-      "input": 0.03,
-      "output": 0.03
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-8b-fp8": {
-      "input": 0.035,
-      "output": 0.138
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.27
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 0.38,
-      "output": 1.55
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-coder-next": {
-      "input": 0.2,
-      "output": 1.5
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-omni-30b-a3b-instruct": {
-      "input": 0.25,
-      "output": 0.97
+      "output": 0
     },
     "cloudflare-ai-gateway/novita-ai/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-vl-235b-a22b-instruct": {
-      "input": 0.3,
-      "output": 1.5
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-vl-235b-a22b-thinking": {
-      "input": 0.98,
-      "output": 3.95
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-reranker-8b": {
+      "input": 0.05,
+      "output": 0
     },
     "cloudflare-ai-gateway/novita-ai/qwen/qwen3-vl-30b-a3b-instruct": {
       "input": 0.2,
       "output": 0.7
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
-      "output": 1
-    },
-    "cloudflare-ai-gateway/novita-ai/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.08,
-      "output": 0.5
     },
     "cloudflare-ai-gateway/novita-ai/qwen/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -21448,93 +21366,77 @@
       "input": 0.6,
       "output": 3.6
     },
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3.6-27b": {
+      "input": 0.6,
+      "output": 3.6
+    },
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3.6-35b-a3b": {
+      "input": 0.248,
+      "output": 1.485
+    },
     "cloudflare-ai-gateway/novita-ai/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
     },
-    "cloudflare-ai-gateway/novita-ai/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "cloudflare-ai-gateway/novita-ai/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "cloudflare-ai-gateway/novita-ai/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "cloudflare-ai-gateway/novita-ai/sao10K/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "cloudflare-ai-gateway/novita-ai/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "cloudflare-ai-gateway/novita-ai/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
       "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 6
+    },
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
+    },
+    "cloudflare-ai-gateway/novita-ai/qwen/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "cloudflare-ai-gateway/novita-ai/stepfun/step-3.7-flash": {
+      "cacheRead": 0.04,
+      "input": 0.2,
+      "output": 1.15
+    },
+    "cloudflare-ai-gateway/novita-ai/tencent/hy3": {
+      "cacheRead": 0.035,
+      "input": 0.14,
+      "output": 0.58
+    },
+    "cloudflare-ai-gateway/novita-ai/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
+    "cloudflare-ai-gateway/novita-ai/xiaomimimo/mimo-v2.5": {
+      "cacheRead": 0.0034,
+      "input": 0.168,
+      "output": 0.336
     },
     "cloudflare-ai-gateway/novita-ai/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "cloudflare-ai-gateway/novita-ai/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "cloudflare-ai-gateway/novita-ai/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "cloudflare-ai-gateway/novita-ai/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
       "output": 0.138
-    },
-    "cloudflare-ai-gateway/novita-ai/zai-org/glm-4.5": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2
     },
     "cloudflare-ai-gateway/novita-ai/zai-org/glm-4.5-air": {
       "cacheRead": 0.025,
@@ -21581,13 +21483,23 @@
       "input": 1.4,
       "output": 4.4
     },
+    "cloudflare-ai-gateway/novita-ai/zai-org/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "cloudflare-ai-gateway/novita-ai/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "cloudflare-ai-gateway/novita/baai/bge-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "cloudflare-ai-gateway/novita/baai/bge-reranker-v2-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "cloudflare-ai-gateway/novita/baichuan/baichuan-m2-32b": {
       "input": 0.07,
@@ -21652,8 +21564,8 @@
       "output": 0.09
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-r1-distill-qwen-14b": {
       "input": 0.15,
@@ -21677,7 +21589,7 @@
       "output": 1.12
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
+      "input": 0.39999999999999997,
       "output": 1.3
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-v3.1": {
@@ -21691,9 +21603,9 @@
       "output": 1
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -21724,9 +21636,14 @@
       "output": 3.2
     },
     "cloudflare-ai-gateway/novita/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.132,
+      "cacheRead": 0.044,
       "input": 1.32,
-      "output": 3.9600000000000004
+      "output": 3.96
+    },
+    "cloudflare-ai-gateway/novita/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "cloudflare-ai-gateway/novita/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -21748,16 +21665,6 @@
       "input": 0.09,
       "output": 0.09
     },
-    "cloudflare-ai-gateway/novita/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
-    },
-    "cloudflare-ai-gateway/novita/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
-    },
     "cloudflare-ai-gateway/novita/inclusionai/ling-3.0-flash": {
       "cacheRead": 0.012,
       "input": 0.06,
@@ -21768,10 +21675,20 @@
       "input": 0.06,
       "output": 0.18
     },
-    "cloudflare-ai-gateway/novita/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "cloudflare-ai-gateway/novita/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
+    },
+    "cloudflare-ai-gateway/novita/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
+    },
+    "cloudflare-ai-gateway/novita/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
     "cloudflare-ai-gateway/novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -21796,7 +21713,7 @@
     },
     "cloudflare-ai-gateway/novita/meta-llama/llama-3.2-3b-instruct": {
       "input": 0.03,
-      "output": 0.05
+      "output": 0.049999999999999996
     },
     "cloudflare-ai-gateway/novita/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -21815,14 +21732,14 @@
       "output": 0.62
     },
     "cloudflare-ai-gateway/novita/mindai/macaron-v1-tall": {
-      "cacheRead": 0.08,
-      "input": 0.45,
-      "output": 2.6
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
     "cloudflare-ai-gateway/novita/mindai/macaron-v1-venti": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "cloudflare-ai-gateway/novita/minimax/minimax-m2": {
       "cacheRead": 0.03,
@@ -21858,7 +21775,28 @@
     "cloudflare-ai-gateway/novita/minimax/minimax-m3": {
       "cacheRead": 0.06,
       "input": 0.3,
-      "output": 1.2
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
     },
     "cloudflare-ai-gateway/novita/minimaxai/minimax-m1-80k": {
       "input": 0.55,
@@ -21866,7 +21804,7 @@
     },
     "cloudflare-ai-gateway/novita/mistralai/mistral-nemo": {
       "input": 0.04,
-      "output": 0.17
+      "output": 0.16999999999999998
     },
     "cloudflare-ai-gateway/novita/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -21923,7 +21861,7 @@
     },
     "cloudflare-ai-gateway/novita/qwen/qwen-2.5-72b-instruct": {
       "input": 0.38,
-      "output": 0.4
+      "output": 0.39999999999999997
     },
     "cloudflare-ai-gateway/novita/qwen/qwen-mt-plus": {
       "input": 0.25,
@@ -21934,12 +21872,12 @@
       "output": 0.07
     },
     "cloudflare-ai-gateway/novita/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-235b-a22b-instruct-2507": {
       "input": 0.09,
@@ -21951,11 +21889,11 @@
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-30b-a3b-fp8": {
       "input": 0.09,
-      "output": 0.45
+      "output": 0.44999999999999996
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
+      "input": 0.09999999999999999,
+      "output": 0.44999999999999996
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-4b-fp8": {
       "input": 0.03,
@@ -21963,7 +21901,7 @@
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-8b-fp8": {
       "input": 0.035,
-      "output": 0.138
+      "output": 0.13799999999999998
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-coder-30b-a3b-instruct": {
       "input": 0.07,
@@ -21986,8 +21924,8 @@
       "output": 0
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
+      "input": 2.1100000000000003,
+      "output": 8.450000000000001
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-next-80b-a3b-instruct": {
       "input": 0.15,
@@ -21999,15 +21937,15 @@
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-omni-30b-a3b-instruct": {
       "input": 0.25,
-      "output": 0.97
+      "output": 0.9700000000000001
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-reranker-8b": {
-      "input": 0.049999999999999996,
-      "output": 0.049999999999999996
+      "input": 0.05,
+      "output": 0
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-vl-235b-a22b-instruct": {
       "input": 0.3,
@@ -22022,7 +21960,7 @@
       "output": 0.7
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
+      "input": 0.19999999999999998,
       "output": 1
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3-vl-8b-instruct": {
@@ -22055,9 +21993,23 @@
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
+    },
+    "cloudflare-ai-gateway/novita/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "cloudflare-ai-gateway/novita/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "cloudflare-ai-gateway/novita/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
     },
     "cloudflare-ai-gateway/novita/qwen/qwen3.8-max": {
       "cacheRead": 0.25,
@@ -22068,31 +22020,15 @@
       "input": 1.48,
       "output": 1.48
     },
-    "cloudflare-ai-gateway/novita/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
     "cloudflare-ai-gateway/novita/sao10k/l3-8b-lunaris": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
-    },
-    "cloudflare-ai-gateway/novita/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "cloudflare-ai-gateway/novita/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
     },
     "cloudflare-ai-gateway/novita/Sao10K/L3-8B-Stheno-v3.2": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
     },
     "cloudflare-ai-gateway/novita/sao10k/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "cloudflare-ai-gateway/novita/sao10K/l31-70b-euryale-v2.2": {
       "input": 1.48,
       "output": 1.48
     },
@@ -22110,40 +22046,19 @@
       "input": 0.14,
       "output": 0.58
     },
+    "cloudflare-ai-gateway/novita/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
     "cloudflare-ai-gateway/novita/thudm/glm-4-32b-0414": {
       "input": 0.55,
       "output": 1.66
     },
     "cloudflare-ai-gateway/novita/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "cloudflare-ai-gateway/novita/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
-      "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "cacheRead": 0.024,
+      "input": 0.11,
+      "output": 0.33
     },
     "cloudflare-ai-gateway/novita/xiaomimimo/mimo-v2.5": {
       "cacheRead": 0.0034,
@@ -22153,28 +22068,17 @@
     "cloudflare-ai-gateway/novita/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "cloudflare-ai-gateway/novita/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "cloudflare-ai-gateway/novita/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "cloudflare-ai-gateway/novita/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
@@ -22244,6 +22148,11 @@
       "cacheRead": 0.26,
       "input": 1.4,
       "output": 4.4
+    },
+    "cloudflare-ai-gateway/novita/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
     },
     "cloudflare-ai-gateway/novita/zai-org/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -23343,6 +23252,11 @@
       "input": 0.6,
       "output": 2.4
     },
+    "cloudflare-ai-gateway/openai/gpt-rosalind-discovery": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25
+    },
     "cloudflare-ai-gateway/openai/gpt-rosalind-research": {
       "cacheRead": 0.5,
       "input": 5,
@@ -23839,19 +23753,19 @@
       "output": 10
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.01,
+      "cacheRead": 0.005,
       "input": 0.016,
-      "output": 1.2
+      "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.13,
-      "input": 0.1282,
-      "output": 8
+      "cacheRead": 0.004536,
+      "input": 0.14256,
+      "output": 0.42767999999999995
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00528,
-      "input": 0.00528,
-      "output": 0.020123000000000002
+      "cacheRead": 0.0061,
+      "input": 0.0061,
+      "output": 1.28
     },
     "cloudflare-ai-gateway/openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -23888,8 +23802,8 @@
     },
     "cloudflare-ai-gateway/openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.49,
-      "output": 13
+      "input": 0.84,
+      "output": 13.5
     },
     "cloudflare-ai-gateway/openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -24031,14 +23945,14 @@
       ]
     },
     "cloudflare-ai-gateway/openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "input": 0.032,
-      "output": 0.214422
+      "output": 0.092301
     },
     "cloudflare-ai-gateway/openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.029,
-      "input": 0.031200000000000002,
-      "output": 4.4
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "cloudflare-ai-gateway/openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -24608,13 +24522,13 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0131,
-      "input": 0.0131,
+      "cacheRead": 0.0173,
+      "input": 0.0173,
       "output": 1.28
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.006500000000000001,
-      "input": 0.006500000000000001,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
       "output": 1.28
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -24623,9 +24537,9 @@
       "output": 0.6468
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0204015,
-      "input": 0.24481799999999998,
-      "output": 0.48963599999999996
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -24976,9 +24890,9 @@
       "output": 0.09999999999999999
     },
     "cloudflare-ai-gateway/openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "cloudflare-ai-gateway/openrouter/google/gemma-4-31b-it": {
       "cacheRead": 0.049999999999999996,
@@ -25303,6 +25217,7 @@
       "output": 2.5
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k2-thinking": {
+      "cacheRead": 0.15,
       "input": 0.6,
       "output": 2.5
     },
@@ -25322,9 +25237,9 @@
       "output": 3.35
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.82,
-      "output": 13.5
+      "cacheRead": 0.6,
+      "input": 0.8999999999999999,
+      "output": 14
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -27622,9 +27537,9 @@
       "output": 1.7999999999999998
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-4.6": {
-      "cacheRead": 0.08,
-      "input": 0.43,
-      "output": 1.75
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-4.6:exacto": {
       "input": 0.44999999999999996,
@@ -27665,9 +27580,9 @@
       "output": 6
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.039,
-      "input": 0.04,
-      "output": 7
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -34348,10 +34263,6 @@
       "input": 0.45,
       "output": 3.49
     },
-    "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
-      "input": 0.15,
-      "output": 0.6
-    },
     "deepinfra/Qwen/Qwen3-VL-30B-A3B-Thinking": {
       "input": 0.29,
       "output": 0.99
@@ -36883,6 +36794,12 @@
       "input": 1,
       "output": 5
     },
+    "github_copilot/claude-haiku-5.5": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5
+    },
     "github_copilot/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -38719,6 +38636,11 @@
       "input": 0.6,
       "output": 2.4
     },
+    "gpt-rosalind-discovery": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25
+    },
     "gpt-rosalind-research": {
       "cacheRead": 0.5,
       "input": 5,
@@ -38849,6 +38771,10 @@
       "input": 0.59,
       "output": 0.79
     },
+    "huggingface/MiniMaxAI/MiniMax-M1-80k": {
+      "input": 0.55,
+      "output": 2.2
+    },
     "huggingface/MiniMaxAI/MiniMax-M2": {
       "input": 0.3,
       "output": 1.2
@@ -38966,6 +38892,10 @@
       "input": 0.98,
       "output": 3.95
     },
+    "huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+      "input": 0.2,
+      "output": 0.7
+    },
     "huggingface/Qwen/Qwen3.5-122B-A10B": {
       "input": 0.4,
       "output": 3.2
@@ -39037,6 +38967,10 @@
     "huggingface/XiaomiMiMo/MiMo-V2.5-Pro": {
       "input": 1,
       "output": 3
+    },
+    "huggingface/zai-org/AutoGLM-Phone-9B-Multilingual": {
+      "input": 0.035,
+      "output": 0.138
     },
     "huggingface/zai-org/GLM-4.5": {
       "input": 0.6,
@@ -42448,6 +42382,10 @@
     "kilocode/azure_ai/Meta-Llama-3.1-70B-Instruct": {
       "input": 2.68,
       "output": 3.54
+    },
+    "kilocode/azure_ai/Microsoft-Decision-1": {
+      "input": 0.041999999999999996,
+      "output": 0.041999999999999996
     },
     "kilocode/azure_ai/ministral-3b": {
       "input": 0.04,
@@ -49646,6 +49584,12 @@
       "input": 1,
       "output": 5
     },
+    "kilocode/github_copilot/claude-haiku-5.5": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5
+    },
     "kilocode/github_copilot/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -51501,6 +51445,10 @@
       "input": 0.59,
       "output": 0.79
     },
+    "kilocode/huggingface/MiniMaxAI/MiniMax-M1-80k": {
+      "input": 0.55,
+      "output": 2.2
+    },
     "kilocode/huggingface/MiniMaxAI/MiniMax-M2": {
       "input": 0.3,
       "output": 1.2
@@ -51622,6 +51570,10 @@
       "input": 0.98,
       "output": 3.95
     },
+    "kilocode/huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+      "input": 0.2,
+      "output": 0.7
+    },
     "kilocode/huggingface/Qwen/Qwen3.5-122B-A10B": {
       "input": 0.4,
       "output": 3.2
@@ -51693,6 +51645,10 @@
     "kilocode/huggingface/XiaomiMiMo/MiMo-V2.5-Pro": {
       "input": 1,
       "output": 3
+    },
+    "kilocode/huggingface/zai-org/AutoGLM-Phone-9B-Multilingual": {
+      "input": 0.035,
+      "output": 0.138
     },
     "kilocode/huggingface/zai-org/GLM-4.5": {
       "input": 0.6,
@@ -52789,45 +52745,34 @@
       "input": 1,
       "output": 3
     },
+    "kilocode/novita-ai/baai/bge-m3": {
+      "input": 0.01,
+      "output": 0
+    },
+    "kilocode/novita-ai/baai/bge-reranker-v2-m3": {
+      "input": 0.01,
+      "output": 0
+    },
     "kilocode/novita-ai/baichuan/baichuan-m2-32b": {
       "input": 0.07,
       "output": 0.07
+    },
+    "kilocode/novita-ai/baidu/cobuddy": {
+      "cacheRead": 0.07,
+      "input": 0.28,
+      "output": 1.13
     },
     "kilocode/novita-ai/baidu/ernie-4.5-21B-a3b": {
       "input": 0.07,
       "output": 0.28
     },
-    "kilocode/novita-ai/baidu/ernie-4.5-21B-a3b-thinking": {
-      "input": 0.07,
-      "output": 0.28
-    },
-    "kilocode/novita-ai/baidu/ernie-4.5-300b-a47b-paddle": {
-      "input": 0.28,
-      "output": 1.1
-    },
-    "kilocode/novita-ai/baidu/ernie-4.5-vl-28b-a3b": {
-      "input": 0.14,
-      "output": 0.56
-    },
-    "kilocode/novita-ai/baidu/ernie-4.5-vl-28b-a3b-thinking": {
-      "input": 0.39,
-      "output": 0.39
-    },
-    "kilocode/novita-ai/baidu/ernie-4.5-vl-424b-a47b": {
-      "input": 0.42,
-      "output": 1.25
-    },
-    "kilocode/novita-ai/deepseek/deepseek-ocr": {
-      "input": 0.03,
-      "output": 0.03
+    "kilocode/novita-ai/deepseek/deepseek_v3": {
+      "input": 0.89,
+      "output": 0.89
     },
     "kilocode/novita-ai/deepseek/deepseek-ocr-2": {
       "input": 0.03,
       "output": 0.03
-    },
-    "kilocode/novita-ai/deepseek/deepseek-prover-v2-671b": {
-      "input": 0.7,
-      "output": 2.5
     },
     "kilocode/novita-ai/deepseek/deepseek-r1-0528": {
       "cacheRead": 0.35,
@@ -52838,59 +52783,29 @@
       "input": 0.06,
       "output": 0.09
     },
-    "kilocode/novita-ai/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "kilocode/novita-ai/deepseek/deepseek-r1-distill-qwen-14b": {
-      "input": 0.15,
-      "output": 0.15
-    },
-    "kilocode/novita-ai/deepseek/deepseek-r1-distill-qwen-32b": {
-      "input": 0.3,
-      "output": 0.3
-    },
     "kilocode/novita-ai/deepseek/deepseek-r1-turbo": {
       "input": 0.7,
       "output": 2.5
     },
-    "kilocode/novita-ai/deepseek/deepseek-v3-0324": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1.12
-    },
-    "kilocode/novita-ai/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
-      "output": 1.3
-    },
-    "kilocode/novita-ai/deepseek/deepseek-v3.1": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "kilocode/novita-ai/deepseek/deepseek-v3.1-terminus": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "kilocode/novita-ai/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
-    },
-    "kilocode/novita-ai/deepseek/deepseek-v3.2-exp": {
-      "input": 0.27,
-      "output": 0.41
-    },
-    "kilocode/novita-ai/deepseek/deepseek-v4-flash": {
+    "kilocode/novita-ai/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "input": 0.44,
+      "output": 1.32
     },
     "kilocode/novita-ai/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.135,
       "input": 1.6,
       "output": 3.2
+    },
+    "kilocode/novita-ai/deepseek/deepseek-v4-pro-0813": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96
+    },
+    "kilocode/novita-ai/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "kilocode/novita-ai/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -52912,41 +52827,33 @@
       "input": 0.09,
       "output": 0.09
     },
-    "kilocode/novita-ai/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "kilocode/novita-ai/inclusionai/ling-3.0-flash": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
     },
-    "kilocode/novita-ai/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
+    "kilocode/novita-ai/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "kilocode/novita-ai/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "kilocode/novita-ai/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "kilocode/novita-ai/kwaipilot/kat-coder-pro": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2
-    },
-    "kilocode/novita-ai/meta-llama/llama-3-70b-instruct": {
-      "input": 0.51,
-      "output": 0.74
-    },
-    "kilocode/novita-ai/meta-llama/llama-3-8b-instruct": {
-      "input": 0.04,
-      "output": 0.04
+    "kilocode/novita-ai/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
     "kilocode/novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
     },
-    "kilocode/novita-ai/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.03,
-      "output": 0.05
+    "kilocode/novita-ai/meta-llama/llama-3.2-1b-instruct": {
+      "input": 0.02,
+      "output": 0.02
     },
     "kilocode/novita-ai/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -52964,25 +52871,20 @@
       "input": 0.62,
       "output": 0.62
     },
-    "kilocode/novita-ai/minimax/minimax-m2": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "kilocode/novita-ai/mindai/macaron-v1-tall": {
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
-    "kilocode/novita-ai/minimax/minimax-m2.1": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "kilocode/novita-ai/mindai/macaron-v1-venti": {
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "kilocode/novita-ai/minimax/minimax-m2.5": {
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2
-    },
-    "kilocode/novita-ai/minimax/minimax-m2.5-highspeed": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 2.4
     },
     "kilocode/novita-ai/minimax/minimax-m2.7": {
       "cacheRead": 0.06,
@@ -52995,13 +52897,35 @@
       "input": 0.6,
       "output": 2.4
     },
+    "kilocode/novita-ai/minimax/minimax-m3": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
+    },
     "kilocode/novita-ai/minimaxai/minimax-m1-80k": {
       "input": 0.55,
       "output": 2.2
-    },
-    "kilocode/novita-ai/mistralai/mistral-nemo": {
-      "input": 0.04,
-      "output": 0.17
     },
     "kilocode/novita-ai/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -53040,113 +52964,37 @@
       "input": 0.14,
       "output": 0.14
     },
+    "kilocode/novita-ai/nvidia/nemotron-3-nano-30b-a3b": {
+      "input": 0.05,
+      "output": 0.2
+    },
     "kilocode/novita-ai/openai/gpt-oss-120b": {
       "input": 0.05,
       "output": 0.25
-    },
-    "kilocode/novita-ai/openai/gpt-oss-20b": {
-      "input": 0.04,
-      "output": 0.15
     },
     "kilocode/novita-ai/paddlepaddle/paddleocr-vl": {
       "input": 0.02,
       "output": 0.02
     },
-    "kilocode/novita-ai/qwen/qwen-2.5-72b-instruct": {
-      "input": 0.38,
-      "output": 0.4
-    },
     "kilocode/novita-ai/qwen/qwen-mt-plus": {
       "input": 0.25,
       "output": 0.75
     },
-    "kilocode/novita-ai/qwen/qwen2.5-7b-instruct": {
+    "kilocode/novita-ai/qwen/qwen3-embedding-8b": {
       "input": 0.07,
-      "output": 0.07
-    },
-    "kilocode/novita-ai/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "kilocode/novita-ai/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
-    },
-    "kilocode/novita-ai/qwen/qwen3-235b-a22b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.58
-    },
-    "kilocode/novita-ai/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.3,
-      "output": 3
-    },
-    "kilocode/novita-ai/qwen/qwen3-30b-a3b-fp8": {
-      "input": 0.09,
-      "output": 0.45
-    },
-    "kilocode/novita-ai/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
-    },
-    "kilocode/novita-ai/qwen/qwen3-4b-fp8": {
-      "input": 0.03,
-      "output": 0.03
-    },
-    "kilocode/novita-ai/qwen/qwen3-8b-fp8": {
-      "input": 0.035,
-      "output": 0.138
-    },
-    "kilocode/novita-ai/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.27
-    },
-    "kilocode/novita-ai/qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 0.38,
-      "output": 1.55
-    },
-    "kilocode/novita-ai/qwen/qwen3-coder-next": {
-      "input": 0.2,
-      "output": 1.5
-    },
-    "kilocode/novita-ai/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
-    },
-    "kilocode/novita-ai/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "kilocode/novita-ai/qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "kilocode/novita-ai/qwen/qwen3-omni-30b-a3b-instruct": {
-      "input": 0.25,
-      "output": 0.97
+      "output": 0
     },
     "kilocode/novita-ai/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
-    "kilocode/novita-ai/qwen/qwen3-vl-235b-a22b-instruct": {
-      "input": 0.3,
-      "output": 1.5
-    },
-    "kilocode/novita-ai/qwen/qwen3-vl-235b-a22b-thinking": {
-      "input": 0.98,
-      "output": 3.95
+    "kilocode/novita-ai/qwen/qwen3-reranker-8b": {
+      "input": 0.05,
+      "output": 0
     },
     "kilocode/novita-ai/qwen/qwen3-vl-30b-a3b-instruct": {
       "input": 0.2,
       "output": 0.7
-    },
-    "kilocode/novita-ai/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
-      "output": 1
-    },
-    "kilocode/novita-ai/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.08,
-      "output": 0.5
     },
     "kilocode/novita-ai/qwen/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -53164,93 +53012,77 @@
       "input": 0.6,
       "output": 3.6
     },
+    "kilocode/novita-ai/qwen/qwen3.6-27b": {
+      "input": 0.6,
+      "output": 3.6
+    },
+    "kilocode/novita-ai/qwen/qwen3.6-35b-a3b": {
+      "input": 0.248,
+      "output": 1.485
+    },
     "kilocode/novita-ai/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
     },
-    "kilocode/novita-ai/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "kilocode/novita-ai/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "kilocode/novita-ai/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "kilocode/novita-ai/sao10K/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "kilocode/novita-ai/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "kilocode/novita-ai/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
+    "kilocode/novita-ai/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
       "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 6
+    },
+    "kilocode/novita-ai/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "kilocode/novita-ai/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
+    },
+    "kilocode/novita-ai/qwen/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "kilocode/novita-ai/stepfun/step-3.7-flash": {
+      "cacheRead": 0.04,
+      "input": 0.2,
+      "output": 1.15
+    },
+    "kilocode/novita-ai/tencent/hy3": {
+      "cacheRead": 0.035,
+      "input": 0.14,
+      "output": 0.58
+    },
+    "kilocode/novita-ai/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
+    "kilocode/novita-ai/xiaomimimo/mimo-v2.5": {
+      "cacheRead": 0.0034,
+      "input": 0.168,
+      "output": 0.336
     },
     "kilocode/novita-ai/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "kilocode/novita-ai/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "kilocode/novita-ai/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "kilocode/novita-ai/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
       "output": 0.138
-    },
-    "kilocode/novita-ai/zai-org/glm-4.5": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2
     },
     "kilocode/novita-ai/zai-org/glm-4.5-air": {
       "cacheRead": 0.025,
@@ -53297,13 +53129,23 @@
       "input": 1.4,
       "output": 4.4
     },
+    "kilocode/novita-ai/zai-org/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "kilocode/novita-ai/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "kilocode/novita/baai/bge-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "kilocode/novita/baai/bge-reranker-v2-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "kilocode/novita/baichuan/baichuan-m2-32b": {
       "input": 0.07,
@@ -53368,8 +53210,8 @@
       "output": 0.09
     },
     "kilocode/novita/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "kilocode/novita/deepseek/deepseek-r1-distill-qwen-14b": {
       "input": 0.15,
@@ -53393,7 +53235,7 @@
       "output": 1.12
     },
     "kilocode/novita/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
+      "input": 0.39999999999999997,
       "output": 1.3
     },
     "kilocode/novita/deepseek/deepseek-v3.1": {
@@ -53407,9 +53249,9 @@
       "output": 1
     },
     "kilocode/novita/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "kilocode/novita/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -53440,9 +53282,14 @@
       "output": 3.2
     },
     "kilocode/novita/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.132,
+      "cacheRead": 0.044,
       "input": 1.32,
-      "output": 3.9600000000000004
+      "output": 3.96
+    },
+    "kilocode/novita/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "kilocode/novita/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -53464,16 +53311,6 @@
       "input": 0.09,
       "output": 0.09
     },
-    "kilocode/novita/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
-    },
-    "kilocode/novita/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
-    },
     "kilocode/novita/inclusionai/ling-3.0-flash": {
       "cacheRead": 0.012,
       "input": 0.06,
@@ -53484,10 +53321,20 @@
       "input": 0.06,
       "output": 0.18
     },
-    "kilocode/novita/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "kilocode/novita/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
+    },
+    "kilocode/novita/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
+    },
+    "kilocode/novita/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
     "kilocode/novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -53512,7 +53359,7 @@
     },
     "kilocode/novita/meta-llama/llama-3.2-3b-instruct": {
       "input": 0.03,
-      "output": 0.05
+      "output": 0.049999999999999996
     },
     "kilocode/novita/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -53531,14 +53378,14 @@
       "output": 0.62
     },
     "kilocode/novita/mindai/macaron-v1-tall": {
-      "cacheRead": 0.08,
-      "input": 0.45,
-      "output": 2.6
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
     "kilocode/novita/mindai/macaron-v1-venti": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "kilocode/novita/minimax/minimax-m2": {
       "cacheRead": 0.03,
@@ -53574,7 +53421,28 @@
     "kilocode/novita/minimax/minimax-m3": {
       "cacheRead": 0.06,
       "input": 0.3,
-      "output": 1.2
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
     },
     "kilocode/novita/minimaxai/minimax-m1-80k": {
       "input": 0.55,
@@ -53582,7 +53450,7 @@
     },
     "kilocode/novita/mistralai/mistral-nemo": {
       "input": 0.04,
-      "output": 0.17
+      "output": 0.16999999999999998
     },
     "kilocode/novita/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -53639,7 +53507,7 @@
     },
     "kilocode/novita/qwen/qwen-2.5-72b-instruct": {
       "input": 0.38,
-      "output": 0.4
+      "output": 0.39999999999999997
     },
     "kilocode/novita/qwen/qwen-mt-plus": {
       "input": 0.25,
@@ -53650,12 +53518,12 @@
       "output": 0.07
     },
     "kilocode/novita/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "kilocode/novita/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999
     },
     "kilocode/novita/qwen/qwen3-235b-a22b-instruct-2507": {
       "input": 0.09,
@@ -53667,11 +53535,11 @@
     },
     "kilocode/novita/qwen/qwen3-30b-a3b-fp8": {
       "input": 0.09,
-      "output": 0.45
+      "output": 0.44999999999999996
     },
     "kilocode/novita/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
+      "input": 0.09999999999999999,
+      "output": 0.44999999999999996
     },
     "kilocode/novita/qwen/qwen3-4b-fp8": {
       "input": 0.03,
@@ -53679,7 +53547,7 @@
     },
     "kilocode/novita/qwen/qwen3-8b-fp8": {
       "input": 0.035,
-      "output": 0.138
+      "output": 0.13799999999999998
     },
     "kilocode/novita/qwen/qwen3-coder-30b-a3b-instruct": {
       "input": 0.07,
@@ -53702,8 +53570,8 @@
       "output": 0
     },
     "kilocode/novita/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
+      "input": 2.1100000000000003,
+      "output": 8.450000000000001
     },
     "kilocode/novita/qwen/qwen3-next-80b-a3b-instruct": {
       "input": 0.15,
@@ -53715,15 +53583,15 @@
     },
     "kilocode/novita/qwen/qwen3-omni-30b-a3b-instruct": {
       "input": 0.25,
-      "output": 0.97
+      "output": 0.9700000000000001
     },
     "kilocode/novita/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
     "kilocode/novita/qwen/qwen3-reranker-8b": {
-      "input": 0.049999999999999996,
-      "output": 0.049999999999999996
+      "input": 0.05,
+      "output": 0
     },
     "kilocode/novita/qwen/qwen3-vl-235b-a22b-instruct": {
       "input": 0.3,
@@ -53738,7 +53606,7 @@
       "output": 0.7
     },
     "kilocode/novita/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
+      "input": 0.19999999999999998,
       "output": 1
     },
     "kilocode/novita/qwen/qwen3-vl-8b-instruct": {
@@ -53771,9 +53639,23 @@
     },
     "kilocode/novita/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
+    },
+    "kilocode/novita/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "kilocode/novita/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "kilocode/novita/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
     },
     "kilocode/novita/qwen/qwen3.8-max": {
       "cacheRead": 0.25,
@@ -53784,31 +53666,15 @@
       "input": 1.48,
       "output": 1.48
     },
-    "kilocode/novita/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
     "kilocode/novita/sao10k/l3-8b-lunaris": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
-    },
-    "kilocode/novita/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "kilocode/novita/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
     },
     "kilocode/novita/Sao10K/L3-8B-Stheno-v3.2": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
     },
     "kilocode/novita/sao10k/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "kilocode/novita/sao10K/l31-70b-euryale-v2.2": {
       "input": 1.48,
       "output": 1.48
     },
@@ -53826,40 +53692,19 @@
       "input": 0.14,
       "output": 0.58
     },
+    "kilocode/novita/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
     "kilocode/novita/thudm/glm-4-32b-0414": {
       "input": 0.55,
       "output": 1.66
     },
     "kilocode/novita/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "kilocode/novita/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
-      "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "cacheRead": 0.024,
+      "input": 0.11,
+      "output": 0.33
     },
     "kilocode/novita/xiaomimimo/mimo-v2.5": {
       "cacheRead": 0.0034,
@@ -53869,28 +53714,17 @@
     "kilocode/novita/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "kilocode/novita/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "kilocode/novita/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "kilocode/novita/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
@@ -53960,6 +53794,11 @@
       "cacheRead": 0.26,
       "input": 1.4,
       "output": 4.4
+    },
+    "kilocode/novita/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
     },
     "kilocode/novita/zai-org/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -54655,6 +54494,11 @@
       "input": 0.6,
       "output": 2.4
     },
+    "kilocode/openai/gpt-rosalind-discovery": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25
+    },
     "kilocode/openai/gpt-rosalind-research": {
       "cacheRead": 0.5,
       "input": 5,
@@ -55127,19 +54971,19 @@
       "output": 10
     },
     "kilocode/openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.01,
+      "cacheRead": 0.005,
       "input": 0.016,
-      "output": 1.2
+      "output": 0.6
     },
     "kilocode/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.13,
-      "input": 0.1282,
-      "output": 8
+      "cacheRead": 0.004536,
+      "input": 0.14256,
+      "output": 0.42767999999999995
     },
     "kilocode/openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00528,
-      "input": 0.00528,
-      "output": 0.020123000000000002
+      "cacheRead": 0.0061,
+      "input": 0.0061,
+      "output": 1.28
     },
     "kilocode/openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -55176,8 +55020,8 @@
     },
     "kilocode/openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.49,
-      "output": 13
+      "input": 0.84,
+      "output": 13.5
     },
     "kilocode/openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -55319,14 +55163,14 @@
       ]
     },
     "kilocode/openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "input": 0.032,
-      "output": 0.214422
+      "output": 0.092301
     },
     "kilocode/openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.029,
-      "input": 0.031200000000000002,
-      "output": 4.4
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "kilocode/openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -55896,13 +55740,13 @@
       "output": 0.41
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0131,
-      "input": 0.0131,
+      "cacheRead": 0.0173,
+      "input": 0.0173,
       "output": 1.28
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.006500000000000001,
-      "input": 0.006500000000000001,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
       "output": 1.28
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -55911,9 +55755,9 @@
       "output": 0.6468
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0204015,
-      "input": 0.24481799999999998,
-      "output": 0.48963599999999996
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -56264,9 +56108,9 @@
       "output": 0.09999999999999999
     },
     "kilocode/openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "kilocode/openrouter/google/gemma-4-31b-it": {
       "cacheRead": 0.049999999999999996,
@@ -56591,6 +56435,7 @@
       "output": 2.5
     },
     "kilocode/openrouter/moonshotai/kimi-k2-thinking": {
+      "cacheRead": 0.15,
       "input": 0.6,
       "output": 2.5
     },
@@ -56610,9 +56455,9 @@
       "output": 3.35
     },
     "kilocode/openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.82,
-      "output": 13.5
+      "cacheRead": 0.6,
+      "input": 0.8999999999999999,
+      "output": 14
     },
     "kilocode/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -58910,9 +58755,9 @@
       "output": 1.7999999999999998
     },
     "kilocode/openrouter/z-ai/glm-4.6": {
-      "cacheRead": 0.08,
-      "input": 0.43,
-      "output": 1.75
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2
     },
     "kilocode/openrouter/z-ai/glm-4.6:exacto": {
       "input": 0.44999999999999996,
@@ -58953,9 +58798,9 @@
       "output": 6
     },
     "kilocode/openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.039,
-      "input": 0.04,
-      "output": 7
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "kilocode/openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -60060,6 +59905,14 @@
       "input": 0.8,
       "output": 1
     },
+    "kilocode/qwen/qwen3-235b-a22b": {
+      "input": 0.7,
+      "output": 2.8
+    },
+    "kilocode/qwen/qwen3-8b": {
+      "input": 0.18,
+      "output": 0.7
+    },
     "kilocode/qwen/qwen3-asr-flash": {
       "input": 0.035,
       "output": 0.035
@@ -60099,9 +59952,17 @@
         }
       ]
     },
+    "kilocode/qwen/qwen3-coder-plus": {
+      "input": 1,
+      "output": 5
+    },
     "kilocode/qwen/qwen3-livetranslate-flash-realtime": {
       "input": 10,
       "output": 10
+    },
+    "kilocode/qwen/qwen3-max": {
+      "input": 1.2,
+      "output": 6
     },
     "kilocode/qwen/qwen3-omni-flash": {
       "input": 0.43,
@@ -60132,6 +59993,12 @@
     "kilocode/qwen/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4
+    },
+    "kilocode/qwen/qwen3.6-max-preview": {
+      "cacheRead": 0.13,
+      "cacheWrite": 1.625,
+      "input": 1.3,
+      "output": 7.8
     },
     "kilocode/qwen/qwen3.8-max": {
       "cacheRead": 0.25,
@@ -65110,45 +64977,38 @@
       "input": 0.5,
       "output": 0.5
     },
+    "novita-ai/apodex/apodex-1.1-mini": {
+      "input": 0,
+      "output": 0
+    },
+    "novita-ai/baai/bge-m3": {
+      "input": 0.01,
+      "output": 0
+    },
+    "novita-ai/baai/bge-reranker-v2-m3": {
+      "input": 0.01,
+      "output": 0
+    },
     "novita-ai/baichuan/baichuan-m2-32b": {
       "input": 0.07,
       "output": 0.07
+    },
+    "novita-ai/baidu/cobuddy": {
+      "cacheRead": 0.07,
+      "input": 0.28,
+      "output": 1.13
     },
     "novita-ai/baidu/ernie-4.5-21B-a3b": {
       "input": 0.07,
       "output": 0.28
     },
-    "novita-ai/baidu/ernie-4.5-21B-a3b-thinking": {
-      "input": 0.07,
-      "output": 0.28
-    },
-    "novita-ai/baidu/ernie-4.5-300b-a47b-paddle": {
-      "input": 0.28,
-      "output": 1.1
-    },
-    "novita-ai/baidu/ernie-4.5-vl-28b-a3b": {
-      "input": 0.14,
-      "output": 0.56
-    },
-    "novita-ai/baidu/ernie-4.5-vl-28b-a3b-thinking": {
-      "input": 0.39,
-      "output": 0.39
-    },
-    "novita-ai/baidu/ernie-4.5-vl-424b-a47b": {
-      "input": 0.42,
-      "output": 1.25
-    },
-    "novita-ai/deepseek/deepseek-ocr": {
-      "input": 0.03,
-      "output": 0.03
+    "novita-ai/deepseek/deepseek_v3": {
+      "input": 0.89,
+      "output": 0.89
     },
     "novita-ai/deepseek/deepseek-ocr-2": {
       "input": 0.03,
       "output": 0.03
-    },
-    "novita-ai/deepseek/deepseek-prover-v2-671b": {
-      "input": 0.7,
-      "output": 2.5
     },
     "novita-ai/deepseek/deepseek-r1-0528": {
       "cacheRead": 0.35,
@@ -65159,59 +65019,29 @@
       "input": 0.06,
       "output": 0.09
     },
-    "novita-ai/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "novita-ai/deepseek/deepseek-r1-distill-qwen-14b": {
-      "input": 0.15,
-      "output": 0.15
-    },
-    "novita-ai/deepseek/deepseek-r1-distill-qwen-32b": {
-      "input": 0.3,
-      "output": 0.3
-    },
     "novita-ai/deepseek/deepseek-r1-turbo": {
       "input": 0.7,
       "output": 2.5
     },
-    "novita-ai/deepseek/deepseek-v3-0324": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1.12
-    },
-    "novita-ai/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
-      "output": 1.3
-    },
-    "novita-ai/deepseek/deepseek-v3.1": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "novita-ai/deepseek/deepseek-v3.1-terminus": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "novita-ai/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
-    },
-    "novita-ai/deepseek/deepseek-v3.2-exp": {
-      "input": 0.27,
-      "output": 0.41
-    },
-    "novita-ai/deepseek/deepseek-v4-flash": {
+    "novita-ai/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "input": 0.44,
+      "output": 1.32
     },
     "novita-ai/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.135,
       "input": 1.6,
       "output": 3.2
+    },
+    "novita-ai/deepseek/deepseek-v4-pro-0813": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96
+    },
+    "novita-ai/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "novita-ai/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -65233,41 +65063,37 @@
       "input": 0.09,
       "output": 0.09
     },
-    "novita-ai/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "novita-ai/inclusionai/ling-3.0-flash": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
     },
-    "novita-ai/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
+    "novita-ai/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "novita-ai/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "novita-ai/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "novita-ai/kwaipilot/kat-coder-pro": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2
+    "novita-ai/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "novita-ai/meta-llama/llama-3-70b-instruct": {
-      "input": 0.51,
-      "output": 0.74
-    },
-    "novita-ai/meta-llama/llama-3-8b-instruct": {
-      "input": 0.04,
-      "output": 0.04
+    "novita-ai/inclusionai/ling-3.1-flash": {
+      "input": 0,
+      "output": 0
     },
     "novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
     },
-    "novita-ai/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.03,
-      "output": 0.05
+    "novita-ai/meta-llama/llama-3.2-1b-instruct": {
+      "input": 0.02,
+      "output": 0.02
     },
     "novita-ai/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -65285,25 +65111,20 @@
       "input": 0.62,
       "output": 0.62
     },
-    "novita-ai/minimax/minimax-m2": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "novita-ai/mindai/macaron-v1-tall": {
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
-    "novita-ai/minimax/minimax-m2.1": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "novita-ai/mindai/macaron-v1-venti": {
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "novita-ai/minimax/minimax-m2.5": {
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2
-    },
-    "novita-ai/minimax/minimax-m2.5-highspeed": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 2.4
     },
     "novita-ai/minimax/minimax-m2.7": {
       "cacheRead": 0.06,
@@ -65316,13 +65137,35 @@
       "input": 0.6,
       "output": 2.4
     },
+    "novita-ai/minimax/minimax-m3": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
+    },
     "novita-ai/minimaxai/minimax-m1-80k": {
       "input": 0.55,
       "output": 2.2
-    },
-    "novita-ai/mistralai/mistral-nemo": {
-      "input": 0.04,
-      "output": 0.17
     },
     "novita-ai/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -65361,113 +65204,37 @@
       "input": 0.14,
       "output": 0.14
     },
+    "novita-ai/nvidia/nemotron-3-nano-30b-a3b": {
+      "input": 0.05,
+      "output": 0.2
+    },
     "novita-ai/openai/gpt-oss-120b": {
       "input": 0.05,
       "output": 0.25
-    },
-    "novita-ai/openai/gpt-oss-20b": {
-      "input": 0.04,
-      "output": 0.15
     },
     "novita-ai/paddlepaddle/paddleocr-vl": {
       "input": 0.02,
       "output": 0.02
     },
-    "novita-ai/qwen/qwen-2.5-72b-instruct": {
-      "input": 0.38,
-      "output": 0.4
-    },
     "novita-ai/qwen/qwen-mt-plus": {
       "input": 0.25,
       "output": 0.75
     },
-    "novita-ai/qwen/qwen2.5-7b-instruct": {
+    "novita-ai/qwen/qwen3-embedding-8b": {
       "input": 0.07,
-      "output": 0.07
-    },
-    "novita-ai/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "novita-ai/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
-    },
-    "novita-ai/qwen/qwen3-235b-a22b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.58
-    },
-    "novita-ai/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.3,
-      "output": 3
-    },
-    "novita-ai/qwen/qwen3-30b-a3b-fp8": {
-      "input": 0.09,
-      "output": 0.45
-    },
-    "novita-ai/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
-    },
-    "novita-ai/qwen/qwen3-4b-fp8": {
-      "input": 0.03,
-      "output": 0.03
-    },
-    "novita-ai/qwen/qwen3-8b-fp8": {
-      "input": 0.035,
-      "output": 0.138
-    },
-    "novita-ai/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.27
-    },
-    "novita-ai/qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 0.38,
-      "output": 1.55
-    },
-    "novita-ai/qwen/qwen3-coder-next": {
-      "input": 0.2,
-      "output": 1.5
-    },
-    "novita-ai/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
-    },
-    "novita-ai/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "novita-ai/qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "novita-ai/qwen/qwen3-omni-30b-a3b-instruct": {
-      "input": 0.25,
-      "output": 0.97
+      "output": 0
     },
     "novita-ai/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
-    "novita-ai/qwen/qwen3-vl-235b-a22b-instruct": {
-      "input": 0.3,
-      "output": 1.5
-    },
-    "novita-ai/qwen/qwen3-vl-235b-a22b-thinking": {
-      "input": 0.98,
-      "output": 3.95
+    "novita-ai/qwen/qwen3-reranker-8b": {
+      "input": 0.05,
+      "output": 0
     },
     "novita-ai/qwen/qwen3-vl-30b-a3b-instruct": {
       "input": 0.2,
       "output": 0.7
-    },
-    "novita-ai/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
-      "output": 1
-    },
-    "novita-ai/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.08,
-      "output": 0.5
     },
     "novita-ai/qwen/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -65485,93 +65252,77 @@
       "input": 0.6,
       "output": 3.6
     },
+    "novita-ai/qwen/qwen3.6-27b": {
+      "input": 0.6,
+      "output": 3.6
+    },
+    "novita-ai/qwen/qwen3.6-35b-a3b": {
+      "input": 0.248,
+      "output": 1.485
+    },
     "novita-ai/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
     },
-    "novita-ai/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "novita-ai/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "novita-ai/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "novita-ai/sao10K/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "novita-ai/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "novita-ai/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
+    "novita-ai/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
       "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 6
+    },
+    "novita-ai/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "novita-ai/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
+    },
+    "novita-ai/qwen/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "novita-ai/stepfun/step-3.7-flash": {
+      "cacheRead": 0.04,
+      "input": 0.2,
+      "output": 1.15
+    },
+    "novita-ai/tencent/hy3": {
+      "cacheRead": 0.035,
+      "input": 0.14,
+      "output": 0.58
+    },
+    "novita-ai/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
+    "novita-ai/xiaomimimo/mimo-v2.5": {
+      "cacheRead": 0.0034,
+      "input": 0.168,
+      "output": 0.336
     },
     "novita-ai/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "novita-ai/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "novita-ai/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "novita-ai/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
       "output": 0.138
-    },
-    "novita-ai/zai-org/glm-4.5": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2
     },
     "novita-ai/zai-org/glm-4.5-air": {
       "cacheRead": 0.025,
@@ -65618,22 +65369,31 @@
       "input": 1.4,
       "output": 4.4
     },
+    "novita-ai/zai-org/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "novita-ai/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
+    "novita/apodex/apodex-1.1-mini": {
+      "input": 0,
+      "output": 0
+    },
     "novita/baai/bge-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "novita/baai/bge-reranker-v2-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "novita/baichuan/baichuan-m2-32b": {
       "input": 0.07,
       "output": 0.07
-    },
-    "novita/baidu/cobuddy": {
-      "cacheRead": 0.07,
-      "input": 0.28,
-      "output": 1.13
     },
     "novita/baidu/ernie-4.5-21B-a3b-thinking": {
       "input": 0.07,
@@ -65643,13 +65403,17 @@
       "input": 0.28,
       "output": 1.1
     },
+    "novita/baidu/ernie-4.5-vl-28b-a3b": {
+      "input": 0.14,
+      "output": 0.56
+    },
+    "novita/baidu/ernie-4.5-vl-28b-a3b-thinking": {
+      "input": 0.39,
+      "output": 0.39
+    },
     "novita/baidu/ernie-4.5-vl-424b-a47b": {
       "input": 0.42,
       "output": 1.25
-    },
-    "novita/deepseek/deepseek_v3": {
-      "input": 0.89,
-      "output": 0.89
     },
     "novita/deepseek/deepseek-ocr": {
       "input": 0.03,
@@ -65672,8 +65436,8 @@
       "output": 0.09
     },
     "novita/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "novita/deepseek/deepseek-r1-distill-qwen-14b": {
       "input": 0.15,
@@ -65687,46 +65451,60 @@
       "input": 4,
       "output": 4
     },
+    "novita/deepseek/deepseek-v3-0324": {
+      "cacheRead": 0.135,
+      "input": 0.27,
+      "output": 1.12
+    },
+    "novita/deepseek/deepseek-v3-turbo": {
+      "input": 0.39999999999999997,
+      "output": 1.3
+    },
+    "novita/deepseek/deepseek-v3.1": {
+      "cacheRead": 0.135,
+      "input": 0.27,
+      "output": 1
+    },
+    "novita/deepseek/deepseek-v3.1-terminus": {
+      "cacheRead": 0.135,
+      "input": 0.27,
+      "output": 1
+    },
+    "novita/deepseek/deepseek-v3.2": {
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
+    },
+    "novita/deepseek/deepseek-v3.2-exp": {
+      "input": 0.27,
+      "output": 0.41
+    },
     "novita/deepseek/deepseek-v3/community": {
       "input": 0.89,
       "output": 0.89
-    },
-    "novita/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.028,
-      "input": 0.44,
-      "output": 1.32
     },
     "novita/deepseek/deepseek-v4-flash-vision-exp": {
       "cacheRead": 0.028,
       "input": 0.44,
       "output": 1.32
     },
-    "novita/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.132,
-      "input": 1.32,
-      "output": 3.9600000000000004
-    },
-    "novita/google/gemma-3-12b-it": {
-      "input": 0.05,
-      "output": 0.1
-    },
-    "novita/google/gemma-3-27b-it": {
-      "input": 0.119,
-      "output": 0.2
-    },
     "novita/gryphe/mythomax-l2-13b": {
       "input": 0.09,
       "output": 0.09
-    },
-    "novita/inclusionai/ling-3.0-flash": {
-      "cacheRead": 0.012,
-      "input": 0.06,
-      "output": 0.18
     },
     "novita/inclusionai/ling-3.0-flash-fast": {
       "cacheRead": 0.012,
       "input": 0.06,
       "output": 0.18
+    },
+    "novita/inclusionai/ling-3.1-flash": {
+      "input": 0,
+      "output": 0
+    },
+    "novita/kwaipilot/kat-coder-pro": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2
     },
     "novita/meta-llama/llama-3-70b-instruct": {
       "input": 0.51,
@@ -65736,51 +65514,32 @@
       "input": 0.04,
       "output": 0.04
     },
-    "novita/meta-llama/llama-3.1-8b-instruct": {
-      "input": 0.02,
-      "output": 0.05
-    },
-    "novita/meta-llama/llama-3.2-1b-instruct": {
-      "input": 0.02,
-      "output": 0.02
-    },
     "novita/meta-llama/llama-3.2-3b-instruct": {
       "input": 0.03,
-      "output": 0.05
-    },
-    "novita/meta-llama/llama-4-maverick-17b-128e-instruct-fp8": {
-      "input": 0.27,
-      "output": 0.85
-    },
-    "novita/meta-llama/llama-4-scout-17b-16e-instruct": {
-      "input": 0.18,
-      "output": 0.59
+      "output": 0.049999999999999996
     },
     "novita/microsoft/wizardlm-2-8x22b": {
       "input": 0.62,
       "output": 0.62
     },
-    "novita/mindai/macaron-v1-tall": {
-      "cacheRead": 0.08,
-      "input": 0.45,
-      "output": 2.6
+    "novita/minimax/minimax-m2": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 1.2
     },
-    "novita/mindai/macaron-v1-venti": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+    "novita/minimax/minimax-m2.1": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 1.2
+    },
+    "novita/minimax/minimax-m2.5-highspeed": {
+      "cacheRead": 0.03,
+      "input": 0.6,
+      "output": 2.4
     },
     "novita/mistralai/mistral-nemo": {
       "input": 0.04,
-      "output": 0.17
-    },
-    "novita/nousresearch/hermes-2-pro-llama-3-8b": {
-      "input": 0.14,
-      "output": 0.14
-    },
-    "novita/nvidia/nemotron-3-nano-30b-a3b": {
-      "input": 0.05,
-      "output": 0.2
+      "output": 0.16999999999999998
     },
     "novita/openai/gpt-oss-20b": {
       "input": 0.04,
@@ -65790,25 +65549,41 @@
       "input": 0.02,
       "output": 0.02
     },
+    "novita/qwen/qwen-2.5-72b-instruct": {
+      "input": 0.38,
+      "output": 0.39999999999999997
+    },
     "novita/qwen/qwen-mt-plus": {
       "input": 0.25,
       "output": 0.75
     },
+    "novita/qwen/qwen2.5-7b-instruct": {
+      "input": 0.07,
+      "output": 0.07
+    },
     "novita/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "novita/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999
+    },
+    "novita/qwen/qwen3-235b-a22b-instruct-2507": {
+      "input": 0.09,
+      "output": 0.58
+    },
+    "novita/qwen/qwen3-235b-a22b-thinking-2507": {
+      "input": 0.3,
+      "output": 3
     },
     "novita/qwen/qwen3-30b-a3b-fp8": {
       "input": 0.09,
-      "output": 0.45
+      "output": 0.44999999999999996
     },
     "novita/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
+      "input": 0.09999999999999999,
+      "output": 0.44999999999999996
     },
     "novita/qwen/qwen3-4b-fp8": {
       "input": 0.03,
@@ -65816,7 +65591,19 @@
     },
     "novita/qwen/qwen3-8b-fp8": {
       "input": 0.035,
-      "output": 0.138
+      "output": 0.13799999999999998
+    },
+    "novita/qwen/qwen3-coder-30b-a3b-instruct": {
+      "input": 0.07,
+      "output": 0.27
+    },
+    "novita/qwen/qwen3-coder-480b-a35b-instruct": {
+      "input": 0.38,
+      "output": 1.55
+    },
+    "novita/qwen/qwen3-coder-next": {
+      "input": 0.2,
+      "output": 1.5
     },
     "novita/qwen/qwen3-embedding-0.6b": {
       "input": 0.07,
@@ -65826,26 +65613,41 @@
       "input": 0.07,
       "output": 0
     },
+    "novita/qwen/qwen3-max": {
+      "input": 2.1100000000000003,
+      "output": 8.450000000000001
+    },
+    "novita/qwen/qwen3-next-80b-a3b-instruct": {
+      "input": 0.15,
+      "output": 1.5
+    },
+    "novita/qwen/qwen3-next-80b-a3b-thinking": {
+      "input": 0.15,
+      "output": 1.5
+    },
+    "novita/qwen/qwen3-omni-30b-a3b-instruct": {
+      "input": 0.25,
+      "output": 0.9700000000000001
+    },
     "novita/qwen/qwen3-reranker-8b": {
-      "input": 0.049999999999999996,
-      "output": 0.049999999999999996
+      "input": 0.05,
+      "output": 0
+    },
+    "novita/qwen/qwen3-vl-235b-a22b-instruct": {
+      "input": 0.3,
+      "output": 1.5
     },
     "novita/qwen/qwen3-vl-235b-a22b-thinking": {
       "input": 0.98,
       "output": 3.95
     },
-    "novita/qwen/qwen3.6-27b": {
-      "input": 0.6,
-      "output": 3.6
+    "novita/qwen/qwen3-vl-30b-a3b-thinking": {
+      "input": 0.19999999999999998,
+      "output": 1
     },
-    "novita/qwen/qwen3.6-35b-a3b": {
-      "input": 0.248,
-      "output": 1.485
-    },
-    "novita/qwen/qwen3.8-max": {
-      "cacheRead": 0.25,
-      "input": 2,
-      "output": 6
+    "novita/qwen/qwen3-vl-8b-instruct": {
+      "input": 0.08,
+      "output": 0.5
     },
     "novita/sao10k/l3-70b-euryale-v2.1": {
       "input": 1.48,
@@ -65854,10 +65656,6 @@
     "novita/sao10k/l3-8b-lunaris": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
-    },
-    "novita/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
     },
     "novita/Sao10K/L3-8B-Stheno-v3.2": {
       "input": 0.049999999999999996,
@@ -65871,28 +65669,23 @@
       "input": 0.19999999999999998,
       "output": 0.6
     },
-    "novita/stepfun/step-3.7-flash": {
-      "cacheRead": 0.04,
-      "input": 0.2,
-      "output": 1.15
-    },
-    "novita/tencent/hy3": {
-      "cacheRead": 0.035,
-      "input": 0.14,
-      "output": 0.58
-    },
     "novita/thudm/glm-4-32b-0414": {
       "input": 0.55,
       "output": 1.66
     },
-    "novita/xiaomimimo/mimo-v2.5": {
-      "cacheRead": 0.0034,
-      "input": 0.168,
-      "output": 0.336
+    "novita/xiaomimimo/mimo-v2-flash": {
+      "cacheRead": 0.024,
+      "input": 0.11,
+      "output": 0.33
     },
     "novita/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
       "output": 0.138
+    },
+    "novita/zai-org/glm-4.5": {
+      "cacheRead": 0.11,
+      "input": 0.6,
+      "output": 2.2
     },
     "novita/zai-org/glm-4.7-h": {
       "cacheRead": 0.11,
@@ -65903,11 +65696,6 @@
       "cacheRead": 0.24,
       "input": 1.2,
       "output": 4
-    },
-    "novita/zai-org/glm-5.3": {
-      "cacheRead": 0.26,
-      "input": 1.4,
-      "output": 4.4
     },
     "novita/zai-org/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -67013,6 +66801,11 @@
       "cacheRead": 0.06,
       "input": 0.6,
       "output": 2.4
+    },
+    "openai/gpt-rosalind-discovery": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25
     },
     "openai/gpt-rosalind-research": {
       "cacheRead": 0.5,
@@ -68346,19 +68139,19 @@
       "output": 10
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.01,
+      "cacheRead": 0.005,
       "input": 0.016,
-      "output": 1.2
+      "output": 0.6
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.13,
-      "input": 0.1282,
-      "output": 8
+      "cacheRead": 0.004536,
+      "input": 0.14256,
+      "output": 0.42767999999999995
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00528,
-      "input": 0.00528,
-      "output": 0.020123000000000002
+      "cacheRead": 0.0061,
+      "input": 0.0061,
+      "output": 1.28
     },
     "openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -68395,8 +68188,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.49,
-      "output": 13
+      "input": 0.84,
+      "output": 13.5
     },
     "openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -68538,14 +68331,14 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "input": 0.032,
-      "output": 0.214422
+      "output": 0.092301
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.029,
-      "input": 0.031200000000000002,
-      "output": 4.4
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -69093,13 +68886,13 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0131,
-      "input": 0.0131,
+      "cacheRead": 0.0173,
+      "input": 0.0173,
       "output": 1.28
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.006500000000000001,
-      "input": 0.006500000000000001,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
       "output": 1.28
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -69108,9 +68901,9 @@
       "output": 0.6468
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0204015,
-      "input": 0.24481799999999998,
-      "output": 0.48963599999999996
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -69450,9 +69243,9 @@
       "output": 0.09999999999999999
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "openrouter/google/gemma-4-31b-it": {
       "cacheRead": 0.049999999999999996,
@@ -69764,6 +69557,7 @@
       "output": 2.5
     },
     "openrouter/moonshotai/kimi-k2-thinking": {
+      "cacheRead": 0.15,
       "input": 0.6,
       "output": 2.5
     },
@@ -69783,9 +69577,9 @@
       "output": 3.35
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.82,
-      "output": 13.5
+      "cacheRead": 0.6,
+      "input": 0.8999999999999999,
+      "output": 14
     },
     "openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -71991,9 +71785,9 @@
       "output": 1.7999999999999998
     },
     "openrouter/z-ai/glm-4.6": {
-      "cacheRead": 0.08,
-      "input": 0.43,
-      "output": 1.75
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2
     },
     "openrouter/z-ai/glm-4.6v": {
       "cacheRead": 0.055,
@@ -72030,9 +71824,9 @@
       "output": 6
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.039,
-      "input": 0.04,
-      "output": 7
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -79319,6 +79113,10 @@
     "vercel-ai-gateway/azure_ai/Meta-Llama-3.1-70B-Instruct": {
       "input": 2.68,
       "output": 3.54
+    },
+    "vercel-ai-gateway/azure_ai/Microsoft-Decision-1": {
+      "input": 0.041999999999999996,
+      "output": 0.041999999999999996
     },
     "vercel-ai-gateway/azure_ai/ministral-3b": {
       "input": 0.04,
@@ -86635,6 +86433,12 @@
       "input": 1,
       "output": 5
     },
+    "vercel-ai-gateway/github_copilot/claude-haiku-5.5": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5
+    },
     "vercel-ai-gateway/github_copilot/claude-sonnet-4": {
       "cacheRead": 0.3,
       "cacheWrite": 3.75,
@@ -88650,6 +88454,10 @@
       "input": 0.59,
       "output": 0.79
     },
+    "vercel-ai-gateway/huggingface/MiniMaxAI/MiniMax-M1-80k": {
+      "input": 0.55,
+      "output": 2.2
+    },
     "vercel-ai-gateway/huggingface/MiniMaxAI/MiniMax-M2": {
       "input": 0.3,
       "output": 1.2
@@ -88771,6 +88579,10 @@
       "input": 0.98,
       "output": 3.95
     },
+    "vercel-ai-gateway/huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+      "input": 0.2,
+      "output": 0.7
+    },
     "vercel-ai-gateway/huggingface/Qwen/Qwen3.5-122B-A10B": {
       "input": 0.4,
       "output": 3.2
@@ -88842,6 +88654,10 @@
     "vercel-ai-gateway/huggingface/XiaomiMiMo/MiMo-V2.5-Pro": {
       "input": 1,
       "output": 3
+    },
+    "vercel-ai-gateway/huggingface/zai-org/AutoGLM-Phone-9B-Multilingual": {
+      "input": 0.035,
+      "output": 0.138
     },
     "vercel-ai-gateway/huggingface/zai-org/GLM-4.5": {
       "input": 0.6,
@@ -89613,7 +89429,7 @@
       "output": 7.5
     },
     "vercel-ai-gateway/mistral/mistral-nemo": {
-      "input": 0.019,
+      "input": 0.029,
       "output": 0.03
     },
     "vercel-ai-gateway/mistral/mistral-small": {
@@ -90059,45 +89875,34 @@
       "input": 0.5,
       "output": 0.5
     },
+    "vercel-ai-gateway/novita-ai/baai/bge-m3": {
+      "input": 0.01,
+      "output": 0
+    },
+    "vercel-ai-gateway/novita-ai/baai/bge-reranker-v2-m3": {
+      "input": 0.01,
+      "output": 0
+    },
     "vercel-ai-gateway/novita-ai/baichuan/baichuan-m2-32b": {
       "input": 0.07,
       "output": 0.07
+    },
+    "vercel-ai-gateway/novita-ai/baidu/cobuddy": {
+      "cacheRead": 0.07,
+      "input": 0.28,
+      "output": 1.13
     },
     "vercel-ai-gateway/novita-ai/baidu/ernie-4.5-21B-a3b": {
       "input": 0.07,
       "output": 0.28
     },
-    "vercel-ai-gateway/novita-ai/baidu/ernie-4.5-21B-a3b-thinking": {
-      "input": 0.07,
-      "output": 0.28
-    },
-    "vercel-ai-gateway/novita-ai/baidu/ernie-4.5-300b-a47b-paddle": {
-      "input": 0.28,
-      "output": 1.1
-    },
-    "vercel-ai-gateway/novita-ai/baidu/ernie-4.5-vl-28b-a3b": {
-      "input": 0.14,
-      "output": 0.56
-    },
-    "vercel-ai-gateway/novita-ai/baidu/ernie-4.5-vl-28b-a3b-thinking": {
-      "input": 0.39,
-      "output": 0.39
-    },
-    "vercel-ai-gateway/novita-ai/baidu/ernie-4.5-vl-424b-a47b": {
-      "input": 0.42,
-      "output": 1.25
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-ocr": {
-      "input": 0.03,
-      "output": 0.03
+    "vercel-ai-gateway/novita-ai/deepseek/deepseek_v3": {
+      "input": 0.89,
+      "output": 0.89
     },
     "vercel-ai-gateway/novita-ai/deepseek/deepseek-ocr-2": {
       "input": 0.03,
       "output": 0.03
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-prover-v2-671b": {
-      "input": 0.7,
-      "output": 2.5
     },
     "vercel-ai-gateway/novita-ai/deepseek/deepseek-r1-0528": {
       "cacheRead": 0.35,
@@ -90108,59 +89913,29 @@
       "input": 0.06,
       "output": 0.09
     },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-r1-distill-qwen-14b": {
-      "input": 0.15,
-      "output": 0.15
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-r1-distill-qwen-32b": {
-      "input": 0.3,
-      "output": 0.3
-    },
     "vercel-ai-gateway/novita-ai/deepseek/deepseek-r1-turbo": {
       "input": 0.7,
       "output": 2.5
     },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v3-0324": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1.12
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
-      "output": 1.3
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v3.1": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v3.1-terminus": {
-      "cacheRead": 0.135,
-      "input": 0.27,
-      "output": 1
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v3.2-exp": {
-      "input": 0.27,
-      "output": 0.41
-    },
-    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v4-flash": {
+    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.028,
-      "input": 0.14,
-      "output": 0.28
+      "input": 0.44,
+      "output": 1.32
     },
     "vercel-ai-gateway/novita-ai/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.135,
       "input": 1.6,
       "output": 3.2
+    },
+    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v4-pro-0813": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96
+    },
+    "vercel-ai-gateway/novita-ai/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "vercel-ai-gateway/novita-ai/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -90182,41 +89957,33 @@
       "input": 0.09,
       "output": 0.09
     },
-    "vercel-ai-gateway/novita-ai/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "vercel-ai-gateway/novita-ai/inclusionai/ling-3.0-flash": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18
     },
-    "vercel-ai-gateway/novita-ai/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
+    "vercel-ai-gateway/novita-ai/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "vercel-ai-gateway/novita-ai/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "vercel-ai-gateway/novita-ai/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
-    "vercel-ai-gateway/novita-ai/kwaipilot/kat-coder-pro": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2
-    },
-    "vercel-ai-gateway/novita-ai/meta-llama/llama-3-70b-instruct": {
-      "input": 0.51,
-      "output": 0.74
-    },
-    "vercel-ai-gateway/novita-ai/meta-llama/llama-3-8b-instruct": {
-      "input": 0.04,
-      "output": 0.04
+    "vercel-ai-gateway/novita-ai/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
     "vercel-ai-gateway/novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
     },
-    "vercel-ai-gateway/novita-ai/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.03,
-      "output": 0.05
+    "vercel-ai-gateway/novita-ai/meta-llama/llama-3.2-1b-instruct": {
+      "input": 0.02,
+      "output": 0.02
     },
     "vercel-ai-gateway/novita-ai/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -90234,25 +90001,20 @@
       "input": 0.62,
       "output": 0.62
     },
-    "vercel-ai-gateway/novita-ai/minimax/minimax-m2": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "vercel-ai-gateway/novita-ai/mindai/macaron-v1-tall": {
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
-    "vercel-ai-gateway/novita-ai/minimax/minimax-m2.1": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2
+    "vercel-ai-gateway/novita-ai/mindai/macaron-v1-venti": {
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "vercel-ai-gateway/novita-ai/minimax/minimax-m2.5": {
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2
-    },
-    "vercel-ai-gateway/novita-ai/minimax/minimax-m2.5-highspeed": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 2.4
     },
     "vercel-ai-gateway/novita-ai/minimax/minimax-m2.7": {
       "cacheRead": 0.06,
@@ -90265,13 +90027,35 @@
       "input": 0.6,
       "output": 2.4
     },
+    "vercel-ai-gateway/novita-ai/minimax/minimax-m3": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
+    },
     "vercel-ai-gateway/novita-ai/minimaxai/minimax-m1-80k": {
       "input": 0.55,
       "output": 2.2
-    },
-    "vercel-ai-gateway/novita-ai/mistralai/mistral-nemo": {
-      "input": 0.04,
-      "output": 0.17
     },
     "vercel-ai-gateway/novita-ai/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -90310,113 +90094,37 @@
       "input": 0.14,
       "output": 0.14
     },
+    "vercel-ai-gateway/novita-ai/nvidia/nemotron-3-nano-30b-a3b": {
+      "input": 0.05,
+      "output": 0.2
+    },
     "vercel-ai-gateway/novita-ai/openai/gpt-oss-120b": {
       "input": 0.05,
       "output": 0.25
-    },
-    "vercel-ai-gateway/novita-ai/openai/gpt-oss-20b": {
-      "input": 0.04,
-      "output": 0.15
     },
     "vercel-ai-gateway/novita-ai/paddlepaddle/paddleocr-vl": {
       "input": 0.02,
       "output": 0.02
     },
-    "vercel-ai-gateway/novita-ai/qwen/qwen-2.5-72b-instruct": {
-      "input": 0.38,
-      "output": 0.4
-    },
     "vercel-ai-gateway/novita-ai/qwen/qwen-mt-plus": {
       "input": 0.25,
       "output": 0.75
     },
-    "vercel-ai-gateway/novita-ai/qwen/qwen2.5-7b-instruct": {
+    "vercel-ai-gateway/novita-ai/qwen/qwen3-embedding-8b": {
       "input": 0.07,
-      "output": 0.07
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-235b-a22b-instruct-2507": {
-      "input": 0.09,
-      "output": 0.58
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.3,
-      "output": 3
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-30b-a3b-fp8": {
-      "input": 0.09,
-      "output": 0.45
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-4b-fp8": {
-      "input": 0.03,
-      "output": 0.03
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-8b-fp8": {
-      "input": 0.035,
-      "output": 0.138
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.27
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 0.38,
-      "output": 1.55
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-coder-next": {
-      "input": 0.2,
-      "output": 1.5
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.15,
-      "output": 1.5
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-omni-30b-a3b-instruct": {
-      "input": 0.25,
-      "output": 0.97
+      "output": 0
     },
     "vercel-ai-gateway/novita-ai/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-vl-235b-a22b-instruct": {
-      "input": 0.3,
-      "output": 1.5
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-vl-235b-a22b-thinking": {
-      "input": 0.98,
-      "output": 3.95
+    "vercel-ai-gateway/novita-ai/qwen/qwen3-reranker-8b": {
+      "input": 0.05,
+      "output": 0
     },
     "vercel-ai-gateway/novita-ai/qwen/qwen3-vl-30b-a3b-instruct": {
       "input": 0.2,
       "output": 0.7
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
-      "output": 1
-    },
-    "vercel-ai-gateway/novita-ai/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.08,
-      "output": 0.5
     },
     "vercel-ai-gateway/novita-ai/qwen/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -90434,93 +90142,77 @@
       "input": 0.6,
       "output": 3.6
     },
+    "vercel-ai-gateway/novita-ai/qwen/qwen3.6-27b": {
+      "input": 0.6,
+      "output": 3.6
+    },
+    "vercel-ai-gateway/novita-ai/qwen/qwen3.6-35b-a3b": {
+      "input": 0.248,
+      "output": 1.485
+    },
     "vercel-ai-gateway/novita-ai/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
     },
-    "vercel-ai-gateway/novita-ai/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "vercel-ai-gateway/novita-ai/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "vercel-ai-gateway/novita-ai/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "vercel-ai-gateway/novita-ai/sao10K/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "vercel-ai-gateway/novita-ai/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "vercel-ai-gateway/novita-ai/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
+    "vercel-ai-gateway/novita-ai/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
       "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 6
+    },
+    "vercel-ai-gateway/novita-ai/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "vercel-ai-gateway/novita-ai/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
+    },
+    "vercel-ai-gateway/novita-ai/qwen/qwen3.8-max": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "vercel-ai-gateway/novita-ai/stepfun/step-3.7-flash": {
+      "cacheRead": 0.04,
+      "input": 0.2,
+      "output": 1.15
+    },
+    "vercel-ai-gateway/novita-ai/tencent/hy3": {
+      "cacheRead": 0.035,
+      "input": 0.14,
+      "output": 0.58
+    },
+    "vercel-ai-gateway/novita-ai/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
+    "vercel-ai-gateway/novita-ai/xiaomimimo/mimo-v2.5": {
+      "cacheRead": 0.0034,
+      "input": 0.168,
+      "output": 0.336
     },
     "vercel-ai-gateway/novita-ai/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "vercel-ai-gateway/novita-ai/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "vercel-ai-gateway/novita-ai/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "vercel-ai-gateway/novita-ai/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
       "output": 0.138
-    },
-    "vercel-ai-gateway/novita-ai/zai-org/glm-4.5": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2
     },
     "vercel-ai-gateway/novita-ai/zai-org/glm-4.5-air": {
       "cacheRead": 0.025,
@@ -90567,13 +90259,23 @@
       "input": 1.4,
       "output": 4.4
     },
+    "vercel-ai-gateway/novita-ai/zai-org/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "vercel-ai-gateway/novita-ai/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
     "vercel-ai-gateway/novita/baai/bge-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "vercel-ai-gateway/novita/baai/bge-reranker-v2-m3": {
       "input": 0.01,
-      "output": 0.01
+      "output": 0
     },
     "vercel-ai-gateway/novita/baichuan/baichuan-m2-32b": {
       "input": 0.07,
@@ -90638,8 +90340,8 @@
       "output": 0.09
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-r1-distill-llama-70b": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-r1-distill-qwen-14b": {
       "input": 0.15,
@@ -90663,7 +90365,7 @@
       "output": 1.12
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-v3-turbo": {
-      "input": 0.4,
+      "input": 0.39999999999999997,
       "output": 1.3
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-v3.1": {
@@ -90677,9 +90379,9 @@
       "output": 1
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.1345,
-      "input": 0.269,
-      "output": 0.4
+      "cacheRead": 0.13449999999999998,
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-v3.2-exp": {
       "input": 0.27,
@@ -90710,9 +90412,14 @@
       "output": 3.2
     },
     "vercel-ai-gateway/novita/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.132,
+      "cacheRead": 0.044,
       "input": 1.32,
-      "output": 3.9600000000000004
+      "output": 3.96
+    },
+    "vercel-ai-gateway/novita/deepseek/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
     },
     "vercel-ai-gateway/novita/google/gemma-3-12b-it": {
       "input": 0.05,
@@ -90734,16 +90441,6 @@
       "input": 0.09,
       "output": 0.09
     },
-    "vercel-ai-gateway/novita/inclusionai/ling-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
-    },
-    "vercel-ai-gateway/novita/inclusionai/ling-2.6-flash": {
-      "cacheRead": 0.02,
-      "input": 0.1,
-      "output": 0.3
-    },
     "vercel-ai-gateway/novita/inclusionai/ling-3.0-flash": {
       "cacheRead": 0.012,
       "input": 0.06,
@@ -90754,10 +90451,20 @@
       "input": 0.06,
       "output": 0.18
     },
-    "vercel-ai-gateway/novita/inclusionai/ring-2.6-1t": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 2.5
+    "vercel-ai-gateway/novita/inclusionai/ling-3.0-flash-fin": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
+    },
+    "vercel-ai-gateway/novita/inclusionai/ling-3.0-flash-sante": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
+    },
+    "vercel-ai-gateway/novita/inclusionai/ling-3.0-flash-vl": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.22
     },
     "vercel-ai-gateway/novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -90782,7 +90489,7 @@
     },
     "vercel-ai-gateway/novita/meta-llama/llama-3.2-3b-instruct": {
       "input": 0.03,
-      "output": 0.05
+      "output": 0.049999999999999996
     },
     "vercel-ai-gateway/novita/meta-llama/llama-3.3-70b-instruct": {
       "input": 0.135,
@@ -90801,14 +90508,14 @@
       "output": 0.62
     },
     "vercel-ai-gateway/novita/mindai/macaron-v1-tall": {
-      "cacheRead": 0.08,
-      "input": 0.45,
-      "output": 2.6
+      "cacheRead": 0.044,
+      "input": 0.2475,
+      "output": 1.43
     },
     "vercel-ai-gateway/novita/mindai/macaron-v1-venti": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.165,
+      "input": 0.825,
+      "output": 2.475
     },
     "vercel-ai-gateway/novita/minimax/minimax-m2": {
       "cacheRead": 0.03,
@@ -90844,7 +90551,28 @@
     "vercel-ai-gateway/novita/minimax/minimax-m3": {
       "cacheRead": 0.06,
       "input": 0.3,
-      "output": 1.2
+      "output": 1.2,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            524288
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            524288
+          ]
+        }
+      ]
     },
     "vercel-ai-gateway/novita/minimaxai/minimax-m1-80k": {
       "input": 0.55,
@@ -90852,7 +90580,7 @@
     },
     "vercel-ai-gateway/novita/mistralai/mistral-nemo": {
       "input": 0.04,
-      "output": 0.17
+      "output": 0.16999999999999998
     },
     "vercel-ai-gateway/novita/moonshotai/kimi-k2-0905": {
       "input": 0.6,
@@ -90909,7 +90637,7 @@
     },
     "vercel-ai-gateway/novita/qwen/qwen-2.5-72b-instruct": {
       "input": 0.38,
-      "output": 0.4
+      "output": 0.39999999999999997
     },
     "vercel-ai-gateway/novita/qwen/qwen-mt-plus": {
       "input": 0.25,
@@ -90920,12 +90648,12 @@
       "output": 0.07
     },
     "vercel-ai-gateway/novita/qwen/qwen2.5-vl-72b-instruct": {
-      "input": 0.8,
-      "output": 0.8
+      "input": 0.7999999999999999,
+      "output": 0.7999999999999999
     },
     "vercel-ai-gateway/novita/qwen/qwen3-235b-a22b-fp8": {
-      "input": 0.2,
-      "output": 0.8
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999
     },
     "vercel-ai-gateway/novita/qwen/qwen3-235b-a22b-instruct-2507": {
       "input": 0.09,
@@ -90937,11 +90665,11 @@
     },
     "vercel-ai-gateway/novita/qwen/qwen3-30b-a3b-fp8": {
       "input": 0.09,
-      "output": 0.45
+      "output": 0.44999999999999996
     },
     "vercel-ai-gateway/novita/qwen/qwen3-32b-fp8": {
-      "input": 0.1,
-      "output": 0.45
+      "input": 0.09999999999999999,
+      "output": 0.44999999999999996
     },
     "vercel-ai-gateway/novita/qwen/qwen3-4b-fp8": {
       "input": 0.03,
@@ -90949,7 +90677,7 @@
     },
     "vercel-ai-gateway/novita/qwen/qwen3-8b-fp8": {
       "input": 0.035,
-      "output": 0.138
+      "output": 0.13799999999999998
     },
     "vercel-ai-gateway/novita/qwen/qwen3-coder-30b-a3b-instruct": {
       "input": 0.07,
@@ -90972,8 +90700,8 @@
       "output": 0
     },
     "vercel-ai-gateway/novita/qwen/qwen3-max": {
-      "input": 2.11,
-      "output": 8.45
+      "input": 2.1100000000000003,
+      "output": 8.450000000000001
     },
     "vercel-ai-gateway/novita/qwen/qwen3-next-80b-a3b-instruct": {
       "input": 0.15,
@@ -90985,15 +90713,15 @@
     },
     "vercel-ai-gateway/novita/qwen/qwen3-omni-30b-a3b-instruct": {
       "input": 0.25,
-      "output": 0.97
+      "output": 0.9700000000000001
     },
     "vercel-ai-gateway/novita/qwen/qwen3-omni-30b-a3b-thinking": {
       "input": 0.25,
       "output": 0.97
     },
     "vercel-ai-gateway/novita/qwen/qwen3-reranker-8b": {
-      "input": 0.049999999999999996,
-      "output": 0.049999999999999996
+      "input": 0.05,
+      "output": 0
     },
     "vercel-ai-gateway/novita/qwen/qwen3-vl-235b-a22b-instruct": {
       "input": 0.3,
@@ -91008,7 +90736,7 @@
       "output": 0.7
     },
     "vercel-ai-gateway/novita/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.2,
+      "input": 0.19999999999999998,
       "output": 1
     },
     "vercel-ai-gateway/novita/qwen/qwen3-vl-8b-instruct": {
@@ -91041,9 +90769,23 @@
     },
     "vercel-ai-gateway/novita/qwen/qwen3.7-max": {
       "cacheRead": 0.25,
-      "cacheWrite": 1.5625,
       "input": 1.25,
       "output": 3.75
+    },
+    "vercel-ai-gateway/novita/qwen/qwen3.8-2.4t-a95b": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
+    },
+    "vercel-ai-gateway/novita/qwen/qwen3.8-27b": {
+      "cacheRead": 0.085,
+      "input": 0.42,
+      "output": 3
+    },
+    "vercel-ai-gateway/novita/qwen/qwen3.8-flash": {
+      "cacheRead": 0.016,
+      "input": 0.15,
+      "output": 0.47
     },
     "vercel-ai-gateway/novita/qwen/qwen3.8-max": {
       "cacheRead": 0.25,
@@ -91054,31 +90796,15 @@
       "input": 1.48,
       "output": 1.48
     },
-    "vercel-ai-gateway/novita/sao10K/l3-70b-euryale-v2.1": {
-      "input": 1.48,
-      "output": 1.48
-    },
     "vercel-ai-gateway/novita/sao10k/l3-8b-lunaris": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
-    },
-    "vercel-ai-gateway/novita/sao10K/l3-8b-lunaris": {
-      "input": 0.05,
-      "output": 0.05
-    },
-    "vercel-ai-gateway/novita/sao10K/L3-8B-stheno-v3.2": {
-      "input": 0.05,
-      "output": 0.05
     },
     "vercel-ai-gateway/novita/Sao10K/L3-8B-Stheno-v3.2": {
       "input": 0.049999999999999996,
       "output": 0.049999999999999996
     },
     "vercel-ai-gateway/novita/sao10k/l31-70b-euryale-v2.2": {
-      "input": 1.48,
-      "output": 1.48
-    },
-    "vercel-ai-gateway/novita/sao10K/l31-70b-euryale-v2.2": {
       "input": 1.48,
       "output": 1.48
     },
@@ -91096,40 +90822,19 @@
       "input": 0.14,
       "output": 0.58
     },
+    "vercel-ai-gateway/novita/tencent/hy4-preview": {
+      "cacheRead": 0.042,
+      "input": 0.834,
+      "output": 2.501
+    },
     "vercel-ai-gateway/novita/thudm/glm-4-32b-0414": {
       "input": 0.55,
       "output": 1.66
     },
     "vercel-ai-gateway/novita/xiaomimimo/mimo-v2-flash": {
-      "cacheRead": 0.3,
-      "input": 0.1,
-      "output": 0.3
-    },
-    "vercel-ai-gateway/novita/xiaomimimo/mimo-v2-pro": {
-      "cacheRead": 0.4,
-      "input": 2,
-      "output": 6,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "cacheRead": 0.024,
+      "input": 0.11,
+      "output": 0.33
     },
     "vercel-ai-gateway/novita/xiaomimimo/mimo-v2.5": {
       "cacheRead": 0.0034,
@@ -91139,28 +90844,17 @@
     "vercel-ai-gateway/novita/xiaomimimo/mimo-v2.5-pro": {
       "cacheRead": 0.0043,
       "input": 0.522,
-      "output": 1.044,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.0043,
-          "cacheWrite": 0,
-          "input": 0.522,
-          "output": 1.044,
-          "range": [
-            256000
-          ]
-        }
-      ]
+      "output": 1.044
+    },
+    "vercel-ai-gateway/novita/xiaomimimo/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28
+    },
+    "vercel-ai-gateway/novita/xiaomimimo/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87
     },
     "vercel-ai-gateway/novita/zai-org/autoglm-phone-9b-multilingual": {
       "input": 0.035,
@@ -91230,6 +90924,11 @@
       "cacheRead": 0.26,
       "input": 1.4,
       "output": 4.4
+    },
+    "vercel-ai-gateway/novita/zai-org/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
     },
     "vercel-ai-gateway/novita/zai-org/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -92652,6 +92351,11 @@
       "input": 0.6,
       "output": 2.4
     },
+    "vercel-ai-gateway/openai/gpt-rosalind-discovery": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25
+    },
     "vercel-ai-gateway/openai/gpt-rosalind-research": {
       "cacheRead": 0.5,
       "input": 5,
@@ -93158,19 +92862,19 @@
       "output": 10
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.01,
+      "cacheRead": 0.005,
       "input": 0.016,
-      "output": 1.2
+      "output": 0.6
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.13,
-      "input": 0.1282,
-      "output": 8
+      "cacheRead": 0.004536,
+      "input": 0.14256,
+      "output": 0.42767999999999995
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00528,
-      "input": 0.00528,
-      "output": 0.020123000000000002
+      "cacheRead": 0.0061,
+      "input": 0.0061,
+      "output": 1.28
     },
     "vercel-ai-gateway/openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -93207,8 +92911,8 @@
     },
     "vercel-ai-gateway/openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.49,
-      "output": 13
+      "input": 0.84,
+      "output": 13.5
     },
     "vercel-ai-gateway/openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -93350,14 +93054,14 @@
       ]
     },
     "vercel-ai-gateway/openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.02,
+      "cacheRead": 0.01,
       "input": 0.032,
-      "output": 0.214422
+      "output": 0.092301
     },
     "vercel-ai-gateway/openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.029,
-      "input": 0.031200000000000002,
-      "output": 4.4
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "vercel-ai-gateway/openrouter/aion-labs/aion-2.0": {
       "cacheRead": 0.19999999999999998,
@@ -93927,13 +93631,13 @@
       "output": 0.41
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0131,
-      "input": 0.0131,
+      "cacheRead": 0.0173,
+      "input": 0.0173,
       "output": 1.28
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.006500000000000001,
-      "input": 0.006500000000000001,
+      "cacheRead": 0.0061,
+      "input": 0.0061,
       "output": 1.28
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -93942,9 +93646,9 @@
       "output": 0.6468
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0204015,
-      "input": 0.24481799999999998,
-      "output": 0.48963599999999996
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -94295,9 +93999,9 @@
       "output": 0.09999999999999999
     },
     "vercel-ai-gateway/openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "vercel-ai-gateway/openrouter/google/gemma-4-31b-it": {
       "cacheRead": 0.049999999999999996,
@@ -94622,6 +94326,7 @@
       "output": 2.5
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k2-thinking": {
+      "cacheRead": 0.15,
       "input": 0.6,
       "output": 2.5
     },
@@ -94641,9 +94346,9 @@
       "output": 3.35
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.82,
-      "output": 13.5
+      "cacheRead": 0.6,
+      "input": 0.8999999999999999,
+      "output": 14
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -96941,9 +96646,9 @@
       "output": 1.7999999999999998
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-4.6": {
-      "cacheRead": 0.08,
-      "input": 0.43,
-      "output": 1.75
+      "cacheRead": 0.09999999999999999,
+      "input": 0.5,
+      "output": 2
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-4.6:exacto": {
       "input": 0.44999999999999996,
@@ -96984,9 +96689,9 @@
       "output": 6
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.039,
-      "input": 0.04,
-      "output": 7
+      "cacheRead": 0.038000000000000006,
+      "input": 0.039,
+      "output": 4.8
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -107001,6 +106706,23 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
+            "input": 0.15,
+            "output": 0.6
+          },
+          "id": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Qwen3 VL 30B A3B Instruct",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
             "input": 0.26,
             "output": 2.5999999999999996
           },
@@ -109493,10 +109215,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.01,
+            "cacheRead": 0.005,
             "cacheWrite": 0,
             "input": 0.016,
-            "output": 1.2
+            "output": 0.6
           },
           "id": "~deepseek/deepseek-flash-latest",
           "input": [
@@ -109510,10 +109232,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.13,
+            "cacheRead": 0.004536,
             "cacheWrite": 0,
-            "input": 0.1282,
-            "output": 8
+            "input": 0.14256,
+            "output": 0.42768
           },
           "id": "~deepseek/deepseek-pro-latest",
           "input": [
@@ -109526,10 +109248,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.0079,
+            "cacheRead": 0.00416,
             "cacheWrite": 0,
-            "input": 0.0079,
-            "output": 1.28
+            "input": 0.00416,
+            "output": 0.011883
           },
           "id": "~deepseek/deepseek-v4-flash-latest",
           "input": [
@@ -109580,8 +109302,8 @@
           "cost": {
             "cacheRead": 0.3,
             "cacheWrite": 0,
-            "input": 0.49,
-            "output": 13
+            "input": 0.84,
+            "output": 13.5
           },
           "id": "~moonshotai/kimi-latest",
           "input": [
@@ -109703,10 +109425,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.02,
+            "cacheRead": 0.01,
             "cacheWrite": 0,
             "input": 0.032,
-            "output": 0.264718
+            "output": 0.113952
           },
           "id": "~z-ai/glm-flash-latest",
           "input": [
@@ -109720,16 +109442,16 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.029,
+            "cacheRead": 0.04,
             "cacheWrite": 0,
-            "input": 0.0312,
+            "input": 0.08,
             "output": 4.4
           },
           "id": "~z-ai/glm-latest",
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 943718,
           "name": "Z.ai: GLM Latest",
           "reasoning": true
         },
@@ -110440,7 +110162,7 @@
             "text"
           ],
           "maxTokens": 32768,
-          "name": "DeepSeek: R1 0528",
+          "name": "DeepSeek R1 0528",
           "reasoning": true
         },
         {
@@ -110494,10 +110216,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.028,
+            "cacheRead": 0.0057,
             "cacheWrite": 0,
-            "input": 0.14,
-            "output": 0.28
+            "input": 0.0057,
+            "output": 1.28
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
@@ -111843,13 +111565,13 @@
             "text"
           ],
           "maxTokens": 98304,
-          "name": "MoonshotAI: Kimi K2 0905",
+          "name": "Kimi K2 Instruct 0905",
           "reasoning": false
         },
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.15,
             "cacheWrite": 0,
             "input": 0.6,
             "output": 2.5
@@ -111858,7 +111580,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 235929,
+          "maxTokens": 98304,
           "name": "Kimi K2 Thinking",
           "reasoning": true
         },
@@ -111882,9 +111604,9 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.1202,
+            "cacheRead": 0.1077,
             "cacheWrite": 0,
-            "input": 0.4348,
+            "input": 0.4344,
             "output": 2.45
           },
           "id": "moonshotai/kimi-k2.6",
@@ -113276,30 +112998,12 @@
           "reasoning": false
         },
         {
-          "contextWindow": 1000000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.26,
-            "output": 0.78
-          },
-          "id": "qwen/qwen-plus-2025-07-28",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen: Qwen Plus 0728 (retires Oct 9)",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
           "contextWindow": 40960,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.2275,
-            "output": 0.91
+            "input": 0.12,
+            "output": 0.24
           },
           "id": "qwen/qwen3-14b",
           "input": [
@@ -113310,30 +113014,12 @@
           "reasoning": true
         },
         {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.455,
-            "output": 1.82
-          },
-          "id": "qwen/qwen3-235b-a22b",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 8192,
-          "name": "Qwen3 235B-A22B",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.1495,
-            "output": 0.598
+            "input": 0.09,
+            "output": 0.55
           },
           "id": "qwen/qwen3-235b-a22b-2507",
           "input": [
@@ -113344,19 +113030,19 @@
           "reasoning": false
         },
         {
-          "contextWindow": 131072,
+          "contextWindow": 128000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.23,
-            "output": 2.3
+            "input": 0.45,
+            "output": 3.5
           },
           "id": "qwen/qwen3-235b-a22b-thinking-2507",
           "input": [
             "text"
           ],
-          "maxTokens": 117964,
-          "name": "Qwen: Qwen3 235B A22B Thinking 2507 (retires Oct 9)",
+          "maxTokens": 16384,
+          "name": "Qwen: Qwen3 235B A22B Thinking 2507",
           "reasoning": true
         },
         {
@@ -113364,8 +113050,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.13,
-            "output": 0.52
+            "input": 0.12,
+            "output": 0.5
           },
           "id": "qwen/qwen3-30b-a3b",
           "input": [
@@ -113380,8 +113066,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.13,
-            "output": 0.52
+            "input": 0.1,
+            "output": 0.3
           },
           "id": "qwen/qwen3-30b-a3b-instruct-2507",
           "input": [
@@ -113390,24 +113076,6 @@
           "maxTokens": 235929,
           "name": "Qwen: Qwen3 30B A3B Instruct 2507",
           "reasoning": false
-        },
-        {
-          "contextWindow": 81920,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.2,
-            "output": 2.4
-          },
-          "id": "qwen/qwen3-30b-a3b-thinking-2507",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen: Qwen3 30B A3B Thinking 2507 (retires Oct 9)",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 40960,
@@ -113426,30 +113094,12 @@
           "reasoning": true
         },
         {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.117,
-            "output": 0.455
-          },
-          "id": "qwen/qwen3-8b",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 8192,
-          "name": "Qwen: Qwen3 8B (retires Oct 9)",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.1,
             "cacheWrite": 0,
-            "input": 0.975,
-            "output": 4.875
+            "input": 0.3,
+            "output": 1
           },
           "id": "qwen/qwen3-coder",
           "input": [
@@ -113464,8 +113114,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.2925,
-            "output": 1.4625
+            "input": 0.07,
+            "output": 0.28
           },
           "id": "qwen/qwen3-coder-30b-a3b-instruct",
           "input": [
@@ -113494,10 +113144,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.07,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.5
+            "input": 0.12,
+            "output": 0.8
           },
           "id": "qwen/qwen3-coder-next",
           "input": [
@@ -113508,66 +113158,12 @@
           "reasoning": false
         },
         {
-          "contextWindow": 1000000,
-          "cost": {
-            "cacheRead": 0.13,
-            "cacheWrite": 0.8125,
-            "input": 0.65,
-            "output": 3.25
-          },
-          "id": "qwen/qwen3-coder-plus",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen3 Coder Plus",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.156,
-            "cacheWrite": 0.975,
-            "input": 0.78,
-            "output": 3.9
-          },
-          "id": "qwen/qwen3-max",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen3 Max",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.07,
             "cacheWrite": 0,
-            "input": 0.78,
-            "output": 3.9
-          },
-          "id": "qwen/qwen3-max-thinking",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen: Qwen3 Max Thinking (retires Oct 9)",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.0975,
-            "output": 0.78
+            "input": 0.1,
+            "output": 1.1
           },
           "id": "qwen/qwen3-next-80b-a3b-instruct",
           "input": [
@@ -113578,7 +113174,7 @@
           "reasoning": false
         },
         {
-          "contextWindow": 131072,
+          "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
@@ -113589,17 +113185,17 @@
           "input": [
             "text"
           ],
-          "maxTokens": 32768,
+          "maxTokens": 235929,
           "name": "Qwen3-Next 80B-A3B (Thinking)",
           "reasoning": true
         },
         {
           "contextWindow": 131072,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.1,
             "cacheWrite": 0,
-            "input": 0.26,
-            "output": 1.04
+            "input": 0.21,
+            "output": 1.9
           },
           "id": "qwen/qwen3-vl-235b-a22b-instruct",
           "input": [
@@ -113611,31 +113207,12 @@
           "reasoning": false
         },
         {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.4,
-            "output": 4
-          },
-          "id": "qwen/qwen3-vl-235b-a22b-thinking",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen3 VL 235B A22B Thinking",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.13,
-            "output": 0.52
+            "input": 0.15,
+            "output": 0.6
           },
           "id": "qwen/qwen3-vl-30b-a3b-instruct",
           "input": [
@@ -113643,80 +113220,42 @@
             "image"
           ],
           "maxTokens": 16384,
-          "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+          "name": "Qwen3 VL 30B A3B Instruct",
           "reasoning": false
         },
         {
-          "contextWindow": 131072,
+          "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.2,
-            "output": 2.4
+            "input": 0.29,
+            "output": 1
           },
           "id": "qwen/qwen3-vl-30b-a3b-thinking",
           "input": [
             "text",
             "image"
           ],
-          "maxTokens": 32768,
-          "name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Oct 9)",
+          "maxTokens": 235929,
+          "name": "Qwen: Qwen3 VL 30B A3B Thinking",
           "reasoning": true
         },
         {
-          "contextWindow": 131072,
+          "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.12,
             "cacheWrite": 0,
-            "input": 0.104,
-            "output": 0.416
-          },
-          "id": "qwen/qwen3-vl-32b-instruct",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen: Qwen3 VL 32B Instruct (retires Oct 9)",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.117,
-            "output": 0.455
+            "input": 0.25,
+            "output": 0.75
           },
           "id": "qwen/qwen3-vl-8b-instruct",
           "input": [
             "image",
             "text"
           ],
-          "maxTokens": 32768,
-          "name": "Qwen: Qwen3 VL 8B Instruct (retires Oct 9)",
+          "maxTokens": 235929,
+          "name": "Qwen: Qwen3 VL 8B Instruct",
           "reasoning": false
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.18,
-            "output": 2.1
-          },
-          "id": "qwen/qwen3-vl-8b-thinking",
-          "input": [
-            "image",
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen: Qwen3 VL 8B Thinking (retires Oct 9)",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -113904,24 +113443,6 @@
           "maxTokens": 65536,
           "name": "Qwen3.6 Flash",
           "reasoning": true
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 1.28375,
-            "input": 1.027,
-            "output": 6.162
-          },
-          "id": "qwen/qwen3.6-max-preview",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen3.6 Max Preview",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1000000,
@@ -114358,10 +113879,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.033,
+            "cacheRead": 0.020625,
             "cacheWrite": 0,
-            "input": 0.132,
-            "output": 0.528
+            "input": 0.0825,
+            "output": 0.33
           },
           "id": "tencent/hy3",
           "input": [
@@ -114390,10 +113911,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.042,
+            "cacheRead": 0.0378,
             "cacheWrite": 0,
-            "input": 0.834,
-            "output": 2.501
+            "input": 0.7506,
+            "output": 2.2509
           },
           "id": "tencent/hy4-preview",
           "input": [
@@ -114814,18 +114335,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 198000,
+          "contextWindow": 202752,
           "cost": {
-            "cacheRead": 0.08,
+            "cacheRead": 0.1,
             "cacheWrite": 0,
-            "input": 0.43,
-            "output": 1.75
+            "input": 0.5,
+            "output": 2
           },
           "id": "z-ai/glm-4.6",
           "input": [
             "text"
           ],
-          "maxTokens": 16384,
+          "maxTokens": 131072,
           "name": "GLM-4.6",
           "reasoning": true
         },
@@ -115779,6 +115300,32 @@
       "defaultModel": "deepseek/deepseek-v4-pro",
       "models": [
         {
+          "contextWindow": 262144,
+          "id": "apodex/apodex-1.1-mini",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 262144,
+          "name": "Apodex 1.1 Mini",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0.07,
+            "cacheWrite": 0,
+            "input": 0.28,
+            "output": 1.13
+          },
+          "id": "baidu/cobuddy",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 65536,
+          "name": "CoBuddy",
+          "reasoning": true
+        },
+        {
           "contextWindow": 120000,
           "cost": {
             "cacheRead": 0,
@@ -115795,42 +115342,20 @@
           "reasoning": false
         },
         {
-          "contextWindow": 30000,
+          "contextWindow": 64000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.14,
-            "output": 0.56
+            "input": 0.89,
+            "output": 0.89
           },
-          "id": "baidu/ernie-4.5-vl-28b-a3b",
+          "id": "deepseek/deepseek_v3",
           "input": [
-            "text",
-            "image"
+            "text"
           ],
-          "maxTokens": 8000,
-          "name": "ERNIE 4.5 VL 28B A3B",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.39,
-            "output": 0.39
-          },
-          "id": "baidu/ernie-4.5-vl-28b-a3b-thinking",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 65536,
-          "name": "ERNIE-4.5-VL-28B-A3B-Thinking",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "maxTokens": 16000,
+          "name": "DeepSeek-V3",
+          "reasoning": false
         },
         {
           "contextWindow": 163840,
@@ -115861,116 +115386,8 @@
             "text"
           ],
           "maxTokens": 16000,
-          "name": "DeepSeek R1 (Turbo)\t",
+          "name": "DeepSeek R1 (Turbo)",
           "reasoning": true
-        },
-        {
-          "contextWindow": 163840,
-          "cost": {
-            "cacheRead": 0.135,
-            "cacheWrite": 0,
-            "input": 0.27,
-            "output": 1.12
-          },
-          "id": "deepseek/deepseek-v3-0324",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 163840,
-          "name": "DeepSeek V3 0324",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 64000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.4,
-            "output": 1.3
-          },
-          "id": "deepseek/deepseek-v3-turbo",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 16000,
-          "name": "DeepSeek V3 (Turbo)\t",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0.135,
-            "cacheWrite": 0,
-            "input": 0.27,
-            "output": 1
-          },
-          "id": "deepseek/deepseek-v3.1",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "DeepSeek V3.1",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0.135,
-            "cacheWrite": 0,
-            "input": 0.27,
-            "output": 1
-          },
-          "id": "deepseek/deepseek-v3.1-terminus",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Deepseek V3.1 Terminus",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 163840,
-          "cost": {
-            "cacheRead": 0.1345,
-            "cacheWrite": 0,
-            "input": 0.269,
-            "output": 0.4
-          },
-          "id": "deepseek/deepseek-v3.2",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Deepseek V3.2",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 163840,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.27,
-            "output": 0.41
-          },
-          "id": "deepseek/deepseek-v3.2-exp",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Deepseek V3.2 Exp",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "compat": {
@@ -115994,6 +115411,22 @@
           "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.028,
+            "cacheWrite": 0,
+            "input": 0.44,
+            "output": 1.32
+          },
+          "id": "deepseek/deepseek-v4-flash-0731",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 393216,
+          "name": "DeepSeek V4 Flash 0731",
+          "reasoning": true
+        },
+        {
           "compat": {
             "codeMode": "capable"
           },
@@ -116013,6 +115446,73 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.044,
+            "cacheWrite": 0,
+            "input": 1.32,
+            "output": 3.96
+          },
+          "id": "deepseek/deepseek-v4-pro-0813",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 393216,
+          "name": "DeepSeek V4 Pro 0813",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.006,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 1.2
+          },
+          "id": "deepseek/deepseek-v4.1-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 393216,
+          "name": "DeepSeek V4.1 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 131072,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.05,
+            "output": 0.1
+          },
+          "id": "google/gemma-3-12b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 8192,
+          "name": "Gemma 3 12B IT",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 98304,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.119,
+            "output": 0.2
+          },
+          "id": "google/gemma-3-27b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 16384,
+          "name": "Gemma 3 27B IT",
+          "reasoning": false
+        },
+        {
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
@@ -116026,7 +115526,7 @@
             "image"
           ],
           "maxTokens": 131072,
-          "name": "Gemma 4 26B A4B",
+          "name": "Gemma 4 26B A4B IT",
           "reasoning": true
         },
         {
@@ -116043,83 +115543,118 @@
             "image"
           ],
           "maxTokens": 131072,
-          "name": "Gemma 4 31B",
+          "name": "Gemma 4 31B IT",
           "reasoning": true
         },
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.06,
+            "cacheRead": 0.012,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 2.5
+            "input": 0.06,
+            "output": 0.18
           },
-          "id": "inclusionai/ling-2.6-1t",
+          "id": "inclusionai/ling-3.0-flash",
           "input": [
             "text"
           ],
           "maxTokens": 32768,
-          "name": "Ling-2.6-1T",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "name": "Ling 3.0 Flash",
+          "reasoning": true
         },
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.02,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.1,
-            "output": 0.3
+            "input": 0.075,
+            "output": 0.22
           },
-          "id": "inclusionai/ling-2.6-flash",
+          "id": "inclusionai/ling-3.0-flash-fin",
           "input": [
             "text"
           ],
           "maxTokens": 32768,
-          "name": "Ling-2.6-flash",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "name": "Ling 3.0 Flash Fin",
+          "reasoning": true
         },
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.06,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 2.5
+            "input": 0.075,
+            "output": 0.22
           },
-          "id": "inclusionai/ring-2.6-1t",
+          "id": "inclusionai/ling-3.0-flash-sante",
           "input": [
             "text"
           ],
-          "maxTokens": 65536,
-          "name": "Ring-2.6-1T",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "maxTokens": 32768,
+          "name": "Ling 3.0 Flash Sante",
+          "reasoning": true
         },
         {
-          "contextWindow": 256000,
+          "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.06,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.075,
+            "output": 0.22
           },
-          "id": "kwaipilot/kat-coder-pro",
+          "id": "inclusionai/ling-3.0-flash-vl",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Ling 3.0 Flash VL",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "id": "inclusionai/ling-3.1-flash",
           "input": [
             "text"
           ],
-          "maxTokens": 128000,
-          "name": "Kat Coder Pro",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "maxTokens": 32768,
+          "name": "Ling 3.1 Flash",
+          "reasoning": true
         },
         {
-          "contextWindow": 131072,
+          "contextWindow": 16384,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.02,
+            "output": 0.05
+          },
+          "id": "meta-llama/llama-3.1-8b-instruct",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 16384,
+          "name": "Llama-3.1-8B-Instruct",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 131000,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.02,
+            "output": 0.02
+          },
+          "id": "meta-llama/llama-3.2-1b-instruct",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 32000,
+          "name": "Llama 3.2 1B Instruct",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 12288,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
@@ -116130,45 +115665,75 @@
           "input": [
             "text"
           ],
-          "maxTokens": 120000,
-          "name": "Llama 3.3 70B Instruct",
+          "maxTokens": 12288,
+          "name": "Llama-3.3-70B-Instruct",
           "reasoning": false
         },
         {
-          "contextWindow": 204800,
+          "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.03,
+            "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.27,
+            "output": 0.85
           },
-          "id": "minimax/minimax-m2",
+          "id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
           "input": [
-            "text"
+            "text",
+            "image"
           ],
-          "maxTokens": 131072,
-          "name": "MiniMax-M2",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "maxTokens": 8192,
+          "name": "Llama 4 Maverick 17B Instruct",
+          "reasoning": false
         },
         {
-          "contextWindow": 204800,
+          "contextWindow": 131072,
           "cost": {
-            "cacheRead": 0.03,
+            "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.2
+            "input": 0.18,
+            "output": 0.59
           },
-          "id": "minimax/minimax-m2.1",
+          "id": "meta-llama/llama-4-scout-17b-16e-instruct",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Llama 4 Scout 17B Instruct",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0.044,
+            "cacheWrite": 0,
+            "input": 0.2475,
+            "output": 1.43
+          },
+          "id": "mindai/macaron-v1-tall",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 32768,
+          "name": "Macaron V1 Tall",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.165,
+            "cacheWrite": 0,
+            "input": 0.825,
+            "output": 2.475
+          },
+          "id": "mindai/macaron-v1-venti",
           "input": [
             "text"
           ],
           "maxTokens": 131072,
-          "name": "Minimax M2.1",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "name": "Macaron V1 Venti",
+          "reasoning": true
         },
         {
           "contextWindow": 204800,
@@ -116182,27 +115747,9 @@
           "input": [
             "text"
           ],
-          "maxTokens": 131072,
-          "name": "MiniMax M2.5",
+          "maxTokens": 131100,
+          "name": "MiniMax-M2.5",
           "reasoning": true
-        },
-        {
-          "contextWindow": 204800,
-          "cost": {
-            "cacheRead": 0.03,
-            "cacheWrite": 0,
-            "input": 0.6,
-            "output": 2.4
-          },
-          "id": "minimax/minimax-m2.5-highspeed",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 131072,
-          "name": "MiniMax M2.5 Highspeed",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 204800,
@@ -116244,7 +115791,28 @@
             "cacheRead": 0.06,
             "cacheWrite": 0,
             "input": 0.3,
-            "output": 1.2
+            "output": 1.2,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.06,
+                "cacheWrite": 0,
+                "input": 0.3,
+                "output": 1.2,
+                "range": [
+                  0,
+                  524288
+                ]
+              },
+              {
+                "cacheRead": 0.12,
+                "cacheWrite": 0,
+                "input": 0.6,
+                "output": 2.4,
+                "range": [
+                  524288
+                ]
+              }
+            ]
           },
           "id": "minimax/minimax-m3",
           "input": [
@@ -116268,7 +115836,7 @@
             "text"
           ],
           "maxTokens": 40000,
-          "name": "MiniMax M1",
+          "name": "MiniMax M1 80K",
           "reasoning": true
         },
         {
@@ -116284,7 +115852,7 @@
             "text"
           ],
           "maxTokens": 98304,
-          "name": "Kimi K2 0905",
+          "name": "Kimi K2 Instruct 0905",
           "reasoning": false
         },
         {
@@ -116299,7 +115867,7 @@
           "input": [
             "text"
           ],
-          "maxTokens": 32768,
+          "maxTokens": 98304,
           "name": "Kimi K2 Instruct",
           "reasoning": false
         },
@@ -116391,6 +115959,38 @@
           "reasoning": true
         },
         {
+          "contextWindow": 8192,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.14,
+            "output": 0.14
+          },
+          "id": "nousresearch/hermes-2-pro-llama-3-8b",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 8192,
+          "name": "Hermes 2 Pro Llama 3 8B",
+          "reasoning": false
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.05,
+            "output": 0.2
+          },
+          "id": "nvidia/nemotron-3-nano-30b-a3b",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 32768,
+          "name": "Nemotron 3 Nano 30B A3B",
+          "reasoning": true
+        },
+        {
           "contextWindow": 131072,
           "cost": {
             "cacheRead": 0,
@@ -116400,211 +116000,11 @@
           },
           "id": "openai/gpt-oss-120b",
           "input": [
-            "text",
-            "image"
+            "text"
           ],
           "maxTokens": 32768,
-          "name": "OpenAI GPT OSS 120B",
+          "name": "GPT OSS 120B",
           "reasoning": true
-        },
-        {
-          "contextWindow": 32000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.38,
-            "output": 0.4
-          },
-          "id": "qwen/qwen-2.5-72b-instruct",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 8192,
-          "name": "Qwen 2.5 72B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 32000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.07,
-            "output": 0.07
-          },
-          "id": "qwen/qwen2.5-7b-instruct",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32000,
-          "name": "Qwen2.5 7B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.09,
-            "output": 0.58
-          },
-          "id": "qwen/qwen3-235b-a22b-instruct-2507",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 16384,
-          "name": "Qwen3 235B A22B Instruct 2507",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.3,
-            "output": 3
-          },
-          "id": "qwen/qwen3-235b-a22b-thinking-2507",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen3 235B A22b Thinking 2507",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 160000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.07,
-            "output": 0.27
-          },
-          "id": "qwen/qwen3-coder-30b-a3b-instruct",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen3 Coder 30b A3B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.38,
-            "output": 1.55
-          },
-          "id": "qwen/qwen3-coder-480b-a35b-instruct",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen3 Coder 480B A35B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.2,
-            "output": 1.5
-          },
-          "id": "qwen/qwen3-coder-next",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen3 Coder Next",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 2.11,
-            "output": 8.45
-          },
-          "id": "qwen/qwen3-max",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Qwen3 Max",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.15,
-            "output": 1.5
-          },
-          "id": "qwen/qwen3-next-80b-a3b-instruct",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen3 Next 80B A3B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.15,
-            "output": 1.5
-          },
-          "id": "qwen/qwen3-next-80b-a3b-thinking",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen3 Next 80B A3B Thinking",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 65536,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.25,
-            "output": 0.97
-          },
-          "id": "qwen/qwen3-omni-30b-a3b-instruct",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 16384,
-          "name": "Qwen3 Omni 30B A3B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 65536,
@@ -116628,25 +116028,6 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.3,
-            "output": 1.5
-          },
-          "id": "qwen/qwen3-vl-235b-a22b-instruct",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 32768,
-          "name": "Qwen3 VL 235B A22B Instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
             "input": 0.2,
             "output": 0.7
           },
@@ -116656,46 +116037,8 @@
             "image"
           ],
           "maxTokens": 32768,
-          "name": "qwen/qwen3-vl-30b-a3b-instruct",
+          "name": "Qwen3 VL 30B A3B Instruct",
           "reasoning": false
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.2,
-            "output": 1
-          },
-          "id": "qwen/qwen3-vl-30b-a3b-thinking",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 32768,
-          "name": "qwen/qwen3-vl-30b-a3b-thinking",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 131072,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.08,
-            "output": 0.5
-          },
-          "id": "qwen/qwen3-vl-8b-instruct",
-          "input": [
-            "text",
-            "image"
-          ],
-          "maxTokens": 32768,
-          "name": "qwen/qwen3-vl-8b-instruct",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -116711,7 +116054,7 @@
             "image"
           ],
           "maxTokens": 65536,
-          "name": "Qwen3.5-122B-A10B",
+          "name": "Qwen3.5 122B-A10B",
           "reasoning": true
         },
         {
@@ -116728,7 +116071,7 @@
             "image"
           ],
           "maxTokens": 65536,
-          "name": "Qwen3.5-27B",
+          "name": "Qwen3.5 27B",
           "reasoning": true
         },
         {
@@ -116745,7 +116088,7 @@
             "image"
           ],
           "maxTokens": 65536,
-          "name": "Qwen3.5-35B-A3B",
+          "name": "Qwen3.5 35B-A3B",
           "reasoning": true
         },
         {
@@ -116761,15 +116104,49 @@
             "text",
             "image"
           ],
-          "maxTokens": 64000,
-          "name": "Qwen3.5-397B-A17B",
+          "maxTokens": 65536,
+          "name": "Qwen3.5 397B-A17B",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.6,
+            "output": 3.6
+          },
+          "id": "qwen/qwen3.6-27b",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 65536,
+          "name": "Qwen3.6 27B",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.248,
+            "output": 1.485
+          },
+          "id": "qwen/qwen3.6-35b-a3b",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 65536,
+          "name": "Qwen3.6 35B-A3B",
           "reasoning": true
         },
         {
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.25,
-            "cacheWrite": 1.5625,
+            "cacheWrite": 0,
             "input": 1.25,
             "output": 3.75
           },
@@ -116782,111 +116159,137 @@
           "reasoning": true
         },
         {
-          "contextWindow": 8192,
+          "contextWindow": 1000000,
           "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 1.48,
-            "output": 1.48
-          },
-          "id": "sao10K/l3-70b-euryale-v2.1",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 8192,
-          "name": "L3 70B Euryale V2.1\t",
-          "reasoning": false
-        },
-        {
-          "contextWindow": 8192,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.05,
-            "output": 0.05
-          },
-          "id": "sao10K/L3-8B-stheno-v3.2",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32000,
-          "name": "L3 8B Stheno V3.2",
-          "reasoning": false
-        },
-        {
-          "contextWindow": 8192,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 1.48,
-            "output": 1.48
-          },
-          "id": "sao10K/l31-70b-euryale-v2.2",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 8192,
-          "name": "L31 70B Euryale V2.2",
-          "reasoning": false,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 262144,
-          "cost": {
-            "cacheRead": 0.3,
-            "cacheWrite": 0,
-            "input": 0.1,
-            "output": 0.3
-          },
-          "id": "xiaomimimo/mimo-v2-flash",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32000,
-          "name": "XiaomiMiMo/MiMo-V2-Flash",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
-        },
-        {
-          "contextWindow": 1048576,
-          "cost": {
-            "cacheRead": 0.4,
+            "cacheRead": 0.25,
             "cacheWrite": 0,
             "input": 2,
-            "output": 6,
-            "tieredPricing": [
-              {
-                "cacheRead": 0.4,
-                "cacheWrite": 0,
-                "input": 2,
-                "output": 6,
-                "range": [
-                  0,
-                  256000
-                ]
-              },
-              {
-                "cacheRead": 0.4,
-                "cacheWrite": 0,
-                "input": 2,
-                "output": 6,
-                "range": [
-                  256000
-                ]
-              }
-            ]
+            "output": 6
           },
-          "id": "xiaomimimo/mimo-v2-pro",
+          "id": "qwen/qwen3.8-2.4t-a95b",
           "input": [
             "text"
           ],
           "maxTokens": 131072,
-          "name": "MiMo-V2-Pro",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "name": "Qwen3.8 2.4T A95B",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.085,
+            "cacheWrite": 0,
+            "input": 0.42,
+            "output": 3
+          },
+          "id": "qwen/qwen3.8-27b",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Qwen3.8 27B",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.016,
+            "cacheWrite": 0,
+            "input": 0.15,
+            "output": 0.47
+          },
+          "id": "qwen/qwen3.8-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Qwen3.8 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.25,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 6
+          },
+          "id": "qwen/qwen3.8-max",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Qwen3.8 Max",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0.04,
+            "cacheWrite": 0,
+            "input": 0.2,
+            "output": 1.15
+          },
+          "id": "stepfun/step-3.7-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 256000,
+          "name": "Step 3.7 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0.035,
+            "cacheWrite": 0,
+            "input": 0.14,
+            "output": 0.58
+          },
+          "id": "tencent/hy3",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 262144,
+          "name": "Hy3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.042,
+            "cacheWrite": 0,
+            "input": 0.834,
+            "output": 2.501
+          },
+          "id": "tencent/hy4-preview",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 64000,
+          "name": "Hy4 preview",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.0034,
+            "cacheWrite": 0,
+            "input": 0.168,
+            "output": 0.336
+          },
+          "id": "xiaomimimo/mimo-v2.5",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "MiMo-V2.5",
+          "reasoning": true
         },
         {
           "contextWindow": 1048576,
@@ -116894,28 +116297,7 @@
             "cacheRead": 0.0043,
             "cacheWrite": 0,
             "input": 0.522,
-            "output": 1.044,
-            "tieredPricing": [
-              {
-                "cacheRead": 0.0043,
-                "cacheWrite": 0,
-                "input": 0.522,
-                "output": 1.044,
-                "range": [
-                  0,
-                  256000
-                ]
-              },
-              {
-                "cacheRead": 0.0043,
-                "cacheWrite": 0,
-                "input": 0.522,
-                "output": 1.044,
-                "range": [
-                  256000
-                ]
-              }
-            ]
+            "output": 1.044
           },
           "id": "xiaomimimo/mimo-v2.5-pro",
           "input": [
@@ -116926,22 +116308,38 @@
           "reasoning": true
         },
         {
-          "contextWindow": 131072,
+          "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.11,
+            "cacheRead": 0.0028,
             "cacheWrite": 0,
-            "input": 0.6,
-            "output": 2.2
+            "input": 0.14,
+            "output": 0.28
           },
-          "id": "zai-org/glm-4.5",
+          "id": "xiaomimimo/mimo-v2.6-flash",
           "input": [
-            "text"
+            "text",
+            "image"
           ],
-          "maxTokens": 98304,
-          "name": "GLM-4.5",
-          "reasoning": true,
-          "status": "deprecated",
-          "statusReason": "novita no longer lists this model in its public model inventory."
+          "maxTokens": 131072,
+          "name": "MiMo-V2.6-Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.0036,
+            "cacheWrite": 0,
+            "input": 0.435,
+            "output": 0.87
+          },
+          "id": "xiaomimimo/mimo-v2.6-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "MiMo-V2.6-Pro",
+          "reasoning": true
         },
         {
           "contextWindow": 131072,
@@ -116956,7 +116354,7 @@
             "text"
           ],
           "maxTokens": 98304,
-          "name": "GLM 4.5 Air",
+          "name": "GLM-4.5-Air",
           "reasoning": true
         },
         {
@@ -116973,7 +116371,7 @@
             "image"
           ],
           "maxTokens": 16384,
-          "name": "GLM 4.5V",
+          "name": "GLM-4.5V",
           "reasoning": true
         },
         {
@@ -116989,7 +116387,7 @@
             "text"
           ],
           "maxTokens": 131072,
-          "name": "GLM 4.6",
+          "name": "GLM-4.6",
           "reasoning": true
         },
         {
@@ -117006,7 +116404,7 @@
             "image"
           ],
           "maxTokens": 32768,
-          "name": "GLM 4.6V",
+          "name": "GLM-4.6V",
           "reasoning": true
         },
         {
@@ -117090,6 +116488,39 @@
           ],
           "maxTokens": 131072,
           "name": "GLM-5.2",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.26,
+            "cacheWrite": 0,
+            "input": 1.4,
+            "output": 4.4
+          },
+          "id": "zai-org/glm-5.3",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.03,
+            "cacheWrite": 0,
+            "input": 0.15,
+            "output": 0.5
+          },
+          "id": "zai-org/glm-5.3-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3-Flash",
           "reasoning": true
         }
       ]
@@ -125077,5 +124508,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "432ade6f500de6cdb0bcd4b0948a07bf466672f1"
+  "sourceCommit": "e69931d6e6a21b0067a9f474db50a86e9563f61e"
 }
