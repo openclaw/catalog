@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791549909598,
+  "generatedAt": 1791563756000,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -23844,14 +23844,14 @@
       "output": 1.2
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.198,
+      "cacheRead": 0.13,
+      "input": 0.1282,
       "output": 8
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
-      "output": 1.28
+      "cacheRead": 0.00528,
+      "input": 0.00528,
+      "output": 0.020123000000000002
     },
     "cloudflare-ai-gateway/openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -24033,7 +24033,7 @@
     "cloudflare-ai-gateway/openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.02,
       "input": 0.032,
-      "output": 0.448303
+      "output": 0.214422
     },
     "cloudflare-ai-gateway/openrouter/~z-ai/glm-latest": {
       "cacheRead": 0.029,
@@ -24608,13 +24608,13 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.005699999999999999,
-      "input": 0.005699999999999999,
+      "cacheRead": 0.0131,
+      "input": 0.0131,
       "output": 1.28
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
+      "cacheRead": 0.006500000000000001,
+      "input": 0.006500000000000001,
       "output": 1.28
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -24623,9 +24623,9 @@
       "output": 0.6468
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0247805,
-      "input": 0.297366,
-      "output": 0.594732
+      "cacheRead": 0.0204015,
+      "input": 0.24481799999999998,
+      "output": 0.48963599999999996
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -25312,8 +25312,8 @@
       "output": 2.25
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.0975,
-      "input": 0.46499999999999997,
+      "cacheRead": 0.1077,
+      "input": 0.4344,
       "output": 2.4499999999999997
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k2.7-code": {
@@ -25322,9 +25322,9 @@
       "output": 3.35
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.3,
-      "input": 0.5,
-      "output": 12
+      "cacheRead": 0.55,
+      "input": 0.82,
+      "output": 13.5
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -26756,29 +26756,10 @@
       ]
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen-plus-2025-07-28": {
+      "cacheRead": 0.052000000000000005,
+      "cacheWrite": 0.325,
       "input": 0.26,
-      "output": 0.78,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.26,
-          "output": 0.78,
-          "range": [
-            0,
-            256001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 2.34,
-          "range": [
-            256001
-          ]
-        }
-      ]
+      "output": 0.78
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen-vl-plus": {
       "input": 0.21,
@@ -26802,8 +26783,8 @@
       "output": 0.55
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.22999999999999998,
-      "output": 2.3
+      "input": 0.44999999999999996,
+      "output": 3.5
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-30b-a3b": {
       "input": 0.12,
@@ -26880,110 +26861,17 @@
       "cacheRead": 0.13,
       "cacheWrite": 0.8125,
       "input": 0.65,
-      "output": 3.25,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.13,
-          "cacheWrite": 0.8125,
-          "input": 0.65,
-          "output": 3.25,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.234,
-          "cacheWrite": 1.4625,
-          "input": 1.17,
-          "output": 5.85,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.25
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-max": {
       "cacheRead": 0.156,
       "cacheWrite": 0.975,
       "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.156,
-          "cacheWrite": 0.975,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.312,
-          "cacheWrite": 1.95,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.9
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-max-thinking": {
       "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.9
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -27008,16 +26896,17 @@
       "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.19999999999999998,
-      "output": 2.4
+      "input": 0.29,
+      "output": 1
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-vl-32b-instruct": {
       "input": 0.10400000000000001,
       "output": 0.41600000000000004
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "cacheRead": 0.12,
+      "input": 0.25,
+      "output": 0.75
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3-vl-8b-thinking": {
       "input": 0.18,
@@ -27101,8 +26990,8 @@
       ]
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.6-27b": {
-      "input": 0.44999999999999996,
-      "output": 2.7
+      "input": 0.32,
+      "output": 3.1999999999999997
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.6-35b-a3b": {
       "cacheRead": 0.049999999999999996,
@@ -27138,28 +27027,7 @@
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.6-max-preview": {
       "cacheWrite": 1.28375,
       "input": 1.0270000000000001,
-      "output": 6.162,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.28375,
-          "input": 1.0270000000000001,
-          "output": 6.162,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.975,
-          "input": 1.5799999999999998,
-          "output": 9.48,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 6.162
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.6-plus": {
       "cacheWrite": 0.40625,
@@ -27421,9 +27289,9 @@
       "output": 0.295
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -27431,9 +27299,9 @@
       "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "cloudflare-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -27794,12 +27662,12 @@
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.2": {
       "cacheRead": 0.059,
       "input": 0.06,
-      "output": 4.199999999999999
+      "output": 6
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.039,
       "input": 0.04,
-      "output": 4.8
+      "output": 7
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -30186,9 +30054,9 @@
       "output": 3
     },
     "cloudflare-ai-gateway/together_ai/Qwen/Qwen3.7-Max": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.5,
+      "input": 2.5,
+      "output": 7.5
     },
     "cloudflare-ai-gateway/together_ai/Qwen/Qwen3.7-Plus": {
       "input": 0.32,
@@ -55264,14 +55132,14 @@
       "output": 1.2
     },
     "kilocode/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.198,
+      "cacheRead": 0.13,
+      "input": 0.1282,
       "output": 8
     },
     "kilocode/openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
-      "output": 1.28
+      "cacheRead": 0.00528,
+      "input": 0.00528,
+      "output": 0.020123000000000002
     },
     "kilocode/openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -55453,7 +55321,7 @@
     "kilocode/openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.02,
       "input": 0.032,
-      "output": 0.448303
+      "output": 0.214422
     },
     "kilocode/openrouter/~z-ai/glm-latest": {
       "cacheRead": 0.029,
@@ -56028,13 +55896,13 @@
       "output": 0.41
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.005699999999999999,
-      "input": 0.005699999999999999,
+      "cacheRead": 0.0131,
+      "input": 0.0131,
       "output": 1.28
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
+      "cacheRead": 0.006500000000000001,
+      "input": 0.006500000000000001,
       "output": 1.28
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -56043,9 +55911,9 @@
       "output": 0.6468
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0247805,
-      "input": 0.297366,
-      "output": 0.594732
+      "cacheRead": 0.0204015,
+      "input": 0.24481799999999998,
+      "output": 0.48963599999999996
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -56732,8 +56600,8 @@
       "output": 2.25
     },
     "kilocode/openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.0975,
-      "input": 0.46499999999999997,
+      "cacheRead": 0.1077,
+      "input": 0.4344,
       "output": 2.4499999999999997
     },
     "kilocode/openrouter/moonshotai/kimi-k2.7-code": {
@@ -56742,9 +56610,9 @@
       "output": 3.35
     },
     "kilocode/openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.3,
-      "input": 0.5,
-      "output": 12
+      "cacheRead": 0.55,
+      "input": 0.82,
+      "output": 13.5
     },
     "kilocode/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -58176,29 +58044,10 @@
       ]
     },
     "kilocode/openrouter/qwen/qwen-plus-2025-07-28": {
+      "cacheRead": 0.052000000000000005,
+      "cacheWrite": 0.325,
       "input": 0.26,
-      "output": 0.78,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.26,
-          "output": 0.78,
-          "range": [
-            0,
-            256001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 2.34,
-          "range": [
-            256001
-          ]
-        }
-      ]
+      "output": 0.78
     },
     "kilocode/openrouter/qwen/qwen-vl-plus": {
       "input": 0.21,
@@ -58222,8 +58071,8 @@
       "output": 0.55
     },
     "kilocode/openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.22999999999999998,
-      "output": 2.3
+      "input": 0.44999999999999996,
+      "output": 3.5
     },
     "kilocode/openrouter/qwen/qwen3-30b-a3b": {
       "input": 0.12,
@@ -58300,110 +58149,17 @@
       "cacheRead": 0.13,
       "cacheWrite": 0.8125,
       "input": 0.65,
-      "output": 3.25,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.13,
-          "cacheWrite": 0.8125,
-          "input": 0.65,
-          "output": 3.25,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.234,
-          "cacheWrite": 1.4625,
-          "input": 1.17,
-          "output": 5.85,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.25
     },
     "kilocode/openrouter/qwen/qwen3-max": {
       "cacheRead": 0.156,
       "cacheWrite": 0.975,
       "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.156,
-          "cacheWrite": 0.975,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.312,
-          "cacheWrite": 1.95,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.9
     },
     "kilocode/openrouter/qwen/qwen3-max-thinking": {
       "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.9
     },
     "kilocode/openrouter/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -58428,16 +58184,17 @@
       "output": 0.6
     },
     "kilocode/openrouter/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.19999999999999998,
-      "output": 2.4
+      "input": 0.29,
+      "output": 1
     },
     "kilocode/openrouter/qwen/qwen3-vl-32b-instruct": {
       "input": 0.10400000000000001,
       "output": 0.41600000000000004
     },
     "kilocode/openrouter/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "cacheRead": 0.12,
+      "input": 0.25,
+      "output": 0.75
     },
     "kilocode/openrouter/qwen/qwen3-vl-8b-thinking": {
       "input": 0.18,
@@ -58521,8 +58278,8 @@
       ]
     },
     "kilocode/openrouter/qwen/qwen3.6-27b": {
-      "input": 0.44999999999999996,
-      "output": 2.7
+      "input": 0.32,
+      "output": 3.1999999999999997
     },
     "kilocode/openrouter/qwen/qwen3.6-35b-a3b": {
       "cacheRead": 0.049999999999999996,
@@ -58558,28 +58315,7 @@
     "kilocode/openrouter/qwen/qwen3.6-max-preview": {
       "cacheWrite": 1.28375,
       "input": 1.0270000000000001,
-      "output": 6.162,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.28375,
-          "input": 1.0270000000000001,
-          "output": 6.162,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.975,
-          "input": 1.5799999999999998,
-          "output": 9.48,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 6.162
     },
     "kilocode/openrouter/qwen/qwen3.6-plus": {
       "cacheWrite": 0.40625,
@@ -58841,9 +58577,9 @@
       "output": 0.295
     },
     "kilocode/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "kilocode/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -58851,9 +58587,9 @@
       "output": 0.6
     },
     "kilocode/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "kilocode/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -59214,12 +58950,12 @@
     "kilocode/openrouter/z-ai/glm-5.2": {
       "cacheRead": 0.059,
       "input": 0.06,
-      "output": 4.199999999999999
+      "output": 6
     },
     "kilocode/openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.039,
       "input": 0.04,
-      "output": 4.8
+      "output": 7
     },
     "kilocode/openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -61440,9 +61176,9 @@
       "output": 3
     },
     "kilocode/together_ai/Qwen/Qwen3.7-Max": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.5,
+      "input": 2.5,
+      "output": 7.5
     },
     "kilocode/together_ai/Qwen/Qwen3.7-Plus": {
       "input": 0.32,
@@ -68615,14 +68351,14 @@
       "output": 1.2
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.198,
+      "cacheRead": 0.13,
+      "input": 0.1282,
       "output": 8
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
-      "output": 1.28
+      "cacheRead": 0.00528,
+      "input": 0.00528,
+      "output": 0.020123000000000002
     },
     "openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -68804,7 +68540,7 @@
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.02,
       "input": 0.032,
-      "output": 0.448303
+      "output": 0.214422
     },
     "openrouter/~z-ai/glm-latest": {
       "cacheRead": 0.029,
@@ -69357,13 +69093,13 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.005699999999999999,
-      "input": 0.005699999999999999,
+      "cacheRead": 0.0131,
+      "input": 0.0131,
       "output": 1.28
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
+      "cacheRead": 0.006500000000000001,
+      "input": 0.006500000000000001,
       "output": 1.28
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -69372,9 +69108,9 @@
       "output": 0.6468
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0247805,
-      "input": 0.297366,
-      "output": 0.594732
+      "cacheRead": 0.0204015,
+      "input": 0.24481799999999998,
+      "output": 0.48963599999999996
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -70037,8 +69773,8 @@
       "output": 2.25
     },
     "openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.0975,
-      "input": 0.46499999999999997,
+      "cacheRead": 0.1077,
+      "input": 0.4344,
       "output": 2.4499999999999997
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
@@ -70047,9 +69783,9 @@
       "output": 3.35
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.3,
-      "input": 0.5,
-      "output": 12
+      "cacheRead": 0.55,
+      "input": 0.82,
+      "output": 13.5
     },
     "openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -71466,31 +71202,6 @@
         }
       ]
     },
-    "openrouter/qwen/qwen-plus-2025-07-28": {
-      "input": 0.26,
-      "output": 0.78,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.26,
-          "output": 0.78,
-          "range": [
-            0,
-            256001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 2.34,
-          "range": [
-            256001
-          ]
-        }
-      ]
-    },
     "openrouter/qwen/qwen2.5-vl-72b-instruct": {
       "cacheRead": 0.39999999999999997,
       "input": 0.7999999999999999,
@@ -71500,17 +71211,13 @@
       "input": 0.12,
       "output": 0.24
     },
-    "openrouter/qwen/qwen3-235b-a22b": {
-      "input": 0.45499999999999996,
-      "output": 1.8199999999999998
-    },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
       "input": 0.09,
       "output": 0.55
     },
     "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.22999999999999998,
-      "output": 2.3
+      "input": 0.44999999999999996,
+      "output": 3.5
     },
     "openrouter/qwen/qwen3-30b-a3b": {
       "input": 0.12,
@@ -71520,17 +71227,9 @@
       "input": 0.09999999999999999,
       "output": 0.3
     },
-    "openrouter/qwen/qwen3-30b-a3b-thinking-2507": {
-      "input": 0.19999999999999998,
-      "output": 2.4
-    },
     "openrouter/qwen/qwen3-32b": {
       "input": 0.08,
       "output": 0.28
-    },
-    "openrouter/qwen/qwen3-8b": {
-      "input": 0.117,
-      "output": 0.45499999999999996
     },
     "openrouter/qwen/qwen3-coder": {
       "cacheRead": 0.09999999999999999,
@@ -71583,115 +71282,6 @@
       "input": 0.12,
       "output": 0.7999999999999999
     },
-    "openrouter/qwen/qwen3-coder-plus": {
-      "cacheRead": 0.13,
-      "cacheWrite": 0.8125,
-      "input": 0.65,
-      "output": 3.25,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.13,
-          "cacheWrite": 0.8125,
-          "input": 0.65,
-          "output": 3.25,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.234,
-          "cacheWrite": 1.4625,
-          "input": 1.17,
-          "output": 5.85,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
-    "openrouter/qwen/qwen3-max": {
-      "cacheRead": 0.156,
-      "cacheWrite": 0.975,
-      "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.156,
-          "cacheWrite": 0.975,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.312,
-          "cacheWrite": 1.95,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
-    "openrouter/qwen/qwen3-max-thinking": {
-      "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
     "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
       "input": 0.09999999999999999,
@@ -71706,29 +71296,18 @@
       "input": 0.21,
       "output": 1.9
     },
-    "openrouter/qwen/qwen3-vl-235b-a22b-thinking": {
-      "input": 0.39999999999999997,
-      "output": 4
-    },
     "openrouter/qwen/qwen3-vl-30b-a3b-instruct": {
       "input": 0.15,
       "output": 0.6
     },
     "openrouter/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.19999999999999998,
-      "output": 2.4
-    },
-    "openrouter/qwen/qwen3-vl-32b-instruct": {
-      "input": 0.10400000000000001,
-      "output": 0.41600000000000004
+      "input": 0.29,
+      "output": 1
     },
     "openrouter/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
-    },
-    "openrouter/qwen/qwen3-vl-8b-thinking": {
-      "input": 0.18,
-      "output": 2.0999999999999996
+      "cacheRead": 0.12,
+      "input": 0.25,
+      "output": 0.75
     },
     "openrouter/qwen/qwen3.5-122b-a10b": {
       "input": 0.26,
@@ -71808,8 +71387,8 @@
       ]
     },
     "openrouter/qwen/qwen3.6-27b": {
-      "input": 0.44999999999999996,
-      "output": 2.7
+      "input": 0.32,
+      "output": 3.1999999999999997
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
       "cacheRead": 0.049999999999999996,
@@ -71838,32 +71417,6 @@
           "output": 3,
           "range": [
             256001
-          ]
-        }
-      ]
-    },
-    "openrouter/qwen/qwen3.6-max-preview": {
-      "cacheWrite": 1.28375,
-      "input": 1.0270000000000001,
-      "output": 6.162,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.28375,
-          "input": 1.0270000000000001,
-          "output": 6.162,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.975,
-          "input": 1.5799999999999998,
-          "output": 9.48,
-          "range": [
-            128001
           ]
         }
       ]
@@ -72118,9 +71671,9 @@
       "output": 0.295
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -72128,9 +71681,9 @@
       "output": 0.6
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -72474,12 +72027,12 @@
     "openrouter/z-ai/glm-5.2": {
       "cacheRead": 0.059,
       "input": 0.06,
-      "output": 4.199999999999999
+      "output": 6
     },
     "openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.039,
       "input": 0.04,
-      "output": 4.8
+      "output": 7
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -74838,9 +74391,9 @@
       "output": 3
     },
     "together_ai/Qwen/Qwen3.7-Max": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.5,
+      "input": 2.5,
+      "output": 7.5
     },
     "together_ai/Qwen/Qwen3.7-Plus": {
       "input": 0.32,
@@ -93610,14 +93163,14 @@
       "output": 1.2
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.198,
+      "cacheRead": 0.13,
+      "input": 0.1282,
       "output": 8
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
-      "output": 1.28
+      "cacheRead": 0.00528,
+      "input": 0.00528,
+      "output": 0.020123000000000002
     },
     "vercel-ai-gateway/openrouter/~google/gemini-flash-latest": {
       "cacheRead": 0.075,
@@ -93799,7 +93352,7 @@
     "vercel-ai-gateway/openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.02,
       "input": 0.032,
-      "output": 0.448303
+      "output": 0.214422
     },
     "vercel-ai-gateway/openrouter/~z-ai/glm-latest": {
       "cacheRead": 0.029,
@@ -94374,13 +93927,13 @@
       "output": 0.41
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.005699999999999999,
-      "input": 0.005699999999999999,
+      "cacheRead": 0.0131,
+      "input": 0.0131,
       "output": 1.28
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0137,
-      "input": 0.0137,
+      "cacheRead": 0.006500000000000001,
+      "input": 0.006500000000000001,
       "output": 1.28
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -94389,9 +93942,9 @@
       "output": 0.6468
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0247805,
-      "input": 0.297366,
-      "output": 0.594732
+      "cacheRead": 0.0204015,
+      "input": 0.24481799999999998,
+      "output": 0.48963599999999996
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -95078,8 +94631,8 @@
       "output": 2.25
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k2.6": {
-      "cacheRead": 0.0975,
-      "input": 0.46499999999999997,
+      "cacheRead": 0.1077,
+      "input": 0.4344,
       "output": 2.4499999999999997
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k2.7-code": {
@@ -95088,9 +94641,9 @@
       "output": 3.35
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.3,
-      "input": 0.5,
-      "output": 12
+      "cacheRead": 0.55,
+      "input": 0.82,
+      "output": 13.5
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
@@ -96522,29 +96075,10 @@
       ]
     },
     "vercel-ai-gateway/openrouter/qwen/qwen-plus-2025-07-28": {
+      "cacheRead": 0.052000000000000005,
+      "cacheWrite": 0.325,
       "input": 0.26,
-      "output": 0.78,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.26,
-          "output": 0.78,
-          "range": [
-            0,
-            256001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 2.34,
-          "range": [
-            256001
-          ]
-        }
-      ]
+      "output": 0.78
     },
     "vercel-ai-gateway/openrouter/qwen/qwen-vl-plus": {
       "input": 0.21,
@@ -96568,8 +96102,8 @@
       "output": 0.55
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
-      "input": 0.22999999999999998,
-      "output": 2.3
+      "input": 0.44999999999999996,
+      "output": 3.5
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-30b-a3b": {
       "input": 0.12,
@@ -96646,110 +96180,17 @@
       "cacheRead": 0.13,
       "cacheWrite": 0.8125,
       "input": 0.65,
-      "output": 3.25,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.13,
-          "cacheWrite": 0.8125,
-          "input": 0.65,
-          "output": 3.25,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.234,
-          "cacheWrite": 1.4625,
-          "input": 1.17,
-          "output": 5.85,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.25
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-max": {
       "cacheRead": 0.156,
       "cacheWrite": 0.975,
       "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.156,
-          "cacheWrite": 0.975,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0.312,
-          "cacheWrite": 1.95,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0.39,
-          "cacheWrite": 2.4375,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.9
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-max-thinking": {
       "input": 0.78,
-      "output": 3.9,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.78,
-          "output": 3.9,
-          "range": [
-            0,
-            32001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.56,
-          "output": 7.8,
-          "range": [
-            32001,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.95,
-          "output": 9.75,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 3.9
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-next-80b-a3b-instruct": {
       "cacheRead": 0.07,
@@ -96774,16 +96215,17 @@
       "output": 0.6
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-vl-30b-a3b-thinking": {
-      "input": 0.19999999999999998,
-      "output": 2.4
+      "input": 0.29,
+      "output": 1
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-vl-32b-instruct": {
       "input": 0.10400000000000001,
       "output": 0.41600000000000004
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-vl-8b-instruct": {
-      "input": 0.117,
-      "output": 0.45499999999999996
+      "cacheRead": 0.12,
+      "input": 0.25,
+      "output": 0.75
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3-vl-8b-thinking": {
       "input": 0.18,
@@ -96867,8 +96309,8 @@
       ]
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.6-27b": {
-      "input": 0.44999999999999996,
-      "output": 2.7
+      "input": 0.32,
+      "output": 3.1999999999999997
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.6-35b-a3b": {
       "cacheRead": 0.049999999999999996,
@@ -96904,28 +96346,7 @@
     "vercel-ai-gateway/openrouter/qwen/qwen3.6-max-preview": {
       "cacheWrite": 1.28375,
       "input": 1.0270000000000001,
-      "output": 6.162,
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.28375,
-          "input": 1.0270000000000001,
-          "output": 6.162,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 1.975,
-          "input": 1.5799999999999998,
-          "output": 9.48,
-          "range": [
-            128001
-          ]
-        }
-      ]
+      "output": 6.162
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.6-plus": {
       "cacheWrite": 0.40625,
@@ -97187,9 +96608,9 @@
       "output": 0.295
     },
     "vercel-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "vercel-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -97197,9 +96618,9 @@
       "output": 0.6
     },
     "vercel-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "vercel-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -97560,12 +96981,12 @@
     "vercel-ai-gateway/openrouter/z-ai/glm-5.2": {
       "cacheRead": 0.059,
       "input": 0.06,
-      "output": 4.199999999999999
+      "output": 6
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.039,
       "input": 0.04,
-      "output": 4.8
+      "output": 7
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
@@ -100360,9 +99781,9 @@
       "output": 3
     },
     "vercel-ai-gateway/together_ai/Qwen/Qwen3.7-Max": {
-      "cacheRead": 0.3,
-      "input": 1.5,
-      "output": 4.5
+      "cacheRead": 0.5,
+      "input": 2.5,
+      "output": 7.5
     },
     "vercel-ai-gateway/together_ai/Qwen/Qwen3.7-Plus": {
       "input": 0.32,
@@ -106214,7 +105635,9 @@
           ],
           "maxTokens": 65536,
           "name": "MiniMaxAI/MiniMax-M2.5-TEE",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "chutes no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -107372,7 +106795,9 @@
           ],
           "maxTokens": 262144,
           "name": "Kimi K2.7 Code",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "deepinfra no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1048576,
@@ -107534,7 +106959,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3 Max",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "deepinfra no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -107695,7 +107122,9 @@
           ],
           "maxTokens": 131072,
           "name": "Qwen3.8 2.4T A95B",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "deepinfra no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -107788,7 +107217,9 @@
           ],
           "maxTokens": 262144,
           "name": "Step 3.7 Flash",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "deepinfra no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1048576,
@@ -110079,9 +109510,9 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.2,
+            "cacheRead": 0.13,
             "cacheWrite": 0,
-            "input": 0.198,
+            "input": 0.1282,
             "output": 8
           },
           "id": "~deepseek/deepseek-pro-latest",
@@ -110095,10 +109526,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.0096,
+            "cacheRead": 0.0079,
             "cacheWrite": 0,
-            "input": 0.0144,
-            "output": 0.046749
+            "input": 0.0079,
+            "output": 1.28
           },
           "id": "~deepseek/deepseek-v4-flash-latest",
           "input": [
@@ -110275,7 +109706,7 @@
             "cacheRead": 0.02,
             "cacheWrite": 0,
             "input": 0.032,
-            "output": 0.498114
+            "output": 0.264718
           },
           "id": "~z-ai/glm-flash-latest",
           "input": [
@@ -111662,7 +111093,7 @@
             "text"
           ],
           "maxTokens": 32768,
-          "name": "inclusionAI: Ling 3.1 Flash (new)",
+          "name": "inclusionAI: Ling 3.1 Flash",
           "reasoning": true
         },
         {
@@ -112451,9 +111882,9 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.0975,
+            "cacheRead": 0.1202,
             "cacheWrite": 0,
-            "input": 0.465,
+            "input": 0.4348,
             "output": 2.45
           },
           "id": "moonshotai/kimi-k2.6",
@@ -113858,7 +113289,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen: Qwen Plus 0728 (retires Oct 9)",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 40960,
@@ -113890,7 +113323,9 @@
           ],
           "maxTokens": 8192,
           "name": "Qwen3 235B-A22B",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -113970,7 +113405,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen: Qwen3 30B A3B Thinking 2507 (retires Oct 9)",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 40960,
@@ -114002,7 +113439,9 @@
           ],
           "maxTokens": 8192,
           "name": "Qwen: Qwen3 8B (retires Oct 9)",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -114082,7 +113521,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3 Coder Plus",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -114098,7 +113539,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3 Max",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -114114,7 +113557,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen: Qwen3 Max Thinking (retires Oct 9)",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -114180,7 +113625,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3 VL 235B A22B Thinking",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -114231,7 +113678,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen: Qwen3 VL 32B Instruct (retires Oct 9)",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -114265,7 +113714,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen: Qwen3 VL 8B Thinking (retires Oct 9)",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -114416,7 +113867,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 65536,
+          "maxTokens": 81920,
           "name": "Qwen3.6 27B",
           "reasoning": true
         },
@@ -114468,7 +113919,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3.6 Max Preview",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "kilocode no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1000000,
@@ -116356,7 +115809,9 @@
           ],
           "maxTokens": 8000,
           "name": "ERNIE 4.5 VL 28B A3B",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -116373,7 +115828,9 @@
           ],
           "maxTokens": 65536,
           "name": "ERNIE-4.5-VL-28B-A3B-Thinking",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 163840,
@@ -116421,7 +115878,9 @@
           ],
           "maxTokens": 163840,
           "name": "DeepSeek V3 0324",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 64000,
@@ -116437,7 +115896,9 @@
           ],
           "maxTokens": 16000,
           "name": "DeepSeek V3 (Turbo)\t",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -116453,7 +115914,9 @@
           ],
           "maxTokens": 32768,
           "name": "DeepSeek V3.1",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -116469,7 +115932,9 @@
           ],
           "maxTokens": 32768,
           "name": "Deepseek V3.1 Terminus",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 163840,
@@ -116485,7 +115950,9 @@
           ],
           "maxTokens": 65536,
           "name": "Deepseek V3.2",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 163840,
@@ -116501,7 +115968,9 @@
           ],
           "maxTokens": 65536,
           "name": "Deepseek V3.2 Exp",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "compat": {
@@ -116520,7 +115989,9 @@
           ],
           "maxTokens": 393216,
           "name": "DeepSeek V4 Flash",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "compat": {
@@ -116589,7 +116060,9 @@
           ],
           "maxTokens": 32768,
           "name": "Ling-2.6-1T",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -116605,7 +116078,9 @@
           ],
           "maxTokens": 32768,
           "name": "Ling-2.6-flash",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -116621,7 +116096,9 @@
           ],
           "maxTokens": 65536,
           "name": "Ring-2.6-1T",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 256000,
@@ -116637,7 +116114,9 @@
           ],
           "maxTokens": 128000,
           "name": "Kat Coder Pro",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -116669,7 +116148,9 @@
           ],
           "maxTokens": 131072,
           "name": "MiniMax-M2",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 204800,
@@ -116685,7 +116166,9 @@
           ],
           "maxTokens": 131072,
           "name": "Minimax M2.1",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 204800,
@@ -116717,7 +116200,9 @@
           ],
           "maxTokens": 131072,
           "name": "MiniMax M2.5 Highspeed",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 204800,
@@ -116936,7 +116421,9 @@
           ],
           "maxTokens": 8192,
           "name": "Qwen 2.5 72B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 32000,
@@ -116952,7 +116439,9 @@
           ],
           "maxTokens": 32000,
           "name": "Qwen2.5 7B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -116968,7 +116457,9 @@
           ],
           "maxTokens": 16384,
           "name": "Qwen3 235B A22B Instruct 2507",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -116984,7 +116475,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3 235B A22b Thinking 2507",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 160000,
@@ -117000,7 +116493,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3 Coder 30b A3B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -117016,7 +116511,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3 Coder 480B A35B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -117032,7 +116529,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3 Coder Next",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -117048,7 +116547,9 @@
           ],
           "maxTokens": 65536,
           "name": "Qwen3 Max",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -117064,7 +116565,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3 Next 80B A3B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -117080,7 +116583,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3 Next 80B A3B Thinking",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 65536,
@@ -117097,7 +116602,9 @@
           ],
           "maxTokens": 16384,
           "name": "Qwen3 Omni 30B A3B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 65536,
@@ -117131,7 +116638,9 @@
           ],
           "maxTokens": 32768,
           "name": "Qwen3 VL 235B A22B Instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -117165,7 +116674,9 @@
           ],
           "maxTokens": 32768,
           "name": "qwen/qwen3-vl-30b-a3b-thinking",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -117182,7 +116693,9 @@
           ],
           "maxTokens": 32768,
           "name": "qwen/qwen3-vl-8b-instruct",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -117314,7 +116827,9 @@
           ],
           "maxTokens": 8192,
           "name": "L31 70B Euryale V2.2",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 262144,
@@ -117330,7 +116845,9 @@
           ],
           "maxTokens": 32000,
           "name": "XiaomiMiMo/MiMo-V2-Flash",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1048576,
@@ -117367,7 +116884,9 @@
           ],
           "maxTokens": 131072,
           "name": "MiMo-V2-Pro",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1048576,
@@ -117420,7 +116939,9 @@
           ],
           "maxTokens": 98304,
           "name": "GLM-4.5",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "novita no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -117594,7 +117115,9 @@
           ],
           "maxTokens": 16384,
           "name": "DeepSeek V4 Pro",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "nvidia no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1000000,
@@ -117724,7 +117247,9 @@
           ],
           "maxTokens": 8192,
           "name": "Minimax M3",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "nvidia no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 65536,
@@ -117897,7 +117422,9 @@
           ],
           "maxTokens": 8192,
           "name": "nemotron-voicechat",
-          "reasoning": false
+          "reasoning": false,
+          "status": "deprecated",
+          "statusReason": "nvidia no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 131072,
@@ -117981,7 +117508,9 @@
           ],
           "maxTokens": 8192,
           "name": "GLM 5.2",
-          "reasoning": true
+          "reasoning": true,
+          "status": "deprecated",
+          "statusReason": "nvidia no longer lists this model in its public model inventory."
         },
         {
           "contextWindow": 1000000,
@@ -125548,5 +125077,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "4db022470af693f9f78dafd2a39338d5cd7dadda"
+  "sourceCommit": "432ade6f500de6cdb0bcd4b0948a07bf466672f1"
 }
