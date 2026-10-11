@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791693582498,
+  "generatedAt": 1791708008711,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5908,11 +5908,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.005,
+        "cacheRead": 0.009,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0001,
-        "output": 0.6,
+        "input": 0.03,
+        "output": 0.99,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5950,11 +5950,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.0142,
+        "cacheRead": 0.0132,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0142,
-        "output": 1.28,
+        "input": 0.0132,
+        "output": 0.64,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6018,11 +6018,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.3,
+        "cacheRead": 0.29,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.44,
-        "output": 14.89,
+        "input": 0.75,
+        "output": 14.9,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9153,11 +9153,11 @@
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "provider": "kilocode",
-      "contextWindow": 262144,
+      "contextWindow": 202800,
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 182520,
       "name": "Nemotron 3 Ultra 550B A55B",
       "pricing": {
         "cacheRead": 0.1,
@@ -27485,9 +27485,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.005,
-      "input": 0.0001,
-      "output": 0.6,
+      "cacheRead": 0.009,
+      "input": 0.03,
+      "output": 0.9900000000000001,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -27497,9 +27497,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.014199999999999999,
-      "input": 0.014199999999999999,
-      "output": 1.28,
+      "cacheRead": 0.0132,
+      "input": 0.0132,
+      "output": 0.64,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -27538,9 +27538,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.3,
-      "input": 0.44,
-      "output": 14.89,
+      "cacheRead": 0.29,
+      "input": 0.75,
+      "output": 14.9,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -28317,9 +28317,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.014199999999999999,
-      "input": 0.014199999999999999,
-      "output": 1.28,
+      "cacheRead": 0.0132,
+      "input": 0.0132,
+      "output": 0.64,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -29176,9 +29176,9 @@
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2,
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4,
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3.5-content-safety": {
@@ -35585,7 +35585,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "74e8844382e90c90538e7af7334655ad26ec5aab",
+  "sourceCommit": "bc1d2b9bc71e935a37838db806c9d327d84a1657",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -56914,9 +56914,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.005,
-      "input": 0.0001,
-      "output": 0.6,
+      "cacheRead": 0.009,
+      "input": 0.03,
+      "output": 0.9900000000000001,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -56926,9 +56926,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.014199999999999999,
-      "input": 0.014199999999999999,
-      "output": 1.28,
+      "cacheRead": 0.0132,
+      "input": 0.0132,
+      "output": 0.64,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -56967,9 +56967,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.3,
-      "input": 0.44,
-      "output": 14.89,
+      "cacheRead": 0.29,
+      "input": 0.75,
+      "output": 14.9,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -57746,9 +57746,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.014199999999999999,
-      "input": 0.014199999999999999,
-      "output": 1.28,
+      "cacheRead": 0.0132,
+      "input": 0.0132,
+      "output": 0.64,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -58605,9 +58605,9 @@
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.5,
-      "output": 2.2,
+      "cacheRead": 0.12,
+      "input": 0.6,
+      "output": 2.4,
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3.5-content-safety": {
