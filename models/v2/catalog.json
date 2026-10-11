@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791736489601,
+  "generatedAt": 1791750869539,
   "models": [
     {
       "id": "claude-fable-5",
@@ -6018,11 +6018,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.29,
+        "cacheRead": 0.3,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.75,
-        "output": 14.9,
+        "input": 0.74,
+        "output": 15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -17942,7 +17942,8 @@
         "status": "unknown"
       },
       "reasoning": true,
-      "status": "preview"
+      "status": "deprecated",
+      "statusReason": "opencode-go no longer lists this model in its public model inventory."
     },
     {
       "id": "kimi-k2.6",
@@ -27491,9 +27492,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.006972,
-      "input": 0.21911999999999998,
-      "output": 0.65736,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.21,
+      "output": 5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -27538,9 +27539,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.29,
-      "input": 0.75,
-      "output": 14.9,
+      "cacheRead": 0.3,
+      "input": 0.74,
+      "output": 15,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -29119,7 +29120,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.55,
       "input": 0.7999999999999999,
-      "output": 10,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -35585,7 +35586,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "b5a9b9b41c343f4a11c44dd511a49c348f63d704",
+  "sourceCommit": "c11951f988d9da6d17d9e1894809b50cfca4a387",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -56920,9 +56921,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.006972,
-      "input": 0.21911999999999998,
-      "output": 0.65736,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.21,
+      "output": 5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -56967,9 +56968,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.29,
-      "input": 0.75,
-      "output": 14.9,
+      "cacheRead": 0.3,
+      "input": 0.74,
+      "output": 15,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -58548,7 +58549,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.55,
       "input": 0.7999999999999999,
-      "output": 10,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
