@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791681472592,
+  "generatedAt": 1791693582498,
   "models": [
     {
       "id": "claude-fable-5",
@@ -1737,341 +1737,6 @@
         "source": "chutes",
         "status": "known",
         "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-fable-5",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Fable 5 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-fable-5-1",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Fable 5.1 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-haiku-5-5",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Haiku 5.5 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-opus-4-6",
-      "provider": "claude-cli",
-      "contextWindow": 200000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 1568,
-          "preferredSidePx": 1568,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Opus 4.6 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-opus-4-7",
-      "provider": "claude-cli",
-      "contextWindow": 200000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Opus 4.7 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-opus-4-8",
-      "provider": "claude-cli",
-      "contextWindow": 200000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Opus 4.8 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "replacedBy": "claude-opus-5",
-      "status": "deprecated"
-    },
-    {
-      "id": "claude-opus-5",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Opus 5 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-opus-5-5",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Opus 5.5 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-sonnet-4-6",
-      "provider": "claude-cli",
-      "contextWindow": 200000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 1568,
-          "preferredSidePx": 1568,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Sonnet 4.6 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-sonnet-5",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Sonnet 5 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "claude-sonnet-5-5",
-      "provider": "claude-cli",
-      "contextWindow": 1000000,
-      "contextWindowDefault": "1m",
-      "contextWindows": [
-        {
-          "contextWindow": 200000,
-          "id": "200k",
-          "label": "200K"
-        },
-        {
-          "contextWindow": 1000000,
-          "id": "1m",
-          "label": "1M"
-        }
-      ],
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "mediaInput": {
-        "image": {
-          "maxSidePx": 2576,
-          "preferredSidePx": 2576,
-          "tokenMode": "provider"
-        }
-      },
-      "name": "Claude Sonnet 5.5 (Claude CLI)",
-      "pricing": {
-        "status": "unknown"
       },
       "reasoning": true
     },
@@ -6285,10 +5950,10 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.0099,
+        "cacheRead": 0.0142,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0099,
+        "input": 0.0142,
         "output": 1.28,
         "source": "modelsDev",
         "status": "known",
@@ -11136,14 +10801,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 36864,
+      "maxTokens": 16384,
       "name": "Qwen: Qwen3 14B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.22,
+        "input": 0.12,
+        "output": 0.24,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -27832,8 +27497,8 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0103,
-      "input": 0.0103,
+      "cacheRead": 0.014199999999999999,
+      "input": 0.014199999999999999,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -28652,8 +28317,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0103,
-      "input": 0.0103,
+      "cacheRead": 0.014199999999999999,
+      "input": 0.014199999999999999,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -29454,7 +29119,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.55,
       "input": 0.7999999999999999,
-      "output": 15,
+      "output": 10,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -31010,8 +30675,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-14b": {
-      "input": 0.09999999999999999,
-      "output": 0.22,
+      "input": 0.12,
+      "output": 0.24,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
@@ -35595,14 +35260,6 @@
         "Qwen/Qwen3.8-27B-TEE"
       ]
     },
-    "claude-cli": {
-      "recommendedModels": [
-        "claude-fable-5-1",
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "claude-haiku-5-5"
-      ]
-    },
     "cohere": {
       "api": "openai-completions",
       "defaultModel": "command-a-plus-05-2026"
@@ -35928,7 +35585,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "5cdfc2f08e358a5b4494c5bdeebf46853759dcc1",
+  "sourceCommit": "74e8844382e90c90538e7af7334655ad26ec5aab",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -57269,8 +56926,8 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0103,
-      "input": 0.0103,
+      "cacheRead": 0.014199999999999999,
+      "input": 0.014199999999999999,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -58089,8 +57746,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0103,
-      "input": 0.0103,
+      "cacheRead": 0.014199999999999999,
+      "input": 0.014199999999999999,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -58891,7 +58548,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.55,
       "input": 0.7999999999999999,
-      "output": 15,
+      "output": 10,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -60447,8 +60104,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-14b": {
-      "input": 0.09999999999999999,
-      "output": 0.22,
+      "input": 0.12,
+      "output": 0.24,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
