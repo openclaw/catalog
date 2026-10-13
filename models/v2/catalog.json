@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791854144581,
+  "generatedAt": 1791866658094,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5759,7 +5759,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false
+      "reasoning": false,
+      "status": "deprecated",
+      "statusReason": "huggingface no longer lists this model in its public model inventory."
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -5888,7 +5890,7 @@
         "cacheRead": 0.0054,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0441,
+        "input": 0.045,
         "output": 0.891,
         "source": "modelsDev",
         "status": "known",
@@ -5903,14 +5905,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.007938,
+        "cacheRead": 0.2,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.24948,
-        "output": 0.74844,
+        "input": 0.25,
+        "output": 5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5999,7 +6001,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.73,
-        "output": 10,
+        "output": 13.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7030,7 +7032,7 @@
         "text"
       ],
       "maxTokens": 115200,
-      "name": "DeepSeek: DeepSeek V3 0324",
+      "name": "DeepSeek V3 0324",
       "pricing": {
         "cacheRead": 0.11,
         "cacheWrite": 0,
@@ -7051,7 +7053,7 @@
         "text"
       ],
       "maxTokens": 32768,
-      "name": "DeepSeek: DeepSeek V3.1",
+      "name": "DeepSeek V3.1",
       "pricing": {
         "cacheRead": 0.13,
         "cacheWrite": 0,
@@ -7179,10 +7181,10 @@
       "maxTokens": 943718,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.03,
+        "cacheRead": 0.0312,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.03,
+        "input": 0.0312,
         "output": 1.28,
         "source": "modelsDev",
         "status": "known",
@@ -7283,7 +7285,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 943718,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -7413,7 +7415,7 @@
         "text"
       ],
       "maxTokens": 65536,
-      "name": "Google: Gemini 2.5 Pro Preview 06-05",
+      "name": "Gemini 2.5 Pro Preview 06-05",
       "pricing": {
         "cacheRead": 0.125,
         "cacheWrite": 0.375,
@@ -8538,7 +8540,7 @@
         "image"
       ],
       "maxTokens": 209715,
-      "name": "Mistral: Ministral 3 14B 2512",
+      "name": "Ministral 3 14B 2512",
       "pricing": {
         "cacheRead": 0.02,
         "cacheWrite": 0,
@@ -8560,7 +8562,7 @@
         "image"
       ],
       "maxTokens": 104857,
-      "name": "Mistral: Ministral 3 3B 2512",
+      "name": "Ministral 3 3B 2512",
       "pricing": {
         "cacheRead": 0.01,
         "cacheWrite": 0,
@@ -8582,7 +8584,7 @@
         "image"
       ],
       "maxTokens": 209715,
-      "name": "Mistral: Ministral 3 8B 2512",
+      "name": "Ministral 3 8B 2512",
       "pricing": {
         "cacheRead": 0.015,
         "cacheWrite": 0,
@@ -8694,7 +8696,7 @@
         "document"
       ],
       "maxTokens": 104857,
-      "name": "Mistral: Mistral Medium 3",
+      "name": "Mistral Medium 3",
       "pricing": {
         "cacheRead": 0.04,
         "cacheWrite": 0,
@@ -8717,7 +8719,7 @@
         "document"
       ],
       "maxTokens": 209715,
-      "name": "Mistral: Mistral Medium 3.5",
+      "name": "Mistral Medium 3.5",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -8740,7 +8742,7 @@
         "document"
       ],
       "maxTokens": 104857,
-      "name": "Mistral: Mistral Medium 3.1",
+      "name": "Mistral Medium 3.1",
       "pricing": {
         "cacheRead": 0.04,
         "cacheWrite": 0,
@@ -8783,7 +8785,7 @@
         "document"
       ],
       "maxTokens": 26214,
-      "name": "Mistral: Saba",
+      "name": "Saba",
       "pricing": {
         "cacheRead": 0.02,
         "cacheWrite": 0,
@@ -8827,7 +8829,7 @@
         "image"
       ],
       "maxTokens": 102400,
-      "name": "Mistral: Mistral Small 3.1 24B",
+      "name": "Mistral Small 3.1 24B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -8849,7 +8851,7 @@
         "text"
       ],
       "maxTokens": 16384,
-      "name": "Mistral: Mistral Small 3.2 24B",
+      "name": "Mistral Small 3.2 24B",
       "pricing": {
         "cacheRead": 0.01,
         "cacheWrite": 0,
@@ -8871,7 +8873,7 @@
         "document"
       ],
       "maxTokens": 52428,
-      "name": "Mistral: Mixtral 8x22B Instruct",
+      "name": "Mixtral 8x22B Instruct",
       "pricing": {
         "cacheRead": 0.2,
         "cacheWrite": 0,
@@ -8914,7 +8916,7 @@
         "text"
       ],
       "maxTokens": 98304,
-      "name": "MoonshotAI: Kimi K2 0711",
+      "name": "Kimi K2 0711",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -11647,7 +11649,7 @@
         "document"
       ],
       "maxTokens": 128000,
-      "name": "Sakana: Fugu Max",
+      "name": "Fugu Max",
       "pricing": {
         "cacheRead": 0.25,
         "cacheWrite": 0,
@@ -11692,7 +11694,7 @@
         "document"
       ],
       "maxTokens": 128000,
-      "name": "Sakana: Fugu Ultra v2",
+      "name": "Fugu Ultra v2",
       "pricing": {
         "cacheRead": 0.5,
         "cacheWrite": 0,
@@ -13054,7 +13056,8 @@
           "low",
           "medium",
           "high",
-          "xhigh"
+          "xhigh",
+          "max"
         ],
         "supportsReasoningEffort": true,
         "supportsTools": true
@@ -13080,6 +13083,7 @@
       "thinkingLevelMap": {
         "high": "high",
         "low": "low",
+        "max": "max",
         "medium": "medium",
         "minimal": "minimal",
         "off": "minimal",
@@ -13130,11 +13134,22 @@
     {
       "id": "muse-wonder-1.0",
       "provider": "meta",
+      "compat": {
+        "supportedReasoningEfforts": [
+          "minimal",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "supportsReasoningEffort": true,
+        "supportsTools": true
+      },
       "contextWindow": 1048576,
       "input": [
         "text",
-        "image",
-        "document"
+        "image"
       ],
       "maxTokens": 131072,
       "name": "Muse Wonder",
@@ -13148,7 +13163,16 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "thinkingLevelMap": {
+        "high": "high",
+        "low": "low",
+        "max": "max",
+        "medium": "medium",
+        "minimal": "minimal",
+        "off": "minimal",
+        "xhigh": "xhigh"
+      }
     },
     {
       "id": "codestral-2508",
@@ -21325,8 +21349,8 @@
       "provider": "venice",
       "contextWindow": 256000,
       "input": [
-        "text",
-        "image"
+        "image",
+        "text"
       ],
       "maxTokens": 16384,
       "name": "Mistral Small 3.2 24B Instruct",
@@ -27516,14 +27540,14 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.0441,
+      "input": 0.045,
       "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.007937999999999999,
-      "input": 0.24947999999999998,
-      "output": 0.7484400000000001,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.25,
+      "output": 5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -27570,7 +27594,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.55,
       "input": 0.73,
-      "output": 10,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -28341,8 +28365,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0218,
-      "input": 0.0218,
+      "cacheRead": 0.031200000000000002,
+      "input": 0.031200000000000002,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -28359,21 +28383,21 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.034365,
-      "input": 0.41237999999999997,
-      "output": 0.8247599999999999,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004,
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.0054,
+      "input": 0.045,
+      "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -29155,7 +29179,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.55,
       "input": 0.73,
-      "output": 10,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -35458,7 +35482,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "2dd42a977aa9086801b27a7ede145451e83bc07f",
+  "sourceCommit": "3ae944b491b778011a3b1cfb91efa1d158d4be3e",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -56880,14 +56904,14 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.0441,
+      "input": 0.045,
       "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.007937999999999999,
-      "input": 0.24947999999999998,
-      "output": 0.7484400000000001,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.25,
+      "output": 5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -56934,7 +56958,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.55,
       "input": 0.73,
-      "output": 10,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -57705,8 +57729,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.0218,
-      "input": 0.0218,
+      "cacheRead": 0.031200000000000002,
+      "input": 0.031200000000000002,
       "output": 1.28,
       "source": "openRouter"
     },
@@ -57723,21 +57747,21 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.034365,
-      "input": 0.41237999999999997,
-      "output": 0.8247599999999999,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004,
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.0054,
+      "input": 0.045,
+      "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -58519,7 +58543,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.55,
       "input": 0.73,
-      "output": 10,
+      "output": 13.5,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -65213,6 +65237,12 @@
       "output": 2.5,
       "source": "liteLLM"
     },
+    "vertex_ai-language-models/gemini-robotics-er-2-preview": {
+      "cacheRead": 0.09999999999999999,
+      "input": 1,
+      "output": 5,
+      "source": "liteLLM"
+    },
     "vertex_ai-text-models/text-unicorn": {
       "input": 10,
       "output": 28,
@@ -65718,6 +65748,12 @@
     "vertex_ai/gemini-omni-1.1-flash-preview": {
       "input": 1.5,
       "output": 9,
+      "source": "liteLLM"
+    },
+    "vertex_ai/gemini-robotics-er-2-preview": {
+      "cacheRead": 0.09999999999999999,
+      "input": 1,
+      "output": 5,
       "source": "liteLLM"
     },
     "vertex_ai/gemma-4-26b-a4b-it": {
