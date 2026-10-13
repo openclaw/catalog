@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791895783990,
+  "generatedAt": 1791909518652,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -17849,6 +17849,11 @@
       "input": 0.75,
       "output": 4.5
     },
+    "cloudflare-ai-gateway/gemini/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
     "cloudflare-ai-gateway/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -18938,6 +18943,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "cloudflare-ai-gateway/google-gemini-cli/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "cloudflare-ai-gateway/google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -19246,6 +19256,11 @@
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
+    },
+    "cloudflare-ai-gateway/google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
     },
     "cloudflare-ai-gateway/google-vertex/gemini-embedding-001": {
       "input": 0.15,
@@ -19703,6 +19718,11 @@
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
+    },
+    "cloudflare-ai-gateway/google/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
     },
     "cloudflare-ai-gateway/google/gemini-embedding-001": {
       "input": 0.15,
@@ -21276,6 +21296,11 @@
       "input": 0.075,
       "output": 0.22
     },
+    "cloudflare-ai-gateway/novita-ai/inclusionai/ling-3.1-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
+    },
     "cloudflare-ai-gateway/novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
@@ -21764,6 +21789,11 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.22
+    },
+    "cloudflare-ai-gateway/novita/inclusionai/ling-3.1-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
     },
     "cloudflare-ai-gateway/novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -23861,9 +23891,9 @@
       "output": 0.63
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.008232,
-      "input": 0.25871999999999995,
-      "output": 0.7761600000000001
+      "cacheRead": 0.007937999999999999,
+      "input": 0.24947999999999998,
+      "output": 0.7484400000000001
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.0108,
@@ -24603,9 +24633,9 @@
       "output": 0.41
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.049999999999999996,
-      "output": 1.28
+      "cacheRead": 0.0182,
+      "input": 0.091,
+      "output": 0.182
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -24618,9 +24648,9 @@
       "output": 0.6468
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.037323,
-      "input": 0.447876,
-      "output": 0.895752
+      "cacheRead": 0.036337,
+      "input": 0.436044,
+      "output": 0.872088
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -24628,9 +24658,9 @@
       "output": 1.9800000000000002
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0054,
+      "input": 0.0441,
+      "output": 0.63
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -24937,6 +24967,12 @@
       "cacheWrite": 0.0416666666666667,
       "input": 0.375,
       "output": 1.875
+    },
+    "cloudflare-ai-gateway/openrouter/google/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 0.1875,
+      "input": 2,
+      "output": 10
     },
     "cloudflare-ai-gateway/openrouter/google/gemini-nano-banana-2.1": {
       "input": 1.5,
@@ -26835,9 +26871,9 @@
       "output": 2.6
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-35b-a3b": {
-      "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.75
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
+      "output": 1
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-397b-a17b": {
       "cacheRead": 0.22499999999999998,
@@ -27193,9 +27229,9 @@
       "output": 0.295
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -27203,9 +27239,9 @@
       "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "cloudflare-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -29883,9 +29919,9 @@
       "output": 4
     },
     "cloudflare-ai-gateway/together_ai/moonshotai/Kimi-K3": {
-      "cacheRead": 0.27,
-      "input": 2.7,
-      "output": 13.5
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "cloudflare-ai-gateway/together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO": {
       "input": 0.6,
@@ -36738,6 +36774,11 @@
       "input": 0.75,
       "output": 4.5
     },
+    "gemini/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
     "gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -37764,6 +37805,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "google-gemini-cli/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -38072,6 +38118,11 @@
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
+    },
+    "google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
     },
     "google-vertex/gemini-embedding-001": {
       "input": 0.15,
@@ -49660,6 +49711,11 @@
       "input": 0.75,
       "output": 4.5
     },
+    "kilocode/gemini/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
     "kilocode/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -50749,6 +50805,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "kilocode/google-gemini-cli/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "kilocode/google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -51057,6 +51118,11 @@
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
+    },
+    "kilocode/google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
     },
     "kilocode/google-vertex/gemini-embedding-001": {
       "input": 0.15,
@@ -52987,6 +53053,11 @@
       "input": 0.075,
       "output": 0.22
     },
+    "kilocode/novita-ai/inclusionai/ling-3.1-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
+    },
     "kilocode/novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
@@ -53475,6 +53546,11 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.22
+    },
+    "kilocode/novita/inclusionai/ling-3.1-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
     },
     "kilocode/novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -55144,9 +55220,9 @@
       "output": 0.63
     },
     "kilocode/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.008232,
-      "input": 0.25871999999999995,
-      "output": 0.7761600000000001
+      "cacheRead": 0.007937999999999999,
+      "input": 0.24947999999999998,
+      "output": 0.7484400000000001
     },
     "kilocode/openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.0108,
@@ -55886,9 +55962,9 @@
       "output": 0.41
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.049999999999999996,
-      "output": 1.28
+      "cacheRead": 0.0182,
+      "input": 0.091,
+      "output": 0.182
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -55901,9 +55977,9 @@
       "output": 0.6468
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.037323,
-      "input": 0.447876,
-      "output": 0.895752
+      "cacheRead": 0.036337,
+      "input": 0.436044,
+      "output": 0.872088
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -55911,9 +55987,9 @@
       "output": 1.9800000000000002
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0054,
+      "input": 0.0441,
+      "output": 0.63
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -56220,6 +56296,12 @@
       "cacheWrite": 0.0416666666666667,
       "input": 0.375,
       "output": 1.875
+    },
+    "kilocode/openrouter/google/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 0.1875,
+      "input": 2,
+      "output": 10
     },
     "kilocode/openrouter/google/gemini-nano-banana-2.1": {
       "input": 1.5,
@@ -58118,9 +58200,9 @@
       "output": 2.6
     },
     "kilocode/openrouter/qwen/qwen3.5-35b-a3b": {
-      "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.75
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
+      "output": 1
     },
     "kilocode/openrouter/qwen/qwen3.5-397b-a17b": {
       "cacheRead": 0.22499999999999998,
@@ -58476,9 +58558,9 @@
       "output": 0.295
     },
     "kilocode/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "kilocode/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -58486,9 +58568,9 @@
       "output": 0.6
     },
     "kilocode/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "kilocode/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -61022,9 +61104,9 @@
       "output": 4
     },
     "kilocode/together_ai/moonshotai/Kimi-K3": {
-      "cacheRead": 0.27,
-      "input": 2.7,
-      "output": 13.5
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "kilocode/together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO": {
       "input": 0.6,
@@ -65179,8 +65261,9 @@
       "output": 0.22
     },
     "novita-ai/inclusionai/ling-3.1-flash": {
-      "input": 0,
-      "output": 0
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
     },
     "novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
@@ -65591,10 +65674,6 @@
       "cacheRead": 0.012,
       "input": 0.06,
       "output": 0.18
-    },
-    "novita/inclusionai/ling-3.1-flash": {
-      "input": 0,
-      "output": 0
     },
     "novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -68281,9 +68360,9 @@
       "output": 0.63
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.008232,
-      "input": 0.25871999999999995,
-      "output": 0.7761600000000001
+      "cacheRead": 0.007937999999999999,
+      "input": 0.24947999999999998,
+      "output": 0.7484400000000001
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.0108,
@@ -69023,9 +69102,9 @@
       "output": 0.41
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.049999999999999996,
-      "output": 1.28
+      "cacheRead": 0.0182,
+      "input": 0.091,
+      "output": 0.182
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -69038,9 +69117,9 @@
       "output": 0.6468
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.037323,
-      "input": 0.447876,
-      "output": 0.895752
+      "cacheRead": 0.036337,
+      "input": 0.436044,
+      "output": 0.872088
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -69048,9 +69127,9 @@
       "output": 1.9800000000000002
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0054,
+      "input": 0.0441,
+      "output": 0.63
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -69357,6 +69436,12 @@
       "cacheWrite": 0.0416666666666667,
       "input": 0.375,
       "output": 1.875
+    },
+    "openrouter/google/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 0.1875,
+      "input": 2,
+      "output": 10
     },
     "openrouter/google/gemini-nano-banana-2.1": {
       "input": 1.5,
@@ -71255,9 +71340,9 @@
       "output": 2.6
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
-      "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.75
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
+      "output": 1
     },
     "openrouter/qwen/qwen3.5-397b-a17b": {
       "cacheRead": 0.22499999999999998,
@@ -71613,9 +71698,9 @@
       "output": 0.295
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -71623,9 +71708,9 @@
       "output": 0.6
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -74271,9 +74356,9 @@
       "output": 4
     },
     "together_ai/moonshotai/Kimi-K3": {
-      "cacheRead": 0.27,
-      "input": 2.7,
-      "output": 13.5
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO": {
       "input": 0.6,
@@ -86457,6 +86542,11 @@
       "input": 0.75,
       "output": 4.5
     },
+    "vercel-ai-gateway/gemini/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
     "vercel-ai-gateway/gemini/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -87546,6 +87636,11 @@
       "input": 0.75,
       "output": 3.75
     },
+    "vercel-ai-gateway/google-gemini-cli/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "vercel-ai-gateway/google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -87854,6 +87949,11 @@
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75
+    },
+    "vercel-ai-gateway/google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
     },
     "vercel-ai-gateway/google-vertex/gemini-embedding-001": {
       "input": 0.15,
@@ -88340,6 +88440,11 @@
     "vercel-ai-gateway/google/gemini-3.8-live-extended-thinking": {
       "input": 0.75,
       "output": 4.5
+    },
+    "vercel-ai-gateway/google/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
     },
     "vercel-ai-gateway/google/gemini-embedding-001": {
       "input": 0.15,
@@ -90065,6 +90170,11 @@
       "input": 0.075,
       "output": 0.22
     },
+    "vercel-ai-gateway/novita-ai/inclusionai/ling-3.1-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
+    },
     "vercel-ai-gateway/novita-ai/meta-llama/llama-3.1-8b-instruct": {
       "input": 0.02,
       "output": 0.05
@@ -90553,6 +90663,11 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.22
+    },
+    "vercel-ai-gateway/novita/inclusionai/ling-3.1-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.9
     },
     "vercel-ai-gateway/novita/kwaipilot/kat-coder-pro": {
       "cacheRead": 0.06,
@@ -92983,9 +93098,9 @@
       "output": 0.63
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.008232,
-      "input": 0.25871999999999995,
-      "output": 0.7761600000000001
+      "cacheRead": 0.007937999999999999,
+      "input": 0.24947999999999998,
+      "output": 0.7484400000000001
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.0108,
@@ -93725,9 +93840,9 @@
       "output": 0.41
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.049999999999999996,
-      "output": 1.28
+      "cacheRead": 0.0182,
+      "input": 0.091,
+      "output": 0.182
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.016,
@@ -93740,9 +93855,9 @@
       "output": 0.6468
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.037323,
-      "input": 0.447876,
-      "output": 0.895752
+      "cacheRead": 0.036337,
+      "input": 0.436044,
+      "output": 0.872088
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -93750,9 +93865,9 @@
       "output": 1.9800000000000002
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0054,
+      "input": 0.0441,
+      "output": 0.63
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -94059,6 +94174,12 @@
       "cacheWrite": 0.0416666666666667,
       "input": 0.375,
       "output": 1.875
+    },
+    "vercel-ai-gateway/openrouter/google/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 0.1875,
+      "input": 2,
+      "output": 10
     },
     "vercel-ai-gateway/openrouter/google/gemini-nano-banana-2.1": {
       "input": 1.5,
@@ -95957,9 +96078,9 @@
       "output": 2.6
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-35b-a3b": {
-      "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.75
+      "cacheRead": 0.049999999999999996,
+      "input": 0.15,
+      "output": 1
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-397b-a17b": {
       "cacheRead": 0.22499999999999998,
@@ -96315,9 +96436,9 @@
       "output": 0.295
     },
     "vercel-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "vercel-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -96325,9 +96446,9 @@
       "output": 0.6
     },
     "vercel-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "vercel-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -99413,9 +99534,9 @@
       "output": 4
     },
     "vercel-ai-gateway/together_ai/moonshotai/Kimi-K3": {
-      "cacheRead": 0.27,
-      "input": 2.7,
-      "output": 13.5
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
     },
     "vercel-ai-gateway/together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO": {
       "input": 0.6,
@@ -108974,7 +109095,7 @@
             "cacheRead": 0.0054,
             "cacheWrite": 0,
             "input": 0.0441,
-            "output": 0.765
+            "output": 0.63
           },
           "id": "~deepseek/deepseek-flash-latest",
           "input": [
@@ -108988,10 +109109,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.008232,
+            "cacheRead": 0.007938,
             "cacheWrite": 0,
-            "input": 0.25872,
-            "output": 0.77616
+            "input": 0.24948,
+            "output": 0.74844
           },
           "id": "~deepseek/deepseek-pro-latest",
           "input": [
@@ -109970,18 +110091,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 1048575,
           "cost": {
-            "cacheRead": 0.05,
+            "cacheRead": 0.0182,
             "cacheWrite": 0,
-            "input": 0.05,
-            "output": 1.28
+            "input": 0.091,
+            "output": 0.182
           },
           "id": "deepseek/deepseek-v4-flash",
           "input": [
             "text"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 943717,
           "name": "DeepSeek V4 Flash",
           "reasoning": true
         },
@@ -110063,7 +110184,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 393216,
+          "maxTokens": 943718,
           "name": "DeepSeek V4.1 Flash",
           "reasoning": true
         },
@@ -110363,6 +110484,24 @@
           ],
           "maxTokens": 65536,
           "name": "Gemini 3.8 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 0.375,
+            "input": 4,
+            "output": 20
+          },
+          "id": "google/gemini-4-argon",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 65536,
+          "name": "Gemini 4 Argon",
           "reasoning": true
         },
         {
@@ -113066,7 +113205,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 262144,
+          "contextWindow": 256000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
@@ -113078,7 +113217,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 32768,
+          "maxTokens": 16384,
           "name": "Qwen3.5 35B-A3B",
           "reasoning": true
         },
@@ -113653,10 +113792,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.033,
+            "cacheRead": 0.020625,
             "cacheWrite": 0,
-            "input": 0.132,
-            "output": 0.528
+            "input": 0.0825,
+            "output": 0.33
           },
           "id": "tencent/hy3",
           "input": [
@@ -113685,10 +113824,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.041,
+            "cacheRead": 0.0378,
             "cacheWrite": 0,
-            "input": 0.83,
-            "output": 2.501
+            "input": 0.7506,
+            "output": 2.2509
           },
           "id": "tencent/hy4-preview",
           "input": [
@@ -115427,6 +115566,12 @@
         },
         {
           "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0.06,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 0.9
+          },
           "id": "inclusionai/ling-3.1-flash",
           "input": [
             "text"
@@ -124361,5 +124506,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "eb5ed1642b09ee513143790f503b5b731771b097"
+  "sourceCommit": "67929a89be0693d364be5f1fbe799f0ea37816fe"
 }
