@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791939712480,
+  "generatedAt": 1791952649123,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5908,11 +5908,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.0054,
+        "cacheRead": 0.008,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0396,
-        "output": 0.891,
+        "input": 0.0093,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5929,10 +5929,10 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.23,
+        "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.225,
+        "input": 0.18,
         "output": 8,
         "source": "modelsDev",
         "status": "known",
@@ -6018,11 +6018,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.3,
+        "cacheRead": 0.32,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.72,
-        "output": 24,
+        "input": 0.7,
+        "output": 15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6221,10 +6221,10 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.0521,
+        "cacheRead": 0.0586,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.056,
+        "input": 0.063,
         "output": 4.4,
         "source": "modelsDev",
         "status": "known",
@@ -7328,7 +7328,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 943718,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -10425,7 +10425,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 65536,
+      "maxTokens": 117964,
       "name": "GPT OSS 120B",
       "pricing": {
         "cacheRead": 0.03,
@@ -11520,7 +11520,7 @@
     {
       "id": "qwen/qwen3.8-2.4t-a95b",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1000000,
       "input": [
         "text"
       ],
@@ -12765,12 +12765,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 943717,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -27643,13 +27643,13 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.039599999999999996,
+      "input": 0.00837,
       "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.22999999999999998,
-      "input": 0.22499999999999998,
+      "cacheRead": 0.18,
+      "input": 0.18,
       "output": 8,
       "source": "openRouter"
     },
@@ -27695,9 +27695,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.3,
-      "input": 0.72,
-      "output": 24,
+      "cacheRead": 0.32,
+      "input": 0.7,
+      "output": 15,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -27858,8 +27858,8 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0521,
-      "input": 0.056,
+      "cacheRead": 0.0586,
+      "input": 0.063,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -28504,9 +28504,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0054,
+      "input": 0.00837,
+      "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -29300,9 +29300,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.73,
-      "output": 10,
+      "cacheRead": 0.32,
+      "input": 0.7,
+      "output": 15,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -30665,9 +30665,8 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.037,
+      "output": 0.16999999999999998,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -31782,15 +31781,15 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.07,
+      "cacheRead": 0.059,
+      "input": 0.079,
       "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.0108,
-      "input": 0.036,
-      "output": 0.8999999999999999,
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -35645,7 +35644,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "f122878c82ad2ff43630954d84609ddc007a7cae",
+  "sourceCommit": "2e084ea7cb6232dfb893cf02b9b4ee2df10d1394",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -57146,13 +57145,13 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.039599999999999996,
+      "input": 0.00837,
       "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.22999999999999998,
-      "input": 0.22499999999999998,
+      "cacheRead": 0.18,
+      "input": 0.18,
       "output": 8,
       "source": "openRouter"
     },
@@ -57198,9 +57197,9 @@
       ]
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.3,
-      "input": 0.72,
-      "output": 24,
+      "cacheRead": 0.32,
+      "input": 0.7,
+      "output": 15,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -57361,8 +57360,8 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0521,
-      "input": 0.056,
+      "cacheRead": 0.0586,
+      "input": 0.063,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -58007,9 +58006,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0054,
+      "input": 0.00837,
+      "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -58803,9 +58802,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.55,
-      "input": 0.73,
-      "output": 10,
+      "cacheRead": 0.32,
+      "input": 0.7,
+      "output": 15,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -60168,9 +60167,8 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.037,
+      "output": 0.16999999999999998,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -61285,15 +61283,15 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.07,
+      "cacheRead": 0.059,
+      "input": 0.079,
       "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.0108,
-      "input": 0.036,
-      "output": 0.8999999999999999,
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
