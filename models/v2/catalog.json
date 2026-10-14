@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1791967231995,
+  "generatedAt": 1791981784372,
   "models": [
     {
       "id": "claude-fable-5",
@@ -1371,22 +1371,6 @@
       "reasoning": true
     },
     {
-      "id": "gemma-4-31b",
-      "provider": "cerebras",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 40960,
-      "name": "Gemma 4 31B",
-      "pricing": {
-        "source": "cerebras",
-        "status": "unavailable"
-      },
-      "reasoning": true
-    },
-    {
       "id": "gpt-oss-120b",
       "provider": "cerebras",
       "contextWindow": 131072,
@@ -1428,22 +1412,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "zai-glm-4.7",
-      "provider": "cerebras",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 40960,
-      "name": "Z.ai GLM 4.7",
-      "pricing": {
-        "source": "cerebras",
-        "status": "unavailable"
-      },
-      "reasoning": true,
-      "status": "deprecated"
     },
     {
       "id": "deepseek-ai/DeepSeek-V3.2-TEE",
@@ -1508,41 +1476,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "MiniMaxAI/MiniMax-M2.5-TEE",
-      "provider": "chutes",
-      "contextWindow": 196608,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "MiniMaxAI/MiniMax-M2.5-TEE",
-      "pricing": {
-        "source": "chutes",
-        "status": "unavailable"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "chutes no longer lists this model in its public model inventory."
-    },
-    {
-      "id": "moonshotai/Kimi-K2.5-TEE",
-      "provider": "chutes",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 65535,
-      "name": "moonshotai/Kimi-K2.5-TEE",
-      "pricing": {
-        "source": "chutes",
-        "status": "unavailable"
-      },
-      "reasoning": true,
-      "replacedBy": "moonshotai/Kimi-K2.6-TEE",
-      "status": "deprecated"
     },
     {
       "id": "moonshotai/Kimi-K2.6-TEE",
@@ -2553,33 +2486,6 @@
       "reasoning": true
     },
     {
-      "id": "moonshotai/Kimi-K2.5",
-      "provider": "deepinfra",
-      "compat": {
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "Kimi K2.5",
-      "pricing": {
-        "cacheRead": 0.070000002,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.45,
-        "output": 2.25,
-        "source": "deepinfra",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "replacedBy": "moonshotai/Kimi-K2.6",
-      "status": "deprecated"
-    },
-    {
       "id": "moonshotai/Kimi-K2.6",
       "provider": "deepinfra",
       "compat": {
@@ -2603,33 +2509,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "moonshotai/Kimi-K2.7-Code",
-      "provider": "deepinfra",
-      "compat": {
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "Kimi K2.7 Code",
-      "pricing": {
-        "cacheRead": 0.136,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.68,
-        "output": 3.4000000000000004,
-        "source": "deepinfra",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "deepinfra no longer lists this model in its public model inventory."
     },
     {
       "id": "moonshotai/Kimi-K3",
@@ -3106,59 +2985,6 @@
         "unit": "million_tokens"
       },
       "reasoning": false
-    },
-    {
-      "id": "stepfun-ai/Step-3.5-Flash",
-      "provider": "deepinfra",
-      "compat": {
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 262144,
-      "name": "Step 3.5 Flash",
-      "pricing": {
-        "cacheRead": 0.019999999799999998,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.09,
-        "output": 0.3,
-        "source": "deepinfra",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "replacedBy": "stepfun-ai/Step-3.7-Flash",
-      "status": "deprecated"
-    },
-    {
-      "id": "stepfun-ai/Step-3.7-Flash",
-      "provider": "deepinfra",
-      "compat": {
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "Step 3.7 Flash",
-      "pricing": {
-        "cacheRead": 0.03200000000000001,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.16000000000000003,
-        "output": 0.9200000000000002,
-        "source": "deepinfra",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "deepinfra no longer lists this model in its public model inventory."
     },
     {
       "id": "tencent/Hy4-preview",
@@ -3678,28 +3504,6 @@
       "reasoning": true
     },
     {
-      "id": "accounts/fireworks/models/kimi-k2p6",
-      "provider": "fireworks",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "Kimi K2.6",
-      "pricing": {
-        "cacheRead": 0.16,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.95,
-        "output": 4,
-        "source": "manifest",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
       "id": "accounts/fireworks/models/kimi-k3",
       "provider": "fireworks",
       "contextWindow": 1048576,
@@ -3955,33 +3759,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "accounts/fireworks/routers/kimi-k2p6-turbo",
-      "provider": "fireworks",
-      "compat": {
-        "unsupportedToolSchemaKeywords": [
-          "not"
-        ]
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 256000,
-      "name": "Kimi K2.6 Fast",
-      "pricing": {
-        "cacheRead": 0.3,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2,
-        "output": 8,
-        "source": "manifest",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
     },
     {
       "id": "accounts/fireworks/routers/kimi-k3-fast",
@@ -5589,34 +5366,6 @@
       }
     },
     {
-      "id": "groq/compound",
-      "provider": "groq",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "Compound",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "groq/compound-mini",
-      "provider": "groq",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "Compound Mini",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": false
-    },
-    {
       "id": "llama-3.1-8b-instant",
       "provider": "groq",
       "contextWindow": 131072,
@@ -5624,7 +5373,7 @@
         "text"
       ],
       "maxTokens": 131072,
-      "name": "Llama 3.1 8B Instant",
+      "name": "Llama 3.1 8B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -5635,9 +5384,7 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false,
-      "replacedBy": "openai/gpt-oss-20b",
-      "status": "deprecated"
+      "reasoning": false
     },
     {
       "id": "llama-3.3-70b-versatile",
@@ -5647,7 +5394,7 @@
         "text"
       ],
       "maxTokens": 32768,
-      "name": "Llama 3.3 70B Versatile",
+      "name": "Llama 3.3 70B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -5658,9 +5405,7 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false,
-      "replacedBy": "openai/gpt-oss-120b",
-      "status": "deprecated"
+      "reasoning": false
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -5954,7 +5699,7 @@
         "cacheRead": 0.0054,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0261,
+        "input": 0.02016,
         "output": 0.891,
         "source": "modelsDev",
         "status": "known",
@@ -6246,7 +5991,7 @@
         "cacheRead": 0.0108,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0315,
+        "input": 0.036,
         "output": 0.9,
         "source": "modelsDev",
         "status": "known",
@@ -6264,10 +6009,10 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.0586,
+        "cacheRead": 0.0536,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.063,
+        "input": 0.0576,
         "output": 4.4,
         "source": "modelsDev",
         "status": "known",
@@ -7846,11 +7591,11 @@
       "maxTokens": 117964,
       "name": "Gemma 3 27B IT",
       "pricing": {
-        "cacheRead": 0.04,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.07,
-        "output": 0.275,
+        "input": 0.08,
+        "output": 0.16,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13931,32 +13676,6 @@
       "reasoning": true
     },
     {
-      "id": "deepseek/deepseek-v4-flash",
-      "provider": "novita",
-      "compat": {
-        "codeMode": "capable"
-      },
-      "contextWindow": 1048576,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 393216,
-      "name": "DeepSeek V4 Flash",
-      "pricing": {
-        "cacheRead": 0.028,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.14,
-        "output": 0.28,
-        "source": "liteLLM",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "novita no longer lists this model in its public model inventory."
-    },
-    {
       "id": "deepseek/deepseek-v4-flash-0731",
       "provider": "novita",
       "contextWindow": 1048576,
@@ -15428,33 +15147,6 @@
       "reasoning": true
     },
     {
-      "id": "deepseek-ai/deepseek-v4-pro",
-      "provider": "nvidia",
-      "compat": {
-        "codeMode": "capable",
-        "requiresStringContent": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16384,
-      "name": "DeepSeek V4 Pro",
-      "pricing": {
-        "cacheRead": 0.003625,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.435,
-        "output": 0.87,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "nvidia no longer lists this model in its public model inventory."
-    },
-    {
       "id": "deepseek-ai/deepseek-v4.1-flash",
       "provider": "nvidia",
       "contextWindow": 1000000,
@@ -15575,46 +15267,6 @@
       "reasoning": true
     },
     {
-      "id": "minimaxai/minimax-m2.7",
-      "provider": "nvidia",
-      "compat": {
-        "requiresStringContent": true
-      },
-      "contextWindow": 204800,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 16384,
-      "name": "Minimax M2.7",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "replacedBy": "minimaxai/minimax-m3",
-      "status": "deprecated",
-      "statusReason": "Still available by exact reference; use minimaxai/minimax-m3 for new NVIDIA setups."
-    },
-    {
-      "id": "minimaxai/minimax-m3",
-      "provider": "nvidia",
-      "compat": {
-        "requiresStringContent": true
-      },
-      "contextWindow": 196608,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 8192,
-      "name": "Minimax M3",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "nvidia no longer lists this model in its public model inventory."
-    },
-    {
       "id": "mistralai/mistral-7b-instruct-v0.3",
       "provider": "nvidia",
       "contextWindow": 65536,
@@ -15627,27 +15279,6 @@
         "status": "unknown"
       },
       "reasoning": false
-    },
-    {
-      "id": "moonshotai/kimi-k2.5",
-      "provider": "nvidia",
-      "compat": {
-        "requiresStringContent": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Kimi K2.5",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "replacedBy": "moonshotai/kimi-k2.6",
-      "status": "deprecated",
-      "statusReason": "Still available by exact reference; use moonshotai/kimi-k2.6 for new NVIDIA setups."
     },
     {
       "id": "moonshotai/kimi-k2.6",
@@ -15850,66 +15481,6 @@
       "reasoning": true
     },
     {
-      "id": "qwen/qwen3.5-397b-a17b",
-      "provider": "nvidia",
-      "compat": {
-        "requiresStringContent": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Qwen3.5 397B A17B",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "NVIDIA retired this model and no longer lists it in its model catalog."
-    },
-    {
-      "id": "z-ai/glm-5.1",
-      "provider": "nvidia",
-      "compat": {
-        "codeMode": "capable",
-        "requiresStringContent": true
-      },
-      "contextWindow": 202752,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "GLM 5.1",
-      "pricing": {
-        "status": "unknown"
-      },
-      "replacedBy": "z-ai/glm-5.2",
-      "status": "deprecated",
-      "statusReason": "Still available by exact reference; use z-ai/glm-5.2 for new NVIDIA setups."
-    },
-    {
-      "id": "z-ai/glm-5.2",
-      "provider": "nvidia",
-      "compat": {
-        "codeMode": "capable",
-        "requiresStringContent": true
-      },
-      "contextWindow": 202752,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "GLM 5.2",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "nvidia no longer lists this model in its public model inventory."
-    },
-    {
       "id": "z-ai/glm-5.3",
       "provider": "nvidia",
       "contextWindow": 1000000,
@@ -15940,37 +15511,13 @@
       "reasoning": true
     },
     {
-      "id": "z-ai/glm5",
-      "provider": "nvidia",
-      "compat": {
-        "requiresStringContent": true
-      },
-      "contextWindow": 202752,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "GLM-5",
-      "pricing": {
-        "status": "unknown"
-      },
-      "replacedBy": "z-ai/glm-5.2",
-      "status": "deprecated",
-      "statusReason": "Still available by exact reference; use z-ai/glm-5.2 for new NVIDIA setups."
-    },
-    {
       "id": "deepseek-v4-flash",
       "provider": "ollama-cloud",
-      "compat": {
-        "codeMode": "capable",
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
       "contextWindow": 1048576,
       "input": [
         "text"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 1048576,
       "name": "deepseek-v4-flash",
       "pricing": {
         "status": "unknown"
@@ -15980,33 +15527,12 @@
     {
       "id": "deepseek-v4-flash:0731",
       "provider": "ollama-cloud",
-      "compat": {
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
       "contextWindow": 1048576,
       "input": [
         "text"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 1048576,
       "name": "DeepSeek V4 Flash 0731",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "deepseek-v4-flash:preview",
-      "provider": "ollama-cloud",
-      "compat": {
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 1048576,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
       "pricing": {
         "status": "unknown"
       },
@@ -16044,23 +15570,6 @@
       ],
       "maxTokens": 8192,
       "name": "DeepSeek V4 Pro 0813",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "deepseek-v4-pro:preview",
-      "provider": "ollama-cloud",
-      "compat": {
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 524288,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
       "pricing": {
         "status": "unknown"
       },
@@ -16121,16 +15630,11 @@
     {
       "id": "glm-5.1",
       "provider": "ollama-cloud",
-      "compat": {
-        "codeMode": "capable",
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
       "contextWindow": 202752,
       "input": [
         "text"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 131072,
       "name": "glm-5.1",
       "pricing": {
         "status": "unknown"
@@ -16225,22 +15729,17 @@
     {
       "id": "kimi-k2.5",
       "provider": "ollama-cloud",
-      "compat": {
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
       "contextWindow": 262144,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 262144,
       "name": "kimi-k2.5",
       "pricing": {
         "status": "unknown"
       },
-      "reasoning": true,
-      "status": "deprecated"
+      "reasoning": true
     },
     {
       "id": "kimi-k2.6",
@@ -16446,36 +15945,14 @@
       "reasoning": true
     },
     {
-      "id": "qwen3.5",
-      "provider": "ollama-cloud",
-      "compat": {
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 8192,
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "qwen3.5:397b",
       "provider": "ollama-cloud",
-      "compat": {
-        "supportsTools": true,
-        "supportsUsageInStreaming": true
-      },
       "contextWindow": 262144,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 8192,
+      "maxTokens": 65536,
       "name": "qwen3.5:397b",
       "pricing": {
         "status": "unknown"
@@ -17810,44 +17287,6 @@
       "reasoning": true
     },
     {
-      "id": "gpt-5-nano",
-      "provider": "opencode",
-      "api": "openai-responses",
-      "compat": {
-        "maxTokensField": "max_tokens",
-        "supportedReasoningEfforts": [
-          "minimal",
-          "low",
-          "medium",
-          "high"
-        ],
-        "supportsReasoningEffort": true,
-        "supportsUsageInStreaming": true
-      },
-      "contextTokens": 272000,
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "name": "GPT-5 Nano",
-      "pricing": {
-        "cacheRead": 0.005,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.05,
-        "output": 0.4,
-        "source": "openCode",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "thinkingLevelMap": {
-        "off": null
-      }
-    },
-    {
       "id": "gpt-5.6-sol",
       "provider": "opencode",
       "api": "openai-responses",
@@ -18952,22 +18391,6 @@
       "reasoning": true
     },
     {
-      "id": "qwen3-coder-next",
-      "provider": "qwen-token-plan",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "qwen3-coder-next",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "replacedBy": "qwen3.7-plus",
-      "status": "deprecated"
-    },
-    {
       "id": "qwen3.6-flash",
       "provider": "qwen-token-plan",
       "contextWindow": 1000000,
@@ -19617,30 +19040,6 @@
       "reasoning": true
     },
     {
-      "id": "deepseek-ai/DeepSeek-V4-Pro",
-      "provider": "together",
-      "compat": {
-        "codeMode": "capable"
-      },
-      "contextWindow": 512000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 384000,
-      "name": "DeepSeek V4 Pro",
-      "pricing": {
-        "cacheRead": 0.2,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.74,
-        "output": 3.48,
-        "source": "manifest",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
       "provider": "together",
       "contextWindow": 1048576,
@@ -19742,28 +19141,6 @@
         "input": 0.3,
         "output": 1.2,
         "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "moonshotai/Kimi-K2.6",
-      "provider": "together",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 32768,
-      "name": "Kimi K2.6 FP4",
-      "pricing": {
-        "cacheRead": 0.2,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.2,
-        "output": 4.5,
-        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -25492,10 +24869,22 @@
       "output": 2,
       "source": "deepinfra"
     },
+    "deepinfra/moonshotai/Kimi-K2.5": {
+      "cacheRead": 0.070000002,
+      "input": 0.45,
+      "output": 2.25,
+      "source": "deepinfra"
+    },
     "deepinfra/moonshotai/Kimi-K2.5-Turbo": {
       "cacheRead": 0.10000000199999999,
       "input": 0.6,
       "output": 2.9999999999999996,
+      "source": "deepinfra"
+    },
+    "deepinfra/moonshotai/Kimi-K2.7-Code": {
+      "cacheRead": 0.136,
+      "input": 0.68,
+      "output": 3.4000000000000004,
       "source": "deepinfra"
     },
     "deepinfra/NousResearch/Hermes-3-Llama-3.1-405B": {
@@ -25756,6 +25145,18 @@
     "deepinfra/Sao10K/L3.3-70B-Euryale-v2.3": {
       "input": 0.8500000000000001,
       "output": 0.8500000000000001,
+      "source": "deepinfra"
+    },
+    "deepinfra/stepfun-ai/Step-3.5-Flash": {
+      "cacheRead": 0.019999999799999998,
+      "input": 0.09,
+      "output": 0.3,
+      "source": "deepinfra"
+    },
+    "deepinfra/stepfun-ai/Step-3.7-Flash": {
+      "cacheRead": 0.03200000000000001,
+      "input": 0.16000000000000003,
+      "output": 0.9200000000000002,
       "source": "deepinfra"
     },
     "deepinfra/tencent/Hy3": {
@@ -26995,6 +26396,12 @@
       "output": 8.5,
       "source": "openCode"
     },
+    "opencode/gpt-5-nano": {
+      "cacheRead": 0.005,
+      "input": 0.05,
+      "output": 0.4,
+      "source": "openCode"
+    },
     "opencode/gpt-5.1": {
       "cacheRead": 0.107,
       "input": 1.07,
@@ -27686,14 +27093,14 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.026099999999999998,
+      "input": 0.02016,
       "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.22999999999999998,
-      "input": 0.22499999999999998,
-      "output": 8,
+      "cacheRead": 0.00714,
+      "input": 0.2244,
+      "output": 0.6732,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -27896,13 +27303,13 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.0108,
-      "input": 0.035100000000000006,
+      "input": 0.036,
       "output": 0.8999999999999999,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0586,
-      "input": 0.063,
+      "cacheRead": 0.053599999999999995,
+      "input": 0.0576,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -28541,14 +27948,14 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004,
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "cacheRead": 0.0054,
-      "input": 0.026099999999999998,
+      "input": 0.02016,
       "output": 0.891,
       "source": "openRouter"
     },
@@ -31831,7 +31238,7 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.0108,
-      "input": 0.035100000000000006,
+      "input": 0.036,
       "output": 0.8999999999999999,
       "source": "openRouter"
     },
@@ -35345,7 +34752,7 @@
     },
     "cerebras": {
       "api": "openai-completions",
-      "defaultModel": "gemma-4-31b",
+      "defaultModel": "gpt-oss-120b",
       "recommendedModels": [
         "qwen-3.8-27b"
       ]
@@ -35609,12 +35016,12 @@
     },
     "together": {
       "api": "openai-completions",
-      "defaultModel": "moonshotai/Kimi-K2.6",
+      "defaultModel": "zai-org/GLM-5.2",
       "recommendedModels": [
         "moonshotai/Kimi-K3",
         "deepseek-ai/DeepSeek-V4.1-Flash",
         "zai-org/GLM-5.3",
-        "deepseek-ai/DeepSeek-V4-Pro",
+        "deepseek-ai/DeepSeek-V4-Pro-0813",
         "zai-org/GLM-5.3-Flash",
         "MiniMaxAI/MiniMax-M3",
         "nvidia/nemotron-3-ultra-550b-a55b"
@@ -35690,7 +35097,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "dc87e61f9271e124abd7dcec11968a6d216619eb",
+  "sourceCommit": "a0436bfd284102ce43aee317a9ecf5276add7cf8",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -44515,7 +43922,6 @@
     "cerebras/gemma-4-31b": {
       "input": 0.9900000000000001,
       "output": 1.49,
-      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "cerebras/gpt-oss-120b": {
@@ -45883,7 +45289,6 @@
       "cacheRead": 0.07,
       "input": 0.44999999999999996,
       "output": 2.25,
-      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/moonshotai/Kimi-K2.6": {
@@ -45897,7 +45302,6 @@
       "cacheRead": 0.136,
       "input": 0.6799999999999999,
       "output": 3.4,
-      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/moonshotai/Kimi-K3": {
@@ -46174,7 +45578,6 @@
       "cacheRead": 0.04,
       "input": 0.19999999999999998,
       "output": 1.15,
-      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/tencent/Hy3": {
@@ -53697,7 +53100,6 @@
       "cacheRead": 0.028,
       "input": 0.14,
       "output": 0.28,
-      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "novita/deepseek/deepseek-v4-flash-0731": {
@@ -54972,7 +54374,6 @@
       "cacheRead": 0.003625,
       "input": 0.435,
       "output": 0.87,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "nvidia/nvidia/nemotron-3-super-120b-a12b": {
@@ -57197,14 +56598,14 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.026099999999999998,
+      "input": 0.02016,
       "output": 0.891,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.22999999999999998,
-      "input": 0.22499999999999998,
-      "output": 8,
+      "cacheRead": 0.00714,
+      "input": 0.2244,
+      "output": 0.6732,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
@@ -57407,13 +56808,13 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.0108,
-      "input": 0.035100000000000006,
+      "input": 0.036,
       "output": 0.8999999999999999,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0586,
-      "input": 0.063,
+      "cacheRead": 0.053599999999999995,
+      "input": 0.0576,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -58052,14 +57453,14 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.044,
-      "input": 1.32,
-      "output": 3.9600000000000004,
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.9800000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "cacheRead": 0.0054,
-      "input": 0.026099999999999998,
+      "input": 0.02016,
       "output": 0.891,
       "source": "openRouter"
     },
@@ -61342,7 +60743,7 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.0108,
-      "input": 0.035100000000000006,
+      "input": 0.036,
       "output": 0.8999999999999999,
       "source": "openRouter"
     },
