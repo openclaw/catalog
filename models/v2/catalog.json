@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792068271151,
+  "generatedAt": 1792082084983,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5729,7 +5729,7 @@
         "cacheRead": 0.0054,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.02376,
+        "input": 0.0216,
         "output": 0.72,
         "source": "modelsDev",
         "status": "known",
@@ -5747,10 +5747,10 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.23,
+        "cacheRead": 0.13,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.225,
+        "input": 0.1307,
         "output": 8,
         "source": "modelsDev",
         "status": "known",
@@ -5836,11 +5836,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.28,
+        "cacheRead": 0.3,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.29,
-        "output": 24,
+        "input": 0.44,
+        "output": 14,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6039,10 +6039,10 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.0586,
+        "cacheRead": 0.0565,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.063,
+        "input": 0.0608,
         "output": 4.4,
         "source": "modelsDev",
         "status": "known",
@@ -6512,29 +6512,6 @@
         "currency": "USD",
         "input": 4,
         "output": 20,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "anthropic/claude-sonnet-4",
-      "provider": "kilocode",
-      "contextWindow": 200000,
-      "input": [
-        "image",
-        "text",
-        "document"
-      ],
-      "maxTokens": 64000,
-      "name": "Anthropic: Claude Sonnet 4 (retires Oct 15)",
-      "pricing": {
-        "cacheRead": 0.3,
-        "cacheWrite": 3.75,
-        "currency": "USD",
-        "input": 3,
-        "output": 15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8715,7 +8692,7 @@
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "provider": "kilocode",
-      "contextWindow": 128000,
+      "contextWindow": 256000,
       "input": [
         "image",
         "text"
@@ -9087,6 +9064,21 @@
       ],
       "maxTokens": 65536,
       "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
       "pricing": {
         "status": "unknown"
       },
@@ -11818,11 +11810,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11860,11 +11852,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.041,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.83,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11929,28 +11921,6 @@
         "status": "unknown"
       },
       "reasoning": true
-    },
-    {
-      "id": "unbiased/pareto-26.10-preview",
-      "provider": "kilocode",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 131072,
-      "name": "Pareto 26.10 Preview (retires Oct 15)",
-      "pricing": {
-        "cacheRead": 0.03,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.8,
-        "output": 3.2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
     },
     {
       "id": "unbiased/pareto-26.9",
@@ -15453,17 +15423,14 @@
       "contextWindow": 1048576,
       "input": [
         "text",
-        "image",
-        "video"
+        "image"
       ],
       "maxTokens": 8192,
       "name": "Nemotron 3.5 Super VL",
       "pricing": {
         "status": "unknown"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "nvidia no longer lists this model in its public model inventory."
+      "reasoning": true
     },
     {
       "id": "nvidia/nemotron-voicechat",
@@ -17463,12 +17430,12 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.003,
+        "cacheRead": 0.0028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
-        "source": "modelsDev",
+        "input": 0.14,
+        "output": 0.28,
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -17610,7 +17577,7 @@
         "currency": "USD",
         "input": 0.95,
         "output": 4,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -25007,6 +24974,12 @@
       "output": 0.16,
       "source": "deepinfra"
     },
+    "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
+      "cacheRead": 0.1,
+      "input": 0.2,
+      "output": 1,
+      "source": "deepinfra"
+    },
     "deepinfra/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL": {
       "input": 0.2,
       "output": 0.6,
@@ -27048,6 +27021,11 @@
       "output": 0,
       "source": "openCode"
     },
+    "opencode/nemotron-3.5-super-vl-free": {
+      "input": 0,
+      "output": 0,
+      "source": "openCode"
+    },
     "opencode/north-mini-code-free": {
       "input": 0,
       "output": 0,
@@ -27167,13 +27145,13 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.02376,
+      "input": 0.0216,
       "output": 0.72,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.202,
+      "cacheRead": 0.13,
+      "input": 0.1307,
       "output": 8,
       "source": "openRouter"
     },
@@ -27199,8 +27177,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.31,
-      "output": 24,
+      "input": 0.44,
+      "output": 14,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -27361,8 +27339,8 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0586,
-      "input": 0.063,
+      "cacheRead": 0.0565,
+      "input": 0.0608,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -27627,34 +27605,6 @@
       "input": 2,
       "output": 10,
       "source": "openRouter"
-    },
-    "openrouter/anthropic/claude-sonnet-4": {
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "input": 3,
-      "output": 15,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.3,
-          "cacheWrite": 3.75,
-          "input": 3,
-          "output": 15,
-          "range": [
-            0,
-            200001
-          ]
-        },
-        {
-          "cacheRead": 0.6,
-          "cacheWrite": 7.5,
-          "input": 6,
-          "output": 22.5,
-          "range": [
-            200001
-          ]
-        }
-      ]
     },
     "openrouter/anthropic/claude-sonnet-4.5": {
       "cacheRead": 0.3,
@@ -27995,9 +27945,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.034916,
+      "input": 0.41899200000000003,
+      "output": 0.8379840000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -28008,7 +27958,7 @@
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "cacheRead": 0.0054,
-      "input": 0.02376,
+      "input": 0.0216,
       "output": 0.72,
       "source": "openRouter"
     },
@@ -28751,8 +28701,8 @@
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
-      "input": 0.075,
-      "output": 0.19999999999999998,
+      "input": 0.09375,
+      "output": 0.25,
       "source": "openRouter"
     },
     "openrouter/mistralai/mixtral-8x22b-instruct": {
@@ -28804,7 +28754,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.28,
       "input": 0.44999999999999996,
-      "output": 15,
+      "output": 16.5,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -28875,6 +28825,12 @@
       "cacheRead": 0.04,
       "input": 0.07,
       "output": 0.19999999999999998,
+      "source": "openRouter"
+    },
+    "openrouter/nvidia/nemotron-3.5-super-vl": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-3.5-turbo": {
@@ -30886,9 +30842,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -30898,9 +30854,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -30930,12 +30886,6 @@
       "cacheRead": 0.09999999999999999,
       "input": 0.44999999999999996,
       "output": 1.2,
-      "source": "openRouter"
-    },
-    "openrouter/unbiased/pareto-26.10-preview": {
-      "cacheRead": 0.03,
-      "input": 0.7999999999999999,
-      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/unbiased/pareto-26.9": {
@@ -31278,14 +31228,14 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.019000000000000003,
-      "input": 0.02,
-      "output": 7,
+      "cacheRead": 0.149,
+      "input": 0.15,
+      "output": 8,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.078,
-      "input": 0.079,
+      "cacheRead": 0.119,
+      "input": 0.12,
       "output": 4.8,
       "source": "openRouter"
     },
@@ -34977,6 +34927,7 @@
       "api": "openai-completions",
       "recommendedModels": [
         "nvidia/nemotron-3-ultra-550b-a55b",
+        "nvidia/nemotron-3.5-super-vl-120b-a12b",
         "z-ai/glm-5.3",
         "deepseek-ai/deepseek-v4.1-flash",
         "z-ai/glm-5.3-flash"
@@ -35149,7 +35100,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "8ffe71cb0b6221ba707c7158d9a80ee424471985",
+  "sourceCommit": "34d3a8e82190678ae08a5c88b3cdafd60b4bd31f",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -50915,6 +50866,209 @@
       "passthroughOnly": true,
       "source": "liteLLM"
     },
+    "inferenceapis/deepseek-ai/DeepSeek-V3": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-ai/DeepSeek-V4-Flash": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-ai/DeepSeek-V4-Flash-0731": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-ai/DeepSeek-V4-Pro": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1.72,
+      "output": 5.1499999999999995,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1.72,
+      "output": 5.1499999999999995,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "cacheRead": 0.01,
+      "input": 0.39999999999999997,
+      "output": 1.5999999999999999,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-chat": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-flash": {
+      "cacheRead": 0.01,
+      "input": 0.39999999999999997,
+      "output": 1.5999999999999999,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-reasoner": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-v3": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-v4-flash": {
+      "cacheRead": 0.04,
+      "input": 0.19,
+      "output": 0.38,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-v4-pro": {
+      "cacheRead": 0.16999999999999998,
+      "input": 1.72,
+      "output": 5.1499999999999995,
+      "source": "liteLLM"
+    },
+    "inferenceapis/deepseek-v4.1-flash": {
+      "cacheRead": 0.01,
+      "input": 0.39999999999999997,
+      "output": 1.5999999999999999,
+      "source": "liteLLM"
+    },
+    "inferenceapis/glm-5.3": {
+      "cacheRead": 0.33999999999999997,
+      "input": 1.8199999999999998,
+      "output": 5.720000000000001,
+      "source": "liteLLM"
+    },
+    "inferenceapis/glm-5.3-flash": {
+      "cacheRead": 0.04,
+      "input": 0.19999999999999998,
+      "output": 0.66,
+      "source": "liteLLM"
+    },
+    "inferenceapis/gpt-oss-120b": {
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999,
+      "source": "liteLLM"
+    },
+    "inferenceapis/gpt-oss-20b": {
+      "input": 0.04,
+      "output": 0.19,
+      "source": "liteLLM"
+    },
+    "inferenceapis/kimi-k2.7-code": {
+      "cacheRead": 0.18,
+      "input": 0.8899999999999999,
+      "output": 4.42,
+      "source": "liteLLM"
+    },
+    "inferenceapis/llama-3.1-8b-instant": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/llama-3.3-70b": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/llama-3.3-70b-instruct": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/llama-3.3-70b-versatile": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/meta-llama/Llama-3.3-70B-Instruct": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/minimax-m3": {
+      "cacheRead": 0.08,
+      "input": 0.39,
+      "output": 1.56,
+      "source": "liteLLM"
+    },
+    "inferenceapis/MiniMaxAI/MiniMax-M3": {
+      "cacheRead": 0.08,
+      "input": 0.39,
+      "output": 1.56,
+      "source": "liteLLM"
+    },
+    "inferenceapis/moonshotai/Kimi-K2.7-Code": {
+      "cacheRead": 0.18,
+      "input": 0.8899999999999999,
+      "output": 4.42,
+      "source": "liteLLM"
+    },
+    "inferenceapis/openai/gpt-oss-120b": {
+      "input": 0.19999999999999998,
+      "output": 0.7999999999999999,
+      "source": "liteLLM"
+    },
+    "inferenceapis/openai/gpt-oss-20b": {
+      "input": 0.04,
+      "output": 0.19,
+      "source": "liteLLM"
+    },
+    "inferenceapis/Qwen/Qwen3-VL-235B-A22B-Instruct": {
+      "input": 0.26,
+      "output": 1.15,
+      "source": "liteLLM"
+    },
+    "inferenceapis/Qwen/Qwen3.8-Flash": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/qwen3-vl": {
+      "input": 0.26,
+      "output": 1.15,
+      "source": "liteLLM"
+    },
+    "inferenceapis/qwen3-vl-235b": {
+      "input": 0.26,
+      "output": 1.15,
+      "source": "liteLLM"
+    },
+    "inferenceapis/qwen3.8-flash": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.5,
+      "source": "liteLLM"
+    },
+    "inferenceapis/zai-org/GLM-5.3": {
+      "cacheRead": 0.33999999999999997,
+      "input": 1.8199999999999998,
+      "output": 5.720000000000001,
+      "source": "liteLLM"
+    },
+    "inferenceapis/zai-org/GLM-5.3-Flash": {
+      "cacheRead": 0.04,
+      "input": 0.19999999999999998,
+      "output": 0.66,
+      "source": "liteLLM"
+    },
     "jina_ai/jina-reranker-v2-base-multilingual": {
       "input": 0.049999999999999996,
       "output": 0,
@@ -56206,19 +56360,6 @@
         }
       ]
     },
-    "opencode-go/deepseek-v4-flash": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "opencode-go/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
-      "source": "modelsDev"
-    },
     "opencode-go/deepseek-v4-pro": {
       "cacheRead": 0.022,
       "input": 0.66,
@@ -56313,60 +56454,6 @@
         }
       ]
     },
-    "opencode-go/grok-4.5": {
-      "cacheRead": 0.3,
-      "input": 2,
-      "output": 6,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.3,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 0.6,
-          "cacheWrite": 0,
-          "input": 4,
-          "output": 12,
-          "range": [
-            200000
-          ]
-        }
-      ]
-    },
-    "opencode-go/grok-4.6": {
-      "cacheRead": 0.5,
-      "input": 2,
-      "output": 6,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.5,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 6,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 1,
-          "cacheWrite": 0,
-          "input": 4,
-          "output": 12,
-          "range": [
-            200000
-          ]
-        }
-      ]
-    },
     "opencode-go/grok-4.7": {
       "cacheRead": 0.5,
       "input": 2,
@@ -56404,13 +56491,6 @@
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501,
-      "source": "modelsDev"
-    },
-    "opencode-go/kimi-k2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "opencode-go/kimi-k2.7-code": {
@@ -56500,41 +56580,6 @@
       "cacheRead": 0.002,
       "input": 0.1,
       "output": 0.2,
-      "source": "modelsDev"
-    },
-    "opencode-go/qwen3.6-plus": {
-      "cacheRead": 0.05,
-      "cacheWrite": 0.625,
-      "input": 0.5,
-      "output": 3,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.05,
-          "cacheWrite": 0.625,
-          "input": 0.5,
-          "output": 3,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 6,
-          "range": [
-            256000
-          ]
-        }
-      ]
-    },
-    "opencode-go/qwen3.7-max": {
-      "cacheRead": 0.5,
-      "cacheWrite": 3.125,
-      "input": 2.5,
-      "output": 7.5,
       "source": "modelsDev"
     },
     "opencode-go/qwen3.7-plus": {
@@ -56637,13 +56682,13 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.0054,
-      "input": 0.02376,
+      "input": 0.0216,
       "output": 0.72,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19999999999999998,
-      "input": 0.202,
+      "cacheRead": 0.13,
+      "input": 0.1307,
       "output": 8,
       "source": "openRouter"
     },
@@ -56669,8 +56714,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.3,
-      "input": 0.31,
-      "output": 24,
+      "input": 0.44,
+      "output": 14,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -56831,8 +56876,8 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0586,
-      "input": 0.063,
+      "cacheRead": 0.0565,
+      "input": 0.0608,
       "output": 4.4,
       "source": "openRouter"
     },
@@ -57097,34 +57142,6 @@
       "input": 2,
       "output": 10,
       "source": "openRouter"
-    },
-    "openrouter/anthropic/claude-sonnet-4": {
-      "cacheRead": 0.3,
-      "cacheWrite": 3.75,
-      "input": 3,
-      "output": 15,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.3,
-          "cacheWrite": 3.75,
-          "input": 3,
-          "output": 15,
-          "range": [
-            0,
-            200001
-          ]
-        },
-        {
-          "cacheRead": 0.6,
-          "cacheWrite": 7.5,
-          "input": 6,
-          "output": 22.5,
-          "range": [
-            200001
-          ]
-        }
-      ]
     },
     "openrouter/anthropic/claude-sonnet-4.5": {
       "cacheRead": 0.3,
@@ -57465,9 +57482,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.034916,
+      "input": 0.41899200000000003,
+      "output": 0.8379840000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -57478,7 +57495,7 @@
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "cacheRead": 0.0054,
-      "input": 0.02376,
+      "input": 0.0216,
       "output": 0.72,
       "source": "openRouter"
     },
@@ -58221,8 +58238,8 @@
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
-      "input": 0.075,
-      "output": 0.19999999999999998,
+      "input": 0.09375,
+      "output": 0.25,
       "source": "openRouter"
     },
     "openrouter/mistralai/mixtral-8x22b-instruct": {
@@ -58274,7 +58291,7 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.28,
       "input": 0.44999999999999996,
-      "output": 15,
+      "output": 16.5,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
@@ -58345,6 +58362,12 @@
       "cacheRead": 0.04,
       "input": 0.07,
       "output": 0.19999999999999998,
+      "source": "openRouter"
+    },
+    "openrouter/nvidia/nemotron-3.5-super-vl": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-3.5-turbo": {
@@ -60356,9 +60379,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -60368,9 +60391,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -60400,12 +60423,6 @@
       "cacheRead": 0.09999999999999999,
       "input": 0.44999999999999996,
       "output": 1.2,
-      "source": "openRouter"
-    },
-    "openrouter/unbiased/pareto-26.10-preview": {
-      "cacheRead": 0.03,
-      "input": 0.7999999999999999,
-      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/unbiased/pareto-26.9": {
@@ -60748,14 +60765,14 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2": {
-      "cacheRead": 0.019000000000000003,
-      "input": 0.02,
-      "output": 7,
+      "cacheRead": 0.149,
+      "input": 0.15,
+      "output": 8,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.078,
-      "input": 0.079,
+      "cacheRead": 0.119,
+      "input": 0.12,
       "output": 4.8,
       "source": "openRouter"
     },
@@ -62805,8 +62822,8 @@
     },
     "sail/deepseek-ai/DeepSeek-V4.1-Flash": {
       "cacheRead": 0.006,
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.09,
+      "output": 0.3,
       "source": "liteLLM"
     },
     "sail/google/gemma-4-12B-it": {
@@ -63689,6 +63706,12 @@
       "cacheRead": 0.19999999999999998,
       "input": 0.6,
       "output": 3.5999999999999996,
+      "source": "liteLLM"
+    },
+    "together_ai/nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.5,
       "source": "liteLLM"
     },
     "together_ai/nvidia/NVIDIA-Nemotron-Nano-9B-v2": {
