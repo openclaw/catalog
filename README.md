@@ -61,7 +61,7 @@ Repository Actions secrets:
   Scripts edit and zone read access; custom-domain setup also needs the existing
   authorized domain/DNS access. Never commit either value.
 
-Local validation needs Node and Wrangler 4.131.1:
+CI uses Node.js 24.22.0. Local validation needs Node and Wrangler 4.151.0:
 
 ```sh
 node --test scripts/hosting.test.mjs
