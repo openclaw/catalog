@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792198880966,
+  "generatedAt": 1792211651895,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5770,11 +5770,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.0016,
+        "cacheRead": 0.009,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.032,
-        "output": 0.144,
+        "input": 0.04,
+        "output": 0.7,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5805,18 +5805,18 @@
     {
       "id": "~deepseek/deepseek-v4-flash-latest",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.001523,
+        "cacheRead": 0.0056,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.01208,
-        "output": 0.143616,
+        "input": 0.021,
+        "output": 0.528,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6059,14 +6059,14 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0125,
+        "cacheRead": 0.02,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0247,
-        "output": 0.6836,
+        "input": 0.055,
+        "output": 0.65,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6080,14 +6080,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.0565,
+        "cacheRead": 0.078,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0608,
-        "output": 4.4,
+        "input": 0.079,
+        "output": 4.8,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7014,18 +7014,18 @@
     {
       "id": "deepseek/deepseek-v3.2",
       "provider": "kilocode",
-      "contextWindow": 163840,
+      "contextWindow": 131072,
       "input": [
         "text"
       ],
-      "maxTokens": 147456,
+      "maxTokens": 65536,
       "name": "DeepSeek V3.2",
       "pricing": {
-        "cacheRead": 0.14,
+        "cacheRead": 0.028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.259,
-        "output": 0.8,
+        "input": 0.28,
+        "output": 0.42,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7193,6 +7193,28 @@
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "pricing": {
         "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "elorian/glimpse",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Elorian: Glimpse",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 3,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -12529,18 +12551,18 @@
     {
       "id": "z-ai/glm-4.7",
       "provider": "kilocode",
-      "contextWindow": 202752,
+      "contextWindow": 204800,
       "input": [
         "text"
       ],
       "maxTokens": 131072,
       "name": "GLM-4.7",
       "pricing": {
-        "cacheRead": 0.11,
+        "cacheRead": 0.099,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.6,
-        "output": 2.2,
+        "input": 0.54,
+        "output": 1.98,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12676,12 +12698,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943717,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -27424,9 +27446,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.0016,
-      "input": 0.032,
-      "output": 0.144,
+      "cacheRead": 0.009,
+      "input": 0.04,
+      "output": 0.7,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -27436,9 +27458,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.001523,
-      "input": 0.01208,
-      "output": 0.143616,
+      "cacheRead": 0.0056,
+      "input": 0.020999999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -27613,15 +27635,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.012499999999999999,
-      "input": 0.0247,
-      "output": 0.6836,
+      "cacheRead": 0.02,
+      "input": 0.055,
+      "output": 0.65,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0565,
-      "input": 0.0608,
-      "output": 4.4,
+      "cacheRead": 0.078,
+      "input": 0.079,
+      "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -28196,9 +28218,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.14,
-      "input": 0.25899999999999995,
-      "output": 0.7999999999999999,
+      "cacheRead": 0.028,
+      "input": 0.28,
+      "output": 0.42,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.2-exp": {
@@ -28213,9 +28235,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0199,
-      "input": 0.0199,
-      "output": 1.28,
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -28225,9 +28247,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.018009,
-      "input": 0.216108,
-      "output": 0.432216,
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -28237,15 +28259,21 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.0016,
-      "input": 0.032,
-      "output": 0.144,
+      "cacheRead": 0.009,
+      "input": 0.04,
+      "output": 0.7,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.004,
       "input": 0.049999999999999996,
       "output": 0.15,
+      "source": "openRouter"
+    },
+    "openrouter/elorian/glimpse": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 3,
       "source": "openRouter"
     },
     "openrouter/fireworks/ember-1": {
@@ -31505,9 +31533,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.7": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2,
+      "cacheRead": 0.099,
+      "input": 0.54,
+      "output": 1.9800000000000002,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.7-flash": {
@@ -31546,9 +31574,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.012499999999999999,
-      "input": 0.0247,
-      "output": 0.6836,
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -35398,7 +35426,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "2354224e994429dbb63cd5c09fc96e245aec1488",
+  "sourceCommit": "737a0ac25447438a039295a6200ced99d6bc4a6d",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -52612,6 +52640,26 @@
       "output": 1.9,
       "source": "liteLLM"
     },
+    "nace/drex-latest": {
+      "input": 0.06,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "nace/drex-v1.0": {
+      "input": 0.04,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "nace/drex-v1.5": {
+      "input": 0.049999999999999996,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "nace/drex-v2.0": {
+      "input": 0.06,
+      "output": 0,
+      "source": "liteLLM"
+    },
     "nebius/BAAI/bge-en-icl": {
       "input": 0.01,
       "output": 0,
@@ -57080,9 +57128,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.0016,
-      "input": 0.032,
-      "output": 0.144,
+      "cacheRead": 0.009,
+      "input": 0.04,
+      "output": 0.7,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -57092,9 +57140,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.001523,
-      "input": 0.01208,
-      "output": 0.143616,
+      "cacheRead": 0.0056,
+      "input": 0.020999999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -57269,15 +57317,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.012499999999999999,
-      "input": 0.0247,
-      "output": 0.6836,
+      "cacheRead": 0.02,
+      "input": 0.055,
+      "output": 0.65,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.0565,
-      "input": 0.0608,
-      "output": 4.4,
+      "cacheRead": 0.078,
+      "input": 0.079,
+      "output": 4.8,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -57852,9 +57900,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.2": {
-      "cacheRead": 0.14,
-      "input": 0.25899999999999995,
-      "output": 0.7999999999999999,
+      "cacheRead": 0.028,
+      "input": 0.28,
+      "output": 0.42,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.2-exp": {
@@ -57869,9 +57917,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.0199,
-      "input": 0.0199,
-      "output": 1.28,
+      "cacheRead": 0.014,
+      "input": 0.07,
+      "output": 0.14,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -57881,9 +57929,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.018009,
-      "input": 0.216108,
-      "output": 0.432216,
+      "cacheRead": 0.0174,
+      "input": 0.20879999999999999,
+      "output": 0.41759999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -57893,15 +57941,21 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.0016,
-      "input": 0.032,
-      "output": 0.144,
+      "cacheRead": 0.009,
+      "input": 0.04,
+      "output": 0.7,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.004,
       "input": 0.049999999999999996,
       "output": 0.15,
+      "source": "openRouter"
+    },
+    "openrouter/elorian/glimpse": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 3,
       "source": "openRouter"
     },
     "openrouter/fireworks/ember-1": {
@@ -61161,9 +61215,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.7": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2,
+      "cacheRead": 0.099,
+      "input": 0.54,
+      "output": 1.9800000000000002,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.7-flash": {
@@ -61202,9 +61256,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.012499999999999999,
-      "input": 0.0247,
-      "output": 0.6836,
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
