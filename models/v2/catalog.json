@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792298055702,
+  "generatedAt": 1792312559802,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5880,7 +5880,7 @@
         "cacheRead": 0.001523,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.01592,
+        "input": 0.00688,
         "output": 0.143616,
         "source": "modelsDev",
         "status": "known",
@@ -27647,7 +27647,7 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.001523,
-      "input": 0.01592,
+      "input": 0.00688,
       "output": 0.143616,
       "source": "openRouter"
     },
@@ -28423,9 +28423,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.03,
-      "input": 0.09999999999999999,
-      "output": 0.3,
+      "cacheRead": 0.0086,
+      "input": 0.0086,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -31770,7 +31770,7 @@
     "openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.078,
       "input": 0.079,
-      "output": 4.8,
+      "output": 2.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -33246,15 +33246,15 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.007,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.0015,
+      "input": 0.075,
+      "output": 0.3,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0015,
+      "input": 0.075,
+      "output": 0.3,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash-1017-fast": {
@@ -35640,7 +35640,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "137e7b2abc87d14e3be641bd824c064cb0b98e66",
+  "sourceCommit": "c57ba363c29c263a68ed7602b8a7ff963e94e241",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -41246,10 +41246,24 @@
       "source": "modelsDev"
     },
     "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+      "alternatives": [
+        {
+          "cacheRead": 0.007,
+          "input": 0.3,
+          "output": 1.2,
+          "source": "liteLLM"
+        }
+      ],
       "input": 0.3,
       "output": 1.2,
       "passthroughOnly": true,
       "source": "modelsDev"
+    },
+    "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017-Fast": {
+      "cacheRead": 0.014,
+      "input": 0.6,
+      "output": 2.4,
+      "source": "liteLLM"
     },
     "baseten/deepseek-ai/DeepSeek-V4.1-Flash-Fast": {
       "alternatives": [
@@ -57530,7 +57544,7 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.001523,
-      "input": 0.01592,
+      "input": 0.00688,
       "output": 0.143616,
       "source": "openRouter"
     },
@@ -58306,9 +58320,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.03,
-      "input": 0.09999999999999999,
-      "output": 0.3,
+      "cacheRead": 0.0086,
+      "input": 0.0086,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -61653,7 +61667,7 @@
     "openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.078,
       "input": 0.079,
-      "output": 4.8,
+      "output": 2.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
