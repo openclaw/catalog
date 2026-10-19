@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792371988546,
+  "generatedAt": 1792384760842,
   "models": [
     {
       "id": "claude-fable-5",
@@ -738,6 +738,7 @@
       "id": "deepseek-ai/DeepSeek-V4.1-Flash",
       "provider": "baseten",
       "compat": {
+        "codeMode": "capable",
         "reasoningEffortMap": {
           "adaptive": "max",
           "none": "none",
@@ -5915,11 +5916,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.00224,
+        "cacheRead": 0.0151,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0052,
-        "output": 0.12,
+        "input": 0.0151,
+        "output": 0.45,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5986,7 +5987,7 @@
         "cacheRead": 0.21,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.249,
+        "input": 0.239,
         "output": 11.936,
         "source": "modelsDev",
         "status": "known",
@@ -6183,14 +6184,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.07,
+        "cacheRead": 0.078,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.075,
-        "output": 2.2,
+        "input": 0.079,
+        "output": 1.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -27796,9 +27797,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0049,
-      "input": 0.0049,
-      "output": 0.44999999999999996,
+      "cacheRead": 0.00336,
+      "input": 0.01208,
+      "output": 0.12,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -27817,7 +27818,7 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.21,
-      "input": 0.24900000000000003,
+      "input": 0.23900000000000002,
       "output": 11.936,
       "source": "openRouter"
     },
@@ -27979,9 +27980,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.07,
-      "input": 0.075,
-      "output": 2.2,
+      "cacheRead": 0.078,
+      "input": 0.079,
+      "output": 1.4,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -28585,9 +28586,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -28598,14 +28599,14 @@
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "cacheRead": 0.0016,
-      "input": 0.048,
+      "input": 0.0472,
       "output": 0.12,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -29420,7 +29421,7 @@
     },
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
-      "input": 0.24900000000000003,
+      "input": 0.23900000000000002,
       "output": 11.936,
       "source": "openRouter"
     },
@@ -35792,7 +35793,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "64e9443af525212642b0406fbc454727f267a68a",
+  "sourceCommit": "477dd6fac8375d7fc360a85950bf61a4cefe4538",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -57763,9 +57764,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0049,
-      "input": 0.0049,
-      "output": 0.44999999999999996,
+      "cacheRead": 0.00336,
+      "input": 0.01208,
+      "output": 0.12,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -57784,7 +57785,7 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.21,
-      "input": 0.24900000000000003,
+      "input": 0.23900000000000002,
       "output": 11.936,
       "source": "openRouter"
     },
@@ -57946,9 +57947,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.07,
-      "input": 0.075,
-      "output": 2.2,
+      "cacheRead": 0.078,
+      "input": 0.079,
+      "output": 1.4,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -58552,9 +58553,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -58565,14 +58566,14 @@
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
       "cacheRead": 0.0016,
-      "input": 0.048,
+      "input": 0.0472,
       "output": 0.12,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -59387,7 +59388,7 @@
     },
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
-      "input": 0.24900000000000003,
+      "input": 0.23900000000000002,
       "output": 11.936,
       "source": "openRouter"
     },
@@ -64685,6 +64686,12 @@
       "source": "liteLLM"
     },
     "together_ai/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "liteLLM"
+    },
+    "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
