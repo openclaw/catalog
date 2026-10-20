@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792458149166,
+  "generatedAt": 1792470963183,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5874,11 +5874,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.007,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.045,
-        "output": 0.6,
+        "input": 0.05,
+        "output": 0.024,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5895,10 +5895,10 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.23,
+        "cacheRead": 0.2,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.225,
+        "input": 0.2016,
         "output": 8,
         "source": "modelsDev",
         "status": "known",
@@ -5919,7 +5919,7 @@
         "cacheRead": 0.00336,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.00392,
+        "input": 0.01592,
         "output": 0.12,
         "source": "modelsDev",
         "status": "known",
@@ -6187,11 +6187,11 @@
       "maxTokens": 943718,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.078,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.053,
-        "output": 6,
+        "input": 0.079,
+        "output": 1.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11462,8 +11462,8 @@
         "cacheRead": 0.05,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 1,
+        "input": 0.1,
+        "output": 0.95,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12535,11 +12535,11 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.05,
+        "cacheRead": 0.003,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.28,
+        "input": 0.03,
+        "output": 0.08,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13327,7 +13327,8 @@
       "provider": "mistral",
       "contextWindow": 256000,
       "input": [
-        "text"
+        "text",
+        "document"
       ],
       "maxTokens": 8192,
       "name": "Codestral 25.08",
@@ -13392,7 +13393,8 @@
       "contextWindow": 262144,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Ministral 3 14B",
@@ -13414,7 +13416,8 @@
       "contextWindow": 131072,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Ministral 3 3B",
@@ -13436,16 +13439,17 @@
       "contextWindow": 131072,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 128000,
       "name": "Ministral 3B (latest)",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
-        "output": 0.04,
+        "input": 0.1,
+        "output": 0.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13458,7 +13462,8 @@
       "contextWindow": 262144,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Ministral 3 8B",
@@ -13480,16 +13485,17 @@
       "contextWindow": 262144,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 128000,
       "name": "Ministral 8B (latest)",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.1,
+        "input": 0.15,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13502,7 +13508,8 @@
       "contextWindow": 262144,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Mistral Large 3",
@@ -13524,7 +13531,8 @@
       "contextWindow": 1048576,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Mistral Large 4",
@@ -13591,7 +13599,8 @@
       "contextWindow": 262144,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Mistral Medium 3.5",
@@ -13635,7 +13644,8 @@
       "contextWindow": 262144,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "Mistral Medium (latest)",
@@ -13700,7 +13710,8 @@
       "provider": "mistral",
       "contextWindow": 32768,
       "input": [
-        "text"
+        "text",
+        "document"
       ],
       "maxTokens": 32000,
       "name": "Voxtral Small",
@@ -13721,7 +13732,8 @@
       "provider": "mistral",
       "contextWindow": 32768,
       "input": [
-        "text"
+        "text",
+        "document"
       ],
       "maxTokens": 32000,
       "name": "Voxtral Small (latest)",
@@ -13730,7 +13742,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.1,
-        "output": 0.3,
+        "output": 0.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -18316,7 +18328,6 @@
         "text"
       ],
       "maxTokens": 16384,
-      "name": "GLM-4.7",
       "pricing": {
         "status": "unknown"
       },
@@ -18373,7 +18384,6 @@
         "text"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3 Coder Next",
       "pricing": {
         "status": "unknown"
       },
@@ -18387,7 +18397,6 @@
         "text"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3 Coder Plus",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
@@ -18408,7 +18417,6 @@
         "text"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3 Max",
       "pricing": {
         "status": "unknown"
       },
@@ -18432,6 +18440,27 @@
         "output": 2.4,
         "source": "modelsDev",
         "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.4,
+            "output": 2.4,
+            "range": [
+              0,
+              256000
+            ]
+          },
+          {
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "input": 0.5,
+            "output": 3,
+            "range": [
+              256000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": false
@@ -18446,13 +18475,34 @@
       ],
       "maxTokens": 65536,
       "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0.234375,
+        "cacheRead": 0.025,
+        "cacheWrite": 0.3125,
         "currency": "USD",
-        "input": 0.1875,
-        "output": 1.125,
+        "input": 0.25,
+        "output": 1.5,
         "source": "modelsDev",
         "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.025,
+            "cacheWrite": 0.3125,
+            "input": 0.25,
+            "output": 1.5,
+            "range": [
+              0,
+              256000
+            ]
+          },
+          {
+            "cacheRead": 0.1,
+            "cacheWrite": 1.25,
+            "input": 1,
+            "output": 4,
+            "range": [
+              256000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -18643,34 +18693,6 @@
       }
     },
     {
-      "id": "deepseek-v3.2",
-      "provider": "qwen-token-plan",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "DeepSeek V3.2",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "deepseek-v4-flash",
-      "provider": "qwen-token-plan",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 384000,
-      "name": "DeepSeek V4 Flash",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "deepseek-v4-flash-0731",
       "provider": "qwen-token-plan",
       "contextWindow": 1000000,
@@ -18680,11 +18702,11 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash 0731",
       "pricing": {
-        "cacheRead": 0.04,
+        "cacheRead": 0.088,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2,
-        "output": 0.4,
+        "input": 0.44,
+        "output": 1.32,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -18729,6 +18751,21 @@
       ],
       "maxTokens": 384000,
       "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017",
+      "provider": "qwen-token-plan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017",
       "pricing": {
         "status": "unknown"
       },
@@ -18867,13 +18904,34 @@
       "maxTokens": 65536,
       "name": "Qwen3.6 Flash",
       "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0.234375,
+        "cacheRead": 0.025,
+        "cacheWrite": 0.3125,
         "currency": "USD",
-        "input": 0.1875,
-        "output": 1.125,
+        "input": 0.25,
+        "output": 1.5,
         "source": "modelsDev",
         "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.025,
+            "cacheWrite": 0.3125,
+            "input": 0.25,
+            "output": 1.5,
+            "range": [
+              0,
+              256000
+            ]
+          },
+          {
+            "cacheRead": 0.1,
+            "cacheWrite": 1.25,
+            "input": 1,
+            "output": 4,
+            "range": [
+              256000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -27866,21 +27924,21 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.007,
-      "input": 0.045,
-      "output": 0.6,
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
+      "output": 0.024,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.22999999999999998,
-      "input": 0.22499999999999998,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.2016,
       "output": 8,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00336,
-      "input": 0.00392,
-      "output": 0.12,
+      "cacheRead": 0.015099999999999999,
+      "input": 0.015099999999999999,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -28061,9 +28119,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.053,
-      "output": 6,
+      "cacheRead": 0.078,
+      "input": 0.079,
+      "output": 1.4,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -31272,8 +31330,8 @@
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
       "cacheRead": 0.049999999999999996,
-      "input": 0.15,
-      "output": 1,
+      "input": 0.09999999999999999,
+      "output": 0.95,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-flash": {
@@ -32047,7 +32105,28 @@
     "qwen-token-plan/qwen-flash": {
       "input": 0.05,
       "output": 0.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.05,
+          "output": 0.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.25,
+          "output": 2,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen-max": {
       "input": 1.6,
@@ -32077,7 +32156,28 @@
     "qwen-token-plan/qwen-plus": {
       "input": 0.4,
       "output": 1.2,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 1.2,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.2,
+          "output": 3.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen-plus-character-ja": {
       "input": 0.5,
@@ -32239,7 +32339,48 @@
     "qwen-token-plan/qwen3-coder-flash": {
       "input": 0.3,
       "output": 1.5,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.5,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 2.5,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.8,
+          "output": 4,
+          "range": [
+            128000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.6,
+          "output": 9.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3-coder-plus": {
       "input": 1,
@@ -32289,7 +32430,38 @@
     "qwen-token-plan/qwen3-vl-plus": {
       "input": 0.2,
       "output": 1.6,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.2,
+          "output": 1.6,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 2.4,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 4.8,
+          "range": [
+            128000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -32321,7 +32493,28 @@
     "qwen-token-plan/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 2.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 3,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3.6-27b": {
       "input": 0.6,
@@ -32329,8 +32522,8 @@
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.6-35b-a3b": {
-      "input": 0.248,
-      "output": 1.485,
+      "input": 0.375,
+      "output": 2.25,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.6-max-preview": {
@@ -32390,9 +32583,9 @@
       "source": "modelsDev"
     },
     "qwen/deepseek-v4-flash-0731": {
-      "cacheRead": 0.04,
-      "input": 0.2,
-      "output": 0.4,
+      "cacheRead": 0.088,
+      "input": 0.44,
+      "output": 1.32,
       "source": "modelsDev"
     },
     "qwen/glm-5.2": {
@@ -32415,7 +32608,28 @@
     "qwen/qwen-flash": {
       "input": 0.05,
       "output": 0.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.05,
+          "output": 0.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.25,
+          "output": 2,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen-max": {
       "input": 1.6,
@@ -32445,7 +32659,28 @@
     "qwen/qwen-plus": {
       "input": 0.4,
       "output": 1.2,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 1.2,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.2,
+          "output": 3.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen-plus-character-ja": {
       "input": 0.5,
@@ -32607,7 +32842,48 @@
     "qwen/qwen3-coder-flash": {
       "input": 0.3,
       "output": 1.5,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.5,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 2.5,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.8,
+          "output": 4,
+          "range": [
+            128000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.6,
+          "output": 9.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen3-livetranslate-flash-realtime": {
       "input": 10,
@@ -32652,7 +32928,38 @@
     "qwen/qwen3-vl-plus": {
       "input": 0.2,
       "output": 1.6,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.2,
+          "output": 1.6,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 2.4,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 4.8,
+          "range": [
+            128000
+          ]
+        }
+      ]
     },
     "qwen/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -32687,8 +32994,8 @@
       "source": "modelsDev"
     },
     "qwen/qwen3.6-35b-a3b": {
-      "input": 0.248,
-      "output": 1.485,
+      "input": 0.375,
+      "output": 2.25,
       "source": "modelsDev"
     },
     "qwen/qwen3.6-max-preview": {
@@ -33470,9 +33777,9 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.0015,
+      "input": 0.075,
+      "output": 0.3,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v4.1-flash-1017": {
@@ -33697,7 +34004,7 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/inception/mercury-2": {
-      "cacheRead": 0.024999999999999998,
+      "cacheRead": 0.025,
       "input": 0.25,
       "output": 0.75,
       "source": "modelsDev"
@@ -33914,13 +34221,15 @@
       "source": "modelsDev"
     },
     "vercel-ai-gateway/mistral/ministral-3b": {
-      "input": 0.04,
-      "output": 0.04,
+      "cacheRead": 0.01,
+      "input": 0.1,
+      "output": 0.1,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/mistral/ministral-8b": {
-      "input": 0.1,
-      "output": 0.1,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/mistral/mistral-large-3": {
@@ -35875,7 +36184,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "353c6989892e6f01ff7ff63931eb30da58cd99e4",
+  "sourceCommit": "a860374eede6b95d64200a97e28e8940aeb0469f",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -36368,9 +36677,9 @@
       "source": "liteLLM"
     },
     "alibaba/deepseek-v4-flash-0731": {
-      "cacheRead": 0.04,
-      "input": 0.2,
-      "output": 0.4,
+      "cacheRead": 0.088,
+      "input": 0.44,
+      "output": 1.32,
       "source": "modelsDev"
     },
     "alibaba/glm-5.2": {
@@ -36393,7 +36702,28 @@
     "alibaba/qwen-flash": {
       "input": 0.05,
       "output": 0.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.05,
+          "output": 0.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.25,
+          "output": 2,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "alibaba/qwen-max": {
       "input": 1.6,
@@ -36423,7 +36753,28 @@
     "alibaba/qwen-plus": {
       "input": 0.4,
       "output": 1.2,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 1.2,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.2,
+          "output": 3.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "alibaba/qwen-plus-character-ja": {
       "input": 0.5,
@@ -36585,7 +36936,48 @@
     "alibaba/qwen3-coder-flash": {
       "input": 0.3,
       "output": 1.5,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.5,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 2.5,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.8,
+          "output": 4,
+          "range": [
+            128000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.6,
+          "output": 9.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "alibaba/qwen3-coder-plus": {
       "input": 1,
@@ -36635,7 +37027,38 @@
     "alibaba/qwen3-vl-plus": {
       "input": 0.2,
       "output": 1.6,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.2,
+          "output": 1.6,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 2.4,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 4.8,
+          "range": [
+            128000
+          ]
+        }
+      ]
     },
     "alibaba/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -36667,7 +37090,28 @@
     "alibaba/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 2.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 3,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "alibaba/qwen3.6-27b": {
       "input": 0.6,
@@ -36675,15 +37119,37 @@
       "source": "modelsDev"
     },
     "alibaba/qwen3.6-35b-a3b": {
-      "input": 0.248,
-      "output": 1.485,
+      "input": 0.375,
+      "output": 2.25,
       "source": "modelsDev"
     },
     "alibaba/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125,
-      "source": "modelsDev"
+      "cacheRead": 0.025,
+      "cacheWrite": 0.3125,
+      "input": 0.25,
+      "output": 1.5,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.025,
+          "cacheWrite": 0.3125,
+          "input": 0.25,
+          "output": 1.5,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 4,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "alibaba/qwen3.6-max-preview": {
       "cacheRead": 0.13,
@@ -44992,6 +45458,11 @@
       "output": 0.15,
       "source": "liteLLM"
     },
+    "cohere/c4ai-aya-expanse-32b": {
+      "input": 0.5,
+      "output": 1.5,
+      "source": "modelsDev"
+    },
     "cohere/command-a-03-2025": {
       "input": 2.5,
       "output": 10,
@@ -52842,8 +53313,9 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.04,
-      "output": 0.04,
+      "cacheRead": 0.01,
+      "input": 0.1,
+      "output": 0.1,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -52871,8 +53343,9 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.1,
-      "output": 0.1,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.15,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -53097,11 +53570,6 @@
       "output": 7.5,
       "source": "liteLLM"
     },
-    "mistral/open-mistral-7b": {
-      "input": 0.25,
-      "output": 0.25,
-      "source": "modelsDev"
-    },
     "mistral/open-mistral-nemo": {
       "alternatives": [
         {
@@ -53113,16 +53581,6 @@
       ],
       "input": 0.15,
       "output": 0.15,
-      "source": "modelsDev"
-    },
-    "mistral/open-mixtral-8x22b": {
-      "input": 2,
-      "output": 6,
-      "source": "modelsDev"
-    },
-    "mistral/open-mixtral-8x7b": {
-      "input": 0.7,
-      "output": 0.7,
       "source": "modelsDev"
     },
     "mistral/pixtral-12b": {
@@ -53167,7 +53625,7 @@
         }
       ],
       "input": 0.1,
-      "output": 0.3,
+      "output": 0.4,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -57847,21 +58305,21 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.007,
-      "input": 0.045,
-      "output": 0.6,
+      "cacheRead": 0.01,
+      "input": 0.049999999999999996,
+      "output": 0.024,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.22999999999999998,
-      "input": 0.22499999999999998,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.2016,
       "output": 8,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.00336,
-      "input": 0.00392,
-      "output": 0.12,
+      "cacheRead": 0.015099999999999999,
+      "input": 0.015099999999999999,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -58042,9 +58500,9 @@
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.053,
-      "output": 6,
+      "cacheRead": 0.078,
+      "input": 0.079,
+      "output": 1.4,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -61253,8 +61711,8 @@
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
       "cacheRead": 0.049999999999999996,
-      "input": 0.15,
-      "output": 1,
+      "input": 0.09999999999999999,
+      "output": 0.95,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-flash": {
@@ -62765,9 +63223,9 @@
       "source": "liteLLM"
     },
     "qwen-token-plan/deepseek-v4-flash-0731": {
-      "cacheRead": 0.04,
-      "input": 0.2,
-      "output": 0.4,
+      "cacheRead": 0.088,
+      "input": 0.44,
+      "output": 1.32,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -62792,7 +63250,28 @@
     "qwen-token-plan/qwen-flash": {
       "input": 0.05,
       "output": 0.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.05,
+          "output": 0.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.25,
+          "output": 2,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen-max": {
       "input": 1.6,
@@ -62822,7 +63301,28 @@
     "qwen-token-plan/qwen-plus": {
       "input": 0.4,
       "output": 1.2,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 1.2,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.2,
+          "output": 3.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen-plus-character-ja": {
       "input": 0.5,
@@ -62984,7 +63484,48 @@
     "qwen-token-plan/qwen3-coder-flash": {
       "input": 0.3,
       "output": 1.5,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.5,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 2.5,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.8,
+          "output": 4,
+          "range": [
+            128000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.6,
+          "output": 9.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3-coder-plus": {
       "input": 1,
@@ -63034,7 +63575,38 @@
     "qwen-token-plan/qwen3-vl-plus": {
       "input": 0.2,
       "output": 1.6,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.2,
+          "output": 1.6,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 2.4,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 4.8,
+          "range": [
+            128000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -63066,7 +63638,28 @@
     "qwen-token-plan/qwen3.5-plus": {
       "input": 0.4,
       "output": 2.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 2.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 3,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3.6-27b": {
       "input": 0.6,
@@ -63074,16 +63667,38 @@
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.6-35b-a3b": {
-      "input": 0.248,
-      "output": 1.485,
+      "input": 0.375,
+      "output": 2.25,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125,
+      "cacheRead": 0.025,
+      "cacheWrite": 0.3125,
+      "input": 0.25,
+      "output": 1.5,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.025,
+          "cacheWrite": 0.3125,
+          "input": 0.25,
+          "output": 1.5,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 4,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen-token-plan/qwen3.6-max-preview": {
       "cacheRead": 0.13,
@@ -63224,9 +63839,9 @@
       "source": "modelsDev"
     },
     "qwen/deepseek-v4-flash-0731": {
-      "cacheRead": 0.04,
-      "input": 0.2,
-      "output": 0.4,
+      "cacheRead": 0.088,
+      "input": 0.44,
+      "output": 1.32,
       "source": "modelsDev"
     },
     "qwen/glm-5.2": {
@@ -63249,7 +63864,28 @@
     "qwen/qwen-flash": {
       "input": 0.05,
       "output": 0.4,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.05,
+          "output": 0.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.25,
+          "output": 2,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen-max": {
       "input": 1.6,
@@ -63280,7 +63916,28 @@
       "input": 0.4,
       "output": 1.2,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 1.2,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.2,
+          "output": 3.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen-plus-character-ja": {
       "input": 0.5,
@@ -63446,7 +64103,48 @@
       "input": 0.3,
       "output": 1.5,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.5,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 2.5,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.8,
+          "output": 4,
+          "range": [
+            128000,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 1.6,
+          "output": 9.6,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen3-coder-plus": {
       "input": 1,
@@ -63499,7 +64197,38 @@
     "qwen/qwen3-vl-plus": {
       "input": 0.2,
       "output": 1.6,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.2,
+          "output": 1.6,
+          "range": [
+            0,
+            32000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 2.4,
+          "range": [
+            32000,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 4.8,
+          "range": [
+            128000
+          ]
+        }
+      ]
     },
     "qwen/qwen3.5-122b-a10b": {
       "input": 0.4,
@@ -63536,7 +64265,28 @@
       "input": 0.4,
       "output": 2.4,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.4,
+          "output": 2.4,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 3,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen3.6-27b": {
       "input": 0.6,
@@ -63545,17 +64295,39 @@
       "source": "modelsDev"
     },
     "qwen/qwen3.6-35b-a3b": {
-      "input": 0.248,
-      "output": 1.485,
+      "input": 0.375,
+      "output": 2.25,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3.6-flash": {
-      "cacheWrite": 0.234375,
-      "input": 0.1875,
-      "output": 1.125,
+      "cacheRead": 0.025,
+      "cacheWrite": 0.3125,
+      "input": 0.25,
+      "output": 1.5,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.025,
+          "cacheWrite": 0.3125,
+          "input": 0.25,
+          "output": 1.5,
+          "range": [
+            0,
+            256000
+          ]
+        },
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 4,
+          "range": [
+            256000
+          ]
+        }
+      ]
     },
     "qwen/qwen3.6-max-preview": {
       "cacheRead": 0.13,
