@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792528452086,
+  "generatedAt": 1792539460348,
   "models": [
     {
       "id": "claude-fable-5",
@@ -5909,18 +5909,18 @@
     {
       "id": "~deepseek/deepseek-v4-flash-latest",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.003304,
+        "cacheRead": 0.0056,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.00912,
-        "output": 0.12,
+        "input": 0.021,
+        "output": 0.528,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -16056,8 +16056,7 @@
       "contextWindow": 1047576,
       "input": [
         "text",
-        "image",
-        "document"
+        "image"
       ],
       "maxTokens": 32768,
       "name": "GPT-4.1",
@@ -16071,7 +16070,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false
+      "reasoning": false,
+      "status": "deprecated",
+      "statusReason": "API shutdown is scheduled for January 14, 2027."
     },
     {
       "id": "gpt-4.1-mini",
@@ -27619,6 +27620,12 @@
       "output": 0,
       "source": "openCode"
     },
+    "opencode/muse-wonder-1.0": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
+      "source": "openCode"
+    },
     "opencode/nemotron-3-super-free": {
       "input": 0,
       "output": 0,
@@ -27769,9 +27776,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.003304,
-      "input": 0.01208,
-      "output": 0.12,
+      "cacheRead": 0.0056,
+      "input": 0.020999999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -28541,9 +28548,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.00413,
-      "input": 0.1298,
-      "output": 0.38939999999999997,
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -28553,9 +28560,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.030276,
-      "input": 0.36331199999999997,
-      "output": 0.7266239999999999,
+      "cacheRead": 0.0275935,
+      "input": 0.331122,
+      "output": 0.662244,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35995,7 +36002,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "0f46faecf63c927841e84177f09527f27ced5f51",
+  "sourceCommit": "248e6d8772ee5a6a0edcc6f519cb51e96eb204c2",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -45142,6 +45149,11 @@
       "output": 0.5549999999999999,
       "source": "liteLLM"
     },
+    "cloudflare/@cf/cloudflare/clairic": {
+      "input": 0.09999999999999999,
+      "output": 0,
+      "source": "liteLLM"
+    },
     "cloudflare/@cf/cloudflare/clef": {
       "input": 0.24,
       "output": 0,
@@ -45283,6 +45295,11 @@
     "cloudflare/@hf/thebloke/codellama-7b-instruct-awq": {
       "input": 1.923,
       "output": 1.923,
+      "source": "liteLLM"
+    },
+    "cloudflare/clairic": {
+      "input": 0.09999999999999999,
+      "output": 0,
       "source": "liteLLM"
     },
     "cloudflare/clef": {
@@ -47256,6 +47273,12 @@
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
+      "source": "liteLLM"
+    },
+    "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017-us": {
+      "cacheRead": 0.009,
+      "input": 0.44999999999999996,
+      "output": 1.7999999999999998,
       "source": "liteLLM"
     },
     "fireworks_ai/accounts/fireworks/models/devstral-small-2505": {
@@ -58257,9 +58280,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.003304,
-      "input": 0.01208,
-      "output": 0.12,
+      "cacheRead": 0.0056,
+      "input": 0.020999999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -59029,9 +59052,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.00413,
-      "input": 0.1298,
-      "output": 0.38939999999999997,
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
@@ -59041,9 +59064,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.030276,
-      "input": 0.36331199999999997,
-      "output": 0.7266239999999999,
+      "cacheRead": 0.0275935,
+      "input": 0.331122,
+      "output": 0.662244,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
