@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792773382973,
+  "generatedAt": 1792787632627,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -21128,6 +21128,18 @@
       "input": 3,
       "output": 15
     },
+    "cloudflare-ai-gateway/kimi-coding/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/kimi-coding/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
+    },
     "cloudflare-ai-gateway/kimi/kimi-k2.6": {
       "cacheRead": 0.16,
       "input": 0.95,
@@ -21148,6 +21160,18 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "cloudflare-ai-gateway/kimi/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/kimi/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "cloudflare-ai-gateway/lambda_ai/deepseek-llama3.3-70b": {
       "input": 0.19999999999999998,
@@ -21742,6 +21766,18 @@
       "input": 3,
       "output": 15
     },
+    "cloudflare-ai-gateway/moonshot/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/moonshot/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
+    },
     "cloudflare-ai-gateway/moonshot/moonshot-v1-128k": {
       "input": 2,
       "output": 5
@@ -21790,6 +21826,18 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "cloudflare-ai-gateway/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/moonshotai/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "cloudflare-ai-gateway/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -24552,8 +24600,15 @@
     },
     "cloudflare-ai-gateway/opencode-go/kimi-k3": {
       "cacheRead": 0.3,
+      "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "cloudflare-ai-gateway/opencode-go/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
     },
     "cloudflare-ai-gateway/opencode-go/longcat-2.0": {
       "cacheRead": 0.006,
@@ -24734,9 +24789,9 @@
       "output": 10
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.002,
-      "input": 0.019000000000000003,
-      "output": 0.6
+      "cacheRead": 0.008,
+      "input": 0.07,
+      "output": 0.5
     },
     "cloudflare-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.12,
@@ -24763,7 +24818,7 @@
     "cloudflare-ai-gateway/openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.228,
       "input": 0.238,
-      "output": 16
+      "output": 24
     },
     "cloudflare-ai-gateway/openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -25449,9 +25504,9 @@
       "output": 0.6468
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.072935,
-      "input": 0.87522,
-      "output": 1.75044
+      "cacheRead": 0.06278500000000001,
+      "input": 0.75342,
+      "output": 1.50684
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -25778,9 +25833,9 @@
       "output": 0.049999999999999996
     },
     "cloudflare-ai-gateway/openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "cloudflare-ai-gateway/openrouter/google/gemma-4-31b-it": {
       "input": 0.19999999999999998,
@@ -26136,12 +26191,17 @@
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
       "input": 0.23900000000000002,
-      "output": 11.936
+      "output": 10.8
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
       "input": 2.2800000000000002,
       "output": 11.399999999999999
+    },
+    "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10
     },
     "cloudflare-ai-gateway/openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -54536,6 +54596,18 @@
       "input": 3,
       "output": 15
     },
+    "kilocode/kimi-coding/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "kilocode/kimi-coding/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
+    },
     "kilocode/kimi/kimi-k2.6": {
       "cacheRead": 0.16,
       "input": 0.95,
@@ -54556,6 +54628,18 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "kilocode/kimi/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "kilocode/kimi/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "kilocode/lambda_ai/deepseek-llama3.3-70b": {
       "input": 0.19999999999999998,
@@ -55166,6 +55250,18 @@
       "input": 3,
       "output": 15
     },
+    "kilocode/moonshot/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "kilocode/moonshot/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
+    },
     "kilocode/moonshot/moonshot-v1-128k": {
       "input": 2,
       "output": 5
@@ -55198,6 +55294,12 @@
       "cacheRead": 0.38,
       "input": 1.9,
       "output": 8
+    },
+    "kilocode/moonshotai/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "kilocode/morph/morph-v3-fast": {
       "input": 0.8,
@@ -57549,8 +57651,15 @@
     },
     "kilocode/opencode-go/kimi-k3": {
       "cacheRead": 0.3,
+      "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "kilocode/opencode-go/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
     },
     "kilocode/opencode-go/longcat-2.0": {
       "cacheRead": 0.006,
@@ -57731,9 +57840,9 @@
       "output": 10
     },
     "kilocode/openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.002,
-      "input": 0.019000000000000003,
-      "output": 0.6
+      "cacheRead": 0.008,
+      "input": 0.07,
+      "output": 0.5
     },
     "kilocode/openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.12,
@@ -57760,7 +57869,7 @@
     "kilocode/openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.228,
       "input": 0.238,
-      "output": 16
+      "output": 24
     },
     "kilocode/openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -58446,9 +58555,9 @@
       "output": 0.6468
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.072935,
-      "input": 0.87522,
-      "output": 1.75044
+      "cacheRead": 0.06278500000000001,
+      "input": 0.75342,
+      "output": 1.50684
     },
     "kilocode/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -58775,9 +58884,9 @@
       "output": 0.049999999999999996
     },
     "kilocode/openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "kilocode/openrouter/google/gemma-4-31b-it": {
       "input": 0.19999999999999998,
@@ -59133,12 +59242,17 @@
     "kilocode/openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
       "input": 0.23900000000000002,
-      "output": 11.936
+      "output": 10.8
     },
     "kilocode/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
       "input": 2.2800000000000002,
       "output": 11.399999999999999
+    },
+    "kilocode/openrouter/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10
     },
     "kilocode/openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -66996,6 +67110,18 @@
       "input": 3,
       "output": 15
     },
+    "kimi-coding/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "kimi-coding/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
+    },
     "kimi-coding/moonshot-v1-128k": {
       "input": 2,
       "output": 5
@@ -67053,6 +67179,18 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "kimi/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "kimi/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "kimi/moonshot-v1-128k": {
       "input": 2,
@@ -69914,6 +70052,12 @@
       "input": 0.834,
       "output": 2.501
     },
+    "opencode-go/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
     "opencode-go/longcat-2.0": {
       "cacheRead": 0.006,
       "input": 0.3,
@@ -71039,9 +71183,9 @@
       "output": 10
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.002,
-      "input": 0.019000000000000003,
-      "output": 0.6
+      "cacheRead": 0.008,
+      "input": 0.07,
+      "output": 0.5
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.12,
@@ -71068,7 +71212,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.228,
       "input": 0.238,
-      "output": 16
+      "output": 24
     },
     "openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -71754,9 +71898,9 @@
       "output": 0.6468
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.072935,
-      "input": 0.87522,
-      "output": 1.75044
+      "cacheRead": 0.06278500000000001,
+      "input": 0.75342,
+      "output": 1.50684
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -72083,9 +72227,9 @@
       "output": 0.049999999999999996
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "openrouter/google/gemma-4-31b-it": {
       "input": 0.19999999999999998,
@@ -72441,12 +72585,17 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
       "input": 0.23900000000000002,
-      "output": 11.936
+      "output": 10.8
     },
     "openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
       "input": 2.2800000000000002,
       "output": 11.399999999999999
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10
     },
     "openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -91997,6 +92146,18 @@
       "input": 3,
       "output": 15
     },
+    "vercel-ai-gateway/kimi-coding/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "vercel-ai-gateway/kimi-coding/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
+    },
     "vercel-ai-gateway/kimi/kimi-k2.6": {
       "cacheRead": 0.16,
       "input": 0.95,
@@ -92017,6 +92178,18 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "vercel-ai-gateway/kimi/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "vercel-ai-gateway/kimi/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "vercel-ai-gateway/lambda_ai/deepseek-llama3.3-70b": {
       "input": 0.19999999999999998,
@@ -92578,6 +92751,18 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "vercel-ai-gateway/moonshot/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
+    },
+    "vercel-ai-gateway/moonshot/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20
     },
     "vercel-ai-gateway/moonshot/moonshot-v1-128k": {
       "input": 2,
@@ -94984,8 +95169,15 @@
     },
     "vercel-ai-gateway/opencode-go/kimi-k3": {
       "cacheRead": 0.3,
+      "cacheWrite": 3,
       "input": 3,
       "output": 15
+    },
+    "vercel-ai-gateway/opencode-go/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10
     },
     "vercel-ai-gateway/opencode-go/longcat-2.0": {
       "cacheRead": 0.006,
@@ -95166,9 +95358,9 @@
       "output": 10
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.002,
-      "input": 0.019000000000000003,
-      "output": 0.6
+      "cacheRead": 0.008,
+      "input": 0.07,
+      "output": 0.5
     },
     "vercel-ai-gateway/openrouter/~deepseek/deepseek-pro-latest": {
       "cacheRead": 0.12,
@@ -95195,7 +95387,7 @@
     "vercel-ai-gateway/openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.228,
       "input": 0.238,
-      "output": 16
+      "output": 24
     },
     "vercel-ai-gateway/openrouter/~openai/gpt-astra-latest": {
       "cacheRead": 1,
@@ -95881,9 +96073,9 @@
       "output": 0.6468
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.072935,
-      "input": 0.87522,
-      "output": 1.75044
+      "cacheRead": 0.06278500000000001,
+      "input": 0.75342,
+      "output": 1.50684
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-pro-0813": {
       "cacheRead": 0.022,
@@ -96210,9 +96402,9 @@
       "output": 0.049999999999999996
     },
     "vercel-ai-gateway/openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998
     },
     "vercel-ai-gateway/openrouter/google/gemma-4-31b-it": {
       "input": 0.19999999999999998,
@@ -96568,12 +96760,17 @@
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
       "input": 0.23900000000000002,
-      "output": 11.936
+      "output": 10.8
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
       "input": 2.2800000000000002,
       "output": 11.399999999999999
+    },
+    "vercel-ai-gateway/openrouter/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10
     },
     "vercel-ai-gateway/openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -108827,10 +109024,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.0026599999999999996,
+            "cacheRead": 0.00182,
             "cacheWrite": 0,
-            "input": 0.13299999999999998,
-            "output": 0.26599999999999996
+            "input": 0.091,
+            "output": 0.182
           },
           "id": "XiaomiMiMo/MiMo-V2.6-Flash",
           "input": [
@@ -111077,10 +111274,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.002,
+            "cacheRead": 0.008,
             "cacheWrite": 0,
-            "input": 0.019,
-            "output": 0.6
+            "input": 0.07,
+            "output": 0.5
           },
           "id": "~deepseek/deepseek-flash-latest",
           "input": [
@@ -111165,7 +111362,7 @@
             "cacheRead": 0.228,
             "cacheWrite": 0,
             "input": 0.238,
-            "output": 16
+            "output": 24
           },
           "id": "~moonshotai/kimi-latest",
           "input": [
@@ -113484,6 +113681,23 @@
           ],
           "maxTokens": 943718,
           "name": "Kimi K3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 10
+          },
+          "id": "moonshotai/kimi-k3.1-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 943718,
+          "name": "MoonshotAI: Kimi K3.1 Pro",
           "reasoning": true
         },
         {
@@ -115989,9 +116203,9 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.003,
+            "cacheRead": 0.0028,
             "cacheWrite": 0,
-            "input": 0.1,
+            "input": 0.14,
             "output": 0.28
           },
           "id": "xiaomi/mimo-v2.6-flash",
@@ -116369,6 +116583,28 @@
             "minimal": "low",
             "xhigh": "max"
           }
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "k3.1-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Kimi K3.1 Pro",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "k3.1-pro-highspeed",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Kimi K3.1 Pro Highspeed",
+          "reasoning": true
         },
         {
           "contextWindow": 262144,
@@ -117141,6 +117377,40 @@
             "off": null,
             "xhigh": "max"
           }
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 2,
+            "input": 2,
+            "output": 10
+          },
+          "id": "kimi-k3.1-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 1048576,
+          "name": "Kimi K3.1 Pro",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 4,
+            "input": 4,
+            "output": 20
+          },
+          "id": "kimi-k3.1-pro-highspeed",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 1048576,
+          "name": "Kimi K3.1 Pro Highspeed",
+          "reasoning": true
         }
       ]
     },
@@ -120088,7 +120358,7 @@
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.3,
-            "cacheWrite": 0,
+            "cacheWrite": 3,
             "input": 3,
             "output": 15
           },
@@ -120361,7 +120631,7 @@
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.3,
-            "cacheWrite": 0,
+            "cacheWrite": 3,
             "input": 3,
             "output": 15
           },
@@ -121897,6 +122167,23 @@
         {
           "contextWindow": 1000000,
           "cost": {
+            "cacheRead": 0.125,
+            "cacheWrite": 0,
+            "input": 1.25,
+            "output": 2.5
+          },
+          "id": "abliteration-abliterated-model-large-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Abliterated Large Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
             "cacheRead": 0.3,
             "cacheWrite": 0,
             "input": 3,
@@ -122312,6 +122599,23 @@
           ],
           "maxTokens": 131072,
           "name": "DeepSeek v4.1 Flash (1017)",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.00825,
+            "cacheWrite": 0,
+            "input": 0.33,
+            "output": 1.32
+          },
+          "id": "deepseek-v4-1-flash-uncensored",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "DeepSeek V4.1 Flash Uncensored",
           "reasoning": true
         },
         {
@@ -126987,6 +127291,40 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 2,
+            "input": 2,
+            "output": 10
+          },
+          "id": "moonshotai/kimi-k3.1-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 1048576,
+          "name": "Kimi K3.1 Pro",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 4,
+            "input": 4,
+            "output": 20
+          },
+          "id": "moonshotai/kimi-k3.1-pro-highspeed",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 1048576,
+          "name": "Kimi K3.1 Pro Highspeed",
+          "reasoning": true
+        },
+        {
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.12,
@@ -130879,5 +131217,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "ca2ae0accb7481b9b3bb521f7eb38b534272638c"
+  "sourceCommit": "a8aee07e387023fc4fb11335fdcd0d26292ee09a"
 }

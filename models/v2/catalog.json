@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792773382973,
+  "generatedAt": 1792787632627,
   "models": [
     {
       "id": "claude-fable-5",
@@ -2914,11 +2914,11 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.0026599999999999996,
+        "cacheRead": 0.00182,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13299999999999998,
-        "output": 0.26599999999999996,
+        "input": 0.091,
+        "output": 0.182,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -5625,11 +5625,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.002,
+        "cacheRead": 0.008,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.019,
-        "output": 0.6,
+        "input": 0.07,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5739,7 +5739,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.238,
-        "output": 16,
+        "output": 24,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8731,6 +8731,28 @@
         "currency": "USD",
         "input": 3,
         "output": 15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 943718,
+      "name": "MoonshotAI: Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11986,10 +12008,10 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.003,
+        "cacheRead": 0.0028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
+        "input": 0.14,
         "output": 0.28,
         "source": "modelsDev",
         "status": "known",
@@ -12461,6 +12483,36 @@
         "minimal": "low",
         "xhigh": "max"
       }
+    },
+    {
+      "id": "k3.1-pro",
+      "provider": "kimi",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "k3.1-pro-highspeed",
+      "provider": "kimi",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Kimi K3.1 Pro Highspeed",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
     },
     {
       "id": "kimi-for-coding",
@@ -13371,6 +13423,50 @@
         "off": null,
         "xhigh": "max"
       }
+    },
+    {
+      "id": "kimi-k3.1-pro",
+      "provider": "moonshot",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 2,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k3.1-pro-highspeed",
+      "provider": "moonshot",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro Highspeed",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 4,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "apodex/apodex-1.1-mini",
@@ -16973,7 +17069,7 @@
       "name": "Kimi K3",
       "pricing": {
         "cacheRead": 0.3,
-        "cacheWrite": 0,
+        "cacheWrite": 3,
         "currency": "USD",
         "input": 3,
         "output": 15,
@@ -17286,7 +17382,7 @@
       "name": "Kimi K3",
       "pricing": {
         "cacheRead": 0.3,
-        "cacheWrite": 0,
+        "cacheWrite": 3,
         "currency": "USD",
         "input": 3,
         "output": 15,
@@ -19050,6 +19146,28 @@
       "reasoning": true
     },
     {
+      "id": "abliteration-abliterated-model-large-flash",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Abliterated Large Flash",
+      "pricing": {
+        "cacheRead": 0.125,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 2.5,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "abliteration-abliterated-model-large-v2",
       "provider": "venice",
       "contextWindow": 1000000,
@@ -19578,6 +19696,28 @@
         "currency": "USD",
         "input": 0.3,
         "output": 1.2,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4-1-flash-uncensored",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "DeepSeek V4.1 Flash Uncensored",
+      "pricing": {
+        "cacheRead": 0.00825,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.33,
+        "output": 1.32,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -25365,6 +25505,50 @@
         "currency": "USD",
         "input": 4.5,
         "output": 22.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 2,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro Highspeed",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 4,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -31801,6 +31985,20 @@
       "output": 15,
       "source": "modelsDev"
     },
+    "kimi-coding/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "kimi-coding/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20,
+      "source": "modelsDev"
+    },
     "kimi-coding/moonshot-v1-128k": {
       "input": 2,
       "output": 5,
@@ -31865,6 +32063,20 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15,
+      "source": "modelsDev"
+    },
+    "kimi/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "kimi/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "kimi/moonshot-v1-128k": {
@@ -33058,9 +33270,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.002,
-      "input": 0.019000000000000003,
-      "output": 0.6,
+      "cacheRead": 0.008,
+      "input": 0.07,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -33092,7 +33304,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.228,
       "input": 0.238,
-      "output": 16,
+      "output": 24,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -33854,9 +34066,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.072935,
-      "input": 0.87522,
-      "output": 1.75044,
+      "cacheRead": 0.06278500000000001,
+      "input": 0.75342,
+      "output": 1.50684,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -34225,9 +34437,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -34659,13 +34871,19 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
       "input": 0.23900000000000002,
-      "output": 11.936,
+      "output": 10.8,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
       "input": 2.2800000000000002,
       "output": 11.399999999999999,
+      "source": "openRouter"
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10,
       "source": "openRouter"
     },
     "openrouter/morph/morph-v3-fast": {
@@ -38618,6 +38836,7 @@
         "openai/gpt-6-luna",
         "qwen/qwen3.8-max-0902",
         "z-ai/glm-5.3",
+        "moonshotai/kimi-k3.1-pro",
         "moonshotai/kimi-k3",
         "anthropic/claude-haiku-5.5",
         "deepseek/deepseek-v4-pro",
@@ -38659,6 +38878,7 @@
       "api": "openai-completions",
       "defaultModel": "kimi-k3",
       "recommendedModels": [
+        "kimi-k3.1-pro",
         "kimi-k3"
       ]
     },
@@ -38834,6 +39054,7 @@
         "openai/gpt-6-luna",
         "alibaba/qwen3.8-max",
         "zai/glm-5.3",
+        "moonshotai/kimi-k3.1-pro",
         "moonshotai/kimi-k3",
         "anthropic/claude-haiku-5.5",
         "deepseek/deepseek-v4-pro",
@@ -38892,7 +39113,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "ca2ae0accb7481b9b3bb521f7eb38b534272638c",
+  "sourceCommit": "a8aee07e387023fc4fb11335fdcd0d26292ee09a",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -55467,6 +55688,20 @@
       "output": 15,
       "source": "modelsDev"
     },
+    "kimi-coding/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "kimi-coding/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20,
+      "source": "modelsDev"
+    },
     "kimi/kimi-k2.6": {
       "cacheRead": 0.16,
       "input": 0.95,
@@ -55490,6 +55725,20 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15,
+      "source": "modelsDev"
+    },
+    "kimi/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "kimi/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "lambda_ai/deepseek-llama3.3-70b": {
@@ -56536,6 +56785,22 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "moonshot/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "moonshot/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "moonshot/moonshot-v1-128k": {
       "input": 2,
       "output": 5,
@@ -56597,6 +56862,22 @@
       "cacheWrite": 3,
       "input": 3,
       "output": 15,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "moonshotai/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "cacheWrite": 4,
+      "input": 4,
+      "output": 20,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -60903,9 +61184,17 @@
     },
     "opencode-go/kimi-k3": {
       "cacheRead": 0.3,
+      "cacheWrite": 3,
       "input": 3,
       "output": 15,
       "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "opencode-go/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
       "source": "modelsDev"
     },
     "opencode-go/longcat-2.0": {
@@ -61110,9 +61399,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.002,
-      "input": 0.019000000000000003,
-      "output": 0.6,
+      "cacheRead": 0.008,
+      "input": 0.07,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -61144,7 +61433,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.228,
       "input": 0.238,
-      "output": 16,
+      "output": 24,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -61906,9 +62195,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.072935,
-      "input": 0.87522,
-      "output": 1.75044,
+      "cacheRead": 0.06278500000000001,
+      "input": 0.75342,
+      "output": 1.50684,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -62277,9 +62566,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -62711,13 +63000,19 @@
     "openrouter/moonshotai/kimi-k3": {
       "cacheRead": 0.21,
       "input": 0.23900000000000002,
-      "output": 11.936,
+      "output": 10.8,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
       "cacheRead": 0.228,
       "input": 2.2800000000000002,
       "output": 11.399999999999999,
+      "source": "openRouter"
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10,
       "source": "openRouter"
     },
     "openrouter/morph/morph-v3-fast": {
