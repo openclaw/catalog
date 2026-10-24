@@ -1,6 +1,180 @@
 {
-  "generatedAt": 1792816484773,
+  "generatedAt": 1792830968199,
   "models": [
+    {
+      "id": "abliterated-model",
+      "provider": "abliteration",
+      "compat": {
+        "maxTokensField": "max_tokens",
+        "reasoningEffortMap": {
+          "high": "high",
+          "low": "low",
+          "max": "max",
+          "medium": "medium",
+          "minimal": "minimal",
+          "off": "none",
+          "xhigh": "xhigh"
+        },
+        "supportedReasoningEfforts": [
+          "none",
+          "minimal",
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "supportsLongCacheRetention": false,
+        "supportsPromptCacheKey": true,
+        "supportsReasoningEffort": true,
+        "supportsStore": false,
+        "supportsUsageInStreaming": true,
+        "thinkingFormat": "openai"
+      },
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262134,
+      "name": "Abliterated Model",
+      "pricing": {
+        "cacheRead": 0.1,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1,
+        "output": 3,
+        "source": "manifest",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "abliterated-model-large",
+      "provider": "abliteration",
+      "compat": {
+        "maxTokensField": "max_tokens",
+        "reasoningEffortMap": {
+          "high": "high",
+          "max": "max",
+          "off": "none"
+        },
+        "supportedReasoningEfforts": [
+          "none",
+          "high",
+          "max"
+        ],
+        "supportsLongCacheRetention": false,
+        "supportsPromptCacheKey": true,
+        "supportsReasoningEffort": true,
+        "supportsStore": false,
+        "supportsUsageInStreaming": true,
+        "thinkingFormat": "openai"
+      },
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 999990,
+      "name": "Abliterated Large",
+      "pricing": {
+        "cacheRead": 0.3,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3,
+        "output": 5,
+        "source": "manifest",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true,
+      "status": "deprecated"
+    },
+    {
+      "id": "abliterated-model-large-flash",
+      "provider": "abliteration",
+      "compat": {
+        "maxTokensField": "max_tokens",
+        "reasoningEffortMap": {
+          "high": "high",
+          "low": "low",
+          "max": "max",
+          "off": "none"
+        },
+        "supportedReasoningEfforts": [
+          "none",
+          "low",
+          "high",
+          "max"
+        ],
+        "supportsLongCacheRetention": false,
+        "supportsPromptCacheKey": true,
+        "supportsReasoningEffort": true,
+        "supportsStore": false,
+        "supportsUsageInStreaming": true,
+        "thinkingFormat": "openai"
+      },
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Abliterated Large Flash",
+      "pricing": {
+        "cacheRead": 0.1,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1,
+        "output": 2,
+        "source": "manifest",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "abliterated-model-large-v2",
+      "provider": "abliteration",
+      "compat": {
+        "maxTokensField": "max_tokens",
+        "reasoningEffortMap": {
+          "high": "high",
+          "low": "low",
+          "max": "max",
+          "off": "low"
+        },
+        "supportedReasoningEfforts": [
+          "low",
+          "high",
+          "max"
+        ],
+        "supportsLongCacheRetention": false,
+        "supportsPromptCacheKey": true,
+        "supportsReasoningEffort": true,
+        "supportsStore": false,
+        "supportsUsageInStreaming": true,
+        "thinkingFormat": "openai"
+      },
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 999990,
+      "name": "Abliterated Large v2",
+      "pricing": {
+        "cacheRead": 0.3,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3,
+        "output": 5,
+        "source": "manifest",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
     {
       "id": "claude-fable-5",
       "provider": "anthropic",
@@ -5735,11 +5909,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.228,
+        "cacheRead": 0.19,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.238,
-        "output": 16,
+        "input": 0.19,
+        "output": 7.7001,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5917,11 +6091,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0262,
+        "cacheRead": 0.0175,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0262,
-        "output": 0.0852,
+        "input": 0.0175,
+        "output": 0.1425,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5935,14 +6109,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.078,
+        "cacheRead": 0.075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.079,
-        "output": 1.4,
+        "input": 0.075,
+        "output": 1.575,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -30503,7 +30677,7 @@
       "source": "deepinfra"
     },
     "deepinfra/Cloudflare/clef-flash": {
-      "input": 0.038,
+      "input": 0.019,
       "output": 0,
       "source": "deepinfra"
     },
@@ -33445,9 +33619,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.228,
-      "input": 0.238,
-      "output": 16,
+      "cacheRead": 0.19,
+      "input": 0.19,
+      "output": 7.700099999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -33602,15 +33776,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0262,
-      "input": 0.0262,
-      "output": 0.10279999999999999,
+      "cacheRead": 0.0175,
+      "input": 0.0175,
+      "output": 0.14250000000000002,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.078,
-      "input": 0.079,
-      "output": 1.4,
+      "cacheRead": 0.075,
+      "input": 0.075,
+      "output": 1.575,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -34209,9 +34383,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.04843,
-      "input": 0.58116,
-      "output": 1.16232,
+      "cacheRead": 0.036598,
+      "input": 0.439176,
+      "output": 0.878352,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -38833,6 +39007,10 @@
     }
   },
   "providers": {
+    "abliteration": {
+      "api": "openai-completions",
+      "defaultModel": "abliterated-model-large-flash"
+    },
     "anthropic": {
       "api": "anthropic-messages",
       "defaultUtilityModel": "claude-haiku-5-5",
@@ -39265,7 +39443,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "990a389cf6e2f6769ad9240a69e7f91ca21e37f8",
+  "sourceCommit": "ee855ce57341eb3259741087681be0b0e1ec837c",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -61583,9 +61761,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.228,
-      "input": 0.238,
-      "output": 16,
+      "cacheRead": 0.19,
+      "input": 0.19,
+      "output": 7.700099999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -61740,15 +61918,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0262,
-      "input": 0.0262,
-      "output": 0.10279999999999999,
+      "cacheRead": 0.0175,
+      "input": 0.0175,
+      "output": 0.14250000000000002,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.078,
-      "input": 0.079,
-      "output": 1.4,
+      "cacheRead": 0.075,
+      "input": 0.075,
+      "output": 1.575,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -62347,9 +62525,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.04843,
-      "input": 0.58116,
-      "output": 1.16232,
+      "cacheRead": 0.036598,
+      "input": 0.439176,
+      "output": 0.878352,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
