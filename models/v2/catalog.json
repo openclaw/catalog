@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792890432820,
+  "generatedAt": 1792902966735,
   "models": [
     {
       "id": "abliterated-model",
@@ -6091,11 +6091,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0191,
+        "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0191,
-        "output": 0.1352,
+        "input": 0.0511,
+        "output": 0.0761,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6112,11 +6112,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Latest",
       "pricing": {
-        "cacheRead": 0.075,
+        "cacheRead": 0.0703,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.075,
-        "output": 4.295,
+        "input": 0.0703,
+        "output": 4.3843,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14382,6 +14382,50 @@
         "currency": "USD",
         "input": 3,
         "output": 15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "provider": "novita",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro Highspeed",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -33769,15 +33813,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0191,
-      "input": 0.0191,
-      "output": 0.1352,
+      "cacheRead": 0.03,
+      "input": 0.0511,
+      "output": 0.0761,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.075,
-      "input": 0.075,
-      "output": 4.295000000000001,
+      "cacheRead": 0.0703,
+      "input": 0.0703,
+      "output": 4.3843,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
@@ -39196,6 +39240,7 @@
         "xiaomimimo/mimo-v2.6-pro",
         "qwen/qwen3.8-max",
         "zai-org/glm-5.3",
+        "moonshotai/kimi-k3.1-pro",
         "moonshotai/kimi-k3",
         "deepseek/deepseek-v4-pro",
         "stepfun/step-5-preview",
@@ -39427,7 +39472,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "f87c1273975b9a6951ee176abf37b9079e2b8e1a",
+  "sourceCommit": "3d020b496ad8d8c4bf0486232d86a55491509db2",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -57136,6 +57181,14 @@
       "source": "modelsDev"
     },
     "mistral/zai-glm-5-3-flash": {
+      "alternatives": [
+        {
+          "cacheRead": 0.03,
+          "input": 0.15,
+          "output": 0.5,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.03,
       "input": 0.15,
       "output": 0.5,
@@ -57927,6 +57980,18 @@
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
+      "source": "modelsDev"
+    },
+    "novita-ai/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "novita-ai/moonshotai/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "novita-ai/nousresearch/hermes-2-pro-llama-3-8b": {
@@ -58910,6 +58975,20 @@
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/moonshotai/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "novita/moonshotai/kimi-k3.1-pro-highspeed": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -62301,15 +62380,15 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0191,
-      "input": 0.0191,
-      "output": 0.1352,
+      "cacheRead": 0.03,
+      "input": 0.0511,
+      "output": 0.0761,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
-      "cacheRead": 0.075,
-      "input": 0.075,
-      "output": 4.295000000000001,
+      "cacheRead": 0.0703,
+      "input": 0.0703,
+      "output": 4.3843,
       "source": "openRouter"
     },
     "openrouter/aion-labs/aion-2.0": {
