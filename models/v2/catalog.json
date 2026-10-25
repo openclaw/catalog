@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1792931992597,
+  "generatedAt": 1792945949534,
   "models": [
     {
       "id": "abliterated-model",
@@ -3044,11 +3044,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.04199999814,
+        "cacheRead": 0.03989999823299999,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7922999999999999,
+        "output": 2.3759499999999996,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -5841,11 +5841,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.028,
+        "cacheRead": 0.027,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.0422,
-        "output": 0.1694,
+        "output": 0.1763,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5909,11 +5909,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.216,
+        "cacheRead": 0.17,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.226,
-        "output": 16,
+        "input": 0.171,
+        "output": 9.3421,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11166,7 +11166,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 65536,
+      "maxTokens": 81920,
       "name": "Qwen3.6 27B",
       "pricing": {
         "cacheRead": 0,
@@ -11828,11 +11828,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11870,11 +11870,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -33636,9 +33636,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.027,
       "input": 0.0422,
-      "output": 0.1694,
+      "output": 0.1763,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -33656,9 +33656,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.21,
-      "input": 0.2147,
-      "output": 10.155100000000001,
+      "cacheRead": 0.16,
+      "input": 0.16999999999999998,
+      "output": 16,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -36989,9 +36989,8 @@
       ]
     },
     "openrouter/qwen/qwen3.6-27b": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.25,
-      "output": 2,
+      "input": 0.32,
+      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
@@ -37318,9 +37317,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -37330,9 +37329,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -39472,7 +39471,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "9db139fcf842303a2acb091f1eead2a45d0b1cf2",
+  "sourceCommit": "a830e2e3ae7b2db3384c82598aea71e17a43e820",
   "upstreamPricing": {
     "ai21/j2-light": {
       "input": 3,
@@ -62203,9 +62202,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.028,
+      "cacheRead": 0.027,
       "input": 0.0422,
-      "output": 0.1694,
+      "output": 0.1763,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -62223,9 +62222,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.21,
-      "input": 0.2147,
-      "output": 10.155100000000001,
+      "cacheRead": 0.16,
+      "input": 0.16999999999999998,
+      "output": 16,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -65556,9 +65555,8 @@
       ]
     },
     "openrouter/qwen/qwen3.6-27b": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.25,
-      "output": 2,
+      "input": 0.32,
+      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
@@ -65885,9 +65883,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -65897,9 +65895,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
