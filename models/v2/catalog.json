@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793105216722,
+  "generatedAt": 1793118604730,
   "models": [
     {
       "id": "abliterated-model",
@@ -5757,11 +5757,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.012398,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.02,
-        "output": 1,
+        "input": 0.022,
+        "output": 1.21,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5778,11 +5778,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.006888,
+        "cacheRead": 0.13,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.21648,
-        "output": 0.64944,
+        "input": 0.1259,
+        "output": 8,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5802,8 +5802,8 @@
         "cacheRead": 0.028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0475,
-        "output": 0.1568,
+        "input": 0.0422,
+        "output": 0.1694,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5867,11 +5867,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.159,
+        "cacheRead": 0.16,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.169,
-        "output": 20,
+        "input": 0.1605,
+        "output": 8.94,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6049,11 +6049,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0235,
+        "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0235,
-        "output": 0.1151,
+        "input": 0.0417,
+        "output": 0.0771,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6917,14 +6917,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.05,
+        "cacheRead": 0.009464,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.05,
-        "output": 0.45,
+        "input": 0.04732,
+        "output": 0.09464,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8839,7 +8839,7 @@
         "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.6725,
+        "input": 0.56,
         "output": 3.1,
         "source": "modelsDev",
         "status": "known",
@@ -10727,7 +10727,7 @@
       "maxTokens": 235929,
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.1,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.1,
@@ -11797,11 +11797,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11839,11 +11839,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -32210,6 +32210,7 @@
       "source": "modelsDev"
     },
     "kilocode/nousresearch/hermes-4-405b": {
+      "cacheRead": 0.2,
       "input": 1,
       "output": 3,
       "source": "modelsDev"
@@ -33753,21 +33754,21 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.02,
-      "output": 1,
+      "cacheRead": 0.012398,
+      "input": 0.022,
+      "output": 1.21,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19,
-      "input": 0.1948,
+      "cacheRead": 0.13,
+      "input": 0.1259,
       "output": 8,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.028,
-      "input": 0.0475,
-      "output": 0.1568,
+      "input": 0.0422,
+      "output": 0.1694,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -33785,9 +33786,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.149,
-      "input": 0.159,
-      "output": 20,
+      "cacheRead": 0.16,
+      "input": 0.16049999999999998,
+      "output": 8.940000000000001,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -33942,9 +33943,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0235,
-      "input": 0.0235,
-      "output": 0.11510000000000001,
+      "cacheRead": 0.03,
+      "input": 0.0417,
+      "output": 0.0771,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -34525,9 +34526,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.049999999999999996,
-      "output": 0.44999999999999996,
+      "cacheRead": 0.009464,
+      "input": 0.04732,
+      "output": 0.09464,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -34543,9 +34544,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0747765,
-      "input": 0.8973180000000001,
-      "output": 1.7946360000000001,
+      "cacheRead": 0.07337,
+      "input": 0.88044,
+      "output": 1.76088,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35311,13 +35312,13 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
-      "input": 0.6725,
+      "input": 0.56,
       "output": 3.1,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.149,
-      "input": 0.159,
+      "cacheRead": 0.159,
+      "input": 0.16899999999999998,
       "output": 20,
       "source": "openRouter"
     },
@@ -35366,11 +35367,13 @@
       "source": "openRouter"
     },
     "openrouter/nousresearch/hermes-4-405b": {
+      "cacheRead": 0.19999999999999998,
       "input": 1,
       "output": 3,
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-nano-30b-a3b": {
+      "cacheRead": 0.012,
       "input": 0.06,
       "output": 0.24,
       "source": "openRouter"
@@ -37005,6 +37008,7 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
+      "cacheRead": 0.09999999999999999,
       "input": 0.09999999999999999,
       "output": 0.3,
       "source": "openRouter"
@@ -37515,9 +37519,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -37527,9 +37531,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -39669,7 +39673,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "3a3246e7c1389c03e933e1f15805306945b1df1c",
+  "sourceCommit": "5cf6a7fd4ebaebb9f1fee12a1d33f2ab291e3f86",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -62521,21 +62525,21 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.015,
-      "input": 0.02,
-      "output": 1,
+      "cacheRead": 0.012398,
+      "input": 0.022,
+      "output": 1.21,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.19,
-      "input": 0.1948,
+      "cacheRead": 0.13,
+      "input": 0.1259,
       "output": 8,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.028,
-      "input": 0.0475,
-      "output": 0.1568,
+      "input": 0.0422,
+      "output": 0.1694,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -62553,9 +62557,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.149,
-      "input": 0.159,
-      "output": 20,
+      "cacheRead": 0.16,
+      "input": 0.16049999999999998,
+      "output": 8.940000000000001,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -62710,9 +62714,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0235,
-      "input": 0.0235,
-      "output": 0.11510000000000001,
+      "cacheRead": 0.03,
+      "input": 0.0417,
+      "output": 0.0771,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -63293,9 +63297,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.049999999999999996,
-      "output": 0.44999999999999996,
+      "cacheRead": 0.009464,
+      "input": 0.04732,
+      "output": 0.09464,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
@@ -63311,9 +63315,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0747765,
-      "input": 0.8973180000000001,
-      "output": 1.7946360000000001,
+      "cacheRead": 0.07337,
+      "input": 0.88044,
+      "output": 1.76088,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -64079,13 +64083,13 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.15,
-      "input": 0.6725,
+      "input": 0.56,
       "output": 3.1,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.149,
-      "input": 0.159,
+      "cacheRead": 0.159,
+      "input": 0.16899999999999998,
       "output": 20,
       "source": "openRouter"
     },
@@ -64134,11 +64138,13 @@
       "source": "openRouter"
     },
     "openrouter/nousresearch/hermes-4-405b": {
+      "cacheRead": 0.19999999999999998,
       "input": 1,
       "output": 3,
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-nano-30b-a3b": {
+      "cacheRead": 0.012,
       "input": 0.06,
       "output": 0.24,
       "source": "openRouter"
@@ -65773,6 +65779,7 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
+      "cacheRead": 0.09999999999999999,
       "input": 0.09999999999999999,
       "output": 0.3,
       "source": "openRouter"
@@ -66283,9 +66290,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -66295,9 +66302,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
