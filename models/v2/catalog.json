@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793291400221,
+  "generatedAt": 1793305712243,
   "models": [
     {
       "id": "abliterated-model",
@@ -2980,11 +2980,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.04199999814,
+        "cacheRead": 0.03989999823299999,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7922999999999999,
+        "output": 2.3759499999999996,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -3024,11 +3024,11 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.00252,
+        "cacheRead": 0.0028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.126,
-        "output": 0.252,
+        "input": 0.13999999999999999,
+        "output": 0.27999999999999997,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -5735,11 +5735,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.0336,
+        "cacheRead": 0.004,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0372,
-        "output": 1.64,
+        "input": 0.044,
+        "output": 0.383,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6030,8 +6030,8 @@
         "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0457,
-        "output": 0.0742,
+        "input": 0.0513,
+        "output": 0.0701,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6955,11 +6955,11 @@
     {
       "id": "deepseek/deepseek-v4-pro",
       "provider": "kilocode",
-      "contextWindow": 1024000,
+      "contextWindow": 1048576,
       "input": [
         "text"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 393216,
       "name": "DeepSeek V4 Pro",
       "pricing": {
         "cacheRead": 0.135,
@@ -11688,27 +11688,6 @@
       "reasoning": true
     },
     {
-      "id": "upstage/solar-pro-3",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 117964,
-      "name": "Upstage: Solar Pro 3 (retires Oct 30)",
-      "pricing": {
-        "cacheRead": 0.015,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "upstage/solar-pro4",
       "provider": "kilocode",
       "contextWindow": 524288,
@@ -12204,12 +12183,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943717,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -33526,9 +33505,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.033600000000000005,
-      "input": 0.037200000000000004,
-      "output": 1.64,
+      "cacheRead": 0.004,
+      "input": 0.044,
+      "output": 0.38299999999999995,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -33558,8 +33537,8 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
+      "cacheRead": 0.16999999999999998,
+      "input": 0.1719,
       "output": 9.338799999999999,
       "source": "openRouter"
     },
@@ -33716,8 +33695,8 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.03,
-      "input": 0.0457,
-      "output": 0.0742,
+      "input": 0.051300000000000005,
+      "output": 0.0701,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -34316,9 +34295,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0730945,
-      "input": 0.877134,
-      "output": 1.754268,
+      "cacheRead": 0.135,
+      "input": 1.5999999999999999,
+      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -34686,9 +34665,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -37327,12 +37306,6 @@
       "output": 0.19999999999999998,
       "source": "openRouter"
     },
-    "openrouter/upstage/solar-pro-3": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
-      "source": "openRouter"
-    },
     "openrouter/upstage/solar-pro4": {
       "cacheRead": 0.03,
       "input": 0.15,
@@ -37663,8 +37636,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.0457,
-      "output": 0.0742,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -39405,7 +39378,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "50bb9ed9160849ac428c72c8cb5da0c254094d0a",
+  "sourceCommit": "72dca273339a523428340e4ce1c3937871b5d829",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -63221,9 +63194,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.033600000000000005,
-      "input": 0.037200000000000004,
-      "output": 1.64,
+      "cacheRead": 0.004,
+      "input": 0.044,
+      "output": 0.38299999999999995,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -63253,8 +63226,8 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
+      "cacheRead": 0.16999999999999998,
+      "input": 0.1719,
       "output": 9.338799999999999,
       "source": "openRouter"
     },
@@ -63411,8 +63384,8 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.03,
-      "input": 0.0457,
-      "output": 0.0742,
+      "input": 0.051300000000000005,
+      "output": 0.0701,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -64011,9 +63984,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0730945,
-      "input": 0.877134,
-      "output": 1.754268,
+      "cacheRead": 0.135,
+      "input": 1.5999999999999999,
+      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -64381,9 +64354,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -67022,12 +66995,6 @@
       "output": 0.19999999999999998,
       "source": "openRouter"
     },
-    "openrouter/upstage/solar-pro-3": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
-      "source": "openRouter"
-    },
     "openrouter/upstage/solar-pro4": {
       "cacheRead": 0.03,
       "input": 0.15,
@@ -67358,8 +67325,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.0457,
-      "output": 0.0742,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -71338,6 +71305,7 @@
     },
     "requesty/qwen3.8-2.4T-A95B@eu": {
       "cacheRead": 0.63,
+      "cacheWrite": 2.5,
       "input": 2.5,
       "output": 6,
       "source": "modelsDev"
@@ -71351,12 +71319,14 @@
     },
     "requesty/qwen3.8-flash-next": {
       "cacheRead": 0.05,
+      "cacheWrite": 0.2,
       "input": 0.2,
       "output": 0.5,
       "source": "modelsDev"
     },
     "requesty/qwen3.8-flash-next@eu": {
       "cacheRead": 0.05,
+      "cacheWrite": 0.2,
       "input": 0.2,
       "output": 0.5,
       "source": "modelsDev"
