@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793277325699,
+  "generatedAt": 1793291400221,
   "models": [
     {
       "id": "abliterated-model",
@@ -5735,11 +5735,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.0231,
+        "cacheRead": 0.0336,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0233,
-        "output": 1.8,
+        "input": 0.0372,
+        "output": 1.64,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5780,8 +5780,8 @@
         "cacheRead": 0.028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.057,
-        "output": 0.1341,
+        "input": 0.0509,
+        "output": 0.1487,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8463,11 +8463,11 @@
       "maxTokens": 262144,
       "name": "Mistral: Mistral Large 4",
       "pricing": {
-        "cacheRead": 0.14,
+        "cacheRead": 0.07,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.36,
-        "output": 4.18,
+        "input": 0.7,
+        "output": 2.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11525,11 +11525,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11567,11 +11567,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15140,22 +15140,6 @@
         "status": "unknown"
       },
       "reasoning": true
-    },
-    {
-      "id": "z-ai/glm-5.3",
-      "provider": "nvidia",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131072,
-      "name": "GLM-5.3",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "nvidia no longer lists this model in its public model inventory."
     },
     {
       "id": "z-ai/glm-5.3-flash",
@@ -25441,7 +25425,7 @@
     {
       "id": "mistral/mistral-large-4",
       "provider": "vercel-ai-gateway",
-      "contextWindow": 524288,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
@@ -25449,11 +25433,11 @@
       "maxTokens": 262144,
       "name": "Mistral Large 4",
       "pricing": {
-        "cacheRead": 0.14,
+        "cacheRead": 0.07,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.36,
-        "output": 4.18,
+        "input": 0.7,
+        "output": 2.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -33542,9 +33526,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.0231,
-      "input": 0.0233,
-      "output": 1.7999999999999998,
+      "cacheRead": 0.033600000000000005,
+      "input": 0.037200000000000004,
+      "output": 1.64,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -33555,8 +33539,8 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.028,
-      "input": 0.057,
-      "output": 0.1341,
+      "input": 0.0509,
+      "output": 0.1487,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -34332,9 +34316,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0747765,
-      "input": 0.8973180000000001,
-      "output": 1.7946360000000001,
+      "cacheRead": 0.0730945,
+      "input": 0.877134,
+      "output": 1.754268,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -34989,9 +34973,9 @@
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-large-4-0": {
-      "cacheRead": 0.14,
-      "input": 1.3599999999999999,
-      "output": 4.18,
+      "cacheRead": 0.07,
+      "input": 0.7,
+      "output": 2.0999999999999996,
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-medium-3": {
@@ -37274,9 +37258,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -37286,9 +37270,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -39421,7 +39405,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "a0f10e38dea4244cfb22ad3f63139ef540e51587",
+  "sourceCommit": "50bb9ed9160849ac428c72c8cb5da0c254094d0a",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -63237,9 +63221,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.0231,
-      "input": 0.0233,
-      "output": 1.7999999999999998,
+      "cacheRead": 0.033600000000000005,
+      "input": 0.037200000000000004,
+      "output": 1.64,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -63250,8 +63234,8 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.028,
-      "input": 0.057,
-      "output": 0.1341,
+      "input": 0.0509,
+      "output": 0.1487,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -64027,9 +64011,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0747765,
-      "input": 0.8973180000000001,
-      "output": 1.7946360000000001,
+      "cacheRead": 0.0730945,
+      "input": 0.877134,
+      "output": 1.754268,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -64684,9 +64668,9 @@
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-large-4-0": {
-      "cacheRead": 0.14,
-      "input": 1.3599999999999999,
-      "output": 4.18,
+      "cacheRead": 0.07,
+      "input": 0.7,
+      "output": 2.0999999999999996,
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-medium-3": {
@@ -66969,9 +66953,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -66981,9 +66965,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
