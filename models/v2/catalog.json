@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793363750605,
+  "generatedAt": 1793377752072,
   "models": [
     {
       "id": "abliterated-model",
@@ -5762,8 +5762,8 @@
         "cacheRead": 0.004,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.031,
-        "output": 0.27,
+        "input": 0.022,
+        "output": 0.192,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5801,10 +5801,10 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.0294,
+        "cacheRead": 0.0321,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0304,
+        "input": 0.0331,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -5873,7 +5873,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.1529,
-        "output": 10.1551,
+        "output": 10.5572,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6051,11 +6051,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0216,
+        "cacheRead": 0.018,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0216,
-        "output": 0.1142,
+        "input": 0.018,
+        "output": 0.1402,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7498,11 +7498,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.018,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.03,
-        "output": 0.09,
+        "input": 0.036,
+        "output": 0.109,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7676,6 +7676,20 @@
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash-1019-free",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "inclusionAI: Ling 3.1 Flash 1019 (free)",
+      "pricing": {
+        "status": "unknown"
       },
       "reasoning": true
     },
@@ -10355,8 +10369,8 @@
         "cacheRead": 0.003,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.25,
-        "output": 1,
+        "input": 0.05,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11549,11 +11563,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11591,11 +11605,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12207,12 +12221,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048575,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943717,
+      "maxTokens": 131072,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -25071,6 +25085,20 @@
       "reasoning": true
     },
     {
+      "id": "inclusionai/ling-3.1-flash-1019",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "Ling 3.1 Flash 1019",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "liquid/lfm2.5-24b-a2b",
       "provider": "vercel-ai-gateway",
       "contextWindow": 128000,
@@ -33812,8 +33840,8 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.004,
-      "input": 0.031,
-      "output": 0.27,
+      "input": 0.022,
+      "output": 0.192,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -33823,9 +33851,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.028,
-      "input": 0.0532,
-      "output": 0.18869999999999998,
+      "cacheRead": 0.0294,
+      "input": 0.0304,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -33843,8 +33871,8 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.15,
-      "input": 0.1529,
+      "cacheRead": 0.16,
+      "input": 0.1615,
       "output": 10.5572,
       "source": "openRouter"
     },
@@ -34000,9 +34028,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0216,
-      "input": 0.0216,
-      "output": 0.11420000000000001,
+      "cacheRead": 0.018,
+      "input": 0.018,
+      "output": 0.1402,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -34601,9 +34629,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0680195,
-      "input": 0.816234,
-      "output": 1.632468,
+      "cacheRead": 0.079025,
+      "input": 0.9483,
+      "output": 1.8966,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35204,9 +35232,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -36904,8 +36932,8 @@
     },
     "openrouter/particle-ai/particle-1": {
       "cacheRead": 0.003,
-      "input": 0.25,
-      "output": 1,
+      "input": 0.049999999999999996,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/perceptron/perceptron-mk1": {
@@ -37543,9 +37571,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -37555,9 +37583,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -37941,9 +37969,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "cacheRead": 0.018,
+      "input": 0.018,
+      "output": 0.1402,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -39681,7 +39709,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "509d3f00833b45e347b11f344c21ca9d48510895",
+  "sourceCommit": "2eef065f0f89960d0aaebfc64647386715cc9abe",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -45697,6 +45725,7 @@
     "baseten/decision-models/baseten-joey-2b-latest": {
       "input": 0.01,
       "output": 0,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "baseten/decision-models/baseten-mammoth-27b-latest": {
@@ -63585,8 +63614,8 @@
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
       "cacheRead": 0.004,
-      "input": 0.031,
-      "output": 0.27,
+      "input": 0.022,
+      "output": 0.192,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -63596,9 +63625,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.028,
-      "input": 0.0532,
-      "output": 0.18869999999999998,
+      "cacheRead": 0.0294,
+      "input": 0.0304,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -63616,8 +63645,8 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.15,
-      "input": 0.1529,
+      "cacheRead": 0.16,
+      "input": 0.1615,
       "output": 10.5572,
       "source": "openRouter"
     },
@@ -63773,9 +63802,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0216,
-      "input": 0.0216,
-      "output": 0.11420000000000001,
+      "cacheRead": 0.018,
+      "input": 0.018,
+      "output": 0.1402,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -64374,9 +64403,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0680195,
-      "input": 0.816234,
-      "output": 1.632468,
+      "cacheRead": 0.079025,
+      "input": 0.9483,
+      "output": 1.8966,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -64977,9 +65006,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -66677,8 +66706,8 @@
     },
     "openrouter/particle-ai/particle-1": {
       "cacheRead": 0.003,
-      "input": 0.25,
-      "output": 1,
+      "input": 0.049999999999999996,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/perceptron/perceptron-mk1": {
@@ -67316,9 +67345,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -67328,9 +67357,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -67714,9 +67743,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "cacheRead": 0.018,
+      "input": 0.018,
+      "output": 0.1402,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
