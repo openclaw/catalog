@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793377752072,
+  "generatedAt": 1793391968035,
   "models": [
     {
       "id": "abliterated-model",
@@ -2980,11 +2980,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.04199999814,
+        "cacheRead": 0.03989999823299999,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7922999999999999,
+        "output": 2.3759499999999996,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -5801,10 +5801,10 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.0321,
+        "cacheRead": 0.0294,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0331,
+        "input": 0.0304,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -5873,7 +5873,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.1529,
-        "output": 10.5572,
+        "output": 9.3388,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7498,11 +7498,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.018,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.036,
-        "output": 0.109,
+        "input": 0.03,
+        "output": 0.09,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -24058,27 +24058,6 @@
       "reasoning": true
     },
     {
-      "id": "arcee-ai/trinity-large-thinking",
-      "provider": "vercel-ai-gateway",
-      "contextWindow": 262100,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 80000,
-      "name": "Trinity Large Thinking",
-      "pricing": {
-        "cacheRead": 0.06,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.25,
-        "output": 0.8,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "bytedance/seed-1.6",
       "provider": "vercel-ai-gateway",
       "contextWindow": 256000,
@@ -33851,8 +33830,8 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0294,
-      "input": 0.0304,
+      "cacheRead": 0.0409,
+      "input": 0.0419,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -33872,8 +33851,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.16,
-      "input": 0.1615,
-      "output": 10.5572,
+      "input": 0.1634,
+      "output": 10.5539,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -34028,9 +34007,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.018,
-      "input": 0.018,
-      "output": 0.1402,
+      "cacheRead": 0.019700000000000002,
+      "input": 0.019700000000000002,
+      "output": 0.1324,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -34629,9 +34608,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.135,
+      "input": 1.5999999999999999,
+      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -34999,9 +34978,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -37969,9 +37948,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.018,
-      "input": 0.018,
-      "output": 0.1402,
+      "cacheRead": 0.019700000000000002,
+      "input": 0.019700000000000002,
+      "output": 0.1324,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -39709,7 +39688,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "2eef065f0f89960d0aaebfc64647386715cc9abe",
+  "sourceCommit": "f86f168f54d266b0db599cb68f590a9a932c8b08",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -39817,10 +39796,22 @@
       "output": 0.6,
       "source": "liteLLM"
     },
+    "aiand/deepseek-ai/deepseek-v4.1-flash-1017": {
+      "cacheRead": 0.02,
+      "input": 0.3,
+      "output": 0.6,
+      "source": "liteLLM"
+    },
     "aiand/google/gemma-4-31b-it": {
       "cacheRead": 0.049999999999999996,
       "input": 0.19999999999999998,
       "output": 0.5,
+      "source": "liteLLM"
+    },
+    "aiand/meta/muse-spark-open": {
+      "cacheRead": 0.15,
+      "input": 1.25,
+      "output": 4.25,
       "source": "liteLLM"
     },
     "aiand/moonshotai/kimi-k2.7-code": {
@@ -49564,6 +49555,16 @@
     },
     "cohere/embed-v5.0-pro": {
       "input": 0.12,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "cohere/rerank-v5.0-fast": {
+      "input": 0.02,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "cohere/rerank-v5.0-pro": {
+      "input": 0.049999999999999996,
       "output": 0,
       "source": "liteLLM"
     },
@@ -62462,6 +62463,13 @@
         }
       ]
     },
+    "openai/gpt-6-rosalind": {
+      "cacheRead": 1.5,
+      "cacheWrite": 18.75,
+      "input": 15,
+      "output": 75,
+      "source": "liteLLM"
+    },
     "openai/gpt-6-sol": {
       "alternatives": [
         {
@@ -63625,8 +63633,8 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.0294,
-      "input": 0.0304,
+      "cacheRead": 0.0409,
+      "input": 0.0419,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -63646,8 +63654,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.16,
-      "input": 0.1615,
-      "output": 10.5572,
+      "input": 0.1634,
+      "output": 10.5539,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -63802,9 +63810,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.018,
-      "input": 0.018,
-      "output": 0.1402,
+      "cacheRead": 0.019700000000000002,
+      "input": 0.019700000000000002,
+      "output": 0.1324,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -64403,9 +64411,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.135,
+      "input": 1.5999999999999999,
+      "output": 3.1999999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -64773,9 +64781,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -67743,9 +67751,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.018,
-      "input": 0.018,
-      "output": 0.1402,
+      "cacheRead": 0.019700000000000002,
+      "input": 0.019700000000000002,
+      "output": 0.1324,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
