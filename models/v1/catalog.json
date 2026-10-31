@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793449625516,
+  "generatedAt": 1793463977107,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -25628,6 +25628,11 @@
         }
       ]
     },
+    "cloudflare-ai-gateway/openai/gpt-6-astra-law": {
+      "cacheRead": 1,
+      "input": 10,
+      "output": 50
+    },
     "cloudflare-ai-gateway/openai/gpt-6-luna": {
       "cacheRead": 0.01,
       "cacheWrite": 0.125,
@@ -27792,9 +27797,9 @@
       "output": 1.2
     },
     "cloudflare-ai-gateway/openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3
     },
     "cloudflare-ai-gateway/openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -29379,16 +29384,6 @@
       "input": 2,
       "output": 8
     },
-    "cloudflare-ai-gateway/openrouter/poolside/laguna-s-2.1": {
-      "cacheRead": 0.009,
-      "input": 0.09,
-      "output": 0.18
-    },
-    "cloudflare-ai-gateway/openrouter/poolside/laguna-xs-2.1": {
-      "cacheRead": 0.03,
-      "input": 0.06,
-      "output": 0.12
-    },
     "cloudflare-ai-gateway/openrouter/prism-ml/ternary-bonsai-2-27b": {
       "cacheRead": 0.0375,
       "input": 0.075,
@@ -29913,9 +29908,9 @@
       "output": 0.295
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -29923,9 +29918,9 @@
       "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "cloudflare-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -44148,6 +44143,11 @@
       "cacheWrite": 15.625,
       "input": 12.5,
       "output": 75
+    },
+    "gpt-6-astra-law": {
+      "cacheRead": 1,
+      "input": 10,
+      "output": 50
     },
     "gpt-6-rosalind": {
       "cacheRead": 1.5,
@@ -62245,6 +62245,11 @@
       "input": 12.5,
       "output": 75
     },
+    "kilocode/openai/gpt-6-astra-law": {
+      "cacheRead": 1,
+      "input": 10,
+      "output": 50
+    },
     "kilocode/openai/gpt-6-rosalind": {
       "cacheRead": 1.5,
       "cacheWrite": 18.75,
@@ -64284,9 +64289,9 @@
       "output": 1.2
     },
     "kilocode/openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3
     },
     "kilocode/openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -65871,16 +65876,6 @@
       "input": 2,
       "output": 8
     },
-    "kilocode/openrouter/poolside/laguna-s-2.1": {
-      "cacheRead": 0.009,
-      "input": 0.09,
-      "output": 0.18
-    },
-    "kilocode/openrouter/poolside/laguna-xs-2.1": {
-      "cacheRead": 0.03,
-      "input": 0.06,
-      "output": 0.12
-    },
     "kilocode/openrouter/prism-ml/ternary-bonsai-2-27b": {
       "cacheRead": 0.0375,
       "input": 0.075,
@@ -66405,9 +66400,9 @@
       "output": 0.295
     },
     "kilocode/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "kilocode/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -66415,9 +66410,9 @@
       "output": 0.6
     },
     "kilocode/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "kilocode/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -67285,16 +67280,6 @@
     "kilocode/pinstripes/ps/qwen3.6-35b-a3b": {
       "input": 0.14,
       "output": 0.44999999999999996
-    },
-    "kilocode/poolside/laguna-s-2.1": {
-      "cacheRead": 0.01,
-      "input": 0.1,
-      "output": 0.2
-    },
-    "kilocode/poolside/laguna-xs-2.1": {
-      "cacheRead": 0.05,
-      "input": 0.1,
-      "output": 0.2
     },
     "kilocode/prism/deepseek-v4-flash": {
       "cacheRead": 0.07,
@@ -77270,6 +77255,11 @@
       "input": 12.5,
       "output": 75
     },
+    "openai/gpt-6-astra-law": {
+      "cacheRead": 1,
+      "input": 10,
+      "output": 50
+    },
     "openai/gpt-6-rosalind": {
       "cacheRead": 1.5,
       "cacheWrite": 18.75,
@@ -80177,9 +80167,9 @@
       "output": 1.2
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3
     },
     "openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -81764,16 +81754,6 @@
       "input": 2,
       "output": 8
     },
-    "openrouter/poolside/laguna-s-2.1": {
-      "cacheRead": 0.009,
-      "input": 0.09,
-      "output": 0.18
-    },
-    "openrouter/poolside/laguna-xs-2.1": {
-      "cacheRead": 0.03,
-      "input": 0.06,
-      "output": 0.12
-    },
     "openrouter/prism-ml/ternary-bonsai-2-27b": {
       "cacheRead": 0.0375,
       "input": 0.075,
@@ -82298,9 +82278,9 @@
       "output": 0.295
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -82308,9 +82288,9 @@
       "output": 0.6
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -105439,6 +105419,11 @@
       "input": 12.5,
       "output": 75
     },
+    "vercel-ai-gateway/openai/gpt-6-astra-law": {
+      "cacheRead": 1,
+      "input": 10,
+      "output": 50
+    },
     "vercel-ai-gateway/openai/gpt-6-rosalind": {
       "cacheRead": 1.5,
       "cacheWrite": 18.75,
@@ -107481,9 +107466,9 @@
       "output": 1.2
     },
     "vercel-ai-gateway/openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3
     },
     "vercel-ai-gateway/openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -109068,16 +109053,6 @@
       "input": 2,
       "output": 8
     },
-    "vercel-ai-gateway/openrouter/poolside/laguna-s-2.1": {
-      "cacheRead": 0.009,
-      "input": 0.09,
-      "output": 0.18
-    },
-    "vercel-ai-gateway/openrouter/poolside/laguna-xs-2.1": {
-      "cacheRead": 0.03,
-      "input": 0.06,
-      "output": 0.12
-    },
     "vercel-ai-gateway/openrouter/prism-ml/ternary-bonsai-2-27b": {
       "cacheRead": 0.0375,
       "input": 0.075,
@@ -109602,9 +109577,9 @@
       "output": 0.295
     },
     "vercel-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33
     },
     "vercel-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -109612,9 +109587,9 @@
       "output": 0.6
     },
     "vercel-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509
     },
     "vercel-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -125506,10 +125481,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.005,
+            "cacheRead": 0.01,
             "cacheWrite": 0,
-            "input": 0.01,
-            "output": 0.031
+            "input": 0.02,
+            "output": 0.061
           },
           "id": "google/gemma-4-26b-a4b-it",
           "input": [
@@ -127756,26 +127731,6 @@
         },
         {
           "contextWindow": 262144,
-          "id": "poolside/laguna-s-2.1:free",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Poolside: Laguna S 2.1 (free)",
-          "reasoning": true
-        },
-        {
-          "contextWindow": 262144,
-          "id": "poolside/laguna-xs-2.1:free",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 32768,
-          "name": "Poolside: Laguna XS 2.1 (free)",
-          "reasoning": true
-        },
-        {
-          "contextWindow": 262144,
           "cost": {
             "cacheRead": 0.0375,
             "cacheWrite": 0,
@@ -128641,10 +128596,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.033,
+            "cacheRead": 0.020625,
             "cacheWrite": 0,
-            "input": 0.132,
-            "output": 0.528
+            "input": 0.0825,
+            "output": 0.33
           },
           "id": "tencent/hy3",
           "input": [
@@ -128673,10 +128628,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.042,
+            "cacheRead": 0.0378,
             "cacheWrite": 0,
-            "input": 0.834,
-            "output": 2.501
+            "input": 0.7506,
+            "output": 2.2509
           },
           "id": "tencent/hy4-preview",
           "input": [
@@ -144511,5 +144466,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "298b86c81fa0efa8eab67fa5eddb94232dd69ef6"
+  "sourceCommit": "cba046c78c8a65a61e67b9164d4ee1db0dffbc9c"
 }
