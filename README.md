@@ -51,8 +51,10 @@ value they do not know, and then stop refreshing. Before committing, the workflo
 runs `scripts/released-readers.mjs`: the OpenClaw versions on the `latest`,
 `extended-stable` and `beta` npm tags each refresh from the new v1 and v2 files
 in a sandbox. If any of them rejects a file, nothing is committed or deployed,
-and the last good catalog stays live. New fields go to v3, whose readers ignore
-fields they do not know.
+and the last good catalog stays live. New fields go to v3. OpenClaw reads v3
+only from a configured mirror URL, and builds that include
+[openclaw/openclaw#190187](https://github.com/openclaw/openclaw/pull/190187)
+ignore v3 fields they do not know. No release reads v3 yet.
 
 Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those
