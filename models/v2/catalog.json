@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793550365237,
+  "generatedAt": 1793564763872,
   "models": [
     {
       "id": "abliterated-model",
@@ -10225,11 +10225,11 @@
       "maxTokens": 65536,
       "name": "GPT OSS 120B",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.018,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.018,
-        "output": 0.065,
+        "input": 0.02,
+        "output": 0.075,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10246,11 +10246,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.004,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.004,
-        "output": 0.018,
+        "input": 0.005,
+        "output": 0.02,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -36807,8 +36807,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "input": 0.017,
-      "output": 0.064,
+      "cacheRead": 0.016,
+      "input": 0.018,
+      "output": 0.067,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -39637,7 +39638,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "e33046421b6fac3f29812b572dcb3a6e75a19e87",
+  "sourceCommit": "b70c33caa86685bba2ef707d54dd2e6df3fca44e",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -66641,8 +66642,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "input": 0.017,
-      "output": 0.064,
+      "cacheRead": 0.016,
+      "input": 0.018,
+      "output": 0.067,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793550365237,
+  "generatedAt": 1793564763872,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -29305,8 +29305,9 @@
       "output": 30
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-oss-120b": {
-      "input": 0.017,
-      "output": 0.064
+      "cacheRead": 0.016,
+      "input": 0.018,
+      "output": 0.067
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-oss-120b:batch": {
       "input": 0.0296,
@@ -65796,8 +65797,9 @@
       "output": 30
     },
     "kilocode/openrouter/openai/gpt-oss-120b": {
-      "input": 0.017,
-      "output": 0.064
+      "cacheRead": 0.016,
+      "input": 0.018,
+      "output": 0.067
     },
     "kilocode/openrouter/openai/gpt-oss-120b:batch": {
       "input": 0.0296,
@@ -81673,8 +81675,9 @@
       "output": 30
     },
     "openrouter/openai/gpt-oss-120b": {
-      "input": 0.017,
-      "output": 0.064
+      "cacheRead": 0.016,
+      "input": 0.018,
+      "output": 0.067
     },
     "openrouter/openai/gpt-oss-120b:batch": {
       "input": 0.0296,
@@ -108971,8 +108974,9 @@
       "output": 30
     },
     "vercel-ai-gateway/openrouter/openai/gpt-oss-120b": {
-      "input": 0.017,
-      "output": 0.064
+      "cacheRead": 0.016,
+      "input": 0.018,
+      "output": 0.067
     },
     "vercel-ai-gateway/openrouter/openai/gpt-oss-120b:batch": {
       "input": 0.0296,
@@ -127587,10 +127591,10 @@
         {
           "contextWindow": 131072,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.018,
             "cacheWrite": 0,
-            "input": 0.018,
-            "output": 0.065
+            "input": 0.02,
+            "output": 0.075
           },
           "id": "openai/gpt-oss-120b",
           "input": [
@@ -127603,10 +127607,10 @@
         {
           "contextWindow": 131072,
           "cost": {
-            "cacheRead": 0,
+            "cacheRead": 0.004,
             "cacheWrite": 0,
-            "input": 0.004,
-            "output": 0.018
+            "input": 0.005,
+            "output": 0.02
           },
           "id": "openai/gpt-oss-20b",
           "input": [
@@ -144484,5 +144488,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "e33046421b6fac3f29812b572dcb3a6e75a19e87"
+  "sourceCommit": "b70c33caa86685bba2ef707d54dd2e6df3fca44e"
 }
