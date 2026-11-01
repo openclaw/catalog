@@ -46,6 +46,14 @@ One publisher invocation generates v1, v2, and v3 from the same source snapshot.
 Changes to generation timestamps or source commit metadata alone do not trigger
 a commit. If any payload changes, all three outputs are committed together.
 
+v1 and v2 are frozen. Released clients reject a v1/v2 file with any field or
+value they do not know, and then stop refreshing. Before committing, the workflow
+runs `scripts/released-readers.mjs`: the OpenClaw versions on the `latest`,
+`extended-stable` and `beta` npm tags each refresh from the new v1 and v2 files
+in a sandbox. If any of them rejects a file, nothing is committed or deployed,
+and the last good catalog stays live. New fields go to v3, whose readers ignore
+fields they do not know.
+
 Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those
 constraints are enforced client-side.

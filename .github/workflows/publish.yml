@@ -26,7 +26,7 @@ jobs:
   publish:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - name: Checkout catalog
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -56,6 +56,12 @@ jobs:
         if: github.event_name != 'push'
         working-directory: openclaw
         run: node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json --out-v2 ../models/v2/catalog.next.json --out-v3 ../models/v3/catalog.next.json
+
+      # Released clients reject an unknown v1/v2 field and stop refreshing
+      # (openclaw/openclaw#173027). Fail before commit so the last good catalog stays live.
+      - name: Check released readers
+        if: github.event_name != 'push'
+        run: node scripts/released-readers.mjs --openclaw openclaw
 
       - name: Commit on change only
         if: github.event_name != 'push'
