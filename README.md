@@ -8,6 +8,25 @@ alias of the v1 catalog. Both URLs refresh together and use the v1 format.
 The v2 catalog is served at **https://catalog.openclaw.ai/models/v2/catalog.json**.
 It has its own versioned format; the unversioned alias continues to serve v1.
 
+The v3 catalog is served at **https://catalog.openclaw.ai/models/v3/catalog.json**.
+It extends v2 with model `inference` capabilities, including native Decision models.
+
+### Client compatibility
+
+Catalog publication and OpenClaw releases can happen in either order:
+
+| Client | Feed | Behavior |
+| --- | --- | --- |
+| Existing v1 clients | `/models/v1/catalog.json` or the unversioned alias | Continue receiving the v1 format. |
+| Existing v2 clients and the current OpenClaw default | `/models/v2/catalog.json` | Continue receiving the v2 format. |
+| Clients with v3 support, explicitly configured for it | `/models/v3/catalog.json` | Receive inference capabilities and native Decision model metadata. |
+
+There are no redirects to a newer schema. v1/v2 omit `inference` and
+Decision-only models; publishing v3 does not change client defaults. Newer
+OpenClaw clients also accept v1/v2, so they can upgrade before the catalog does.
+Only configure the v3 URL after upgrading to an OpenClaw build with v3 support;
+older clients do not gain v3 support just by changing their URL.
+
 OpenClaw fetches catalog updates in the background (every 6h, or via
 `openclaw models refresh`) to learn about newly released models without waiting
 for a release. See the [models documentation](https://docs.openclaw.ai/concepts/models)
@@ -20,12 +39,12 @@ The catalog is **not hand-edited**. A [scheduled workflow](.github/workflows/pub
 assembles it from the `modelCatalog` blocks in the plugin manifests of
 [openclaw/openclaw](https://github.com/openclaw/openclaw) (`extensions/*/openclaw.plugin.json`),
 enriches per-token pricing, checks every 4 hours, validates it with the same schema the client enforces,
-and commits both versions **only when either version's content actually changed** —
+and commits all three versions **only when any version's content actually changed** —
 so the file history is a readable changelog of model additions and pricing updates.
 
-One publisher invocation generates v1 and v2 from the same source snapshot.
+One publisher invocation generates v1, v2, and v3 from the same source snapshot.
 Changes to generation timestamps or source commit metadata alone do not trigger
-a commit. If either payload changes, both outputs are committed together.
+a commit. If any payload changes, all three outputs are committed together.
 
 Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those
@@ -37,7 +56,7 @@ Cloudflare Workers Static Assets serves the catalog directly from the CDN. There
 is no Worker script, R2 bucket, or request-time catalog assembly. Unlike the docs
 site, this feed does not need HTML routing, Markdown negotiation, or search.
 
-`node scripts/build.mjs` stages the v1 catalog, its alias, the v2 catalog, and
+`node scripts/build.mjs` stages the v1 catalog, its alias, the v2/v3 catalogs, and
 `static/_headers` in `dist/`. Repository files and the upstream OpenClaw checkout
 never become assets.
 The response is UTF-8 JSON with public CORS, an exposed native `ETag`, and
@@ -72,7 +91,7 @@ wrangler dev --env preview --ip 127.0.0.1 --port 8787
 node scripts/smoke.mjs http://127.0.0.1:8787
 ```
 
-The smoke check verifies all three URLs for version-specific byte equality,
+The smoke check verifies all four URLs for version-specific byte equality,
 content type, cache/CORS headers, GET, HEAD, and conditional `304`, plus `404` for
 missing and repository-only files. It also runs against the public hostname after
 each deployment. Edges pick up a deployment gradually, so the check retries
@@ -85,7 +104,8 @@ and pass the smoke check before attaching the production custom domain. Keep the
 Pages configuration available until production verification passes.
 
 Rollback is a forward deployment: revert the broken hosting change on `main`,
-retain the latest `models/v1/catalog.json` and `models/v2/catalog.json` as a pair,
+retain the latest `models/v1/catalog.json`, `models/v2/catalog.json`, and
+`models/v3/catalog.json` together,
 and rerun the publish workflow. The alias is rebuilt from v1. Do not roll back an
 entire old asset version and silently downgrade catalog data. If a
 Cloudflare outage requires returning to GitHub Pages, restore the recorded DNS
