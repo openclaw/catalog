@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793564763872,
+  "generatedAt": 1793580292793,
   "models": [
     {
       "id": "abliterated-model",
@@ -7495,14 +7495,14 @@
         "image",
         "text"
       ],
-      "maxTokens": 235929,
+      "maxTokens": 32768,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
         "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.024,
-        "output": 0.1,
+        "input": 0.021,
+        "output": 0.062,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10225,11 +10225,11 @@
       "maxTokens": 65536,
       "name": "GPT OSS 120B",
       "pricing": {
-        "cacheRead": 0.018,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.02,
-        "output": 0.075,
+        "input": 0.03,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10246,11 +10246,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.004,
+        "cacheRead": 0.011,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.005,
-        "output": 0.02,
+        "input": 0.012,
+        "output": 0.051,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10666,8 +10666,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.07,
-        "output": 0.28,
+        "input": 0.15,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11535,11 +11535,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.020625,
+        "cacheRead": 0.033,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0825,
-        "output": 0.33,
+        "input": 0.132,
+        "output": 0.528,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11577,11 +11577,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.0378,
+        "cacheRead": 0.042,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7506,
-        "output": 2.2509,
+        "input": 0.834,
+        "output": 2.501,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -34932,9 +34932,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.0375,
-      "input": 0.0675,
-      "output": 0.22499999999999998,
+      "cacheRead": 0.01,
+      "input": 0.020999999999999998,
+      "output": 0.063,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -36807,9 +36807,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.016,
-      "input": 0.018,
-      "output": 0.067,
+      "cacheRead": 0.075,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -37003,8 +37003,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.28,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-coder-flash": {
@@ -37492,9 +37492,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -37504,9 +37504,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -39638,7 +39638,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "b70c33caa86685bba2ef707d54dd2e6df3fca44e",
+  "sourceCommit": "7eb111c109f886afd60a849194c27160ec470eda",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -64767,9 +64767,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.0375,
-      "input": 0.0675,
-      "output": 0.22499999999999998,
+      "cacheRead": 0.01,
+      "input": 0.020999999999999998,
+      "output": 0.063,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -66642,9 +66642,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.016,
-      "input": 0.018,
-      "output": 0.067,
+      "cacheRead": 0.075,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -66838,8 +66838,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.07,
-      "output": 0.28,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-coder-flash": {
@@ -67327,9 +67327,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -67339,9 +67339,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
