@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793636879031,
+  "generatedAt": 1793651159424,
   "models": [
     {
       "id": "abliterated-model",
@@ -6003,7 +6003,7 @@
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.059,
+        "input": 0.0514,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -7694,14 +7694,14 @@
         "image",
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
         "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.024,
-        "output": 0.1,
+        "input": 0.04,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10445,11 +10445,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.013,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.017,
-        "output": 0.069,
+        "input": 0.015,
+        "output": 0.061,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -25957,7 +25957,7 @@
       "reasoning": true
     },
     {
-      "id": "meituan/longcat-2.5-preview",
+      "id": "meituan/longcat-2.5",
       "provider": "vercel-ai-gateway",
       "contextWindow": 1048576,
       "input": [
@@ -25965,7 +25965,7 @@
         "image"
       ],
       "maxTokens": 131072,
-      "name": "LongCat 2.5 Preview",
+      "name": "LongCat 2.5",
       "pricing": {
         "cacheRead": 0.006,
         "cacheWrite": 0,
@@ -25976,9 +25976,7 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
+      "reasoning": true
     },
     {
       "id": "meta/llama-3.1-70b",
@@ -29677,49 +29675,6 @@
         "currency": "USD",
         "input": 0.45,
         "output": 1.2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "xiaomi/mimo-v2.5",
-      "provider": "vercel-ai-gateway",
-      "contextWindow": 1050000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 131100,
-      "name": "MiMo M2.5",
-      "pricing": {
-        "cacheRead": 0.0025,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.119,
-        "output": 0.238,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "xiaomi/mimo-v2.5-pro",
-      "provider": "vercel-ai-gateway",
-      "contextWindow": 1050000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131000,
-      "name": "MiMo V2.5 Pro",
-      "pricing": {
-        "cacheRead": 0.0028,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.3045,
-        "output": 0.609,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -34677,7 +34632,7 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.035,
-      "input": 0.059,
+      "input": 0.0487,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -35824,9 +35779,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.083,
-      "output": 0.24900000000000003,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35933,8 +35888,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.0509,
-      "output": 0.335,
+      "input": 0.049999999999999996,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
@@ -37689,9 +37644,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.026000000000000002,
+      "input": 0.029,
+      "output": 0.10700000000000001,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -39824,11 +39779,6 @@
         }
       ]
     },
-    "venice/hermes-3-llama-3.1-405b": {
-      "input": 1.1,
-      "output": 3,
-      "source": "venice"
-    },
     "vercel-ai-gateway/amazon/nova-2-lite": {
       "cacheRead": 0.0825,
       "input": 0.33,
@@ -40533,7 +40483,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "8051834a3ded5bc2a566c0fecbe98ad66b6f2555",
+  "sourceCommit": "0a6aaf50f6c5c4e906dd906dd52b9539e4bf93be",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -64517,7 +64467,7 @@
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "cacheRead": 0.035,
-      "input": 0.059,
+      "input": 0.0487,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -65664,9 +65614,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.083,
-      "output": 0.24900000000000003,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -65773,8 +65723,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.0509,
-      "output": 0.335,
+      "input": 0.049999999999999996,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
@@ -67529,9 +67479,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.026000000000000002,
+      "input": 0.029,
+      "output": 0.10700000000000001,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
