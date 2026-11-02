@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793580292793,
+  "generatedAt": 1793593721349,
   "models": [
     {
       "id": "abliterated-model",
@@ -3179,11 +3179,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.03989999823299999,
+        "cacheRead": 0.04199999814,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7922999999999999,
-        "output": 2.3759499999999996,
+        "input": 0.834,
+        "output": 2.501,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -7700,8 +7700,8 @@
         "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.021,
-        "output": 0.062,
+        "input": 0.024,
+        "output": 0.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7719,11 +7719,11 @@
       "maxTokens": 16384,
       "name": "Gemma 4 31B IT",
       "pricing": {
-        "cacheRead": 0.1,
+        "cacheRead": 0.043,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.34,
+        "input": 0.086,
+        "output": 0.144,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10442,14 +10442,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 117964,
+      "maxTokens": 32768,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.011,
+        "cacheRead": 0.009,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.012,
-        "output": 0.051,
+        "input": 0.018,
+        "output": 0.09,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12069,8 +12069,8 @@
         "cacheRead": 0.003,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.087,
-        "output": 0.187,
+        "input": 0.1,
+        "output": 0.28,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15017,7 +15017,7 @@
       "name": "Qwen3.8 Flash",
       "pricing": {
         "cacheRead": 0.016,
-        "cacheWrite": 0,
+        "cacheWrite": 0.2,
         "currency": "USD",
         "input": 0.15,
         "output": 0.47,
@@ -35788,9 +35788,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.01,
-      "input": 0.020999999999999998,
-      "output": 0.063,
+      "cacheRead": 0.011,
+      "input": 0.022,
+      "output": 0.067,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35897,8 +35897,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.049999999999999996,
-      "output": 0.33,
+      "input": 0.0509,
+      "output": 0.335,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
@@ -36021,9 +36021,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -37674,9 +37674,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13,
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b:batch": {
@@ -40501,7 +40501,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "7eb111c109f886afd60a849194c27160ec470eda",
+  "sourceCommit": "db41a6a3a2e44726c08e2ba64442c27f2fd45ae1",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -60316,6 +60316,7 @@
     },
     "novita-ai/qwen/qwen3.8-flash": {
       "cacheRead": 0.016,
+      "cacheWrite": 0.2,
       "input": 0.15,
       "output": 0.47,
       "source": "modelsDev"
@@ -61559,6 +61560,7 @@
     },
     "novita/qwen/qwen3.8-flash": {
       "cacheRead": 0.016,
+      "cacheWrite": 0.2,
       "input": 0.15,
       "output": 0.47,
       "passthroughOnly": true,
@@ -65630,9 +65632,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.01,
-      "input": 0.020999999999999998,
-      "output": 0.063,
+      "cacheRead": 0.011,
+      "input": 0.022,
+      "output": 0.067,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -65739,8 +65741,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.2-3b-instruct": {
-      "input": 0.049999999999999996,
-      "output": 0.33,
+      "input": 0.0509,
+      "output": 0.335,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
@@ -65863,9 +65865,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -67516,9 +67518,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13,
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b:batch": {
