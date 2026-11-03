@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Use the standard GitHub Actions runtime budget for CodeQL instead of the rollout-specific 20-minute job cap.
+
 - Batch main CodeQL security scans daily while retaining pull request and manual analysis.
 
 - Refuse to publish v1/v2 catalogs that released OpenClaw versions would reject. The last good catalog stays live instead.
