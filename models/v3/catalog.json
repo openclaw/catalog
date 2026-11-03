@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793666638244,
+  "generatedAt": 1793680044812,
   "models": [
     {
       "id": "abliterated-model",
@@ -6068,11 +6068,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.07475,
+        "cacheRead": 0.16,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1495,
-        "output": 7.15,
+        "input": 0.1615,
+        "output": 10.5634,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8136,7 +8136,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 128000,
+      "maxTokens": 16384,
       "name": "Llama-3.3-70B-Instruct",
       "pricing": {
         "cacheRead": 0,
@@ -10460,11 +10460,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.006,
+        "cacheRead": 0.014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.007,
-        "output": 0.029,
+        "input": 0.015,
+        "output": 0.063,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -34701,9 +34701,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.07475000000000001,
-      "input": 0.14950000000000002,
-      "output": 7.15,
+      "cacheRead": 0.16,
+      "input": 0.1615,
+      "output": 10.5634,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -35829,9 +35829,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.041,
-      "input": 0.083,
-      "output": 0.24900000000000003,
+      "cacheRead": 0.018,
+      "input": 0.036,
+      "output": 0.109,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35943,9 +35943,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.19999999999999998,
-      "output": 0.52,
+      "input": 0.09999999999999999,
+      "output": 0.32,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-4-maverick": {
@@ -36063,9 +36062,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -40535,7 +40534,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "326f81f4df0042c5bd46ab5bab53b63e8c43c484",
+  "sourceCommit": "cde38490e29103cde72582e03d5ae8df83ca6592",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -64538,9 +64537,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.07475000000000001,
-      "input": 0.14950000000000002,
-      "output": 7.15,
+      "cacheRead": 0.16,
+      "input": 0.1615,
+      "output": 10.5634,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -65666,9 +65665,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.041,
-      "input": 0.083,
-      "output": 0.24900000000000003,
+      "cacheRead": 0.018,
+      "input": 0.036,
+      "output": 0.109,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -65780,9 +65779,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
-      "cacheRead": 0.09999999999999999,
-      "input": 0.19999999999999998,
-      "output": 0.52,
+      "input": 0.09999999999999999,
+      "output": 0.32,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-4-maverick": {
@@ -65900,9 +65898,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
