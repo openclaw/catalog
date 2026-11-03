@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793694528827,
+  "generatedAt": 1793709027733,
   "models": [
     {
       "id": "abliterated-model",
@@ -6072,7 +6072,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.1824,
-        "output": 9.7471,
+        "output": 10.5572,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6250,11 +6250,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0285,
+        "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0285,
-        "output": 0.0923,
+        "input": 0.0313,
+        "output": 0.0846,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7894,20 +7894,6 @@
       "reasoning": true
     },
     {
-      "id": "inclusionai/ling-3.1-flash-1019-free",
-      "provider": "kilocode",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 262144,
-      "name": "inclusionAI: Ling 3.1 Flash 1019 (free)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "kilo-auto/balanced",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -8094,14 +8080,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 8192,
       "name": "Llama-3.1-70B-Instruct",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.4,
-        "output": 0.4,
+        "input": 0.32,
+        "output": 0.32,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9153,11 +9139,11 @@
       "maxTokens": 235929,
       "name": "Nemotron 3 Nano 30B A3B",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.012,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.05,
-        "output": 0.2,
+        "input": 0.06,
+        "output": 0.24,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10439,11 +10425,11 @@
       "maxTokens": 65536,
       "name": "GPT OSS 120B",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.024,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.03,
-        "output": 0.15,
+        "input": 0.027,
+        "output": 0.099,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10460,11 +10446,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.009,
+        "cacheRead": 0.011,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.01,
-        "output": 0.041,
+        "input": 0.012,
+        "output": 0.05,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10744,18 +10730,18 @@
     {
       "id": "qwen/qwen3-235b-a22b-2507",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 117964,
+      "maxTokens": 16384,
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "cacheRead": 0.05,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.14,
-        "output": 0.8,
+        "input": 0.09,
+        "output": 0.55,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -34703,7 +34689,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
       "input": 0.18239999999999998,
-      "output": 9.7471,
+      "output": 10.5572,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -34858,9 +34844,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0285,
-      "input": 0.0285,
-      "output": 0.0923,
+      "cacheRead": 0.03,
+      "input": 0.0313,
+      "output": 0.08460000000000001,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -35477,9 +35463,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -35829,9 +35815,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.23900000000000002,
+      "cacheRead": 0.031,
+      "input": 0.061000000000000006,
+      "output": 0.184,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35922,8 +35908,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.1-70b-instruct": {
-      "input": 0.39999999999999997,
-      "output": 0.39999999999999997,
+      "input": 0.72,
+      "output": 0.72,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.1-8b-instruct": {
@@ -37695,9 +37681,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.019000000000000003,
-      "input": 0.020999999999999998,
-      "output": 0.078,
+      "cacheRead": 0.075,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -37859,9 +37845,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.14,
-      "output": 0.7999999999999999,
+      "input": 0.09,
+      "output": 0.55,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
@@ -38780,9 +38765,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.0285,
-      "input": 0.0285,
-      "output": 0.0923,
+      "cacheRead": 0.03,
+      "input": 0.0313,
+      "output": 0.08460000000000001,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -40536,7 +40521,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "b7c01ed7fa476cd8580b2676b0886dc5a5dd200d",
+  "sourceCommit": "5ead822527e350cecdf30cbe0f04b1f418fdb349",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -64553,7 +64538,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
       "input": 0.18239999999999998,
-      "output": 9.7471,
+      "output": 10.5572,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -64708,9 +64693,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0285,
-      "input": 0.0285,
-      "output": 0.0923,
+      "cacheRead": 0.03,
+      "input": 0.0313,
+      "output": 0.08460000000000001,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -65327,9 +65312,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -65679,9 +65664,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.23900000000000002,
+      "cacheRead": 0.031,
+      "input": 0.061000000000000006,
+      "output": 0.184,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -65772,8 +65757,8 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.1-70b-instruct": {
-      "input": 0.39999999999999997,
-      "output": 0.39999999999999997,
+      "input": 0.72,
+      "output": 0.72,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.1-8b-instruct": {
@@ -67545,9 +67530,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.019000000000000003,
-      "input": 0.020999999999999998,
-      "output": 0.078,
+      "cacheRead": 0.075,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -67709,9 +67694,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.14,
-      "output": 0.7999999999999999,
+      "input": 0.09,
+      "output": 0.55,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
@@ -68630,9 +68614,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.0285,
-      "input": 0.0285,
-      "output": 0.0923,
+      "cacheRead": 0.03,
+      "input": 0.0313,
+      "output": 0.08460000000000001,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
