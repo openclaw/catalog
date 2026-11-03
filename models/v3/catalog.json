@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793680044812,
+  "generatedAt": 1793694528827,
   "models": [
     {
       "id": "abliterated-model",
@@ -5958,11 +5958,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.005,
+        "cacheRead": 0.006,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.035,
-        "output": 0.5,
+        "output": 0.315,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6068,11 +6068,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.16,
+        "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1615,
-        "output": 10.5634,
+        "input": 0.1824,
+        "output": 9.7471,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8136,7 +8136,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 128000,
       "name": "Llama-3.3-70B-Instruct",
       "pricing": {
         "cacheRead": 0,
@@ -10460,11 +10460,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.014,
+        "cacheRead": 0.009,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.015,
-        "output": 0.063,
+        "input": 0.01,
+        "output": 0.041,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10744,18 +10744,18 @@
     {
       "id": "qwen/qwen3-235b-a22b-2507",
       "provider": "kilocode",
-      "contextWindow": 262144,
+      "contextWindow": 131072,
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 117964,
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.05,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.09,
-        "output": 0.55,
+        "input": 0.14,
+        "output": 0.8,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -34669,9 +34669,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.005,
+      "cacheRead": 0.006,
       "input": 0.035,
-      "output": 0.5,
+      "output": 0.315,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -34701,9 +34701,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.16,
-      "input": 0.1615,
-      "output": 10.5634,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 9.7471,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -35471,15 +35471,15 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
+      "cacheRead": 0.012,
       "input": 0.045,
       "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -35829,9 +35829,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.018,
-      "input": 0.036,
-      "output": 0.109,
+      "cacheRead": 0.04,
+      "input": 0.08,
+      "output": 0.23900000000000002,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35943,8 +35943,9 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
-      "input": 0.09999999999999999,
-      "output": 0.32,
+      "cacheRead": 0.09999999999999999,
+      "input": 0.19999999999999998,
+      "output": 0.52,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-4-maverick": {
@@ -37694,9 +37695,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.019000000000000003,
+      "input": 0.020999999999999998,
+      "output": 0.078,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -37858,8 +37859,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
-      "input": 0.09,
-      "output": 0.55,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.14,
+      "output": 0.7999999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
@@ -40534,7 +40536,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "cde38490e29103cde72582e03d5ae8df83ca6592",
+  "sourceCommit": "b7c01ed7fa476cd8580b2676b0886dc5a5dd200d",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -45999,7 +46001,19 @@
       "output": 24,
       "source": "liteLLM"
     },
+    "azure/gpt-realtime-2.1-2026-07-07": {
+      "cacheRead": 0.39999999999999997,
+      "input": 4,
+      "output": 24,
+      "source": "liteLLM"
+    },
     "azure/gpt-realtime-2.1-mini": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 2.4,
+      "source": "liteLLM"
+    },
+    "azure/gpt-realtime-2.1-mini-2026-07-07": {
       "cacheRead": 0.06,
       "input": 0.6,
       "output": 2.4,
@@ -59119,9 +59133,9 @@
     "mistral/mistral-large-4": {
       "alternatives": [
         {
-          "cacheRead": 0.14,
-          "input": 1.3599999999999999,
-          "output": 4.18,
+          "cacheRead": 0.07,
+          "input": 0.7,
+          "output": 2.0999999999999996,
           "source": "liteLLM"
         }
       ],
@@ -59132,9 +59146,9 @@
       "source": "modelsDev"
     },
     "mistral/mistral-large-4-0": {
-      "cacheRead": 0.14,
-      "input": 1.3599999999999999,
-      "output": 4.18,
+      "cacheRead": 0.07,
+      "input": 0.7,
+      "output": 2.0999999999999996,
       "source": "liteLLM"
     },
     "mistral/mistral-large-4-0-8": {
@@ -64505,9 +64519,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.005,
+      "cacheRead": 0.006,
       "input": 0.035,
-      "output": 0.5,
+      "output": 0.315,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -64537,9 +64551,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.16,
-      "input": 0.1615,
-      "output": 10.5634,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 9.7471,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -65307,15 +65321,15 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
+      "cacheRead": 0.012,
       "input": 0.045,
       "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -65665,9 +65679,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.018,
-      "input": 0.036,
-      "output": 0.109,
+      "cacheRead": 0.04,
+      "input": 0.08,
+      "output": 0.23900000000000002,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -65779,8 +65793,9 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
-      "input": 0.09999999999999999,
-      "output": 0.32,
+      "cacheRead": 0.09999999999999999,
+      "input": 0.19999999999999998,
+      "output": 0.52,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-4-maverick": {
@@ -67530,9 +67545,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.019000000000000003,
+      "input": 0.020999999999999998,
+      "output": 0.078,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -67694,8 +67709,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
-      "input": 0.09,
-      "output": 0.55,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.14,
+      "output": 0.7999999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
