@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793896075313,
+  "generatedAt": 1793910379004,
   "models": [
     {
       "id": "abliterated-model",
@@ -5826,7 +5826,7 @@
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0474,
+        "input": 0.0434,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -5891,11 +5891,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.15,
+        "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.151,
-        "output": 10.5387,
+        "input": 0.1824,
+        "output": 9.3388,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7517,14 +7517,14 @@
         "image",
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.017,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.035,
-        "output": 0.105,
+        "input": 0.04,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10177,11 +10177,11 @@
       "maxTokens": 65536,
       "name": "GPT OSS 120B",
       "pricing": {
-        "cacheRead": 0.023,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.026,
-        "output": 0.096,
+        "input": 0.03,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10198,11 +10198,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.007,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.008,
-        "output": 0.034,
+        "input": 0.011,
+        "output": 0.044,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11222,7 +11222,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "Reflection: Beam 1.0 501B A23B",
       "pricing": {
         "cacheRead": 0.05,
@@ -30878,11 +30878,6 @@
       "output": 25,
       "source": "liteLLM"
     },
-    "cerebras/moonshotai-kimi-k3": {
-      "input": 0,
-      "output": 0,
-      "source": "cerebras"
-    },
     "deepinfra/allenai/Olmo-3.1-32B-Instruct": {
       "input": 0.2,
       "output": 0.6,
@@ -32237,6 +32232,16 @@
     "kilocode/google/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5,
+      "source": "modelsDev"
+    },
+    "kilocode/google/gemini-omni-1.1-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "modelsDev"
+    },
+    "kilocode/google/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
       "source": "modelsDev"
     },
     "kilocode/google/gemma-2-27b-it": {
@@ -33878,9 +33883,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.001498,
-      "input": 0.047080000000000004,
-      "output": 0.14124,
+      "cacheRead": 0.035,
+      "input": 0.0434,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -33899,8 +33904,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.15,
-      "input": 0.151,
-      "output": 10.5387,
+      "input": 0.1529,
+      "output": 9.338799999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -34645,7 +34650,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.0474,
+      "input": 0.0434,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -35004,6 +35009,16 @@
       "output": 7.5,
       "source": "openRouter"
     },
+    "openrouter/google/gemini-omni-1.1-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "openRouter"
+    },
+    "openrouter/google/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "openRouter"
+    },
     "openrouter/google/gemma-2-27b-it": {
       "input": 0.65,
       "output": 0.65,
@@ -35026,9 +35041,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.011,
-      "input": 0.023,
-      "output": 0.068,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -36876,9 +36891,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.01,
+      "input": 0.011,
+      "output": 0.039,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -37413,8 +37428,8 @@
       "source": "openRouter"
     },
     "openrouter/reflection/beam-1.0-501b-a23b": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.25,
+      "cacheRead": 0.04,
+      "input": 0.3,
       "output": 1,
       "source": "openRouter"
     },
@@ -39157,6 +39172,11 @@
       "output": 7.5,
       "source": "modelsDev"
     },
+    "vercel-ai-gateway/google/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "modelsDev"
+    },
     "vercel-ai-gateway/google/gemini-omni-flash-preview": {
       "input": 1.5,
       "output": 9,
@@ -39783,7 +39803,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "bfbb6560585b1b7241a44a5202d927d093e776a8",
+  "sourceCommit": "dddde4f712a5f8bb1785b23ca6b580778ba94999",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -51473,6 +51493,12 @@
       "output": 15,
       "source": "liteLLM"
     },
+    "empiriolabs/kimi-k3-1-pro": {
+      "cacheRead": 1.7999999999999998,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
     "empiriolabs/mimo-v2-6-flash": {
       "input": 0.14,
       "output": 0.28,
@@ -51801,7 +51827,7 @@
       "source": "liteLLM"
     },
     "empiriolabs/step-5-preview": {
-      "cacheRead": 0.049999999999999996,
+      "cacheRead": 0.09999999999999999,
       "input": 1,
       "output": 2.7,
       "source": "liteLLM"
@@ -54318,6 +54344,11 @@
       "output": 9,
       "source": "liteLLM"
     },
+    "gemini/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "liteLLM"
+    },
     "gemini/gemini-omni-flash-preview": {
       "input": 1.5,
       "output": 9,
@@ -55268,6 +55299,24 @@
       "output": 3.168,
       "source": "liteLLM"
     },
+    "gmi/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "cacheRead": 0.0036,
+      "input": 0.18,
+      "output": 0.72,
+      "source": "liteLLM"
+    },
+    "gmi/deepseek-ai/deepseek-v4.1-flash-1017": {
+      "cacheRead": 0.0036,
+      "input": 0.18,
+      "output": 0.72,
+      "source": "liteLLM"
+    },
+    "gmi/gmicloud/Ripple-65B-Preview": {
+      "cacheRead": 0.049999999999999996,
+      "input": 0.19999999999999998,
+      "output": 0.6,
+      "source": "liteLLM"
+    },
     "gmi/google/gemini-3-flash-preview": {
       "input": 0.5,
       "output": 3,
@@ -55613,6 +55662,11 @@
       "output": 0.25,
       "source": "liteLLM"
     },
+    "gmi/openai/gpt-oss-20b": {
+      "input": 0.04,
+      "output": 0.15,
+      "source": "liteLLM"
+    },
     "gmi/Qwen/Qwen3-235B-A22B-FP8": {
       "input": 0.16999999999999998,
       "output": 1.0899999999999999,
@@ -55784,6 +55838,12 @@
       "output": 0.6,
       "source": "liteLLM"
     },
+    "gmi/tencent/hy4": {
+      "cacheRead": 0.020999999999999998,
+      "input": 0.417,
+      "output": 1.2505,
+      "source": "liteLLM"
+    },
     "gmi/tencent/hy4-preview": {
       "cacheRead": 0.041999999999999996,
       "input": 0.834,
@@ -55812,6 +55872,18 @@
       "cacheRead": 0.00252,
       "input": 0.3045,
       "output": 0.609,
+      "source": "liteLLM"
+    },
+    "gmi/XiaomiMiMo/MiMo-V2.6-Flash": {
+      "cacheRead": 0.0022400000000000002,
+      "input": 0.112,
+      "output": 0.224,
+      "source": "liteLLM"
+    },
+    "gmi/XiaomiMiMo/MiMo-V2.6-Pro": {
+      "cacheRead": 0.00288,
+      "input": 0.348,
+      "output": 0.696,
       "source": "liteLLM"
     },
     "gmi/zai-org/GLM-4.5-Air-FP8": {
@@ -58137,7 +58209,17 @@
       "output": 0.66,
       "source": "liteLLM"
     },
+    "jina_ai/jina-reranker-m0": {
+      "input": 0.049999999999999996,
+      "output": 0,
+      "source": "liteLLM"
+    },
     "jina_ai/jina-reranker-v2-base-multilingual": {
+      "input": 0.049999999999999996,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "jina_ai/jina-reranker-v3.5": {
       "input": 0.049999999999999996,
       "output": 0,
       "source": "liteLLM"
@@ -60089,6 +60171,12 @@
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
+      "source": "liteLLM"
+    },
+    "nebius/moonshotai/Kimi-K3.1-Pro": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 10,
       "source": "liteLLM"
     },
     "nebius/NousResearch/Hermes-3-Llama-3.1-405B": {
@@ -63654,6 +63742,13 @@
       "output": 50,
       "source": "liteLLM"
     },
+    "openai/gpt-6-cyber": {
+      "cacheRead": 2,
+      "cacheWrite": 25,
+      "input": 20,
+      "output": 100,
+      "source": "liteLLM"
+    },
     "openai/gpt-6-luna": {
       "alternatives": [
         {
@@ -64868,9 +64963,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.001498,
-      "input": 0.047080000000000004,
-      "output": 0.14124,
+      "cacheRead": 0.035,
+      "input": 0.0434,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -64889,8 +64984,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.15,
-      "input": 0.151,
-      "output": 10.5387,
+      "input": 0.1529,
+      "output": 9.338799999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -65635,7 +65730,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.0474,
+      "input": 0.0434,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -65994,6 +66089,16 @@
       "output": 7.5,
       "source": "openRouter"
     },
+    "openrouter/google/gemini-omni-1.1-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "openRouter"
+    },
+    "openrouter/google/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "openRouter"
+    },
     "openrouter/google/gemma-2-27b-it": {
       "input": 0.65,
       "output": 0.65,
@@ -66016,9 +66121,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.011,
-      "input": 0.023,
-      "output": 0.068,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -67866,9 +67971,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.075,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.01,
+      "input": 0.011,
+      "output": 0.039,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -68403,8 +68508,8 @@
       "source": "openRouter"
     },
     "openrouter/reflection/beam-1.0-501b-a23b": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.25,
+      "cacheRead": 0.04,
+      "input": 0.3,
       "output": 1,
       "source": "openRouter"
     },
@@ -76048,6 +76153,11 @@
       "source": "liteLLM"
     },
     "vertex_ai/gemini-omni-1.1-flash-preview": {
+      "input": 1.5,
+      "output": 9,
+      "source": "liteLLM"
+    },
+    "vertex_ai/gemini-omni-1.2-flash": {
       "input": 1.5,
       "output": 9,
       "source": "liteLLM"
