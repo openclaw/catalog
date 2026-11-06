@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793953701600,
+  "generatedAt": 1793968211700,
   "models": [
     {
       "id": "abliterated-model",
@@ -6093,8 +6093,8 @@
         "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1539,
-        "output": 10.5572,
+        "input": 0.1529,
+        "output": 10.1522,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7200,11 +7200,11 @@
     {
       "id": "deepseek/deepseek-v4-pro",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1024000,
       "input": [
         "text"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
         "cacheRead": 0.135,
@@ -7719,11 +7719,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.02,
+        "cacheRead": 0.014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
-        "output": 0.121,
+        "input": 0.028,
+        "output": 0.083,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7741,11 +7741,11 @@
       "maxTokens": 16384,
       "name": "Gemma 4 31B IT",
       "pricing": {
-        "cacheRead": 0.1,
+        "cacheRead": 0.039,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.34,
+        "input": 0.079,
+        "output": 0.132,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9119,11 +9119,11 @@
     {
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 16384,
       "name": "Nemotron 3 Super 120B A12B",
       "pricing": {
         "cacheRead": 0,
@@ -10376,11 +10376,11 @@
       "maxTokens": 65536,
       "name": "GPT OSS 120B",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.026,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.011,
-        "output": 0.042,
+        "input": 0.029,
+        "output": 0.109,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -32037,9 +32037,9 @@
       "source": "deepinfra"
     },
     "deepinfra/inclusionAI/Ling-3.1-flash": {
-      "cacheRead": 0.021,
-      "input": 0.105,
-      "output": 0.315,
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.225,
       "source": "deepinfra"
     },
     "deepinfra/KoboldAI/LLaMA2-13B-Tiefighter": {
@@ -34759,8 +34759,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.15,
-      "input": 0.15389999999999998,
-      "output": 10.5572,
+      "input": 0.1529,
+      "output": 10.1522,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -35516,9 +35516,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.135,
-      "input": 1.5999999999999999,
-      "output": 3.1999999999999997,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35534,9 +35534,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -36336,9 +36336,8 @@
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-super-120b-a12b": {
-      "cacheRead": 0.15,
-      "input": 0.3,
-      "output": 2.4,
+      "input": 0.075,
+      "output": 0.39999999999999997,
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
@@ -37746,9 +37745,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.01,
-      "input": 0.011,
-      "output": 0.041,
+      "cacheRead": 0.024999999999999998,
+      "input": 0.028,
+      "output": 0.10400000000000001,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -40665,7 +40664,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "f7a46e85d26ad28de5eba194a386731ed28a518f",
+  "sourceCommit": "7a2001fa44690c17f621210f7196a70c06f8f45d",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -65859,8 +65858,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.15,
-      "input": 0.15389999999999998,
-      "output": 10.5572,
+      "input": 0.1529,
+      "output": 10.1522,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -66616,9 +66615,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.135,
-      "input": 1.5999999999999999,
-      "output": 3.1999999999999997,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -66634,9 +66633,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -67436,9 +67435,8 @@
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-super-120b-a12b": {
-      "cacheRead": 0.15,
-      "input": 0.3,
-      "output": 2.4,
+      "input": 0.075,
+      "output": 0.39999999999999997,
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
@@ -68846,9 +68844,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.01,
-      "input": 0.011,
-      "output": 0.041,
+      "cacheRead": 0.024999999999999998,
+      "input": 0.028,
+      "output": 0.10400000000000001,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
