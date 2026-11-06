@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1793925710677,
+  "generatedAt": 1793939286399,
   "models": [
     {
       "id": "abliterated-model",
@@ -6025,7 +6025,7 @@
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0434,
+        "input": 0.059,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -6093,7 +6093,7 @@
         "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1539,
+        "input": 0.1529,
         "output": 9.3388,
         "source": "modelsDev",
         "status": "known",
@@ -6272,11 +6272,11 @@
       "maxTokens": 131072,
       "name": "Z.ai: GLM Flash Latest",
       "pricing": {
-        "cacheRead": 0.0285,
+        "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0285,
-        "output": 0.0923,
+        "input": 0.0335,
+        "output": 0.083,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7178,19 +7178,19 @@
     {
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 943717,
       "name": "DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "cacheRead": 0.00686,
+        "cacheRead": 0.014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2156,
-        "output": 0.6468,
+        "input": 0.44,
+        "output": 1.32,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7200,11 +7200,11 @@
     {
       "id": "deepseek/deepseek-v4-pro",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1024000,
       "input": [
         "text"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
         "cacheRead": 0.135,
@@ -10376,11 +10376,11 @@
       "maxTokens": 65536,
       "name": "GPT OSS 120B",
       "pricing": {
-        "cacheRead": 0.024,
+        "cacheRead": 0.018,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.026,
-        "output": 0.097,
+        "input": 0.02,
+        "output": 0.074,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10397,11 +10397,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.004,
+        "cacheRead": 0.008,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.005,
-        "output": 0.019,
+        "input": 0.009,
+        "output": 0.037,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11709,11 +11709,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.020625,
+        "cacheRead": 0.033,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0825,
-        "output": 0.33,
+        "input": 0.132,
+        "output": 0.528,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11773,11 +11773,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.0378,
+        "cacheRead": 0.042,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7506,
-        "output": 2.2509,
+        "input": 0.834,
+        "output": 2.501,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -20906,28 +20906,6 @@
       "reasoning": true
     },
     {
-      "id": "deepseek-v4-1-flash",
-      "provider": "venice",
-      "contextWindow": 1000000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "DeepSeek V4.1 Flash",
-      "pricing": {
-        "cacheRead": 0.0075,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
-        "source": "venice",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "deepseek-v4-1-flash-1017",
       "provider": "venice",
       "contextWindow": 1000000,
@@ -20943,6 +20921,27 @@
         "currency": "USD",
         "input": 0.3,
         "output": 1.2,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4-1-flash-1017-ultrafast",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "DeepSeek V4.1 Flash 1017 Ultrafast",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3,
+        "output": 12,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -34759,9 +34758,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 10.5539,
+      "cacheRead": 0.15,
+      "input": 0.1529,
+      "output": 10.5572,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -34916,9 +34915,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0285,
-      "input": 0.0285,
-      "output": 0.0923,
+      "cacheRead": 0.03,
+      "input": 0.0335,
+      "output": 0.083,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -36115,9 +36114,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -37747,9 +37746,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.017,
-      "input": 0.019000000000000003,
-      "output": 0.072,
+      "cacheRead": 0.022,
+      "input": 0.024,
+      "output": 0.08900000000000001,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
@@ -39854,10 +39853,10 @@
       "output": 50,
       "source": "venice"
     },
-    "venice/deepseek-v4-1-flash-1017-ultrafast": {
-      "cacheRead": 0.06,
-      "input": 3,
-      "output": 12,
+    "venice/deepseek-v4-1-flash": {
+      "cacheRead": 0.0075,
+      "input": 0.3,
+      "output": 1.2,
       "source": "venice"
     },
     "venice/e2ee-deepseek-v4-1-flash-1017-abliterated": {
@@ -40573,7 +40572,7 @@
         "claude-sonnet-5-5",
         "muse-wonder",
         "grok-4-7",
-        "deepseek-v4-1-flash",
+        "deepseek-v4-1-flash-1017",
         "hy4-preview",
         "gemini-3-8-flash",
         "openai-gpt-6-luna",
@@ -40666,7 +40665,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "e9b943f9593dcac3dfe74548dfaa5c875f103f8a",
+  "sourceCommit": "c50ff4fbe5410609d00066642c72213e4354ee23",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -65859,9 +65858,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 10.5539,
+      "cacheRead": 0.15,
+      "input": 0.1529,
+      "output": 10.5572,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -66016,9 +66015,9 @@
       ]
     },
     "openrouter/~z-ai/glm-flash-latest": {
-      "cacheRead": 0.0285,
-      "input": 0.0285,
-      "output": 0.0923,
+      "cacheRead": 0.03,
+      "input": 0.0335,
+      "output": 0.083,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -67215,9 +67214,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -68847,9 +68846,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b": {
-      "cacheRead": 0.017,
-      "input": 0.019000000000000003,
-      "output": 0.072,
+      "cacheRead": 0.022,
+      "input": 0.024,
+      "output": 0.08900000000000001,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-120b:batch": {
