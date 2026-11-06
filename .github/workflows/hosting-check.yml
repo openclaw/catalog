@@ -28,6 +28,6 @@ jobs:
           node-version: "24.22.1"
       - run: node --test scripts/hosting.test.mjs
       - run: node scripts/build.mjs
-      - run: npx --yes wrangler@4.151.0 deploy --dry-run --env preview
+      - run: npx --yes wrangler@4.157.0 deploy --dry-run --env preview
         env:
           WRANGLER_SEND_METRICS: "false"
