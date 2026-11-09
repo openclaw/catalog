@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794241650702,
+  "generatedAt": 1794255954353,
   "models": [
     {
       "id": "abliterated-model",
@@ -274,6 +274,29 @@
         "minimal": "low",
         "xhigh": "xhigh"
       }
+    },
+    {
+      "id": "claude-fable-5-2",
+      "provider": "anthropic",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Fable 5.2",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 10,
+        "currency": "USD",
+        "input": 8,
+        "output": 40,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "claude-haiku-4-5",
@@ -5957,10 +5980,10 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.18,
+        "cacheRead": 0.16,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1824,
+        "input": 0.1643,
         "output": 9.3388,
         "source": "modelsDev",
         "status": "known",
@@ -7628,11 +7651,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.017,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
-        "output": 0.15,
+        "input": 0.034,
+        "output": 0.101,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8055,6 +8078,29 @@
       "reasoning": false
     },
     {
+      "id": "meta/muse-ember",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 943718,
+      "name": "Meta: Muse Ember",
+      "pricing": {
+        "cacheRead": 0.004,
+        "cacheWrite": 0.125,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "meta/muse-glimmer-30b",
       "provider": "kilocode",
       "contextWindow": 131072,
@@ -8239,29 +8285,6 @@
       "reasoning": true
     },
     {
-      "id": "minimax/minimax-m1",
-      "provider": "kilocode",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 40000,
-      "name": "MiniMax: MiniMax M1",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.55,
-        "output": 2.2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "minimax/minimax-m2.5",
       "provider": "kilocode",
       "contextWindow": 65536,
@@ -8271,7 +8294,7 @@
       "maxTokens": 58982,
       "name": "MiniMax-M2.5",
       "pricing": {
-        "cacheRead": 0.03,
+        "cacheRead": 0.06,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.3,
@@ -8292,11 +8315,11 @@
       "maxTokens": 176947,
       "name": "MiniMax-M2.7",
       "pricing": {
-        "cacheRead": 0.06,
+        "cacheRead": 0.042,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.21,
+        "output": 0.84,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11380,7 +11403,7 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false
+      "reasoning": true
     },
     {
       "id": "sakana/fugu-max",
@@ -11578,11 +11601,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11642,11 +11665,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12244,12 +12267,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943717,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -19861,6 +19884,28 @@
       "reasoning": true
     },
     {
+      "id": "claude-fable-5-2",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Fable 5.2",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 10,
+        "currency": "USD",
+        "input": 8,
+        "output": 40,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "claude-haiku-5-5",
       "provider": "venice",
       "contextWindow": 1000000,
@@ -23787,6 +23832,29 @@
       "reasoning": true
     },
     {
+      "id": "anthropic/claude-fable-5.2",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Fable 5.2",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 10,
+        "currency": "USD",
+        "input": 8,
+        "output": 40,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "anthropic/claude-haiku-4.5",
       "provider": "vercel-ai-gateway",
       "contextWindow": 200000,
@@ -25406,6 +25474,29 @@
         "unit": "million_tokens"
       },
       "reasoning": false
+    },
+    {
+      "id": "meta/muse-ember",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 1048576,
+      "name": "Muse Ember",
+      "pricing": {
+        "cacheRead": 0.004,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "meta/muse-glimmer-30b",
@@ -32612,13 +32703,13 @@
       ]
     },
     "kilocode/xiaomi/mimo-v2.5-pro": {
-      "cacheRead": 0.004,
+      "cacheRead": 0.0036,
       "input": 0.435,
       "output": 0.87,
       "source": "modelsDev",
       "tieredPricing": [
         {
-          "cacheRead": 0.004,
+          "cacheRead": 0.0036,
           "cacheWrite": 0,
           "input": 0.435,
           "output": 0.87,
@@ -32873,6 +32964,13 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "openCode"
+    },
+    "opencode/claude-fable-5-2": {
+      "cacheRead": 0.2,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "openCode"
     },
     "opencode/claude-haiku-4-5": {
@@ -33808,6 +33906,12 @@
       "output": 2.09,
       "source": "openCode"
     },
+    "opencode/muse-ember-1.0": {
+      "cacheRead": 0.004,
+      "input": 0.1,
+      "output": 0.5,
+      "source": "openCode"
+    },
     "opencode/muse-spark-1.2": {
       "cacheRead": 0.15,
       "input": 1.25,
@@ -33930,10 +34034,10 @@
       "source": "openCode"
     },
     "openrouter/~anthropic/claude-fable-latest": {
-      "cacheRead": 0.25,
-      "cacheWrite": 12.5,
-      "input": 10,
-      "output": 50,
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "openRouter"
     },
     "openrouter/~anthropic/claude-haiku-latest": {
@@ -34011,9 +34115,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.15,
-      "input": 0.15389999999999998,
-      "output": 10.148900000000001,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 9.338799999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -34272,6 +34376,20 @@
       "cacheWrite": 6.25,
       "input": 5,
       "output": 25,
+      "source": "openRouter"
+    },
+    "openrouter/anthropic/claude-fable-5.2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "openRouter"
+    },
+    "openrouter/anthropic/claude-fable-5.2:batch": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
       "source": "openRouter"
     },
     "openrouter/anthropic/claude-haiku-4.5": {
@@ -34776,9 +34894,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.074501,
-      "input": 0.894012,
-      "output": 1.788024,
+      "cacheRead": 0.0740805,
+      "input": 0.888966,
+      "output": 1.777932,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -34806,9 +34924,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
-      "cacheRead": 0.002,
-      "input": 0.011,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.00336,
+      "input": 0.112,
+      "output": 0.33599999999999997,
       "source": "openRouter"
     },
     "openrouter/elorian/glimpse": {
@@ -35162,9 +35280,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35289,6 +35407,13 @@
     "openrouter/meta-llama/llama-guard-4-12b": {
       "input": 0.18,
       "output": 0.18,
+      "source": "openRouter"
+    },
+    "openrouter/meta/muse-ember": {
+      "cacheRead": 0.004,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/meta/muse-glimmer-30b": {
@@ -35552,9 +35677,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
-      "cacheRead": 0.218,
-      "input": 0.883,
-      "output": 6,
+      "cacheRead": 0.228,
+      "input": 2.2800000000000002,
+      "output": 11.399999999999999,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
@@ -35632,7 +35757,7 @@
     "openrouter/nvidia/nemotron-3.5-super-vl": {
       "cacheRead": 0.02,
       "input": 0.15,
-      "output": 0.5,
+      "output": 0.47,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-3.5-turbo-0613": {
@@ -38192,14 +38317,14 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.0335,
-      "output": 0.083,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
-      "cacheRead": 0.018,
-      "input": 0.043000000000000003,
-      "output": 0.087,
+      "cacheRead": 0.013000000000000001,
+      "input": 0.03,
+      "output": 0.061000000000000006,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flashx": {
@@ -39956,7 +40081,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "bd0557f4fac019b945905facd9211ae726210647",
+  "sourceCommit": "e64c3514e4194c1100779f9617f2d0c7b0439c4c",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -41201,6 +41326,13 @@
       "output": 50,
       "source": "modelsDev"
     },
+    "amazon-bedrock/anthropic.claude-fable-5-2": {
+      "cacheRead": 0.2,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "modelsDev"
+    },
     "amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.1,
       "cacheWrite": 1.25,
@@ -41632,6 +41764,13 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "modelsDev"
+    },
+    "amazon-bedrock/global.anthropic.claude-fable-5-2": {
+      "cacheRead": 0.2,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "modelsDev"
     },
     "amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0": {
@@ -42669,6 +42808,13 @@
       "output": 55,
       "source": "modelsDev"
     },
+    "amazon-bedrock/us.anthropic.claude-fable-5-2": {
+      "cacheRead": 0.22,
+      "cacheWrite": 11,
+      "input": 8.8,
+      "output": 44,
+      "source": "modelsDev"
+    },
     "amazon-bedrock/us.anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.11,
       "cacheWrite": 1.375,
@@ -43171,6 +43317,23 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "anthropic/claude-fable-5-2": {
+      "alternatives": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 40,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.2,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -46270,6 +46433,13 @@
       "output": 50,
       "source": "liteLLM"
     },
+    "bedrock_converse/anthropic.claude-fable-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
     "bedrock_converse/anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.09999999999999999,
       "cacheWrite": 1.25,
@@ -46296,6 +46466,13 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "liteLLM"
     },
     "bedrock_converse/anthropic.claude-opus-4-1-20250805-v1:0": {
@@ -46653,6 +46830,13 @@
       "output": 55,
       "source": "liteLLM"
     },
+    "bedrock_converse/eu.anthropic.claude-fable-5-2": {
+      "cacheRead": 0.22,
+      "cacheWrite": 11,
+      "input": 8.8,
+      "output": 44,
+      "source": "liteLLM"
+    },
     "bedrock_converse/eu.anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.11,
       "cacheWrite": 1.375,
@@ -46665,6 +46849,13 @@
       "cacheWrite": 0.1375,
       "input": 0.11,
       "output": 0.55,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/eu.anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.22,
+      "cacheWrite": 11,
+      "input": 8.8,
+      "output": 44,
       "source": "liteLLM"
     },
     "bedrock_converse/eu.anthropic.claude-opus-4-1-20250805-v1:0": {
@@ -46788,6 +46979,13 @@
       "output": 50,
       "source": "liteLLM"
     },
+    "bedrock_converse/global.anthropic.claude-fable-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
     "bedrock_converse/global.anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.09999999999999999,
       "cacheWrite": 1.25,
@@ -46807,6 +47005,13 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/global.anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "liteLLM"
     },
     "bedrock_converse/global.anthropic.claude-opus-4-5-20251101-v1:0": {
@@ -47287,11 +47492,25 @@
       "output": 60,
       "source": "liteLLM"
     },
+    "bedrock_converse/us-gov.anthropic.claude-fable-5-2": {
+      "cacheRead": 0.24,
+      "cacheWrite": 12,
+      "input": 9.6,
+      "output": 48,
+      "source": "liteLLM"
+    },
     "bedrock_converse/us-gov.anthropic.claude-haiku-5-5": {
       "cacheRead": 0.012,
       "cacheWrite": 0.15,
       "input": 0.12,
       "output": 0.6,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/us-gov.anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.24,
+      "cacheWrite": 12,
+      "input": 9.6,
+      "output": 48,
       "source": "liteLLM"
     },
     "bedrock_converse/us-gov.anthropic.claude-opus-4-8": {
@@ -47429,6 +47648,13 @@
       "output": 55,
       "source": "liteLLM"
     },
+    "bedrock_converse/us.anthropic.claude-fable-5-2": {
+      "cacheRead": 0.22,
+      "cacheWrite": 11,
+      "input": 8.8,
+      "output": 44,
+      "source": "liteLLM"
+    },
     "bedrock_converse/us.anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.11,
       "cacheWrite": 1.375,
@@ -47455,6 +47681,13 @@
       "cacheWrite": 13.75,
       "input": 11,
       "output": 55,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/us.anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.22,
+      "cacheWrite": 11,
+      "input": 8.8,
+      "output": 44,
       "source": "liteLLM"
     },
     "bedrock_converse/us.anthropic.claude-mythos-preview": {
@@ -48385,6 +48618,13 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "liteLLM"
+    },
+    "bedrock/claude_platform/claude-fable-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "liteLLM"
     },
     "bedrock/claude_platform/claude-haiku-4-5": {
@@ -51157,7 +51397,7 @@
       "source": "liteLLM"
     },
     "deepinfra/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B": {
-      "input": 0.08499999999999999,
+      "input": 0.075,
       "output": 0.39999999999999997,
       "passthroughOnly": true,
       "source": "liteLLM"
@@ -54238,21 +54478,9 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "friendliai/deepseek-ai/DeepSeek-V3.2": {
-      "cacheRead": 0.25,
-      "input": 0.5,
-      "output": 1.5,
-      "source": "liteLLM"
-    },
     "friendliai/google/gemma-4-31B-it": {
       "input": 0.14,
       "output": 0.39999999999999997,
-      "source": "liteLLM"
-    },
-    "friendliai/MiniMaxAI/MiniMax-M2.5": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
       "source": "liteLLM"
     },
     "friendliai/zai-org/GLM-5.1": {
@@ -56627,6 +56855,13 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "modelsDev"
+    },
+    "google-vertex/claude-fable-5-2@default": {
+      "cacheRead": 0.2,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "modelsDev"
     },
     "google-vertex/claude-fable-5@default": {
@@ -65138,10 +65373,10 @@
       "source": "liteLLM"
     },
     "openrouter/~anthropic/claude-fable-latest": {
-      "cacheRead": 0.25,
-      "cacheWrite": 12.5,
-      "input": 10,
-      "output": 50,
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
       "source": "openRouter"
     },
     "openrouter/~anthropic/claude-haiku-latest": {
@@ -65219,9 +65454,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.15,
-      "input": 0.15389999999999998,
-      "output": 10.148900000000001,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 9.338799999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -65480,6 +65715,20 @@
       "cacheWrite": 6.25,
       "input": 5,
       "output": 25,
+      "source": "openRouter"
+    },
+    "openrouter/anthropic/claude-fable-5.2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "openRouter"
+    },
+    "openrouter/anthropic/claude-fable-5.2:batch": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
       "source": "openRouter"
     },
     "openrouter/anthropic/claude-haiku-4.5": {
@@ -65984,9 +66233,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.074501,
-      "input": 0.894012,
-      "output": 1.788024,
+      "cacheRead": 0.0740805,
+      "input": 0.888966,
+      "output": 1.777932,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -66014,9 +66263,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
-      "cacheRead": 0.002,
-      "input": 0.011,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.00336,
+      "input": 0.112,
+      "output": 0.33599999999999997,
       "source": "openRouter"
     },
     "openrouter/elorian/glimpse": {
@@ -66370,9 +66619,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -66497,6 +66746,13 @@
     "openrouter/meta-llama/llama-guard-4-12b": {
       "input": 0.18,
       "output": 0.18,
+      "source": "openRouter"
+    },
+    "openrouter/meta/muse-ember": {
+      "cacheRead": 0.004,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/meta/muse-glimmer-30b": {
@@ -66760,9 +67016,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3:batch": {
-      "cacheRead": 0.218,
-      "input": 0.883,
-      "output": 6,
+      "cacheRead": 0.228,
+      "input": 2.2800000000000002,
+      "output": 11.399999999999999,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
@@ -66840,7 +67096,7 @@
     "openrouter/nvidia/nemotron-3.5-super-vl": {
       "cacheRead": 0.02,
       "input": 0.15,
-      "output": 0.5,
+      "output": 0.47,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-3.5-turbo-0613": {
@@ -69400,14 +69656,14 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.0335,
-      "output": 0.083,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
-      "cacheRead": 0.018,
-      "input": 0.043000000000000003,
-      "output": 0.087,
+      "cacheRead": 0.013000000000000001,
+      "input": 0.03,
+      "output": 0.061000000000000006,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flashx": {
