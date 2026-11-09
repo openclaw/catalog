@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794185186743,
+  "generatedAt": 1794198560472,
   "models": [
     {
       "id": "abliterated-model",
@@ -2731,6 +2731,28 @@
         "currency": "USD",
         "input": 2.85,
         "output": 14.25,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "provider": "deepinfra",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 943718,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.19,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.9,
+        "output": 9.5,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -6134,11 +6156,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.16,
+        "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1624,
-        "output": 9.7471,
+        "input": 0.1824,
+        "output": 9.3388,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7805,11 +7827,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
-        "output": 0.15,
+        "input": 0.031,
+        "output": 0.092,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -32541,12 +32563,6 @@
       "output": 3.4000000000000004,
       "source": "deepinfra"
     },
-    "deepinfra/moonshotai/Kimi-K3.1-Pro": {
-      "cacheRead": 0.19,
-      "input": 1.9,
-      "output": 9.5,
-      "source": "deepinfra"
-    },
     "deepinfra/nace-ai/drex-max": {
       "cacheRead": 0.060000000000000005,
       "input": 0.060000000000000005,
@@ -34999,9 +35015,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.16,
-      "input": 0.1624,
-      "output": 9.7471,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 9.338799999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -35764,9 +35780,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -36141,7 +36157,7 @@
     "openrouter/google/gemma-3-27b-it": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.35,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -36368,9 +36384,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -39166,8 +39182,8 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.153,
-      "input": 0.454,
+      "cacheRead": 0.21,
+      "input": 0.623,
       "output": 1.271,
       "source": "openRouter"
     },
@@ -40565,6 +40581,7 @@
         "XiaomiMiMo/MiMo-V2.6-Pro",
         "Qwen/Qwen3.8-Max",
         "zai-org/GLM-5.3",
+        "moonshotai/Kimi-K3.1-Pro",
         "moonshotai/Kimi-K3",
         "deepseek-ai/DeepSeek-V4-Pro",
         "zai-org/GLM-5.3-Flash",
@@ -40950,7 +40967,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "7c7a4d5db4adf174b324cfe47c17123808a7de61",
+  "sourceCommit": "1bc50e0517adf5c4cb8bd025802d55208e9c6318",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -66213,9 +66230,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.16,
-      "input": 0.1624,
-      "output": 9.7471,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 9.338799999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -66978,9 +66995,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.079025,
-      "input": 0.9483,
-      "output": 1.8966,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -67355,7 +67372,7 @@
     "openrouter/google/gemma-3-27b-it": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.35,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -67582,9 +67599,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -70380,8 +70397,8 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.153,
-      "input": 0.454,
+      "cacheRead": 0.21,
+      "input": 0.623,
       "output": 1.271,
       "source": "openRouter"
     },
