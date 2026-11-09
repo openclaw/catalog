@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794213040516,
+  "generatedAt": 1794227450888,
   "models": [
     {
       "id": "abliterated-model",
@@ -6159,8 +6159,8 @@
         "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1539,
-        "output": 10.5539,
+        "input": 0.1529,
+        "output": 10.1522,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7827,11 +7827,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.016,
+        "cacheRead": 0.018,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.031,
-        "output": 0.094,
+        "input": 0.036,
+        "output": 0.109,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8902,12 +8902,12 @@
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "provider": "kilocode",
-      "contextWindow": 128000,
+      "contextWindow": 32768,
       "input": [
         "image",
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 26214,
       "name": "Mistral Small 3.2 24B",
       "pricing": {
         "cacheRead": 0.01,
@@ -10474,7 +10474,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 117964,
+      "maxTokens": 32768,
       "name": "GPT OSS 20B",
       "pricing": {
         "cacheRead": 0.009,
@@ -12215,11 +12215,11 @@
       "maxTokens": 98304,
       "name": "GLM-4.5-Air",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.85,
+        "input": 0.2,
+        "output": 1.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -35016,8 +35016,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.15,
-      "input": 0.15389999999999998,
-      "output": 10.5539,
+      "input": 0.1529,
+      "output": 10.1522,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -36493,8 +36493,9 @@
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
-      "input": 0.075,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.01,
+      "input": 0.09999999999999999,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/mixtral-8x22b-instruct": {
@@ -38036,9 +38037,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13,
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b:batch": {
@@ -39123,9 +39124,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5-air": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.13,
-      "output": 0.85,
+      "cacheRead": 0.03,
+      "input": 0.19999999999999998,
+      "output": 1.1,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5v": {
@@ -40967,7 +40968,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "79118ddf5e0cf5db54d0bde30b9369c49815b63e",
+  "sourceCommit": "0ab37d2048421fc9ea3906ec51c13a943032b6ef",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -66231,8 +66232,8 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.15,
-      "input": 0.15389999999999998,
-      "output": 10.5539,
+      "input": 0.1529,
+      "output": 10.1522,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -67708,8 +67709,9 @@
       "source": "openRouter"
     },
     "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
-      "input": 0.075,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.01,
+      "input": 0.09999999999999999,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/mixtral-8x22b-instruct": {
@@ -69251,9 +69253,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13,
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b:batch": {
@@ -70338,9 +70340,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5-air": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.13,
-      "output": 0.85,
+      "cacheRead": 0.03,
+      "input": 0.19999999999999998,
+      "output": 1.1,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5v": {
