@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794328017269,
+  "generatedAt": 1794342382913,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -19342,6 +19342,11 @@
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/deepseek-flash-latest": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot": {
       "cacheRead": 0.004200000000000001,
       "input": 0.21,
@@ -19397,6 +19402,26 @@
       "input": 2.0999999999999996,
       "output": 6.6000000000000005
     },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-fast-latest": {
+      "cacheRead": 0.39,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-flash-latest": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-fast-latest": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -19421,6 +19446,21 @@
       "cacheRead": 0.44999999999999996,
       "input": 4.5,
       "output": 22.5
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-latest": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/minimax-latest": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2
+    },
+    "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/qwen-max-latest": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "cloudflare-ai-gateway/fireworks_ai/accounts/fireworks/routers/rune": {
       "cacheRead": 0.008400000000000001,
@@ -21812,6 +21852,11 @@
       "input": 2,
       "output": 10
     },
+    "cloudflare-ai-gateway/google-gemini-cli/gemini-4-carbon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "cloudflare-ai-gateway/google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -22154,6 +22199,11 @@
       "output": 3.75
     },
     "cloudflare-ai-gateway/google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/google-vertex/gemini-4-carbon": {
       "cacheRead": 0.1,
       "input": 2,
       "output": 10
@@ -22608,6 +22658,11 @@
       "output": 3.75
     },
     "cloudflare-ai-gateway/google/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/google/gemini-4-carbon": {
       "cacheRead": 0.1,
       "input": 2,
       "output": 10
@@ -28409,6 +28464,16 @@
       "input": 1,
       "output": 5
     },
+    "cloudflare-ai-gateway/openrouter/baidu/ernie-5.5-flash-preview": {
+      "cacheRead": 0.028,
+      "input": 0.28,
+      "output": 1.13
+    },
+    "cloudflare-ai-gateway/openrouter/baidu/ernie-light-dt-1.0-intl": {
+      "cacheRead": 0.113,
+      "input": 1.13,
+      "output": 3.9400000000000004
+    },
     "cloudflare-ai-gateway/openrouter/bytedance-seed/seed-1.6": {
       "input": 0.25,
       "output": 2,
@@ -31719,8 +31784,8 @@
       "output": 0.0784
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3-flash:batch": {
-      "cacheRead": 0.014,
-      "input": 0.032999999999999995,
+      "cacheRead": 0.018,
+      "input": 0.041999999999999996,
       "output": 0.061000000000000006
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3-flashx": {
@@ -36264,7 +36329,7 @@
       "output": 0.09999999999999999
     },
     "cloudflare-ai-gateway/together_ai/together/Tev1-4B-experimental": {
-      "input": 0.041999999999999996,
+      "input": 0.04,
       "output": 0
     },
     "cloudflare-ai-gateway/together_ai/zai-org/GLM-4.5-Air-FP8": {
@@ -37364,6 +37429,18 @@
       "input": 0.09999999999999999,
       "output": 0.5
     },
+    "cloudflare-ai-gateway/vertex_ai/claude-mythos-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
+    "cloudflare-ai-gateway/vertex_ai/claude-mythos-5-2@default": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
     "cloudflare-ai-gateway/vertex_ai/claude-opus-4-5": {
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
@@ -37679,6 +37756,16 @@
       "output": 10
     },
     "cloudflare-ai-gateway/vertex_ai/gemini-4-argon-cyber-permissive": {
+      "cacheRead": 0.19999999999999998,
+      "input": 4,
+      "output": 20
+    },
+    "cloudflare-ai-gateway/vertex_ai/gemini-4-carbon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
+    "cloudflare-ai-gateway/vertex_ai/gemini-4-carbon-cyber-permissive": {
       "cacheRead": 0.19999999999999998,
       "input": 4,
       "output": 20
@@ -42946,6 +43033,11 @@
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
     },
+    "fireworks_ai/accounts/fireworks/routers/deepseek-flash-latest": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
+    },
     "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot": {
       "cacheRead": 0.004200000000000001,
       "input": 0.21,
@@ -43001,6 +43093,26 @@
       "input": 2.0999999999999996,
       "output": 6.6000000000000005
     },
+    "fireworks_ai/accounts/fireworks/routers/glm-fast-latest": {
+      "cacheRead": 0.39,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "fireworks_ai/accounts/fireworks/routers/glm-flash-latest": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
+    "fireworks_ai/accounts/fireworks/routers/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "fireworks_ai/accounts/fireworks/routers/kimi-fast-latest": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
     "fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -43025,6 +43137,21 @@
       "cacheRead": 0.44999999999999996,
       "input": 4.5,
       "output": 22.5
+    },
+    "fireworks_ai/accounts/fireworks/routers/kimi-latest": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "fireworks_ai/accounts/fireworks/routers/minimax-latest": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2
+    },
+    "fireworks_ai/accounts/fireworks/routers/qwen-max-latest": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "fireworks_ai/accounts/fireworks/routers/rune": {
       "cacheRead": 0.008400000000000001,
@@ -45539,6 +45666,11 @@
       "input": 2,
       "output": 10
     },
+    "google-gemini-cli/gemini-4-carbon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -45881,6 +46013,11 @@
       "output": 3.75
     },
     "google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
+    "google-vertex/gemini-4-carbon": {
       "cacheRead": 0.1,
       "input": 2,
       "output": 10
@@ -58535,6 +58672,11 @@
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
     },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/deepseek-flash-latest": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
+    },
     "kilocode/fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot": {
       "cacheRead": 0.004200000000000001,
       "input": 0.21,
@@ -58590,6 +58732,26 @@
       "input": 2.0999999999999996,
       "output": 6.6000000000000005
     },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/glm-fast-latest": {
+      "cacheRead": 0.39,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/glm-flash-latest": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/kimi-fast-latest": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
     "kilocode/fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -58614,6 +58776,21 @@
       "cacheRead": 0.44999999999999996,
       "input": 4.5,
       "output": 22.5
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/kimi-latest": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/minimax-latest": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2
+    },
+    "kilocode/fireworks_ai/accounts/fireworks/routers/qwen-max-latest": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "kilocode/fireworks_ai/accounts/fireworks/routers/rune": {
       "cacheRead": 0.008400000000000001,
@@ -61005,6 +61182,11 @@
       "input": 2,
       "output": 10
     },
+    "kilocode/google-gemini-cli/gemini-4-carbon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "kilocode/google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -61347,6 +61529,11 @@
       "output": 3.75
     },
     "kilocode/google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
+    "kilocode/google-vertex/gemini-4-carbon": {
       "cacheRead": 0.1,
       "input": 2,
       "output": 10
@@ -67089,6 +67276,16 @@
       "input": 1,
       "output": 5
     },
+    "kilocode/openrouter/baidu/ernie-5.5-flash-preview": {
+      "cacheRead": 0.028,
+      "input": 0.28,
+      "output": 1.13
+    },
+    "kilocode/openrouter/baidu/ernie-light-dt-1.0-intl": {
+      "cacheRead": 0.113,
+      "input": 1.13,
+      "output": 3.9400000000000004
+    },
     "kilocode/openrouter/bytedance-seed/seed-1.6": {
       "input": 0.25,
       "output": 2,
@@ -70399,8 +70596,8 @@
       "output": 0.0784
     },
     "kilocode/openrouter/z-ai/glm-5.3-flash:batch": {
-      "cacheRead": 0.014,
-      "input": 0.032999999999999995,
+      "cacheRead": 0.018,
+      "input": 0.041999999999999996,
       "output": 0.061000000000000006
     },
     "kilocode/openrouter/z-ai/glm-5.3-flashx": {
@@ -74706,7 +74903,7 @@
       "output": 0.09999999999999999
     },
     "kilocode/together_ai/together/Tev1-4B-experimental": {
-      "input": 0.041999999999999996,
+      "input": 0.04,
       "output": 0
     },
     "kilocode/together_ai/zai-org/GLM-4.5-Air-FP8": {
@@ -75811,6 +76008,18 @@
       "input": 0.09999999999999999,
       "output": 0.5
     },
+    "kilocode/vertex_ai/claude-mythos-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
+    "kilocode/vertex_ai/claude-mythos-5-2@default": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
     "kilocode/vertex_ai/claude-opus-4-5": {
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
@@ -76126,6 +76335,16 @@
       "output": 10
     },
     "kilocode/vertex_ai/gemini-4-argon-cyber-permissive": {
+      "cacheRead": 0.19999999999999998,
+      "input": 4,
+      "output": 20
+    },
+    "kilocode/vertex_ai/gemini-4-carbon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
+    "kilocode/vertex_ai/gemini-4-carbon-cyber-permissive": {
       "cacheRead": 0.19999999999999998,
       "input": 4,
       "output": 20
@@ -82028,6 +82247,11 @@
       "input": 2,
       "output": 10
     },
+    "opencode/gemini-4-carbon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "opencode/glm-4.6": {
       "cacheRead": 0.1,
       "input": 0.6,
@@ -83290,6 +83514,16 @@
       "cacheWrite": 1.25,
       "input": 1,
       "output": 5
+    },
+    "openrouter/baidu/ernie-5.5-flash-preview": {
+      "cacheRead": 0.028,
+      "input": 0.28,
+      "output": 1.13
+    },
+    "openrouter/baidu/ernie-light-dt-1.0-intl": {
+      "cacheRead": 0.113,
+      "input": 1.13,
+      "output": 3.9400000000000004
     },
     "openrouter/bytedance-seed/seed-1.6": {
       "input": 0.25,
@@ -86601,8 +86835,8 @@
       "output": 0.0784
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
-      "cacheRead": 0.014,
-      "input": 0.032999999999999995,
+      "cacheRead": 0.018,
+      "input": 0.041999999999999996,
       "output": 0.061000000000000006
     },
     "openrouter/z-ai/glm-5.3-flashx": {
@@ -91061,7 +91295,7 @@
       "output": 0.09999999999999999
     },
     "together_ai/together/Tev1-4B-experimental": {
-      "input": 0.041999999999999996,
+      "input": 0.04,
       "output": 0
     },
     "together_ai/zai-org/GLM-4.5-Air-FP8": {
@@ -103354,6 +103588,11 @@
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/deepseek-flash-latest": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot": {
       "cacheRead": 0.004200000000000001,
       "input": 0.21,
@@ -103409,6 +103648,26 @@
       "input": 2.0999999999999996,
       "output": 6.6000000000000005
     },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-fast-latest": {
+      "cacheRead": 0.39,
+      "input": 2.0999999999999996,
+      "output": 6.6000000000000005
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-flash-latest": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/glm-latest": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-fast-latest": {
+      "cacheRead": 0.44999999999999996,
+      "input": 4.5,
+      "output": 22.5
+    },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast": {
       "cacheRead": 0.3,
       "input": 2,
@@ -103433,6 +103692,21 @@
       "cacheRead": 0.44999999999999996,
       "input": 4.5,
       "output": 22.5
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/kimi-latest": {
+      "cacheRead": 0.3,
+      "input": 3,
+      "output": 15
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/minimax-latest": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2
+    },
+    "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/qwen-max-latest": {
+      "cacheRead": 0.25,
+      "input": 2,
+      "output": 6
     },
     "vercel-ai-gateway/fireworks_ai/accounts/fireworks/routers/rune": {
       "cacheRead": 0.008400000000000001,
@@ -105824,6 +106098,11 @@
       "input": 2,
       "output": 10
     },
+    "vercel-ai-gateway/google-gemini-cli/gemini-4-carbon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
     "vercel-ai-gateway/google-gemini-cli/gemini-embedding-001": {
       "input": 0.15,
       "output": 0
@@ -106166,6 +106445,11 @@
       "output": 3.75
     },
     "vercel-ai-gateway/google-vertex/gemini-4-argon": {
+      "cacheRead": 0.1,
+      "input": 2,
+      "output": 10
+    },
+    "vercel-ai-gateway/google-vertex/gemini-4-carbon": {
       "cacheRead": 0.1,
       "input": 2,
       "output": 10
@@ -111876,6 +112160,16 @@
       "input": 1,
       "output": 5
     },
+    "vercel-ai-gateway/openrouter/baidu/ernie-5.5-flash-preview": {
+      "cacheRead": 0.028,
+      "input": 0.28,
+      "output": 1.13
+    },
+    "vercel-ai-gateway/openrouter/baidu/ernie-light-dt-1.0-intl": {
+      "cacheRead": 0.113,
+      "input": 1.13,
+      "output": 3.9400000000000004
+    },
     "vercel-ai-gateway/openrouter/bytedance-seed/seed-1.6": {
       "input": 0.25,
       "output": 2,
@@ -115186,8 +115480,8 @@
       "output": 0.0784
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3-flash:batch": {
-      "cacheRead": 0.014,
-      "input": 0.032999999999999995,
+      "cacheRead": 0.018,
+      "input": 0.041999999999999996,
       "output": 0.061000000000000006
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3-flashx": {
@@ -119732,7 +120026,7 @@
       "output": 0.09999999999999999
     },
     "vercel-ai-gateway/together_ai/together/Tev1-4B-experimental": {
-      "input": 0.041999999999999996,
+      "input": 0.04,
       "output": 0
     },
     "vercel-ai-gateway/together_ai/zai-org/GLM-4.5-Air-FP8": {
@@ -120832,6 +121126,18 @@
       "input": 0.09999999999999999,
       "output": 0.5
     },
+    "vercel-ai-gateway/vertex_ai/claude-mythos-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
+    "vercel-ai-gateway/vertex_ai/claude-mythos-5-2@default": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
     "vercel-ai-gateway/vertex_ai/claude-opus-4-5": {
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
@@ -121147,6 +121453,16 @@
       "output": 10
     },
     "vercel-ai-gateway/vertex_ai/gemini-4-argon-cyber-permissive": {
+      "cacheRead": 0.19999999999999998,
+      "input": 4,
+      "output": 20
+    },
+    "vercel-ai-gateway/vertex_ai/gemini-4-carbon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
+    "vercel-ai-gateway/vertex_ai/gemini-4-carbon-cyber-permissive": {
       "cacheRead": 0.19999999999999998,
       "input": 4,
       "output": 20
@@ -122975,6 +123291,18 @@
       "input": 0.09999999999999999,
       "output": 0.5
     },
+    "vertex_ai/claude-mythos-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
+    "vertex_ai/claude-mythos-5-2@default": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40
+    },
     "vertex_ai/claude-opus-4-5": {
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
@@ -123290,6 +123618,16 @@
       "output": 10
     },
     "vertex_ai/gemini-4-argon-cyber-permissive": {
+      "cacheRead": 0.19999999999999998,
+      "input": 4,
+      "output": 20
+    },
+    "vertex_ai/gemini-4-carbon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10
+    },
+    "vertex_ai/gemini-4-carbon-cyber-permissive": {
       "cacheRead": 0.19999999999999998,
       "input": 4,
       "output": 20
@@ -130316,6 +130654,38 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1024000,
+          "cost": {
+            "cacheRead": 0.028,
+            "cacheWrite": 0,
+            "input": 0.28,
+            "output": 1.13
+          },
+          "id": "baidu/ernie-5.5-flash-preview",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 921600,
+          "name": "Baidu: ERNIE-5.5-Flash-Preview",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1024000,
+          "cost": {
+            "cacheRead": 0.113,
+            "cacheWrite": 0,
+            "input": 1.13,
+            "output": 3.94
+          },
+          "id": "baidu/ernie-light-dt-1.0-intl",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "Baidu: ERNIE-Light-DT-1.0",
+          "reasoning": true
+        },
+        {
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0,
@@ -130964,6 +131334,24 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 0.375,
+            "input": 4,
+            "output": 20
+          },
+          "id": "google/gemini-4-carbon",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 943718,
+          "name": "Google: Gemini 4 Carbon",
+          "reasoning": true
+        },
+        {
           "contextWindow": 65536,
           "cost": {
             "cacheRead": 0,
@@ -131018,10 +131406,10 @@
         {
           "contextWindow": 256000,
           "cost": {
-            "cacheRead": 0.01,
+            "cacheRead": 0.008,
             "cacheWrite": 0,
-            "input": 0.02,
-            "output": 0.061
+            "input": 0.017,
+            "output": 0.051
           },
           "id": "google/gemma-4-26b-a4b-it",
           "input": [
@@ -131353,7 +131741,7 @@
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.004,
-            "cacheWrite": 0.125,
+            "cacheWrite": 0,
             "input": 0.1,
             "output": 0.5
           },
@@ -131476,7 +131864,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 1048576,
+          "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.15,
             "cacheWrite": 0,
@@ -131489,7 +131877,7 @@
             "image",
             "document"
           ],
-          "maxTokens": 131072,
+          "maxTokens": 262144,
           "name": "Muse Spark Open",
           "reasoning": true
         },
@@ -134074,10 +134462,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.033,
+            "cacheRead": 0.020625,
             "cacheWrite": 0,
-            "input": 0.132,
-            "output": 0.528
+            "input": 0.0825,
+            "output": 0.33
           },
           "id": "tencent/hy3",
           "input": [
@@ -134123,10 +134511,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.042,
+            "cacheRead": 0.0378,
             "cacheWrite": 0,
-            "input": 0.834,
-            "output": 2.501
+            "input": 0.7506,
+            "output": 2.2509
           },
           "id": "tencent/hy4-preview",
           "input": [
@@ -134358,7 +134746,7 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.05,
+            "cacheRead": 0.003,
             "cacheWrite": 0,
             "input": 0.1,
             "output": 0.28
@@ -145254,6 +145642,24 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.1,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 10
+          },
+          "id": "google/gemini-4-carbon",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 1000000,
+          "name": "Gemini 4 Carbon",
+          "reasoning": true
+        },
+        {
           "contextWindow": 262144,
           "cost": {
             "cacheRead": 0.015,
@@ -150190,5 +150596,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "b21829a4c85fb685888538b3bc1369bfb5b36bd4"
+  "sourceCommit": "1651ee19282ca46d4be6639167e10b11ebc0c4d2"
 }
