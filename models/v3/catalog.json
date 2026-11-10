@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794271301413,
+  "generatedAt": 1794299294646,
   "models": [
     {
       "id": "abliterated-model",
@@ -6201,11 +6201,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.18,
+        "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1824,
-        "output": 10.5572,
+        "input": 0.152,
+        "output": 10.5601,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7895,11 +7895,11 @@
       "maxTokens": 128000,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.017,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
-        "output": 0.15,
+        "input": 0.034,
+        "output": 0.101,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8288,11 +8288,11 @@
       "maxTokens": 32768,
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "cacheRead": 0.05,
+        "cacheRead": 0.17,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1875,
-        "output": 0.6525,
+        "input": 0.35,
+        "output": 1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9224,6 +9224,28 @@
         "currency": "USD",
         "input": 0.075,
         "output": 0.25,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "nex-agi/nex-n2.6",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 235929,
+      "name": "Nex AGI: Nex-N2.6",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13044,6 +13066,50 @@
         "output": 1.2,
         "source": "modelsDev",
         "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "muse-ember-1.0",
+      "provider": "meta",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 524288,
+      "name": "Muse Ember",
+      "pricing": {
+        "cacheRead": 0.004,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.004,
+            "cacheWrite": 0,
+            "input": 0.1,
+            "output": 0.5,
+            "range": [
+              0,
+              200000
+            ]
+          },
+          {
+            "cacheRead": 0.012,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 1.5,
+            "range": [
+              200000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -21672,28 +21738,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "gemma-4-uncensored",
-      "provider": "venice",
-      "contextWindow": 256000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 8192,
-      "name": "Gemma 4 Uncensored",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.1625,
-        "output": 0.5,
-        "source": "venice",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
     },
     {
       "id": "google-gemma-3-27b-it",
@@ -32729,6 +32773,12 @@
       "output": 0,
       "source": "deepinfra"
     },
+    "deepinfra/nace-ai/drex-max-finance": {
+      "cacheRead": 0.060000000000000005,
+      "input": 0.060000000000000005,
+      "output": 0,
+      "source": "deepinfra"
+    },
     "deepinfra/nace-ai/drex-v1.5": {
       "input": 0.04,
       "output": 0,
@@ -35195,7 +35245,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
       "input": 0.18239999999999998,
-      "output": 10.5572,
+      "output": 10.5601,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -35984,9 +36034,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.018,
-      "input": 0.051,
-      "output": 0.5670000000000001,
+      "cacheRead": 0.005,
+      "input": 0.006,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -36578,9 +36628,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -36796,6 +36846,12 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.25,
+      "source": "openRouter"
+    },
+    "openrouter/nex-agi/nex-n2.6": {
+      "cacheRead": 0.024,
+      "input": 0.12,
+      "output": 0.39999999999999997,
       "source": "openRouter"
     },
     "openrouter/nousresearch/hermes-4-405b": {
@@ -39382,9 +39438,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.21,
-      "input": 0.623,
-      "output": 1.271,
+      "cacheRead": 0.17800000000000002,
+      "input": 0.527,
+      "output": 1.0750000000000002,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -40431,6 +40487,11 @@
       "output": 0.9,
       "source": "venice"
     },
+    "venice/gemma-4-uncensored": {
+      "input": 0.1625,
+      "output": 0.5,
+      "source": "venice"
+    },
     "venice/grok-4-20-multi-agent": {
       "cacheRead": 0.23,
       "input": 1.42,
@@ -40722,7 +40783,7 @@
       "defaultUtilityModel": "claude-haiku-5-5",
       "recommendedModels": [
         "claude-opus-5-5",
-        "claude-fable-5-1",
+        "claude-fable-5-2",
         "claude-sonnet-5-5",
         "claude-haiku-5-5"
       ]
@@ -40856,12 +40917,13 @@
         "openai/gpt-6.1-sol",
         "google/gemini-4-argon",
         "openai/gpt-6-astra",
-        "anthropic/claude-fable-5.1",
+        "anthropic/claude-fable-5.2",
         "anthropic/claude-sonnet-5.5",
         "meta/muse-wonder",
         "x-ai/grok-4.7",
         "deepseek/deepseek-v4.1-flash",
         "meta/muse-spark-1.3",
+        "tencent/hy4",
         "tencent/hy4-preview",
         "xiaomi/mimo-v2.6-pro",
         "google/gemini-3.8-flash",
@@ -40922,6 +40984,7 @@
       "defaultModel": "deepseek/deepseek-v4-pro",
       "recommendedModels": [
         "deepseek/deepseek-v4.1-flash",
+        "tencent/hy4",
         "tencent/hy4-preview",
         "xiaomimimo/mimo-v2.6-pro",
         "qwen/qwen3.8-max",
@@ -41038,6 +41101,7 @@
       "api": "openai-completions",
       "defaultModel": "hy4-preview",
       "recommendedModels": [
+        "hy4",
         "hy4-preview"
       ]
     },
@@ -41045,6 +41109,7 @@
       "api": "openai-completions",
       "defaultModel": "hy4-preview",
       "recommendedModels": [
+        "hy4",
         "hy4-preview"
       ]
     },
@@ -41070,7 +41135,7 @@
         "openai-gpt-61-sol",
         "gemini-4-argon",
         "openai-gpt-6-astra",
-        "claude-fable-5-1",
+        "claude-fable-5-2",
         "claude-sonnet-5-5",
         "muse-wonder",
         "grok-4-7",
@@ -41096,12 +41161,13 @@
         "openai/gpt-6.1-sol",
         "google/gemini-4-argon",
         "openai/gpt-6-astra",
-        "anthropic/claude-fable-5.1",
+        "anthropic/claude-fable-5.2",
         "anthropic/claude-sonnet-5.5",
         "meta/muse-wonder-1.0",
         "spacexai/grok-4.7",
         "deepseek/deepseek-v4.1-flash",
         "meta/muse-spark-1.3",
+        "tencent/hy4",
         "tencent/hy4-preview",
         "xiaomi/mimo-v2.6-pro",
         "google/gemini-3.8-flash",
@@ -41167,7 +41233,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "d1518e4d07a5f3cb3d0437e9916a69ae0765df9f",
+  "sourceCommit": "930e1f77a56c0d0e4eea7fcd6bac1da0da3e63bf",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -60602,6 +60668,42 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "meta/muse-ember-1.0": {
+      "alternatives": [
+        {
+          "cacheRead": 0.004,
+          "input": 0.09999999999999999,
+          "output": 0.5,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.004,
+      "input": 0.1,
+      "output": 0.5,
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.004,
+          "cacheWrite": 0,
+          "input": 0.1,
+          "output": 0.5,
+          "range": [
+            0,
+            200000
+          ]
+        },
+        {
+          "cacheRead": 0.012,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.5,
+          "range": [
+            200000
+          ]
+        }
+      ]
+    },
     "meta/muse-spark-1.1": {
       "alternatives": [
         {
@@ -66613,7 +66715,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
       "input": 0.18239999999999998,
-      "output": 10.5572,
+      "output": 10.5601,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -67402,9 +67504,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.018,
-      "input": 0.051,
-      "output": 0.5670000000000001,
+      "cacheRead": 0.005,
+      "input": 0.006,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -67996,9 +68098,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -68214,6 +68316,12 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.25,
+      "source": "openRouter"
+    },
+    "openrouter/nex-agi/nex-n2.6": {
+      "cacheRead": 0.024,
+      "input": 0.12,
+      "output": 0.39999999999999997,
       "source": "openRouter"
     },
     "openrouter/nousresearch/hermes-4-405b": {
@@ -70800,9 +70908,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.21,
-      "input": 0.623,
-      "output": 1.271,
+      "cacheRead": 0.17800000000000002,
+      "input": 0.527,
+      "output": 1.0750000000000002,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -75788,6 +75896,12 @@
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
+      "source": "liteLLM"
+    },
+    "together_ai/elorian-labs/glimpse-1.0": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 3,
       "source": "liteLLM"
     },
     "together_ai/essentialai/rnj-1-instruct": {
