@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794255954353,
+  "generatedAt": 1794271301413,
   "models": [
     {
       "id": "abliterated-model",
@@ -1564,6 +1564,28 @@
         "currency": "USD",
         "input": 1.85,
         "output": 9.5,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "Qwen/Qwen3.5-27B-TEE",
+      "provider": "chutes",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Qwen3.5 27B TEE",
+      "pricing": {
+        "cacheRead": 0.019999999999999997,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 1.75,
         "source": "chutes",
         "status": "known",
         "unit": "million_tokens"
@@ -5777,13 +5799,13 @@
         "document"
       ],
       "maxTokens": 128000,
-      "name": "Anthropic: Claude Fable Latest ($$$$)",
+      "name": "Anthropic: Claude Fable Latest",
       "pricing": {
-        "cacheRead": 0.25,
-        "cacheWrite": 12.5,
+        "cacheRead": 0.2,
+        "cacheWrite": 10,
         "currency": "USD",
-        "input": 10,
-        "output": 50,
+        "input": 8,
+        "output": 40,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -5980,11 +6002,11 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi Latest",
       "pricing": {
-        "cacheRead": 0.16,
+        "cacheRead": 0.18,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1643,
-        "output": 9.3388,
+        "input": 0.1824,
+        "output": 10.5572,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6427,6 +6449,29 @@
         "currency": "USD",
         "input": 10,
         "output": 50,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "anthropic/claude-fable-5.2",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Anthropic: Claude Fable 5.2",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 10,
+        "currency": "USD",
+        "input": 8,
+        "output": 40,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7643,19 +7688,19 @@
     {
       "id": "google/gemma-4-26b-a4b-it",
       "provider": "kilocode",
-      "contextWindow": 262144,
+      "contextWindow": 256000,
       "input": [
         "image",
         "text"
       ],
-      "maxTokens": 235929,
+      "maxTokens": 128000,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.017,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.034,
-        "output": 0.101,
+        "input": 0.04,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8015,11 +8060,11 @@
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
       "provider": "kilocode",
-      "contextWindow": 131072,
+      "contextWindow": 128000,
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 115200,
       "name": "Llama-3.3-70B-Instruct",
       "pricing": {
         "cacheRead": 0,
@@ -10300,7 +10345,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
         "cacheRead": 0.009,
@@ -10570,14 +10615,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 36864,
       "name": "Qwen: Qwen3 14B",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.12,
-        "output": 0.24,
+        "input": 0.1,
+        "output": 0.22,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11394,11 +11439,11 @@
       "maxTokens": 131072,
       "name": "Ricursive: Ripple 65B Preview",
       "pricing": {
-        "cacheRead": 0.05,
+        "cacheRead": 0.025,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2,
-        "output": 0.6,
+        "input": 0.1,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11497,22 +11542,6 @@
       "reasoning": true
     },
     {
-      "id": "stealth/crouton-alpha",
-      "provider": "kilocode",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 943718,
-      "name": "Crouton Alpha",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
       "id": "stealth/glyph-cluster",
       "provider": "kilocode",
       "contextWindow": 256000,
@@ -11601,11 +11630,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.020625,
+        "cacheRead": 0.033,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0825,
-        "output": 0.33,
+        "input": 0.132,
+        "output": 0.528,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11665,11 +11694,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.0378,
+        "cacheRead": 0.042,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7506,
-        "output": 2.2509,
+        "input": 0.834,
+        "output": 2.501,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11695,6 +11724,21 @@
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "thinkingmachines/inkling-2-small:free",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "pricing": {
+        "status": "unknown"
       },
       "reasoning": true
     },
@@ -17297,11 +17341,11 @@
       "maxTokens": 65536,
       "name": "Gemini 3.6 Flash",
       "pricing": {
-        "cacheRead": 0.15,
+        "cacheRead": 0.075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.5,
-        "output": 7.5,
+        "input": 0.75,
+        "output": 3.75,
         "source": "openCode",
         "status": "known",
         "unit": "million_tokens"
@@ -23848,6 +23892,29 @@
         "currency": "USD",
         "input": 8,
         "output": 40,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "anthropic/claude-fable-5.2-fast",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "Claude Fable 5.2 (Fast)",
+      "pricing": {
+        "cacheRead": 0.4,
+        "cacheWrite": 20,
+        "currency": "USD",
+        "input": 16,
+        "output": 80,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -31069,12 +31136,6 @@
       "output": 25,
       "source": "liteLLM"
     },
-    "chutes/Qwen/Qwen3.5-27B-TEE": {
-      "cacheRead": 0.019999999999999997,
-      "input": 0.2,
-      "output": 1.75,
-      "source": "chutes"
-    },
     "deepinfra/allenai/Olmo-3.1-32B-Instruct": {
       "input": 0.2,
       "output": 0.6,
@@ -33254,15 +33315,15 @@
       "source": "openCode"
     },
     "opencode/gemini-3.7-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5,
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75,
       "source": "openCode"
     },
     "opencode/gemini-3.8-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 7.5,
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75,
       "source": "openCode"
     },
     "opencode/gemini-4-argon": {
@@ -34117,7 +34178,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
       "input": 0.18239999999999998,
-      "output": 9.338799999999999,
+      "output": 10.5572,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -34894,9 +34955,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0740805,
-      "input": 0.888966,
-      "output": 1.777932,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35280,9 +35341,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.046,
+      "input": 0.08,
+      "output": 0.09999999999999999,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -35388,9 +35449,9 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
-      "cacheRead": 0.295,
-      "input": 0.59,
-      "output": 0.7899999999999999,
+      "cacheRead": 0.71,
+      "input": 0.71,
+      "output": 0.71,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-4-maverick": {
@@ -37301,8 +37362,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-14b": {
-      "input": 0.12,
-      "output": 0.24,
+      "input": 0.09999999999999999,
+      "output": 0.22,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
@@ -37845,9 +37906,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -37863,9 +37924,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -40081,7 +40142,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "e64c3514e4194c1100779f9617f2d0c7b0439c4c",
+  "sourceCommit": "d1518e4d07a5f3cb3d0437e9916a69ae0765df9f",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -41892,6 +41953,13 @@
       "output": 15,
       "source": "modelsDev"
     },
+    "amazon-bedrock/global.moonshotai.kimi-k3.1": {
+      "cacheRead": 0.2,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
+      "source": "modelsDev"
+    },
     "amazon-bedrock/global.openai.gpt-5.6-luna": {
       "cacheRead": 0.02,
       "cacheWrite": 0.25,
@@ -42976,6 +43044,13 @@
       "output": 16.5,
       "source": "modelsDev"
     },
+    "amazon-bedrock/us.moonshotai.kimi-k3.1": {
+      "cacheRead": 0.22,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
+      "source": "modelsDev"
+    },
     "amazon-bedrock/us.openai.gpt-5.6-luna": {
       "cacheRead": 0.022,
       "cacheWrite": 0.275,
@@ -43787,6 +43862,20 @@
       "cacheWrite": 12.5,
       "input": 10,
       "output": 50,
+      "source": "liteLLM"
+    },
+    "azure_ai/claude-fable-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
+    "azure_ai/claude-fable-5-2-fast": {
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 20,
+      "input": 16,
+      "output": 80,
       "source": "liteLLM"
     },
     "azure_ai/claude-haiku-4-5": {
@@ -49250,6 +49339,13 @@
       "output": 60,
       "source": "liteLLM"
     },
+    "bedrock/us-gov-east-1/anthropic.claude-fable-5-2": {
+      "cacheRead": 0.24,
+      "cacheWrite": 12,
+      "input": 9.6,
+      "output": 48,
+      "source": "liteLLM"
+    },
     "bedrock/us-gov-east-1/anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.12,
       "cacheWrite": 1.5,
@@ -49262,6 +49358,13 @@
       "cacheWrite": 0.15,
       "input": 0.12,
       "output": 0.6,
+      "source": "liteLLM"
+    },
+    "bedrock/us-gov-east-1/anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.24,
+      "cacheWrite": 12,
+      "input": 9.6,
+      "output": 48,
       "source": "liteLLM"
     },
     "bedrock/us-gov-east-1/anthropic.claude-opus-4-8": {
@@ -49432,6 +49535,13 @@
       "output": 60,
       "source": "liteLLM"
     },
+    "bedrock/us-gov-west-1/anthropic.claude-fable-5-2": {
+      "cacheRead": 0.24,
+      "cacheWrite": 12,
+      "input": 9.6,
+      "output": 48,
+      "source": "liteLLM"
+    },
     "bedrock/us-gov-west-1/anthropic.claude-haiku-4-5-20251001-v1:0": {
       "cacheRead": 0.12,
       "cacheWrite": 1.5,
@@ -49444,6 +49554,13 @@
       "cacheWrite": 0.15,
       "input": 0.12,
       "output": 0.6,
+      "source": "liteLLM"
+    },
+    "bedrock/us-gov-west-1/anthropic.claude-mythos-5-2": {
+      "cacheRead": 0.24,
+      "cacheWrite": 12,
+      "input": 9.6,
+      "output": 48,
       "source": "liteLLM"
     },
     "bedrock/us-gov-west-1/anthropic.claude-opus-4-8": {
@@ -54819,6 +54936,13 @@
       "output": 50,
       "source": "liteLLM"
     },
+    "github_copilot/claude-fable-5.2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
     "github_copilot/claude-haiku-4.5": {
       "cacheRead": 0.09999999999999999,
       "cacheWrite": 1.25,
@@ -59660,6 +59784,14 @@
       ]
     },
     "minimax/MiniMax-M3.1-Flash": {
+      "alternatives": [
+        {
+          "cacheRead": 0.015,
+          "input": 0.15,
+          "output": 0.6,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.015,
       "input": 0.15,
       "output": 0.6,
@@ -65456,7 +65588,7 @@
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
       "input": 0.18239999999999998,
-      "output": 9.338799999999999,
+      "output": 10.5572,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -66233,9 +66365,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0740805,
-      "input": 0.888966,
-      "output": 1.777932,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -66619,9 +66751,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.046,
+      "input": 0.08,
+      "output": 0.09999999999999999,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -66727,9 +66859,9 @@
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-3.3-70b-instruct": {
-      "cacheRead": 0.295,
-      "input": 0.59,
-      "output": 0.7899999999999999,
+      "cacheRead": 0.71,
+      "input": 0.71,
+      "output": 0.71,
       "source": "openRouter"
     },
     "openrouter/meta-llama/llama-4-maverick": {
@@ -68640,8 +68772,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-14b": {
-      "input": 0.12,
-      "output": 0.24,
+      "input": 0.09999999999999999,
+      "output": 0.22,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-235b-a22b-2507": {
@@ -69184,9 +69316,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -69202,9 +69334,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -76266,6 +76398,20 @@
       "output": 50,
       "source": "liteLLM"
     },
+    "vertex_ai/claude-fable-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
+    "vertex_ai/claude-fable-5-2@default": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
     "vertex_ai/claude-fable-5@default": {
       "cacheRead": 1,
       "cacheWrite": 12.5,
@@ -77617,9 +77763,9 @@
       "source": "liteLLM"
     },
     "wandb/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
-      "cacheRead": 0.002,
-      "input": 0.13,
-      "output": 0.65,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "liteLLM"
     },
     "wandb/google/gemma-4-26B-A4B-it": {
