@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794400228116,
+  "generatedAt": 1794414530243,
   "models": [
     {
       "id": "abliterated-model",
@@ -6876,27 +6876,18 @@
       "reasoning": true
     },
     {
-      "id": "baidu/ernie-5.5-flash-preview",
+      "id": "baidu/ernie-5.5-flash-preview:free",
       "provider": "kilocode",
       "contextWindow": 1024000,
       "input": [
         "text"
       ],
       "maxTokens": 921600,
-      "name": "Baidu: ERNIE-5.5-Flash-Preview",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
       "pricing": {
-        "cacheRead": 0.028,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.28,
-        "output": 1.13,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
+        "status": "unknown"
       },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
+      "reasoning": true
     },
     {
       "id": "baidu/ernie-light-dt-1.0-intl",
@@ -7861,11 +7852,11 @@
       "maxTokens": 128000,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.005,
+        "cacheRead": 0.006,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.01,
-        "output": 0.031,
+        "input": 0.011,
+        "output": 0.034,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8497,18 +8488,18 @@
     {
       "id": "minimax/minimax-m2.5",
       "provider": "kilocode",
-      "contextWindow": 65536,
+      "contextWindow": 200000,
       "input": [
         "text"
       ],
-      "maxTokens": 58982,
+      "maxTokens": 128000,
       "name": "MiniMax-M2.5",
       "pricing": {
-        "cacheRead": 0.06,
+        "cacheRead": 0.027,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
+        "input": 0.27,
+        "output": 1.08,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12165,7 +12156,7 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.003,
+        "cacheRead": 0.0028,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.1,
@@ -34944,88 +34935,10 @@
       "output": 3.9400000000000004,
       "source": "openRouter"
     },
-    "openrouter/bytedance-seed/seed-1.6": {
-      "input": 0.25,
-      "output": 2,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.25,
-          "output": 2,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.5,
-          "output": 4,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
-    "openrouter/bytedance-seed/seed-1.6-flash": {
-      "input": 0.075,
-      "output": 0.3,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.075,
-          "output": 0.3,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.09999999999999999,
-          "output": 0.7999999999999999,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
     "openrouter/bytedance-seed/seed-2-1-turbo": {
       "input": 0.5,
       "output": 2.5,
       "source": "openRouter"
-    },
-    "openrouter/bytedance-seed/seed-2.0-code": {
-      "input": 0.5,
-      "output": 3,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.5,
-          "output": 3,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1,
-          "output": 6,
-          "range": [
-            128001
-          ]
-        }
-      ]
     },
     "openrouter/bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
@@ -35180,9 +35093,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.07393549999999999,
+      "input": 0.8872260000000001,
+      "output": 1.7744520000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35571,7 +35484,7 @@
     "openrouter/google/gemma-3-27b-it": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.44999999999999996,
+      "output": 0.35,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -35806,9 +35719,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -38158,9 +38071,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -38176,9 +38089,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -40407,7 +40320,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "cb4cd561dfb56d2ff8c49a21b89e935053e122a1",
+  "sourceCommit": "c324818cbf86074f34578d07f381b0d2835955a1",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -51056,6 +50969,13 @@
       "output": 12.49997,
       "source": "liteLLM"
     },
+    "databricks/databricks-gemini-4-carbon": {
+      "cacheRead": 2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
     "databricks/databricks-gemma-3-12b": {
       "cacheRead": 0.15001,
       "cacheWrite": 0.15001,
@@ -51357,6 +51277,13 @@
       "output": 40,
       "source": "liteLLM"
     },
+    "databricks/system.ai.gemini-4-carbon": {
+      "cacheRead": 2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
     "deepinfra/allenai/olmOCR-7B-0725-FP8": {
       "input": 0.27,
       "output": 1.5,
@@ -51410,8 +51337,8 @@
       "source": "liteLLM"
     },
     "deepinfra/anthropic/claude-sonnet-5": {
-      "input": 2,
-      "output": 10,
+      "input": 3,
+      "output": 15,
       "source": "liteLLM"
     },
     "deepinfra/ByteDance/Seed-1.8": {
@@ -51737,7 +51664,7 @@
       "source": "liteLLM"
     },
     "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
-      "input": 0.019000000000000003,
+      "input": 0.029,
       "output": 0.03,
       "source": "liteLLM"
     },
@@ -51839,8 +51766,8 @@
     },
     "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning": {
       "cacheRead": 0.04,
-      "input": 0.08,
-      "output": 0.19999999999999998,
+      "input": 0.06,
+      "output": 0.16,
       "source": "liteLLM"
     },
     "deepinfra/nvidia/NVIDIA-Nemotron-Nano-9B-v2": {
@@ -66577,88 +66504,10 @@
       "output": 3.9400000000000004,
       "source": "openRouter"
     },
-    "openrouter/bytedance-seed/seed-1.6": {
-      "input": 0.25,
-      "output": 2,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.25,
-          "output": 2,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.5,
-          "output": 4,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
-    "openrouter/bytedance-seed/seed-1.6-flash": {
-      "input": 0.075,
-      "output": 0.3,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.075,
-          "output": 0.3,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.09999999999999999,
-          "output": 0.7999999999999999,
-          "range": [
-            128001
-          ]
-        }
-      ]
-    },
     "openrouter/bytedance-seed/seed-2-1-turbo": {
       "input": 0.5,
       "output": 2.5,
       "source": "openRouter"
-    },
-    "openrouter/bytedance-seed/seed-2.0-code": {
-      "input": 0.5,
-      "output": 3,
-      "source": "openRouter",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.5,
-          "output": 3,
-          "range": [
-            0,
-            128001
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1,
-          "output": 6,
-          "range": [
-            128001
-          ]
-        }
-      ]
     },
     "openrouter/bytedance-seed/seed-2.0-lite": {
       "input": 0.25,
@@ -66813,9 +66662,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.07393549999999999,
+      "input": 0.8872260000000001,
+      "output": 1.7744520000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -67204,7 +67053,7 @@
     "openrouter/google/gemma-3-27b-it": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.44999999999999996,
+      "output": 0.35,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -67439,9 +67288,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -69791,9 +69640,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -69809,9 +69658,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
