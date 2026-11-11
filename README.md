@@ -39,48 +39,53 @@ The catalog is **not hand-edited**. A [scheduled workflow](.github/workflows/pub
 assembles it from the `modelCatalog` blocks in the plugin manifests of
 [openclaw/openclaw](https://github.com/openclaw/openclaw) (`extensions/*/openclaw.plugin.json`),
 enriches per-token pricing, checks every 4 hours, validates it with the same schema the client enforces,
-and commits all three versions **only when any version's content actually changed** —
+and commits the versions it wrote **only when any version's content actually changed** —
 so the file history is a readable changelog of model additions and pricing updates.
 
 One publisher invocation generates v1, v2, and v3 from the same source snapshot.
 Changes to generation timestamps or source commit metadata alone do not trigger
-a commit. If any payload changes, all three outputs are committed together.
+a commit. If any payload changes, all written outputs are committed together.
+The publisher refuses a feed that lost more than 5% of its rows or a whole
+provider against the published file (`--previous*`); a manual run with the
+`allow_shrink` input accepts an intended drop. If a new v1 would exceed the 4 MiB
+client limit, the publisher leaves it unwritten (`--skip-oversized-v1`): the
+published v1 stays live and v2/v3 still publish, so v1 can lag one or more
+generations behind v2/v3.
 
 v1 and v2 are frozen. Released clients reject a v1/v2 file with any field or
 value they do not know, and then stop refreshing. Before committing, the workflow
-runs `scripts/released-readers.mjs`: the OpenClaw versions on the `latest`,
-`extended-stable` and `beta` npm tags each refresh from the new v1, v2 and v3
-files in a sandbox. A release fails the check when it rejects a file, or when it
-reports success but kept fewer rows than the file contains (row-tolerant readers,
-including every v3 reader, drop a row they cannot parse instead of rejecting the
-file). On failure nothing is committed or deployed, and the last good catalog
-stays live. If the comparison itself dies before reporting a verdict, it is
-retried once; a rejection is a verdict and is never retried. New fields go to v3.
-OpenClaw reads v3 only from a configured mirror URL, and builds that include
-[openclaw/openclaw#190187](https://github.com/openclaw/openclaw/pull/190187)
-ignore v3 fields they do not know. No release reads v3 yet.
+runs `scripts/released-readers.mjs`, which runs openclaw/openclaw's
+`scripts/catalog-compare-released.mts --check` once per written feed against the
+published file. Each OpenClaw version on the `latest`, `extended-stable` and
+`beta` npm tags that reads the feed refreshes from the new file in a sandbox. A
+release fails the check when it rejects the file, or when it reports success but
+keeps fewer rows than the publisher wrote, beyond the loss it already had on the
+published file (row-tolerant readers, including every v3 reader, drop a row they
+cannot parse instead of rejecting the file). A manual run with the
+`allow_row_loss` input accepts that many more dropped rows. On failure nothing is
+committed or deployed, and the last good catalog stays live. New fields go to v3.
+[openclaw/openclaw#197204](https://github.com/openclaw/openclaw/pull/197204)
+makes v3 the OpenClaw default with a tolerant v3 reader; no release on an npm tag
+ships it yet.
 
 ### v3 released-reader guard
 
-The v3 check applies only to releases that can read v3. A release that refuses
-both the live and the new v3 file on `schemaVersion` alone has no v3 reader and
-is skipped; any other release is held to the same rules as v1/v2. The repository
-variable `CATALOG_GUARD_V3` selects the mode:
+`--check` gates v3 on every tagged release that ships a v3 reader and skips the
+others by name (`v3 on openclaw@<version>: no v3 reader, skipped`), so the first
+release that reads v3 is gated with no change here. The repository variable
+`CATALOG_GUARD_V3` selects the mode:
 
 | `CATALOG_GUARD_V3` | Behavior |
 | --- | --- |
-| unset or `auto` | Check every release that reads v3. If none does, or the v3 comparison cannot run, log a notice or warning and continue. |
-| `enforce` | As `auto`, but fail when no tagged release reads v3 or the v3 comparison cannot run. |
+| unset or `auto` (default) | Check every tagged release that reads v3. If none does, log `v3: no checked release reads v3 yet` and continue. |
+| `enforce` | As `auto`, but fail when no tagged release reads v3. |
 | `off` | Skip v3. |
 
-It activates without a workflow change. Once a release with a v3 reader is on
-one of the npm tags and `catalog:compare-released` in openclaw/openclaw drives
-it with the v3 file, a v3 rejection or row loss on that release blocks the
-publish. Set `CATALOG_GUARD_V3=enforce` when the OpenClaw default moves to v3,
-so a guard that silently stops covering v3 also blocks. The check reads the
-comparison's `--dump` files (`<release>-baseline.json`, `<release>-candidate.json`
-with `refresh.status`, `refresh.error` and the kept row count `refresh.models`);
-keep that format when changing the OpenClaw side.
+Keep `auto` until a release that reads v3 is on an npm tag (the first release
+with openclaw/openclaw#197204). Then set `CATALOG_GUARD_V3=enforce`
+(`gh variable set CATALOG_GUARD_V3 --body enforce -R openclaw/catalog`), so a
+publish fails if v3 ever stops being checked, for example because the tags
+moved back to releases without a v3 reader or the reader detection broke.
 
 Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those
@@ -171,14 +176,16 @@ Every rollback is a roll forward: the good content with a new `generatedAt`.
    (`gh variable set CATALOG_PUBLISH_PAUSED --body true -R openclaw/catalog`).
    While paused, scheduled and manual runs only redeploy the committed catalog.
 2. Pick the last good commit. Use a `catalog:` commit written by the publisher;
-   all three feeds must come from one publish run:
+   its v2 and v3 must come from one publish run (v1 may be older):
    `git log --format='%h %cI %s' -- models/v3/catalog.json`.
 3. Run **Publish catalog** with `rollback_to` set to that commit
    (`gh workflow run publish.yml -R openclaw/catalog -f rollback_to=<sha>`).
    `scripts/rollback.mjs` copies the v1, v2 and v3 files of that commit
    unchanged, gives all three one `generatedAt` newer than both the current
    clock and every file on `main` and at that commit, and validates them with
-   OpenClaw `main`'s client parsers. The run then uses the normal publish path:
+   OpenClaw `main`'s client parsers. A v1 that lagged behind v2/v3 at that commit
+   (an oversized v1 the publisher kept) is restored as it was. The run then uses
+   the normal publish path:
    the released-reader guard, a commit to `main` (always, even when only
    `generatedAt` changed), tests, the preview deployment, production, and the
    smoke checks.
@@ -198,8 +205,9 @@ that is otherwise valid, stop that release from taking v3 updates by setting
 to keep the current content, or a last good commit). Releases below that version
 refuse every new v3 file ("remote catalog requires OpenClaw … or newer") and keep
 the catalog they already stored; this was proven against a released reader with
-the audit's `55-minVersion-future` fixture. The guard expects those refusals and
-fails if a release below `minVersion` still accepts the file.
+the audit's `55-minVersion-future` fixture. The released-reader check then runs
+only on tagged releases at or above `minVersion`, since a refusal below it is the
+intended result; if no tagged release is at or above it, v3 is not checked.
 
 - They keep what they already stored. If an affected release already accepted
   a harmful file, first roll back to content it handles correctly without

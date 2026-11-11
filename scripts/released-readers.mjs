@@ -1,175 +1,112 @@
-// Refuses regenerated catalogs that a released OpenClaw would reject or read with
-// rows missing. Released clients cannot be patched: v1/v2 parse strictly, and
-// row-tolerant readers (beta, every v3 reader) drop a row they cannot parse and
-// still report success. Each release's own refresh decides, through OpenClaw's
-// `catalog:compare-released` sandbox.
+// Publish gate: every released OpenClaw that reads a feed must accept the new file
+// and keep every row the publisher wrote. The verdict is openclaw/openclaw's
+// `catalog-compare-released.mts --check` (rejection, row loss against the last
+// published file, releases without a reader for the feed skipped by name); this
+// script only runs it once per feed:
 //
-// v3 is guarded only for releases that read v3. `--v3 auto` (the default) checks
-// every release that accepts the v3 baseline or candidate and skips releases that
-// refuse the schemaVersion; `--v3 enforce` also fails when no release reads v3 or
-// the v3 comparison cannot run; `--v3 off` skips v3.
-import { execFileSync } from "node:child_process";
-import { existsSync, mkdtempSync, readFileSync, readdirSync } from "node:fs";
-import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+// - A feed without `catalog.next.json` (v1 skipped by `--skip-oversized-v1`) keeps
+//   its published file and is not checked.
+// - A file with `minVersion` is checked only on tagged releases at or above it.
+//   Releases below refuse it by design (the emergency kill switch) and keep the
+//   catalog they already stored.
+// - `--v3 enforce` also fails when no checked release reads v3; `--v3 off` skips v3.
+//
+// usage: node scripts/released-readers.mjs --openclaw <checkout> [--models <dir>]
+//          [--v3 auto|enforce|off] [--allow-row-loss <n>] [--releases <v,v>]
+import { execFileSync, spawnSync } from "node:child_process";
+import { existsSync, readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { parseArgs } from "node:util";
-
-const ACCEPTED = new Set(["updated", "unchanged", "fresh"]);
-const V3_MODES = new Set(["off", "auto", "enforce"]);
 
 const { values } = parseArgs({
   options: {
     openclaw: { type: "string" },
     models: { type: "string", default: "models" },
     v3: { type: "string", default: "auto" },
-    // Local dry runs only: pin releases or limit the per-row request comparison.
-    releases: { type: "string" },
-    filter: { type: "string" },
-    attempts: { type: "string", default: "2" },
+    "allow-row-loss": { type: "string", default: "" },
+    // Pins the releases instead of the npm dist-tags (local dry runs).
+    releases: { type: "string", default: "" },
   },
 });
-if (!values.openclaw || !V3_MODES.has(values.v3)) {
+const allowRowLoss = values["allow-row-loss"].trim();
+if (!values.openclaw || !["auto", "enforce", "off"].includes(values.v3) || !/^\d*$/.test(allowRowLoss)) {
   console.error(
-    "usage: node scripts/released-readers.mjs --openclaw <openclaw checkout> [--models <dir>] [--v3 off|auto|enforce]",
+    "usage: node scripts/released-readers.mjs --openclaw <checkout> [--models <dir>] [--v3 auto|enforce|off] [--allow-row-loss <n>] [--releases <v,v>]",
   );
   process.exit(2);
 }
 
-// OpenClaw versions: YYYY.M.D, optionally -beta.N (prerelease) or -N (correction).
+// OpenClaw versions: YYYY.M.D, optionally -beta.N (before the release) or -N (a correction after it).
 function compareVersions(left, right) {
   const parse = (value) => {
-    const match = /^(\d+)\.(\d+)\.(\d+)(?:-(beta)\.(\d+)|-(\d+))?$/.exec(String(value).trim());
+    const match = /^(\d+)\.(\d+)\.(\d+)(?:-beta\.(\d+)|-(\d+))?$/.exec(String(value).trim());
     if (!match) return undefined;
-    const [, year, month, day, beta, betaNumber, correction] = match;
-    // A beta sorts before its release; a correction after it.
-    const tail = beta ? [-1, Number(betaNumber)] : [correction ? 1 : 0, Number(correction ?? 0)];
-    return [Number(year), Number(month), Number(day), ...tail];
+    const [, year, month, day, beta, correction] = match;
+    return [+year, +month, +day, beta === undefined ? (correction === undefined ? 0 : 1) : -1, +(beta ?? correction ?? 0)];
   };
   const a = parse(left);
   const b = parse(right);
   if (!a || !b) return undefined;
-  for (let index = 0; index < a.length; index++) {
-    if (a[index] !== b[index]) return a[index] < b[index] ? -1 : 1;
-  }
-  return 0;
+  const index = a.findIndex((part, i) => part !== b[i]);
+  return index === -1 ? 0 : a[index] < b[index] ? -1 : 1;
 }
 
-function rowCount(bundle) {
-  if (Array.isArray(bundle.models)) return bundle.models.length;
-  return Object.values(bundle.providers ?? {}).reduce(
-    (sum, provider) => sum + (Array.isArray(provider?.models) ? provider.models.length : 0),
-    0,
-  );
+let tagged;
+function releases() {
+  if (values.releases) return values.releases.split(",").map((version) => version.trim()).filter(Boolean);
+  // The same dist-tags catalog-compare-released reads.
+  tagged ??= (() => {
+    const parsed = JSON.parse(execFileSync("npm", ["view", "openclaw", "dist-tags", "--json"], { encoding: "utf8" }));
+    const tags = Array.isArray(parsed) ? (parsed[0] ?? {}) : parsed;
+    return [...new Set(["latest", "extended-stable", "beta"].map((tag) => tags[tag]).filter(Boolean))];
+  })();
+  return tagged;
 }
 
-const oneLine = (value) => String(value ?? "no error message").replace(/\s+/g, " ").slice(0, 500);
-// A release without a v3 reader refuses the file on schemaVersion alone.
-const refusesSchemaVersion = (refresh) => !ACCEPTED.has(refresh.status) && /schemaVersion/.test(String(refresh.error));
-
-// catalog-compare-released fails as a whole when one sandboxed reader dies before
-// reporting (for example openclaw/openclaw's shared worker-copy race, which exits 0
-// with no output). That is infrastructure, not a verdict, so it is retried; a
-// rejection or row loss is a result in the dump and never retried.
-function compare(version, candidate, baseline) {
-  const attempts = Math.max(1, Number(values.attempts) || 1);
-  for (let attempt = 1; ; attempt++) {
-    const dump = mkdtempSync(join(tmpdir(), `released-readers-${version}-`));
-    const args = ["scripts/catalog-compare-released.mts", "--candidate", candidate, "--baseline", baseline, "--dump", dump];
-    if (values.releases) args.push("--releases", values.releases);
-    if (values.filter) args.push("--filter", values.filter);
-    try {
-      // Releases come from the latest, extended-stable and beta npm dist-tags.
-      execFileSync(process.execPath, args, { cwd: resolve(values.openclaw), stdio: ["ignore", "ignore", "inherit"] });
-      return dump;
-    } catch (error) {
-      const reason = `${version}: released-reader comparison did not finish (exit ${error.status ?? error.signal})`;
-      if (attempt >= attempts) throw new Error(reason);
-      console.log(`::warning::${reason}; retrying (${attempt}/${attempts - 1})`);
-    }
-  }
-}
-
-function readRuns(dump, label) {
-  return new Map(
-    readdirSync(dump)
-      .filter((file) => file.endsWith(`-${label}.json`))
-      .map((file) => {
-        const run = JSON.parse(readFileSync(join(dump, file), "utf8"));
-        return [run.version, run];
-      }),
-  );
-}
-
-const failures = [];
-const notices = [];
-const versions = ["v1", "v2", ...(values.v3 === "off" ? [] : ["v3"])];
-for (const version of versions) {
-  const candidatePath = resolve(values.models, version, "catalog.next.json");
-  const currentPath = resolve(values.models, version, "catalog.json");
-  const baselinePath = existsSync(currentPath) ? currentPath : candidatePath;
-  const candidateBundle = JSON.parse(readFileSync(candidatePath, "utf8"));
-  const candidateRows = rowCount(candidateBundle);
-  const minVersion = typeof candidateBundle.minVersion === "string" ? candidateBundle.minVersion : undefined;
-  const v3 = version === "v3";
-
-  let dump;
-  try {
-    dump = compare(version, candidatePath, baselinePath);
-  } catch (error) {
-    if (v3 && values.v3 === "auto") {
-      console.log(`::warning::${error.message}; v3 is not enforced yet (--v3 auto)`);
-      continue;
-    }
-    failures.push(error.message);
+let failed = false;
+for (const version of ["v1", "v2", "v3"]) {
+  if (version === "v3" && values.v3 === "off") {
+    console.log("::notice::v3 released-reader check is off (CATALOG_GUARD_V3=off)");
     continue;
   }
-  const candidates = readRuns(dump, "candidate");
-  const baselines = readRuns(dump, "baseline");
-  if (candidates.size === 0) {
-    failures.push(`${version}: no released reader ran`);
+  const next = resolve(values.models, version, "catalog.next.json");
+  const current = resolve(values.models, version, "catalog.json");
+  if (!existsSync(next)) {
+    console.log(`::notice::${version}: no new file; the published ${version} stays live and is not checked`);
     continue;
   }
+  const args = ["scripts/catalog-compare-released.mts", "--check", "--candidate", next];
+  if (existsSync(current)) args.push("--baseline", current);
+  if (allowRowLoss) args.push("--allow-row-loss", allowRowLoss);
 
-  let v3Readers = 0;
-  for (const [release, { refresh, rows }] of [...candidates].toSorted(([a], [b]) => a.localeCompare(b))) {
-    const baselineRefresh = baselines.get(release)?.refresh;
-    const summary = `${version} on openclaw@${release}: ${refresh.status}, ${refresh.models ?? "?"}/${candidateRows} catalog rows kept, ${rows.length} rows observed`;
-    console.log(summary);
-
-    // A v3 kill switch: releases below minVersion must refuse the file and keep their catalog.
-    if (minVersion && compareVersions(release, minVersion) === -1) {
-      if (ACCEPTED.has(refresh.status) || !/requires OpenClaw/.test(String(refresh.error))) {
-        failures.push(`${summary}: expected refusal below minVersion ${minVersion}: ${oneLine(refresh.error)}`);
-      }
+  const { minVersion } = JSON.parse(readFileSync(next, "utf8"));
+  if (typeof minVersion === "string" && minVersion) {
+    const all = releases();
+    const checked = all.filter((release) => compareVersions(release, minVersion) !== -1);
+    const below = all.filter((release) => !checked.includes(release));
+    if (below.length > 0) {
+      console.log(`::notice::${version}: minVersion ${minVersion}; ${below.join(", ")} will refuse it and keep their catalog`);
+    }
+    if (checked.length === 0) {
+      console.log(`::notice::${version}: no tagged release is at or above minVersion ${minVersion}; nothing to check`);
       continue;
     }
-    if (v3 && refusesSchemaVersion(refresh) && (!baselineRefresh || refusesSchemaVersion(baselineRefresh))) {
-      notices.push(`${version}: openclaw@${release} does not read v3; skipped`);
-      continue;
-    }
-    if (v3) v3Readers++;
-    if (!ACCEPTED.has(refresh.status)) {
-      failures.push(`${summary}: ${oneLine(refresh.error)}`);
-      continue;
-    }
-    // Row-tolerant readers report success after dropping rows they cannot parse.
-    if (typeof refresh.models === "number" && refresh.models < candidateRows) {
-      failures.push(`${summary}: the release dropped ${candidateRows - refresh.models} rows it could not read`);
-    }
+    if (below.length > 0 || values.releases) args.push("--releases", checked.join(","));
+  } else if (values.releases) {
+    args.push("--releases", values.releases);
   }
-  if (v3 && v3Readers === 0) {
-    if (values.v3 === "enforce") {
-      failures.push("v3: no released OpenClaw reads v3, but --v3 enforce requires one");
-    } else {
-      notices.push("v3: no released OpenClaw reads v3 yet; nothing to guard");
-    }
+
+  const result = spawnSync(process.execPath, args, {
+    cwd: resolve(values.openclaw),
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "inherit"],
+    maxBuffer: 64 * 1024 * 1024,
+  });
+  process.stdout.write(result.stdout ?? "");
+  if (result.status !== 0) failed = true;
+  if (version === "v3" && values.v3 === "enforce" && /^v3: no checked release reads v3 yet$/m.test(result.stdout ?? "")) {
+    console.log("::error::v3: no tagged release reads v3, but CATALOG_GUARD_V3=enforce requires one");
+    failed = true;
   }
 }
-
-for (const notice of notices) {
-  console.log(`::notice::${notice}`);
-}
-for (const failure of failures) {
-  console.error(`::error::${failure}`);
-}
-process.exit(failures.length > 0 ? 1 : 0);
+process.exit(failed ? 1 : 0);

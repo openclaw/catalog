@@ -3,8 +3,8 @@
 ## Unreleased
 
 - Add a manual rollback to the publish workflow: it republishes the v1/v2/v3 content of an earlier commit with a fresh `generatedAt`, so clients that cached a bad catalog accept it, and can set an emergency v3 `minVersion`. Scheduled publishing can be paused with `CATALOG_PUBLISH_PAUSED`.
-- Run the released-reader guard on v3 for releases that read v3 (`CATALOG_GUARD_V3`), and fail when a release reports success but drops catalog rows.
-- Retry a released-reader comparison once when it dies before reporting a verdict, instead of blocking every feed until the next scheduled run.
+- Gate every feed, v3 included, with OpenClaw's `catalog-compare-released --check`: a release that reads the feed must accept the file and keep every published row (`CATALOG_GUARD_V3`, `allow_row_loss`).
+- Pass the published files to the publisher's shrink guard (`allow_shrink`), and keep the published v1 when a new one would exceed the client size limit while v2/v3 still publish.
 
 - Use the standard GitHub Actions runtime budget for CodeQL instead of the rollout-specific 20-minute job cap.
 

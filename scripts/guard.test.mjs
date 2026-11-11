@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync, spawn } from "node:child_process";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, readFile, realpath, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -38,142 +38,108 @@ const versioned = (schemaVersion, rows, extra = {}) => ({
 });
 const json = (value) => `${JSON.stringify(value, null, 2)}\n`;
 
-// A stand-in for openclaw's catalog-compare-released: each release's refresh outcome
-// comes from FAKE_PLAN, keyed by schemaVersion, release and baseline/candidate.
+// A stand-in for openclaw's `catalog-compare-released.mts --check`: it records its
+// arguments and prints the verdict FAKE_PLAN gives the candidate's feed.
 const fakeCompare = `
 import fs from "node:fs";
-import path from "node:path";
-import { parseArgs } from "node:util";
-const { values } = parseArgs({ options: { candidate: { type: "string" }, baseline: { type: "string" },
-  dump: { type: "string" }, releases: { type: "string" }, filter: { type: "string" } } });
-const plan = JSON.parse(process.env.FAKE_PLAN);
-const schema = JSON.parse(fs.readFileSync(values.candidate, "utf8")).schemaVersion;
-const crashes = plan.crash?.["v" + schema] ?? 0;
-const key = path.join(process.env.FAKE_STATE, "crash-v" + schema);
-const crashed = fs.existsSync(key) ? Number(fs.readFileSync(key, "utf8")) : 0;
-if (crashed < crashes) {
-  fs.writeFileSync(key, String(crashed + 1));
-  console.error("Error: released reader failed for /tmp/x/2026.9.37 (exit 0):");
-  process.exit(1);
-}
-for (const label of ["baseline", "candidate"]) {
-  const bundle = JSON.parse(fs.readFileSync(values[label], "utf8"));
-  const rows = bundle.models?.length ?? Object.values(bundle.providers).reduce((n, p) => n + p.models.length, 0);
-  for (const [release, outcome] of Object.entries(plan["v" + schema] ?? {})) {
-    const chosen = outcome[label] ?? outcome;
-    const refresh = chosen.status === "error"
-      ? { status: "error", error: chosen.error, providers: 0, models: 0 }
-      : { status: chosen.status ?? "updated", providers: 1, models: rows - (chosen.drop ?? 0) };
-    fs.writeFileSync(path.join(values.dump, release + "-" + label + ".json"),
-      JSON.stringify({ version: release, refresh, rows: [{ model: "example/m0" }] }));
-  }
-}
+const args = process.argv.slice(2);
+const candidate = args[args.indexOf("--candidate") + 1];
+const feed = "v" + JSON.parse(fs.readFileSync(candidate, "utf8")).schemaVersion;
+fs.appendFileSync(process.env.FAKE_CALLS, JSON.stringify({ cwd: process.cwd(), args }) + "\\n");
+const { lines = [], exit = 0 } = JSON.parse(process.env.FAKE_PLAN)[feed] ?? {};
+for (const line of lines) console.log(line);
+process.exit(exit);
 `;
 
-async function guardFixture(t, { candidates, plan }) {
-  const cwd = await mkdtemp(join(tmpdir(), "catalog-guard-"));
+async function gateFixture(t, { candidates, plan = {}, published = candidates }) {
+  // realpath: the gate resolves paths from its working directory (macOS /tmp is a symlink).
+  const cwd = await realpath(await mkdtemp(join(tmpdir(), "catalog-gate-")));
   t.after(() => rm(cwd, { recursive: true, force: true }));
   await mkdir(join(cwd, "openclaw/scripts"), { recursive: true });
-  await mkdir(join(cwd, "state"));
   await writeFile(join(cwd, "openclaw/scripts/catalog-compare-released.mts"), fakeCompare);
-  for (const [version, bundle] of Object.entries(candidates)) {
+  for (const version of ["v1", "v2", "v3"]) {
     await mkdir(join(cwd, "models", version), { recursive: true });
-    await writeFile(join(cwd, "models", version, "catalog.json"), json(bundle));
-    await writeFile(join(cwd, "models", version, "catalog.next.json"), json(bundle));
+    if (published[version]) await writeFile(join(cwd, "models", version, "catalog.json"), json(published[version]));
+    if (candidates[version]) await writeFile(join(cwd, "models", version, "catalog.next.json"), json(candidates[version]));
   }
-  return (args = []) => run(releasedReaders, ["--openclaw", "openclaw", ...args], cwd, {
-    FAKE_PLAN: JSON.stringify(plan),
-    FAKE_STATE: join(cwd, "state"),
-  });
+  const callsFile = join(cwd, "calls.jsonl");
+  return {
+    cwd,
+    gate: (args = []) => run(releasedReaders, ["--openclaw", "openclaw", ...args], cwd, {
+      FAKE_PLAN: JSON.stringify(plan),
+      FAKE_CALLS: callsFile,
+    }),
+    calls: async () => (await readFile(callsFile, "utf8").catch(() => "")).trim().split("\n").filter(Boolean).map(JSON.parse),
+  };
 }
 
-const notV3 = { status: "error", error: '[{"code":"invalid_value","values":[1],"path":["schemaVersion"]}]' };
-const ok = { status: "updated" };
-const legacy = { "2026.11.3": ok, "2026.9.37": ok, "2026.11.5-beta.1": ok };
 const candidates = { v1: v1(3), v2: versioned(2, 3), v3: versioned(3, 4) };
+const noV3Reader = { lines: ["v3 on openclaw@2026.11.3: no v3 reader, skipped", "v3: no checked release reads v3 yet"] };
+const option = (args, name) => (args.includes(name) ? args[args.indexOf(name) + 1] : undefined);
 
-test("released readers accept v1/v2 and skip v3 until a release reads it", async (t) => {
-  const guard = await guardFixture(t, {
+test("the gate runs openclaw --check once per written feed against the published file", async (t) => {
+  const { cwd, gate, calls } = await gateFixture(t, { candidates: { v2: candidates.v2, v3: candidates.v3 }, published: candidates, plan: { v3: noV3Reader } });
+  const result = await gate();
+  assert.equal(result.code, 0, result.output);
+  assert.match(result.output, /::notice::v1: no new file; the published v1 stays live/);
+  assert.match(result.output, /v3: no checked release reads v3 yet/);
+  const seen = await calls();
+  assert.deepEqual(seen.map(({ args }) => option(args, "--candidate")), ["v2", "v3"].map((v) => join(cwd, "models", v, "catalog.next.json")));
+  for (const { cwd: dir, args } of seen) {
+    assert.ok(dir.endsWith("/openclaw"), dir);
+    assert.equal(args[0], "--check");
+    assert.equal(option(args, "--baseline"), option(args, "--candidate").replace("catalog.next.json", "catalog.json"));
+    assert.equal(option(args, "--releases"), undefined, "dist-tags decide the releases");
+    assert.equal(option(args, "--allow-row-loss"), undefined);
+  }
+  const first = await gateFixture(t, { candidates, published: {} });
+  assert.equal((await first.gate()).code, 0);
+  assert.ok((await first.calls()).every(({ args }) => !args.includes("--baseline")), "first publish of a feed has no baseline");
+});
+
+test("the gate fails when any feed fails and still checks the others", async (t) => {
+  const { gate, calls } = await gateFixture(t, {
     candidates,
-    plan: { v1: legacy, v2: legacy, v3: { "2026.11.3": notV3, "2026.9.37": notV3, "2026.11.5-beta.1": notV3 } },
+    plan: { v1: { lines: ["::error::v1 on openclaw@2026.9.37: error: futureTop"], exit: 1 } },
   });
-  const auto = await guard();
-  assert.equal(auto.code, 0, auto.output);
-  assert.match(auto.output, /v2 on openclaw@2026\.9\.37: updated, 3\/3 catalog rows kept/);
-  assert.match(auto.output, /::notice::v3: openclaw@2026\.11\.3 does not read v3; skipped/);
-  assert.match(auto.output, /::notice::v3: no released OpenClaw reads v3 yet/);
-  const enforce = await guard(["--v3", "enforce"]);
+  const result = await gate(["--allow-row-loss", "2"]);
+  assert.notEqual(result.code, 0);
+  assert.match(result.output, /::error::v1 on openclaw@2026\.9\.37/);
+  const seen = await calls();
+  assert.equal(seen.length, 3);
+  assert.ok(seen.every(({ args }) => option(args, "--allow-row-loss") === "2"));
+  assert.equal((await gate(["--allow-row-loss", "x"])).code, 2);
+});
+
+test("CATALOG_GUARD_V3 enforce requires a release that reads v3; off skips v3", async (t) => {
+  const { gate, calls } = await gateFixture(t, { candidates, plan: { v3: noV3Reader } });
+  assert.equal((await gate(["--v3", "auto"])).code, 0);
+  const enforce = await gate(["--v3", "enforce"]);
   assert.notEqual(enforce.code, 0);
-  assert.match(enforce.output, /::error::v3: no released OpenClaw reads v3, but --v3 enforce requires one/);
-  const off = await guard(["--v3", "off"]);
+  assert.match(enforce.output, /::error::v3: no tagged release reads v3, but CATALOG_GUARD_V3=enforce requires one/);
+  const before = (await calls()).length;
+  const off = await gate(["--v3", "off"]);
   assert.equal(off.code, 0, off.output);
-  assert.doesNotMatch(off.output, /v3/);
+  assert.equal((await calls()).length, before + 2, "v1 and v2 only");
+  const read = await gateFixture(t, { candidates, plan: { v3: { lines: ["v3 on openclaw@2026.12.1: updated, 4/4 rows"] } } });
+  assert.equal((await read.gate(["--v3", "enforce"])).code, 0);
 });
 
-test("released readers fail on rejection and on rows a tolerant reader dropped", async (t) => {
-  const guard = await guardFixture(t, {
-    candidates,
-    plan: {
-      v1: { ...legacy, "2026.9.37": { status: "error", error: 'Unrecognized key: "futureTop"' } },
-      v2: { ...legacy, "2026.11.5-beta.1": { status: "updated", drop: 1 } },
-      v3: { "2026.11.3": notV3, "2026.12.1-beta.1": { baseline: ok, candidate: { status: "updated", drop: 2 } } },
-    },
-  });
-  const result = await guard();
-  assert.notEqual(result.code, 0);
-  assert.match(result.output, /::error::v1 on openclaw@2026\.9\.37: error.*futureTop/);
-  assert.match(result.output, /::error::v2 on openclaw@2026\.11\.5-beta\.1: updated, 2\/3 .*dropped 1 rows/);
-  assert.match(result.output, /::error::v3 on openclaw@2026\.12\.1-beta\.1: updated, 2\/4 .*dropped 2 rows/);
-  assert.doesNotMatch(result.output, /::error::v1 on openclaw@2026\.11\.3/);
-});
-
-test("a v3 reader that refuses the candidate fails even when the baseline was bad", async (t) => {
-  const refused = { status: "error", error: '[{"code":"invalid_value","path":["providers","x","api"]}]' };
-  const guard = await guardFixture(t, {
-    candidates,
-    plan: {
-      v1: legacy,
-      v2: legacy,
-      v3: {
-        "2026.12.1": { baseline: ok, candidate: notV3 },
-        "2026.12.2": { baseline: refused, candidate: refused },
-      },
-    },
-  });
-  const result = await guard();
-  assert.notEqual(result.code, 0);
-  assert.match(result.output, /::error::v3 on openclaw@2026\.12\.1: error/);
-  assert.match(result.output, /::error::v3 on openclaw@2026\.12\.2: error/);
-});
-
-test("v3 minVersion makes refusal the expected result below it", async (t) => {
-  const requires = (version) => ({ status: "error", error: `Error: remote catalog requires OpenClaw 2026.12.3 or newer (current ${version})` });
-  const plan = (below) => ({
-    v1: legacy,
-    v2: legacy,
-    v3: { "2026.12.2": below, "2026.12.3-beta.1": requires("2026.12.3-beta.1"), "2026.12.3": ok },
-  });
+test("a v3 minVersion limits the check to releases at or above it", async (t) => {
   const v3 = versioned(3, 4, { minVersion: "2026.12.3" });
-  const pass = await (await guardFixture(t, { candidates: { ...candidates, v3 }, plan: plan(requires("2026.12.2")) }))();
-  assert.equal(pass.code, 0, pass.output);
-  const leaked = await (await guardFixture(t, { candidates: { ...candidates, v3 }, plan: plan(ok) }))();
-  assert.notEqual(leaked.code, 0);
-  assert.match(leaked.output, /::error::v3 on openclaw@2026\.12\.2: updated.*expected refusal below minVersion 2026\.12\.3/);
-});
-
-test("a comparison that dies before reporting is retried once, never a rejection", async (t) => {
-  const plan = { v1: legacy, v2: legacy, v3: { "2026.12.1": ok } };
-  const once = await (await guardFixture(t, { candidates, plan: { ...plan, crash: { v2: 1 } } }))();
-  assert.equal(once.code, 0, once.output);
-  assert.match(once.output, /::warning::v2: released-reader comparison did not finish \(exit 1\); retrying/);
-  const twice = await (await guardFixture(t, { candidates, plan: { ...plan, crash: { v2: 2 } } }))();
-  assert.notEqual(twice.code, 0);
-  assert.match(twice.output, /::error::v2: released-reader comparison did not finish/);
-  const v3Auto = await (await guardFixture(t, { candidates, plan: { ...plan, crash: { v3: 2 } } }))();
-  assert.equal(v3Auto.code, 0, v3Auto.output);
-  assert.match(v3Auto.output, /::warning::v3: .*not enforced yet/);
-  const v3Enforce = await (await guardFixture(t, { candidates, plan: { ...plan, crash: { v3: 2 } } }))(["--v3", "enforce"]);
-  assert.notEqual(v3Enforce.code, 0);
+  const releases = ["--releases", "2026.12.2,2026.12.3-beta.1,2026.12.3,2026.12.3-1"];
+  const { gate, calls } = await gateFixture(t, { candidates: { ...candidates, v3 } });
+  const result = await gate(releases);
+  assert.equal(result.code, 0, result.output);
+  assert.match(result.output, /::notice::v3: minVersion 2026\.12\.3; 2026\.12\.2, 2026\.12\.3-beta\.1 will refuse it/);
+  const byFeed = Object.fromEntries((await calls()).map(({ args }) => [option(args, "--candidate").split("/").at(-2), option(args, "--releases")]));
+  assert.equal(byFeed.v3, "2026.12.3,2026.12.3-1");
+  assert.equal(byFeed.v2, releases[1], "feeds without minVersion check every release");
+  const above = await gateFixture(t, { candidates: { ...candidates, v3: versioned(3, 4, { minVersion: "2027.1.1" }) } });
+  const skipped = await above.gate(["--v3", "enforce", ...releases]);
+  assert.equal(skipped.code, 0, skipped.output);
+  assert.match(skipped.output, /::notice::v3: no tagged release is at or above minVersion 2027\.1\.1; nothing to check/);
+  assert.equal((await above.calls()).length, 2);
 });
 
 async function catalogRepo(t) {
@@ -241,4 +207,25 @@ test("rollback refuses refs and versions it cannot restore safely", async (t) =>
   git("commit", "-q", "-am", "minified");
   const unformatted = await run(rollback, ["--from", "HEAD"], cwd);
   assert.match(unformatted.output, /does not round-trip/);
+});
+
+test("rollback restores a v1 the publisher kept from an older run, never mixed v2/v3", async (t) => {
+  const { cwd, git, write } = await catalogRepo(t);
+  await write(1794385700207, 3, "source-a");
+  const stale = JSON.parse(await readFile(join(cwd, "models/v1/catalog.json"), "utf8"));
+  await write(1794389300207, 4, "source-b");
+  // A publish that skipped an oversized v1: v2/v3 move on, v1 stays at source-a.
+  await writeFile(join(cwd, "models/v1/catalog.json"), json(stale));
+  git("commit", "-q", "-am", "v1 kept");
+  const kept = await run(rollback, ["--from", "HEAD"], cwd);
+  assert.equal(kept.code, 0, kept.output);
+  assert.match(kept.output, /::notice::.* carries an older v1 \(source source-a\)/);
+  const restored = JSON.parse(await readFile(join(cwd, "models/v1/catalog.next.json"), "utf8"));
+  assert.equal(restored.sourceCommit, "source-a");
+  assert.equal(restored.generatedAt, JSON.parse(await readFile(join(cwd, "models/v3/catalog.next.json"), "utf8")).generatedAt);
+  await writeFile(join(cwd, "models/v2/catalog.json"), json({ ...versioned(2, 4), generatedAt: 1794389300207, sourceCommit: "source-c" }));
+  git("commit", "-q", "-am", "mixed");
+  const mixed = await run(rollback, ["--from", "HEAD"], cwd);
+  assert.notEqual(mixed.code, 0);
+  assert.match(mixed.output, /mixes v2\/v3 source snapshots/);
 });

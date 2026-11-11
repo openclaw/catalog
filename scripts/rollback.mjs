@@ -79,9 +79,14 @@ for (const version of VERSIONS) {
   }
   files.set(version, bundle);
 }
-const sources = new Set([...files.values()].map((bundle) => bundle.sourceCommit));
-if (sources.size !== 1) {
-  fail(`${commit} mixes source snapshots (${[...sources].join(", ")}); pick a commit written by one publisher run`);
+// v2 and v3 always come from one publisher run. v1 may be older: the publisher
+// keeps the previous v1 when a new one would exceed the client size limit.
+const source = files.get("v3").sourceCommit;
+if (files.get("v2").sourceCommit !== source) {
+  fail(`${commit} mixes v2/v3 source snapshots; pick a commit written by one publisher run`);
+}
+if (files.get("v1").sourceCommit !== source) {
+  console.log(`::notice::${commit} carries an older v1 (source ${files.get("v1").sourceCommit}); it is restored as is`);
 }
 
 // Newer than every file at <ref> and every file currently on main, so every client
@@ -148,6 +153,6 @@ const counts = VERSIONS.map((version) => {
   return `${version} ${rows} rows`;
 });
 console.log(
-  `Restored content of ${commit} (source ${[...sources][0]}) with generatedAt ${generatedAt}` +
+  `Restored content of ${commit} (source ${source}) with generatedAt ${generatedAt}` +
     `${minVersion ? `, v3 minVersion ${minVersion}` : ""}: ${counts.join(", ")}.`,
 );

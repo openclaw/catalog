@@ -41,9 +41,12 @@ test("published generations keep Decision capabilities out of legacy feeds", asy
     return bundle;
   }));
   const [v1, v2, v3] = bundles;
-  for (const bundle of bundles.slice(1)) {
-    assert.equal(bundle.sourceCommit, v1.sourceCommit, "one upstream source snapshot");
-    assert.equal(bundle.generatedAt, v1.generatedAt, "one generation");
+  assert.equal(v2.sourceCommit, v3.sourceCommit, "one upstream source snapshot");
+  assert.equal(v2.generatedAt, v3.generatedAt, "one generation");
+  // The publisher keeps the previous v1 when a new one would exceed the client size limit.
+  assert.ok(v1.generatedAt <= v3.generatedAt, "v1 is the same generation or older");
+  if (v1.generatedAt === v3.generatedAt) {
+    assert.equal(v1.sourceCommit, v3.sourceCommit, "one upstream source snapshot");
   }
   const legacyModels = [
     Object.entries(v1.providers).flatMap(([provider, entry]) => entry.models.map((model) => ({ ...model, provider }))),
