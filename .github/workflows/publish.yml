@@ -14,6 +14,21 @@ on:
   schedule:
     - cron: "23 */4 * * *"
   workflow_dispatch:
+    inputs:
+      rollback_to:
+        description: >-
+          Rollback only: a commit on main whose v1/v2/v3 catalogs were good, or HEAD.
+          Its content is republished with a fresh generatedAt. Leave empty for a normal publish.
+        required: false
+        default: ""
+        type: string
+      v3_min_version:
+        description: >-
+          Rollback only, emergency: v3 minVersion. Releases below it refuse every new v3
+          file and keep the catalog they already have. See README "Rolling back".
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -26,13 +41,45 @@ jobs:
   publish:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    # Three released-reader passes (v1, v2, v3) take about 5 minutes each.
+    timeout-minutes: 60
     steps:
+      # publish: regenerate from openclaw. rollback: republish an earlier commit's
+      # content. deploy: push events, and scheduled runs while publishing is paused
+      # (repository variable CATALOG_PUBLISH_PAUSED=true) after a rollback.
+      - name: Resolve run mode
+        id: mode
+        env:
+          EVENT: ${{ github.event_name }}
+          ROLLBACK_TO: ${{ inputs.rollback_to }}
+          V3_MIN_VERSION: ${{ inputs.v3_min_version }}
+          PAUSED: ${{ vars.CATALOG_PUBLISH_PAUSED }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = push ]; then
+            mode=deploy
+          elif [ -n "$ROLLBACK_TO" ]; then
+            mode=rollback
+          elif [ -n "$V3_MIN_VERSION" ]; then
+            echo "::error::v3_min_version needs rollback_to (use HEAD to keep the current content)"
+            exit 1
+          elif [ "$PAUSED" = true ]; then
+            echo "::notice::Catalog publishing is paused (CATALOG_PUBLISH_PAUSED); deploying the committed catalog only"
+            mode=deploy
+          else
+            mode=publish
+          fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "generate=$([ "$mode" = deploy ] && echo false || echo true)" >> "$GITHUB_OUTPUT"
+
       - name: Checkout catalog
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # A rollback reads catalogs from an earlier commit.
+          fetch-depth: ${{ steps.mode.outputs.mode == 'rollback' && '0' || '1' }}
 
       - name: Checkout openclaw
-        if: github.event_name != 'push'
+        if: steps.mode.outputs.generate == 'true'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: openclaw/openclaw
@@ -46,25 +93,41 @@ jobs:
           node-version: "24.22.1"
 
       - name: Install dependencies
-        if: github.event_name != 'push'
+        if: steps.mode.outputs.generate == 'true'
         working-directory: openclaw
         run: |
           corepack enable
           pnpm install --frozen-lockfile
 
       - name: Assemble catalog
-        if: github.event_name != 'push'
+        if: steps.mode.outputs.mode == 'publish'
         working-directory: openclaw
         run: node --import tsx scripts/publish-model-catalog.mts --pricing --out ../models/v1/catalog.next.json --out-v2 ../models/v2/catalog.next.json --out-v3 ../models/v3/catalog.next.json
 
+      # Clients keep the cached catalog with the newer generatedAt, so reverting or
+      # redeploying an old file fixes nobody. Restore the content with a fresh stamp.
+      - name: Restore last good catalog
+        if: steps.mode.outputs.mode == 'rollback'
+        env:
+          ROLLBACK_TO: ${{ inputs.rollback_to }}
+          V3_MIN_VERSION: ${{ inputs.v3_min_version }}
+        run: node scripts/rollback.mjs --from "$ROLLBACK_TO" --v3-min-version "$V3_MIN_VERSION" --openclaw openclaw
+
       # Released clients reject an unknown v1/v2 field and stop refreshing
-      # (openclaw/openclaw#173027). Fail before commit so the last good catalog stays live.
+      # (openclaw/openclaw#173027); row-tolerant readers drop rows and report success.
+      # Fail before commit so the last good catalog stays live. v3 is checked for every
+      # release that reads v3; CATALOG_GUARD_V3=enforce also requires one (see README).
       - name: Check released readers
-        if: github.event_name != 'push'
-        run: node scripts/released-readers.mjs --openclaw openclaw
+        if: steps.mode.outputs.generate == 'true'
+        env:
+          GUARD_V3: ${{ vars.CATALOG_GUARD_V3 || 'auto' }}
+        run: node scripts/released-readers.mjs --openclaw openclaw --v3 "$GUARD_V3"
 
       - name: Commit on change only
-        if: github.event_name != 'push'
+        if: steps.mode.outputs.generate == 'true'
+        env:
+          MODE: ${{ steps.mode.outputs.mode }}
+          ROLLBACK_TO: ${{ inputs.rollback_to }}
         run: |
           set -euo pipefail
           changed=false
@@ -77,6 +140,9 @@ jobs:
             fi
             if [ "$cur" != "$new" ]; then changed=true; fi
           done
+          # A rollback must ship its fresh generatedAt even when the content matches main
+          # (for example after a git revert redeployed an old stamp).
+          if [ "$MODE" = rollback ]; then changed=true; fi
           if [ "$changed" = false ]; then
             echo "catalogs unchanged; skipping commit"
             rm models/v1/catalog.next.json models/v2/catalog.next.json models/v3/catalog.next.json
@@ -89,7 +155,12 @@ jobs:
           git config user.name "openclaw-catalog[bot]"
           git config user.email "catalog@openclaw.ai"
           git add models/v1/catalog.json models/v2/catalog.json models/v3/catalog.json
-          git commit -m "catalog: $(jq -r '"\(.providers | length) providers, \([.providers[].models | length] | add) models"' models/v1/catalog.json)"
+          summary=$(jq -r '"\(.providers | length) providers, \([.providers[].models | length] | add) models"' models/v1/catalog.json)
+          if [ "$MODE" = rollback ]; then
+            git commit -m "catalog: roll back to $(git rev-parse --short "$ROLLBACK_TO^{commit}") content, $summary"
+          else
+            git commit -m "catalog: $summary"
+          fi
           git push origin HEAD:main
 
       # GITHUB_TOKEN commits do not trigger push workflows. Keep deployment in
@@ -108,7 +179,7 @@ jobs:
 
       - name: Test and stage static assets
         run: |
-          node --test scripts/hosting.test.mjs
+          node --test scripts/hosting.test.mjs scripts/guard.test.mjs
           node scripts/build.mjs
           npx --yes wrangler@4.157.0 deploy --dry-run --env preview
 
