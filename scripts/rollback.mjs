@@ -13,6 +13,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { parseArgs } from "node:util";
+import { generationProblems } from "./generations.mjs";
 
 const VERSIONS = ["v1", "v2", "v3"];
 // Released readers reject `generatedAt` more than 24 h ahead of their clock.
@@ -113,6 +114,13 @@ for (const version of VERSIONS) {
     bundle.minVersion = minVersion;
   }
   files.set(version, sortKeys(bundle));
+}
+
+// The hosting test that gates the deploy applies the same rule; check it before
+// anything is written, so a rollback that would not deploy never reaches main.
+const problems = generationProblems(files.get("v1"), files.get("v2"), files.get("v3"));
+if (problems.length > 0) {
+  fail(`restored files would not deploy: ${problems.join("; ")}`);
 }
 
 if (values.openclaw) {

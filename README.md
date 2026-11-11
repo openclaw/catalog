@@ -53,7 +53,9 @@ published v1 stays live and v2/v3 still publish, so v1 can lag one or more
 generations behind v2/v3.
 
 v1 and v2 are frozen. Released clients reject a v1/v2 file with any field or
-value they do not know, and then stop refreshing. Before committing, the workflow
+value they do not know, and then stop refreshing. The workflow runs the hosting
+tests and build on a new catalog commit before pushing it, so a catalog that
+would not deploy never reaches `main`. Before committing, the workflow
 runs `scripts/released-readers.mjs`, which runs openclaw/openclaw's
 `scripts/catalog-compare-released.mts --check` once per written feed against the
 published file. Each OpenClaw version on the `latest`, `extended-stable` and
@@ -184,11 +186,11 @@ Every rollback is a roll forward: the good content with a new `generatedAt`.
    unchanged, gives all three one `generatedAt` newer than both the current
    clock and every file on `main` and at that commit, and validates them with
    OpenClaw `main`'s client parsers. A v1 that lagged behind v2/v3 at that commit
-   (an oversized v1 the publisher kept) is restored as it was. The run then uses
-   the normal publish path:
-   the released-reader guard, a commit to `main` (always, even when only
-   `generatedAt` changed), tests, the preview deployment, production, and the
-   smoke checks.
+   (an oversized v1 the publisher kept) is restored as it was, sharing the new
+   `generatedAt`. The run then uses the normal publish path: the released-reader
+   guard, a commit (always, even when only `generatedAt` changed), the hosting
+   tests and build on the committed files, the push to `main`, the preview
+   deployment, production, and the smoke checks.
 4. Verify: `curl -s https://catalog.openclaw.ai/models/v3/catalog.json | jq '.generatedAt, .sourceCommit'`
    shows the new stamp and the restored source commit, and
    `openclaw models refresh` on an affected install reports `updated`. Clients

@@ -150,7 +150,10 @@ async function catalogRepo(t) {
   git("config", "user.email", "test@example.com");
   git("config", "user.name", "test");
   const write = async (generatedAt, rows, sourceCommit) => {
-    for (const [version, bundle] of Object.entries({ v1: v1(rows), v2: versioned(2, rows), v3: versioned(3, rows + 1) })) {
+    const v3 = versioned(3, rows + 1);
+    v3.models[rows] = { id: "decision-only", provider: "example", pricing: { status: "unknown" },
+      inference: { chat: false, decision: { protocol: "example-decisions", input: ["text"] } } };
+    for (const [version, bundle] of Object.entries({ v1: v1(rows), v2: versioned(2, rows), v3 })) {
       await mkdir(join(cwd, "models", version), { recursive: true });
       await writeFile(join(cwd, "models", version, "catalog.json"), json({ ...bundle, generatedAt, sourceCommit }));
     }
@@ -223,6 +226,28 @@ test("rollback restores a v1 the publisher kept from an older run, never mixed v
   const restored = JSON.parse(await readFile(join(cwd, "models/v1/catalog.next.json"), "utf8"));
   assert.equal(restored.sourceCommit, "source-a");
   assert.equal(restored.generatedAt, JSON.parse(await readFile(join(cwd, "models/v3/catalog.next.json"), "utf8")).generatedAt);
+  // The deploy runs the hosting test on the restored files; it must accept them.
+  for (const version of ["v1", "v2", "v3"]) {
+    await writeFile(join(cwd, "models", version, "catalog.json"), await readFile(join(cwd, "models", version, "catalog.next.json")));
+  }
+  await mkdir(join(cwd, "scripts"));
+  for (const file of ["hosting.test.mjs", "generations.mjs"]) {
+    await writeFile(join(cwd, "scripts", file), await readFile(new URL(file, import.meta.url)));
+  }
+  const hosting = await new Promise((resolve) => {
+    const child = spawn(process.execPath, ["--test", "--test-name-pattern", "published generations", "scripts/hosting.test.mjs"], {
+      cwd,
+      // A nested node --test must not join this run.
+      env: Object.fromEntries(Object.entries(process.env).filter(([name]) => name !== "NODE_TEST_CONTEXT")),
+    });
+    let output = "";
+    child.stdout.on("data", (data) => { output += data; });
+    child.stderr.on("data", (data) => { output += data; });
+    child.on("close", (code) => resolve({ code, output }));
+  });
+  assert.equal(hosting.code, 0, hosting.output);
+  assert.match(hosting.output, /pass 1\n/, "the generation test ran");
+  git("commit", "-q", "-am", "rolled back");
   await writeFile(join(cwd, "models/v2/catalog.json"), json({ ...versioned(2, 4), generatedAt: 1794389300207, sourceCommit: "source-c" }));
   git("commit", "-q", "-am", "mixed");
   const mixed = await run(rollback, ["--from", "HEAD"], cwd);

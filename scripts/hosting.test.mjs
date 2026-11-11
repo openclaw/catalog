@@ -6,6 +6,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
+import { generationProblems } from "./generations.mjs";
 
 const build = fileURLToPath(new URL("build.mjs", import.meta.url));
 const smoke = fileURLToPath(new URL("smoke.mjs", import.meta.url));
@@ -41,13 +42,7 @@ test("published generations keep Decision capabilities out of legacy feeds", asy
     return bundle;
   }));
   const [v1, v2, v3] = bundles;
-  assert.equal(v2.sourceCommit, v3.sourceCommit, "one upstream source snapshot");
-  assert.equal(v2.generatedAt, v3.generatedAt, "one generation");
-  // The publisher keeps the previous v1 when a new one would exceed the client size limit.
-  assert.ok(v1.generatedAt <= v3.generatedAt, "v1 is the same generation or older");
-  if (v1.generatedAt === v3.generatedAt) {
-    assert.equal(v1.sourceCommit, v3.sourceCommit, "one upstream source snapshot");
-  }
+  assert.deepEqual(generationProblems(v1, v2, v3), []);
   const legacyModels = [
     Object.entries(v1.providers).flatMap(([provider, entry]) => entry.models.map((model) => ({ ...model, provider }))),
     v2.models,

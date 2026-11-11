@@ -215,6 +215,10 @@ jobs:
           else
             git commit -m "catalog: $summary"
           fi
+          # The deploy below runs these on the same files; a catalog that would not
+          # deploy must fail here, before it reaches main.
+          node --test scripts/hosting.test.mjs scripts/guard.test.mjs
+          node scripts/build.mjs
           git push origin HEAD:main
 
       # GITHUB_TOKEN commits do not trigger push workflows. Keep deployment in
