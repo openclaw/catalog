@@ -74,20 +74,20 @@ ships it yet.
 
 `--check` gates v3 on every tagged release that ships a v3 reader and skips the
 others by name (`v3 on openclaw@<version>: no v3 reader, skipped`), so the first
-release that reads v3 is gated with no change here. The repository variable
-`CATALOG_GUARD_V3` selects the mode:
+release that reads v3 is gated with no change here. It finds a v3 reader by a
+function name in the release bundle.
 
-| `CATALOG_GUARD_V3` | Behavior |
-| --- | --- |
-| unset or `auto` (default) | Check every tagged release that reads v3. If none does, log `v3: no checked release reads v3 yet` and continue. |
-| `enforce` | As `auto`, but fail when no tagged release reads v3. |
-| `off` | Skip v3. |
+A second, independent marker turns the requirement on by itself: a release whose
+installed package (the install `--check` used) has the v3 default refresh URL,
+`"https://catalog.openclaw.ai/models/v3/catalog.json"`, reads v3. If `--check`
+skips such a release, the reader detection broke and the publish fails. Releases
+without the marker are skipped as before. The marker is in the release content,
+not the version: a release line is cut from a branch, so a version number does
+not tell if it has the v3 reader. The gate also fails when it cannot inspect a
+release `--check` reported, or when `--check` reports no release for v3.
 
-Keep `auto` until a release that reads v3 is on an npm tag (the first release
-with openclaw/openclaw#197204). Then set `CATALOG_GUARD_V3=enforce`
-(`gh variable set CATALOG_GUARD_V3 --body enforce -R openclaw/catalog`), so a
-publish fails if v3 ever stops being checked, for example because the tags
-moved back to releases without a v3 reader or the reader detection broke.
+In an emergency, a manual run with the `skip_v3_check` input skips the v3 check
+for that run only. Scheduled runs always check v3.
 
 Remote catalog data can only update model metadata. It can never change provider
 endpoints, headers, or introduce providers your install doesn't ship — those

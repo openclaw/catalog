@@ -9,29 +9,34 @@
 // - A file with `minVersion` is checked only on tagged releases at or above it.
 //   Releases below refuse it by design (the emergency kill switch) and keep the
 //   catalog they already stored.
-// - `--v3 enforce` also fails when no checked release reads v3; `--v3 off` skips v3.
+// - `--check` finds a v3 reader by a function name in the release bundle. A second,
+//   independent marker backs it: a release whose installed package defaults to the
+//   v3 URL reads v3, so `--check` must not skip it. If it does, the detection broke
+//   and the gate fails. Releases without the marker are skipped as before.
+// - `--skip-v3` (emergency, manual runs only) skips v3.
 //
 // usage: node scripts/released-readers.mjs --openclaw <checkout> [--models <dir>]
-//          [--v3 auto|enforce|off] [--allow-row-loss <n>] [--releases <v,v>]
+//          [--skip-v3] [--allow-row-loss <n>] [--releases <v,v>]
 import { execFileSync, spawnSync } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
 import { parseArgs } from "node:util";
 
 const { values } = parseArgs({
   options: {
     openclaw: { type: "string" },
     models: { type: "string", default: "models" },
-    v3: { type: "string", default: "auto" },
+    "skip-v3": { type: "boolean", default: false },
     "allow-row-loss": { type: "string", default: "" },
     // Pins the releases instead of the npm dist-tags (local dry runs).
     releases: { type: "string", default: "" },
   },
 });
 const allowRowLoss = values["allow-row-loss"].trim();
-if (!values.openclaw || !["auto", "enforce", "off"].includes(values.v3) || !/^\d*$/.test(allowRowLoss)) {
+if (!values.openclaw || !/^\d*$/.test(allowRowLoss)) {
   console.error(
-    "usage: node scripts/released-readers.mjs --openclaw <checkout> [--models <dir>] [--v3 auto|enforce|off] [--allow-row-loss <n>] [--releases <v,v>]",
+    "usage: node scripts/released-readers.mjs --openclaw <checkout> [--models <dir>] [--skip-v3] [--allow-row-loss <n>] [--releases <v,v>]",
   );
   process.exit(2);
 }
@@ -63,10 +68,36 @@ function releases() {
   return tagged;
 }
 
+// openclaw/src/model-catalog/remote-config.ts DEFAULT_REMOTE_MODEL_CATALOG_URL, kept as
+// a string literal in the built dist.
+const V3_DEFAULT_URL = '"https://catalog.openclaw.ai/models/v3/catalog.json"';
+
+// `--check` installs each release here (CACHE_ROOT in catalog-compare-released.mts)
+// before it looks for a reader, so a skipped release is installed too.
+function defaultsToV3(release) {
+  const pkg = join(tmpdir(), "openclaw-catalog-compare-released", release, "node_modules/openclaw");
+  let dist;
+  try {
+    if (JSON.parse(readFileSync(join(pkg, "package.json"), "utf8")).version !== release) throw new Error("version mismatch");
+    dist = readdirSync(join(pkg, "dist"), { recursive: true }).filter((file) => /\.m?js$/.test(file));
+  } catch (error) {
+    throw new Error(`v3: cannot inspect the openclaw@${release} install --check used at ${pkg}: ${error.message}`);
+  }
+  return dist.some((file) => readFileSync(join(pkg, "dist", file), "utf8").includes(V3_DEFAULT_URL));
+}
+
+function v3MarkerFailures(stdout) {
+  const lines = [...stdout.matchAll(/^v3 on openclaw@([^:\s]+): (.*)$/gm)];
+  if (lines.length === 0) return ["v3: --check reported no release; cannot confirm v3 reader detection"];
+  return lines
+    .filter(([, release, verdict]) => verdict === "no v3 reader, skipped" && defaultsToV3(release))
+    .map(([, release]) => `v3: openclaw@${release} defaults to the v3 catalog URL, but --check found no v3 reader and skipped it (reader detection broke)`);
+}
+
 let failed = false;
 for (const version of ["v1", "v2", "v3"]) {
-  if (version === "v3" && values.v3 === "off") {
-    console.log("::notice::v3 released-reader check is off (CATALOG_GUARD_V3=off)");
+  if (version === "v3" && values["skip-v3"]) {
+    console.log("::warning::v3 released-reader check skipped (manual skip_v3_check)");
     continue;
   }
   const next = resolve(values.models, version, "catalog.next.json");
@@ -104,9 +135,15 @@ for (const version of ["v1", "v2", "v3"]) {
   });
   process.stdout.write(result.stdout ?? "");
   if (result.status !== 0) failed = true;
-  if (version === "v3" && values.v3 === "enforce" && /^v3: no checked release reads v3 yet$/m.test(result.stdout ?? "")) {
-    console.log("::error::v3: no tagged release reads v3, but CATALOG_GUARD_V3=enforce requires one");
-    failed = true;
+  if (version === "v3" && result.status === 0) {
+    let failures;
+    try {
+      failures = v3MarkerFailures(result.stdout ?? "");
+    } catch (error) {
+      failures = [error.message];
+    }
+    for (const failure of failures) console.log(`::error::${failure}`);
+    if (failures.length > 0) failed = true;
   }
 }
 process.exit(failed ? 1 : 0);

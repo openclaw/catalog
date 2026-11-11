@@ -39,19 +39,33 @@ const versioned = (schemaVersion, rows, extra = {}) => ({
 const json = (value) => `${JSON.stringify(value, null, 2)}\n`;
 
 // A stand-in for openclaw's `catalog-compare-released.mts --check`: it records its
-// arguments and prints the verdict FAKE_PLAN gives the candidate's feed.
+// arguments and prints the verdict FAKE_PLAN gives the candidate's feed (by default,
+// every release accepts it).
 const fakeCompare = `
 import fs from "node:fs";
 const args = process.argv.slice(2);
 const candidate = args[args.indexOf("--candidate") + 1];
 const feed = "v" + JSON.parse(fs.readFileSync(candidate, "utf8")).schemaVersion;
 fs.appendFileSync(process.env.FAKE_CALLS, JSON.stringify({ cwd: process.cwd(), args }) + "\\n");
-const { lines = [], exit = 0 } = JSON.parse(process.env.FAKE_PLAN)[feed] ?? {};
+const releases = args.includes("--releases") ? args[args.indexOf("--releases") + 1].split(",") : ["2026.11.3"];
+const accepted = releases.map((release) => feed + " on openclaw@" + release + ": updated, 1/1 rows");
+const { lines = accepted, exit = 0 } = JSON.parse(process.env.FAKE_PLAN)[feed] ?? {};
 for (const line of lines) console.log(line);
 process.exit(exit);
 `;
 
-async function gateFixture(t, { candidates, plan = {}, published = candidates }) {
+// Releases --check installed, as it caches them under $TMPDIR. `true` ships the v3
+// default URL (the marker of a release that reads v3).
+const V3_DEFAULT = '"https://catalog.openclaw.ai/models/v3/catalog.json"';
+async function installRelease(tmp, release, v3Default) {
+  const pkg = join(tmp, "openclaw-catalog-compare-released", release, "node_modules/openclaw");
+  await mkdir(join(pkg, "dist/nested"), { recursive: true });
+  await writeFile(join(pkg, "package.json"), json({ name: "openclaw", version: release }));
+  await writeFile(join(pkg, "dist/remote-config-x.mjs"), `const DEFAULT_REMOTE_MODEL_CATALOG_URL = "https://catalog.openclaw.ai/models/v2/catalog.json";\n`);
+  if (v3Default) await writeFile(join(pkg, "dist/nested/chunk.js"), `const DEFAULT_REMOTE_MODEL_CATALOG_URL = ${V3_DEFAULT};\n`);
+}
+
+async function gateFixture(t, { candidates, plan = {}, published = candidates, installs = { "2026.11.3": false, "2026.12.1": true } }) {
   // realpath: the gate resolves paths from its working directory (macOS /tmp is a symlink).
   const cwd = await realpath(await mkdtemp(join(tmpdir(), "catalog-gate-")));
   t.after(() => rm(cwd, { recursive: true, force: true }));
@@ -62,12 +76,15 @@ async function gateFixture(t, { candidates, plan = {}, published = candidates })
     if (published[version]) await writeFile(join(cwd, "models", version, "catalog.json"), json(published[version]));
     if (candidates[version]) await writeFile(join(cwd, "models", version, "catalog.next.json"), json(candidates[version]));
   }
+  const tmp = join(cwd, "tmp");
+  for (const [release, v3Default] of Object.entries(installs)) await installRelease(tmp, release, v3Default);
   const callsFile = join(cwd, "calls.jsonl");
   return {
     cwd,
     gate: (args = []) => run(releasedReaders, ["--openclaw", "openclaw", ...args], cwd, {
       FAKE_PLAN: JSON.stringify(plan),
       FAKE_CALLS: callsFile,
+      TMPDIR: tmp,
     }),
     calls: async () => (await readFile(callsFile, "utf8").catch(() => "")).trim().split("\n").filter(Boolean).map(JSON.parse),
   };
@@ -111,18 +128,49 @@ test("the gate fails when any feed fails and still checks the others", async (t)
   assert.equal((await gate(["--allow-row-loss", "x"])).code, 2);
 });
 
-test("CATALOG_GUARD_V3 enforce requires a release that reads v3; off skips v3", async (t) => {
-  const { gate, calls } = await gateFixture(t, { candidates, plan: { v3: noV3Reader } });
-  assert.equal((await gate(["--v3", "auto"])).code, 0);
-  const enforce = await gate(["--v3", "enforce"]);
-  assert.notEqual(enforce.code, 0);
-  assert.match(enforce.output, /::error::v3: no tagged release reads v3, but CATALOG_GUARD_V3=enforce requires one/);
-  const before = (await calls()).length;
-  const off = await gate(["--v3", "off"]);
+const v3Read = { lines: ["v3 on openclaw@2026.12.1: updated, 4/4 rows"] };
+
+test("a release without the v3 default URL may skip v3; one with it must be checked as a v3 reader", async (t) => {
+  const absent = await gateFixture(t, { candidates, plan: { v3: noV3Reader } });
+  const skipped = await absent.gate();
+  assert.equal(skipped.code, 0, skipped.output);
+  assert.match(skipped.output, /v3 on openclaw@2026\.11\.3: no v3 reader, skipped/);
+  assert.doesNotMatch(skipped.output, /::error::/);
+
+  const read = await gateFixture(t, { candidates, plan: { v3: v3Read } });
+  const checked = await read.gate();
+  assert.equal(checked.code, 0, checked.output);
+  const rejected = await gateFixture(t, { candidates, plan: { v3: { lines: ["::error::v3 on openclaw@2026.12.1: rejected"], exit: 1 } } });
+  assert.notEqual((await rejected.gate()).code, 0, "the normal check still decides a detected reader");
+
+  const broken = await gateFixture(t, { candidates, plan: { v3: { lines: [
+    "v3 on openclaw@2026.11.3: no v3 reader, skipped",
+    "v3 on openclaw@2026.12.1: no v3 reader, skipped",
+    "v3: no checked release reads v3 yet",
+  ] } } });
+  const missed = await broken.gate();
+  assert.notEqual(missed.code, 0, missed.output);
+  assert.match(missed.output, /::error::v3: openclaw@2026\.12\.1 defaults to the v3 catalog URL, but --check found no v3 reader and skipped it/);
+  assert.doesNotMatch(missed.output, /openclaw@2026\.11\.3 defaults/);
+});
+
+test("the v3 marker check fails closed when it cannot see what --check installed or reported", async (t) => {
+  const uninstalled = await gateFixture(t, { candidates, plan: { v3: noV3Reader }, installs: {} });
+  const missing = await uninstalled.gate();
+  assert.notEqual(missing.code, 0);
+  assert.match(missing.output, /::error::v3: cannot inspect the openclaw@2026\.11\.3 install --check used/);
+  const silent = await gateFixture(t, { candidates, plan: { v3: { lines: ["v3: no checked release reads v3 yet"] } } });
+  const unknown = await silent.gate();
+  assert.notEqual(unknown.code, 0);
+  assert.match(unknown.output, /::error::v3: --check reported no release/);
+});
+
+test("--skip-v3 skips the v3 check and its marker check", async (t) => {
+  const { gate, calls } = await gateFixture(t, { candidates, plan: { v3: { lines: ["v3 on openclaw@2026.12.1: no v3 reader, skipped"] } } });
+  const off = await gate(["--skip-v3"]);
   assert.equal(off.code, 0, off.output);
-  assert.equal((await calls()).length, before + 2, "v1 and v2 only");
-  const read = await gateFixture(t, { candidates, plan: { v3: { lines: ["v3 on openclaw@2026.12.1: updated, 4/4 rows"] } } });
-  assert.equal((await read.gate(["--v3", "enforce"])).code, 0);
+  assert.match(off.output, /::warning::v3 released-reader check skipped/);
+  assert.equal((await calls()).length, 2, "v1 and v2 only");
 });
 
 test("a v3 minVersion limits the check to releases at or above it", async (t) => {
@@ -136,7 +184,7 @@ test("a v3 minVersion limits the check to releases at or above it", async (t) =>
   assert.equal(byFeed.v3, "2026.12.3,2026.12.3-1");
   assert.equal(byFeed.v2, releases[1], "feeds without minVersion check every release");
   const above = await gateFixture(t, { candidates: { ...candidates, v3: versioned(3, 4, { minVersion: "2027.1.1" }) } });
-  const skipped = await above.gate(["--v3", "enforce", ...releases]);
+  const skipped = await above.gate(releases);
   assert.equal(skipped.code, 0, skipped.output);
   assert.match(skipped.output, /::notice::v3: no tagged release is at or above minVersion 2027\.1\.1; nothing to check/);
   assert.equal((await above.calls()).length, 2);
