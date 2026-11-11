@@ -6,6 +6,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
+import { generationProblems } from "./generations.mjs";
 
 const build = fileURLToPath(new URL("build.mjs", import.meta.url));
 const smoke = fileURLToPath(new URL("smoke.mjs", import.meta.url));
@@ -41,10 +42,7 @@ test("published generations keep Decision capabilities out of legacy feeds", asy
     return bundle;
   }));
   const [v1, v2, v3] = bundles;
-  for (const bundle of bundles.slice(1)) {
-    assert.equal(bundle.sourceCommit, v1.sourceCommit, "one upstream source snapshot");
-    assert.equal(bundle.generatedAt, v1.generatedAt, "one generation");
-  }
+  assert.deepEqual(generationProblems(v1, v2, v3), []);
   const legacyModels = [
     Object.entries(v1.providers).flatMap(([provider, entry]) => entry.models.map((model) => ({ ...model, provider }))),
     v2.models,
