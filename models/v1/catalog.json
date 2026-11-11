@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794385700207,
+  "generatedAt": 1794394653428,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -30816,9 +30816,9 @@
       "output": 0.136
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-oss-20b:batch": {
       "input": 0.024,
@@ -46652,45 +46652,9 @@
       "input": 0.2,
       "output": 0
     },
-    "google/gemini-flash-latest": {
-      "cacheRead": 0.075,
-      "input": 0.75,
-      "output": 3.75
-    },
-    "google/gemini-flash-lite-latest": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 2.5
-    },
     "google/gemini-omni-flash-preview": {
       "input": 1.5,
       "output": 17.5
-    },
-    "google/gemini-pro-latest": {
-      "cacheRead": 0.2,
-      "input": 2,
-      "output": 12,
-      "tieredPricing": [
-        {
-          "cacheRead": 0.2,
-          "cacheWrite": 0,
-          "input": 2,
-          "output": 12,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 4,
-          "output": 18,
-          "range": [
-            200000
-          ]
-        }
-      ]
     },
     "google/lyria-3-clip-preview": {
       "input": 0,
@@ -69901,9 +69865,9 @@
       "output": 0.136
     },
     "kilocode/openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09
     },
     "kilocode/openrouter/openai/gpt-oss-20b:batch": {
       "input": 0.024,
@@ -86337,9 +86301,9 @@
       "output": 0.136
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09
     },
     "openrouter/openai/gpt-oss-20b:batch": {
       "input": 0.024,
@@ -115213,9 +115177,9 @@
       "output": 0.136
     },
     "vercel-ai-gateway/openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09
     },
     "vercel-ai-gateway/openrouter/openai/gpt-oss-20b:batch": {
       "input": 0.024,
@@ -130632,6 +130596,121 @@
           "thinkingLevelMap": {
             "minimal": null
           }
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.1,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 10
+          },
+          "id": "gemini-4-carbon",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 32768,
+          "name": "Gemini 4 Carbon",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.075,
+            "cacheWrite": 0,
+            "input": 0.75,
+            "output": 3.75
+          },
+          "id": "gemini-flash-latest",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 65536,
+          "name": "Gemini Flash Latest",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.03,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 2.5
+          },
+          "id": "gemini-flash-lite-latest",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 65536,
+          "name": "Gemini Flash-Lite Latest",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.2,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 12,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.2,
+                "cacheWrite": 0,
+                "input": 2,
+                "output": 12,
+                "range": [
+                  0,
+                  200000
+                ]
+              },
+              {
+                "cacheRead": 0.4,
+                "cacheWrite": 0,
+                "input": 4,
+                "output": 18,
+                "range": [
+                  200000
+                ]
+              }
+            ]
+          },
+          "id": "gemini-pro-latest",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 65536,
+          "name": "Gemini Pro Latest",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "id": "gemma-4-26b-a4b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Gemma 4 26B A4B IT",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "id": "gemma-4-31b-it",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Gemma 4 31B IT",
+          "reasoning": true
         }
       ]
     },
@@ -151454,5 +151533,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "dbcbc913f134e4eb5957ae500999867a2ebdc979"
+  "sourceCommit": "7ce8d4f6dd96d4676e7f7d14adf5032f41940970"
 }

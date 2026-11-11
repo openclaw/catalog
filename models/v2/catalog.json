@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794385700207,
+  "generatedAt": 1794394653428,
   "models": [
     {
       "id": "abliterated-model",
@@ -5536,6 +5536,149 @@
       "thinkingLevelMap": {
         "minimal": null
       }
+    },
+    {
+      "id": "gemini-4-carbon",
+      "provider": "google",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 32768,
+      "name": "Gemini 4 Carbon",
+      "pricing": {
+        "cacheRead": 0.1,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "gemini-flash-latest",
+      "provider": "google",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 65536,
+      "name": "Gemini Flash Latest",
+      "pricing": {
+        "cacheRead": 0.075,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.75,
+        "output": 3.75,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "gemini-flash-lite-latest",
+      "provider": "google",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 65536,
+      "name": "Gemini Flash-Lite Latest",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "gemini-pro-latest",
+      "provider": "google",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 65536,
+      "name": "Gemini Pro Latest",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 12,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.2,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 12,
+            "range": [
+              0,
+              200000
+            ]
+          },
+          {
+            "cacheRead": 0.4,
+            "cacheWrite": 0,
+            "input": 4,
+            "output": 18,
+            "range": [
+              200000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "gemma-4-26b-a4b-it",
+      "provider": "google",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Gemma 4 26B A4B IT",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "gemma-4-31b-it",
+      "provider": "google",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Gemma 4 31B IT",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -37328,9 +37471,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13,
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b:batch": {
@@ -39930,6 +40073,7 @@
       "api": "google-generative-ai",
       "recommendedModels": [
         "gemini-4-argon",
+        "gemini-4-carbon",
         "gemini-3.8-flash"
       ]
     },
@@ -40263,7 +40407,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "dbcbc913f134e4eb5957ae500999867a2ebdc979",
+  "sourceCommit": "7ce8d4f6dd96d4676e7f7d14adf5032f41940970",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -58102,12 +58246,14 @@
       "cacheRead": 0.075,
       "input": 0.75,
       "output": 3.75,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "google/gemini-flash-lite-latest": {
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "google/gemini-omni-flash-preview": {
@@ -58119,6 +58265,7 @@
       "cacheRead": 0.2,
       "input": 2,
       "output": 12,
+      "passthroughOnly": true,
       "source": "modelsDev",
       "tieredPricing": [
         {
@@ -68957,9 +69104,9 @@
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b": {
-      "cacheRead": 0.03,
-      "input": 0.03,
-      "output": 0.13,
+      "cacheRead": 0.009,
+      "input": 0.018,
+      "output": 0.09,
       "source": "openRouter"
     },
     "openrouter/openai/gpt-oss-20b:batch": {
