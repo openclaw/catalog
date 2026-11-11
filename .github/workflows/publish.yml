@@ -43,6 +43,13 @@ on:
         required: false
         default: ""
         type: string
+      skip_v3_check:
+        description: >-
+          Manual publish or rollback only, emergency: skip the v3 released-reader check for
+          this run. Scheduled runs always check v3.
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -68,6 +75,7 @@ jobs:
           V3_MIN_VERSION: ${{ inputs.v3_min_version }}
           ALLOW_SHRINK: ${{ inputs.allow_shrink }}
           ALLOW_ROW_LOSS: ${{ inputs.allow_row_loss }}
+          SKIP_V3: ${{ inputs.skip_v3_check }}
           PAUSED: ${{ vars.CATALOG_PUBLISH_PAUSED }}
         run: |
           set -euo pipefail
@@ -83,8 +91,8 @@ jobs:
             echo "::error::v3_min_version needs rollback_to (use HEAD to keep the current content)"
             exit 1
           elif [ "$PAUSED" = true ]; then
-            if [ "$ALLOW_SHRINK" = true ] || [ -n "$ALLOW_ROW_LOSS" ]; then
-              echo "::error::publishing is paused (CATALOG_PUBLISH_PAUSED); allow_shrink/allow_row_loss would have no effect"
+            if [ "$ALLOW_SHRINK" = true ] || [ -n "$ALLOW_ROW_LOSS" ] || [ "$SKIP_V3" = true ]; then
+              echo "::error::publishing is paused (CATALOG_PUBLISH_PAUSED); allow_shrink/allow_row_loss/skip_v3_check would have no effect"
               exit 1
             fi
             echo "::notice::Catalog publishing is paused (CATALOG_PUBLISH_PAUSED); deploying the committed catalog only"
@@ -156,13 +164,17 @@ jobs:
       # (openclaw/openclaw#173027); row-tolerant readers drop rows and report success.
       # openclaw's `catalog-compare-released --check` fails on either, for every tagged
       # release that reads the feed. Fail before commit so the last good catalog stays
-      # live. CATALOG_GUARD_V3=enforce also requires a release that reads v3 (README).
+      # live. A release that defaults to the v3 URL must be checked as a v3 reader (README).
       - name: Check released readers
         if: steps.mode.outputs.generate == 'true'
         env:
-          GUARD_V3: ${{ vars.CATALOG_GUARD_V3 || 'auto' }}
+          SKIP_V3: ${{ inputs.skip_v3_check }}
           ALLOW_ROW_LOSS: ${{ inputs.allow_row_loss }}
-        run: node scripts/released-readers.mjs --openclaw openclaw --v3 "$GUARD_V3" --allow-row-loss "$ALLOW_ROW_LOSS"
+        run: |
+          set -euo pipefail
+          args=(--openclaw openclaw --allow-row-loss "$ALLOW_ROW_LOSS")
+          if [ "$SKIP_V3" = true ]; then args+=(--skip-v3); fi
+          node scripts/released-readers.mjs "${args[@]}"
 
       - name: Commit on change only
         if: steps.mode.outputs.generate == 'true'
