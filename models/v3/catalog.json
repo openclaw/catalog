@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794457670162,
+  "generatedAt": 1794472123259,
   "models": [
     {
       "id": "abliterated-model",
@@ -1516,6 +1516,54 @@
         "status": "unknown"
       },
       "reasoning": true
+    },
+    {
+      "id": "celeris-1.1-decision",
+      "provider": "celeris",
+      "inference": {
+        "chat": false,
+        "decision": {
+          "confidence": "provider-specific",
+          "input": [
+            "text"
+          ],
+          "limits": {
+            "maxQuestions": 400,
+            "maxRequestTokens": 131072
+          },
+          "protocol": "openai-decisions",
+          "questions": {
+            "boolean": {
+              "abstention": false,
+              "probabilities": "boolean"
+            },
+            "choice": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            },
+            "score": {
+              "abstention": false,
+              "maxOptions": 64,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            }
+          },
+          "reasoning": {
+            "modes": [
+              "auto"
+            ]
+          }
+        }
+      },
+      "input": [
+        "text"
+      ],
+      "name": "Celeris-1.1 Decision",
+      "pricing": {
+        "status": "unknown"
+      }
     },
     {
       "id": "gpt-oss-120b",
@@ -3570,6 +3618,55 @@
       "thinkingLevelMap": {
         "max": "max",
         "xhigh": "high"
+      }
+    },
+    {
+      "id": "fastino/GLiDE",
+      "provider": "fastino",
+      "inference": {
+        "chat": false,
+        "decision": {
+          "billing": {
+            "source": "provider-docs",
+            "unit": "tokens"
+          },
+          "confidence": "provider-specific",
+          "input": [
+            "text"
+          ],
+          "limits": {
+            "maxQuestions": 256,
+            "maxStateAndQuestionTokens": 65536
+          },
+          "protocol": "fastino-systemone",
+          "questions": {
+            "boolean": {
+              "abstention": false,
+              "probabilities": "boolean"
+            },
+            "choice": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            },
+            "score": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            }
+          },
+          "reasoning": {
+            "modes": [
+              "auto"
+            ]
+          }
+        }
+      },
+      "name": "GLiDE (hosted)",
+      "pricing": {
+        "status": "unknown"
       }
     },
     {
@@ -5760,6 +5857,69 @@
       "reasoning": true
     },
     {
+      "id": "gemini-decision-1",
+      "provider": "google",
+      "inference": {
+        "chat": false,
+        "decision": {
+          "billing": {
+            "source": "provider-docs",
+            "unit": "tokens",
+            "usdPerMillion": {
+              "input": 0.1,
+              "output": 0
+            }
+          },
+          "confidence": "provider-specific",
+          "input": [
+            "text",
+            "image"
+          ],
+          "limits": {
+            "image": {
+              "maxBytes": 4194304,
+              "mimeTypes": [
+                "image/png",
+                "image/jpeg",
+                "image/webp"
+              ],
+              "remoteUrls": false
+            },
+            "maxQuestions": 1000,
+            "maxStateAndQuestionTokens": 262144
+          },
+          "protocol": "gemini-decisions",
+          "questions": {
+            "boolean": {
+              "abstention": false,
+              "probabilities": "boolean"
+            },
+            "choice": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            },
+            "score": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            }
+          },
+          "reasoning": {
+            "modes": [
+              "auto"
+            ]
+          }
+        }
+      },
+      "name": "Gemini Decision 1",
+      "pricing": {
+        "status": "unknown"
+      }
+    },
+    {
       "id": "gemini-flash-latest",
       "provider": "google",
       "contextWindow": 1048576,
@@ -6189,11 +6349,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.005,
+        "cacheRead": 0.004,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.006,
-        "output": 0.5,
+        "input": 0.022,
+        "output": 0.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7578,7 +7738,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash 1017",
       "pricing": {
         "cacheRead": 0.006,
@@ -8051,11 +8211,11 @@
       "maxTokens": 128000,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.005,
+        "cacheRead": 0.007,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.01,
-        "output": 0.03,
+        "input": 0.015,
+        "output": 0.045,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8759,11 +8919,11 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.0075,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.075,
-        "output": 0.3,
+        "input": 0.15,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9356,8 +9516,8 @@
         "cacheRead": 0.2,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 2,
-        "output": 10,
+        "input": 0.2375,
+        "output": 8.4085,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14294,6 +14454,54 @@
       }
     },
     {
+      "id": "drex-max-v1.1",
+      "provider": "nace",
+      "inference": {
+        "chat": false,
+        "decision": {
+          "confidence": "provider-specific",
+          "input": [
+            "text"
+          ],
+          "limits": {
+            "maxQuestions": 400,
+            "maxRequestTokens": 262144
+          },
+          "protocol": "openai-decisions",
+          "questions": {
+            "boolean": {
+              "abstention": false,
+              "probabilities": "boolean"
+            },
+            "choice": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            },
+            "score": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            }
+          },
+          "reasoning": {
+            "modes": [
+              "auto"
+            ]
+          }
+        }
+      },
+      "input": [
+        "text"
+      ],
+      "name": "Drex Max v1.1",
+      "pricing": {
+        "status": "unknown"
+      }
+    },
+    {
       "id": "apodex/apodex-1.1-mini",
       "provider": "novita",
       "contextWindow": 262144,
@@ -18871,6 +19079,54 @@
       "thinkingLevelMap": {
         "max": "max",
         "xhigh": "high"
+      }
+    },
+    {
+      "id": "pplx-decider-v1.2",
+      "provider": "perplexity-decisions",
+      "inference": {
+        "chat": false,
+        "decision": {
+          "billing": {
+            "source": "provider-docs",
+            "unit": "tokens"
+          },
+          "confidence": "provider-specific",
+          "input": [
+            "text"
+          ],
+          "limits": {
+            "maxQuestions": 128
+          },
+          "protocol": "perplexity-decisions",
+          "questions": {
+            "boolean": {
+              "abstention": false,
+              "probabilities": "boolean"
+            },
+            "choice": {
+              "abstention": false,
+              "maxOptions": 255,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            },
+            "score": {
+              "abstention": false,
+              "maxOptions": 10,
+              "minOptions": 2,
+              "probabilities": "categorical"
+            }
+          },
+          "reasoning": {
+            "modes": [
+              "auto"
+            ]
+          }
+        }
+      },
+      "name": "Decider v1.2",
+      "pricing": {
+        "status": "unknown"
       }
     },
     {
@@ -33855,9 +34111,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.17,
-      "output": 0.25,
+      "cacheRead": 0.036,
+      "input": 0.04,
+      "output": 0.06,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -36136,9 +36392,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -36928,8 +37184,14 @@
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 10,
+      "input": 0.2375,
+      "output": 8.4085,
+      "source": "openRouter"
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro:batch": {
+      "cacheRead": 0.09999999999999999,
+      "input": 0.7,
+      "output": 6,
       "source": "openRouter"
     },
     "openrouter/morph/morph-v3-fast": {
@@ -38688,9 +38950,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.06,
-      "input": 0.067,
-      "output": 0.098,
+      "cacheRead": 0.024999999999999998,
+      "input": 0.028,
+      "output": 0.041,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -40935,6 +41197,7 @@
       "api": "openai-completions",
       "defaultModel": "ark-code-latest"
     },
+    "celeris": {},
     "cerebras": {
       "api": "openai-completions",
       "defaultModel": "gpt-oss-120b",
@@ -40982,6 +41245,7 @@
         "deepseek-v4-pro"
       ]
     },
+    "fastino": {},
     "featherless": {
       "api": "openai-completions"
     },
@@ -41105,6 +41369,7 @@
         "kimi-k3"
       ]
     },
+    "nace": {},
     "novita": {
       "api": "openai-completions",
       "defaultModel": "deepseek/deepseek-v4-pro",
@@ -41182,6 +41447,7 @@
       "api": "openai-completions",
       "defaultModel": "particle-ai/particle-1"
     },
+    "perplexity-decisions": {},
     "qianfan": {
       "api": "openai-completions",
       "recommendedModels": [
@@ -41360,7 +41626,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "3978ab104ee658b03ebecf8cd5144c43f2271669",
+  "sourceCommit": "9fe59d5e7ef063a15c39523386c15c0b68b733f3",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -67725,9 +67991,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -68517,8 +68783,14 @@
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 2,
-      "output": 10,
+      "input": 0.2375,
+      "output": 8.4085,
+      "source": "openRouter"
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro:batch": {
+      "cacheRead": 0.09999999999999999,
+      "input": 0.7,
+      "output": 6,
       "source": "openRouter"
     },
     "openrouter/morph/morph-v3-fast": {
@@ -70277,9 +70549,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.06,
-      "input": 0.067,
-      "output": 0.098,
+      "cacheRead": 0.024999999999999998,
+      "input": 0.028,
+      "output": 0.041,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
