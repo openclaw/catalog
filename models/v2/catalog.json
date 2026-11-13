@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794515157005,
+  "generatedAt": 1794530664433,
   "models": [
     {
       "id": "abliterated-model",
@@ -1225,12 +1225,12 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash",
       "pricing": {
-        "cacheRead": 0.028,
+        "cacheRead": 0.014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.14,
-        "output": 0.28,
-        "source": "manifest",
+        "input": 0.44,
+        "output": 1.32,
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -1246,12 +1246,12 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.145,
+        "cacheRead": 0.044,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.74,
-        "output": 3.48,
-        "source": "manifest",
+        "input": 1.32,
+        "output": 3.96,
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -1273,7 +1273,7 @@
         "currency": "USD",
         "input": 0.5,
         "output": 2.5,
-        "source": "manifest",
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -1317,7 +1317,7 @@
         "currency": "USD",
         "input": 1.4,
         "output": 4.4,
-        "source": "manifest",
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -1339,8 +1339,29 @@
         "currency": "USD",
         "input": 0.5,
         "output": 3,
-        "source": "manifest",
+        "source": "modelsDev",
         "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.1,
+            "cacheWrite": 0,
+            "input": 0.5,
+            "output": 3,
+            "range": [
+              0,
+              128000
+            ]
+          },
+          {
+            "cacheRead": 0.2,
+            "cacheWrite": 0,
+            "input": 1,
+            "output": 6,
+            "range": [
+              128000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -1459,6 +1480,49 @@
       "reasoning": true
     },
     {
+      "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "provider": "chutes",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 393216,
+      "name": "DeepSeek V4 Pro 0813",
+      "pricing": {
+        "cacheRead": 0.15,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.85,
+        "output": 2.65,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "provider": "chutes",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 393216,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "google/gemma-4-31B-turbo-TEE",
       "provider": "chutes",
       "contextWindow": 131072,
@@ -1496,6 +1560,28 @@
         "currency": "USD",
         "input": 0.39,
         "output": 1.8,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/Kimi-K2.7-Code",
+      "provider": "chutes",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 16384,
+      "name": "Kimi K2.7 Code",
+      "pricing": {
+        "cacheRead": 0.167,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.832,
+        "output": 3.5,
         "source": "chutes",
         "status": "known",
         "unit": "million_tokens"
@@ -1593,6 +1679,27 @@
       "reasoning": true
     },
     {
+      "id": "Qwen/Qwen3.8-2.4T-A95B",
+      "provider": "chutes",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen3.8 2.4T A95B",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 6,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "Qwen/Qwen3.8-27B-TEE",
       "provider": "chutes",
       "contextWindow": 262144,
@@ -1608,6 +1715,50 @@
         "currency": "USD",
         "input": 0.039,
         "output": 1.25,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "Qwen/Qwen3.8-Max-0902",
+      "provider": "chutes",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen3.8 Max 0902",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 6,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "tencent/Hy4",
+      "provider": "chutes",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Hy4",
+      "pricing": {
+        "cacheRead": 0.025,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.525,
+        "output": 1.5625,
         "source": "chutes",
         "status": "known",
         "unit": "million_tokens"
@@ -1636,6 +1787,27 @@
       "reasoning": true
     },
     {
+      "id": "zai-org/GLM-5.2-Fast",
+      "provider": "chutes",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM 5.2 Fast",
+      "pricing": {
+        "cacheRead": 0.49,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.45,
+        "output": 7.7,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "zai-org/GLM-5.2-TEE",
       "provider": "chutes",
       "contextWindow": 1048576,
@@ -1650,6 +1822,27 @@
         "currency": "USD",
         "input": 1.25,
         "output": 3.95,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "zai-org/GLM-5.3",
+      "provider": "chutes",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM 5.3",
+      "pricing": {
+        "cacheRead": 0.245,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.225,
+        "output": 3.85,
         "source": "chutes",
         "status": "known",
         "unit": "million_tokens"
@@ -6448,6 +6641,31 @@
       "reasoning": true
     },
     {
+      "id": "amazon/nova-2-lite",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 1000000,
+      "name": "Amazon: Nova 2 Lite",
+      "pricing": {
+        "cacheRead": 0.0825,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.33,
+        "output": 2.75,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
+    },
+    {
       "id": "amazon/nova-2-lite-v1",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -6469,6 +6687,29 @@
         "unit": "million_tokens"
       },
       "reasoning": true
+    },
+    {
+      "id": "amazon/nova-lite",
+      "provider": "kilocode",
+      "contextWindow": 300000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 8192,
+      "name": "Amazon: Nova Lite",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.06,
+        "output": 0.24,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
     },
     {
       "id": "amazon/nova-lite-v1",
@@ -6493,6 +6734,27 @@
       "reasoning": false
     },
     {
+      "id": "amazon/nova-micro",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 8192,
+      "name": "Amazon: Nova Micro",
+      "pricing": {
+        "cacheRead": 0.0087,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.035,
+        "output": 0.14,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "amazon/nova-micro-v1",
       "provider": "kilocode",
       "contextWindow": 128000,
@@ -6507,6 +6769,29 @@
         "currency": "USD",
         "input": 0.035,
         "output": 0.14,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "amazon/nova-pro",
+      "provider": "kilocode",
+      "contextWindow": 300000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 8192,
+      "name": "Amazon: Nova Pro",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.8,
+        "output": 3.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7005,6 +7290,28 @@
       "reasoning": true
     },
     {
+      "id": "callstack/apex",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Apex",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.5,
+        "output": 3,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "cohere/command-a",
       "provider": "kilocode",
       "contextWindow": 256000,
@@ -7188,6 +7495,27 @@
       "reasoning": true
     },
     {
+      "id": "deepseek/deepseek-r1",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 8192,
+      "name": "DeepSeek: DeepSeek-R1",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.35,
+        "output": 5.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "deepseek/deepseek-r1-0528",
       "provider": "kilocode",
       "contextWindow": 163840,
@@ -7207,6 +7535,29 @@
         "unit": "million_tokens"
       },
       "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v3.1",
+      "provider": "kilocode",
+      "contextWindow": 163840,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 128000,
+      "name": "DeepSeek: DeepSeek V3.1",
+      "pricing": {
+        "cacheRead": 0.13,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.25,
+        "output": 0.95,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
@@ -7265,6 +7616,27 @@
         "currency": "USD",
         "input": 0.27,
         "output": 0.41,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-thinking",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 8000,
+      "name": "DeepSeek: DeepSeek V3.2 Thinking",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.62,
+        "output": 1.85,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7422,6 +7794,72 @@
       "reasoning": true
     },
     {
+      "id": "deepseek/deepseek-v4.1-flash-1017-fast",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017 Fast",
+      "pricing": {
+        "cacheRead": 0.014,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017-ultrafast",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017 Ultrafast",
+      "pricing": {
+        "cacheRead": 0.048,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.4,
+        "output": 9.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-fast",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "DeepSeek: DeepSeek V4.1 Flash Fast",
+      "pricing": {
+        "cacheRead": 0.014,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
       "provider": "kilocode",
       "contextWindow": 512000,
@@ -7497,6 +7935,29 @@
         "currency": "USD",
         "input": 0.625,
         "output": 5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "google/gemini-3-flash",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 65000,
+      "name": "Google: Gemini 3 Flash",
+      "pricing": {
+        "cacheRead": 0.05,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.5,
+        "output": 3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7803,6 +8264,29 @@
       "reasoning": true
     },
     {
+      "id": "google/gemini-4-hydrogen",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "document",
+        "image",
+        "text"
+      ],
+      "maxTokens": 943718,
+      "name": "Google: Gemini 4 Hydrogen",
+      "pricing": {
+        "cacheRead": 0.0375,
+        "cacheWrite": 0.041667,
+        "currency": "USD",
+        "input": 0.75,
+        "output": 3.75,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "provider": "kilocode",
       "contextWindow": 65536,
@@ -7880,11 +8364,11 @@
       "maxTokens": 128000,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.007,
+        "cacheRead": 0.005,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.013,
-        "output": 0.04,
+        "input": 0.011,
+        "output": 0.032,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -7914,6 +8398,20 @@
       "reasoning": true
     },
     {
+      "id": "humansand/ampersand-v0.1",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "Ampersand v0.1",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "ibm-granite/granite-4.2-8b",
       "provider": "kilocode",
       "contextWindow": 131072,
@@ -7935,6 +8433,90 @@
       "reasoning": true
     },
     {
+      "id": "inception/mercury-2",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 128000,
+      "name": "Mercury 2 (retires Nov 15)",
+      "pricing": {
+        "cacheRead": 0.025,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.25,
+        "output": 0.75,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inception/mercury-2.5",
+      "provider": "kilocode",
+      "contextWindow": 260000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 65536,
+      "name": "Mercury 2.5 (retires Nov 15)",
+      "pricing": {
+        "cacheRead": 0.004,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.04,
+        "output": 0.15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inception/mercury-3",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Mercury 3",
+      "pricing": {
+        "cacheRead": 0.01,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.35,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inception/mercury-coder-small",
+      "provider": "kilocode",
+      "contextWindow": 32000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 16384,
+      "name": "Mercury Coder Small Beta (retires Nov 15)",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.25,
+        "output": 1,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "inclusionai/ling-3.0-flash",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -7949,6 +8531,48 @@
         "currency": "USD",
         "input": 0.06,
         "output": 0.18,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "provider": "kilocode",
+      "contextWindow": 256000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32000,
+      "name": "inclusionAI: Ling 3.0 Flash Fin",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.22,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "provider": "kilocode",
+      "contextWindow": 256000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32000,
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.22,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8013,6 +8637,50 @@
         "currency": "USD",
         "input": 0.3,
         "output": 0.9,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.1-flash-1019",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "inclusionAI: Ling 3.1 Flash 1019",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 0.9,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "interfaze/interfaze-beta",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 32000,
+      "name": "Interfaze Beta",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.5,
+        "output": 3.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8200,6 +8868,29 @@
       "reasoning": true
     },
     {
+      "id": "liquid/lfm2.5-24b-a2b",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 8200,
+      "name": "LiquidAI: LFM2.5-24B-A2B",
+      "pricing": {
+        "cacheRead": 0.025,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.05,
+        "output": 0.7,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
+    },
+    {
       "id": "meituan/longcat-2.0",
       "provider": "kilocode",
       "contextWindow": 1048756,
@@ -8214,6 +8905,28 @@
         "currency": "USD",
         "input": 0.75,
         "output": 3,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "meituan/longcat-2.5",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Meituan: LongCat 2.5",
+      "pricing": {
+        "cacheRead": 0.006,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8514,6 +9227,94 @@
       "reasoning": true
     },
     {
+      "id": "meta/muse-wonder-1.0",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 1048576,
+      "name": "Meta: Muse Wonder",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "provider": "kilocode",
+      "contextWindow": 205000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 205000,
+      "name": "MiniMax: MiniMax M2 (retires Nov 18)",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0.375,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax/minimax-m2.1",
+      "provider": "kilocode",
+      "contextWindow": 204800,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "MiniMax: MiniMax M2.1",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0.375,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax/minimax-m2.1-lightning",
+      "provider": "kilocode",
+      "contextWindow": 204800,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "MiniMax: MiniMax M2.1 Lightning (retires Nov 18)",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0.375,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "minimax/minimax-m2.5",
       "provider": "kilocode",
       "contextWindow": 200000,
@@ -8535,6 +9336,27 @@
       "reasoning": true
     },
     {
+      "id": "minimax/minimax-m2.5-highspeed",
+      "provider": "kilocode",
+      "contextWindow": 204800,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131000,
+      "name": "MiniMax: MiniMax M2.5 High Speed (retires Nov 18)",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0.375,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "minimax/minimax-m2.7",
       "provider": "kilocode",
       "contextWindow": 196608,
@@ -8549,6 +9371,27 @@
         "currency": "USD",
         "input": 0.21,
         "output": 0.84,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax/minimax-m2.7-highspeed",
+      "provider": "kilocode",
+      "contextWindow": 204800,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131100,
+      "name": "MiniMax: MiniMax M2.7 High Speed (retires Nov 18)",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0.375,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 2.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8588,16 +9431,37 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.0075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
       "reasoning": true
+    },
+    {
+      "id": "mistralai/codestral",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 4000,
+      "name": "Mistral: Mistral Codestral",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 0.9,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
     },
     {
       "id": "mistralai/codestral-2508",
@@ -8644,6 +9508,29 @@
       "reasoning": false
     },
     {
+      "id": "mistralai/ministral-14b",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 256000,
+      "name": "Mistral: Ministral 14B",
+      "pricing": {
+        "cacheRead": 0.02,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "mistralai/ministral-14b-2512",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -8666,6 +9553,28 @@
       "reasoning": false
     },
     {
+      "id": "mistralai/ministral-3b",
+      "provider": "kilocode",
+      "contextWindow": 131072,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 4000,
+      "name": "Mistral: Ministral 3B",
+      "pricing": {
+        "cacheRead": 0.01,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.1,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "mistralai/ministral-3b-2512",
       "provider": "kilocode",
       "contextWindow": 131072,
@@ -8681,6 +9590,28 @@
         "currency": "USD",
         "input": 0.1,
         "output": 0.1,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "mistralai/ministral-8b",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 4000,
+      "name": "Mistral: Ministral 8B",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8911,6 +9842,28 @@
       "reasoning": false
     },
     {
+      "id": "mistralai/mistral-small",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 4000,
+      "name": "Mistral: Mistral Small",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "mistralai/mistral-small-2603",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -9021,6 +9974,27 @@
       "reasoning": false
     },
     {
+      "id": "mixedbread/toast-1",
+      "provider": "kilocode",
+      "contextWindow": 131000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 4000,
+      "name": "Toast 1",
+      "pricing": {
+        "cacheRead": 0.036,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 0.72,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "moonshotai/kimi-k2",
       "provider": "kilocode",
       "contextWindow": 131072,
@@ -9086,12 +10060,12 @@
     {
       "id": "moonshotai/kimi-k2.5",
       "provider": "kilocode",
-      "contextWindow": 256000,
+      "contextWindow": 262144,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 65536,
+      "maxTokens": 235929,
       "name": "Kimi K2.5",
       "pricing": {
         "cacheRead": 0,
@@ -9150,6 +10124,29 @@
       "reasoning": true
     },
     {
+      "id": "moonshotai/kimi-k2.7-code-highspeed",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 32768,
+      "name": "MoonshotAI: Kimi K2.7 Code High Speed",
+      "pricing": {
+        "cacheRead": 0.38,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.9,
+        "output": 8,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "moonshotai/kimi-k3",
       "provider": "kilocode",
       "contextWindow": 1048576,
@@ -9172,6 +10169,29 @@
       "reasoning": true
     },
     {
+      "id": "moonshotai/kimi-k3-fast",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 131072,
+      "name": "MoonshotAI: Kimi K3 Fast",
+      "pricing": {
+        "cacheRead": 0.45,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 4.5,
+        "output": 22.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "moonshotai/kimi-k3.1-pro",
       "provider": "kilocode",
       "contextWindow": 1048576,
@@ -9182,11 +10202,33 @@
       "maxTokens": 943718,
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "pricing": {
-        "cacheRead": 0.2,
+        "cacheRead": 0.19,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.2375,
-        "output": 8.4085,
+        "output": 8.7856,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "moonshotai/kimi-k3.1-pro-highspeed",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "MoonshotAI: Kimi K3.1 Pro Highspeed",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 4,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9351,6 +10393,22 @@
       "reasoning": true
     },
     {
+      "id": "nvidia/nemotron-3.5-lightning-free",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 65000,
+      "name": "NVIDIA: Nemotron 3.5 Lightning Free",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
+    },
+    {
       "id": "nvidia/nemotron-3.5-lightning:free",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -9398,6 +10456,49 @@
       "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
       "pricing": {
         "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl",
+      "provider": "kilocode",
+      "contextWindow": 131072,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "NVIDIA: Nvidia Nemotron Nano 12B V2 VL",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2",
+      "provider": "kilocode",
+      "contextWindow": 131072,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "NVIDIA: Nvidia Nemotron Nano 9B V2",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.06,
+        "output": 0.23,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -9491,6 +10592,29 @@
       "reasoning": false
     },
     {
+      "id": "openai/gpt-4.1-fast",
+      "provider": "kilocode",
+      "contextWindow": 1047576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 32768,
+      "name": "OpenAI: GPT-4.1 (Fast)",
+      "pricing": {
+        "cacheRead": 0.875,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3.5,
+        "output": 14,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "openai/gpt-4.1-mini",
       "provider": "kilocode",
       "contextWindow": 1047576,
@@ -9507,6 +10631,29 @@
         "currency": "USD",
         "input": 0.4,
         "output": 1.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "openai/gpt-4.1-mini-fast",
+      "provider": "kilocode",
+      "contextWindow": 1047576,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 32768,
+      "name": "OpenAI: GPT-4.1 mini (Fast)",
+      "pricing": {
+        "cacheRead": 0.175,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.7,
+        "output": 2.8,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9629,6 +10776,29 @@
       "reasoning": false
     },
     {
+      "id": "openai/gpt-4o-fast",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 16384,
+      "name": "OpenAI: GPT-4o (Fast)",
+      "pricing": {
+        "cacheRead": 2.125,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 4.25,
+        "output": 17,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "openai/gpt-4o-mini",
       "provider": "kilocode",
       "contextWindow": 128000,
@@ -9675,6 +10845,29 @@
       "reasoning": false
     },
     {
+      "id": "openai/gpt-4o-mini-fast",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 16384,
+      "name": "OpenAI: GPT-4o mini (Fast)",
+      "pricing": {
+        "cacheRead": 0.125,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.25,
+        "output": 1,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "openai/gpt-5",
       "provider": "kilocode",
       "contextWindow": 400000,
@@ -9698,6 +10891,52 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-5-codex",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-5-Codex",
+      "pricing": {
+        "cacheRead": 0.13,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5-fast",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-5 (Fast)",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.5,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-5-mini",
       "provider": "kilocode",
       "contextWindow": 400000,
@@ -9714,6 +10953,29 @@
         "currency": "USD",
         "input": 0.25,
         "output": 2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5-mini-fast",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-5 mini (Fast)",
+      "pricing": {
+        "cacheRead": 0.045,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.45,
+        "output": 3.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9859,6 +11121,52 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-5.1-thinking",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.1 Thinking",
+      "pricing": {
+        "cacheRead": 0.125,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5.1-thinking-fast",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.1 Thinking (Fast)",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.5,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-5.2",
       "provider": "kilocode",
       "contextWindow": 400000,
@@ -9898,6 +11206,29 @@
         "currency": "USD",
         "input": 1.75,
         "output": 14,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5.2-fast",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.2 (Fast)",
+      "pricing": {
+        "cacheRead": 0.35,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3.5,
+        "output": 28,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9951,6 +11282,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-5.3-codex-fast",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.3 Codex (Fast)",
+      "pricing": {
+        "cacheRead": 0.35,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3.5,
+        "output": 28,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-5.4",
       "provider": "kilocode",
       "contextWindow": 1050000,
@@ -9974,6 +11328,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-5.4-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.4 (Fast)",
+      "pricing": {
+        "cacheRead": 0.5,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 5,
+        "output": 30,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-5.4-mini",
       "provider": "kilocode",
       "contextWindow": 400000,
@@ -9990,6 +11367,29 @@
         "currency": "USD",
         "input": 0.75,
         "output": 4.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5.4-mini-fast",
+      "provider": "kilocode",
+      "contextWindow": 400000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.4 Mini (Fast)",
+      "pricing": {
+        "cacheRead": 0.15,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.5,
+        "output": 9,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10066,6 +11466,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-5.5-fast",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.5 (Fast) ($$$$)",
+      "pricing": {
+        "cacheRead": 1.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 12.5,
+        "output": 75,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-5.5-pro",
       "provider": "kilocode",
       "contextWindow": 1050000,
@@ -10105,6 +11528,29 @@
         "currency": "USD",
         "input": 0.2,
         "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-luna-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.6 Luna (Fast)",
+      "pricing": {
+        "cacheRead": 0.04,
+        "cacheWrite": 0.5,
+        "currency": "USD",
+        "input": 0.4,
+        "output": 2.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10158,6 +11604,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-5.6-sol-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.6 Sol (Fast)",
+      "pricing": {
+        "cacheRead": 0.8,
+        "cacheWrite": 10,
+        "currency": "USD",
+        "input": 8,
+        "output": 40,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-sol-pro",
       "provider": "kilocode",
       "contextWindow": 1050000,
@@ -10197,6 +11666,29 @@
         "currency": "USD",
         "input": 2,
         "output": 12,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-terra-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT 5.6 Terra (Fast)",
+      "pricing": {
+        "cacheRead": 0.4,
+        "cacheWrite": 5,
+        "currency": "USD",
+        "input": 4,
+        "output": 24,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10250,6 +11742,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-6-astra-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-6 Astra (Fast) ($$$$)",
+      "pricing": {
+        "cacheRead": 2,
+        "cacheWrite": 25,
+        "currency": "USD",
+        "input": 20,
+        "output": 100,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-6-astra-pro",
       "provider": "kilocode",
       "contextWindow": 1050000,
@@ -10289,6 +11804,29 @@
         "currency": "USD",
         "input": 0.1,
         "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-6-luna-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-6 Luna (Fast)",
+      "pricing": {
+        "cacheRead": 0.02,
+        "cacheWrite": 0.25,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10342,6 +11880,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-6-sol-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-6 Sol (Fast)",
+      "pricing": {
+        "cacheRead": 0.4,
+        "cacheWrite": 5,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-6-sol-pro",
       "provider": "kilocode",
       "contextWindow": 1050000,
@@ -10388,6 +11949,29 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-6.1-sol-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-6.1 Sol (Fast)",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 5,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-6.1-sol-pro",
       "provider": "kilocode",
       "contextWindow": 1050000,
@@ -10427,6 +12011,29 @@
         "currency": "USD",
         "input": 1,
         "output": 5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-6.1-terra-fast",
+      "provider": "kilocode",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "OpenAI: GPT-6.1 Terra (Fast)",
+      "pricing": {
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10566,6 +12173,27 @@
       "reasoning": true
     },
     {
+      "id": "openai/gpt-oss-safeguard-120b",
+      "provider": "kilocode",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 16000,
+      "name": "OpenAI: GPT OSS Safeguard 120B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/gpt-oss-safeguard-20b",
       "provider": "kilocode",
       "contextWindow": 131072,
@@ -10580,6 +12208,29 @@
         "currency": "USD",
         "input": 0.075,
         "output": 0.3,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/o1",
+      "provider": "kilocode",
+      "contextWindow": 200000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 100000,
+      "name": "OpenAI: o1 ($$$$)",
+      "pricing": {
+        "cacheRead": 7.5,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 15,
+        "output": 60,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10610,6 +12261,51 @@
       "reasoning": true
     },
     {
+      "id": "openai/o3-fast",
+      "provider": "kilocode",
+      "contextWindow": 200000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 100000,
+      "name": "OpenAI: o3 (Fast)",
+      "pricing": {
+        "cacheRead": 0.875,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3.5,
+        "output": 14,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/o3-mini",
+      "provider": "kilocode",
+      "contextWindow": 200000,
+      "input": [
+        "text",
+        "document"
+      ],
+      "maxTokens": 100000,
+      "name": "OpenAI: o3-mini",
+      "pricing": {
+        "cacheRead": 0.55,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.1,
+        "output": 4.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "openai/o3-pro",
       "provider": "kilocode",
       "contextWindow": 200000,
@@ -10626,6 +12322,29 @@
         "currency": "USD",
         "input": 20,
         "output": 80,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/o4-mini",
+      "provider": "kilocode",
+      "contextWindow": 200000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 100000,
+      "name": "OpenAI: o4-mini",
+      "pricing": {
+        "cacheRead": 0.275,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.1,
+        "output": 4.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10686,6 +12405,28 @@
       "reasoning": true
     },
     {
+      "id": "particle/particle-1",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Particle-1",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.125,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "perceptron/perceptron-mk1.5",
       "provider": "kilocode",
       "contextWindow": 36864,
@@ -10706,6 +12447,29 @@
         "unit": "million_tokens"
       },
       "reasoning": true
+    },
+    {
+      "id": "poolside/laguna-s-2.1",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Laguna S 2.1 (retires Nov 13)",
+      "pricing": {
+        "cacheRead": 0.009,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.09,
+        "output": 0.18,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "prism-ml/ternary-bonsai-2-27b",
@@ -10752,6 +12516,50 @@
       "reasoning": true
     },
     {
+      "id": "quiverai/arrow-2",
+      "provider": "kilocode",
+      "contextWindow": 131072,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Arrow 2",
+      "pricing": {
+        "cacheRead": 0.4,
+        "cacheWrite": 5,
+        "currency": "USD",
+        "input": 4,
+        "output": 20,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "quiverai/arrow-2-telos",
+      "provider": "kilocode",
+      "contextWindow": 131072,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Arrow 2 Telos",
+      "pricing": {
+        "cacheRead": 0.6,
+        "cacheWrite": 7.5,
+        "currency": "USD",
+        "input": 6,
+        "output": 30,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "qwen/qwen-2.5-72b-instruct",
       "provider": "kilocode",
       "contextWindow": 32768,
@@ -10771,6 +12579,27 @@
         "unit": "million_tokens"
       },
       "reasoning": false
+    },
+    {
+      "id": "qwen/qwen-3-14b",
+      "provider": "kilocode",
+      "contextWindow": 40960,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 16384,
+      "name": "Qwen: Qwen3-14B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.12,
+        "output": 0.24,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "qwen/qwen-plus",
@@ -11004,6 +12833,27 @@
       "reasoning": false
     },
     {
+      "id": "qwen/qwen3-max-thinking",
+      "provider": "kilocode",
+      "contextWindow": 256000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 65536,
+      "name": "Qwen: Qwen 3 Max Thinking",
+      "pricing": {
+        "cacheRead": 0.24,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.2,
+        "output": 6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -11023,6 +12873,27 @@
         "unit": "million_tokens"
       },
       "reasoning": false
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -11113,6 +12984,30 @@
       "reasoning": false
     },
     {
+      "id": "qwen/qwen3-vl-instruct",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Qwen: Qwen3 VL 235B A22B Instruct",
+      "pricing": {
+        "cacheRead": 0.11,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.88,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
+    },
+    {
       "id": "qwen/qwen3.5-122b-a10b",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -11201,6 +13096,29 @@
       "reasoning": true
     },
     {
+      "id": "qwen/qwen3.5-flash",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 64000,
+      "name": "Qwen: Qwen 3.5 Flash",
+      "pricing": {
+        "cacheRead": 0.01,
+        "cacheWrite": 0.125,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "qwen/qwen3.5-flash-02-23",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -11216,6 +13134,29 @@
         "currency": "USD",
         "input": 0.065,
         "output": 0.26,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "qwen/qwen3.5-plus",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 64000,
+      "name": "Qwen: Qwen 3.5 Plus",
+      "pricing": {
+        "cacheRead": 0.04,
+        "cacheWrite": 0.5,
+        "currency": "USD",
+        "input": 0.4,
+        "output": 2.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11485,6 +13426,28 @@
       "reasoning": true
     },
     {
+      "id": "qwen/qwen3.8-max",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 128000,
+      "name": "Qwen: Qwen 3.8 Max",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "qwen/qwen3.8-max-0902",
       "provider": "kilocode",
       "contextWindow": 1000000,
@@ -11568,6 +13531,20 @@
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "reflection/beam-free",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Reflection: Beam 1.0 (Free)",
+      "pricing": {
+        "status": "unknown"
       },
       "reasoning": true
     },
@@ -11734,7 +13711,7 @@
         "text"
       ],
       "maxTokens": 256000,
-      "name": "Stealth: Glyph Cluster (free)",
+      "name": "Glyph Cluster",
       "pricing": {
         "status": "unknown"
       },
@@ -11815,11 +13792,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -11879,11 +13856,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12053,6 +14030,121 @@
       ],
       "maxTokens": 1800000,
       "name": "SpaceXAI: Grok 4.20",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "x-ai/grok-4.20-multi-agent-beta",
+      "provider": "kilocode",
+      "contextWindow": 2000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 2000000,
+      "name": "SpaceXAI: Grok 4.20 Multi Agent Beta",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "x-ai/grok-4.20-non-reasoning",
+      "provider": "kilocode",
+      "contextWindow": 2000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 2000000,
+      "name": "SpaceXAI: Grok 4.20 Non-Reasoning",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "x-ai/grok-4.20-non-reasoning-beta",
+      "provider": "kilocode",
+      "contextWindow": 2000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 2000000,
+      "name": "SpaceXAI: Grok 4.20 Beta Non-Reasoning",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "x-ai/grok-4.20-reasoning",
+      "provider": "kilocode",
+      "contextWindow": 2000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 2000000,
+      "name": "SpaceXAI: Grok 4.20 Reasoning",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "x-ai/grok-4.20-reasoning-beta",
+      "provider": "kilocode",
+      "contextWindow": 2000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 2000000,
+      "name": "SpaceXAI: Grok 4.20 Beta Reasoning",
       "pricing": {
         "cacheRead": 0.2,
         "cacheWrite": 0,
@@ -12396,6 +14488,27 @@
       "reasoning": true
     },
     {
+      "id": "z-ai/glm-4.7-flashx",
+      "provider": "kilocode",
+      "contextWindow": 200000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 128000,
+      "name": "Z.ai: GLM 4.7 FlashX",
+      "pricing": {
+        "cacheRead": 0.01,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.06,
+        "output": 0.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "z-ai/glm-5",
       "provider": "kilocode",
       "contextWindow": 202752,
@@ -12480,6 +14593,27 @@
       "reasoning": true
     },
     {
+      "id": "z-ai/glm-5.2-fast",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 128000,
+      "name": "Z.ai: GLM 5.2 Fast",
+      "pricing": {
+        "cacheRead": 0.56,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.8,
+        "output": 8.8,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "z-ai/glm-5.3",
       "provider": "kilocode",
       "contextWindow": 1048576,
@@ -12494,6 +14628,27 @@
         "currency": "USD",
         "input": 1.4,
         "output": 4.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "z-ai/glm-5.3-fast",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "Z.ai: GLM 5.3 Fast",
+      "pricing": {
+        "cacheRead": 0.21,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.1,
+        "output": 6.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -28537,7 +30692,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "quiverai/arrow-2",
@@ -31355,54 +33512,6 @@
       "output": 15,
       "source": "modelsDev"
     },
-    "chutes/deepseek-ai/DeepSeek-V4-Pro-0813": {
-      "cacheRead": 0.15,
-      "input": 0.85,
-      "output": 2.65,
-      "source": "chutes"
-    },
-    "chutes/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
-      "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "chutes"
-    },
-    "chutes/moonshotai/Kimi-K2.7-Code": {
-      "cacheRead": 0.167,
-      "input": 0.832,
-      "output": 3.5,
-      "source": "chutes"
-    },
-    "chutes/Qwen/Qwen3.8-2.4T-A95B": {
-      "cacheRead": 0.25,
-      "input": 2,
-      "output": 6,
-      "source": "chutes"
-    },
-    "chutes/Qwen/Qwen3.8-Max-0902": {
-      "cacheRead": 0.25,
-      "input": 2,
-      "output": 6,
-      "source": "chutes"
-    },
-    "chutes/tencent/Hy4": {
-      "cacheRead": 0.025,
-      "input": 0.525,
-      "output": 1.5625,
-      "source": "chutes"
-    },
-    "chutes/zai-org/GLM-5.2-Fast": {
-      "cacheRead": 0.49,
-      "input": 2.45,
-      "output": 7.7,
-      "source": "chutes"
-    },
-    "chutes/zai-org/GLM-5.3": {
-      "cacheRead": 0.245,
-      "input": 1.225,
-      "output": 3.85,
-      "source": "chutes"
-    },
     "deepinfra/allenai/Olmo-3.1-32B-Instruct": {
       "input": 0.2,
       "output": 0.6,
@@ -32387,28 +34496,7 @@
     "google-gemini-cli/gemini-2.5-computer-use-preview-10-2025": {
       "input": 1.25,
       "output": 10,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.25,
-          "output": 10,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.5,
-          "output": 15,
-          "range": [
-            200000
-          ]
-        }
-      ]
+      "source": "modelsDev"
     },
     "google-gemini-cli/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -32637,11 +34725,6 @@
       "output": 2.5,
       "source": "modelsDev"
     },
-    "google-gemini-cli/gemini-omni-flash-preview": {
-      "input": 1.5,
-      "output": 17.5,
-      "source": "modelsDev"
-    },
     "google-gemini-cli/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -32753,6 +34836,11 @@
       "source": "modelsDev"
     },
     "kilocode/google/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "modelsDev"
+    },
+    "kilocode/google/gemini-omni-flash-preview": {
       "input": 1.5,
       "output": 9,
       "source": "modelsDev"
@@ -32930,9 +35018,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.051,
-      "input": 0.056,
-      "output": 0.083,
+      "cacheRead": 0.148,
+      "input": 0.165,
+      "output": 0.242,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -32960,6 +35048,16 @@
       "output": 0,
       "source": "modelsDev"
     },
+    "kilocode/scaledown/scaledown-extract-1": {
+      "input": 0.05,
+      "output": 0,
+      "source": "modelsDev"
+    },
+    "kilocode/scaledown/scaledown-summarize-1": {
+      "input": 0.05,
+      "output": 0,
+      "source": "modelsDev"
+    },
     "kilocode/scaledown/summarize": {
       "input": 0.05,
       "output": 0,
@@ -32981,6 +35079,21 @@
       "source": "modelsDev"
     },
     "kilocode/tencent/hy-mt2-7b": {
+      "input": 0.074,
+      "output": 0.295,
+      "source": "modelsDev"
+    },
+    "kilocode/tencent/hy-mt2-lite": {
+      "input": 0.044,
+      "output": 0.177,
+      "source": "modelsDev"
+    },
+    "kilocode/tencent/hy-mt2-plus": {
+      "input": 0.074,
+      "output": 0.295,
+      "source": "modelsDev"
+    },
+    "kilocode/tencent/hy-mt2-pro": {
       "input": 0.074,
       "output": 0.295,
       "source": "modelsDev"
@@ -35199,9 +37312,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0740805,
-      "input": 0.888966,
-      "output": 1.777932,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -35211,9 +37324,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.004,
+      "input": 0.022,
+      "output": 0.39999999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -35613,9 +37726,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049,
-      "input": 0.09,
-      "output": 0.28,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -36034,9 +38147,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
-      "cacheRead": 0.19,
+      "cacheRead": 0.19999999999999998,
       "input": 0.2375,
-      "output": 8.785599999999999,
+      "output": 8.4114,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -37801,9 +39914,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.13199999999999998,
-      "input": 0.14700000000000002,
-      "output": 0.216,
+      "cacheRead": 0.091,
+      "input": 0.101,
+      "output": 0.148,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -38210,9 +40323,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -38228,9 +40341,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -38254,6 +40367,12 @@
       "cacheRead": 0.16999999999999998,
       "input": 1,
       "output": 4.05,
+      "source": "openRouter"
+    },
+    "openrouter/thinkingmachines/inkling-2-small": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 1,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-small": {
@@ -38586,9 +40705,9 @@
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.5-pro": {
-      "cacheRead": 0.096,
-      "input": 0.48,
-      "output": 1.7999999999999998,
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87,
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash": {
@@ -38681,9 +40800,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.0689,
-      "input": 0.0699,
-      "output": 1.4,
+      "cacheRead": 0.079,
+      "input": 0.08399999999999999,
+      "output": 3.5999999999999996,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -39637,13 +41756,6 @@
       "output": 2.4,
       "source": "modelsDev"
     },
-    "venice/claude-opus-4-8-fast": {
-      "cacheRead": 1,
-      "cacheWrite": 12.5,
-      "input": 10,
-      "output": 50,
-      "source": "venice"
-    },
     "venice/deepseek-v4-1-flash": {
       "cacheRead": 0.0075,
       "input": 0.3,
@@ -39761,6 +41873,12 @@
           ]
         }
       ]
+    },
+    "venice/pareto": {
+      "cacheRead": 0.0375,
+      "input": 1,
+      "output": 4,
+      "source": "venice"
     },
     "vercel-ai-gateway/amazon/nova-2-lite": {
       "cacheRead": 0.0825,
@@ -40065,8 +42183,12 @@
       "api": "openai-completions",
       "defaultModel": "zai-org/GLM-5.2-TEE",
       "recommendedModels": [
-        "deepseek-ai/DeepSeek-V4-Flash-0731-TEE",
+        "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "tencent/Hy4",
+        "Qwen/Qwen3.8-Max-0902",
+        "zai-org/GLM-5.3",
         "moonshotai/Kimi-K3-TEE",
+        "deepseek-ai/DeepSeek-V4-Pro-0813",
         "Qwen/Qwen3.8-27B-TEE"
       ]
     },
@@ -40170,7 +42292,7 @@
         "xiaomi/mimo-v2.6-pro",
         "google/gemini-3.8-flash",
         "openai/gpt-6-luna",
-        "qwen/qwen3.8-max-0902",
+        "qwen/qwen3.8-max",
         "z-ai/glm-5.3",
         "moonshotai/kimi-k3.1-pro",
         "moonshotai/kimi-k3",
@@ -40471,7 +42593,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "e8ff306f74133486c302f9358296fb43ecb52cd3",
+  "sourceCommit": "7cd1837be625d76231df5b2f9a1f909fe1aee5a0",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -44420,6 +46542,12 @@
       "source": "liteLLM"
     },
     "azure_ai/deepseek-v4.1-flash": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "liteLLM"
+    },
+    "azure_ai/deepseek-v4.1-flash-1017": {
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
@@ -50181,6 +52309,179 @@
       "output": 1,
       "source": "liteLLM"
     },
+    "byteplus/deepseek-v4-1-flash-260910": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
+      "source": "modelsDev"
+    },
+    "byteplus/deepseek-v4-1-flash-261017": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
+      "source": "modelsDev"
+    },
+    "byteplus/deepseek-v4-1-flash-economy-261017": {
+      "cacheRead": 0.002,
+      "input": 0.12,
+      "output": 0.48,
+      "source": "modelsDev"
+    },
+    "byteplus/deepseek-v4-flash-260425": {
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "byteplus/deepseek-v4-flash-ga-260731": {
+      "cacheRead": 0.014,
+      "input": 0.44,
+      "output": 1.32,
+      "source": "modelsDev"
+    },
+    "byteplus/deepseek-v4-pro-260425": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "byteplus/deepseek-v4-pro-ga-260813": {
+      "cacheRead": 0.044,
+      "input": 1.32,
+      "output": 3.96,
+      "source": "modelsDev"
+    },
+    "byteplus/dola-seed-2-1-turbo-260628": {
+      "cacheRead": 0.1,
+      "input": 0.5,
+      "output": 2.5,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "byteplus/glm-5-2-260617": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "byteplus/glm-5-3-flash-260828": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
+    "byteplus/seed-2-0-code-preview-260328": {
+      "cacheRead": 0.1,
+      "input": 0.5,
+      "output": 3,
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 3,
+          "range": [
+            0,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0.2,
+          "cacheWrite": 0,
+          "input": 1,
+          "output": 6,
+          "range": [
+            128000
+          ]
+        }
+      ]
+    },
+    "byteplus/seed-2-0-lite-260428": {
+      "cacheRead": 0.05,
+      "input": 0.25,
+      "output": 2,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.05,
+          "cacheWrite": 0,
+          "input": 0.25,
+          "output": 2,
+          "range": [
+            0,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 4,
+          "range": [
+            128000
+          ]
+        }
+      ]
+    },
+    "byteplus/seed-2-0-mini-260428": {
+      "cacheRead": 0.02,
+      "input": 0.1,
+      "output": 0.4,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.02,
+          "cacheWrite": 0,
+          "input": 0.1,
+          "output": 0.4,
+          "range": [
+            0,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0.04,
+          "cacheWrite": 0,
+          "input": 0.2,
+          "output": 0.8,
+          "range": [
+            128000
+          ]
+        }
+      ]
+    },
+    "byteplus/seed-2-0-pro-260328": {
+      "cacheRead": 0.1,
+      "input": 0.5,
+      "output": 3,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 0,
+          "input": 0.5,
+          "output": 3,
+          "range": [
+            0,
+            128000
+          ]
+        },
+        {
+          "cacheRead": 0.2,
+          "cacheWrite": 0,
+          "input": 1,
+          "output": 6,
+          "range": [
+            128000
+          ]
+        }
+      ]
+    },
     "cerebras/gemma-4-31b": {
       "input": 0.9900000000000001,
       "output": 1.49,
@@ -52248,6 +54549,7 @@
       "cacheRead": 0.14,
       "input": 0.55,
       "output": 2.1900000000000004,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepseek/deepseek-reasoner": {
@@ -57189,28 +59491,7 @@
     "google-gemini-cli/gemini-2.5-computer-use-preview-10-2025": {
       "input": 1.25,
       "output": 10,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.25,
-          "output": 10,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.5,
-          "output": 15,
-          "range": [
-            200000
-          ]
-        }
-      ]
+      "source": "modelsDev"
     },
     "google-gemini-cli/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -57437,11 +59718,6 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5,
-      "source": "modelsDev"
-    },
-    "google-gemini-cli/gemini-omni-flash-preview": {
-      "input": 1.5,
-      "output": 17.5,
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-pro-latest": {
@@ -57955,28 +60231,7 @@
       "cacheRead": 0.2,
       "input": 1.25,
       "output": 2.5,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.2,
-          "cacheWrite": 0,
-          "input": 1.25,
-          "output": 2.5,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 0,
-          "input": 2.5,
-          "output": 5,
-          "range": [
-            200000
-          ]
-        }
-      ]
+      "source": "modelsDev"
     },
     "google-vertex/xai/grok-4.6": {
       "cacheRead": 0.5,
@@ -58107,28 +60362,7 @@
     "google/gemini-2.5-computer-use-preview-10-2025": {
       "input": 1.25,
       "output": 10,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.25,
-          "output": 10,
-          "range": [
-            0,
-            200000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.5,
-          "output": 15,
-          "range": [
-            200000
-          ]
-        }
-      ]
+      "source": "modelsDev"
     },
     "google/gemini-2.5-flash": {
       "cacheRead": 0.03,
@@ -58374,11 +60608,6 @@
       "input": 0.3,
       "output": 2.5,
       "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "google/gemini-omni-flash-preview": {
-      "input": 1.5,
-      "output": 17.5,
       "source": "modelsDev"
     },
     "google/gemini-pro-latest": {
@@ -63856,10 +66085,18 @@
       "source": "liteLLM"
     },
     "openai/chatgpt-image-latest": {
+      "alternatives": [
+        {
+          "cacheRead": 1.25,
+          "input": 5,
+          "output": 10,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 1.25,
       "input": 5,
       "output": 10,
-      "source": "liteLLM"
+      "source": "modelsDev"
     },
     "openai/computer-use-preview": {
       "input": 3,
@@ -65161,10 +67398,18 @@
       "source": "modelsDev"
     },
     "openai/gpt-image-1.5": {
+      "alternatives": [
+        {
+          "cacheRead": 1.25,
+          "input": 5,
+          "output": 10,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 1.25,
       "input": 5,
       "output": 10,
-      "source": "liteLLM"
+      "source": "modelsDev"
     },
     "openai/gpt-image-1.5-2025-12-16": {
       "cacheRead": 1.25,
@@ -65262,6 +67507,7 @@
       "cacheRead": 7.5,
       "input": 15,
       "output": 60,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "openai/o1-2024-12-17": {
@@ -65332,6 +67578,7 @@
       "cacheRead": 0.55,
       "input": 1.1,
       "output": 4.4,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "openai/o3-mini-2025-01-31": {
@@ -65370,6 +67617,7 @@
       "cacheRead": 0.275,
       "input": 1.1,
       "output": 4.4,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "openai/o4-mini-2025-04-16": {
@@ -66855,9 +69103,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.0740805,
-      "input": 0.888966,
-      "output": 1.777932,
+      "cacheRead": 0.07960500000000001,
+      "input": 0.9552599999999999,
+      "output": 1.9105199999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -66867,9 +69115,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.004,
+      "input": 0.022,
+      "output": 0.39999999999999997,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -67269,9 +69517,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049,
-      "input": 0.09,
-      "output": 0.28,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -67690,9 +69938,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
-      "cacheRead": 0.19,
+      "cacheRead": 0.19999999999999998,
       "input": 0.2375,
-      "output": 8.785599999999999,
+      "output": 8.4114,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -69457,9 +71705,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.13199999999999998,
-      "input": 0.14700000000000002,
-      "output": 0.216,
+      "cacheRead": 0.091,
+      "input": 0.101,
+      "output": 0.148,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -69866,9 +72114,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -69884,9 +72132,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -69910,6 +72158,12 @@
       "cacheRead": 0.16999999999999998,
       "input": 1,
       "output": 4.05,
+      "source": "openRouter"
+    },
+    "openrouter/thinkingmachines/inkling-2-small": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 1,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-small": {
@@ -70242,9 +72496,9 @@
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.5-pro": {
-      "cacheRead": 0.096,
-      "input": 0.48,
-      "output": 1.7999999999999998,
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87,
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash": {
@@ -70337,9 +72591,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
-      "cacheRead": 0.0689,
-      "input": 0.0699,
-      "output": 1.4,
+      "cacheRead": 0.079,
+      "input": 0.08399999999999999,
+      "output": 3.5999999999999996,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
@@ -70469,6 +72723,12 @@
       "cacheRead": 0.25,
       "input": 10,
       "output": 50,
+      "source": "liteLLM"
+    },
+    "perplexity/anthropic/claude-fable-5-2": {
+      "cacheRead": 0.19999999999999998,
+      "input": 8,
+      "output": 40,
       "source": "liteLLM"
     },
     "perplexity/anthropic/claude-haiku-4-5": {
@@ -70602,6 +72862,12 @@
       "source": "liteLLM"
     },
     "perplexity/google/gemini-4-argon": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
+    "perplexity/google/gemini-4-carbon": {
       "cacheRead": 0.09999999999999999,
       "input": 2,
       "output": 10,
@@ -72041,6 +74307,7 @@
     "qwen/qwen3-next-80b-a3b-thinking": {
       "input": 0.5,
       "output": 6,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3-omni-flash": {
@@ -72130,6 +74397,7 @@
       "cacheWrite": 0.125,
       "input": 0.1,
       "output": 0.4,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/qwen3.5-plus": {
