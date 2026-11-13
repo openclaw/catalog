@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794587235160,
+  "generatedAt": 1794601622685,
   "models": [
     {
       "id": "abliterated-model",
@@ -8316,11 +8316,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.012,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.029,
-        "output": 0.088,
+        "input": 0.024,
+        "output": 0.071,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8762,29 +8762,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b",
-      "provider": "kilocode",
-      "contextWindow": 128000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 8192,
-      "name": "LiquidAI: LFM2.5-2.6B (retires Nov 13)",
-      "pricing": {
-        "cacheRead": 0.04,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.35,
-        "output": 0.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "liquid/lfm-2.5-24b-a2b",
@@ -9379,11 +9356,11 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.0075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13735,11 +13712,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13799,11 +13776,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -35039,9 +35016,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.023,
-      "input": 0.025,
-      "output": 0.037,
+      "cacheRead": 0.122,
+      "input": 0.135,
+      "output": 0.199,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -36626,9 +36603,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.19,
-      "input": 0.19,
-      "output": 10.6066,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 11.0055,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -37270,8 +37247,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat": {
-      "input": 0.32,
-      "output": 0.8899999999999999,
+      "input": 0.2574,
+      "output": 1.0287,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat-v3-0324": {
@@ -37747,9 +37724,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -39917,9 +39894,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.07,
-      "input": 0.078,
-      "output": 0.11499999999999999,
+      "cacheRead": 0.136,
+      "input": 0.151,
+      "output": 0.222,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -40797,9 +40774,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
+      "cacheRead": 0.117,
+      "input": 0.34700000000000003,
+      "output": 1.068,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -42585,7 +42562,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "51bdadb343756e358792dd98f5ec14e317326035",
+  "sourceCommit": "fa155ff6f53e18f426d7b97ba3407976959380a0",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -68399,9 +68376,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.19,
-      "input": 0.19,
-      "output": 10.6066,
+      "cacheRead": 0.18,
+      "input": 0.18239999999999998,
+      "output": 11.0055,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -69043,8 +69020,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat": {
-      "input": 0.32,
-      "output": 0.8899999999999999,
+      "input": 0.2574,
+      "output": 1.0287,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-chat-v3-0324": {
@@ -69520,9 +69497,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -71690,9 +71667,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.07,
-      "input": 0.078,
-      "output": 0.11499999999999999,
+      "cacheRead": 0.136,
+      "input": 0.151,
+      "output": 0.222,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -72570,9 +72547,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
+      "cacheRead": 0.117,
+      "input": 0.34700000000000003,
+      "output": 1.068,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
