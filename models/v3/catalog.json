@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794544012939,
+  "generatedAt": 1794558540935,
   "models": [
     {
       "id": "abliterated-model",
@@ -6570,11 +6570,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
-        "cacheRead": 0.004,
+        "cacheRead": 0.01,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.022,
-        "output": 0.4,
+        "input": 0.038,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8035,11 +8035,11 @@
     {
       "id": "deepseek/deepseek-v4-pro",
       "provider": "kilocode",
-      "contextWindow": 1024000,
+      "contextWindow": 1048576,
       "input": [
         "text"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 393216,
       "name": "DeepSeek V4 Pro",
       "pricing": {
         "cacheRead": 0.135,
@@ -8689,11 +8689,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.01,
+        "cacheRead": 0.008,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.04,
-        "output": 0.15,
+        "input": 0.015,
+        "output": 0.045,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9506,13 +9506,13 @@
     {
       "id": "meta/muse-spark-open",
       "provider": "kilocode",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image",
         "document"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 943718,
       "name": "Muse Spark Open",
       "pricing": {
         "cacheRead": 0.15,
@@ -9729,11 +9729,11 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.0075,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.075,
-        "output": 0.3,
+        "input": 0.15,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10503,8 +10503,8 @@
         "cacheRead": 0.2,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2375,
-        "output": 8.4114,
+        "input": 2,
+        "output": 10,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12665,6 +12665,28 @@
       "reasoning": true
     },
     {
+      "id": "paperinstruments/ultramarine-1-flash",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131000,
+      "name": "Ultramarine 1 Flash",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "particle-ai/particle-1",
       "provider": "kilocode",
       "contextWindow": 1048576,
@@ -14150,11 +14172,11 @@
       "maxTokens": 943718,
       "name": "Thinking Machines: Inkling 2 Small",
       "pricing": {
-        "cacheRead": 0.06,
+        "cacheRead": 0.03,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.3,
-        "output": 1,
+        "input": 0.15,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15810,7 +15832,8 @@
       "provider": "mistral",
       "contextWindow": 1048576,
       "input": [
-        "text"
+        "text",
+        "image"
       ],
       "maxTokens": 128000,
       "name": "DeepSeek V4.1 Flash 1017",
@@ -16043,16 +16066,16 @@
       "maxTokens": 16384,
       "name": "Mistral Large 3 (latest)",
       "pricing": {
-        "cacheRead": 0.05,
+        "cacheRead": 0.07,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.5,
-        "output": 1.5,
+        "input": 0.7,
+        "output": 2.1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false
+      "reasoning": true
     },
     {
       "id": "mistral-medium-2508",
@@ -16579,7 +16602,14 @@
       ],
       "name": "Drex Max v1.1",
       "pricing": {
-        "status": "unknown"
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.03,
+        "output": 0,
+        "source": "liteLLM",
+        "status": "known",
+        "unit": "million_tokens"
       }
     },
     {
@@ -28194,7 +28224,8 @@
       "contextWindow": 1048576,
       "input": [
         "text",
-        "image"
+        "image",
+        "document"
       ],
       "maxTokens": 262144,
       "name": "DeepSeek V4.1 Flash 1017",
@@ -31853,6 +31884,28 @@
         "currency": "USD",
         "input": 20,
         "output": 80,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "paperinstruments/ultramarine-1-flash",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131000,
+      "name": "Ultramarine 1 Flash",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -36242,9 +36295,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.08,
-      "input": 0.089,
-      "output": 0.13,
+      "cacheRead": 0.081,
+      "input": 0.09,
+      "output": 0.133,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -38536,9 +38589,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.25,
+      "input": 0.8999999999999999,
+      "output": 1.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -38554,9 +38607,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -38950,9 +39003,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -38968,7 +39021,7 @@
     "openrouter/ibm-granite/granite-4.2-8b": {
       "cacheRead": 0.015,
       "input": 0.06,
-      "output": 0.15,
+      "output": 0.25,
       "source": "openRouter"
     },
     "openrouter/inclusionai/ling-3.0-flash": {
@@ -39372,8 +39425,8 @@
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.2375,
-      "output": 8.4114,
+      "input": 2,
+      "output": 10,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -41138,9 +41191,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.07,
-      "input": 0.077,
-      "output": 0.114,
+      "cacheRead": 0.058,
+      "input": 0.065,
+      "output": 0.095,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -42018,9 +42071,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.101,
-      "input": 0.298,
-      "output": 0.916,
+      "cacheRead": 0.109,
+      "input": 0.322,
+      "output": 0.989,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -43818,7 +43871,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "5aca89e8f3942c7fd796ecaed352079ede237888",
+  "sourceCommit": "e60207216d61d5121c4db63d1164f5df28afdb1d",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -64115,9 +64168,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.05,
-      "input": 0.5,
-      "output": 1.5,
+      "cacheRead": 0.07,
+      "input": 0.7,
+      "output": 2.1,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -64595,22 +64648,33 @@
       "source": "liteLLM"
     },
     "nace/drex-latest": {
-      "input": 0.06,
+      "input": 0.03,
       "output": 0,
       "source": "liteLLM"
     },
+    "nace/drex-max": {
+      "input": 0.03,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "nace/drex-max-v1.1": {
+      "input": 0.03,
+      "output": 0,
+      "passthroughOnly": true,
+      "source": "liteLLM"
+    },
     "nace/drex-v1.0": {
-      "input": 0.04,
+      "input": 0.03,
       "output": 0,
       "source": "liteLLM"
     },
     "nace/drex-v1.5": {
-      "input": 0.049999999999999996,
+      "input": 0.03,
       "output": 0,
       "source": "liteLLM"
     },
     "nace/drex-v2.0": {
-      "input": 0.06,
+      "input": 0.03,
       "output": 0,
       "source": "liteLLM"
     },
@@ -70328,9 +70392,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.07960500000000001,
-      "input": 0.9552599999999999,
-      "output": 1.9105199999999998,
+      "cacheRead": 0.25,
+      "input": 0.8999999999999999,
+      "output": 1.5,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -70346,9 +70410,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -70742,9 +70806,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -70760,7 +70824,7 @@
     "openrouter/ibm-granite/granite-4.2-8b": {
       "cacheRead": 0.015,
       "input": 0.06,
-      "output": 0.15,
+      "output": 0.25,
       "source": "openRouter"
     },
     "openrouter/inclusionai/ling-3.0-flash": {
@@ -71164,8 +71228,8 @@
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.2375,
-      "output": 8.4114,
+      "input": 2,
+      "output": 10,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
@@ -72930,9 +72994,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.07,
-      "input": 0.077,
-      "output": 0.114,
+      "cacheRead": 0.058,
+      "input": 0.065,
+      "output": 0.095,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -73810,9 +73874,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.101,
-      "input": 0.298,
-      "output": 0.916,
+      "cacheRead": 0.109,
+      "input": 0.322,
+      "output": 0.989,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -80930,6 +80994,12 @@
     "vertex_ai/codestral@latest": {
       "input": 0.19999999999999998,
       "output": 0.6,
+      "source": "liteLLM"
+    },
+    "vertex_ai/deep-research-preview-04-2026": {
+      "cacheRead": 0.19999999999999998,
+      "input": 2,
+      "output": 12,
       "source": "liteLLM"
     },
     "vertex_ai/deep-research-pro-preview-12-2025": {
