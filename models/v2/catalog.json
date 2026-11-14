@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794659303783,
+  "generatedAt": 1794673564620,
   "models": [
     {
       "id": "abliterated-model",
@@ -37322,9 +37322,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-r1-0528": {
-      "cacheRead": 0.35,
-      "input": 0.5,
-      "output": 2.1500000000000004,
+      "input": 0.5710000000000001,
+      "output": 2.2859999999999996,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.1-terminus": {
@@ -38002,9 +38001,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -39720,7 +39719,7 @@
     },
     "openrouter/particle-ai/particle-1": {
       "cacheRead": 0.003,
-      "input": 0.049999999999999996,
+      "input": 0.06,
       "output": 0.5,
       "source": "openRouter"
     },
@@ -40361,9 +40360,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -40379,9 +40378,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -42614,7 +42613,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "0640d3995c5c9a2b4d68d377c5a08532409b7a22",
+  "sourceCommit": "1ac07b333581ff06e7d323015dc5912247415d4b",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -69120,9 +69119,8 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-r1-0528": {
-      "cacheRead": 0.35,
-      "input": 0.5,
-      "output": 2.1500000000000004,
+      "input": 0.5710000000000001,
+      "output": 2.2859999999999996,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v3.1-terminus": {
@@ -69800,9 +69798,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -71518,7 +71516,7 @@
     },
     "openrouter/particle-ai/particle-1": {
       "cacheRead": 0.003,
-      "input": 0.049999999999999996,
+      "input": 0.06,
       "output": 0.5,
       "source": "openRouter"
     },
@@ -72159,9 +72157,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -72177,9 +72175,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -79109,6 +79107,13 @@
       "output": 0.6,
       "source": "liteLLM"
     },
+    "vercel_ai_gateway/openai/gpt-6-luna-decisions": {
+      "cacheRead": 0.01,
+      "cacheWrite": 0.125,
+      "input": 0.09999999999999999,
+      "output": 0,
+      "source": "liteLLM"
+    },
     "vercel_ai_gateway/openai/o1": {
       "cacheRead": 7.5,
       "input": 15,
@@ -79166,6 +79171,21 @@
     "vercel_ai_gateway/perplexity/sonar-reasoning-pro": {
       "input": 2,
       "output": 8,
+      "source": "liteLLM"
+    },
+    "vercel_ai_gateway/typesafe-ai/jev": {
+      "input": 0.041999999999999996,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "vercel_ai_gateway/typesafe-ai/jev-1.13.0": {
+      "input": 0.041999999999999996,
+      "output": 0,
+      "source": "liteLLM"
+    },
+    "vercel_ai_gateway/typesafe-ai/jev-1.14.0": {
+      "input": 0.041999999999999996,
+      "output": 0,
       "source": "liteLLM"
     },
     "vercel_ai_gateway/vercel/v0-1.0-md": {
