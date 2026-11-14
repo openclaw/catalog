@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794630435898,
+  "generatedAt": 1794644786040,
   "models": [
     {
       "id": "abliterated-model",
@@ -8675,11 +8675,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.012,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.024,
-        "output": 0.072,
+        "input": 0.03,
+        "output": 0.091,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9730,11 +9730,11 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.0075,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.075,
-        "output": 0.3,
+        "input": 0.15,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10476,13 +10476,13 @@
         "image",
         "document"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1000000,
       "name": "MoonshotAI: Kimi K3 Fast",
       "pricing": {
-        "cacheRead": 0.45,
+        "cacheRead": 0.6,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 4.5,
+        "input": 6,
         "output": 22.5,
         "source": "modelsDev",
         "status": "known",
@@ -13722,7 +13722,7 @@
     {
       "id": "qwen/qwen3.8-max",
       "provider": "kilocode",
-      "contextWindow": 262144,
+      "contextWindow": 1000000,
       "input": [
         "text",
         "image"
@@ -13731,7 +13731,7 @@
       "name": "Qwen: Qwen 3.8 Max",
       "pricing": {
         "cacheRead": 0.25,
-        "cacheWrite": 0,
+        "cacheWrite": 2.5,
         "currency": "USD",
         "input": 2,
         "output": 6,
@@ -24310,6 +24310,28 @@
       "reasoning": true
     },
     {
+      "id": "gemini-4-hydrogen",
+      "provider": "venice",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Gemini 4 Hydrogen",
+      "pricing": {
+        "cacheRead": 0.09375,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.875,
+        "output": 9.375,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "google-gemma-3-27b-it",
       "provider": "venice",
       "compat": {
@@ -27288,7 +27310,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 128000,
+      "maxTokens": 131072,
       "name": "Qwen3.8 2.4T A95B",
       "pricing": {
         "cacheRead": 0.25,
@@ -27351,7 +27373,7 @@
     {
       "id": "alibaba/qwen3.8-max",
       "provider": "vercel-ai-gateway",
-      "contextWindow": 262144,
+      "contextWindow": 1000000,
       "input": [
         "text",
         "image"
@@ -27360,7 +27382,7 @@
       "name": "Qwen 3.8 Max",
       "pricing": {
         "cacheRead": 0.25,
-        "cacheWrite": 0,
+        "cacheWrite": 2.5,
         "currency": "USD",
         "input": 2,
         "output": 6,
@@ -28226,10 +28248,10 @@
         "image",
         "document"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 1048576,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
-        "cacheRead": 0.007,
+        "cacheRead": 0.006,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.3,
@@ -29533,13 +29555,13 @@
     {
       "id": "minimax/minimax-m3",
       "provider": "vercel-ai-gateway",
-      "contextWindow": 512000,
+      "contextWindow": 1000000,
       "input": [
         "text",
         "image",
         "document"
       ],
-      "maxTokens": 512000,
+      "maxTokens": 1000000,
       "name": "MiniMax M3",
       "pricing": {
         "cacheRead": 0.06,
@@ -29549,6 +29571,27 @@
         "output": 1.2,
         "source": "modelsDev",
         "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.06,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 1.2,
+            "range": [
+              0,
+              512000
+            ]
+          },
+          {
+            "cacheRead": 0.24,
+            "cacheWrite": 0,
+            "input": 1.2,
+            "output": 4.8,
+            "range": [
+              512000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -29556,12 +29599,12 @@
     {
       "id": "minimax/minimax-m3.1-flash",
       "provider": "vercel-ai-gateway",
-      "contextWindow": 1048576,
+      "contextWindow": 1000000,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 524288,
       "name": "MiniMax-M3.1-Flash",
       "pricing": {
         "cacheRead": 0.015,
@@ -29891,13 +29934,13 @@
         "image",
         "document"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1000000,
       "name": "Kimi K3 Fast",
       "pricing": {
-        "cacheRead": 0.45,
+        "cacheRead": 0.6,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 4.5,
+        "input": 6,
         "output": 22.5,
         "source": "modelsDev",
         "status": "known",
@@ -36311,9 +36354,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232,
+      "cacheRead": 0.063,
+      "input": 0.069,
+      "output": 0.102,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -41189,9 +41232,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.08900000000000001,
-      "input": 0.099,
-      "output": 0.145,
+      "cacheRead": 0.14100000000000001,
+      "input": 0.157,
+      "output": 0.23099999999999998,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -42069,9 +42112,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -43111,12 +43154,6 @@
       "output": 0.9,
       "source": "venice"
     },
-    "venice/gemini-4-hydrogen": {
-      "cacheRead": 0.09375,
-      "input": 1.875,
-      "output": 9.375,
-      "source": "venice"
-    },
     "venice/gemma-4-uncensored": {
       "input": 0.1625,
       "output": 0.5,
@@ -43273,12 +43310,6 @@
     "vercel-ai-gateway/morph/morph-v3-large": {
       "input": 0.9,
       "output": 1.9,
-      "source": "modelsDev"
-    },
-    "vercel-ai-gateway/nvidia/nemotron-3-nano-30b-a3b": {
-      "cacheRead": 0.025,
-      "input": 0.05,
-      "output": 0.2,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/nvidia/nemotron-3-super-120b-a12b": {
@@ -43875,7 +43906,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "41d0dec31bfc67480c9108004a935b2f95e606e5",
+  "sourceCommit": "35ca716590b3861c0ef008a4f503876e8282a330",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -73011,9 +73042,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.08900000000000001,
-      "input": 0.099,
-      "output": 0.145,
+      "cacheRead": 0.14100000000000001,
+      "input": 0.157,
+      "output": 0.23099999999999998,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -73891,9 +73922,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
