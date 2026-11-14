@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794616872029,
+  "generatedAt": 1794630435898,
   "models": [
     {
       "id": "abliterated-model",
@@ -7768,18 +7768,18 @@
     {
       "id": "deepseek/deepseek-chat",
       "provider": "kilocode",
-      "contextWindow": 163840,
+      "contextWindow": 128000,
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 16000,
       "name": "DeepSeek Chat",
       "pricing": {
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.32,
-        "output": 0.89,
+        "input": 0.2574,
+        "output": 1.0287,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8068,7 +8068,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -8679,7 +8679,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.024,
-        "output": 0.071,
+        "output": 0.072,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8972,6 +8972,21 @@
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "pricing": {
+        "status": "unknown"
       },
       "reasoning": true
     },
@@ -10509,7 +10524,7 @@
       "name": "MoonshotAI: Kimi K3.1 Pro Highspeed",
       "pricing": {
         "cacheRead": 0.2,
-        "cacheWrite": 4,
+        "cacheWrite": 5,
         "currency": "USD",
         "input": 4,
         "output": 20,
@@ -14071,11 +14086,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.020625,
+        "cacheRead": 0.033,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0825,
-        "output": 0.33,
+        "input": 0.132,
+        "output": 0.528,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14135,11 +14150,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.0378,
+        "cacheRead": 0.042,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7506,
-        "output": 2.2509,
+        "input": 0.834,
+        "output": 2.501,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -29924,7 +29939,7 @@
       "name": "Kimi K3.1 Pro Highspeed",
       "pricing": {
         "cacheRead": 0.2,
-        "cacheWrite": 4,
+        "cacheWrite": 5,
         "currency": "USD",
         "input": 4,
         "output": 20,
@@ -36296,9 +36311,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.122,
-      "input": 0.135,
-      "output": 0.199,
+      "cacheRead": 0.142,
+      "input": 0.158,
+      "output": 0.232,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -39224,9 +39239,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -41174,9 +41189,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232,
+      "cacheRead": 0.08900000000000001,
+      "input": 0.099,
+      "output": 0.145,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -43096,6 +43111,12 @@
       "output": 0.9,
       "source": "venice"
     },
+    "venice/gemini-4-hydrogen": {
+      "cacheRead": 0.09375,
+      "input": 1.875,
+      "output": 9.375,
+      "source": "venice"
+    },
     "venice/gemma-4-uncensored": {
       "input": 0.1625,
       "output": 0.5,
@@ -43854,7 +43875,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "4cffd43ee043275f6a4c693aaacee8d8e5a61288",
+  "sourceCommit": "41d0dec31bfc67480c9108004a935b2f95e606e5",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -71040,9 +71061,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -72990,9 +73011,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232,
+      "cacheRead": 0.08900000000000001,
+      "input": 0.099,
+      "output": 0.145,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {

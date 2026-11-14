@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794616872029,
+  "generatedAt": 1794630435898,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -29499,9 +29499,9 @@
       "output": 0.88
     },
     "cloudflare-ai-gateway/openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -31269,9 +31269,9 @@
       "output": 3.5999999999999996
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232
+      "cacheRead": 0.08900000000000001,
+      "input": 0.099,
+      "output": 0.145
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -68591,9 +68591,9 @@
       "output": 0.88
     },
     "kilocode/openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -70361,9 +70361,9 @@
       "output": 3.5999999999999996
     },
     "kilocode/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232
+      "cacheRead": 0.08900000000000001,
+      "input": 0.099,
+      "output": 0.145
     },
     "kilocode/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -72585,9 +72585,9 @@
       ]
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.122,
-      "input": 0.135,
-      "output": 0.199
+      "cacheRead": 0.142,
+      "input": 0.158,
+      "output": 0.232
     },
     "kilocode/qwen/qwen3.6-max-preview": {
       "cacheRead": 0.13,
@@ -84964,9 +84964,9 @@
       "output": 0.88
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -86734,9 +86734,9 @@
       "output": 3.5999999999999996
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232
+      "cacheRead": 0.08900000000000001,
+      "input": 0.099,
+      "output": 0.145
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -93020,6 +93020,11 @@
     "venice/e2ee-qwen3-vl-30b-a3b-p": {
       "input": 0.25,
       "output": 0.9
+    },
+    "venice/gemini-4-hydrogen": {
+      "cacheRead": 0.09375,
+      "input": 1.875,
+      "output": 9.375
     },
     "venice/gemma-4-uncensored": {
       "input": 0.1625,
@@ -113966,9 +113971,9 @@
       "output": 0.88
     },
     "vercel-ai-gateway/openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/openrouter/mistralai/codestral-2508": {
       "cacheRead": 0.03,
@@ -115736,9 +115741,9 @@
       "output": 3.5999999999999996
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.142,
-      "input": 0.158,
-      "output": 0.232
+      "cacheRead": 0.08900000000000001,
+      "input": 0.099,
+      "output": 0.145
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -132449,18 +132454,18 @@
           "reasoning": true
         },
         {
-          "contextWindow": 163840,
+          "contextWindow": 128000,
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.32,
-            "output": 0.89
+            "input": 0.2574,
+            "output": 1.0287
           },
           "id": "deepseek/deepseek-chat",
           "input": [
             "text"
           ],
-          "maxTokens": 16384,
+          "maxTokens": 16000,
           "name": "DeepSeek Chat",
           "reasoning": false
         },
@@ -132686,7 +132691,7 @@
             "text",
             "image"
           ],
-          "maxTokens": 943718,
+          "maxTokens": 393216,
           "name": "DeepSeek V4.1 Flash",
           "reasoning": true
         },
@@ -133149,7 +133154,7 @@
             "cacheRead": 0.012,
             "cacheWrite": 0,
             "input": 0.024,
-            "output": 0.071
+            "output": 0.072
           },
           "id": "google/gemma-4-26b-a4b-it",
           "input": [
@@ -133378,6 +133383,17 @@
           ],
           "maxTokens": 262144,
           "name": "inclusionAI: Ling 3.1 Flash 1019",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "inclusionai/ling-3.2-flash:free",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 262144,
+          "name": "inclusionAI: Ling 3.2 Flash (free)",
           "reasoning": true
         },
         {
@@ -134558,7 +134574,7 @@
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.2,
-            "cacheWrite": 4,
+            "cacheWrite": 5,
             "input": 4,
             "output": 20
           },
@@ -137315,10 +137331,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.020625,
+            "cacheRead": 0.033,
             "cacheWrite": 0,
-            "input": 0.0825,
-            "output": 0.33
+            "input": 0.132,
+            "output": 0.528
           },
           "id": "tencent/hy3",
           "input": [
@@ -137364,10 +137380,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.0378,
+            "cacheRead": 0.042,
             "cacheWrite": 0,
-            "input": 0.7506,
-            "output": 2.2509
+            "input": 0.834,
+            "output": 2.501
           },
           "id": "tencent/hy4-preview",
           "input": [
@@ -149575,7 +149591,7 @@
           "contextWindow": 1048576,
           "cost": {
             "cacheRead": 0.2,
-            "cacheWrite": 4,
+            "cacheWrite": 5,
             "input": 4,
             "output": 20
           },
@@ -153625,5 +153641,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "4cffd43ee043275f6a4c693aaacee8d8e5a61288"
+  "sourceCommit": "41d0dec31bfc67480c9108004a935b2f95e606e5"
 }
