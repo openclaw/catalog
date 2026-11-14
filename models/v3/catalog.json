@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794673564620,
+  "generatedAt": 1794688009651,
   "models": [
     {
       "id": "abliterated-model",
@@ -2963,7 +2963,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3",
       "pricing": {
         "cacheRead": 0.28500000000000003,
@@ -3475,6 +3475,28 @@
       "reasoning": true
     },
     {
+      "id": "thinkingmachines/Inkling-2-Small",
+      "provider": "deepinfra",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Inkling 2 Small",
+      "pricing": {
+        "cacheRead": 0.028499999999999998,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.285,
+        "output": 0.95,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "thinkingmachines/Inkling-Small",
       "provider": "deepinfra",
       "contextWindow": 524288,
@@ -3482,7 +3504,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 524288,
       "name": "Inkling Small",
       "pricing": {
         "cacheRead": 0.099999999,
@@ -4009,7 +4031,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3",
       "pricing": {
         "cacheRead": 0.3,
@@ -4031,7 +4053,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3.1 Pro",
       "pricing": {
         "cacheRead": 0.2,
@@ -4355,7 +4377,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi Fast Latest",
       "pricing": {
         "cacheRead": 0.45,
@@ -4377,7 +4399,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3 Fast",
       "pricing": {
         "cacheRead": 0.45,
@@ -4399,7 +4421,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3 Spot",
       "pricing": {
         "cacheRead": 0.21,
@@ -4421,7 +4443,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi Latest",
       "pricing": {
         "cacheRead": 0.3,
@@ -7852,18 +7874,18 @@
     {
       "id": "deepseek/deepseek-r1-0528",
       "provider": "kilocode",
-      "contextWindow": 163840,
+      "contextWindow": 128000,
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 32000,
       "name": "DeepSeek R1 0528",
       "pricing": {
-        "cacheRead": 0.35,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.5,
-        "output": 2.15,
+        "input": 0.571,
+        "output": 2.286,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8675,11 +8697,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.006,
+        "cacheRead": 0.009,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.013,
-        "output": 0.039,
+        "input": 0.018,
+        "output": 0.053,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9730,11 +9752,11 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.0075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -12722,7 +12744,7 @@
         "cacheRead": 0.003,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.05,
+        "input": 0.06,
         "output": 0.5,
         "source": "modelsDev",
         "status": "known",
@@ -14086,11 +14108,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14150,11 +14172,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14873,7 +14895,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 182476,
       "name": "GLM-5.1",
       "pricing": {
         "cacheRead": 0.26,
@@ -15925,7 +15947,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 131072,
       "name": "Ministral 3 3B",
       "pricing": {
         "cacheRead": 0.01,
@@ -18429,7 +18451,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 131072,
       "name": "GPT OSS 20B",
       "pricing": {
         "status": "unknown"
@@ -18754,7 +18776,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3.1 Pro",
       "pricing": {
         "status": "unknown"
@@ -22922,7 +22944,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3",
       "pricing": {
         "cacheRead": 0.3,
@@ -22944,7 +22966,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3.1 Pro",
       "pricing": {
         "cacheRead": 0.2,
@@ -33888,7 +33910,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 1048576,
       "name": "Kimi K3",
       "pricing": {
         "status": "unknown"
@@ -35747,12 +35769,6 @@
       "output": 4.05,
       "source": "deepinfra"
     },
-    "deepinfra/thinkingmachines/Inkling-2-Small": {
-      "cacheRead": 0.028499999999999998,
-      "input": 0.285,
-      "output": 0.95,
-      "source": "deepinfra"
-    },
     "deepinfra/XiaomiMiMo/MiMo-V2.5": {
       "cacheRead": 0.0026599999999999996,
       "input": 0.13299999999999998,
@@ -36354,9 +36370,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.17,
-      "output": 0.25,
+      "cacheRead": 0.069,
+      "input": 0.077,
+      "output": 0.114,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -41231,9 +41247,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.16999999999999998,
-      "output": 0.25,
+      "cacheRead": 0.12100000000000001,
+      "input": 0.134,
+      "output": 0.197,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -42111,9 +42127,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
+      "cacheRead": 0.117,
+      "input": 0.34700000000000003,
+      "output": 1.068,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -43905,7 +43921,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "1ac07b333581ff06e7d323015dc5912247415d4b",
+  "sourceCommit": "bb905f76e55de2934e868434ea23c345893cdc6c",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -73040,9 +73056,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.16999999999999998,
-      "output": 0.25,
+      "cacheRead": 0.12100000000000001,
+      "input": 0.134,
+      "output": 0.197,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -73920,9 +73936,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
+      "cacheRead": 0.117,
+      "input": 0.34700000000000003,
+      "output": 1.068,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
