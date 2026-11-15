@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794716820538,
+  "generatedAt": 1794731219113,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -28935,8 +28935,9 @@
       "output": 0.95
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-r1-0528": {
-      "input": 0.5710000000000001,
-      "output": 2.2859999999999996
+      "cacheRead": 0.35,
+      "input": 0.5,
+      "output": 2.1500000000000004
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v3.1-terminus": {
       "input": 0.27,
@@ -28987,14 +28988,14 @@
       "output": 0.20279999999999998
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.01,
-      "input": 0.038000000000000006,
-      "output": 0.5
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
       "cacheRead": 0.002,
-      "input": 0.045,
-      "output": 0.25
+      "input": 0.023,
+      "output": 0.19999999999999998
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -29671,13 +29672,13 @@
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.2375,
+      "input": 0.22319999999999998,
       "output": 8.4114
     },
     "cloudflare-ai-gateway/openrouter/moonshotai/kimi-k3.1-pro:batch": {
-      "cacheRead": 0.111,
-      "input": 0.346,
-      "output": 4.41
+      "cacheRead": 0.088,
+      "input": 0.275,
+      "output": 4.125
     },
     "cloudflare-ai-gateway/openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -29746,7 +29747,7 @@
     "cloudflare-ai-gateway/openrouter/nvidia/nemotron-3.5-super-vl": {
       "cacheRead": 0.02,
       "input": 0.15,
-      "output": 0.47
+      "output": 0.5
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-3.5-turbo-0613": {
       "input": 1,
@@ -31289,9 +31290,9 @@
       "output": 3.5999999999999996
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.094,
-      "input": 0.10400000000000001,
-      "output": 0.153
+      "cacheRead": 0.08,
+      "input": 0.08900000000000001,
+      "output": 0.131
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -32114,9 +32115,9 @@
       "output": 8.8
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.109,
+      "input": 0.322,
+      "output": 0.989
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -47881,6 +47882,16 @@
       "input": 4.4,
       "output": 22
     },
+    "inception/mercury-2": {
+      "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 0.75
+    },
+    "inception/mercury-2.5": {
+      "cacheRead": 0.02,
+      "input": 0.19999999999999998,
+      "output": 0.75
+    },
     "inferenceapis/deepseek-ai/DeepSeek-V3": {
       "cacheRead": 0.04,
       "input": 0.19,
@@ -63332,6 +63343,16 @@
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
     },
+    "kilocode/inception/mercury-2": {
+      "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 0.75
+    },
+    "kilocode/inception/mercury-2.5": {
+      "cacheRead": 0.02,
+      "input": 0.19999999999999998,
+      "output": 0.75
+    },
     "kilocode/inference-net/schematron-v2-small": {
       "cacheRead": 0.05,
       "input": 0.05,
@@ -68226,8 +68247,9 @@
       "output": 0.95
     },
     "kilocode/openrouter/deepseek/deepseek-r1-0528": {
-      "input": 0.5710000000000001,
-      "output": 2.2859999999999996
+      "cacheRead": 0.35,
+      "input": 0.5,
+      "output": 2.1500000000000004
     },
     "kilocode/openrouter/deepseek/deepseek-v3.1-terminus": {
       "input": 0.27,
@@ -68278,14 +68300,14 @@
       "output": 0.20279999999999998
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.01,
-      "input": 0.038000000000000006,
-      "output": 0.5
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
       "cacheRead": 0.002,
-      "input": 0.045,
-      "output": 0.25
+      "input": 0.023,
+      "output": 0.19999999999999998
     },
     "kilocode/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -68962,13 +68984,13 @@
     },
     "kilocode/openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.2375,
+      "input": 0.22319999999999998,
       "output": 8.4114
     },
     "kilocode/openrouter/moonshotai/kimi-k3.1-pro:batch": {
-      "cacheRead": 0.111,
-      "input": 0.346,
-      "output": 4.41
+      "cacheRead": 0.088,
+      "input": 0.275,
+      "output": 4.125
     },
     "kilocode/openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -69037,7 +69059,7 @@
     "kilocode/openrouter/nvidia/nemotron-3.5-super-vl": {
       "cacheRead": 0.02,
       "input": 0.15,
-      "output": 0.47
+      "output": 0.5
     },
     "kilocode/openrouter/openai/gpt-3.5-turbo-0613": {
       "input": 1,
@@ -70580,9 +70602,9 @@
       "output": 3.5999999999999996
     },
     "kilocode/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.094,
-      "input": 0.10400000000000001,
-      "output": 0.153
+      "cacheRead": 0.08,
+      "input": 0.08900000000000001,
+      "output": 0.131
     },
     "kilocode/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -71405,9 +71427,9 @@
       "output": 8.8
     },
     "kilocode/openrouter/z-ai/glm-5.3:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.109,
+      "input": 0.322,
+      "output": 0.989
     },
     "kilocode/openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -72799,9 +72821,9 @@
       ]
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.057,
-      "input": 0.063,
-      "output": 0.093
+      "cacheRead": 0.153,
+      "input": 0.17,
+      "output": 0.25
     },
     "kilocode/qwen/qwen3.6-max-preview": {
       "cacheRead": 0.13,
@@ -84765,8 +84787,9 @@
       "output": 0.95
     },
     "openrouter/deepseek/deepseek-r1-0528": {
-      "input": 0.5710000000000001,
-      "output": 2.2859999999999996
+      "cacheRead": 0.35,
+      "input": 0.5,
+      "output": 2.1500000000000004
     },
     "openrouter/deepseek/deepseek-v3.1-terminus": {
       "input": 0.27,
@@ -84817,14 +84840,14 @@
       "output": 0.20279999999999998
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.01,
-      "input": 0.038000000000000006,
-      "output": 0.5
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
       "cacheRead": 0.002,
-      "input": 0.045,
-      "output": 0.25
+      "input": 0.023,
+      "output": 0.19999999999999998
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -85501,13 +85524,13 @@
     },
     "openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.2375,
+      "input": 0.22319999999999998,
       "output": 8.4114
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
-      "cacheRead": 0.111,
-      "input": 0.346,
-      "output": 4.41
+      "cacheRead": 0.088,
+      "input": 0.275,
+      "output": 4.125
     },
     "openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -85576,7 +85599,7 @@
     "openrouter/nvidia/nemotron-3.5-super-vl": {
       "cacheRead": 0.02,
       "input": 0.15,
-      "output": 0.47
+      "output": 0.5
     },
     "openrouter/openai/gpt-3.5-turbo-0613": {
       "input": 1,
@@ -87119,9 +87142,9 @@
       "output": 3.5999999999999996
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.094,
-      "input": 0.10400000000000001,
-      "output": 0.153
+      "cacheRead": 0.08,
+      "input": 0.08900000000000001,
+      "output": 0.131
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -87944,9 +87967,9 @@
       "output": 8.8
     },
     "openrouter/z-ai/glm-5.3:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.109,
+      "input": 0.322,
+      "output": 0.989
     },
     "openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -108970,6 +108993,16 @@
       "input": 0.19999999999999998,
       "output": 0.19999999999999998
     },
+    "vercel-ai-gateway/inception/mercury-2": {
+      "cacheRead": 0.024999999999999998,
+      "input": 0.25,
+      "output": 0.75
+    },
+    "vercel-ai-gateway/inception/mercury-2.5": {
+      "cacheRead": 0.02,
+      "input": 0.19999999999999998,
+      "output": 0.75
+    },
     "vercel-ai-gateway/inference-net/schematron-v2-small": {
       "cacheRead": 0.05,
       "input": 0.05,
@@ -113858,8 +113891,9 @@
       "output": 0.95
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-r1-0528": {
-      "input": 0.5710000000000001,
-      "output": 2.2859999999999996
+      "cacheRead": 0.35,
+      "input": 0.5,
+      "output": 2.1500000000000004
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v3.1-terminus": {
       "input": 0.27,
@@ -113910,14 +113944,14 @@
       "output": 0.20279999999999998
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.01,
-      "input": 0.038000000000000006,
-      "output": 0.5
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
       "cacheRead": 0.002,
-      "input": 0.045,
-      "output": 0.25
+      "input": 0.023,
+      "output": 0.19999999999999998
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4.1-flash:batch": {
       "cacheRead": 0.00336,
@@ -114594,13 +114628,13 @@
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3.1-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.2375,
+      "input": 0.22319999999999998,
       "output": 8.4114
     },
     "vercel-ai-gateway/openrouter/moonshotai/kimi-k3.1-pro:batch": {
-      "cacheRead": 0.111,
-      "input": 0.346,
-      "output": 4.41
+      "cacheRead": 0.088,
+      "input": 0.275,
+      "output": 4.125
     },
     "vercel-ai-gateway/openrouter/morph/morph-v3-fast": {
       "input": 0.7999999999999999,
@@ -114669,7 +114703,7 @@
     "vercel-ai-gateway/openrouter/nvidia/nemotron-3.5-super-vl": {
       "cacheRead": 0.02,
       "input": 0.15,
-      "output": 0.47
+      "output": 0.5
     },
     "vercel-ai-gateway/openrouter/openai/gpt-3.5-turbo-0613": {
       "input": 1,
@@ -116212,9 +116246,9 @@
       "output": 3.5999999999999996
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.094,
-      "input": 0.10400000000000001,
-      "output": 0.153
+      "cacheRead": 0.08,
+      "input": 0.08900000000000001,
+      "output": 0.131
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -117037,9 +117071,9 @@
       "output": 8.8
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.109,
+      "input": 0.322,
+      "output": 0.989
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5v-turbo": {
       "cacheRead": 0.24,
@@ -133847,8 +133881,8 @@
           "cost": {
             "cacheRead": 0,
             "cacheWrite": 0,
-            "input": 0.08,
-            "output": 0.16
+            "input": 0.064,
+            "output": 0.128
           },
           "id": "google/gemma-3-27b-it",
           "input": [
@@ -133862,10 +133896,10 @@
         {
           "contextWindow": 262144,
           "cost": {
-            "cacheRead": 0.009,
+            "cacheRead": 0.02,
             "cacheWrite": 0,
-            "input": 0.019,
-            "output": 0.056
+            "input": 0.039,
+            "output": 0.117
           },
           "id": "google/gemma-4-26b-a4b-it",
           "input": [
@@ -133920,38 +133954,6 @@
           "reasoning": true
         },
         {
-          "contextWindow": 128000,
-          "cost": {
-            "cacheRead": 0.025,
-            "cacheWrite": 0,
-            "input": 0.25,
-            "output": 0.75
-          },
-          "id": "inception/mercury-2",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 128000,
-          "name": "Mercury 2 (retires Nov 15)",
-          "reasoning": true
-        },
-        {
-          "contextWindow": 260000,
-          "cost": {
-            "cacheRead": 0.004,
-            "cacheWrite": 0,
-            "input": 0.04,
-            "output": 0.15
-          },
-          "id": "inception/mercury-2.5",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Mercury 2.5 (retires Nov 15)",
-          "reasoning": true
-        },
-        {
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.01,
@@ -133966,22 +133968,6 @@
           "maxTokens": 131072,
           "name": "Mercury 3",
           "reasoning": true
-        },
-        {
-          "contextWindow": 32000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.25,
-            "output": 1
-          },
-          "id": "inception/mercury-coder-small",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 16384,
-          "name": "Mercury Coder Small Beta (retires Nov 15)",
-          "reasoning": false
         },
         {
           "contextWindow": 262144,
@@ -134671,10 +134657,10 @@
         {
           "contextWindow": 1048576,
           "cost": {
-            "cacheRead": 0.0075,
+            "cacheRead": 0.015,
             "cacheWrite": 0,
-            "input": 0.075,
-            "output": 0.3
+            "input": 0.15,
+            "output": 0.6
           },
           "id": "minimax/minimax-m3.1-flash",
           "input": [
@@ -135269,8 +135255,8 @@
           "cost": {
             "cacheRead": 0.2,
             "cacheWrite": 0,
-            "input": 2,
-            "output": 10
+            "input": 0.2375,
+            "output": 8.4114
           },
           "id": "moonshotai/kimi-k3.1-pro",
           "input": [
@@ -138570,12 +138556,12 @@
           "reasoning": true
         },
         {
-          "contextWindow": 204800,
+          "contextWindow": 202752,
           "cost": {
-            "cacheRead": 0.11,
+            "cacheRead": 0.08,
             "cacheWrite": 0,
-            "input": 0.6,
-            "output": 2.2
+            "input": 0.4,
+            "output": 1.75
           },
           "id": "z-ai/glm-4.7",
           "input": [
@@ -149696,38 +149682,6 @@
           "reasoning": true
         },
         {
-          "contextWindow": 128000,
-          "cost": {
-            "cacheRead": 0.025,
-            "cacheWrite": 0,
-            "input": 0.25,
-            "output": 0.75
-          },
-          "id": "inception/mercury-2",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 50000,
-          "name": "Mercury 2",
-          "reasoning": true
-        },
-        {
-          "contextWindow": 260000,
-          "cost": {
-            "cacheRead": 0.004,
-            "cacheWrite": 0,
-            "input": 0.04,
-            "output": 0.15
-          },
-          "id": "inception/mercury-2.5",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 65536,
-          "name": "Mercury 2.5",
-          "reasoning": true
-        },
-        {
           "contextWindow": 1000000,
           "cost": {
             "cacheRead": 0.01,
@@ -149742,22 +149696,6 @@
           "maxTokens": 131072,
           "name": "Mercury 3",
           "reasoning": true
-        },
-        {
-          "contextWindow": 32000,
-          "cost": {
-            "cacheRead": 0,
-            "cacheWrite": 0,
-            "input": 0.25,
-            "output": 1
-          },
-          "id": "inception/mercury-coder-small",
-          "input": [
-            "text"
-          ],
-          "maxTokens": 16384,
-          "name": "Mercury Coder Small Beta",
-          "reasoning": false
         },
         {
           "contextWindow": 256000,
@@ -154702,5 +154640,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "3c6bb67f82aec52a12644933434a9d5ed7e6ed01"
+  "sourceCommit": "69c3acaca6854826a03e7e6ee2a1cf0334959282"
 }
