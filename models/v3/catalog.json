@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794759957447,
+  "generatedAt": 1794774391883,
   "models": [
     {
       "id": "abliterated-model",
@@ -8697,11 +8697,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.006,
+        "cacheRead": 0.005,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.012,
-        "output": 0.037,
+        "input": 0.01,
+        "output": 0.031,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9689,11 +9689,11 @@
       "maxTokens": 524288,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.0075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -10463,8 +10463,8 @@
         "cacheRead": 0.2,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2403,
-        "output": 8.4023,
+        "input": 2,
+        "output": 10,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13217,30 +13217,6 @@
       "reasoning": false
     },
     {
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 235929,
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking (retires Nov 15)",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.29,
-        "output": 1,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "qwen/qwen3-vl-8b-instruct",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -13973,29 +13949,6 @@
       "reasoning": true
     },
     {
-      "id": "stepfun/step-3.5-flash",
-      "provider": "kilocode",
-      "contextWindow": 262144,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 65536,
-      "name": "Step 3.5 Flash",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.1,
-        "output": 0.3,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "stepfun/step-3.7-flash",
       "provider": "kilocode",
       "contextWindow": 256000,
@@ -14049,11 +14002,11 @@
       "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
-        "cacheRead": 0.033,
+        "cacheRead": 0.020625,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.132,
-        "output": 0.528,
+        "input": 0.0825,
+        "output": 0.33,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14113,11 +14066,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.0378,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7506,
+        "output": 2.2509,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -36654,9 +36607,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "cacheRead": 0.019,
-      "input": 0.021,
-      "output": 0.031,
+      "cacheRead": 0.028,
+      "input": 0.032,
+      "output": 0.046,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -36697,11 +36650,6 @@
     "kilocode/scaledown/summarize": {
       "input": 0.05,
       "output": 0,
-      "source": "modelsDev"
-    },
-    "kilocode/tencent/hunyuan-a13b-instruct": {
-      "input": 0.14,
-      "output": 0.57,
       "source": "modelsDev"
     },
     "kilocode/tencent/hy-mt2-1.8b": {
@@ -38972,9 +38920,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
-      "cacheRead": 0.004,
-      "input": 0.038000000000000006,
-      "output": 0.33599999999999997,
+      "cacheRead": 0.003,
+      "input": 0.036,
+      "output": 0.32099999999999995,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -39748,7 +39696,7 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.16,
-      "input": 0.6,
+      "input": 0.7124999999999999,
       "output": 3.5,
       "source": "openRouter"
     },
@@ -41527,9 +41475,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.083,
-      "input": 0.092,
-      "output": 0.136,
+      "cacheRead": 0.027,
+      "input": 0.031,
+      "output": 0.045,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -44191,7 +44139,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "febd4dcc21c4ecb590227eda7b2488b382f8eae5",
+  "sourceCommit": "113d6243f36094de453622a9e5cbb25da029b83c",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -70791,9 +70739,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
-      "cacheRead": 0.004,
-      "input": 0.038000000000000006,
-      "output": 0.33599999999999997,
+      "cacheRead": 0.003,
+      "input": 0.036,
+      "output": 0.32099999999999995,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -71567,7 +71515,7 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.16,
-      "input": 0.6,
+      "input": 0.7124999999999999,
       "output": 3.5,
       "source": "openRouter"
     },
@@ -73346,9 +73294,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.083,
-      "input": 0.092,
-      "output": 0.136,
+      "cacheRead": 0.027,
+      "input": 0.031,
+      "output": 0.045,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
