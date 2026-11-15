@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794688009651,
+  "generatedAt": 1794703613628,
   "minVersion": "2026.7.0",
   "pricing": {
     "ai21.j2-mid-v1": {
@@ -20910,6 +20910,11 @@
       "input": 2,
       "output": 10
     },
+    "cloudflare-ai-gateway/github-copilot/gemini-4-hydrogen": {
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 7.5
+    },
     "cloudflare-ai-gateway/github-copilot/gpt-5-mini": {
       "cacheRead": 0.025,
       "input": 0.25,
@@ -22253,6 +22258,10 @@
       "input": 0.3,
       "output": 2.5
     },
+    "cloudflare-ai-gateway/google-gemini-cli/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5
+    },
     "cloudflare-ai-gateway/google-gemini-cli/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -23027,6 +23036,10 @@
       "input": 0.3,
       "output": 2.5
     },
+    "cloudflare-ai-gateway/google/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5
+    },
     "cloudflare-ai-gateway/google/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -23298,6 +23311,10 @@
       "input": 3,
       "output": 15
     },
+    "cloudflare-ai-gateway/huggingface/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10
+    },
     "cloudflare-ai-gateway/huggingface/openai/gpt-oss-120b": {
       "input": 0.25,
       "output": 0.69
@@ -23425,6 +23442,10 @@
     "cloudflare-ai-gateway/huggingface/thinkingmachines/Inkling": {
       "input": 1,
       "output": 4.05
+    },
+    "cloudflare-ai-gateway/huggingface/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1
     },
     "cloudflare-ai-gateway/huggingface/thinkingmachines/Inkling-Small": {
       "input": 0.5,
@@ -28936,9 +28957,9 @@
       "output": 0.18
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0434,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18
     },
     "cloudflare-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.012,
@@ -30254,26 +30275,26 @@
       ]
     },
     "cloudflare-ai-gateway/openrouter/openai/gpt-5.6-sol": {
-      "cacheRead": 0.39999999999999997,
-      "cacheWrite": 5,
-      "input": 4,
-      "output": 20,
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 20,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "input": 4.4,
+          "output": 22,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
-          "cacheWrite": 10,
-          "input": 8,
-          "output": 30,
+          "cacheRead": 0.88,
+          "cacheWrite": 11,
+          "input": 8.8,
+          "output": 33,
           "range": [
             272001
           ]
@@ -31268,9 +31289,9 @@
       "output": 3.5999999999999996
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.134,
-      "output": 0.197
+      "cacheRead": 0.057,
+      "input": 0.063,
+      "output": 0.093
     },
     "cloudflare-ai-gateway/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -31636,9 +31657,9 @@
       "output": 0.295
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -31651,9 +31672,9 @@
       "output": 1.2505
     },
     "cloudflare-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501
     },
     "cloudflare-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -32063,9 +32084,9 @@
       "output": 6.8
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916
     },
     "cloudflare-ai-gateway/openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.079,
@@ -36289,42 +36310,27 @@
       "input": 0.5,
       "output": 3
     },
-    "cloudflare-ai-gateway/synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 1.2
-    },
     "cloudflare-ai-gateway/synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
       "cacheRead": 0.03,
       "input": 0.6,
       "output": 1.2
-    },
-    "cloudflare-ai-gateway/synthetic/hf:MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.6,
-      "input": 0.6,
-      "output": 1.2
-    },
-    "cloudflare-ai-gateway/synthetic/hf:moonshotai/Kimi-K2.7-Code": {
-      "cacheRead": 0.95,
-      "input": 0.95,
-      "output": 4
     },
     "cloudflare-ai-gateway/synthetic/hf:moonshotai/Kimi-K3": {
       "cacheRead": 0.45,
       "input": 3,
       "output": 15
     },
-    "cloudflare-ai-gateway/synthetic/hf:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1
+    "cloudflare-ai-gateway/synthetic/hf:moonshotai/Kimi-K3.1-Pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10
     },
     "cloudflare-ai-gateway/synthetic/hf:openai/gpt-oss-120b": {
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.1
     },
-    "cloudflare-ai-gateway/synthetic/hf:Qwen/Qwen3.6-27B": {
+    "cloudflare-ai-gateway/synthetic/hf:Qwen/Qwen3.8-27B": {
       "cacheRead": 0.45,
       "input": 0.45,
       "output": 3.6
@@ -36333,11 +36339,6 @@
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.5
-    },
-    "cloudflare-ai-gateway/synthetic/hf:zai-org/GLM-5.2": {
-      "cacheRead": 1.4,
-      "input": 1.4,
-      "output": 4.4
     },
     "cloudflare-ai-gateway/synthetic/hf:zai-org/GLM-5.3": {
       "cacheRead": 0.26,
@@ -36349,15 +36350,102 @@
       "input": 0.15,
       "output": 0.5
     },
+    "cloudflare-ai-gateway/tencent-token-plan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "cloudflare-ai-gateway/tencent-token-plan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501
     },
     "cloudflare-ai-gateway/tencent-token-plan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "cloudflare-ai-gateway/tencent-token-plan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "cloudflare-ai-gateway/tencent-tokenhub/hy4": {
       "cacheRead": 0.042,
@@ -36369,15 +36457,102 @@
       "input": 0.834,
       "output": 2.501
     },
+    "cloudflare-ai-gateway/tencent-tokenplan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "cloudflare-ai-gateway/tencent-tokenplan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501
     },
     "cloudflare-ai-gateway/tencent-tokenplan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "cloudflare-ai-gateway/tencent-tokenplan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "cloudflare-ai-gateway/tencent/deepseek-v4-flash": {
       "cacheRead": 0.0028,
@@ -44988,6 +45163,11 @@
       "input": 2,
       "output": 10
     },
+    "github-copilot/gemini-4-hydrogen": {
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 7.5
+    },
     "github-copilot/gpt-5-mini": {
       "cacheRead": 0.025,
       "input": 0.25,
@@ -46268,6 +46448,10 @@
       "input": 0.3,
       "output": 2.5
     },
+    "google-gemini-cli/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5
+    },
     "google-gemini-cli/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -46897,6 +47081,10 @@
       "input": 0.2,
       "output": 0
     },
+    "google/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5
+    },
     "google/lyria-3-clip-preview": {
       "input": 0,
       "output": 0
@@ -47427,6 +47615,10 @@
       "input": 3,
       "output": 15
     },
+    "huggingface/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10
+    },
     "huggingface/openai/gpt-oss-20b": {
       "input": 0.1,
       "output": 0.5
@@ -47550,6 +47742,10 @@
     "huggingface/thinkingmachines/Inkling": {
       "input": 1,
       "output": 4.05
+    },
+    "huggingface/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1
     },
     "huggingface/thinkingmachines/Inkling-Small": {
       "input": 0.5,
@@ -60578,6 +60774,11 @@
       "input": 2,
       "output": 10
     },
+    "kilocode/github-copilot/gemini-4-hydrogen": {
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 7.5
+    },
     "kilocode/github-copilot/gpt-5-mini": {
       "cacheRead": 0.025,
       "input": 0.25,
@@ -61921,6 +62122,10 @@
       "input": 0.3,
       "output": 2.5
     },
+    "kilocode/google-gemini-cli/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5
+    },
     "kilocode/google-gemini-cli/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -62873,6 +63078,10 @@
       "input": 3,
       "output": 15
     },
+    "kilocode/huggingface/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10
+    },
     "kilocode/huggingface/openai/gpt-oss-120b": {
       "input": 0.25,
       "output": 0.69
@@ -63000,6 +63209,10 @@
     "kilocode/huggingface/thinkingmachines/Inkling": {
       "input": 1,
       "output": 4.05
+    },
+    "kilocode/huggingface/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1
     },
     "kilocode/huggingface/thinkingmachines/Inkling-Small": {
       "input": 0.5,
@@ -68040,9 +68253,9 @@
       "output": 0.18
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0434,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18
     },
     "kilocode/openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.012,
@@ -69358,26 +69571,26 @@
       ]
     },
     "kilocode/openrouter/openai/gpt-5.6-sol": {
-      "cacheRead": 0.39999999999999997,
-      "cacheWrite": 5,
-      "input": 4,
-      "output": 20,
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 20,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "input": 4.4,
+          "output": 22,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
-          "cacheWrite": 10,
-          "input": 8,
-          "output": 30,
+          "cacheRead": 0.88,
+          "cacheWrite": 11,
+          "input": 8.8,
+          "output": 33,
           "range": [
             272001
           ]
@@ -70372,9 +70585,9 @@
       "output": 3.5999999999999996
     },
     "kilocode/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.134,
-      "output": 0.197
+      "cacheRead": 0.057,
+      "input": 0.063,
+      "output": 0.093
     },
     "kilocode/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -70740,9 +70953,9 @@
       "output": 0.295
     },
     "kilocode/openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "kilocode/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -70755,9 +70968,9 @@
       "output": 1.2505
     },
     "kilocode/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501
     },
     "kilocode/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -71167,9 +71380,9 @@
       "output": 6.8
     },
     "kilocode/openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916
     },
     "kilocode/openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.079,
@@ -75103,42 +75316,27 @@
       "input": 0.5,
       "output": 3
     },
-    "kilocode/synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 1.2
-    },
     "kilocode/synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
       "cacheRead": 0.03,
       "input": 0.6,
       "output": 1.2
-    },
-    "kilocode/synthetic/hf:MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.6,
-      "input": 0.6,
-      "output": 1.2
-    },
-    "kilocode/synthetic/hf:moonshotai/Kimi-K2.7-Code": {
-      "cacheRead": 0.95,
-      "input": 0.95,
-      "output": 4
     },
     "kilocode/synthetic/hf:moonshotai/Kimi-K3": {
       "cacheRead": 0.45,
       "input": 3,
       "output": 15
     },
-    "kilocode/synthetic/hf:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1
+    "kilocode/synthetic/hf:moonshotai/Kimi-K3.1-Pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10
     },
     "kilocode/synthetic/hf:openai/gpt-oss-120b": {
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.1
     },
-    "kilocode/synthetic/hf:Qwen/Qwen3.6-27B": {
+    "kilocode/synthetic/hf:Qwen/Qwen3.8-27B": {
       "cacheRead": 0.45,
       "input": 0.45,
       "output": 3.6
@@ -75147,11 +75345,6 @@
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.5
-    },
-    "kilocode/synthetic/hf:zai-org/GLM-5.2": {
-      "cacheRead": 1.4,
-      "input": 1.4,
-      "output": 4.4
     },
     "kilocode/synthetic/hf:zai-org/GLM-5.3": {
       "cacheRead": 0.26,
@@ -75163,15 +75356,102 @@
       "input": 0.15,
       "output": 0.5
     },
+    "kilocode/tencent-token-plan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "kilocode/tencent-token-plan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "kilocode/tencent-token-plan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "kilocode/tencent-token-plan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "kilocode/tencent-token-plan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501
     },
     "kilocode/tencent-token-plan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "kilocode/tencent-token-plan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "kilocode/tencent-token-plan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "kilocode/tencent-token-plan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "kilocode/tencent-token-plan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "kilocode/tencent-token-plan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "kilocode/tencent-tokenhub/hy4": {
       "cacheRead": 0.042,
@@ -75183,15 +75463,102 @@
       "input": 0.834,
       "output": 2.501
     },
+    "kilocode/tencent-tokenplan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "kilocode/tencent-tokenplan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "kilocode/tencent-tokenplan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "kilocode/tencent-tokenplan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "kilocode/tencent-tokenplan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501
     },
     "kilocode/tencent-tokenplan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "kilocode/tencent-tokenplan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "kilocode/tencent-tokenplan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "kilocode/tencent-tokenplan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "kilocode/tencent-tokenplan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "kilocode/tencent-tokenplan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "kilocode/tencent/deepseek-v4-flash": {
       "cacheRead": 0.0028,
@@ -84430,9 +84797,9 @@
       "output": 0.18
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0434,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.012,
@@ -85748,26 +86115,26 @@
       ]
     },
     "openrouter/openai/gpt-5.6-sol": {
-      "cacheRead": 0.39999999999999997,
-      "cacheWrite": 5,
-      "input": 4,
-      "output": 20,
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 20,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "input": 4.4,
+          "output": 22,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
-          "cacheWrite": 10,
-          "input": 8,
-          "output": 30,
+          "cacheRead": 0.88,
+          "cacheWrite": 11,
+          "input": 8.8,
+          "output": 33,
           "range": [
             272001
           ]
@@ -86762,9 +87129,9 @@
       "output": 3.5999999999999996
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.134,
-      "output": 0.197
+      "cacheRead": 0.057,
+      "input": 0.063,
+      "output": 0.093
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -87130,9 +87497,9 @@
       "output": 0.295
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -87145,9 +87512,9 @@
       "output": 1.2505
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -87557,9 +87924,9 @@
       "output": 6.8
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916
     },
     "openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.079,
@@ -91664,42 +92031,27 @@
       "input": 0.5,
       "output": 3
     },
-    "synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 1.2
-    },
     "synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
       "cacheRead": 0.03,
       "input": 0.6,
       "output": 1.2
-    },
-    "synthetic/hf:MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.6,
-      "input": 0.6,
-      "output": 1.2
-    },
-    "synthetic/hf:moonshotai/Kimi-K2.7-Code": {
-      "cacheRead": 0.95,
-      "input": 0.95,
-      "output": 4
     },
     "synthetic/hf:moonshotai/Kimi-K3": {
       "cacheRead": 0.45,
       "input": 3,
       "output": 15
     },
-    "synthetic/hf:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1
+    "synthetic/hf:moonshotai/Kimi-K3.1-Pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10
     },
     "synthetic/hf:openai/gpt-oss-120b": {
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.1
     },
-    "synthetic/hf:Qwen/Qwen3.6-27B": {
+    "synthetic/hf:Qwen/Qwen3.8-27B": {
       "cacheRead": 0.45,
       "input": 0.45,
       "output": 3.6
@@ -91708,11 +92060,6 @@
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.5
-    },
-    "synthetic/hf:zai-org/GLM-5.2": {
-      "cacheRead": 1.4,
-      "input": 1.4,
-      "output": 4.4
     },
     "synthetic/hf:zai-org/GLM-5.3": {
       "cacheRead": 0.26,
@@ -91724,6 +92071,26 @@
       "input": 0.15,
       "output": 0.5
     },
+    "tencent-token-plan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "tencent-token-plan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "tencent-token-plan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "tencent-token-plan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "tencent-token-plan/hy3": {
       "input": 0,
       "output": 0
@@ -91734,9 +92101,76 @@
       "output": 2.501
     },
     "tencent-token-plan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "tencent-token-plan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "tencent-token-plan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "tencent-token-plan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "tencent-token-plan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "tencent-token-plan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "tencent-tokenplan/hy3": {
       "input": 0,
@@ -105974,6 +106408,11 @@
       "input": 2,
       "output": 10
     },
+    "vercel-ai-gateway/github-copilot/gemini-4-hydrogen": {
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 7.5
+    },
     "vercel-ai-gateway/github-copilot/gpt-5-mini": {
       "cacheRead": 0.025,
       "input": 0.25,
@@ -107317,6 +107756,10 @@
       "input": 0.3,
       "output": 2.5
     },
+    "vercel-ai-gateway/google-gemini-cli/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5
+    },
     "vercel-ai-gateway/google-gemini-cli/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -108283,6 +108726,10 @@
       "input": 3,
       "output": 15
     },
+    "vercel-ai-gateway/huggingface/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10
+    },
     "vercel-ai-gateway/huggingface/openai/gpt-oss-120b": {
       "input": 0.25,
       "output": 0.69
@@ -108410,6 +108857,10 @@
     "vercel-ai-gateway/huggingface/thinkingmachines/Inkling": {
       "input": 1,
       "output": 4.05
+    },
+    "vercel-ai-gateway/huggingface/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1
     },
     "vercel-ai-gateway/huggingface/thinkingmachines/Inkling-Small": {
       "input": 0.5,
@@ -113444,9 +113895,9 @@
       "output": 0.18
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0434,
-      "output": 0.3
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18
     },
     "vercel-ai-gateway/openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "cacheRead": 0.012,
@@ -114762,26 +115213,26 @@
       ]
     },
     "vercel-ai-gateway/openrouter/openai/gpt-5.6-sol": {
-      "cacheRead": 0.39999999999999997,
-      "cacheWrite": 5,
-      "input": 4,
-      "output": 20,
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 20,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "input": 4.4,
+          "output": 22,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
-          "cacheWrite": 10,
-          "input": 8,
-          "output": 30,
+          "cacheRead": 0.88,
+          "cacheWrite": 11,
+          "input": 8.8,
+          "output": 33,
           "range": [
             272001
           ]
@@ -115776,9 +116227,9 @@
       "output": 3.5999999999999996
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.134,
-      "output": 0.197
+      "cacheRead": 0.057,
+      "input": 0.063,
+      "output": 0.093
     },
     "vercel-ai-gateway/openrouter/qwen/qwen3.5-flash-02-23": {
       "input": 0.065,
@@ -116144,9 +116595,9 @@
       "output": 0.295
     },
     "vercel-ai-gateway/openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999
     },
     "vercel-ai-gateway/openrouter/tencent/hy3-preview": {
       "cacheRead": 0.06,
@@ -116159,9 +116610,9 @@
       "output": 1.2505
     },
     "vercel-ai-gateway/openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501
     },
     "vercel-ai-gateway/openrouter/thedrummer/cydonia-24b-v4.1": {
       "cacheRead": 0.15,
@@ -116571,9 +117022,9 @@
       "output": 6.8
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916
     },
     "vercel-ai-gateway/openrouter/z-ai/glm-5.3": {
       "cacheRead": 0.079,
@@ -120796,42 +121247,27 @@
       "input": 0.5,
       "output": 3
     },
-    "vercel-ai-gateway/synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 1.2
-    },
     "vercel-ai-gateway/synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
       "cacheRead": 0.03,
       "input": 0.6,
       "output": 1.2
-    },
-    "vercel-ai-gateway/synthetic/hf:MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.6,
-      "input": 0.6,
-      "output": 1.2
-    },
-    "vercel-ai-gateway/synthetic/hf:moonshotai/Kimi-K2.7-Code": {
-      "cacheRead": 0.95,
-      "input": 0.95,
-      "output": 4
     },
     "vercel-ai-gateway/synthetic/hf:moonshotai/Kimi-K3": {
       "cacheRead": 0.45,
       "input": 3,
       "output": 15
     },
-    "vercel-ai-gateway/synthetic/hf:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1
+    "vercel-ai-gateway/synthetic/hf:moonshotai/Kimi-K3.1-Pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10
     },
     "vercel-ai-gateway/synthetic/hf:openai/gpt-oss-120b": {
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.1
     },
-    "vercel-ai-gateway/synthetic/hf:Qwen/Qwen3.6-27B": {
+    "vercel-ai-gateway/synthetic/hf:Qwen/Qwen3.8-27B": {
       "cacheRead": 0.45,
       "input": 0.45,
       "output": 3.6
@@ -120840,11 +121276,6 @@
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.5
-    },
-    "vercel-ai-gateway/synthetic/hf:zai-org/GLM-5.2": {
-      "cacheRead": 1.4,
-      "input": 1.4,
-      "output": 4.4
     },
     "vercel-ai-gateway/synthetic/hf:zai-org/GLM-5.3": {
       "cacheRead": 0.26,
@@ -120856,15 +121287,102 @@
       "input": 0.15,
       "output": 0.5
     },
+    "vercel-ai-gateway/tencent-token-plan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "vercel-ai-gateway/tencent-token-plan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "vercel-ai-gateway/tencent-token-plan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "vercel-ai-gateway/tencent-token-plan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "vercel-ai-gateway/tencent-token-plan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501
     },
     "vercel-ai-gateway/tencent-token-plan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "vercel-ai-gateway/tencent-token-plan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "vercel-ai-gateway/tencent-token-plan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "vercel-ai-gateway/tencent-token-plan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "vercel-ai-gateway/tencent-token-plan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "vercel-ai-gateway/tencent-token-plan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "vercel-ai-gateway/tencent-tokenhub/hy4": {
       "cacheRead": 0.042,
@@ -120876,15 +121394,102 @@
       "input": 0.834,
       "output": 2.501
     },
+    "vercel-ai-gateway/tencent-tokenplan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342
+    },
+    "vercel-ai-gateway/tencent-tokenplan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "vercel-ai-gateway/tencent-tokenplan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391
+    },
+    "vercel-ai-gateway/tencent-tokenplan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639
+    },
     "vercel-ai-gateway/tencent-tokenplan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501
     },
     "vercel-ai-gateway/tencent-tokenplan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537
+    },
+    "vercel-ai-gateway/tencent-tokenplan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306
+    },
+    "vercel-ai-gateway/tencent-tokenplan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541
+    },
+    "vercel-ai-gateway/tencent-tokenplan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171
+    },
+    "vercel-ai-gateway/tencent-tokenplan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "vercel-ai-gateway/tencent-tokenplan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "vercel-ai-gateway/tencent/deepseek-v4-flash": {
       "cacheRead": 0.0028,
@@ -125290,7 +125895,27 @@
       "input": 0,
       "output": 0
     },
+    "volcengine-coding-plan/deepseek-v4.1-flash": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-coding-plan/deepseek-v4.1-flash-economy": {
+      "input": 0,
+      "output": 0
+    },
     "volcengine-coding-plan/doubao-seed-2.0-lite": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-coding-plan/doubao-seed-2.0-mini": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-coding-plan/doubao-seed-2.1-lite": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-coding-plan/doubao-seed-2.1-pro": {
       "input": 0,
       "output": 0
     },
@@ -125314,7 +125939,15 @@
       "input": 0,
       "output": 0
     },
+    "volcengine-coding-plan/kimi-k2.8-preview": {
+      "input": 0,
+      "output": 0
+    },
     "volcengine-coding-plan/kimi-k3": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-coding-plan/kimi-k3.1-pro": {
       "input": 0,
       "output": 0
     },
@@ -125330,7 +125963,27 @@
       "input": 0,
       "output": 0
     },
+    "volcengine-plan/deepseek-v4.1-flash": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-plan/deepseek-v4.1-flash-economy": {
+      "input": 0,
+      "output": 0
+    },
     "volcengine-plan/doubao-seed-2.0-lite": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-plan/doubao-seed-2.0-mini": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-plan/doubao-seed-2.1-lite": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-plan/doubao-seed-2.1-pro": {
       "input": 0,
       "output": 0
     },
@@ -125354,7 +126007,15 @@
       "input": 0,
       "output": 0
     },
+    "volcengine-plan/kimi-k2.8-preview": {
+      "input": 0,
+      "output": 0
+    },
     "volcengine-plan/kimi-k3": {
+      "input": 0,
+      "output": 0
+    },
+    "volcengine-plan/kimi-k3.1-pro": {
       "input": 0,
       "output": 0
     },
@@ -140907,6 +141568,17 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1048576,
+          "id": "inkling-2-small",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Inkling 2 Small",
+          "reasoning": true
+        },
+        {
           "compat": {
             "supportsTools": true,
             "supportsUsageInStreaming": true
@@ -144034,6 +144706,103 @@
       "defaultModel": "hy4-preview",
       "models": [
         {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.00300262,
+            "cacheWrite": 0,
+            "input": 0.15013085,
+            "output": 0.60052342
+          },
+          "id": "deepseek/deepseek-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4.1 Flash 1017",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "id": "deepseek/deepseek-v4-pro",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4 Pro 0813",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "id": "glm-5-2",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.2",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.30026171,
+            "cacheWrite": 0,
+            "input": 1.20104683,
+            "output": 4.20366391
+          },
+          "id": "glm-5-3",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "id": "glm-5.2",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.2",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.30026171,
+            "cacheWrite": 0,
+            "input": 1.20104683,
+            "output": 4.20366391
+          },
+          "id": "glm-5.3",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "cost": {
+            "cacheRead": 0.0345301,
+            "cacheWrite": 0,
+            "input": 0.12010468,
+            "output": 0.42036639
+          },
+          "id": "glm-5.3-flash",
+          "input": [
+            "text",
+            "image",
+            "document"
+          ],
+          "maxTokens": 131072,
+          "name": "GLM-5.3-Flash",
+          "reasoning": true
+        },
+        {
           "compat": {
             "supportedReasoningEfforts": [
               "none",
@@ -144089,10 +144858,10 @@
           },
           "contextWindow": 1024000,
           "cost": {
-            "cacheRead": 0.042,
+            "cacheRead": 0.04503926,
             "cacheWrite": 0,
-            "input": 0.834,
-            "output": 2.501
+            "input": 0.90078512,
+            "output": 2.70235537
           },
           "id": "hy4-preview",
           "input": [
@@ -144100,6 +144869,133 @@
           ],
           "maxTokens": 64000,
           "name": "Hy4 preview (TokenPlan)",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 262144,
+          "cost": {
+            "cacheRead": 0.19517011,
+            "cacheWrite": 0,
+            "input": 0.97585055,
+            "output": 4.05353306
+          },
+          "id": "kimi-k2.7-code",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 262144,
+          "name": "Kimi K2.7 Code",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.30026171,
+            "cacheWrite": 0,
+            "input": 3.00261708,
+            "output": 15.01308541
+          },
+          "id": "kimi-k3",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 1048576,
+          "name": "Kimi K3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.00300262,
+            "cacheWrite": 0,
+            "input": 0.15013085,
+            "output": 0.30026171
+          },
+          "id": "mimo-v2.6-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "MiMo-V2.6-Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.06305496,
+            "cacheWrite": 0,
+            "input": 0.31527479,
+            "output": 1.26109917,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.06305496,
+                "cacheWrite": 0,
+                "input": 0.31527479,
+                "output": 1.26109917,
+                "range": [
+                  0,
+                  512000
+                ]
+              },
+              {
+                "cacheRead": 0.12610992,
+                "cacheWrite": 0,
+                "input": 0.63054959,
+                "output": 2.52219835,
+                "range": [
+                  512000
+                ]
+              }
+            ]
+          },
+          "id": "minimax-m-3-0",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 512000,
+          "name": "MiniMax-M3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "cost": {
+            "cacheRead": 0.06305496,
+            "cacheWrite": 0,
+            "input": 0.31527479,
+            "output": 1.26109917,
+            "tieredPricing": [
+              {
+                "cacheRead": 0.06305496,
+                "cacheWrite": 0,
+                "input": 0.31527479,
+                "output": 1.26109917,
+                "range": [
+                  0,
+                  512000
+                ]
+              },
+              {
+                "cacheRead": 0.12610992,
+                "cacheWrite": 0,
+                "input": 0.63054959,
+                "output": 2.52219835,
+                "range": [
+                  512000
+                ]
+              }
+            ]
+          },
+          "id": "minimax-m3",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 512000,
+          "name": "MiniMax-M3",
           "reasoning": true
         }
       ]
@@ -152871,6 +153767,61 @@
           "reasoning": true
         },
         {
+          "contextWindow": 1000000,
+          "id": "deepseek-v4.1-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4.1 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1000000,
+          "id": "deepseek-v4.1-flash-economy",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 384000,
+          "name": "DeepSeek V4.1 Flash",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 256000,
+          "id": "doubao-seed-2.0-mini",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 131072,
+          "name": "Seed 2.0 Mini",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1024000,
+          "id": "doubao-seed-2.1-lite",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 256000,
+          "name": "Seed 2.1 Lite",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1024000,
+          "id": "doubao-seed-2.1-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 256000,
+          "name": "Seed 2.1 Pro",
+          "reasoning": true
+        },
+        {
           "contextWindow": 256000,
           "cost": {
             "cacheRead": 0,
@@ -152888,7 +153839,7 @@
           "reasoning": true
         },
         {
-          "contextWindow": 256000,
+          "contextWindow": 1024000,
           "id": "doubao-seed-evolving",
           "input": [
             "text",
@@ -152941,6 +153892,17 @@
         },
         {
           "contextWindow": 1048576,
+          "id": "kimi-k2.8-preview",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 32768,
+          "name": "Kimi K2.8 Preview",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
           "id": "kimi-k3",
           "input": [
             "text",
@@ -152948,6 +153910,17 @@
           ],
           "maxTokens": 1048576,
           "name": "Kimi K3",
+          "reasoning": true
+        },
+        {
+          "contextWindow": 1048576,
+          "id": "kimi-k3.1-pro",
+          "input": [
+            "text",
+            "image"
+          ],
+          "maxTokens": 1048576,
+          "name": "Kimi K3.1 Pro",
           "reasoning": true
         }
       ]
@@ -153749,5 +154722,5 @@
     }
   },
   "schemaVersion": 1,
-  "sourceCommit": "bb905f76e55de2934e868434ea23c345893cdc6c"
+  "sourceCommit": "1ccf763467ec8068251d1a53b7d83b8cf359ed9a"
 }

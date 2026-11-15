@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794688009651,
+  "generatedAt": 1794703613628,
   "models": [
     {
       "id": "abliterated-model",
@@ -18088,6 +18088,21 @@
       "reasoning": true
     },
     {
+      "id": "inkling-2-small",
+      "provider": "ollama-cloud",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Inkling 2 Small",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "kimi-k2.6",
       "provider": "ollama-cloud",
       "compat": {
@@ -21675,6 +21690,135 @@
       "reasoning": true
     },
     {
+      "id": "deepseek/deepseek-flash",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "cacheRead": 0.00300262,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15013085,
+        "output": 0.60052342,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4 Pro 0813",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5-2",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.2",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5-3",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3",
+      "pricing": {
+        "cacheRead": 0.30026171,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.20104683,
+        "output": 4.20366391,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5.2",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.2",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5.3",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3",
+      "pricing": {
+        "cacheRead": 0.30026171,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.20104683,
+        "output": 4.20366391,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5.3-flash",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3-Flash",
+      "pricing": {
+        "cacheRead": 0.0345301,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.12010468,
+        "output": 0.42036639,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "hy3",
       "provider": "tencent-tokenplan",
       "compat": {
@@ -21746,13 +21890,165 @@
       "maxTokens": 64000,
       "name": "Hy4 preview (TokenPlan)",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.04503926,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.90078512,
+        "output": 2.70235537,
         "source": "modelsDev",
         "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Kimi K2.7 Code",
+      "pricing": {
+        "cacheRead": 0.19517011,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.97585055,
+        "output": 4.05353306,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k3",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3",
+      "pricing": {
+        "cacheRead": 0.30026171,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 3.00261708,
+        "output": 15.01308541,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Flash",
+      "pricing": {
+        "cacheRead": 0.00300262,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15013085,
+        "output": 0.30026171,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax-m-3-0",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 512000,
+      "name": "MiniMax-M3",
+      "pricing": {
+        "cacheRead": 0.06305496,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.31527479,
+        "output": 1.26109917,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.06305496,
+            "cacheWrite": 0,
+            "input": 0.31527479,
+            "output": 1.26109917,
+            "range": [
+              0,
+              512000
+            ]
+          },
+          {
+            "cacheRead": 0.12610992,
+            "cacheWrite": 0,
+            "input": 0.63054959,
+            "output": 2.52219835,
+            "range": [
+              512000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax-m3",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 512000,
+      "name": "MiniMax-M3",
+      "pricing": {
+        "cacheRead": 0.06305496,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.31527479,
+        "output": 1.26109917,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.06305496,
+            "cacheWrite": 0,
+            "input": 0.31527479,
+            "output": 1.26109917,
+            "range": [
+              0,
+              512000
+            ]
+          },
+          {
+            "cacheRead": 0.12610992,
+            "cacheWrite": 0,
+            "input": 0.63054959,
+            "output": 2.52219835,
+            "range": [
+              512000
+            ]
+          }
+        ],
         "unit": "million_tokens"
       },
       "reasoning": true
@@ -32546,6 +32842,81 @@
       "reasoning": true
     },
     {
+      "id": "deepseek-v4.1-flash",
+      "provider": "volcengine-plan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4.1-flash-economy",
+      "provider": "volcengine-plan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "doubao-seed-2.0-mini",
+      "provider": "volcengine-plan",
+      "contextWindow": 256000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Seed 2.0 Mini",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "doubao-seed-2.1-lite",
+      "provider": "volcengine-plan",
+      "contextWindow": 1024000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Seed 2.1 Lite",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "doubao-seed-2.1-pro",
+      "provider": "volcengine-plan",
+      "contextWindow": 1024000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Seed 2.1 Pro",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "doubao-seed-2.1-turbo",
       "provider": "volcengine-plan",
       "contextWindow": 256000,
@@ -32563,7 +32934,7 @@
     {
       "id": "doubao-seed-evolving",
       "provider": "volcengine-plan",
-      "contextWindow": 256000,
+      "contextWindow": 1024000,
       "input": [
         "text",
         "image"
@@ -32623,6 +32994,21 @@
       "reasoning": true
     },
     {
+      "id": "kimi-k2.8-preview",
+      "provider": "volcengine-plan",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Kimi K2.8 Preview",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "kimi-k3",
       "provider": "volcengine-plan",
       "contextWindow": 1048576,
@@ -32632,6 +33018,21 @@
       ],
       "maxTokens": 1048576,
       "name": "Kimi K3",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k3.1-pro",
+      "provider": "volcengine-plan",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro",
       "pricing": {
         "status": "unknown"
       },
@@ -34812,6 +35213,11 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5,
+      "source": "modelsDev"
+    },
+    "google-gemini-cli/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5,
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-pro-latest": {
@@ -37365,9 +37771,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0434,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
@@ -38879,27 +39285,27 @@
       ]
     },
     "openrouter/openai/gpt-5.6-sol": {
-      "cacheRead": 0.39999999999999997,
-      "cacheWrite": 5,
-      "input": 4,
-      "output": 20,
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 20,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "input": 4.4,
+          "output": 22,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
-          "cacheWrite": 10,
-          "input": 8,
-          "output": 30,
+          "cacheRead": 0.88,
+          "cacheWrite": 11,
+          "input": 8.8,
+          "output": 33,
           "range": [
             272001
           ]
@@ -39967,9 +40373,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.134,
-      "output": 0.197,
+      "cacheRead": 0.057,
+      "input": 0.063,
+      "output": 0.093,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -40376,9 +40782,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -40394,9 +40800,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -40847,9 +41253,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068,
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -42505,7 +42911,12 @@
       "defaultModel": "hy4-preview",
       "recommendedModels": [
         "hy4",
-        "hy4-preview"
+        "hy4-preview",
+        "glm-5-3",
+        "kimi-k3",
+        "deepseek/deepseek-v4-pro",
+        "glm-5.3-flash",
+        "minimax-m3"
       ]
     },
     "together": {
@@ -42594,8 +43005,9 @@
       "api": "openai-completions",
       "defaultModel": "ark-code-latest",
       "recommendedModels": [
-        "deepseek-v4-flash",
+        "deepseek-v4.1-flash",
         "glm-5.3",
+        "kimi-k3.1-pro",
         "kimi-k3",
         "deepseek-v4-pro",
         "glm-5.3-flash"
@@ -42629,7 +43041,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "bb905f76e55de2934e868434ea23c345893cdc6c",
+  "sourceCommit": "1ccf763467ec8068251d1a53b7d83b8cf359ed9a",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -58126,6 +58538,12 @@
       "output": 10,
       "source": "modelsDev"
     },
+    "github-copilot/gemini-4-hydrogen": {
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 7.5,
+      "source": "modelsDev"
+    },
     "github-copilot/gpt-5-mini": {
       "cacheRead": 0.025,
       "input": 0.25,
@@ -59787,6 +60205,11 @@
       "output": 2.5,
       "source": "modelsDev"
     },
+    "google-gemini-cli/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5,
+      "source": "modelsDev"
+    },
     "google-gemini-cli/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -60677,6 +61100,11 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "google/gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 17.5,
+      "source": "modelsDev"
+    },
     "google/gemini-pro-latest": {
       "cacheRead": 0.2,
       "input": 2,
@@ -61060,6 +61488,11 @@
       "output": 15,
       "source": "modelsDev"
     },
+    "huggingface/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
     "huggingface/openai/gpt-oss-120b": {
       "input": 0.25,
       "output": 0.69,
@@ -61219,6 +61652,11 @@
     "huggingface/thinkingmachines/Inkling": {
       "input": 1,
       "output": 4.05,
+      "source": "modelsDev"
+    },
+    "huggingface/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1,
       "source": "modelsDev"
     },
     "huggingface/thinkingmachines/Inkling-Small": {
@@ -69162,9 +69600,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0434,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
@@ -70676,27 +71114,27 @@
       ]
     },
     "openrouter/openai/gpt-5.6-sol": {
-      "cacheRead": 0.39999999999999997,
-      "cacheWrite": 5,
-      "input": 4,
-      "output": 20,
+      "cacheRead": 0.44,
+      "cacheWrite": 5.5,
+      "input": 4.4,
+      "output": 22,
       "source": "openRouter",
       "tieredPricing": [
         {
-          "cacheRead": 0.39999999999999997,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 20,
+          "cacheRead": 0.44,
+          "cacheWrite": 5.5,
+          "input": 4.4,
+          "output": 22,
           "range": [
             0,
             272001
           ]
         },
         {
-          "cacheRead": 0.7999999999999999,
-          "cacheWrite": 10,
-          "input": 8,
-          "output": 30,
+          "cacheRead": 0.88,
+          "cacheWrite": 11,
+          "input": 8.8,
+          "output": 33,
           "range": [
             272001
           ]
@@ -71764,9 +72202,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.134,
-      "output": 0.197,
+      "cacheRead": 0.057,
+      "input": 0.063,
+      "output": 0.093,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -72173,9 +72611,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -72191,9 +72629,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -72644,9 +73082,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.117,
-      "input": 0.34700000000000003,
-      "output": 1.068,
+      "cacheRead": 0.101,
+      "input": 0.298,
+      "output": 0.916,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -77555,28 +77993,10 @@
       "output": 3,
       "source": "liteLLM"
     },
-    "synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash": {
-      "cacheRead": 0.03,
-      "input": 0.6,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
     "synthetic/hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": {
       "cacheRead": 0.03,
       "input": 0.6,
       "output": 1.2,
-      "source": "modelsDev"
-    },
-    "synthetic/hf:MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.6,
-      "input": 0.6,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "synthetic/hf:moonshotai/Kimi-K2.7-Code": {
-      "cacheRead": 0.95,
-      "input": 0.95,
-      "output": 4,
       "source": "modelsDev"
     },
     "synthetic/hf:moonshotai/Kimi-K3": {
@@ -77585,10 +78005,10 @@
       "output": 15,
       "source": "modelsDev"
     },
-    "synthetic/hf:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1,
+    "synthetic/hf:moonshotai/Kimi-K3.1-Pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
       "source": "modelsDev"
     },
     "synthetic/hf:openai/gpt-oss-120b": {
@@ -77597,7 +78017,7 @@
       "output": 0.1,
       "source": "modelsDev"
     },
-    "synthetic/hf:Qwen/Qwen3.6-27B": {
+    "synthetic/hf:Qwen/Qwen3.8-27B": {
       "cacheRead": 0.45,
       "input": 0.45,
       "output": 3.6,
@@ -77607,12 +78027,6 @@
       "cacheRead": 0.02,
       "input": 0.1,
       "output": 0.5,
-      "source": "modelsDev"
-    },
-    "synthetic/hf:zai-org/GLM-5.2": {
-      "cacheRead": 1.4,
-      "input": 1.4,
-      "output": 4.4,
       "source": "modelsDev"
     },
     "synthetic/hf:zai-org/GLM-5.3": {
@@ -77627,6 +78041,30 @@
       "output": 0.5,
       "source": "modelsDev"
     },
+    "tencent-token-plan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639,
+      "source": "modelsDev"
+    },
     "tencent-token-plan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
@@ -77634,10 +78072,82 @@
       "source": "modelsDev"
     },
     "tencent-token-plan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537,
       "source": "modelsDev"
+    },
+    "tencent-token-plan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "tencent-token-plan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "tencent-tokenhub/hy4": {
       "cacheRead": 0.042,
@@ -77653,6 +78163,34 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "tencent-tokenplan/deepseek/deepseek-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.60052342,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/glm-5-3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/glm-5.3": {
+      "cacheRead": 0.30026171,
+      "input": 1.20104683,
+      "output": 4.20366391,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/glm-5.3-flash": {
+      "cacheRead": 0.0345301,
+      "input": 0.12010468,
+      "output": 0.42036639,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "tencent-tokenplan/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
@@ -77661,11 +78199,88 @@
       "source": "modelsDev"
     },
     "tencent-tokenplan/hy4-preview": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.04503926,
+      "input": 0.90078512,
+      "output": 2.70235537,
       "passthroughOnly": true,
       "source": "modelsDev"
+    },
+    "tencent-tokenplan/kimi-k2.7-code": {
+      "cacheRead": 0.19517011,
+      "input": 0.97585055,
+      "output": 4.05353306,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/kimi-k3": {
+      "cacheRead": 0.30026171,
+      "input": 3.00261708,
+      "output": 15.01308541,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/mimo-v2.6-flash": {
+      "cacheRead": 0.00300262,
+      "input": 0.15013085,
+      "output": 0.30026171,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/minimax-m-3-0": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "tencent-tokenplan/minimax-m3": {
+      "cacheRead": 0.06305496,
+      "input": 0.31527479,
+      "output": 1.26109917,
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06305496,
+          "cacheWrite": 0,
+          "input": 0.31527479,
+          "output": 1.26109917,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12610992,
+          "cacheWrite": 0,
+          "input": 0.63054959,
+          "output": 2.52219835,
+          "range": [
+            512000
+          ]
+        }
+      ]
     },
     "tencent/deepseek-v4-flash": {
       "cacheRead": 0.0028,
