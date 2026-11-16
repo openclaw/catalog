@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794846509806,
+  "generatedAt": 1794849951900,
   "models": [
     {
       "id": "abliterated-model",
@@ -21605,6 +21605,38 @@
       "reasoning": true
     },
     {
+      "id": "hy4-flash",
+      "provider": "tencent-tokenhub",
+      "compat": {
+        "defaultThinkingLevel": "high",
+        "supportedReasoningEfforts": [
+          "none",
+          "high"
+        ],
+        "supportsReasoningEffort": true,
+        "supportsUsageInStreaming": true
+      },
+      "contextTokens": 983040,
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Hy4 flash (TokenHub)",
+      "pricing": {
+        "cacheRead": 0.003,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.07,
+        "output": 0.281,
+        "source": "manifest",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "hy4-preview",
       "provider": "tencent-tokenhub",
       "compat": {
@@ -21811,6 +21843,38 @@
         "input": 0.834,
         "output": 2.501,
         "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "hy4-flash",
+      "provider": "tencent-tokenplan",
+      "compat": {
+        "defaultThinkingLevel": "high",
+        "supportedReasoningEfforts": [
+          "none",
+          "high"
+        ],
+        "supportsReasoningEffort": true,
+        "supportsUsageInStreaming": true
+      },
+      "contextTokens": 983040,
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Hy4 flash (TokenPlan)",
+      "pricing": {
+        "cacheRead": 0.003,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.07,
+        "output": 0.281,
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -37767,9 +37831,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
-      "cacheRead": 0.004,
-      "input": 0.037,
-      "output": 0.32599999999999996,
+      "cacheRead": 0.003,
+      "input": 0.035,
+      "output": 0.31,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -38566,9 +38630,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.381,
-      "output": 5.713,
+      "cacheRead": 0.11499999999999999,
+      "input": 0.362,
+      "output": 5.421,
       "source": "openRouter"
     },
     "openrouter/morph/morph-v3-fast": {
@@ -40322,9 +40386,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12,
-      "input": 0.134,
-      "output": 0.197,
+      "cacheRead": 0.129,
+      "input": 0.143,
+      "output": 0.211,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -42953,7 +43017,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "2516bca9fdb8544c7289fa6a451fbbe1c6cf0876",
+  "sourceCommit": "4a0e45492b8987d67d8b56e8d6dcdb3765aa61ed",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -69566,9 +69630,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
-      "cacheRead": 0.004,
-      "input": 0.037,
-      "output": 0.32599999999999996,
+      "cacheRead": 0.003,
+      "input": 0.035,
+      "output": 0.31,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash:batch": {
@@ -70365,9 +70429,9 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
-      "cacheRead": 0.12100000000000001,
-      "input": 0.381,
-      "output": 5.713,
+      "cacheRead": 0.11499999999999999,
+      "input": 0.362,
+      "output": 5.421,
       "source": "openRouter"
     },
     "openrouter/morph/morph-v3-fast": {
@@ -72121,9 +72185,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.12,
-      "input": 0.134,
-      "output": 0.197,
+      "cacheRead": 0.129,
+      "input": 0.143,
+      "output": 0.211,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
