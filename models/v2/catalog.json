@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794904181882,
+  "generatedAt": 1794918685387,
   "models": [
     {
       "id": "abliterated-model",
@@ -37914,9 +37914,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004200000000000001,
-      "input": 0.14,
-      "output": 0.42,
+      "cacheRead": 0.018,
+      "input": 0.051,
+      "output": 0.5670000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -38702,8 +38702,8 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.16,
-      "input": 0.6,
-      "output": 3.5,
+      "input": 0.7,
+      "output": 3.75,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
@@ -40481,9 +40481,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.16999999999999998,
-      "output": 0.25,
+      "cacheRead": 0.124,
+      "input": 0.13799999999999998,
+      "output": 0.203,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -42378,6 +42378,12 @@
       "output": 4.12,
       "source": "venice"
     },
+    "venice/e2ee-kimi-k3-1-pro-p": {
+      "cacheRead": 0.25,
+      "input": 2.5,
+      "output": 12.5,
+      "source": "venice"
+    },
     "venice/e2ee-kimi-k3-p": {
       "cacheRead": 0.375,
       "input": 3.75,
@@ -43111,7 +43117,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "8d0f33f6b40581d3f020b5ef6c87977e844b3b8b",
+  "sourceCommit": "eceb208abea1edafdc076f101330fb13b8392743",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -70036,9 +70042,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004200000000000001,
-      "input": 0.14,
-      "output": 0.42,
+      "cacheRead": 0.018,
+      "input": 0.051,
+      "output": 0.5670000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -70824,8 +70830,8 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.16,
-      "input": 0.6,
-      "output": 3.5,
+      "input": 0.7,
+      "output": 3.75,
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
@@ -72603,9 +72609,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.16999999999999998,
-      "output": 0.25,
+      "cacheRead": 0.124,
+      "input": 0.13799999999999998,
+      "output": 0.203,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -81289,6 +81295,21 @@
       "cacheRead": 0.14,
       "input": 1.4,
       "output": 4.4,
+      "source": "liteLLM"
+    },
+    "vispark/vision-large": {
+      "input": 7.37,
+      "output": 22.11,
+      "source": "liteLLM"
+    },
+    "vispark/vision-medium": {
+      "input": 4.21,
+      "output": 12.629999999999999,
+      "source": "liteLLM"
+    },
+    "vispark/vision-small": {
+      "input": 1.0499999999999998,
+      "output": 3.1599999999999997,
       "source": "liteLLM"
     },
     "volcengine/deepseek-v4-flash-ga-260731": {
