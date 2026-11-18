@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1794947635310,
+  "generatedAt": 1794962712378,
   "models": [
     {
       "id": "abliterated-model",
@@ -9176,7 +9176,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.1",
@@ -9218,7 +9220,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.5",
@@ -9260,7 +9264,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.7",
@@ -9302,7 +9308,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m3",
@@ -12956,7 +12964,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -19672,11 +19682,24 @@
     {
       "id": "gpt-6.2-astra",
       "provider": "openai",
+      "compat": {
+        "codeMode": "preferred",
+        "defaultThinkingLevel": "medium",
+        "supportedReasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "supportsReasoningEffort": true,
+        "supportsTemperature": false
+      },
+      "contextTokens": 272000,
       "contextWindow": 1050000,
       "input": [
         "text",
-        "image",
-        "document"
+        "image"
       ],
       "maxTokens": 128000,
       "name": "GPT-6.2 Astra",
@@ -19711,16 +19734,35 @@
         ],
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "thinkingLevelMap": {
+        "max": "max",
+        "minimal": "low",
+        "off": null,
+        "xhigh": "xhigh"
+      }
     },
     {
       "id": "gpt-6.2-sol",
       "provider": "openai",
+      "compat": {
+        "codeMode": "preferred",
+        "defaultThinkingLevel": "medium",
+        "supportedReasoningEfforts": [
+          "low",
+          "medium",
+          "high",
+          "xhigh",
+          "max"
+        ],
+        "supportsReasoningEffort": true,
+        "supportsTemperature": false
+      },
+      "contextTokens": 272000,
       "contextWindow": 1050000,
       "input": [
         "text",
-        "image",
-        "document"
+        "image"
       ],
       "maxTokens": 128000,
       "name": "GPT-6.2 Sol",
@@ -19755,7 +19797,13 @@
         ],
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "thinkingLevelMap": {
+        "max": "max",
+        "minimal": "low",
+        "off": null,
+        "xhigh": "xhigh"
+      }
     },
     {
       "id": "gpt-daybreak-blue-latest",
@@ -24113,14 +24161,8 @@
       "maxTokens": 65536,
       "name": "Kimi K2.5",
       "pricing": {
-        "cacheRead": 0.22,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.56,
-        "output": 3.5,
         "source": "venice",
-        "status": "known",
-        "unit": "million_tokens"
+        "status": "unavailable"
       },
       "reasoning": true,
       "replacedBy": "kimi-k2-6",
@@ -26207,7 +26249,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "alibaba/qwen-3-30b",
@@ -26301,7 +26345,9 @@
         ],
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "alibaba/qwen3-coder-30b-a3b",
@@ -26437,7 +26483,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "alibaba/qwen3-vl-instruct",
@@ -28817,7 +28865,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.1",
@@ -28859,7 +28909,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.5",
@@ -28901,7 +28953,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m2.7",
@@ -28943,7 +28997,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "vercel-ai-gateway no longer lists this model in its public model inventory."
     },
     {
       "id": "minimax/minimax-m3",
@@ -37709,9 +37765,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 11.0055,
+      "cacheRead": 0.19,
+      "input": 0.19,
+      "output": 10.6066,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -38428,9 +38484,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.018,
+      "input": 0.051,
+      "output": 0.5670000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -38821,7 +38877,7 @@
     "openrouter/google/gemma-3-27b-it": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.35,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -39220,8 +39276,8 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.182,
-      "input": 0.192,
+      "cacheRead": 0.19,
+      "input": 0.19999999999999998,
       "output": 16,
       "source": "openRouter"
     },
@@ -40748,6 +40804,62 @@
         }
       ]
     },
+    "openrouter/openai/gpt-6.2-astra-pro:batch": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6.2-astra:batch": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "openrouter/openai/gpt-6.2-sol": {
       "cacheRead": 0.09999999999999999,
       "cacheWrite": 2.5,
@@ -40798,6 +40910,62 @@
           "cacheWrite": 5,
           "input": 4,
           "output": 15,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6.2-sol-pro:batch": {
+      "cacheRead": 0.049999999999999996,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "output": 5,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.049999999999999996,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 5,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.09999999999999999,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 7.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6.2-sol:batch": {
+      "cacheRead": 0.049999999999999996,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "output": 5,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.049999999999999996,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 5,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.09999999999999999,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 7.5,
           "range": [
             272001
           ]
@@ -41062,7 +41230,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.09,
+      "cacheRead": 0.07,
+      "input": 0.09999999999999999,
       "output": 1.1,
       "source": "openRouter"
     },
@@ -41089,8 +41258,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-27b": {
-      "input": 0.26,
-      "output": 2.6,
+      "input": 0.3,
+      "output": 2.4,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
@@ -41106,9 +41275,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.114,
-      "input": 0.127,
-      "output": 0.186,
+      "cacheRead": 0.043000000000000003,
+      "input": 0.047,
+      "output": 0.06899999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -41319,9 +41488,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.0375,
-      "input": 0.15,
-      "output": 1.875,
+      "cacheRead": 0.059,
+      "input": 0.06,
+      "output": 2.2,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
@@ -41512,9 +41681,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -41536,9 +41705,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -41948,7 +42117,7 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6v": {
-      "cacheRead": 0.055,
+      "cacheRead": 0.049999999999999996,
       "input": 0.3,
       "output": 0.8999999999999999,
       "source": "openRouter"
@@ -42002,8 +42171,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "input": 0.0399,
+      "output": 0.0784,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -43037,11 +43206,6 @@
       "output": 0.9,
       "source": "venice"
     },
-    "venice/gemma-4-uncensored": {
-      "input": 0.1625,
-      "output": 0.5,
-      "source": "venice"
-    },
     "venice/grok-4-20-multi-agent": {
       "cacheRead": 0.23,
       "input": 1.42,
@@ -43854,7 +44018,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "0b1c20f3acc09597b66aaaf612ed731610cff2c4",
+  "sourceCommit": "7ceb716273277ec6d493c62bc52e2c24cfdf941a",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -52236,6 +52400,20 @@
       "output": 5.5,
       "source": "liteLLM"
     },
+    "bedrock_mantle/openai.gpt-6.2-astra": {
+      "cacheRead": 0.44,
+      "cacheWrite": 11,
+      "input": 8.8,
+      "output": 44,
+      "source": "liteLLM"
+    },
+    "bedrock_mantle/openai.gpt-6.2-sol": {
+      "cacheRead": 0.11,
+      "cacheWrite": 2.75,
+      "input": 2.2,
+      "output": 11,
+      "source": "liteLLM"
+    },
     "bedrock_mantle/openai.gpt-daybreak-blue-5.6-sol": {
       "cacheRead": 0.44,
       "cacheWrite": 5.5,
@@ -59621,6 +59799,18 @@
       "cacheRead": 0.02,
       "input": 0.19999999999999998,
       "output": 1.2,
+      "source": "liteLLM"
+    },
+    "github_copilot/mai-code-2": {
+      "cacheRead": 0.024999999999999998,
+      "input": 0.5,
+      "output": 2.5,
+      "source": "liteLLM"
+    },
+    "github_copilot/mai-code-2-flash": {
+      "cacheRead": 0.005,
+      "input": 0.049999999999999996,
+      "output": 0.25,
       "source": "liteLLM"
     },
     "github-copilot/claude-fable-5": {
@@ -70351,9 +70541,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 11.0055,
+      "cacheRead": 0.19,
+      "input": 0.19,
+      "output": 10.6066,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -71070,9 +71260,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.018,
+      "input": 0.051,
+      "output": 0.5670000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -71463,7 +71653,7 @@
     "openrouter/google/gemma-3-27b-it": {
       "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.35,
+      "output": 0.44999999999999996,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -71862,8 +72052,8 @@
       "source": "openRouter"
     },
     "openrouter/moonshotai/kimi-k3": {
-      "cacheRead": 0.182,
-      "input": 0.192,
+      "cacheRead": 0.19,
+      "input": 0.19999999999999998,
       "output": 16,
       "source": "openRouter"
     },
@@ -73390,6 +73580,62 @@
         }
       ]
     },
+    "openrouter/openai/gpt-6.2-astra-pro:batch": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6.2-astra:batch": {
+      "cacheRead": 0.19999999999999998,
+      "cacheWrite": 5,
+      "input": 4,
+      "output": 20,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.19999999999999998,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 20,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 30,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
     "openrouter/openai/gpt-6.2-sol": {
       "cacheRead": 0.09999999999999999,
       "cacheWrite": 2.5,
@@ -73440,6 +73686,62 @@
           "cacheWrite": 5,
           "input": 4,
           "output": 15,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6.2-sol-pro:batch": {
+      "cacheRead": 0.049999999999999996,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "output": 5,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.049999999999999996,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 5,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.09999999999999999,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 7.5,
+          "range": [
+            272001
+          ]
+        }
+      ]
+    },
+    "openrouter/openai/gpt-6.2-sol:batch": {
+      "cacheRead": 0.049999999999999996,
+      "cacheWrite": 1.25,
+      "input": 1,
+      "output": 5,
+      "source": "openRouter",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.049999999999999996,
+          "cacheWrite": 1.25,
+          "input": 1,
+          "output": 5,
+          "range": [
+            0,
+            272001
+          ]
+        },
+        {
+          "cacheRead": 0.09999999999999999,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 7.5,
           "range": [
             272001
           ]
@@ -73704,7 +74006,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.09,
+      "cacheRead": 0.07,
+      "input": 0.09999999999999999,
       "output": 1.1,
       "source": "openRouter"
     },
@@ -73731,8 +74034,8 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-27b": {
-      "input": 0.26,
-      "output": 2.6,
+      "input": 0.3,
+      "output": 2.4,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
@@ -73748,9 +74051,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.114,
-      "input": 0.127,
-      "output": 0.186,
+      "cacheRead": 0.043000000000000003,
+      "input": 0.047,
+      "output": 0.06899999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -73961,9 +74264,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.0375,
-      "input": 0.15,
-      "output": 1.875,
+      "cacheRead": 0.059,
+      "input": 0.06,
+      "output": 2.2,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
@@ -74154,9 +74457,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy3-preview": {
@@ -74178,9 +74481,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -74590,7 +74893,7 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6v": {
-      "cacheRead": 0.055,
+      "cacheRead": 0.049999999999999996,
       "input": 0.3,
       "output": 0.8999999999999999,
       "source": "openRouter"
@@ -74644,8 +74947,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "input": 0.0399,
+      "output": 0.0784,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
