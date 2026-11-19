@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795078979834,
+  "generatedAt": 1795091480825,
   "models": [
     {
       "id": "abliterated-model",
@@ -17484,7 +17484,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "moonshotai/kimi-k3.1-pro",
@@ -20452,6 +20454,7 @@
       "id": "gpt-6.2-astra",
       "provider": "openai",
       "compat": {
+        "cachesInstructions": false,
         "codeMode": "preferred",
         "defaultThinkingLevel": "medium",
         "supportedReasoningEfforts": [
@@ -20515,6 +20518,7 @@
       "id": "gpt-6.2-sol",
       "provider": "openai",
       "compat": {
+        "cachesInstructions": false,
         "codeMode": "preferred",
         "defaultThinkingLevel": "medium",
         "supportedReasoningEfforts": [
@@ -39197,9 +39201,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.035,
-      "input": 0.055,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -39906,7 +39910,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.055,
+      "input": 0.062,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -39941,9 +39945,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -40735,7 +40739,7 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.16,
-      "input": 0.6,
+      "input": 0.66,
       "output": 3.5,
       "source": "openRouter"
     },
@@ -42739,9 +42743,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.16999999999999998,
-      "output": 0.25,
+      "cacheRead": 0.127,
+      "input": 0.142,
+      "output": 0.20800000000000002,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -45128,7 +45132,6 @@
         "qwen/qwen4-max",
         "zai-org/glm-5.3",
         "moonshotai/kimi-k3.1-pro",
-        "moonshotai/kimi-k3",
         "deepseek/deepseek-v4-pro",
         "stepfun/step-5-preview",
         "zai-org/glm-5.3-flash",
@@ -45367,7 +45370,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "0d4eacf5b9e2414d85980498066b6652a9f4a76f",
+  "sourceCommit": "dbc1aa04e88f531910d70512009c74e355311c92",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -76148,9 +76151,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.035,
-      "input": 0.055,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.06,
+      "output": 0.18,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -76881,7 +76884,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.055,
+      "input": 0.062,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -76916,9 +76919,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -77734,7 +77737,7 @@
     },
     "openrouter/moonshotai/kimi-k2.7-code": {
       "cacheRead": 0.16,
-      "input": 0.6,
+      "input": 0.66,
       "output": 3.5,
       "source": "openRouter"
     },
@@ -79766,9 +79769,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.153,
-      "input": 0.16999999999999998,
-      "output": 0.25,
+      "cacheRead": 0.127,
+      "input": 0.142,
+      "output": 0.20800000000000002,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
