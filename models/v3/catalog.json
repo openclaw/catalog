@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795235283065,
+  "generatedAt": 1795249689378,
   "models": [
     {
       "id": "abliterated-model",
@@ -8124,11 +8124,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
-        "cacheRead": 0.001014,
+        "cacheRead": 0.000996,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0507,
-        "output": 0.2028,
+        "input": 0.0498,
+        "output": 0.1992,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8143,7 +8143,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash 1017",
       "pricing": {
         "cacheRead": 0.007,
@@ -8222,23 +8222,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "provider": "kilocode",
-      "contextWindow": 512000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 460800,
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "elorian/glimpse",
@@ -9209,29 +9192,6 @@
       "reasoning": true
     },
     {
-      "id": "meituan/longcat-2.0",
-      "provider": "kilocode",
-      "contextWindow": 1048756,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 262144,
-      "name": "Meituan: LongCat 2.0",
-      "pricing": {
-        "cacheRead": 0.015,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.75,
-        "output": 3,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "meituan/longcat-2.5",
       "provider": "kilocode",
       "contextWindow": 1048576,
@@ -9240,7 +9200,7 @@
         "image"
       ],
       "maxTokens": 131072,
-      "name": "Meituan: LongCat 2.5",
+      "name": "LongCat 2.5",
       "pricing": {
         "cacheRead": 0.006,
         "cacheWrite": 0,
@@ -13858,6 +13818,28 @@
       "reasoning": true
     },
     {
+      "id": "radixark/daisyrose-27b",
+      "provider": "kilocode",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 235929,
+      "name": "RadixArk: DaisyRose 27B",
+      "pricing": {
+        "cacheRead": 0.05,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 2.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "recursive/flint-v1.0",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -14235,6 +14217,28 @@
         "currency": "USD",
         "input": 1,
         "output": 4.05,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Thinking Machines: Inkling 2 Mini",
+      "pricing": {
+        "cacheRead": 0.02,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.4,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -30352,18 +30356,18 @@
     {
       "id": "minimax/minimax-m2.7",
       "provider": "vercel-ai-gateway",
-      "contextWindow": 196608,
+      "contextWindow": 204800,
       "input": [
         "text"
       ],
-      "maxTokens": 196608,
+      "maxTokens": 131072,
       "name": "Minimax M2.7",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.06,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.21,
-        "output": 0.84,
+        "input": 0.3,
+        "output": 1.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -39809,9 +39813,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.001014,
-      "input": 0.050699999999999995,
-      "output": 0.20279999999999998,
+      "cacheRead": 0.0009960000000000001,
+      "input": 0.049800000000000004,
+      "output": 0.19920000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -45204,7 +45208,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "ecdaa9cccf1d53768d452bbd69242ac55b6a9e89",
+  "sourceCommit": "dff2b6e3cc1514b38b11a4450f2b09260a74a361",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -76857,9 +76861,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.001014,
-      "input": 0.050699999999999995,
-      "output": 0.20279999999999998,
+      "cacheRead": 0.0009960000000000001,
+      "input": 0.049800000000000004,
+      "output": 0.19920000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -85057,6 +85061,33 @@
       "input": 1,
       "output": 2.7,
       "source": "modelsDev"
+    },
+    "resetdata/deepseek/deepseek-v4-flash": {
+      "cacheRead": 0.01351,
+      "input": 0.07432000000000001,
+      "output": 0.14859999999999998,
+      "source": "liteLLM"
+    },
+    "resetdata/google/gemma-4-26b-a4b-it": {
+      "input": 0.06054,
+      "output": 0.33280000000000004,
+      "source": "liteLLM"
+    },
+    "resetdata/qwen/qwen3-coder-30b-a3b-instruct": {
+      "input": 0.07060999999999999,
+      "output": 0.27230000000000004,
+      "source": "liteLLM"
+    },
+    "resetdata/qwen/qwen3.8-27b": {
+      "input": 0.29050000000000004,
+      "output": 2.453,
+      "source": "liteLLM"
+    },
+    "resetdata/zai/glm-5.3": {
+      "cacheRead": 0.1757,
+      "input": 1.189,
+      "output": 3.7359999999999998,
+      "source": "liteLLM"
     },
     "sail/deepseek-ai/DeepSeek-V4-Flash-0731": {
       "cacheRead": 0.02,
