@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { execFileSync, spawn } from "node:child_process";
 import { mkdtemp, mkdir, readFile, realpath, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { delimiter, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
 
@@ -79,12 +79,21 @@ async function gateFixture(t, { candidates, plan = {}, published = candidates, i
   const tmp = join(cwd, "tmp");
   for (const [release, v3Default] of Object.entries(installs)) await installRelease(tmp, release, v3Default);
   const callsFile = join(cwd, "calls.jsonl");
+  // The fake reader and its installed fixtures use these tags. A live registry
+  // lookup can select different releases and make this isolated gate test hang.
+  const bin = join(cwd, "bin");
+  await mkdir(bin);
+  await writeFile(join(bin, "npm"), `#!/usr/bin/env node
+if (JSON.stringify(process.argv.slice(2)) !== JSON.stringify(["view", "openclaw", "dist-tags", "--json"])) process.exit(1);
+console.log(JSON.stringify({ latest: "2026.11.3" }));
+`, { mode: 0o755 });
   return {
     cwd,
     gate: (args = []) => run(releasedReaders, ["--openclaw", "openclaw", ...args], cwd, {
       FAKE_PLAN: JSON.stringify(plan),
       FAKE_CALLS: callsFile,
       TMPDIR: tmp,
+      PATH: `${bin}${delimiter}${process.env.PATH}`,
     }),
     calls: async () => (await readFile(callsFile, "utf8").catch(() => "")).trim().split("\n").filter(Boolean).map(JSON.parse),
   };

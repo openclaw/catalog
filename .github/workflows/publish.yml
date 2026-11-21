@@ -52,7 +52,7 @@ on:
         type: boolean
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: publish-catalog
@@ -63,6 +63,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+      statuses: write
     steps:
       # publish: regenerate from openclaw. rollback: republish an earlier commit's
       # content. deploy: push events, and scheduled runs while publishing is paused
@@ -177,12 +181,14 @@ jobs:
           node scripts/released-readers.mjs "${args[@]}"
 
       - name: Commit on change only
+        id: candidate
         if: steps.mode.outputs.generate == 'true'
         env:
           MODE: ${{ steps.mode.outputs.mode }}
           ROLLBACK_TO: ${{ inputs.rollback_to }}
         run: |
           set -euo pipefail
+          base=$(git rev-parse HEAD)
           # A missing next file (v1 skipped by --skip-oversized-v1) keeps the published file.
           written=()
           for version in v1 v2 v3; do
@@ -223,18 +229,24 @@ jobs:
           # v2 has v1's providers and rows, and is always regenerated.
           summary=$(jq -r '"\(.providers | length) providers, \(.models | length) models"' models/v2/catalog.json)
           if [ "$MODE" = rollback ]; then
-            git commit -m "catalog: roll back to $(git rev-parse --short "$ROLLBACK_TO^{commit}") content, $summary"
+            git commit -m "catalog: roll back to $(git rev-parse --short "$ROLLBACK_TO^{commit}") content, $summary" -m "Catalog-Source-Base: $base"
           else
-            git commit -m "catalog: $summary"
+            git commit -m "catalog: $summary" -m "Catalog-Source-Base: $base"
           fi
           # The deploy below runs these on the same files; a catalog that would not
           # deploy must fail here, before it reaches main.
           node --test scripts/hosting.test.mjs scripts/guard.test.mjs
           node scripts/build.mjs
-          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
-      # GITHUB_TOKEN commits do not trigger push workflows. Keep deployment in
-      # this serialized job, including unchanged runs that retry a failed deploy.
+      - name: Publish catalog through a verified pull request
+        if: steps.candidate.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publication.mjs publish
+
+      # GITHUB_TOKEN merges do not trigger push workflows. The publisher checks
+      # out the verified squash commit; unchanged runs can retry a failed deploy.
       - name: Verify deployment source
         id: source
         run: |

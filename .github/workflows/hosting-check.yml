@@ -5,6 +5,7 @@ on:
     paths:
       - ".github/workflows/hosting-check.yml"
       - ".github/workflows/publish.yml"
+      - ".github/workflows/publication-source.yml"
       - "models/v1/catalog.json"
       - "models/v2/catalog.json"
       - "models/v3/catalog.json"
@@ -26,7 +27,7 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "24.22.3"
-      - run: node --test scripts/hosting.test.mjs scripts/guard.test.mjs
+      - run: node --test scripts/hosting.test.mjs scripts/guard.test.mjs scripts/publication.test.mjs
       - run: node scripts/build.mjs
       - run: npx --yes wrangler@4.162.0 deploy --dry-run --env preview
         env:
