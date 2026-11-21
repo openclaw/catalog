@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795278383714,
+  "generatedAt": 1795292736517,
   "models": [
     {
       "id": "abliterated-model",
@@ -13645,11 +13645,11 @@
     {
       "id": "qwen/qwen3.8-2.4t-a95b",
       "provider": "kilocode",
-      "contextWindow": 1000000,
+      "contextWindow": 262144,
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 65536,
       "name": "Qwen3.8 2.4T A95B",
       "pricing": {
         "cacheRead": 0.25,
@@ -14234,11 +14234,11 @@
       "maxTokens": 65536,
       "name": "Thinking Machines: Inkling 2 Mini",
       "pricing": {
-        "cacheRead": 0.016,
+        "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.08,
-        "output": 0.35,
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -39103,7 +39103,7 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
-      "input": 0.18050000000000002,
+      "input": 0.18239999999999998,
       "output": 11.0055,
       "source": "openRouter"
     },
@@ -43074,9 +43074,9 @@
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-mini": {
-      "cacheRead": 0.02,
-      "input": 0.09999999999999999,
-      "output": 0.39999999999999997,
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-small": {
@@ -45214,7 +45214,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "1c86bd5173a36ff73718d0839cbd0edc7bc19dac",
+  "sourceCommit": "6d2e5e84eedc437ee4fda8721b1e252b9393dcf6",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -63783,6 +63783,12 @@
       "output": 22.5,
       "source": "liteLLM"
     },
+    "fireworks_ai/accounts/fireworks/routers/kimi-k3p1-pro-us": {
+      "cacheRead": 0.25,
+      "input": 2.5,
+      "output": 12.5,
+      "source": "liteLLM"
+    },
     "fireworks_ai/accounts/fireworks/routers/kimi-latest": {
       "cacheRead": 0.19999999999999998,
       "input": 2,
@@ -76111,7 +76117,7 @@
     },
     "openrouter/~moonshotai/kimi-latest": {
       "cacheRead": 0.18,
-      "input": 0.18050000000000002,
+      "input": 0.18239999999999998,
       "output": 11.0055,
       "source": "openRouter"
     },
@@ -80179,9 +80185,9 @@
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-mini": {
-      "cacheRead": 0.02,
-      "input": 0.09999999999999999,
-      "output": 0.39999999999999997,
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-small": {
