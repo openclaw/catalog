@@ -125,7 +125,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: "24.22.1"
+          node-version: "24.22.3"
 
       - name: Install dependencies
         if: steps.mode.outputs.generate == 'true'
@@ -251,7 +251,7 @@ jobs:
         run: |
           node --test scripts/hosting.test.mjs scripts/guard.test.mjs
           node scripts/build.mjs
-          npx --yes wrangler@4.157.0 deploy --dry-run --env preview
+          npx --yes wrangler@4.162.0 deploy --dry-run --env preview
 
       - name: Deploy and verify isolated preview
         env:
@@ -262,7 +262,7 @@ jobs:
           SOURCE_SHA: ${{ steps.source.outputs.sha }}
         run: |
           set -euo pipefail
-          npx --yes wrangler@4.157.0 deploy --env preview --message "$SOURCE_SHA"
+          npx --yes wrangler@4.162.0 deploy --env preview --message "$SOURCE_SHA"
           preview_url=$(node --input-type=module <<'NODE'
           import { readFileSync } from 'node:fs';
           const records = readFileSync(process.env.WRANGLER_OUTPUT_FILE_PATH, 'utf8').trim().split('\n').map(JSON.parse);
@@ -287,7 +287,7 @@ jobs:
             echo "::error::main advanced during preview; refusing to deploy stale catalog $SOURCE_SHA"
             exit 1
           fi
-          npx --yes wrangler@4.157.0 deploy --env "" --message "$SOURCE_SHA"
+          npx --yes wrangler@4.162.0 deploy --env "" --message "$SOURCE_SHA"
 
       - name: Verify production
         run: node scripts/smoke.mjs https://catalog.openclaw.ai
