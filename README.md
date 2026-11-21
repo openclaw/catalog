@@ -110,7 +110,7 @@ and deployment invalidation; the catalog does not use an immutable browser TTL.
 
 The publisher creates an immutable `automation/catalog/<run>-<attempt>` branch and
 pull request. Before merging, it requires an active, non-bypassable rule for
-`main` that requires **Publication source current**, pins that status to the
+`main` that requires **Publication merge admission**, pins that status to the
 GitHub Actions App, and requires branches to be up to date. `main` must also
 reject non-fast-forward updates. The publisher reads the effective rules and
 their active source ruleset; absent, inaccessible or weaker rules leave the PR
@@ -126,11 +126,17 @@ An exposed list must be empty, and an exposed `current_user_can_bypass` must be
 workflow's effective strict-rule checks without granting it administration access.
 
 The metadata-only `pull_request_target` gate runs trusted base code, never PR
-code. Ordinary PRs receive an N/A success status. Reserved publication branches
-must come from this repository, change only catalog files, and have one parent:
-the recorded generation base, which must still be current `main`. Reserved
-branches from forks fail. GitHub's strict rule enforces freshness at merge time,
-including a base update after the publisher's last read.
+code. It posts neutral admission success only when the PR is still open against
+this repository's `main` and its head matches the event. Obsolete events skip
+without writing a status. This gate does not judge the branch's payload.
+
+The publisher owns catalog validation: reserved publication branches must come
+from this repository, change only catalog files, and have one parent, the
+recorded generation base, which must still be current `main`. It verifies the
+remote candidate's complete tree against its tested local tree, then posts the
+same neutral admission success itself. It does not wait for the PR event gate.
+GitHub's strict rule enforces freshness at merge time, including a base update
+after the publisher's last read.
 
 The publisher requests a normal SHA-bound squash merge and verifies the actual
 merged commit's parent and complete tree against the tested candidate. Pending,

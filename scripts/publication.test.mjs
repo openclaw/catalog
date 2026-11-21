@@ -263,42 +263,56 @@ test("metadata validation rejects changed source, head, parent and file scope", 
   assert.throws(() => inspectCandidate(stale.api, repo, stale.pr), /main advanced/);
 });
 
-test("metadata-only PR gate marks ordinary PRs N/A and rejects reserved forks", async (t) => {
-  const normal = await fixture(t);
-  normal.pr.head.ref = "feature/catalog-reader";
-  normal.pr.head.repo.full_name = "contributor/catalog";
-  checkPullRequest({ api: normal.api, repo, number: 1, expectedHead: normal.head, log() {} });
-  assert.equal(normal.statuses.at(-1).state, "success");
-  assert.match(normal.statuses.at(-1).description, /N\/A/);
-  assert.equal(normal.calls.some(({ path }) => path.includes("/commits/")), false);
+test("metadata-only PR gate admits current heads without owning payload policy", () => {
+  const head = "1".repeat(40);
+  for (const ref of ["feature/catalog-reader", branch, "automation/catalog/not-a-run"]) {
+    for (const owner of [repo, "contributor/catalog"]) {
+      const pr = { state: "open", base: { ref: "main", repo: { full_name: repo } },
+        head: { sha: head, ref, repo: { full_name: owner } } };
+      const calls = [];
+      const api = (method, path, body) => {
+        calls.push({ method, path, body });
+        if (method === "GET" && path === `repos/${repo}/pulls/1`) return pr;
+        assert.equal(method, "POST");
+        assert.equal(path, `repos/${repo}/statuses/${head}`);
+        return body;
+      };
+      checkPullRequest({ api, repo, number: 1, expectedHead: head, log() {} });
+      assert.equal(calls.length, 2);
+      assert.equal(calls[1].body.state, "success");
+      assert.equal(calls[1].body.context, CONTEXT);
+      assert.equal(calls[1].body.description, "Current pull request targets this repository's main");
+    }
+  }
+});
 
+test("obsolete PR events skip without writing a status or failing", () => {
+  const head = "1".repeat(40);
+  for (const edit of [
+    (pr) => { pr.state = "closed"; },
+    (pr) => { pr.base.ref = "untrusted-target"; },
+    (pr) => { pr.base.repo.full_name = "other/catalog"; },
+    (pr) => { pr.head.sha = "0".repeat(40); },
+  ]) {
+    const pr = { state: "open", base: { ref: "main", repo: { full_name: repo } }, head: { sha: head } };
+    edit(pr);
+    const calls = [];
+    const api = (method, path) => { calls.push({ method, path }); return pr; };
+    assert.doesNotThrow(() => checkPullRequest({ api, repo, number: 1, expectedHead: head, log() {} }));
+    assert.deepEqual(calls, [{ method: "GET", path: `repos/${repo}/pulls/1` }]);
+  }
+});
+
+test("publisher still rejects reserved fork and malformed branch candidates", async (t) => {
   for (const edit of [
     (pr) => { pr.head.repo.full_name = "contributor/catalog"; },
     (pr) => { pr.head.ref = "automation/catalog/not-a-run"; },
   ]) {
-    const reserved = await fixture(t);
-    edit(reserved.pr);
-    assert.throws(() => checkPullRequest({ api: reserved.api, repo, number: 1, expectedHead: reserved.head }));
-    assert.equal(reserved.statuses.at(-1).state, "failure");
-    assert.equal(reserved.calls.some(({ path }) => path.includes("/commits/")), false);
-  }
-  const valid = await fixture(t);
-  checkPullRequest({ api: valid.api, repo, number: 1, expectedHead: valid.head });
-  assert.equal(valid.statuses.at(-1).state, "success");
-});
-
-test("PR event drift cannot publish either N/A or reserved success", async (t) => {
-  for (const edit of [
-    (pr) => { pr.state = "closed"; },
-    (pr) => { pr.base.ref = "untrusted-target"; },
-    (pr) => { pr.head.sha = "0".repeat(40); },
-  ]) {
-    for (const ordinary of [false, true]) {
-      const f = await fixture(t);
-      if (ordinary) f.pr.head.ref = "feature/reader";
-      edit(f.pr);
-      assert.throws(() => checkPullRequest({ api: f.api, repo, number: 1, expectedHead: f.head }));
-      assert.deepEqual(f.statuses, []);
-    }
+    const f = await fixture(t);
+    edit(f.pr);
+    assert.throws(f.run);
+    assert.deepEqual(f.statuses, []);
+    assert.deepEqual(f.emitted, []);
+    assert.equal(f.calls.some(({ method }) => method === "PUT"), false);
   }
 });

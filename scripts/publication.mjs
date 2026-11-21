@@ -2,7 +2,7 @@ import { execFileSync } from "node:child_process";
 import { appendFileSync, readFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 
-export const CONTEXT = "Publication source current";
+export const CONTEXT = "Publication merge admission";
 export const PREFIX = "automation/catalog/";
 const SHA = /^[0-9a-f]{40}$/;
 const FILES = new Set([1, 2, 3].map((version) => `models/v${version}/catalog.json`));
@@ -82,9 +82,10 @@ export function requireStrictRule(api, repo) {
   throw new Error(`main needs an active strict ${CONTEXT} rule pinned to the GitHub Actions App with no bypass actors; PR retained`);
 }
 
-function status(api, repo, head, state, description, runUrl) {
+function status(api, repo, head, runUrl) {
   return api("POST", `repos/${repo}/statuses/${head}`, {
-    state, context: CONTEXT, description, ...(runUrl ? { target_url: runUrl } : {}),
+    state: "success", context: CONTEXT, description: "Current pull request targets this repository's main",
+    ...(runUrl ? { target_url: runUrl } : {}),
   });
 }
 
@@ -94,21 +95,14 @@ export function checkPullRequest({ api = github, repo, number, expectedHead, run
   repository(repo);
   ensure(Number.isSafeInteger(number) && number > 0, "pull request number is required");
   const pr = api("GET", `repos/${repo}/pulls/${number}`);
-  ensure(pr.state === "open" && pr.base?.ref === "main" && pr.base.repo?.full_name === repo,
-    "pull request is no longer open against this repository's main");
-  ensure(SHA.test(expectedHead ?? "") && pr.head?.sha === expectedHead, "pull request head changed since this event");
-  if (!pr.head.ref?.startsWith("automation/catalog")) {
-    status(api, repo, pr.head.sha, "success", "Not a catalog publication branch (N/A)", runUrl);
-    log("Publication source current: N/A for an ordinary pull request");
+  if (pr.state !== "open" || pr.base?.ref !== "main" || pr.base.repo?.full_name !== repo
+    || !SHA.test(expectedHead ?? "") || pr.head?.sha !== expectedHead) {
+    log("Obsolete pull request event; no admission status written");
     return;
   }
-  try {
-    inspectCandidate(api, repo, pr);
-    status(api, repo, pr.head.sha, "success", "Catalog generated from the current main commit", runUrl);
-  } catch (error) {
-    status(api, repo, pr.head.sha, "failure", "Catalog source is stale or candidate metadata is invalid", runUrl);
-    throw error;
-  }
+  // Payload policy belongs to the publisher. This shared status only admits
+  // the current PR head; GitHub's strict rule fences concurrent base changes.
+  status(api, repo, pr.head.sha, runUrl);
 }
 
 export function publish({ api = github, git = gitCommand, repo, runId, attempt, runUrl, emit = () => {}, log = console.log,
@@ -143,7 +137,7 @@ export function publish({ api = github, git = gitCommand, repo, runId, attempt, 
   // A client precheck cannot fence the base. GitHub must enforce this strict
   // rule at merge time; administrators must activate it without bypass actors.
   requireStrictRule(api, repo);
-  status(api, repo, head, "success", "Catalog generated from the current main commit", runUrl);
+  status(api, repo, head, runUrl);
   // GitHub briefly reports null while computing mergeability. Only that state
   // gets bounded observation; a rejection or identity change is not retried.
   for (let attempt = 0; attempt < 4; attempt++) {
