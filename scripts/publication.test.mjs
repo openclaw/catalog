@@ -71,7 +71,8 @@ async function fixture(t, options = {}) {
     calls.push({ method, path, body });
     if (path === "apps/github-actions") return app;
     if (path.startsWith(`repos/${repo}/rules/branches/main`)) return options.noRule ? [] : [rule, { type: "non_fast_forward" }];
-    if (path.startsWith(`repos/${repo}/rulesets/42`)) return { id: 42, enforcement: "active", bypass_actors: options.bypass ? [{ actor_id: 1 }] : [], rules: [rule] };
+    if (path.startsWith(`repos/${repo}/rulesets/42`)) return options.ruleset
+      ?? { id: 42, enforcement: "active", bypass_actors: options.bypass ? [{ actor_id: 1 }] : [], rules: [rule] };
     if (path === `repos/${repo}/git/ref/heads/main`) return { object: { sha: current() } };
     if (path.startsWith(`repos/${repo}/commits/`)) {
       const result = commit(path.split("/").at(-1));
@@ -152,11 +153,35 @@ test("strict rule must name the observed Actions App and be active", () => {
   }
   for (const source of [
     { id: 42, enforcement: "evaluate", bypass_actors: [], rules: [rule] },
-    { id: 42, enforcement: "active", rules: [rule] },
+    { id: 42, enforcement: "disabled", rules: [rule] },
   ]) {
     assert.throws(() => requireStrictRule((method, path) => path === "apps/github-actions" ? app
       : path.includes("rulesets/") ? source : [rule, { type: "non_fast_forward" }], repo), /active strict/);
   }
+});
+
+test("runtime accepts redacted bypass metadata but rejects exposed bypass", () => {
+  const source = { id: 42, enforcement: "active", rules: [rule] };
+  const check = (metadata) => requireStrictRule((method, path) => path === "apps/github-actions" ? app
+    : path.includes("rulesets/") ? { ...source, ...metadata } : [rule, { type: "non_fast_forward" }], repo);
+  for (const metadata of [{}, { bypass_actors: [] }, { current_user_can_bypass: "never" },
+    { bypass_actors: [], current_user_can_bypass: "never" }]) {
+    assert.doesNotThrow(() => check(metadata));
+  }
+  for (const bypass_actors of [undefined, null, {}, "", [{ actor_id: 1 }]]) {
+    assert.throws(() => check({ bypass_actors }), /active strict/);
+  }
+  for (const current_user_can_bypass of [undefined, null, false, "always", "pull_requests_only"]) {
+    assert.throws(() => check({ current_user_can_bypass }), /active strict/);
+  }
+});
+
+test("publication completes with redacted ruleset bypass metadata", async (t) => {
+  const f = await fixture(t, { ruleset: { id: 42, enforcement: "active", rules: [rule] } });
+  f.run();
+  assert.equal(f.emitted.length, 1);
+  assert.equal(f.emitted[0].sha, f.current());
+  assert.equal(f.calls.filter(({ method }) => method === "PUT").length, 1);
 });
 
 test("the server rejects a base race after the final client read", async (t) => {

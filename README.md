@@ -113,8 +113,17 @@ pull request. Before merging, it requires an active, non-bypassable rule for
 `main` that requires **Publication source current**, pins that status to the
 GitHub Actions App, and requires branches to be up to date. `main` must also
 reject non-fast-forward updates. The publisher reads the effective rules and
-their source ruleset; absent, inaccessible or weaker rules leave the PR pending
-and fail the run before merge or deployment. No additional credential is used.
+their active source ruleset; absent, inaccessible or weaker rules leave the PR
+pending and fail the run before merge or deployment. No additional credential
+is used.
+
+An administrator must activate this rule with no bypass actors and verify that
+configuration through an administrative readback. GitHub [redacts
+`bypass_actors` without ruleset write access](https://docs.github.com/en/rest/repos/rules#get-a-repository-ruleset),
+so the workflow accepts an omitted list; it does not prove that the list is empty.
+An exposed list must be empty, and an exposed `current_user_can_bypass` must be
+`never`. This separates the administrator's no-bypass prerequisite from the
+workflow's effective strict-rule checks without granting it administration access.
 
 The metadata-only `pull_request_target` gate runs trusted base code, never PR
 code. Ordinary PRs receive an N/A success status. Reserved publication branches

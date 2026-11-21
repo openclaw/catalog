@@ -69,8 +69,14 @@ export function requireStrictRule(api, repo) {
   for (const rule of rules.filter(matches)) {
     ensure(Number.isSafeInteger(rule.ruleset_id), "required rule has no source ruleset identity");
     const source = api("GET", `repos/${repo}/rulesets/${rule.ruleset_id}?includes_parents=true`);
+    // GitHub redacts bypass actors without ruleset write access. Administrators
+    // verify the empty list at activation; runtime rejects any exposed bypass.
+    const actorsAllowed = !Object.hasOwn(source, "bypass_actors")
+      || (Array.isArray(source.bypass_actors) && source.bypass_actors.length === 0);
+    const callerAllowed = !Object.hasOwn(source, "current_user_can_bypass")
+      || source.current_user_can_bypass === "never";
     if (source.id === rule.ruleset_id && source.enforcement === "active"
-      && Array.isArray(source.bypass_actors) && source.bypass_actors.length === 0
+      && actorsAllowed && callerAllowed
       && source.rules?.some(matches)) return;
   }
   throw new Error(`main needs an active strict ${CONTEXT} rule pinned to the GitHub Actions App with no bypass actors; PR retained`);
@@ -134,8 +140,8 @@ export function publish({ api = github, git = gitCommand, repo, runId, attempt, 
   ensure(pr.state === "open" && pr.head?.sha === head && pr.head.ref === branch, "created PR head or state changed");
   const candidate = inspectCandidate(api, repo, pr);
   ensure(candidate.base === base && candidate.tree === tree, "remote candidate differs from the tested local tree");
-  // A client precheck cannot fence the base. GitHub must enforce this strict,
-  // non-bypassable status rule at the merge itself, including a last-read race.
+  // A client precheck cannot fence the base. GitHub must enforce this strict
+  // rule at merge time; administrators must activate it without bypass actors.
   requireStrictRule(api, repo);
   status(api, repo, head, "success", "Catalog generated from the current main commit", runUrl);
   // GitHub briefly reports null while computing mergeability. Only that state
