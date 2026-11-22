@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795350580532,
+  "generatedAt": 1795364780219,
   "models": [
     {
       "id": "abliterated-model",
@@ -1737,6 +1737,28 @@
         "currency": "USD",
         "input": 2,
         "output": 6,
+        "source": "chutes",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "Qwen/Qwen4-Max",
+      "provider": "chutes",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen4 Max",
+      "pricing": {
+        "cacheRead": 0.075,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.5,
+        "output": 4.5,
         "source": "chutes",
         "status": "known",
         "unit": "million_tokens"
@@ -18388,6 +18410,21 @@
       "reasoning": true
     },
     {
+      "id": "hy4",
+      "provider": "ollama-cloud",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "hy4",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "inkling-2-small",
       "provider": "ollama-cloud",
       "contextWindow": 1048576,
@@ -34678,12 +34715,6 @@
       "output": 15,
       "source": "modelsDev"
     },
-    "chutes/Qwen/Qwen4-Max": {
-      "cacheRead": 0.075,
-      "input": 1.5,
-      "output": 4.5,
-      "source": "chutes"
-    },
     "deepinfra/allenai/Olmo-3.1-32B-Instruct": {
       "input": 0.2,
       "output": 0.6,
@@ -38004,8 +38035,8 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.03,
-      "input": 0.0466,
-      "output": 0.07289999999999999,
+      "input": 0.0399,
+      "output": 0.0784,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -39189,9 +39220,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -41791,9 +41822,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -42236,8 +42267,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "input": 0.0399,
+      "output": 0.0784,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -43565,6 +43596,7 @@
       "recommendedModels": [
         "deepseek-ai/DeepSeek-V4.1-Flash-1017",
         "tencent/Hy4",
+        "Qwen/Qwen4-Max",
         "zai-org/GLM-5.3",
         "deepseek-ai/DeepSeek-V4-Pro-0813",
         "Qwen/Qwen3.8-27B-TEE"
@@ -43741,6 +43773,7 @@
       "api": "ollama",
       "recommendedModels": [
         "deepseek-v4.1-flash",
+        "hy4",
         "mimo-v2.6-pro",
         "glm-5.3",
         "kimi-k3.1-pro",
@@ -43949,7 +43982,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "450441b904031b886c5fff3238f25b424907dcfe",
+  "sourceCommit": "feea72c186382804ceb75158a6c8fd41b7650e11",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -74622,6 +74655,12 @@
       "output": 1.2,
       "source": "modelsDev"
     },
+    "opencode-go/longcat-2.5": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "modelsDev"
+    },
     "opencode-go/mimo-v2.5": {
       "cacheRead": 0.0028,
       "input": 0.14,
@@ -75020,8 +75059,8 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.03,
-      "input": 0.0466,
-      "output": 0.07289999999999999,
+      "input": 0.0399,
+      "output": 0.0784,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -76264,9 +76303,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -78899,9 +78938,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -79359,8 +79398,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "input": 0.0399,
+      "output": 0.0784,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
