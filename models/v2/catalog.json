@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795451243380,
+  "generatedAt": 1795465571314,
   "models": [
     {
       "id": "abliterated-model",
@@ -3261,11 +3261,11 @@
       "maxTokens": 65536,
       "name": "Hy4",
       "pricing": {
-        "cacheRead": 0.04199999814,
+        "cacheRead": 0.031499998604999996,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.6255,
+        "output": 1.87575,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -6321,7 +6321,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Flash Latest",
       "pricing": {
         "cacheRead": 0.007,
@@ -8438,11 +8438,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.0125,
+        "cacheRead": 0.025,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.05,
-        "output": 0.19,
+        "output": 0.18,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15445,12 +15445,12 @@
       "maxTokens": 32768,
       "name": "Devstral 2 (latest)",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.04,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.4,
+        "input": 0.39999999999999997,
         "output": 2,
-        "source": "modelsDev",
+        "source": "liteLLM",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -15468,6 +15468,29 @@
       ],
       "maxTokens": 262144,
       "name": "Ministral 3 14B",
+      "pricing": {
+        "cacheRead": 0.02,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "ministral-14b-latest",
+      "provider": "mistral",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 262144,
+      "name": "Ministral 3 14B (latest)",
       "pricing": {
         "cacheRead": 0.02,
         "cacheWrite": 0,
@@ -15512,8 +15535,8 @@
         "image",
         "document"
       ],
-      "maxTokens": 128000,
-      "name": "Ministral 3B (latest)",
+      "maxTokens": 131072,
+      "name": "Ministral 3 3B (latest)",
       "pricing": {
         "cacheRead": 0.01,
         "cacheWrite": 0,
@@ -15558,37 +15581,14 @@
         "image",
         "document"
       ],
-      "maxTokens": 128000,
-      "name": "Ministral 8B (latest)",
+      "maxTokens": 262144,
+      "name": "Ministral 3 8B (latest)",
       "pricing": {
         "cacheRead": 0.015,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.15,
         "output": 0.15,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "mistral-large-2512",
-      "provider": "mistral",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 262144,
-      "name": "Mistral Large 3",
-      "pricing": {
-        "cacheRead": 0.05,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.5,
-        "output": 1.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15606,29 +15606,6 @@
       ],
       "maxTokens": 262144,
       "name": "Mistral Large 4",
-      "pricing": {
-        "cacheRead": 0.07,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.7,
-        "output": 2.1,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "mistral-large-4-0-8",
-      "provider": "mistral",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 262144,
-      "name": "Mistral Large 4.0.8",
       "pricing": {
         "cacheRead": 0.07,
         "cacheWrite": 0,
@@ -15674,40 +15651,17 @@
       "maxTokens": 8192,
       "name": "Mistral Medium 3.1",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 0.04,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.4,
         "output": 2,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
       "replacedBy": "mistral-medium-3-5",
       "status": "deprecated"
-    },
-    {
-      "id": "mistral-medium-2604",
-      "provider": "mistral",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 262144,
-      "name": "Mistral Medium 3.5",
-      "pricing": {
-        "cacheRead": 0.15,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.5,
-        "output": 7.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
     },
     {
       "id": "mistral-medium-3-5",
@@ -15743,29 +15697,6 @@
         "off": "none",
         "xhigh": "high"
       }
-    },
-    {
-      "id": "mistral-medium-latest",
-      "provider": "mistral",
-      "contextWindow": 262144,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 262144,
-      "name": "Mistral Medium (latest)",
-      "pricing": {
-        "cacheRead": 0.15,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.5,
-        "output": 7.5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
     },
     {
       "id": "mistral-small-2603",
@@ -18765,229 +18696,6 @@
       "statusReason": "API shutdown is scheduled for January 14, 2027."
     },
     {
-      "id": "gpt-4.1-mini",
-      "provider": "openai",
-      "contextWindow": 1047576,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 32768,
-      "name": "GPT-4.1 mini",
-      "pricing": {
-        "cacheRead": 0.1,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.4,
-        "output": 1.6,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "gpt-4o",
-      "provider": "openai",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 16384,
-      "name": "GPT-4o",
-      "pricing": {
-        "cacheRead": 1.25,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2.5,
-        "output": 10,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "gpt-4o-2024-08-06",
-      "provider": "openai",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "GPT-4o (2024-08-06)",
-      "pricing": {
-        "cacheRead": 1.25,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2.5,
-        "output": 10,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "gpt-4o-2024-11-20",
-      "provider": "openai",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 16384,
-      "name": "GPT-4o (2024-11-20)",
-      "pricing": {
-        "cacheRead": 1.25,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2.5,
-        "output": 10,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "gpt-4o-mini",
-      "provider": "openai",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 16384,
-      "name": "GPT-4o mini",
-      "pricing": {
-        "cacheRead": 0.075,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.15,
-        "output": 0.6,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false
-    },
-    {
-      "id": "gpt-5",
-      "provider": "openai",
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "name": "GPT-5",
-      "pricing": {
-        "cacheRead": 0.125,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.25,
-        "output": 10,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "gpt-5-mini",
-      "provider": "openai",
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "name": "GPT-5 Mini",
-      "pricing": {
-        "cacheRead": 0.025,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.25,
-        "output": 2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "gpt-5-nano",
-      "provider": "openai",
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "name": "GPT-5 Nano",
-      "pricing": {
-        "cacheRead": 0.005,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.05,
-        "output": 0.4,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "gpt-5-pro",
-      "provider": "openai",
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 272000,
-      "name": "GPT-5 Pro",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 15,
-        "output": 120,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "gpt-5.1",
-      "provider": "openai",
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 128000,
-      "name": "GPT-5.1",
-      "pricing": {
-        "cacheRead": 0.125,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.25,
-        "output": 10,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "gpt-5.2",
       "provider": "openai",
       "contextWindow": 400000,
@@ -19025,52 +18733,6 @@
         "currency": "USD",
         "input": 21,
         "output": 168,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "gpt-5.3-codex",
-      "provider": "openai",
-      "contextWindow": 400000,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 128000,
-      "name": "GPT-5.3 Codex",
-      "pricing": {
-        "cacheRead": 0.175,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.75,
-        "output": 14,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "gpt-5.3-codex-spark",
-      "provider": "openai",
-      "contextWindow": 128000,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 32000,
-      "name": "GPT-5.3 Codex Spark",
-      "pricing": {
-        "cacheRead": 0.175,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.75,
-        "output": 14,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -20091,51 +19753,6 @@
         "currency": "USD",
         "input": 4,
         "output": 24,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "o3",
-      "provider": "openai",
-      "contextWindow": 200000,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 100000,
-      "name": "o3",
-      "pricing": {
-        "cacheRead": 0.5,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2,
-        "output": 8,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "o3-pro",
-      "provider": "openai",
-      "contextWindow": 200000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 100000,
-      "name": "o3-pro",
-      "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 20,
-        "output": 80,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -35872,11 +35489,6 @@
         }
       ]
     },
-    "google-gemini-cli/gemini-2.5-computer-use-preview-10-2025": {
-      "input": 1.25,
-      "output": 10,
-      "source": "modelsDev"
-    },
     "google-gemini-cli/gemini-2.5-flash": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -35955,12 +35567,6 @@
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-3.1-flash-lite-image": {
-      "input": 0.25,
-      "output": 1.5,
-      "source": "modelsDev"
-    },
-    "google-gemini-cli/gemini-3.1-flash-lite-preview": {
-      "cacheRead": 0.025,
       "input": 0.25,
       "output": 1.5,
       "source": "modelsDev"
@@ -36108,11 +35714,6 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5,
-      "source": "modelsDev"
-    },
-    "google-gemini-cli/gemini-omni-flash-preview": {
-      "input": 1.5,
-      "output": 17.5,
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-pro-latest": {
@@ -38210,8 +37811,8 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.03,
-      "input": 0.0399,
-      "output": 0.074,
+      "input": 0.0475,
+      "output": 0.07289999999999999,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -38769,9 +38370,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.0009960000000000001,
-      "input": 0.049800000000000004,
-      "output": 0.19920000000000002,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -39185,9 +38786,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -42339,12 +41940,6 @@
       "output": 2,
       "source": "openRouter"
     },
-    "openrouter/xiaomi/mimo-v2.5-pro": {
-      "cacheRead": 0.096,
-      "input": 0.48,
-      "output": 1.7999999999999998,
-      "source": "openRouter"
-    },
     "openrouter/xiaomi/mimo-v2.6-flash": {
       "cacheRead": 0.0028,
       "input": 0.14,
@@ -42442,8 +42037,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.0399,
-      "output": 0.074,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -44160,7 +43755,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "712ae033851210712214a3d60ef22c2236c3aa0d",
+  "sourceCommit": "cded11f81d55cc6f54a971ed347b7259727de115",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -65669,11 +65264,6 @@
         }
       ]
     },
-    "google-gemini-cli/gemini-2.5-computer-use-preview-10-2025": {
-      "input": 1.25,
-      "output": 10,
-      "source": "modelsDev"
-    },
     "google-gemini-cli/gemini-2.5-flash": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -65752,12 +65342,6 @@
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-3.1-flash-lite-image": {
-      "input": 0.25,
-      "output": 1.5,
-      "source": "modelsDev"
-    },
-    "google-gemini-cli/gemini-3.1-flash-lite-preview": {
-      "cacheRead": 0.025,
       "input": 0.25,
       "output": 1.5,
       "source": "modelsDev"
@@ -65905,11 +65489,6 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 2.5,
-      "source": "modelsDev"
-    },
-    "google-gemini-cli/gemini-omni-flash-preview": {
-      "input": 1.5,
-      "output": 17.5,
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-pro-latest": {
@@ -66557,11 +66136,6 @@
         }
       ]
     },
-    "google/gemini-2.5-computer-use-preview-10-2025": {
-      "input": 1.25,
-      "output": 10,
-      "source": "modelsDev"
-    },
     "google/gemini-2.5-flash": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -66648,13 +66222,6 @@
     "google/gemini-3.1-flash-lite-image": {
       "input": 0.25,
       "output": 1.5,
-      "source": "modelsDev"
-    },
-    "google/gemini-3.1-flash-lite-preview": {
-      "cacheRead": 0.025,
-      "input": 0.25,
-      "output": 1.5,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "google/gemini-3.1-flash-live-preview": {
@@ -66813,11 +66380,6 @@
       "input": 0.3,
       "output": 2.5,
       "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "google/gemini-omni-flash-preview": {
-      "input": 1.5,
-      "output": 17.5,
       "source": "modelsDev"
     },
     "google/gemini-pro-latest": {
@@ -68952,37 +68514,18 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "mistral/devstral-2512": {
-      "input": 0.4,
-      "output": 2,
-      "source": "modelsDev"
-    },
     "mistral/devstral-latest": {
-      "alternatives": [
-        {
-          "cacheRead": 0.04,
-          "input": 0.39999999999999997,
-          "output": 2,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.4,
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
       "output": 2,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "mistral/devstral-medium-latest": {
-      "alternatives": [
-        {
-          "cacheRead": 0.04,
-          "input": 0.39999999999999997,
-          "output": 2,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.4,
+      "cacheRead": 0.04,
+      "input": 0.39999999999999997,
       "output": 2,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "mistral/devstral-small-latest": {
       "cacheRead": 0.01,
@@ -69013,8 +68556,9 @@
           "source": "liteLLM"
         }
       ],
-      "input": 2,
-      "output": 5,
+      "cacheRead": 0.15,
+      "input": 1.5,
+      "output": 7.5,
       "source": "modelsDev"
     },
     "mistral/magistral-small-latest": {
@@ -69039,10 +68583,19 @@
       "source": "modelsDev"
     },
     "mistral/ministral-14b-latest": {
+      "alternatives": [
+        {
+          "cacheRead": 0.02,
+          "input": 0.19999999999999998,
+          "output": 0.19999999999999998,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.02,
-      "input": 0.19999999999999998,
-      "output": 0.19999999999999998,
-      "source": "liteLLM"
+      "input": 0.2,
+      "output": 0.2,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "mistral/ministral-3-14b-2512": {
       "cacheRead": 0.02,
@@ -69141,6 +68694,7 @@
       "source": "liteLLM"
     },
     "mistral/mistral-embed": {
+      "cacheRead": 0.01,
       "input": 0.1,
       "output": 0,
       "source": "modelsDev"
@@ -69157,7 +68711,6 @@
       "cacheRead": 0.05,
       "input": 0.5,
       "output": 1.5,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "mistral/mistral-large-3": {
@@ -69187,13 +68740,6 @@
       "output": 2.0999999999999996,
       "source": "liteLLM"
     },
-    "mistral/mistral-large-4-0-8": {
-      "cacheRead": 0.07,
-      "input": 0.7,
-      "output": 2.1,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
     "mistral/mistral-large-latest": {
       "alternatives": [
         {
@@ -69215,17 +68761,6 @@
       "output": 7.5,
       "source": "liteLLM"
     },
-    "mistral/mistral-medium-2505": {
-      "input": 0.4,
-      "output": 2,
-      "source": "modelsDev"
-    },
-    "mistral/mistral-medium-2508": {
-      "input": 0.4,
-      "output": 2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
     "mistral/mistral-medium-2604": {
       "alternatives": [
         {
@@ -69238,7 +68773,6 @@
       "cacheRead": 0.15,
       "input": 1.5,
       "output": 7.5,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "mistral/mistral-medium-3": {
@@ -69273,7 +68807,6 @@
       "cacheRead": 0.15,
       "input": 1.5,
       "output": 7.5,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "mistral/mistral-small": {
@@ -69282,11 +68815,6 @@
       "output": 0.3,
       "passthroughOnly": true,
       "source": "liteLLM"
-    },
-    "mistral/mistral-small-2506": {
-      "input": 0.1,
-      "output": 0.3,
-      "source": "modelsDev"
     },
     "mistral/mistral-small-2603": {
       "alternatives": [
@@ -69343,22 +68871,10 @@
       "source": "liteLLM"
     },
     "mistral/open-mistral-nemo": {
-      "alternatives": [
-        {
-          "cacheRead": 0.03,
-          "input": 0.3,
-          "output": 0.3,
-          "source": "liteLLM"
-        }
-      ],
-      "input": 0.15,
-      "output": 0.15,
-      "source": "modelsDev"
-    },
-    "mistral/pixtral-12b": {
-      "input": 0.15,
-      "output": 0.15,
-      "source": "modelsDev"
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 0.3,
+      "source": "liteLLM"
     },
     "mistral/pixtral-large-latest": {
       "cacheRead": 0.19999999999999998,
@@ -72790,16 +72306,9 @@
       "source": "liteLLM"
     },
     "openai/gpt-3.5-turbo": {
-      "alternatives": [
-        {
-          "input": 0.5,
-          "output": 1.5,
-          "source": "liteLLM"
-        }
-      ],
       "input": 0.5,
       "output": 1.5,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/gpt-3.5-turbo-0125": {
       "input": 0.5,
@@ -72818,17 +72327,10 @@
       "source": "liteLLM"
     },
     "openai/gpt-4": {
-      "alternatives": [
-        {
-          "input": 30,
-          "output": 60,
-          "source": "liteLLM"
-        }
-      ],
       "input": 30,
       "output": 60,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/gpt-4-0613": {
       "input": 30,
@@ -72841,16 +72343,9 @@
       "source": "liteLLM"
     },
     "openai/gpt-4-turbo": {
-      "alternatives": [
-        {
-          "input": 10,
-          "output": 30,
-          "source": "liteLLM"
-        }
-      ],
       "input": 10,
       "output": 30,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/gpt-4-turbo-2024-04-09": {
       "input": 10,
@@ -72900,19 +72395,11 @@
       "source": "liteLLM"
     },
     "openai/gpt-4.1-nano": {
-      "alternatives": [
-        {
-          "cacheRead": 0.024999999999999998,
-          "input": 0.09999999999999999,
-          "output": 0.39999999999999997,
-          "source": "liteLLM"
-        }
-      ],
-      "cacheRead": 0.025,
-      "input": 0.1,
-      "output": 0.4,
+      "cacheRead": 0.024999999999999998,
+      "input": 0.09999999999999999,
+      "output": 0.39999999999999997,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/gpt-4.1-nano-2025-04-14": {
       "cacheRead": 0.024999999999999998,
@@ -72936,17 +72423,10 @@
       "source": "modelsDev"
     },
     "openai/gpt-4o-2024-05-13": {
-      "alternatives": [
-        {
-          "input": 5,
-          "output": 15,
-          "source": "liteLLM"
-        }
-      ],
       "input": 5,
       "output": 15,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/gpt-4o-2024-08-06": {
       "alternatives": [
@@ -73312,13 +72792,6 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.175,
-      "input": 1.75,
-      "output": 14,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "openai/gpt-5.3-codex-spark": {
       "cacheRead": 0.175,
       "input": 1.75,
       "output": 14,
@@ -74173,19 +73646,11 @@
       "source": "liteLLM"
     },
     "openai/o1": {
-      "alternatives": [
-        {
-          "cacheRead": 7.5,
-          "input": 15,
-          "output": 60,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 7.5,
       "input": 15,
       "output": 60,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/o1-2024-12-17": {
       "cacheRead": 7.5,
@@ -74194,16 +73659,9 @@
       "source": "liteLLM"
     },
     "openai/o1-pro": {
-      "alternatives": [
-        {
-          "input": 150,
-          "output": 600,
-          "source": "liteLLM"
-        }
-      ],
       "input": 150,
       "output": 600,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/o1-pro-2025-03-19": {
       "input": 150,
@@ -74244,19 +73702,11 @@
       "source": "liteLLM"
     },
     "openai/o3-mini": {
-      "alternatives": [
-        {
-          "cacheRead": 0.55,
-          "input": 1.1,
-          "output": 4.4,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.55,
       "input": 1.1,
       "output": 4.4,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/o3-mini-2025-01-31": {
       "cacheRead": 0.55,
@@ -74283,19 +73733,11 @@
       "source": "liteLLM"
     },
     "openai/o4-mini": {
-      "alternatives": [
-        {
-          "cacheRead": 0.275,
-          "input": 1.1,
-          "output": 4.4,
-          "source": "liteLLM"
-        }
-      ],
       "cacheRead": 0.275,
       "input": 1.1,
       "output": 4.4,
       "passthroughOnly": true,
-      "source": "modelsDev"
+      "source": "liteLLM"
     },
     "openai/o4-mini-2025-04-16": {
       "cacheRead": 0.275,
@@ -75249,8 +74691,8 @@
     },
     "openrouter/~z-ai/glm-flash-latest": {
       "cacheRead": 0.03,
-      "input": 0.0399,
-      "output": 0.074,
+      "input": 0.0475,
+      "output": 0.07289999999999999,
       "source": "openRouter"
     },
     "openrouter/~z-ai/glm-latest": {
@@ -75843,9 +75285,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.0009960000000000001,
-      "input": 0.049800000000000004,
-      "output": 0.19920000000000002,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -76268,9 +75710,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -79485,12 +78927,6 @@
       "output": 2,
       "source": "openRouter"
     },
-    "openrouter/xiaomi/mimo-v2.5-pro": {
-      "cacheRead": 0.096,
-      "input": 0.48,
-      "output": 1.7999999999999998,
-      "source": "openRouter"
-    },
     "openrouter/xiaomi/mimo-v2.6-flash": {
       "cacheRead": 0.0028,
       "input": 0.14,
@@ -79588,8 +79024,8 @@
     },
     "openrouter/z-ai/glm-5.3-flash": {
       "cacheRead": 0.03,
-      "input": 0.0399,
-      "output": 0.074,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -84101,20 +83537,6 @@
       "output": 0.87,
       "source": "modelsDev"
     },
-    "requesty/minimax-m2.7": {
-      "cacheRead": 0.06,
-      "cacheWrite": 1.2,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "requesty/minimax-m2.7-highspeed": {
-      "cacheRead": 0.06,
-      "cacheWrite": 1.2,
-      "input": 0.6,
-      "output": 2.4,
-      "source": "modelsDev"
-    },
     "requesty/minimax-m3": {
       "cacheRead": 0.06,
       "input": 0.3,
@@ -84122,9 +83544,9 @@
       "source": "modelsDev"
     },
     "requesty/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.07,
+      "input": 0.3,
+      "output": 1.2,
       "source": "modelsDev"
     },
     "requesty/minimax-m3.1-flash@eu": {
@@ -85580,6 +85002,12 @@
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
+      "source": "liteLLM"
+    },
+    "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017-fast": {
+      "cacheRead": 0.012,
+      "input": 0.6,
+      "output": 2.4,
       "source": "liteLLM"
     },
     "together_ai/elorian-labs/glimpse-1.0": {
@@ -87816,6 +87244,12 @@
       "source": "liteLLM"
     },
     "vertex_ai/gemini-4-neon": {
+      "cacheRead": 0.15,
+      "input": 3,
+      "output": 15,
+      "source": "liteLLM"
+    },
+    "vertex_ai/gemini-4-neon-cyber-permissive": {
       "cacheRead": 0.15,
       "input": 3,
       "output": 15,
