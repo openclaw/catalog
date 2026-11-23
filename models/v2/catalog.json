@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795394847184,
+  "generatedAt": 1795408257891,
   "models": [
     {
       "id": "abliterated-model",
@@ -8398,7 +8398,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 117964,
+      "maxTokens": 16384,
       "name": "Gemma 3 27B IT",
       "pricing": {
         "cacheRead": 0,
@@ -13212,8 +13212,8 @@
         "cacheRead": 0.025,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.9,
+        "input": 0.05,
+        "output": 0.7,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14595,18 +14595,18 @@
     {
       "id": "z-ai/glm-5.1",
       "provider": "kilocode",
-      "contextWindow": 202752,
+      "contextWindow": 204800,
       "input": [
         "text"
       ],
       "maxTokens": 131072,
       "name": "GLM-5.1",
       "pricing": {
-        "cacheRead": 0.26,
+        "cacheRead": 0.6,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.4,
-        "output": 4.4,
+        "input": 1.19,
+        "output": 3.74,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -38564,9 +38564,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0443,
-      "output": 0.3,
+      "cacheRead": 0.044,
+      "input": 0.055,
+      "output": 0.375,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
@@ -39219,9 +39219,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -42242,9 +42242,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.1": {
-      "cacheRead": 0.6,
-      "input": 1.19,
-      "output": 3.74,
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2": {
@@ -43982,7 +43982,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "461b02a48f587c038427570062eb785493c32bc7",
+  "sourceCommit": "2e8c1ad0aa97c5bcd512cad8ed1d6259d13f811d",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -47301,6 +47301,11 @@
       "cacheWrite": 2.31,
       "input": 1.848,
       "output": 5.808,
+      "source": "modelsDev"
+    },
+    "amazon-bedrock/writer.palmyra-vision-7b": {
+      "input": 0.15,
+      "output": 0.6,
       "source": "modelsDev"
     },
     "amazon-bedrock/writer.palmyra-x4-v1:0": {
@@ -75615,9 +75620,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
-      "cacheRead": 0.035,
-      "input": 0.0443,
-      "output": 0.3,
+      "cacheRead": 0.044,
+      "input": 0.055,
+      "output": 0.375,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
@@ -76302,9 +76307,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -79373,9 +79378,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.1": {
-      "cacheRead": 0.6,
-      "input": 1.19,
-      "output": 3.74,
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.2": {
