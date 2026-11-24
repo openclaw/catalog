@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795508982247,
+  "generatedAt": 1795523522138,
   "models": [
     {
       "id": "abliterated-model",
@@ -35529,6 +35529,43 @@
       "reasoning": true
     },
     {
+      "id": "glm-5.4",
+      "provider": "zai",
+      "compat": {
+        "codeMode": "preferred",
+        "defaultThinkingLevel": "max",
+        "supportedReasoningEfforts": [
+          "medium",
+          "high",
+          "max"
+        ],
+        "supportsReasoningEffort": true,
+        "thinkingLevels": [
+          "off",
+          "low",
+          "high",
+          "max"
+        ]
+      },
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.4",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true,
+      "thinkingLevelMap": {
+        "low": "medium",
+        "medium": "medium",
+        "minimal": "medium",
+        "xhigh": "max"
+      }
+    },
+    {
       "id": "glm-5v-turbo",
       "provider": "zai",
       "contextWindow": 200000,
@@ -36507,6 +36544,12 @@
       "cacheRead": 0.1599999975,
       "input": 0.9500000000000001,
       "output": 4.05,
+      "source": "deepinfra"
+    },
+    "deepinfra/thinkingmachines/Inkling-2-Mini": {
+      "cacheRead": 0.015,
+      "input": 0.075,
+      "output": 0.3,
       "source": "deepinfra"
     },
     "deepinfra/XiaomiMiMo/MiMo-V2.5": {
@@ -38720,8 +38763,8 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.16999999999999998,
-      "input": 0.171,
+      "cacheRead": 0.0999,
+      "input": 0.0999,
       "output": 5,
       "source": "openRouter"
     },
@@ -38746,9 +38789,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 11.0055,
+      "cacheRead": 0.19,
+      "input": 0.19,
+      "output": 10.6066,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -39457,9 +39500,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.15,
-      "input": 0.19,
-      "output": 8,
+      "cacheRead": 0.09699999999999999,
+      "input": 0.111,
+      "output": 4.4399999999999995,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
@@ -44415,7 +44458,6 @@
       "defaultModel": "deepseek-ai/DeepSeek-V4.1-Flash",
       "recommendedModels": [
         "deepseek-ai/DeepSeek-V4.1-Flash",
-        "zai-org/GLM-5.3",
         "moonshotai/Kimi-K3.1-Pro",
         "deepseek-ai/DeepSeek-V4-Pro-0813",
         "zai-org/GLM-5.3-Flash"
@@ -44446,7 +44488,6 @@
         "deepseek-ai/DeepSeek-V4.1-Flash-1017",
         "tencent/Hy4",
         "Qwen/Qwen4-Max",
-        "zai-org/GLM-5.3",
         "deepseek-ai/DeepSeek-V4-Pro-0813",
         "Qwen/Qwen3.8-27B-TEE"
       ]
@@ -44465,7 +44506,6 @@
         "tencent/Hy4",
         "XiaomiMiMo/MiMo-V2.6-Pro",
         "Qwen/Qwen4-Max",
-        "zai-org/GLM-5.3",
         "moonshotai/Kimi-K3.1-Pro",
         "deepseek-ai/DeepSeek-V4-Pro",
         "zai-org/GLM-5.3-Flash",
@@ -44489,7 +44529,6 @@
       "defaultModel": "accounts/fireworks/routers/glm-5p3-fast",
       "recommendedModels": [
         "accounts/fireworks/models/deepseek-v4p1-flash",
-        "accounts/fireworks/models/glm-5p3",
         "accounts/fireworks/models/kimi-k3p1-pro",
         "accounts/fireworks/models/glm-5p3-flash",
         "accounts/fireworks/models/minimax-m3",
@@ -44550,7 +44589,6 @@
         "google/gemini-3.8-flash",
         "openai/gpt-6-luna",
         "qwen/qwen4-max",
-        "z-ai/glm-5.3",
         "moonshotai/kimi-k3.1-pro",
         "anthropic/claude-haiku-5.5",
         "deepseek/deepseek-v4-pro",
@@ -44586,7 +44624,6 @@
       "defaultModel": "mistral-large-latest",
       "recommendedModels": [
         "deepseek-v4-1-flash-1017",
-        "zai-glm-5-3",
         "zai-glm-5-3-flash",
         "mistral-large-4"
       ]
@@ -44607,7 +44644,6 @@
         "tencent/hy4",
         "xiaomimimo/mimo-v2.6-pro",
         "qwen/qwen4-max",
-        "zai-org/glm-5.3",
         "moonshotai/kimi-k3.1-pro",
         "deepseek/deepseek-v4-pro",
         "stepfun/step-5-preview",
@@ -44631,7 +44667,6 @@
         "deepseek-v4.1-flash",
         "hy4",
         "mimo-v2.6-pro",
-        "glm-5.3",
         "kimi-k3.1-pro",
         "deepseek-v4-pro",
         "glm-5.3-flash",
@@ -44682,7 +44717,6 @@
       "api": "openai-completions",
       "recommendedModels": [
         "deepseek-v4.1-flash",
-        "glm-5.3",
         "deepseek-v4-pro"
       ]
     },
@@ -44718,7 +44752,6 @@
       "defaultModel": "hy4-preview",
       "recommendedModels": [
         "hy4",
-        "glm-5-3",
         "deepseek/deepseek-v4-pro",
         "glm-5.3-flash",
         "minimax-m3"
@@ -44731,7 +44764,6 @@
         "deepseek-ai/DeepSeek-V4.1-Flash",
         "tencent/Hy4",
         "Qwen/Qwen4-Max",
-        "zai-org/GLM-5.3",
         "moonshotai/Kimi-K3.1-Pro",
         "deepseek-ai/DeepSeek-V4-Pro-0813",
         "zai-org/GLM-5.3-Flash",
@@ -44758,7 +44790,6 @@
         "gemini-3-8-flash",
         "openai-gpt-6-luna",
         "qwen-4-max",
-        "z-ai-glm-5-3",
         "kimi-k3-1-pro",
         "claude-haiku-5-5",
         "deepseek-v4-pro",
@@ -44787,7 +44818,6 @@
         "google/gemini-3.8-flash",
         "openai/gpt-6-luna",
         "alibaba/qwen4-max",
-        "zai/glm-5.3",
         "moonshotai/kimi-k3.1-pro",
         "anthropic/claude-haiku-5.5",
         "deepseek/deepseek-v4-pro",
@@ -44811,7 +44841,6 @@
       "defaultModel": "ark-code-latest",
       "recommendedModels": [
         "deepseek-v4.1-flash",
-        "glm-5.3",
         "kimi-k3.1-pro",
         "deepseek-v4-pro",
         "glm-5.3-flash"
@@ -44839,13 +44868,13 @@
       "api": "openai-completions",
       "defaultModel": "glm-5.2",
       "recommendedModels": [
-        "glm-5.3",
+        "glm-5.4",
         "glm-5.3-flash"
       ]
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "0de00945f26b0b00f22da5114946fce6752555ca",
+  "sourceCommit": "74c57f83ee2040e453877ef90cfd73f510f42065",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -75587,8 +75616,8 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
-      "cacheRead": 0.16999999999999998,
-      "input": 0.171,
+      "cacheRead": 0.0999,
+      "input": 0.0999,
       "output": 5,
       "source": "openRouter"
     },
@@ -75613,9 +75642,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 11.0055,
+      "cacheRead": 0.19,
+      "input": 0.19,
+      "output": 10.6066,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -76364,9 +76393,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
-      "cacheRead": 0.15,
-      "input": 0.19,
-      "output": 8,
+      "cacheRead": 0.09699999999999999,
+      "input": 0.111,
+      "output": 4.4399999999999995,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
