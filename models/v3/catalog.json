@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795537697552,
+  "generatedAt": 1795551982802,
   "models": [
     {
       "id": "abliterated-model",
@@ -1051,7 +1051,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 131072,
       "name": "DeepSeek V4.1 Flash Fast",
       "pricing": {
         "cacheRead": 0.014,
@@ -1059,6 +1059,28 @@
         "currency": "USD",
         "input": 0.6,
         "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "meta-models/muse-spark-open",
+      "provider": "baseten",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Muse Spark Open",
+      "pricing": {
+        "cacheRead": 0.15,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.25,
+        "output": 4.25,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -1095,7 +1117,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 1048576,
       "name": "Kimi K3.1 Pro",
       "pricing": {
         "cacheRead": 0.2,
@@ -1124,6 +1146,28 @@
         "currency": "USD",
         "input": 0.6,
         "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+      "provider": "baseten",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Nemotron 3.5 Super VL",
+      "pricing": {
+        "cacheRead": 0.04,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -1162,6 +1206,27 @@
         "currency": "USD",
         "input": 0.1,
         "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "reflection/Beam-1.0",
+      "provider": "baseten",
+      "contextWindow": 1048576,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Beam",
+      "pricing": {
+        "cacheRead": 0.04,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.4,
+        "output": 1.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -2132,14 +2197,7 @@
       "maxTokens": 64000,
       "name": "Command A+",
       "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 2.5,
-        "output": 10,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
+        "status": "unknown"
       },
       "reasoning": true
     },
@@ -2352,6 +2410,20 @@
       ],
       "maxTokens": 64000,
       "name": "North Mini Code 1.0",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "north-mini-code-1.0",
+      "provider": "cohere",
+      "contextWindow": 256000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 64000,
+      "name": "North Mini Code",
       "pricing": {
         "status": "unknown"
       },
@@ -2842,6 +2914,50 @@
       "reasoning": true
     },
     {
+      "id": "google/gemma-4-31B-it-turbo",
+      "provider": "deepinfra",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 16384,
+      "name": "Gemma 4 31B IT",
+      "pricing": {
+        "cacheRead": 0.050000000399999994,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.09,
+        "output": 0.34,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "google/gemma-4-31B-it-Ultra",
+      "provider": "deepinfra",
+      "contextWindow": 131072,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 8192,
+      "name": "Gemma 4 31B IT",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.26999999999999996,
+        "output": 0.76,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
       "provider": "deepinfra",
       "contextWindow": 131072,
@@ -2885,6 +3001,27 @@
       "reasoning": false
     },
     {
+      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+      "provider": "deepinfra",
+      "contextWindow": 131072,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 4096,
+      "name": "Llama-3.1-8B-Instruct",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.02,
+        "output": 0.04,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
       "id": "MiniMaxAI/MiniMax-M3",
       "provider": "deepinfra",
       "contextWindow": 524288,
@@ -2905,6 +3042,49 @@
         "unit": "million_tokens"
       },
       "reasoning": true
+    },
+    {
+      "id": "mistralai/Mistral-Nemo-Instruct-2407",
+      "provider": "deepinfra",
+      "contextWindow": 131072,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 128000,
+      "name": "Mistral Nemo",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.029,
+        "output": 0.030000000000000002,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
+    },
+    {
+      "id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "provider": "deepinfra",
+      "contextWindow": 128000,
+      "input": [
+        "image",
+        "text"
+      ],
+      "maxTokens": 16384,
+      "name": "Mistral Small 3.2 24B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.2,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
     },
     {
       "id": "moonshotai/Kimi-K2.6",
@@ -3031,7 +3211,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 131072,
       "name": "GPT OSS 120B",
       "pricing": {
         "cacheRead": 0.0185,
@@ -3039,6 +3219,27 @@
         "currency": "USD",
         "input": 0.037,
         "output": 0.17,
+        "source": "deepinfra",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "openai/gpt-oss-120b-Ultra",
+      "provider": "deepinfra",
+      "contextWindow": 131072,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GPT OSS 120B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.9500000000000001,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -3494,29 +3695,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "tencent/Hy4-preview",
-      "provider": "deepinfra",
-      "contextWindow": 1048576,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 64000,
-      "name": "Hy4 preview",
-      "pricing": {
-        "cacheRead": 0.04199999814,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
-        "source": "deepinfra",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "deepinfra no longer lists this model in its public model inventory."
     },
     {
       "id": "thinkingmachines/Inkling-2-Mini",
@@ -3983,7 +4161,7 @@
     {
       "id": "accounts/fireworks/models/deepseek-v4p1-flash",
       "provider": "fireworks",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
@@ -4005,7 +4183,7 @@
     {
       "id": "accounts/fireworks/models/deepseek-v4p1-flash-1017",
       "provider": "fireworks",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
@@ -4157,7 +4335,7 @@
     {
       "id": "accounts/fireworks/models/minimax-m3p1-flash",
       "provider": "fireworks",
-      "contextWindow": 1000000,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
@@ -4242,6 +4420,28 @@
       "reasoning": true
     },
     {
+      "id": "accounts/fireworks/models/ultramarine-1-flash-us",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Ultramarine 1 Flash",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "accounts/fireworks/routers/deepseek-flash-latest",
       "provider": "fireworks",
       "contextWindow": 1000000,
@@ -4257,6 +4457,28 @@
         "currency": "USD",
         "input": 0.3,
         "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-flex",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017 Flex",
+      "pricing": {
+        "cacheRead": 0.003,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -4308,6 +4530,28 @@
       "reasoning": true
     },
     {
+      "id": "accounts/fireworks/routers/deepseek-v4p1-flash-1017-us",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017 (US)",
+      "pricing": {
+        "cacheRead": 0.009,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.45,
+        "output": 1.8,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "accounts/fireworks/routers/deepseek-v4p1-flash-spot",
       "provider": "fireworks",
       "contextWindow": 1000000,
@@ -4323,6 +4567,28 @@
         "currency": "USD",
         "input": 0.15,
         "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "accounts/fireworks/routers/deepseek-v4p1-flash-us",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash (US)",
+      "pricing": {
+        "cacheRead": 0.009,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.45,
+        "output": 1.8,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -4365,6 +4631,27 @@
         "currency": "USD",
         "input": 0.7,
         "output": 2.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "accounts/fireworks/routers/glm-5p3-us",
+      "provider": "fireworks",
+      "contextWindow": 1048573,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 262144,
+      "name": "GLM 5.3 (US)",
+      "pricing": {
+        "cacheRead": 0.39,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.1,
+        "output": 6.6,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -4480,7 +4767,7 @@
       "reasoning": true
     },
     {
-      "id": "accounts/fireworks/routers/kimi-k3-spot",
+      "id": "accounts/fireworks/routers/kimi-k3-us",
       "provider": "fireworks",
       "contextWindow": 1048576,
       "input": [
@@ -4488,13 +4775,35 @@
         "image"
       ],
       "maxTokens": 1048576,
-      "name": "Kimi K3 Spot",
+      "name": "Kimi K3 (US)",
       "pricing": {
-        "cacheRead": 0.21,
+        "cacheRead": 0.45,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 2.1,
-        "output": 10.5,
+        "input": 4.5,
+        "output": 22.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "accounts/fireworks/routers/kimi-k3p1-pro-us",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro (US)",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2.5,
+        "output": 12.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -4510,7 +4819,7 @@
         "image"
       ],
       "maxTokens": 1048576,
-      "name": "Kimi Latest",
+      "name": "Kimi Latest (Kimi K3.1 Pro)",
       "pricing": {
         "cacheRead": 0.2,
         "cacheWrite": 0,
@@ -4667,7 +4976,7 @@
         "currency": "USD",
         "input": 5,
         "output": 25,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -4867,7 +5176,7 @@
         "currency": "USD",
         "input": 1.5,
         "output": 9,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -4893,12 +5202,12 @@
       "maxTokens": 65536,
       "name": "Gemini 3.6 Flash",
       "pricing": {
-        "cacheRead": 0.075,
+        "cacheRead": 0.15,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.75,
-        "output": 3.75,
-        "source": "modelsDev",
+        "input": 1.5,
+        "output": 7.5,
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       }
@@ -4964,29 +5273,8 @@
         "currency": "USD",
         "input": 2.5,
         "output": 15,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
-        "tieredPricing": [
-          {
-            "cacheRead": 0.25,
-            "cacheWrite": 0,
-            "input": 2.5,
-            "output": 15,
-            "range": [
-              0,
-              272000
-            ]
-          },
-          {
-            "cacheRead": 0.5,
-            "cacheWrite": 0,
-            "input": 5,
-            "output": 22.5,
-            "range": [
-              272000
-            ]
-          }
-        ],
         "unit": "million_tokens"
       },
       "reasoning": true,
@@ -5024,7 +5312,7 @@
         "currency": "USD",
         "input": 0.75,
         "output": 4.5,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -5064,29 +5352,8 @@
         "currency": "USD",
         "input": 5,
         "output": 30,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
-        "tieredPricing": [
-          {
-            "cacheRead": 0.5,
-            "cacheWrite": 0,
-            "input": 5,
-            "output": 30,
-            "range": [
-              0,
-              272000
-            ]
-          },
-          {
-            "cacheRead": 1,
-            "cacheWrite": 0,
-            "input": 10,
-            "output": 45,
-            "range": [
-              272000
-            ]
-          }
-        ],
         "unit": "million_tokens"
       },
       "reasoning": true,
@@ -5241,34 +5508,13 @@
       "maxTokens": 128000,
       "name": "GPT-5.6 Terra",
       "pricing": {
-        "cacheRead": 0.2,
-        "cacheWrite": 2.5,
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
         "currency": "USD",
-        "input": 2,
-        "output": 12,
-        "source": "modelsDev",
+        "input": 2.5,
+        "output": 15,
+        "source": "manifest",
         "status": "known",
-        "tieredPricing": [
-          {
-            "cacheRead": 0.2,
-            "cacheWrite": 2.5,
-            "input": 2,
-            "output": 12,
-            "range": [
-              0,
-              272000
-            ]
-          },
-          {
-            "cacheRead": 0.4,
-            "cacheWrite": 5,
-            "input": 4,
-            "output": 18,
-            "range": [
-              272000
-            ]
-          }
-        ],
         "unit": "million_tokens"
       },
       "reasoning": true,
@@ -6534,7 +6780,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "huggingface no longer lists this model in its public model inventory."
     },
     {
       "id": "deepseek-ai/DeepSeek-V3.1",
@@ -6720,13 +6968,13 @@
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.047,
+        "input": 0.0456,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -8085,7 +8333,7 @@
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.047,
+        "input": 0.0456,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -8101,14 +8349,14 @@
         "text",
         "image"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 393216,
       "name": "DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "cacheRead": 0.00686,
+        "cacheRead": 0.028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.2156,
-        "output": 0.6468,
+        "input": 0.44,
+        "output": 1.32,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8168,11 +8416,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
-        "cacheRead": 0.0042,
+        "cacheRead": 0.001014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.14,
-        "output": 0.42,
+        "input": 0.0507,
+        "output": 0.2028,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8266,23 +8514,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "provider": "kilocode",
-      "contextWindow": 512000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 460800,
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "elorian/glimpse",
@@ -8720,6 +8951,29 @@
       "reasoning": true
     },
     {
+      "id": "google/gemini-4-neon-fast",
+      "provider": "kilocode",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 1000000,
+      "name": "Google: Gemini 4 Neon (Fast)",
+      "pricing": {
+        "cacheRead": 0.27,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 5.4,
+        "output": 27,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "google/gemini-nano-banana-2.1",
       "provider": "kilocode",
       "contextWindow": 65536,
@@ -8797,11 +9051,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0.023,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.05,
-        "output": 0.18,
+        "input": 0.047,
+        "output": 0.169,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9983,31 +10237,6 @@
       "reasoning": true
     },
     {
-      "id": "mistralai/mistral-medium-3",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 104857,
-      "name": "Mistral Medium 3",
-      "pricing": {
-        "cacheRead": 0.044,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.44,
-        "output": 2.2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
-    },
-    {
       "id": "mistralai/mistral-medium-3-5",
       "provider": "kilocode",
       "contextWindow": 262144,
@@ -10029,31 +10258,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "mistralai/mistral-medium-3.1",
-      "provider": "kilocode",
-      "contextWindow": 131072,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 104857,
-      "name": "Mistral Medium 3.1",
-      "pricing": {
-        "cacheRead": 0.044,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.44,
-        "output": 2.2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": false,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "mistralai/mistral-nemo",
@@ -11989,9 +12193,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6 Astra Pro",
@@ -12058,9 +12262,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6 Luna Pro",
@@ -12127,9 +12331,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6 Sol Pro",
@@ -12196,9 +12400,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6.1 Sol Pro",
@@ -12265,9 +12469,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6.1 Terra Pro",
@@ -12334,9 +12538,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6.2 Astra Pro",
@@ -12362,7 +12566,7 @@
         "document"
       ],
       "maxTokens": 128000,
-      "name": "OpenAI: GPT-6.2 Sol (new)",
+      "name": "OpenAI: GPT-6.2 Sol",
       "pricing": {
         "cacheRead": 0.1,
         "cacheWrite": 2.5,
@@ -12403,9 +12607,9 @@
       "provider": "kilocode",
       "contextWindow": 1050000,
       "input": [
-        "document",
+        "text",
         "image",
-        "text"
+        "document"
       ],
       "maxTokens": 128000,
       "name": "OpenAI: GPT-6.2 Sol Pro",
@@ -13673,7 +13877,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 235929,
       "name": "Qwen3.8 27B",
       "pricing": {
         "cacheRead": 0.1,
@@ -15015,12 +15219,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 943717,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -15541,28 +15745,6 @@
       ],
       "maxTokens": 262144,
       "name": "LongCat-2.5",
-      "pricing": {
-        "cacheRead": 0.006,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "LongCat-2.5-Preview",
-      "provider": "longcat",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 262144,
-      "name": "LongCat-2.5-Preview",
       "pricing": {
         "cacheRead": 0.006,
         "cacheWrite": 0,
@@ -18503,7 +18685,9 @@
       "pricing": {
         "status": "unknown"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "nvidia no longer lists this model in its public model inventory."
     },
     {
       "id": "meta/llama-3.2-11b-vision-instruct",
@@ -18552,7 +18736,9 @@
       "pricing": {
         "status": "unknown"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "nvidia no longer lists this model in its public model inventory."
     },
     {
       "id": "minimaxai/minimax-m3.1-flash",
@@ -21617,14 +21803,7 @@
       ],
       "maxTokens": 65536,
       "pricing": {
-        "cacheRead": 0,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1,
-        "output": 5,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
+        "status": "unknown"
       },
       "reasoning": false
     },
@@ -21650,10 +21829,9 @@
         "image"
       ],
       "maxTokens": 65536,
-      "name": "Qwen3.5 Plus",
       "pricing": {
         "cacheRead": 0,
-        "cacheWrite": 0,
+        "cacheWrite": 0.5,
         "currency": "USD",
         "input": 0.4,
         "output": 2.4,
@@ -21662,7 +21840,7 @@
         "tieredPricing": [
           {
             "cacheRead": 0,
-            "cacheWrite": 0,
+            "cacheWrite": 0.5,
             "input": 0.4,
             "output": 2.4,
             "range": [
@@ -21672,7 +21850,7 @@
           },
           {
             "cacheRead": 0,
-            "cacheWrite": 0,
+            "cacheWrite": 0.625,
             "input": 0.5,
             "output": 3,
             "range": [
@@ -21921,7 +22099,7 @@
       "maxTokens": 384000,
       "name": "DeepSeek V4 Flash 0731",
       "pricing": {
-        "cacheRead": 0.088,
+        "cacheRead": 0.044,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.44,
@@ -22091,7 +22269,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 16384,
       "name": "Kimi K2.7 Code",
       "pricing": {
         "status": "unknown"
@@ -22344,6 +22522,29 @@
       }
     },
     {
+      "id": "qwen4-max",
+      "provider": "qwen-token-plan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 262144,
+      "name": "Qwen4 Max",
+      "pricing": {
+        "cacheRead": 0.075,
+        "cacheWrite": 1.875,
+        "currency": "USD",
+        "input": 1.5,
+        "output": 4.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "claude-sonnet-5-5",
       "provider": "requesty",
       "compat": {
@@ -22441,6 +22642,28 @@
         "unit": "million_tokens"
       },
       "reasoning": true
+    },
+    {
+      "id": "step-1o-turbo-vision",
+      "provider": "stepfun",
+      "contextWindow": 32768,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Step-1o Turbo Vision",
+      "pricing": {
+        "cacheRead": 0.07,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.36,
+        "output": 1.15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": false
     },
     {
       "id": "step-3.5-flash",
@@ -22647,6 +22870,200 @@
       "reasoning": true
     },
     {
+      "id": "deepseek-v4-pro",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4 Pro",
+      "pricing": {
+        "cacheRead": 0.145,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.74,
+        "output": 3.48,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4-pro-0813",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4 Pro 0813",
+      "pricing": {
+        "cacheRead": 0.022,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.66,
+        "output": 1.98,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "cacheRead": 0.003,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "cacheRead": 0.003,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-flash",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "cacheRead": 0.003,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4 Pro 0813",
+      "pricing": {
+        "cacheRead": 0.022,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.66,
+        "output": 1.98,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5.2",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.2",
+      "pricing": {
+        "cacheRead": 0.26,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.4,
+        "output": 4.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5.3",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3",
+      "pricing": {
+        "cacheRead": 0.26,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.4,
+        "output": 4.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "glm-5.3-flash",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3-Flash",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "hy3",
       "provider": "tencent-tokenhub",
       "compat": {
@@ -22664,12 +23081,12 @@
       "maxTokens": 128000,
       "name": "Hy3 (TokenHub)",
       "pricing": {
-        "cacheRead": 0.037,
+        "cacheRead": 0.033,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.147,
-        "output": 0.587,
-        "source": "manifest",
+        "input": 0.132,
+        "output": 0.528,
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -22796,7 +23213,7 @@
         "currency": "USD",
         "input": 0.07,
         "output": 0.281,
-        "source": "manifest",
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -22825,6 +23242,312 @@
         "currency": "USD",
         "input": 0.834,
         "output": 2.501,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k2.6",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Kimi K2.6",
+      "pricing": {
+        "cacheRead": 0.145,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.858,
+        "output": 3.566,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k2.7-code",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Kimi K2.7 Code",
+      "pricing": {
+        "cacheRead": 0.19,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.95,
+        "output": 4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k2.7-code-highspeed",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "Kimi K2.7 Code Highspeed",
+      "pricing": {
+        "cacheRead": 0.38,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.9,
+        "output": 8,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k2.8-preview",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K2.8 Preview",
+      "pricing": {
+        "cacheRead": 0.25,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1,
+        "output": 4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k3",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3",
+      "pricing": {
+        "cacheRead": 0.3,
+        "cacheWrite": 3,
+        "currency": "USD",
+        "input": 3,
+        "output": 15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "kimi-k3.1-pro",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.2,
+        "cacheWrite": 2,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Flash",
+      "pricing": {
+        "cacheRead": 0.0028,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.14,
+        "output": 0.28,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "mimo-v2.6-pro",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "MiMo-V2.6-Pro",
+      "pricing": {
+        "cacheRead": 0.0036,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.435,
+        "output": 0.87,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax-m3",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 512000,
+      "name": "MiniMax-M3",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.06,
+            "cacheWrite": 0,
+            "input": 0.3,
+            "output": 1.2,
+            "range": [
+              0,
+              512000
+            ]
+          },
+          {
+            "cacheRead": 0.12,
+            "cacheWrite": 0,
+            "input": 0.6,
+            "output": 2.4,
+            "range": [
+              512000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "minimax-m3.1-flash",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 512000,
+      "name": "MiniMax-M3.1-Flash",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "step-5-preview",
+      "provider": "tencent-tokenhub",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Step 5 Preview",
+      "pricing": {
+        "cacheRead": 0.05,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1,
+        "output": 2.7,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4-pro-0813",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4 Pro 0813",
+      "pricing": {
+        "cacheRead": 0.022457,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.673723,
+        "output": 2.02117,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "cacheRead": 0.002994,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.149716,
+        "output": 0.598865,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -22983,6 +23706,27 @@
       "reasoning": true
     },
     {
+      "id": "hy3-202608",
+      "provider": "tencent-tokenplan",
+      "contextWindow": 256000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 128000,
+      "name": "Hy3 (202608)",
+      "pricing": {
+        "cacheRead": 0.037429,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.149716,
+        "output": 0.598865,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "hy4",
       "provider": "tencent-tokenplan",
       "compat": {
@@ -23003,11 +23747,11 @@
       "maxTokens": 64000,
       "name": "Hy4 (TokenPlan)",
       "pricing": {
-        "cacheRead": 0.042,
+        "cacheRead": 0.044915,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.898298,
+        "output": 2.694894,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -23035,12 +23779,12 @@
       "maxTokens": 65536,
       "name": "Hy4 flash (TokenPlan)",
       "pricing": {
-        "cacheRead": 0.003,
+        "cacheRead": 0.002994,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.07,
-        "output": 0.281,
-        "source": "manifest",
+        "input": 0.074858,
+        "output": 0.299433,
+        "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -23064,11 +23808,11 @@
       "maxTokens": 64000,
       "name": "Hy4 preview (TokenPlan)",
       "pricing": {
-        "cacheRead": 0.04503926,
+        "cacheRead": 0.044915,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.90078512,
-        "output": 2.70235537,
+        "input": 0.898298,
+        "output": 2.694894,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -23108,11 +23852,11 @@
       "maxTokens": 1048576,
       "name": "Kimi K3",
       "pricing": {
-        "cacheRead": 0.30026171,
-        "cacheWrite": 0,
+        "cacheRead": 0.299433,
+        "cacheWrite": 2.994326,
         "currency": "USD",
-        "input": 3.00261708,
-        "output": 15.01308541,
+        "input": 2.994326,
+        "output": 14.971631,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -23293,6 +24037,50 @@
       "reasoning": true
     },
     {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017-fast",
+      "provider": "together",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017 Fast",
+      "pricing": {
+        "cacheRead": 0.012,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 2.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "elorian-labs/glimpse-1.0",
+      "provider": "together",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Glimpse 1.0",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.6,
+        "output": 3,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
       "provider": "together",
       "contextWindow": 131072,
@@ -23302,12 +24090,12 @@
       "maxTokens": 8192,
       "name": "Llama 3.3 70B Instruct Turbo",
       "pricing": {
-        "cacheRead": 0,
+        "cacheRead": 1.04,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 1.04,
         "output": 1.04,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       }
@@ -23350,28 +24138,6 @@
         "currency": "USD",
         "input": 1.25,
         "output": 4.25,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "MiniMaxAI/MiniMax-M3",
-      "provider": "together",
-      "contextWindow": 524288,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 524288,
-      "name": "MiniMax-M3",
-      "pricing": {
-        "cacheRead": 0.06,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.3,
-        "output": 1.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -23552,6 +24318,49 @@
       "reasoning": true
     },
     {
+      "id": "Qwen/Qwen3.7-Plus",
+      "provider": "together",
+      "contextWindow": 1000000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 64000,
+      "name": "Qwen3.7 Plus",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.32,
+        "output": 1.28,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "Qwen/Qwen3.8-Flash",
+      "provider": "together",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Qwen3.8 Flash",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.47,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "Qwen/Qwen4-Max",
       "provider": "together",
       "contextWindow": 1000000,
@@ -23563,11 +24372,11 @@
       "maxTokens": 262144,
       "name": "Qwen4 Max",
       "pricing": {
-        "cacheRead": 0.0525,
+        "cacheRead": 0.075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.05,
-        "output": 3.15,
+        "input": 1.5,
+        "output": 4.5,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -23611,28 +24420,6 @@
         "currency": "USD",
         "input": 0.834,
         "output": 2.501,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "thinkingmachines/Inkling",
-      "provider": "together",
-      "contextWindow": 524288,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 131072,
-      "name": "Inkling",
-      "pricing": {
-        "cacheRead": 0.17,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1,
-        "output": 4.05,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -24438,11 +25225,11 @@
       "maxTokens": 32768,
       "name": "DeepSeek V3.2",
       "pricing": {
-        "cacheRead": 0.16,
+        "cacheRead": 0.13,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.33,
-        "output": 0.48,
+        "input": 0.26,
+        "output": 0.38,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -24991,7 +25778,7 @@
       "maxTokens": 8192,
       "name": "Google Gemma 4 31B Instruct",
       "pricing": {
-        "cacheRead": 0.09,
+        "cacheRead": 0.05,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.12,
@@ -25235,6 +26022,28 @@
         "currency": "USD",
         "input": 1.0425,
         "output": 3.12625,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inkling-2-mini",
+      "provider": "venice",
+      "contextWindow": 524288,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 131072,
+      "name": "Inkling 2 Mini",
+      "pricing": {
+        "cacheRead": 0.024,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.12,
+        "output": 0.5,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -25539,8 +26348,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.09375,
-        "output": 0.25,
+        "input": 0.075,
+        "output": 0.2,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -25644,11 +26453,11 @@
       "maxTokens": 32768,
       "name": "NVIDIA Nemotron 3 Ultra",
       "pricing": {
-        "cacheRead": 0.1875,
+        "cacheRead": 0.1,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.625,
-        "output": 3.125,
+        "input": 0.5,
+        "output": 2.2,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -26858,11 +27667,11 @@
       "maxTokens": 65536,
       "name": "Qwen 3.8 2.4T",
       "pricing": {
-        "cacheRead": 0.3125,
+        "cacheRead": 0.25,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 2.5,
-        "output": 7.5,
+        "input": 2,
+        "output": 6,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -27060,8 +27869,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.325,
-        "output": 3.25,
+        "input": 0.32,
+        "output": 3.2,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -27262,11 +28071,11 @@
       "maxTokens": 131072,
       "name": "MiMo-V2.6-Flash",
       "pricing": {
-        "cacheRead": 0.00375,
+        "cacheRead": 0.0028,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.175,
-        "output": 0.35,
+        "input": 0.14,
+        "output": 0.28,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -27398,11 +28207,11 @@
       "maxTokens": 16384,
       "name": "GLM 4.7",
       "pricing": {
-        "cacheRead": 0.11,
+        "cacheRead": 0.08,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.55,
-        "output": 2.65,
+        "input": 0.4,
+        "output": 1.75,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -27440,11 +28249,11 @@
       "maxTokens": 80000,
       "name": "GLM 5.1",
       "pricing": {
-        "cacheRead": 0.286,
+        "cacheRead": 0.247,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 1.54,
-        "output": 4.84,
+        "input": 1.33,
+        "output": 4.18,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -27566,7 +28375,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 256000,
+      "maxTokens": 65536,
       "name": "Qwen3 Coder Next",
       "pricing": {
         "cacheRead": 0,
@@ -27929,7 +28738,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 32768,
       "name": "Qwen3.8 27B",
       "pricing": {
         "cacheRead": 0.059,
@@ -28086,7 +28895,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 10000,
+      "maxTokens": 8192,
       "name": "Nova Lite",
       "pricing": {
         "cacheRead": 0.015,
@@ -28107,10 +28916,10 @@
       "input": [
         "text"
       ],
-      "maxTokens": 10000,
+      "maxTokens": 8192,
       "name": "Nova Micro",
       "pricing": {
-        "cacheRead": 0.00875,
+        "cacheRead": 0.0087,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.035,
@@ -28130,7 +28939,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 10000,
+      "maxTokens": 8192,
       "name": "Nova Pro",
       "pricing": {
         "cacheRead": 0.2,
@@ -28652,7 +29461,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 256000,
       "name": "Seed 2.1 Turbo",
       "pricing": {
         "cacheRead": 0.1,
@@ -28708,6 +29517,27 @@
         "unit": "million_tokens"
       },
       "reasoning": false
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 128000,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 8192,
+      "name": "DeepSeek-R1",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.35,
+        "output": 5.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "deepseek/deepseek-v3.1",
@@ -28801,7 +29631,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 384000,
       "name": "DeepSeek V4 Flash Vision Exp",
       "pricing": {
         "cacheRead": 0.0068,
@@ -28822,7 +29652,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 1048600,
+      "maxTokens": 384000,
       "name": "DeepSeek V4 Pro",
       "pricing": {
         "cacheRead": 0.132,
@@ -28843,7 +29673,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 1048600,
+      "maxTokens": 384000,
       "name": "DeepSeek V4 Pro 0813",
       "pricing": {
         "cacheRead": 0.132,
@@ -28866,7 +29696,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 384000,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
         "cacheRead": 0.006,
@@ -28977,7 +29807,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 131072,
       "name": "Ember-1",
       "pricing": {
         "cacheRead": 0.3,
@@ -29241,29 +30071,6 @@
       "reasoning": true
     },
     {
-      "id": "google/gemini-3.7-flash",
-      "provider": "vercel-ai-gateway",
-      "contextWindow": 1000000,
-      "input": [
-        "text",
-        "image",
-        "document"
-      ],
-      "maxTokens": 65535,
-      "name": "Gemini 3.7 Flash",
-      "pricing": {
-        "cacheRead": 0.075,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.75,
-        "output": 3.75,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "google/gemini-3.8-flash",
       "provider": "vercel-ai-gateway",
       "contextWindow": 1000000,
@@ -29337,7 +30144,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 65536,
       "name": "Gemini 4 Argon",
       "pricing": {
         "cacheRead": 0.1,
@@ -29360,7 +30167,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 65536,
       "name": "Gemini 4 Carbon",
       "pricing": {
         "cacheRead": 0.1,
@@ -29383,7 +30190,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 65536,
       "name": "Gemini 4 Hydrogen",
       "pricing": {
         "cacheRead": 0.075,
@@ -29406,7 +30213,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 65536,
       "name": "Gemini 4 Neon",
       "pricing": {
         "cacheRead": 0.15,
@@ -29414,6 +30221,29 @@
         "currency": "USD",
         "input": 3,
         "output": 15,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "google/gemini-4-neon-fast",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 65536,
+      "name": "Gemini 4 Neon (Fast)",
+      "pricing": {
+        "cacheRead": 0.27,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 5.4,
+        "output": 27,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -29477,27 +30307,6 @@
       "name": "Ampersand v0.1",
       "pricing": {
         "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "inception/mercury-3",
-      "provider": "vercel-ai-gateway",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131072,
-      "name": "Mercury 3",
-      "pricing": {
-        "cacheRead": 0.01,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.1,
-        "output": 0.35,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -29787,7 +30596,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 524288,
       "name": "Muse Ember",
       "pricing": {
         "cacheRead": 0.004,
@@ -29832,7 +30641,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 131072,
       "name": "Muse Spark 1.1",
       "pricing": {
         "cacheRead": 0.15,
@@ -29855,7 +30664,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 131072,
       "name": "Muse Spark 1.2",
       "pricing": {
         "cacheRead": 0.15,
@@ -29901,7 +30710,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 131072,
       "name": "Muse Spark 1.3",
       "pricing": {
         "cacheRead": 0.15,
@@ -29946,7 +30755,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 131072,
       "name": "Muse Spark Open",
       "pricing": {
         "cacheRead": 0.15,
@@ -29969,7 +30778,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 131072,
       "name": "Muse Wonder",
       "pricing": {
         "cacheRead": 0.2,
@@ -30055,7 +30864,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 512000,
       "name": "MiniMax M3",
       "pricing": {
         "cacheRead": 0.06,
@@ -30228,7 +31037,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 128000,
       "name": "Mistral Nemo",
       "pricing": {
         "cacheRead": 0,
@@ -30292,7 +31101,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 98304,
       "name": "Kimi K2 Instruct",
       "pricing": {
         "cacheRead": 0,
@@ -30550,7 +31359,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 8192,
       "name": "NVIDIA Nemotron 3.5 Super VL",
       "pricing": {
         "cacheRead": 0.04,
@@ -30572,7 +31381,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 128000,
       "name": "Nvidia Nemotron Nano 12B V2 VL",
       "pricing": {
         "cacheRead": 0,
@@ -32785,7 +33594,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 128000,
       "name": "Fugu Max",
       "pricing": {
         "cacheRead": 0.25,
@@ -32850,7 +33659,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 128000,
       "name": "Fugu Ultra v2",
       "pricing": {
         "cacheRead": 0.5,
@@ -32894,7 +33703,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 256000,
+      "maxTokens": 65536,
       "name": "Sakana Namazu",
       "pricing": {
         "cacheRead": 0.15,
@@ -33005,7 +33814,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 2000000,
+      "maxTokens": 30000,
       "name": "Grok 4.20 Non-Reasoning",
       "pricing": {
         "cacheRead": 0.2,
@@ -33093,7 +33902,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 2000000,
+      "maxTokens": 30000,
       "name": "Grok 4.20 Reasoning",
       "pricing": {
         "cacheRead": 0.2,
@@ -33181,7 +33990,7 @@
         "image",
         "document"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 30000,
       "name": "Grok 4.3",
       "pricing": {
         "cacheRead": 0.2,
@@ -33389,7 +34198,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 262144,
+      "maxTokens": 128000,
       "name": "Hy3",
       "pricing": {
         "cacheRead": 0.035,
@@ -33485,6 +34294,28 @@
         "currency": "USD",
         "input": 1,
         "output": 4.05,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "thinkingmachines/inkling-2-mini",
+      "provider": "vercel-ai-gateway",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Inkling 2 Mini",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -33862,7 +34693,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 1000000,
+      "maxTokens": 131072,
       "name": "GLM 5.3",
       "pricing": {
         "cacheRead": 0.14,
@@ -34029,6 +34860,72 @@
       "reasoning": true,
       "replacedBy": "deepseek-v4-flash-260425",
       "status": "deprecated"
+    },
+    {
+      "id": "deepseek-v4-1-flash-260910",
+      "provider": "volcengine",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash",
+      "pricing": {
+        "cacheRead": 0.00299,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.14972,
+        "output": 0.59886,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4-1-flash-261017",
+      "provider": "volcengine",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "cacheRead": 0.00299,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.14972,
+        "output": 0.59886,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "deepseek-v4-1-flash-economy-261017",
+      "provider": "volcengine",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 384000,
+      "name": "DeepSeek V4.1 Flash 1017 Economy",
+      "pricing": {
+        "cacheRead": 0.0024,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.11977,
+        "output": 0.47909,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "deepseek-v4-flash-260425",
@@ -34221,6 +35118,28 @@
       "reasoning": true
     },
     {
+      "id": "doubao-seed-2-1-lite-260915",
+      "provider": "volcengine",
+      "contextWindow": 1024000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Seed 2.1 Lite",
+      "pricing": {
+        "cacheRead": 0.02395,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.11977,
+        "output": 0.40423,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "doubao-seed-2-1-pro-260628",
       "provider": "volcengine",
       "contextWindow": 256000,
@@ -34236,6 +35155,28 @@
         "currency": "USD",
         "input": 0.8906,
         "output": 4.45301,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "doubao-seed-2-1-pro-260915",
+      "provider": "volcengine",
+      "contextWindow": 1024000,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 256000,
+      "name": "Seed 2.1 Pro",
+      "pricing": {
+        "cacheRead": 0.17966,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.8983,
+        "output": 4.49149,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -34267,12 +35208,12 @@
     {
       "id": "doubao-seed-character-260628",
       "provider": "volcengine",
-      "contextWindow": 256000,
+      "contextWindow": 128000,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 256000,
+      "maxTokens": 32000,
       "name": "Seed Character",
       "pricing": {
         "cacheRead": 0.02375,
@@ -34418,6 +35359,28 @@
       },
       "replacedBy": "doubao-seed-evolving",
       "status": "deprecated"
+    },
+    {
+      "id": "kimi-k3-1-pro-261024",
+      "provider": "volcengine",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro",
+      "pricing": {
+        "cacheRead": 0.19463,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1.94631,
+        "output": 10.18071,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "ark-code-latest",
@@ -34628,21 +35591,6 @@
       ],
       "maxTokens": 32768,
       "name": "Kimi K2.8 Preview",
-      "pricing": {
-        "status": "unknown"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "kimi-k3",
-      "provider": "volcengine-plan",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 1048576,
-      "name": "Kimi K3",
       "pricing": {
         "status": "unknown"
       },
@@ -35010,7 +35958,7 @@
         "currency": "USD",
         "input": 0.14,
         "output": 0.28,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -35031,7 +35979,7 @@
         "currency": "USD",
         "input": 0.435,
         "output": 0.87,
-        "source": "modelsDev",
+        "source": "manifest",
         "status": "known",
         "unit": "million_tokens"
       },
@@ -35534,6 +36482,29 @@
       "reasoning": true
     },
     {
+      "id": "glm-5.3-flashx-legal",
+      "provider": "zai",
+      "contextWindow": 1000000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 131072,
+      "name": "GLM-5.3-FlashX-Legal",
+      "pricing": {
+        "cacheRead": 0.075,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.37,
+        "output": 1.25,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "glm-5.4",
       "provider": "zai",
       "compat": {
@@ -35898,17 +36869,6 @@
       "output": 0.060000000000000005,
       "source": "deepinfra"
     },
-    "deepinfra/google/gemma-4-31B-it-turbo": {
-      "cacheRead": 0.050000000399999994,
-      "input": 0.09,
-      "output": 0.34,
-      "source": "deepinfra"
-    },
-    "deepinfra/google/gemma-4-31B-it-Ultra": {
-      "input": 0.26999999999999996,
-      "output": 0.76,
-      "source": "deepinfra"
-    },
     "deepinfra/google/gemma-4-E4B-it": {
       "input": 0.02,
       "output": 0.1,
@@ -36066,11 +37026,6 @@
       "output": 0.05,
       "source": "deepinfra"
     },
-    "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
-      "input": 0.02,
-      "output": 0.04,
-      "source": "deepinfra"
-    },
     "deepinfra/meta-models/Muse-Glimmer-30B": {
       "cacheRead": 0.039999999,
       "input": 0.3,
@@ -36162,11 +37117,6 @@
       "output": 0.054,
       "source": "deepinfra"
     },
-    "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
-      "input": 0.029,
-      "output": 0.030000000000000002,
-      "source": "deepinfra"
-    },
     "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501": {
       "input": 0.05,
       "output": 0.08,
@@ -36175,11 +37125,6 @@
     "deepinfra/mistralai/Mistral-Small-3.1-24B-Instruct-2503": {
       "input": 0.05,
       "output": 0.1,
-      "source": "deepinfra"
-    },
-    "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506": {
-      "input": 0.075,
-      "output": 0.2,
       "source": "deepinfra"
     },
     "deepinfra/mistralai/Mixtral-8x22B-Instruct-v0.1": {
@@ -36326,11 +37271,6 @@
     "deepinfra/openai/gpt-oss-120b-Turbo": {
       "input": 0.15,
       "output": 0.6,
-      "source": "deepinfra"
-    },
-    "deepinfra/openai/gpt-oss-120b-Ultra": {
-      "input": 0.2,
-      "output": 0.9500000000000001,
       "source": "deepinfra"
     },
     "deepinfra/openbmb/MiniCPM-Llama3-V-2_5": {
@@ -36543,6 +37483,12 @@
       "cacheRead": 0.0329999995,
       "input": 0.13,
       "output": 0.53,
+      "source": "deepinfra"
+    },
+    "deepinfra/tencent/Hy4-preview": {
+      "cacheRead": 0.04199999814,
+      "input": 0.834,
+      "output": 2.501,
       "source": "deepinfra"
     },
     "deepinfra/thinkingmachines/Inkling": {
@@ -39487,9 +40433,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.00686,
-      "input": 0.21559999999999999,
-      "output": 0.6468,
+      "cacheRead": 0.028,
+      "input": 0.44,
+      "output": 1.32,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
@@ -39921,9 +40867,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -40108,9 +41054,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2.5": {
-      "cacheRead": 0.03,
-      "input": 0.27,
-      "output": 0.95,
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2.7": {
@@ -42489,9 +43435,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.0175,
-      "input": 0.035,
-      "output": 1.5,
+      "cacheRead": 0.059,
+      "input": 0.06,
+      "output": 1.96,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
@@ -43042,12 +43988,6 @@
         }
       ]
     },
-    "openrouter/xiaomi/mimo-v2.5": {
-      "cacheRead": 0.08,
-      "input": 0.39999999999999997,
-      "output": 2,
-      "source": "openRouter"
-    },
     "openrouter/xiaomi/mimo-v2.6-flash": {
       "cacheRead": 0.0028,
       "input": 0.14,
@@ -43185,15 +44125,28 @@
       "output": 4,
       "source": "openRouter"
     },
+    "qwen-token-plan/glm-5.3-prime": {
+      "cacheRead": 0.56,
+      "input": 2.8,
+      "output": 8.8,
+      "source": "modelsDev"
+    },
     "qwen-token-plan/kimi-k3": {
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
       "source": "modelsDev"
     },
-    "qwen-token-plan/qvq-max": {
-      "input": 1.2,
-      "output": 4.8,
+    "qwen-token-plan/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/kimi-k3.1-pro-prime": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen-flash": {
@@ -43225,6 +44178,7 @@
       ]
     },
     "qwen-token-plan/qwen-max": {
+      "cacheRead": 0.32,
       "input": 1.6,
       "output": 6.4,
       "source": "modelsDev"
@@ -43232,21 +44186,6 @@
     "qwen-token-plan/qwen-mt-plus": {
       "input": 2.46,
       "output": 7.37,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-mt-turbo": {
-      "input": 0.16,
-      "output": 0.49,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-omni-turbo": {
-      "input": 0.07,
-      "output": 0.27,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-omni-turbo-realtime": {
-      "input": 0.27,
-      "output": 1.07,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen-plus": {
@@ -43278,126 +44217,15 @@
       ]
     },
     "qwen-token-plan/qwen-plus-character-ja": {
+      "cacheRead": 0.1,
       "input": 0.5,
       "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-turbo": {
-      "input": 0.05,
-      "output": 0.2,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-vl-max": {
-      "input": 0.8,
-      "output": 3.2,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen-vl-ocr": {
       "input": 0.07,
       "output": 0.16,
       "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-vl-plus": {
-      "input": 0.21,
-      "output": 0.63,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen2-5-omni-7b": {
-      "input": 0.1,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-14b": {
-      "input": 0.35,
-      "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-32b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-8b": {
-      "input": 0.18,
-      "output": 0.7,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.45,
-      "output": 2.25,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.45,
-          "output": 2.25,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.75,
-          "output": 3.75,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.2,
-          "output": 6,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "qwen-token-plan/qwen3-coder-480b-a35b-instruct": {
-      "input": 1.5,
-      "output": 7.5,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.5,
-          "output": 7.5,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.7,
-          "output": 13.5,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 4.5,
-          "output": 22.5,
-          "range": [
-            128000
-          ]
-        }
-      ]
     },
     "qwen-token-plan/qwen3-coder-flash": {
       "cacheRead": 0.06,
@@ -43447,44 +44275,9 @@
         }
       ]
     },
-    "qwen-token-plan/qwen3-coder-plus": {
-      "input": 1,
-      "output": 5,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-livetranslate-flash-realtime": {
-      "input": 10,
-      "output": 10,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-max": {
-      "input": 1.2,
-      "output": 6,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-next-80b-a3b-instruct": {
-      "input": 0.5,
-      "output": 2,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-next-80b-a3b-thinking": {
-      "input": 0.5,
-      "output": 6,
-      "source": "modelsDev"
-    },
     "qwen-token-plan/qwen3-omni-flash": {
       "input": 0.43,
       "output": 1.66,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-omni-flash-realtime": {
-      "input": 0.52,
-      "output": 1.99,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-vl-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3-vl-30b-a3b": {
@@ -43558,13 +44351,14 @@
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.5-plus": {
+      "cacheWrite": 0.5,
       "input": 0.4,
       "output": 2.4,
       "source": "modelsDev",
       "tieredPricing": [
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.5,
           "input": 0.4,
           "output": 2.4,
           "range": [
@@ -43574,7 +44368,7 @@
         },
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.625,
           "input": 0.5,
           "output": 3,
           "range": [
@@ -43591,13 +44385,6 @@
     "qwen-token-plan/qwen3.6-35b-a3b": {
       "input": 0.375,
       "output": 2.25,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3.6-max-preview": {
-      "cacheRead": 0.13,
-      "cacheWrite": 1.625,
-      "input": 1.3,
-      "output": 7.8,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.7-flash": {
@@ -43644,13 +44431,8 @@
       "output": 0.47,
       "source": "modelsDev"
     },
-    "qwen-token-plan/qwq-plus": {
-      "input": 0.8,
-      "output": 2.4,
-      "source": "modelsDev"
-    },
     "qwen/deepseek-v4-flash-0731": {
-      "cacheRead": 0.088,
+      "cacheRead": 0.044,
       "input": 0.44,
       "output": 1.32,
       "source": "modelsDev"
@@ -43661,15 +44443,28 @@
       "output": 4.4,
       "source": "modelsDev"
     },
+    "qwen/glm-5.3-prime": {
+      "cacheRead": 0.56,
+      "input": 2.8,
+      "output": 8.8,
+      "source": "modelsDev"
+    },
     "qwen/kimi-k3": {
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
       "source": "modelsDev"
     },
-    "qwen/qvq-max": {
-      "input": 1.2,
-      "output": 4.8,
+    "qwen/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "qwen/kimi-k3.1-pro-prime": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "qwen/qwen-flash": {
@@ -43701,6 +44496,7 @@
       ]
     },
     "qwen/qwen-max": {
+      "cacheRead": 0.32,
       "input": 1.6,
       "output": 6.4,
       "source": "modelsDev"
@@ -43708,21 +44504,6 @@
     "qwen/qwen-mt-plus": {
       "input": 2.46,
       "output": 7.37,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-mt-turbo": {
-      "input": 0.16,
-      "output": 0.49,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-omni-turbo": {
-      "input": 0.07,
-      "output": 0.27,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-omni-turbo-realtime": {
-      "input": 0.27,
-      "output": 1.07,
       "source": "modelsDev"
     },
     "qwen/qwen-plus": {
@@ -43754,126 +44535,15 @@
       ]
     },
     "qwen/qwen-plus-character-ja": {
+      "cacheRead": 0.1,
       "input": 0.5,
       "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-turbo": {
-      "input": 0.05,
-      "output": 0.2,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-vl-max": {
-      "input": 0.8,
-      "output": 3.2,
       "source": "modelsDev"
     },
     "qwen/qwen-vl-ocr": {
       "input": 0.07,
       "output": 0.16,
       "source": "modelsDev"
-    },
-    "qwen/qwen-vl-plus": {
-      "input": 0.21,
-      "output": 0.63,
-      "source": "modelsDev"
-    },
-    "qwen/qwen2-5-omni-7b": {
-      "input": 0.1,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-14b": {
-      "input": 0.35,
-      "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-32b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-8b": {
-      "input": 0.18,
-      "output": 0.7,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.45,
-      "output": 2.25,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.45,
-          "output": 2.25,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.75,
-          "output": 3.75,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.2,
-          "output": 6,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 1.5,
-      "output": 7.5,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.5,
-          "output": 7.5,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.7,
-          "output": 13.5,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 4.5,
-          "output": 22.5,
-          "range": [
-            128000
-          ]
-        }
-      ]
     },
     "qwen/qwen3-coder-flash": {
       "cacheRead": 0.06,
@@ -43923,39 +44593,9 @@
         }
       ]
     },
-    "qwen/qwen3-livetranslate-flash-realtime": {
-      "input": 10,
-      "output": 10,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-max": {
-      "input": 1.2,
-      "output": 6,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.5,
-      "output": 2,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.5,
-      "output": 6,
-      "source": "modelsDev"
-    },
     "qwen/qwen3-omni-flash": {
       "input": 0.43,
       "output": 1.66,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-omni-flash-realtime": {
-      "input": 0.52,
-      "output": 1.99,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-vl-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
       "source": "modelsDev"
     },
     "qwen/qwen3-vl-30b-a3b": {
@@ -44038,13 +44678,6 @@
       "output": 2.25,
       "source": "modelsDev"
     },
-    "qwen/qwen3.6-max-preview": {
-      "cacheRead": 0.13,
-      "cacheWrite": 1.625,
-      "input": 1.3,
-      "output": 7.8,
-      "source": "modelsDev"
-    },
     "qwen/qwen3.7-flash": {
       "cacheRead": 0.006,
       "cacheWrite": 0.0375,
@@ -44089,9 +44722,11 @@
       "output": 0.47,
       "source": "modelsDev"
     },
-    "qwen/qwq-plus": {
-      "input": 0.8,
-      "output": 2.4,
+    "qwen/qwen4-max": {
+      "cacheRead": 0.075,
+      "cacheWrite": 1.875,
+      "input": 1.5,
+      "output": 4.5,
       "source": "modelsDev"
     },
     "venice/deepseek-v4-1-flash": {
@@ -44212,21 +44847,10 @@
         }
       ]
     },
-    "venice/inkling-2-mini": {
-      "cacheRead": 0.024,
-      "input": 0.12,
-      "output": 0.5,
-      "source": "venice"
-    },
     "vercel-ai-gateway/amazon/nova-2-lite": {
       "cacheRead": 0.0825,
       "input": 0.33,
       "output": 2.75,
-      "source": "modelsDev"
-    },
-    "vercel-ai-gateway/deepseek/deepseek-r1": {
-      "input": 1.35,
-      "output": 5.4,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/deepseek/deepseek-v3.2": {
@@ -44269,6 +44893,12 @@
       "output": 12,
       "source": "modelsDev"
     },
+    "vercel-ai-gateway/google/gemini-3.7-flash": {
+      "cacheRead": 0.075,
+      "input": 0.75,
+      "output": 3.75,
+      "source": "modelsDev"
+    },
     "vercel-ai-gateway/google/gemini-3.8-flash-lite-tts": {
       "input": 0.5,
       "output": 6,
@@ -44293,6 +44923,12 @@
     "vercel-ai-gateway/google/gemini-omni-flash-preview": {
       "input": 1.5,
       "output": 9,
+      "source": "modelsDev"
+    },
+    "vercel-ai-gateway/inception/mercury-3": {
+      "cacheRead": 0.01,
+      "input": 0.1,
+      "output": 0.35,
       "source": "modelsDev"
     },
     "vercel-ai-gateway/inference-net/schematron-v2-small": {
@@ -44710,6 +45346,7 @@
       "api": "openai-completions",
       "recommendedModels": [
         "deepseek-v4.1-flash",
+        "qwen4-max",
         "deepseek-v4-pro"
       ]
     },
@@ -44737,15 +45374,24 @@
       "api": "openai-completions",
       "defaultModel": "hy4-preview",
       "recommendedModels": [
-        "hy4"
+        "deepseek-v4.1-flash",
+        "hy4",
+        "mimo-v2.6-pro",
+        "kimi-k3.1-pro",
+        "deepseek-v4-pro",
+        "step-5-preview",
+        "glm-5.3-flash",
+        "minimax-m3",
+        "minimax-m3.1-flash"
       ]
     },
     "tencent-tokenplan": {
       "api": "openai-completions",
       "defaultModel": "hy4-preview",
       "recommendedModels": [
+        "deepseek-v4.1-flash-1017",
         "hy4",
-        "deepseek/deepseek-v4-pro",
+        "deepseek-v4-pro-0813",
         "glm-5.3-flash",
         "minimax-m3"
       ]
@@ -44760,7 +45406,6 @@
         "moonshotai/Kimi-K3.1-Pro",
         "deepseek-ai/DeepSeek-V4-Pro-0813",
         "zai-org/GLM-5.3-Flash",
-        "MiniMaxAI/MiniMax-M3",
         "MiniMaxAI/MiniMax-M3.1-Flash"
       ]
     },
@@ -44825,6 +45470,8 @@
     "volcengine": {
       "api": "openai-completions",
       "recommendedModels": [
+        "deepseek-v4-1-flash-260910",
+        "kimi-k3-1-pro-261024",
         "deepseek-v4-pro-260425",
         "glm-5-3-flash-260828"
       ]
@@ -44867,7 +45514,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "99195cb9f6d1d704f49de40044929c32e6614ca2",
+  "sourceCommit": "86cde8b31751bcca60d7761d515d282b587f2923",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -45478,7 +46125,7 @@
       "source": "liteLLM"
     },
     "alibaba/deepseek-v4-flash-0731": {
-      "cacheRead": 0.088,
+      "cacheRead": 0.044,
       "input": 0.44,
       "output": 1.32,
       "source": "modelsDev"
@@ -45489,15 +46136,28 @@
       "output": 4.4,
       "source": "modelsDev"
     },
+    "alibaba/glm-5.3-prime": {
+      "cacheRead": 0.56,
+      "input": 2.8,
+      "output": 8.8,
+      "source": "modelsDev"
+    },
     "alibaba/kimi-k3": {
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
       "source": "modelsDev"
     },
-    "alibaba/qvq-max": {
-      "input": 1.2,
-      "output": 4.8,
+    "alibaba/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "alibaba/kimi-k3.1-pro-prime": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "alibaba/qwen-flash": {
@@ -45529,6 +46189,7 @@
       ]
     },
     "alibaba/qwen-max": {
+      "cacheRead": 0.32,
       "input": 1.6,
       "output": 6.4,
       "source": "modelsDev"
@@ -45536,21 +46197,6 @@
     "alibaba/qwen-mt-plus": {
       "input": 2.46,
       "output": 7.37,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen-mt-turbo": {
-      "input": 0.16,
-      "output": 0.49,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen-omni-turbo": {
-      "input": 0.07,
-      "output": 0.27,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen-omni-turbo-realtime": {
-      "input": 0.27,
-      "output": 1.07,
       "source": "modelsDev"
     },
     "alibaba/qwen-plus": {
@@ -45582,126 +46228,15 @@
       ]
     },
     "alibaba/qwen-plus-character-ja": {
+      "cacheRead": 0.1,
       "input": 0.5,
       "output": 1.4,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen-turbo": {
-      "input": 0.05,
-      "output": 0.2,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen-vl-max": {
-      "input": 0.8,
-      "output": 3.2,
       "source": "modelsDev"
     },
     "alibaba/qwen-vl-ocr": {
       "input": 0.07,
       "output": 0.16,
       "source": "modelsDev"
-    },
-    "alibaba/qwen-vl-plus": {
-      "input": 0.21,
-      "output": 0.63,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen2-5-omni-7b": {
-      "input": 0.1,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-14b": {
-      "input": 0.35,
-      "output": 1.4,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-32b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-8b": {
-      "input": 0.18,
-      "output": 0.7,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.45,
-      "output": 2.25,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.45,
-          "output": 2.25,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.75,
-          "output": 3.75,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.2,
-          "output": 6,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "alibaba/qwen3-coder-480b-a35b-instruct": {
-      "input": 1.5,
-      "output": 7.5,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.5,
-          "output": 7.5,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.7,
-          "output": 13.5,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 4.5,
-          "output": 22.5,
-          "range": [
-            128000
-          ]
-        }
-      ]
     },
     "alibaba/qwen3-coder-flash": {
       "cacheRead": 0.06,
@@ -45751,45 +46286,9 @@
         }
       ]
     },
-    "alibaba/qwen3-coder-plus": {
-      "input": 1,
-      "output": 5,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-livetranslate-flash-realtime": {
-      "input": 10,
-      "output": 10,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-max": {
-      "input": 1.2,
-      "output": 6,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-next-80b-a3b-instruct": {
-      "input": 0.5,
-      "output": 2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-next-80b-a3b-thinking": {
-      "input": 0.5,
-      "output": 6,
-      "source": "modelsDev"
-    },
     "alibaba/qwen3-omni-flash": {
       "input": 0.43,
       "output": 1.66,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-omni-flash-realtime": {
-      "input": 0.52,
-      "output": 1.99,
-      "source": "modelsDev"
-    },
-    "alibaba/qwen3-vl-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
       "source": "modelsDev"
     },
     "alibaba/qwen3-vl-30b-a3b": {
@@ -45864,6 +46363,7 @@
       "source": "modelsDev"
     },
     "alibaba/qwen3.5-plus": {
+      "cacheWrite": 0.5,
       "input": 0.4,
       "output": 2.4,
       "passthroughOnly": true,
@@ -45871,7 +46371,7 @@
       "tieredPricing": [
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.5,
           "input": 0.4,
           "output": 2.4,
           "range": [
@@ -45881,7 +46381,7 @@
         },
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.625,
           "input": 0.5,
           "output": 3,
           "range": [
@@ -45929,13 +46429,6 @@
           ]
         }
       ]
-    },
-    "alibaba/qwen3.6-max-preview": {
-      "cacheRead": 0.13,
-      "cacheWrite": 1.625,
-      "input": 1.3,
-      "output": 7.8,
-      "source": "modelsDev"
     },
     "alibaba/qwen3.6-plus": {
       "cacheRead": 0.05,
@@ -46065,9 +46558,12 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "alibaba/qwq-plus": {
-      "input": 0.8,
-      "output": 2.4,
+    "alibaba/qwen4-max": {
+      "cacheRead": 0.075,
+      "cacheWrite": 1.875,
+      "input": 1.5,
+      "output": 4.5,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "amazon-bedrock/amazon.nova-2-lite-v1:0": {
@@ -51356,10 +51852,19 @@
       "source": "modelsDev"
     },
     "baseten/meta-models/muse-spark-open": {
+      "alternatives": [
+        {
+          "cacheRead": 0.15,
+          "input": 1.25,
+          "output": 4.25,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.15,
       "input": 1.25,
       "output": 4.25,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "baseten/MiniMaxAI/MiniMax-M2.5": {
       "input": 0.3,
@@ -51444,10 +51949,19 @@
       "source": "modelsDev"
     },
     "baseten/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B": {
+      "alternatives": [
+        {
+          "cacheRead": 0.04,
+          "input": 0.19999999999999998,
+          "output": 0.5,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.04,
-      "input": 0.19999999999999998,
+      "input": 0.2,
       "output": 0.5,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "baseten/openai/gpt-oss-120b": {
       "alternatives": [
@@ -51465,10 +51979,19 @@
       "source": "modelsDev"
     },
     "baseten/reflection/Beam-1.0": {
+      "alternatives": [
+        {
+          "cacheRead": 0.04,
+          "input": 0.39999999999999997,
+          "output": 1.2,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 0.04,
-      "input": 0.39999999999999997,
+      "input": 0.4,
       "output": 1.2,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "baseten/thinkingmachines/inkling": {
       "cacheRead": 0.16999999999999998,
@@ -59489,12 +60012,6 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "cohere/command-a-plus-05-2026": {
-      "input": 2.5,
-      "output": 10,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
     "cohere/command-a-reasoning-08-2025": {
       "input": 2.5,
       "output": 10,
@@ -60697,11 +61214,13 @@
       "cacheRead": 0.049999999999999996,
       "input": 0.09,
       "output": 0.33999999999999997,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/google/gemma-4-31B-it-Ultra": {
       "input": 0.27,
       "output": 0.76,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/google/gemma-4-E4B-it": {
@@ -60785,6 +61304,7 @@
     "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
       "input": 0.02,
       "output": 0.04,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/meta-models/Muse-Glimmer-30B": {
@@ -60825,6 +61345,7 @@
     "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
       "input": 0.029,
       "output": 0.03,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501": {
@@ -60835,6 +61356,7 @@
     "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506": {
       "input": 0.075,
       "output": 0.19999999999999998,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1": {
@@ -60954,6 +61476,7 @@
     "deepinfra/openai/gpt-oss-120b-Ultra": {
       "input": 0.19999999999999998,
       "output": 0.95,
+      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/openai/gpt-oss-20b": {
@@ -61164,7 +61687,6 @@
       "cacheRead": 0.041999999999999996,
       "input": 0.834,
       "output": 2.501,
-      "passthroughOnly": true,
       "source": "liteLLM"
     },
     "deepinfra/thinkingmachines/Inkling": {
@@ -62370,6 +62892,12 @@
       "output": 0.19999999999999998,
       "source": "liteLLM"
     },
+    "fireworks_ai/accounts/fireworks/models/hy4-flash": {
+      "cacheRead": 0.003,
+      "input": 0.07,
+      "output": 0.28099999999999997,
+      "source": "liteLLM"
+    },
     "fireworks_ai/accounts/fireworks/models/inkling": {
       "cacheRead": 0.16999999999999998,
       "input": 1,
@@ -63205,6 +63733,12 @@
       "output": 6,
       "source": "liteLLM"
     },
+    "fireworks_ai/accounts/fireworks/models/qwen4-max": {
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 4.5,
+      "source": "liteLLM"
+    },
     "fireworks_ai/accounts/fireworks/models/qwq-32b": {
       "input": 0.8999999999999999,
       "output": 0.8999999999999999,
@@ -63807,10 +64341,22 @@
       "output": 6,
       "source": "modelsDev"
     },
+    "fireworks-ai/accounts/fireworks/models/ultramarine-1-flash-us": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
     "fireworks-ai/accounts/fireworks/routers/deepseek-flash-latest": {
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
+      "source": "modelsDev"
+    },
+    "fireworks-ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-flex": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "modelsDev"
     },
     "fireworks-ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot": {
@@ -63825,10 +64371,22 @@
       "output": 4.8,
       "source": "modelsDev"
     },
+    "fireworks-ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-us": {
+      "cacheRead": 0.009,
+      "input": 0.45,
+      "output": 1.8,
+      "source": "modelsDev"
+    },
     "fireworks-ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot": {
       "cacheRead": 0.003,
       "input": 0.15,
       "output": 0.6,
+      "source": "modelsDev"
+    },
+    "fireworks-ai/accounts/fireworks/routers/deepseek-v4p1-flash-us": {
+      "cacheRead": 0.009,
+      "input": 0.45,
+      "output": 1.8,
       "source": "modelsDev"
     },
     "fireworks-ai/accounts/fireworks/routers/glm-5p3-fast": {
@@ -63841,6 +64399,12 @@
       "cacheRead": 0.13,
       "input": 0.7,
       "output": 2.2,
+      "source": "modelsDev"
+    },
+    "fireworks-ai/accounts/fireworks/routers/glm-5p3-us": {
+      "cacheRead": 0.39,
+      "input": 2.1,
+      "output": 6.6,
       "source": "modelsDev"
     },
     "fireworks-ai/accounts/fireworks/routers/glm-fast-latest": {
@@ -63873,10 +64437,16 @@
       "output": 22.5,
       "source": "modelsDev"
     },
-    "fireworks-ai/accounts/fireworks/routers/kimi-k3-spot": {
-      "cacheRead": 0.21,
-      "input": 2.1,
-      "output": 10.5,
+    "fireworks-ai/accounts/fireworks/routers/kimi-k3-us": {
+      "cacheRead": 0.45,
+      "input": 4.5,
+      "output": 22.5,
+      "source": "modelsDev"
+    },
+    "fireworks-ai/accounts/fireworks/routers/kimi-k3p1-pro-us": {
+      "cacheRead": 0.25,
+      "input": 2.5,
+      "output": 12.5,
       "source": "modelsDev"
     },
     "fireworks-ai/accounts/fireworks/routers/kimi-latest": {
@@ -63981,10 +64551,24 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "fireworks/accounts/fireworks/models/ultramarine-1-flash-us": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "fireworks/accounts/fireworks/routers/deepseek-flash-latest": {
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-flex": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -64002,10 +64586,24 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-us": {
+      "cacheRead": 0.009,
+      "input": 0.45,
+      "output": 1.8,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-spot": {
       "cacheRead": 0.003,
       "input": 0.15,
       "output": 0.6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-us": {
+      "cacheRead": 0.009,
+      "input": 0.45,
+      "output": 1.8,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -64020,6 +64618,13 @@
       "cacheRead": 0.13,
       "input": 0.7,
       "output": 2.2,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "fireworks/accounts/fireworks/routers/glm-5p3-us": {
+      "cacheRead": 0.39,
+      "input": 2.1,
+      "output": 6.6,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -64058,10 +64663,17 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "fireworks/accounts/fireworks/routers/kimi-k3-spot": {
-      "cacheRead": 0.21,
-      "input": 2.1,
-      "output": 10.5,
+    "fireworks/accounts/fireworks/routers/kimi-k3-us": {
+      "cacheRead": 0.45,
+      "input": 4.5,
+      "output": 22.5,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "fireworks/accounts/fireworks/routers/kimi-k3p1-pro-us": {
+      "cacheRead": 0.25,
+      "input": 2.5,
+      "output": 12.5,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -64765,22 +65377,7 @@
         }
       ]
     },
-    "github-copilot/claude-opus-4.7": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 25,
-      "source": "modelsDev"
-    },
     "github-copilot/claude-opus-4.8": {
-      "cacheRead": 0.5,
-      "cacheWrite": 6.25,
-      "input": 5,
-      "output": 25,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "github-copilot/claude-opus-5": {
       "cacheRead": 0.5,
       "cacheWrite": 6.25,
       "input": 5,
@@ -64820,26 +65417,6 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "github-copilot/gemini-3.5-flash": {
-      "cacheRead": 0.15,
-      "input": 1.5,
-      "output": 9,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "github-copilot/gemini-3.6-flash": {
-      "cacheRead": 0.075,
-      "input": 0.75,
-      "output": 3.75,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "github-copilot/gemini-3.7-flash": {
-      "cacheRead": 0.075,
-      "input": 0.75,
-      "output": 3.75,
-      "source": "modelsDev"
-    },
     "github-copilot/gemini-3.8-flash": {
       "cacheRead": 0.075,
       "input": 0.75,
@@ -64870,51 +65447,10 @@
       "output": 15,
       "source": "modelsDev"
     },
-    "github-copilot/gpt-5-mini": {
-      "cacheRead": 0.025,
-      "input": 0.25,
-      "output": 2,
-      "source": "modelsDev"
-    },
     "github-copilot/gpt-5.3-codex": {
       "cacheRead": 0.175,
       "input": 1.75,
       "output": 14,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "github-copilot/gpt-5.4": {
-      "cacheRead": 0.25,
-      "input": 2.5,
-      "output": 15,
-      "passthroughOnly": true,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.25,
-          "cacheWrite": 0,
-          "input": 2.5,
-          "output": 15,
-          "range": [
-            0,
-            272000
-          ]
-        },
-        {
-          "cacheRead": 0.5,
-          "cacheWrite": 0,
-          "input": 5,
-          "output": 22.5,
-          "range": [
-            272000
-          ]
-        }
-      ]
-    },
-    "github-copilot/gpt-5.4-mini": {
-      "cacheRead": 0.075,
-      "input": 0.75,
-      "output": 4.5,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -64923,34 +65459,6 @@
       "input": 0.2,
       "output": 1.25,
       "source": "modelsDev"
-    },
-    "github-copilot/gpt-5.5": {
-      "cacheRead": 0.5,
-      "input": 5,
-      "output": 30,
-      "passthroughOnly": true,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.5,
-          "cacheWrite": 0,
-          "input": 5,
-          "output": 30,
-          "range": [
-            0,
-            272000
-          ]
-        },
-        {
-          "cacheRead": 1,
-          "cacheWrite": 0,
-          "input": 10,
-          "output": 45,
-          "range": [
-            272000
-          ]
-        }
-      ]
     },
     "github-copilot/gpt-5.6-luna": {
       "cacheRead": 0.02,
@@ -65004,35 +65512,6 @@
           "cacheWrite": 10,
           "input": 8,
           "output": 30,
-          "range": [
-            272000
-          ]
-        }
-      ]
-    },
-    "github-copilot/gpt-5.6-terra": {
-      "cacheRead": 0.2,
-      "cacheWrite": 2.5,
-      "input": 2,
-      "output": 12,
-      "passthroughOnly": true,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.2,
-          "cacheWrite": 2.5,
-          "input": 2,
-          "output": 12,
-          "range": [
-            0,
-            272000
-          ]
-        },
-        {
-          "cacheRead": 0.4,
-          "cacheWrite": 5,
-          "input": 4,
-          "output": 18,
           "range": [
             272000
           ]
@@ -65315,12 +65794,6 @@
           ]
         }
       ]
-    },
-    "github-copilot/kimi-k2.7-code": {
-      "cacheRead": 0.19,
-      "input": 0.95,
-      "output": 4,
-      "source": "modelsDev"
     },
     "github-copilot/kimi-k3": {
       "cacheRead": 0.3,
@@ -67692,6 +68165,26 @@
       "output": 0,
       "source": "liteLLM"
     },
+    "huggingface/aisingapore/Gemma-SEA-LION-v4-27B-IT": {
+      "input": 0.2,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
+    "huggingface/alpindale/WizardLM-2-8x22B": {
+      "input": 0.62,
+      "output": 0.62,
+      "source": "modelsDev"
+    },
+    "huggingface/anthracite-org/magnum-v4-72b": {
+      "input": 2.5,
+      "output": 5,
+      "source": "modelsDev"
+    },
+    "huggingface/CohereLabs/command-a-plus-05-2026-bf16": {
+      "input": 0.3,
+      "output": 1.5,
+      "source": "modelsDev"
+    },
     "huggingface/deepseek-ai/DeepSeek-R1": {
       "input": 0.7,
       "output": 2.5,
@@ -67699,13 +68192,13 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-R1-0528": {
-      "input": 3,
-      "output": 5,
+      "input": 0.5,
+      "output": 2.15,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V3": {
-      "input": 0.4,
-      "output": 1.3,
+      "input": 0.32,
+      "output": 0.89,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V3-0324": {
@@ -67760,6 +68253,11 @@
       "output": 1.2,
       "source": "modelsDev"
     },
+    "huggingface/dphn/Dolphin-Mistral-24B-Venice-Edition": {
+      "input": 0.2,
+      "output": 0.9,
+      "source": "modelsDev"
+    },
     "huggingface/google/gemma-2-27b-it": {
       "input": 0.65,
       "output": 0.65,
@@ -67790,6 +68288,36 @@
       "output": 0.4,
       "source": "modelsDev"
     },
+    "huggingface/Gryphe/MythoMax-L2-13b": {
+      "input": 0.08,
+      "output": 0.11,
+      "source": "modelsDev"
+    },
+    "huggingface/ibm-granite/granite-4.2-8b": {
+      "input": 0.06,
+      "output": 0.25,
+      "source": "modelsDev"
+    },
+    "huggingface/inclusionAI/Ling-3.0-flash": {
+      "input": 0.06,
+      "output": 0.18,
+      "source": "modelsDev"
+    },
+    "huggingface/inclusionAI/Ling-3.0-flash-Fin": {
+      "input": 0.075,
+      "output": 0.22,
+      "source": "modelsDev"
+    },
+    "huggingface/inclusionAI/Ling-3.0-flash-VL": {
+      "input": 0.075,
+      "output": 0.22,
+      "source": "modelsDev"
+    },
+    "huggingface/inclusionAI/Ling-3.1-flash": {
+      "input": 0.3,
+      "output": 0.9,
+      "source": "modelsDev"
+    },
     "huggingface/meta-llama/Llama-3.1-70B-Instruct": {
       "input": 0.72,
       "output": 0.72,
@@ -67815,14 +68343,29 @@
       "output": 0.79,
       "source": "modelsDev"
     },
+    "huggingface/meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
+      "input": 0.35,
+      "output": 1,
+      "source": "modelsDev"
+    },
+    "huggingface/meta-llama/Llama-4-Scout-17B-16E-Instruct": {
+      "input": 0.1,
+      "output": 0.3,
+      "source": "modelsDev"
+    },
     "huggingface/meta-llama/Llama-Guard-4-12B": {
       "input": 0.18,
       "output": 0.18,
       "source": "modelsDev"
     },
-    "huggingface/MiniMaxAI/MiniMax-M1-80k": {
-      "input": 0.55,
-      "output": 2.2,
+    "huggingface/meta-models/Muse-Glimmer-30B": {
+      "input": 0.3,
+      "output": 1.2,
+      "source": "modelsDev"
+    },
+    "huggingface/meta-models/Muse-Spark-Open-816B-A42B": {
+      "input": 1.25,
+      "output": 4.25,
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M2": {
@@ -67848,8 +68391,8 @@
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M3": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.23,
+      "output": 0.96,
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M3.1-Flash": {
@@ -67857,14 +68400,19 @@
       "output": 0.6,
       "source": "modelsDev"
     },
+    "huggingface/mistralai/Mistral-Large-4-1T-A52B": {
+      "input": 0.7,
+      "output": 2.1,
+      "source": "modelsDev"
+    },
     "huggingface/moonshotai/Kimi-K2-Instruct": {
-      "input": 1,
-      "output": 3,
+      "input": 0.57,
+      "output": 2.3,
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K2-Instruct-0905": {
-      "input": 1,
-      "output": 3,
+      "input": 0.6,
+      "output": 2.5,
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K2-Thinking": {
@@ -67900,6 +68448,41 @@
       "output": 10,
       "source": "modelsDev"
     },
+    "huggingface/NousResearch/Hermes-3-Llama-3.1-70B": {
+      "input": 0.7,
+      "output": 0.7,
+      "source": "modelsDev"
+    },
+    "huggingface/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16": {
+      "input": 0.06,
+      "output": 0.24,
+      "source": "modelsDev"
+    },
+    "huggingface/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8": {
+      "input": 0.075,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
+    "huggingface/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+      "input": 0.5,
+      "output": 2.15,
+      "source": "modelsDev"
+    },
+    "huggingface/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16": {
+      "input": 0.05,
+      "output": 0.2,
+      "source": "modelsDev"
+    },
+    "huggingface/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
+      "input": 0.2,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
+    "huggingface/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4": {
+      "input": 0.2,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
     "huggingface/openai/gpt-oss-120b": {
       "input": 0.25,
       "output": 0.69,
@@ -67911,19 +68494,19 @@
       "output": 0.5,
       "source": "modelsDev"
     },
-    "huggingface/Qwen/Qwen2.5-Coder-32B-Instruct": {
-      "input": 0.06,
+    "huggingface/openai/gpt-oss-safeguard-20b": {
+      "input": 0.07,
       "output": 0.2,
       "source": "modelsDev"
     },
-    "huggingface/Qwen/Qwen3-235B-A22B": {
-      "input": 0.2,
-      "output": 0.8,
+    "huggingface/Qwen/Qwen2.5-Coder-32B-Instruct": {
+      "input": 0.66,
+      "output": 1,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Instruct-2507": {
-      "input": 0.855,
-      "output": 2.565,
+      "input": 0.14,
+      "output": 0.8,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Thinking-2507": {
@@ -67942,8 +68525,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-32B": {
-      "input": 0.29,
-      "output": 0.59,
+      "input": 0.08,
+      "output": 0.28,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-8B": {
@@ -67957,8 +68540,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
-      "input": 2,
-      "output": 2,
+      "input": 0.35,
+      "output": 1.5,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-Next": {
@@ -67984,11 +68567,6 @@
     "huggingface/Qwen/Qwen3-VL-235B-A22B-Instruct": {
       "input": 0.3,
       "output": 1.5,
-      "source": "modelsDev"
-    },
-    "huggingface/Qwen/Qwen3-VL-235B-A22B-Thinking": {
-      "input": 0.98,
-      "output": 3.95,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
@@ -68032,13 +68610,23 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.8-2.4T-A95B": {
-      "input": 2.5,
-      "output": 6.25,
+      "input": 2,
+      "output": 6,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.8-27B": {
       "input": 0.4,
       "output": 3,
+      "source": "modelsDev"
+    },
+    "huggingface/Qwen/Qwen3.8-Flash-Next-FP8": {
+      "input": 0.15,
+      "output": 0.47,
+      "source": "modelsDev"
+    },
+    "huggingface/reflection/Beam-1.0-501B-A23B": {
+      "input": 0.4,
+      "output": 1.2,
       "source": "modelsDev"
     },
     "huggingface/stepfun-ai/Step-3.5-Flash": {
@@ -68057,13 +68645,13 @@
       "source": "modelsDev"
     },
     "huggingface/tencent/Hy4": {
-      "input": 0.417,
-      "output": 1.2505,
+      "input": 0.834,
+      "output": 2.501,
       "source": "modelsDev"
     },
     "huggingface/tencent/Hy4-flash": {
-      "input": 0.035,
-      "output": 0.1405,
+      "input": 0.07,
+      "output": 0.281,
       "source": "modelsDev"
     },
     "huggingface/tencent/Hy4-preview": {
@@ -68091,9 +68679,14 @@
       "output": 1.2,
       "source": "modelsDev"
     },
+    "huggingface/Undi95/ReMM-SLERP-L2-13B": {
+      "input": 0.3,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
     "huggingface/XiaomiMiMo/MiMo-V2.5": {
-      "input": 0.4,
-      "output": 2,
+      "input": 0.14,
+      "output": 0.28,
       "source": "modelsDev"
     },
     "huggingface/XiaomiMiMo/MiMo-V2.5-Pro": {
@@ -68142,6 +68735,11 @@
       "output": 2.2,
       "source": "modelsDev"
     },
+    "huggingface/zai-org/GLM-4.7-Flash": {
+      "input": 0.06,
+      "output": 0.4,
+      "source": "modelsDev"
+    },
     "huggingface/zai-org/GLM-5": {
       "cacheRead": 0.2,
       "input": 1,
@@ -68155,8 +68753,8 @@
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.2": {
-      "input": 1.4,
-      "output": 4.4,
+      "input": 0.62,
+      "output": 2.42,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.3": {
@@ -69309,13 +69907,6 @@
       "source": "modelsDev"
     },
     "longcat/LongCat-2.5": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "longcat/LongCat-2.5-Preview": {
       "cacheRead": 0.006,
       "input": 0.3,
       "output": 1.2,
@@ -74326,6 +74917,12 @@
         }
       ]
     },
+    "openai/gpt-6-astra-healthcare": {
+      "cacheRead": 1,
+      "input": 10,
+      "output": 50,
+      "source": "liteLLM"
+    },
     "openai/gpt-6-astra-law": {
       "cacheRead": 1,
       "input": 10,
@@ -74460,6 +75057,12 @@
         }
       ]
     },
+    "openai/gpt-6.1-sol-healthcare": {
+      "cacheRead": 0.09999999999999999,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
+    },
     "openai/gpt-6.1-terra": {
       "alternatives": [
         {
@@ -74536,6 +75139,13 @@
         }
       ]
     },
+    "openai/gpt-6.2-astra-healthcare": {
+      "cacheRead": 0.39999999999999997,
+      "cacheWrite": 10,
+      "input": 8,
+      "output": 40,
+      "source": "liteLLM"
+    },
     "openai/gpt-6.2-astra-law": {
       "cacheRead": 0.39999999999999997,
       "cacheWrite": 10,
@@ -74580,6 +75190,13 @@
           ]
         }
       ]
+    },
+    "openai/gpt-6.2-sol-healthcare": {
+      "cacheRead": 0.09999999999999999,
+      "cacheWrite": 2.5,
+      "input": 2,
+      "output": 10,
+      "source": "liteLLM"
     },
     "openai/gpt-audio": {
       "input": 2.5,
@@ -76366,9 +76983,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
-      "cacheRead": 0.00686,
-      "input": 0.21559999999999999,
-      "output": 0.6468,
+      "cacheRead": 0.028,
+      "input": 0.44,
+      "output": 1.32,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
@@ -76817,9 +77434,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.042499999999999996,
+      "input": 0.0765,
+      "output": 0.255,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -77019,9 +77636,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2.5": {
-      "cacheRead": 0.03,
-      "input": 0.27,
-      "output": 0.95,
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m2.7": {
@@ -79428,9 +80045,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.0175,
-      "input": 0.035,
-      "output": 1.5,
+      "cacheRead": 0.059,
+      "input": 0.06,
+      "output": 1.96,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
@@ -80000,12 +80617,6 @@
           ]
         }
       ]
-    },
-    "openrouter/xiaomi/mimo-v2.5": {
-      "cacheRead": 0.08,
-      "input": 0.39999999999999997,
-      "output": 2,
-      "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash": {
       "cacheRead": 0.0028,
@@ -81265,7 +81876,7 @@
       "source": "liteLLM"
     },
     "qwen-token-plan/deepseek-v4-flash-0731": {
-      "cacheRead": 0.088,
+      "cacheRead": 0.044,
       "input": 0.44,
       "output": 1.32,
       "passthroughOnly": true,
@@ -81278,15 +81889,28 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "qwen-token-plan/glm-5.3-prime": {
+      "cacheRead": 0.56,
+      "input": 2.8,
+      "output": 8.8,
+      "source": "modelsDev"
+    },
     "qwen-token-plan/kimi-k3": {
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
       "source": "modelsDev"
     },
-    "qwen-token-plan/qvq-max": {
-      "input": 1.2,
-      "output": 4.8,
+    "qwen-token-plan/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/kimi-k3.1-pro-prime": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen-flash": {
@@ -81318,6 +81942,7 @@
       ]
     },
     "qwen-token-plan/qwen-max": {
+      "cacheRead": 0.32,
       "input": 1.6,
       "output": 6.4,
       "source": "modelsDev"
@@ -81325,21 +81950,6 @@
     "qwen-token-plan/qwen-mt-plus": {
       "input": 2.46,
       "output": 7.37,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-mt-turbo": {
-      "input": 0.16,
-      "output": 0.49,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-omni-turbo": {
-      "input": 0.07,
-      "output": 0.27,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-omni-turbo-realtime": {
-      "input": 0.27,
-      "output": 1.07,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen-plus": {
@@ -81371,126 +81981,15 @@
       ]
     },
     "qwen-token-plan/qwen-plus-character-ja": {
+      "cacheRead": 0.1,
       "input": 0.5,
       "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-turbo": {
-      "input": 0.05,
-      "output": 0.2,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-vl-max": {
-      "input": 0.8,
-      "output": 3.2,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen-vl-ocr": {
       "input": 0.07,
       "output": 0.16,
       "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen-vl-plus": {
-      "input": 0.21,
-      "output": 0.63,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen2-5-omni-7b": {
-      "input": 0.1,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-14b": {
-      "input": 0.35,
-      "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-32b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-8b": {
-      "input": 0.18,
-      "output": 0.7,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.45,
-      "output": 2.25,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.45,
-          "output": 2.25,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.75,
-          "output": 3.75,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.2,
-          "output": 6,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "qwen-token-plan/qwen3-coder-480b-a35b-instruct": {
-      "input": 1.5,
-      "output": 7.5,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.5,
-          "output": 7.5,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.7,
-          "output": 13.5,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 4.5,
-          "output": 22.5,
-          "range": [
-            128000
-          ]
-        }
-      ]
     },
     "qwen-token-plan/qwen3-coder-flash": {
       "cacheRead": 0.06,
@@ -81540,44 +82039,9 @@
         }
       ]
     },
-    "qwen-token-plan/qwen3-coder-plus": {
-      "input": 1,
-      "output": 5,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-livetranslate-flash-realtime": {
-      "input": 10,
-      "output": 10,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-max": {
-      "input": 1.2,
-      "output": 6,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-next-80b-a3b-instruct": {
-      "input": 0.5,
-      "output": 2,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-next-80b-a3b-thinking": {
-      "input": 0.5,
-      "output": 6,
-      "source": "modelsDev"
-    },
     "qwen-token-plan/qwen3-omni-flash": {
       "input": 0.43,
       "output": 1.66,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-omni-flash-realtime": {
-      "input": 0.52,
-      "output": 1.99,
-      "source": "modelsDev"
-    },
-    "qwen-token-plan/qwen3-vl-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3-vl-30b-a3b": {
@@ -81651,13 +82115,14 @@
       "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.5-plus": {
+      "cacheWrite": 0.5,
       "input": 0.4,
       "output": 2.4,
       "source": "modelsDev",
       "tieredPricing": [
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.5,
           "input": 0.4,
           "output": 2.4,
           "range": [
@@ -81667,7 +82132,7 @@
         },
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.625,
           "input": 0.5,
           "output": 3,
           "range": [
@@ -81714,13 +82179,6 @@
           ]
         }
       ]
-    },
-    "qwen-token-plan/qwen3.6-max-preview": {
-      "cacheRead": 0.13,
-      "cacheWrite": 1.625,
-      "input": 1.3,
-      "output": 7.8,
-      "source": "modelsDev"
     },
     "qwen-token-plan/qwen3.6-plus": {
       "cacheRead": 0.05,
@@ -81848,13 +82306,16 @@
       "output": 0.47,
       "source": "modelsDev"
     },
-    "qwen-token-plan/qwq-plus": {
-      "input": 0.8,
-      "output": 2.4,
+    "qwen-token-plan/qwen4-max": {
+      "cacheRead": 0.075,
+      "cacheWrite": 1.875,
+      "input": 1.5,
+      "output": 4.5,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwen/deepseek-v4-flash-0731": {
-      "cacheRead": 0.088,
+      "cacheRead": 0.044,
       "input": 0.44,
       "output": 1.32,
       "source": "modelsDev"
@@ -81865,15 +82326,28 @@
       "output": 4.4,
       "source": "modelsDev"
     },
+    "qwen/glm-5.3-prime": {
+      "cacheRead": 0.56,
+      "input": 2.8,
+      "output": 8.8,
+      "source": "modelsDev"
+    },
     "qwen/kimi-k3": {
       "cacheRead": 0.3,
       "input": 3,
       "output": 15,
       "source": "modelsDev"
     },
-    "qwen/qvq-max": {
-      "input": 1.2,
-      "output": 4.8,
+    "qwen/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
+    "qwen/kimi-k3.1-pro-prime": {
+      "cacheRead": 0.2,
+      "input": 4,
+      "output": 20,
       "source": "modelsDev"
     },
     "qwen/qwen-flash": {
@@ -81905,6 +82379,7 @@
       ]
     },
     "qwen/qwen-max": {
+      "cacheRead": 0.32,
       "input": 1.6,
       "output": 6.4,
       "source": "modelsDev"
@@ -81912,21 +82387,6 @@
     "qwen/qwen-mt-plus": {
       "input": 2.46,
       "output": 7.37,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-mt-turbo": {
-      "input": 0.16,
-      "output": 0.49,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-omni-turbo": {
-      "input": 0.07,
-      "output": 0.27,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-omni-turbo-realtime": {
-      "input": 0.27,
-      "output": 1.07,
       "source": "modelsDev"
     },
     "qwen/qwen-plus": {
@@ -81959,129 +82419,15 @@
       ]
     },
     "qwen/qwen-plus-character-ja": {
+      "cacheRead": 0.1,
       "input": 0.5,
       "output": 1.4,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-turbo": {
-      "input": 0.05,
-      "output": 0.2,
-      "source": "modelsDev"
-    },
-    "qwen/qwen-vl-max": {
-      "input": 0.8,
-      "output": 3.2,
       "source": "modelsDev"
     },
     "qwen/qwen-vl-ocr": {
       "input": 0.07,
       "output": 0.16,
       "source": "modelsDev"
-    },
-    "qwen/qwen-vl-plus": {
-      "input": 0.21,
-      "output": 0.63,
-      "source": "modelsDev"
-    },
-    "qwen/qwen2-5-omni-7b": {
-      "input": 0.1,
-      "output": 0.4,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-14b": {
-      "input": 0.35,
-      "output": 1.4,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-32b": {
-      "input": 0.7,
-      "output": 2.8,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-8b": {
-      "input": 0.18,
-      "output": 0.7,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-coder-30b-a3b-instruct": {
-      "input": 0.45,
-      "output": 2.25,
-      "passthroughOnly": true,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.45,
-          "output": 2.25,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 0.75,
-          "output": 3.75,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.2,
-          "output": 6,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "qwen/qwen3-coder-480b-a35b-instruct": {
-      "input": 1.5,
-      "output": 7.5,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 1.5,
-          "output": 7.5,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 2.7,
-          "output": 13.5,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0,
-          "cacheWrite": 0,
-          "input": 4.5,
-          "output": 22.5,
-          "range": [
-            128000
-          ]
-        }
-      ]
     },
     "qwen/qwen3-coder-flash": {
       "cacheRead": 0.06,
@@ -82132,46 +82478,9 @@
         }
       ]
     },
-    "qwen/qwen3-coder-plus": {
-      "input": 1,
-      "output": 5,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-livetranslate-flash-realtime": {
-      "input": 10,
-      "output": 10,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-max": {
-      "input": 1.2,
-      "output": 6,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-next-80b-a3b-instruct": {
-      "input": 0.5,
-      "output": 2,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-next-80b-a3b-thinking": {
-      "input": 0.5,
-      "output": 6,
-      "source": "modelsDev"
-    },
     "qwen/qwen3-omni-flash": {
       "input": 0.43,
       "output": 1.66,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-omni-flash-realtime": {
-      "input": 0.52,
-      "output": 1.99,
-      "source": "modelsDev"
-    },
-    "qwen/qwen3-vl-235b-a22b": {
-      "input": 0.7,
-      "output": 2.8,
       "source": "modelsDev"
     },
     "qwen/qwen3-vl-30b-a3b": {
@@ -82250,6 +82559,7 @@
       "source": "modelsDev"
     },
     "qwen/qwen3.5-plus": {
+      "cacheWrite": 0.5,
       "input": 0.4,
       "output": 2.4,
       "passthroughOnly": true,
@@ -82257,7 +82567,7 @@
       "tieredPricing": [
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.5,
           "input": 0.4,
           "output": 2.4,
           "range": [
@@ -82267,7 +82577,7 @@
         },
         {
           "cacheRead": 0,
-          "cacheWrite": 0,
+          "cacheWrite": 0.625,
           "input": 0.5,
           "output": 3,
           "range": [
@@ -82316,13 +82626,6 @@
           ]
         }
       ]
-    },
-    "qwen/qwen3.6-max-preview": {
-      "cacheRead": 0.13,
-      "cacheWrite": 1.625,
-      "input": 1.3,
-      "output": 7.8,
-      "source": "modelsDev"
     },
     "qwen/qwen3.6-plus": {
       "cacheRead": 0.05,
@@ -82452,9 +82755,12 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "qwen/qwq-plus": {
-      "input": 0.8,
-      "output": 2.4,
+    "qwen/qwen4-max": {
+      "cacheRead": 0.075,
+      "cacheWrite": 1.875,
+      "input": 1.5,
+      "output": 4.5,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "qwencloud/deepseek-v4-flash": {
@@ -85353,6 +85659,12 @@
       "output": 0.72,
       "source": "liteLLM"
     },
+    "stepfun-ai/step-1o-turbo-vision": {
+      "cacheRead": 0.07,
+      "input": 0.36,
+      "output": 1.15,
+      "source": "modelsDev"
+    },
     "stepfun-ai/step-3.5-flash": {
       "cacheRead": 0.02,
       "input": 0.1,
@@ -85375,6 +85687,19 @@
       "cacheRead": 0.1,
       "input": 1,
       "output": 2.7,
+      "source": "modelsDev"
+    },
+    "stepfun-ai/stepaudio-2.5-chat": {
+      "cacheRead": 0.3,
+      "input": 1.5,
+      "output": 3.5,
+      "source": "modelsDev"
+    },
+    "stepfun/step-1o-turbo-vision": {
+      "cacheRead": 0.07,
+      "input": 0.36,
+      "output": 1.15,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "stepfun/step-3.5-flash": {
@@ -85403,6 +85728,12 @@
       "input": 1,
       "output": 2.7,
       "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "stepfun/stepaudio-2.5-chat": {
+      "cacheRead": 0.3,
+      "input": 1.5,
+      "output": 3.5,
       "source": "modelsDev"
     },
     "streamlake/deepseek-r1": {
@@ -85610,6 +85941,18 @@
       "output": 0.5,
       "source": "modelsDev"
     },
+    "tencent-token-plan/deepseek-v4-pro-0813": {
+      "cacheRead": 0.022457,
+      "input": 0.673723,
+      "output": 2.02117,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/deepseek-v4.1-flash-1017": {
+      "cacheRead": 0.002994,
+      "input": 0.149716,
+      "output": 0.598865,
+      "source": "modelsDev"
+    },
     "tencent-token-plan/deepseek/deepseek-flash": {
       "cacheRead": 0.00300262,
       "input": 0.15013085,
@@ -85634,16 +85977,28 @@
       "output": 0.42036639,
       "source": "modelsDev"
     },
+    "tencent-token-plan/hy3-202608": {
+      "cacheRead": 0.037429,
+      "input": 0.149716,
+      "output": 0.598865,
+      "source": "modelsDev"
+    },
     "tencent-token-plan/hy4": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.044915,
+      "input": 0.898298,
+      "output": 2.694894,
+      "source": "modelsDev"
+    },
+    "tencent-token-plan/hy4-flash": {
+      "cacheRead": 0.002994,
+      "input": 0.074858,
+      "output": 0.299433,
       "source": "modelsDev"
     },
     "tencent-token-plan/hy4-preview": {
-      "cacheRead": 0.04503926,
-      "input": 0.90078512,
-      "output": 2.70235537,
+      "cacheRead": 0.044915,
+      "input": 0.898298,
+      "output": 2.694894,
       "source": "modelsDev"
     },
     "tencent-token-plan/kimi-k2.7-code": {
@@ -85653,9 +86008,10 @@
       "source": "modelsDev"
     },
     "tencent-token-plan/kimi-k3": {
-      "cacheRead": 0.30026171,
-      "input": 3.00261708,
-      "output": 15.01308541,
+      "cacheRead": 0.299433,
+      "cacheWrite": 2.994326,
+      "input": 2.994326,
+      "output": 14.971631,
       "source": "modelsDev"
     },
     "tencent-token-plan/mimo-v2.6-flash": {
@@ -85718,6 +86074,76 @@
         }
       ]
     },
+    "tencent-tokenhub/deepseek-v4-pro": {
+      "cacheRead": 0.145,
+      "input": 1.74,
+      "output": 3.48,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/deepseek-v4-pro-0813": {
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.98,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/deepseek-v4.1-flash": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/deepseek-v4.1-flash-1017": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/deepseek/deepseek-flash": {
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/deepseek/deepseek-v4-pro": {
+      "cacheRead": 0.022,
+      "input": 0.66,
+      "output": 1.98,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/glm-5.2": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/glm-5.3-flash": {
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/hy3": {
+      "cacheRead": 0.033,
+      "input": 0.132,
+      "output": 0.528,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "tencent-tokenhub/hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
@@ -85725,10 +86151,131 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "tencent-tokenhub/hy4-flash": {
+      "cacheRead": 0.003,
+      "input": 0.07,
+      "output": 0.281,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "tencent-tokenhub/hy4-preview": {
       "cacheRead": 0.042,
       "input": 0.834,
       "output": 2.501,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/kimi-k2.6": {
+      "cacheRead": 0.145,
+      "input": 0.858,
+      "output": 3.566,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/kimi-k2.7-code": {
+      "cacheRead": 0.19,
+      "input": 0.95,
+      "output": 4,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/kimi-k2.7-code-highspeed": {
+      "cacheRead": 0.38,
+      "input": 1.9,
+      "output": 8,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/kimi-k2.8-preview": {
+      "cacheRead": 0.25,
+      "input": 1,
+      "output": 4,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/kimi-k3": {
+      "cacheRead": 0.3,
+      "cacheWrite": 3,
+      "input": 3,
+      "output": 15,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/kimi-k3.1-pro": {
+      "cacheRead": 0.2,
+      "cacheWrite": 2,
+      "input": 2,
+      "output": 10,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/mimo-v2.6-flash": {
+      "cacheRead": 0.0028,
+      "input": 0.14,
+      "output": 0.28,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/mimo-v2.6-pro": {
+      "cacheRead": 0.0036,
+      "input": 0.435,
+      "output": 0.87,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/minimax-m3": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 1.2,
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.06,
+          "cacheWrite": 0,
+          "input": 0.3,
+          "output": 1.2,
+          "range": [
+            0,
+            512000
+          ]
+        },
+        {
+          "cacheRead": 0.12,
+          "cacheWrite": 0,
+          "input": 0.6,
+          "output": 2.4,
+          "range": [
+            512000
+          ]
+        }
+      ]
+    },
+    "tencent-tokenhub/minimax-m3.1-flash": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenhub/step-5-preview": {
+      "cacheRead": 0.05,
+      "input": 1,
+      "output": 2.7,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/deepseek-v4-pro-0813": {
+      "cacheRead": 0.022457,
+      "input": 0.673723,
+      "output": 2.02117,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/deepseek-v4.1-flash-1017": {
+      "cacheRead": 0.002994,
+      "input": 0.149716,
+      "output": 0.598865,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -85760,17 +86307,31 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "tencent-tokenplan/hy3-202608": {
+      "cacheRead": 0.037429,
+      "input": 0.149716,
+      "output": 0.598865,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "tencent-tokenplan/hy4": {
-      "cacheRead": 0.042,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.044915,
+      "input": 0.898298,
+      "output": 2.694894,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "tencent-tokenplan/hy4-flash": {
+      "cacheRead": 0.002994,
+      "input": 0.074858,
+      "output": 0.299433,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
     "tencent-tokenplan/hy4-preview": {
-      "cacheRead": 0.04503926,
-      "input": 0.90078512,
-      "output": 2.70235537,
+      "cacheRead": 0.044915,
+      "input": 0.898298,
+      "output": 2.694894,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -85782,9 +86343,10 @@
       "source": "modelsDev"
     },
     "tencent-tokenplan/kimi-k3": {
-      "cacheRead": 0.30026171,
-      "input": 3.00261708,
-      "output": 15.01308541,
+      "cacheRead": 0.299433,
+      "cacheWrite": 2.994326,
+      "input": 2.994326,
+      "output": 14.971631,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -86490,27 +87052,6 @@
       "output": 0.5,
       "source": "liteLLM"
     },
-    "together/deepseek-ai/DeepSeek-R1": {
-      "input": 3,
-      "output": 7,
-      "source": "modelsDev"
-    },
-    "together/deepseek-ai/DeepSeek-V3": {
-      "input": 1.25,
-      "output": 1.25,
-      "source": "modelsDev"
-    },
-    "together/deepseek-ai/DeepSeek-V3-1": {
-      "input": 0.6,
-      "output": 1.7,
-      "source": "modelsDev"
-    },
-    "together/deepseek-ai/DeepSeek-V4-Flash-0731": {
-      "cacheRead": 0.03,
-      "input": 0.14,
-      "output": 0.28,
-      "source": "modelsDev"
-    },
     "together/deepseek-ai/DeepSeek-V4-Pro-0813": {
       "cacheRead": 0.13,
       "input": 1.32,
@@ -86532,19 +87073,17 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "together/essentialai/Rnj-1-Instruct": {
-      "input": 0.15,
-      "output": 0.15,
+    "together/deepseek-ai/DeepSeek-V4.1-Flash-1017-fast": {
+      "cacheRead": 0.012,
+      "input": 0.6,
+      "output": 2.4,
+      "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "together/LiquidAI/LFM2-24B-A2B": {
-      "input": 0.03,
-      "output": 0.12,
-      "source": "modelsDev"
-    },
-    "together/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
-      "input": 1.04,
-      "output": 1.04,
+    "together/elorian-labs/glimpse-1.0": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 3,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -86559,25 +87098,6 @@
       "cacheRead": 0.15,
       "input": 1.25,
       "output": 4.25,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "together/MiniMaxAI/MiniMax-M2.5": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "together/MiniMaxAI/MiniMax-M2.7": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "together/MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -86602,12 +87122,6 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "together/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.2,
-      "input": 0.6,
-      "output": 3.6,
-      "source": "modelsDev"
-    },
     "together/nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
       "cacheRead": 0.02,
       "input": 0.15,
@@ -86619,32 +87133,6 @@
       "input": 0.15,
       "output": 0.6,
       "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "together/Qwen/Qwen2.5-7B-Instruct-Turbo": {
-      "input": 0.3,
-      "output": 0.3,
-      "source": "modelsDev"
-    },
-    "together/Qwen/Qwen3-235B-A22B-Instruct-2507-tput": {
-      "input": 0.2,
-      "output": 0.6,
-      "source": "modelsDev"
-    },
-    "together/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": {
-      "input": 2,
-      "output": 2,
-      "source": "modelsDev"
-    },
-    "together/Qwen/Qwen3-Coder-Next-FP8": {
-      "input": 0.5,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "together/Qwen/Qwen3.5-397B-A17B": {
-      "cacheRead": 0.35,
-      "input": 0.6,
-      "output": 3.6,
       "source": "modelsDev"
     },
     "together/Qwen/Qwen3.5-9B": {
@@ -86666,10 +87154,22 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "together/Qwen/Qwen3.7-Plus": {
+      "input": 0.32,
+      "output": 1.28,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "together/Qwen/Qwen3.8-Flash": {
+      "input": 0.15,
+      "output": 0.47,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "together/Qwen/Qwen4-Max": {
-      "cacheRead": 0.0525,
-      "input": 1.05,
-      "output": 3.15,
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 4.5,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -86691,7 +87191,6 @@
       "cacheRead": 0.17,
       "input": 1,
       "output": 4.05,
-      "passthroughOnly": true,
       "source": "modelsDev"
     },
     "together/thinkingmachines/Inkling-2-Small": {
@@ -86699,17 +87198,6 @@
       "input": 0.3,
       "output": 1,
       "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "together/zai-org/GLM-5": {
-      "input": 1,
-      "output": 3.2,
-      "source": "modelsDev"
-    },
-    "together/zai-org/GLM-5.1": {
-      "cacheRead": 0.26,
-      "input": 1.4,
-      "output": 4.4,
       "source": "modelsDev"
     },
     "together/zai-org/GLM-5.2": {
@@ -86733,27 +87221,6 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
-    "togetherai/deepseek-ai/DeepSeek-R1": {
-      "input": 3,
-      "output": 7,
-      "source": "modelsDev"
-    },
-    "togetherai/deepseek-ai/DeepSeek-V3": {
-      "input": 1.25,
-      "output": 1.25,
-      "source": "modelsDev"
-    },
-    "togetherai/deepseek-ai/DeepSeek-V3-1": {
-      "input": 0.6,
-      "output": 1.7,
-      "source": "modelsDev"
-    },
-    "togetherai/deepseek-ai/DeepSeek-V4-Flash-0731": {
-      "cacheRead": 0.03,
-      "input": 0.14,
-      "output": 0.28,
-      "source": "modelsDev"
-    },
     "togetherai/deepseek-ai/DeepSeek-V4-Pro-0813": {
       "cacheRead": 0.13,
       "input": 1.32,
@@ -86772,19 +87239,16 @@
       "output": 1.2,
       "source": "modelsDev"
     },
-    "togetherai/essentialai/Rnj-1-Instruct": {
-      "input": 0.15,
-      "output": 0.15,
+    "togetherai/deepseek-ai/DeepSeek-V4.1-Flash-1017-fast": {
+      "cacheRead": 0.012,
+      "input": 0.6,
+      "output": 2.4,
       "source": "modelsDev"
     },
-    "togetherai/LiquidAI/LFM2-24B-A2B": {
-      "input": 0.03,
-      "output": 0.12,
-      "source": "modelsDev"
-    },
-    "togetherai/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
-      "input": 1.04,
-      "output": 1.04,
+    "togetherai/elorian-labs/glimpse-1.0": {
+      "cacheRead": 0.06,
+      "input": 0.6,
+      "output": 3,
       "source": "modelsDev"
     },
     "togetherai/meta-models/Muse-Glimmer-30B": {
@@ -86797,24 +87261,6 @@
       "cacheRead": 0.15,
       "input": 1.25,
       "output": 4.25,
-      "source": "modelsDev"
-    },
-    "togetherai/MiniMaxAI/MiniMax-M2.5": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "togetherai/MiniMaxAI/MiniMax-M2.7": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "togetherai/MiniMaxAI/MiniMax-M3": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
       "source": "modelsDev"
     },
     "togetherai/MiniMaxAI/MiniMax-M3.1-Flash": {
@@ -86835,12 +87281,6 @@
       "output": 10,
       "source": "modelsDev"
     },
-    "togetherai/nvidia/nemotron-3-ultra-550b-a55b": {
-      "cacheRead": 0.2,
-      "input": 0.6,
-      "output": 3.6,
-      "source": "modelsDev"
-    },
     "togetherai/nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
       "cacheRead": 0.02,
       "input": 0.15,
@@ -86850,32 +87290,6 @@
     "togetherai/openai/gpt-oss-120b": {
       "input": 0.15,
       "output": 0.6,
-      "source": "modelsDev"
-    },
-    "togetherai/Qwen/Qwen2.5-7B-Instruct-Turbo": {
-      "input": 0.3,
-      "output": 0.3,
-      "source": "modelsDev"
-    },
-    "togetherai/Qwen/Qwen3-235B-A22B-Instruct-2507-tput": {
-      "input": 0.2,
-      "output": 0.6,
-      "source": "modelsDev"
-    },
-    "togetherai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": {
-      "input": 2,
-      "output": 2,
-      "source": "modelsDev"
-    },
-    "togetherai/Qwen/Qwen3-Coder-Next-FP8": {
-      "input": 0.5,
-      "output": 1.2,
-      "source": "modelsDev"
-    },
-    "togetherai/Qwen/Qwen3.5-397B-A17B": {
-      "cacheRead": 0.35,
-      "input": 0.6,
-      "output": 3.6,
       "source": "modelsDev"
     },
     "togetherai/Qwen/Qwen3.5-9B": {
@@ -86894,10 +87308,20 @@
       "output": 7.5,
       "source": "modelsDev"
     },
+    "togetherai/Qwen/Qwen3.7-Plus": {
+      "input": 0.32,
+      "output": 1.28,
+      "source": "modelsDev"
+    },
+    "togetherai/Qwen/Qwen3.8-Flash": {
+      "input": 0.15,
+      "output": 0.47,
+      "source": "modelsDev"
+    },
     "togetherai/Qwen/Qwen4-Max": {
-      "cacheRead": 0.0525,
-      "input": 1.05,
-      "output": 3.15,
+      "cacheRead": 0.075,
+      "input": 1.5,
+      "output": 4.5,
       "source": "modelsDev"
     },
     "togetherai/reflection/Beam-1.0-501B-A23B": {
@@ -86922,17 +87346,6 @@
       "cacheRead": 0.03,
       "input": 0.3,
       "output": 1,
-      "source": "modelsDev"
-    },
-    "togetherai/zai-org/GLM-5": {
-      "input": 1,
-      "output": 3.2,
-      "source": "modelsDev"
-    },
-    "togetherai/zai-org/GLM-5.1": {
-      "cacheRead": 0.26,
-      "input": 1.4,
-      "output": 4.4,
       "source": "modelsDev"
     },
     "togetherai/zai-org/GLM-5.2": {
@@ -88645,6 +89058,27 @@
       "output": 3.1599999999999997,
       "source": "liteLLM"
     },
+    "volcengine/deepseek-v4-1-flash-260910": {
+      "cacheRead": 0.00299,
+      "input": 0.14972,
+      "output": 0.59886,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "volcengine/deepseek-v4-1-flash-261017": {
+      "cacheRead": 0.00299,
+      "input": 0.14972,
+      "output": 0.59886,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "volcengine/deepseek-v4-1-flash-economy-261017": {
+      "cacheRead": 0.0024,
+      "input": 0.11977,
+      "output": 0.47909,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "volcengine/deepseek-v4-flash-ga-260731": {
       "cacheRead": 0.01484,
       "input": 0.4453,
@@ -88658,191 +89092,6 @@
       "output": 4.00771,
       "passthroughOnly": true,
       "source": "modelsDev"
-    },
-    "volcengine/doubao-seed-1-6-251015": {
-      "cacheRead": 0.02375,
-      "input": 0.11875,
-      "output": 1.18747,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.11875,
-          "output": 1.18747,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.17812,
-          "output": 2.37494,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.35624,
-          "output": 3.56241,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "volcengine/doubao-seed-1-6-flash-250828": {
-      "cacheRead": 0.00445,
-      "input": 0.02227,
-      "output": 0.22265,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.00445,
-          "cacheWrite": 0,
-          "input": 0.02227,
-          "output": 0.22265,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0.00445,
-          "cacheWrite": 0,
-          "input": 0.04453,
-          "output": 0.4453,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0.00445,
-          "cacheWrite": 0,
-          "input": 0.08906,
-          "output": 0.8906,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "volcengine/doubao-seed-1-6-vision-250815": {
-      "cacheRead": 0.02375,
-      "input": 0.11875,
-      "output": 1.18747,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.11875,
-          "output": 1.18747,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.17812,
-          "output": 2.37494,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.35624,
-          "output": 3.56241,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "volcengine/doubao-seed-1-8-251228": {
-      "cacheRead": 0.02375,
-      "input": 0.11875,
-      "output": 1.18747,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.11875,
-          "output": 1.18747,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.17812,
-          "output": 2.37494,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0.02375,
-          "cacheWrite": 0,
-          "input": 0.35624,
-          "output": 3.56241,
-          "range": [
-            128000
-          ]
-        }
-      ]
-    },
-    "volcengine/doubao-seed-2-0-code-preview-260215": {
-      "cacheRead": 0.095,
-      "input": 0.47499,
-      "output": 2.37494,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.095,
-          "cacheWrite": 0,
-          "input": 0.47499,
-          "output": 2.37494,
-          "range": [
-            0,
-            32000
-          ]
-        },
-        {
-          "cacheRead": 0.1425,
-          "cacheWrite": 0,
-          "input": 0.71248,
-          "output": 3.56241,
-          "range": [
-            32000,
-            128000
-          ]
-        },
-        {
-          "cacheRead": 0.28499,
-          "cacheWrite": 0,
-          "input": 1.42496,
-          "output": 7.12482,
-          "range": [
-            128000
-          ]
-        }
-      ]
     },
     "volcengine/doubao-seed-2-0-lite-260428": {
       "cacheRead": 0.01781,
@@ -88958,10 +89207,19 @@
       ]
     },
     "volcengine/doubao-seed-2-1-lite-260915": {
-      "cacheRead": 0.023,
-      "input": 0.11499999999999999,
-      "output": 0.388126,
-      "source": "liteLLM"
+      "alternatives": [
+        {
+          "cacheRead": 0.023,
+          "input": 0.11499999999999999,
+          "output": 0.388126,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.02395,
+      "input": 0.11977,
+      "output": 0.40423,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "volcengine/doubao-seed-2-1-pro-260628": {
       "alternatives": [
@@ -88979,10 +89237,19 @@
       "source": "modelsDev"
     },
     "volcengine/doubao-seed-2-1-pro-260915": {
-      "cacheRead": 0.1725,
-      "input": 0.8625,
-      "output": 4.3125,
-      "source": "liteLLM"
+      "alternatives": [
+        {
+          "cacheRead": 0.1725,
+          "input": 0.8625,
+          "output": 4.3125,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.17966,
+      "input": 0.8983,
+      "output": 4.49149,
+      "passthroughOnly": true,
+      "source": "modelsDev"
     },
     "volcengine/doubao-seed-2-1-turbo-260628": {
       "alternatives": [
@@ -89045,6 +89312,13 @@
       "cacheRead": 0.03414,
       "input": 0.11875,
       "output": 0.41563,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "volcengine/kimi-k3-1-pro-261024": {
+      "cacheRead": 0.19463,
+      "input": 1.94631,
+      "output": 10.18071,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -90086,26 +90360,6 @@
       "output": 0.87,
       "source": "liteLLM"
     },
-    "xiaomi/mimo-v2.5": {
-      "cacheRead": 0.0028,
-      "input": 0.14,
-      "output": 0.28,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "xiaomi/mimo-v2.5-pro": {
-      "cacheRead": 0.0036,
-      "input": 0.435,
-      "output": 0.87,
-      "passthroughOnly": true,
-      "source": "modelsDev"
-    },
-    "xiaomi/mimo-v2.5-pro-ultraspeed": {
-      "cacheRead": 0.0108,
-      "input": 1.305,
-      "output": 2.61,
-      "source": "modelsDev"
-    },
     "xiaomi/mimo-v2.6-flash": {
       "cacheRead": 0.0028,
       "input": 0.14,
@@ -90317,6 +90571,13 @@
       "source": "modelsDev"
     },
     "zai/glm-5.3-flashx": {
+      "cacheRead": 0.075,
+      "input": 0.37,
+      "output": 1.25,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "zai/glm-5.3-flashx-legal": {
       "cacheRead": 0.075,
       "input": 0.37,
       "output": 1.25,
