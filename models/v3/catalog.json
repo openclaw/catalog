@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795551982802,
+  "generatedAt": 1795567502706,
   "models": [
     {
       "id": "abliterated-model",
@@ -1987,16 +1987,12 @@
       "maxTokens": 65536,
       "name": "Hy4",
       "pricing": {
-        "cacheRead": 0.025,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.525,
-        "output": 1.5625,
         "source": "chutes",
-        "status": "known",
-        "unit": "million_tokens"
+        "status": "unavailable"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "chutes no longer lists this model in its public model inventory."
     },
     {
       "id": "zai-org/GLM-5.1-TEE",
@@ -3663,11 +3659,11 @@
       "maxTokens": 65536,
       "name": "Hy4",
       "pricing": {
-        "cacheRead": 0.04199999814,
+        "cacheRead": 0.035699998419,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.834,
-        "output": 2.501,
+        "input": 0.7089,
+        "output": 2.12585,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -6797,8 +6793,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.27,
-        "output": 1,
+        "input": 0.25,
+        "output": 0.95,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6818,8 +6814,8 @@
         "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.25,
-        "output": 0.69,
+        "input": 0.03,
+        "output": 0.15,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -24254,6 +24250,21 @@
       "reasoning": true
     },
     {
+      "id": "Prism-ML/Ternary-Bonsai-27B",
+      "provider": "together",
+      "contextWindow": 262144,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Ternary Bonsai 27B",
+      "pricing": {
+        "status": "unknown"
+      },
+      "reasoning": true
+    },
+    {
       "id": "Qwen/Qwen3.5-9B",
       "provider": "together",
       "contextWindow": 262144,
@@ -27756,7 +27767,7 @@
       "name": "Qwen 4 Max",
       "pricing": {
         "cacheRead": 0.09375,
-        "cacheWrite": 2.34375,
+        "cacheWrite": 0,
         "currency": "USD",
         "input": 1.875,
         "output": 5.625,
@@ -39714,9 +39725,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.001442,
-      "input": 0.04532,
-      "output": 0.13596,
+      "cacheRead": 0.035,
+      "input": 0.047,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -40422,7 +40433,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.045599999999999995,
+      "input": 0.047,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -40451,9 +40462,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.001014,
-      "input": 0.050699999999999995,
-      "output": 0.20279999999999998,
+      "cacheRead": 0.004200000000000001,
+      "input": 0.14,
+      "output": 0.42,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -43291,9 +43302,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.049999999999999996,
-      "output": 0.7,
+      "cacheRead": 0.035,
+      "input": 0.09999999999999999,
+      "output": 0.8899999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-flash": {
@@ -43435,9 +43446,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.059,
-      "input": 0.06,
-      "output": 1.96,
+      "cacheRead": 0.0175,
+      "input": 0.035,
+      "output": 1.5,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
@@ -43634,9 +43645,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy4": {
@@ -43652,9 +43663,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -43728,10 +43739,22 @@
       "output": 0.5,
       "source": "openRouter"
     },
+    "openrouter/upstage/solar-mini-4-5": {
+      "cacheRead": 0.001,
+      "input": 0.01,
+      "output": 0.04,
+      "source": "openRouter"
+    },
     "openrouter/upstage/solar-mini4": {
       "cacheRead": 0.005,
       "input": 0.049999999999999996,
       "output": 0.19999999999999998,
+      "source": "openRouter"
+    },
+    "openrouter/upstage/solar-pro-4-contributor": {
+      "cacheRead": 0.009,
+      "input": 0.09,
+      "output": 0.36,
       "source": "openRouter"
     },
     "openrouter/upstage/solar-pro4": {
@@ -43994,6 +44017,12 @@
       "output": 0.28,
       "source": "openRouter"
     },
+    "openrouter/xiaomi/mimo-v2.6-flash-mopd": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.42,
+      "source": "openRouter"
+    },
     "openrouter/xiaomi/mimo-v2.6-pro": {
       "cacheRead": 0.0036,
       "input": 0.435,
@@ -44084,9 +44113,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "cacheRead": 0.02,
+      "input": 0.12,
+      "output": 0.38,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -45115,7 +45144,6 @@
       "defaultModel": "zai-org/GLM-5.2-TEE",
       "recommendedModels": [
         "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-        "tencent/Hy4",
         "Qwen/Qwen4-Max",
         "deepseek-ai/DeepSeek-V4-Pro-0813",
         "Qwen/Qwen3.8-27B-TEE"
@@ -45514,7 +45542,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "86cde8b31751bcca60d7761d515d282b587f2923",
+  "sourceCommit": "ddc8340133755ada3415a89500d86f204a9545b4",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -53375,6 +53403,13 @@
       "cacheRead": 0.33,
       "input": 3.3000000000000003,
       "output": 19.8,
+      "source": "liteLLM"
+    },
+    "bedrock_converse/us-gov.openai.gpt-5.6-cyber": {
+      "cacheRead": 1.6875,
+      "cacheWrite": 21.09375,
+      "input": 16.875,
+      "output": 101.25,
       "source": "liteLLM"
     },
     "bedrock_converse/us-gov.openai.gpt-5.6-luna": {
@@ -68207,50 +68242,49 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V3.1": {
-      "input": 0.27,
-      "output": 1,
+      "input": 0.25,
+      "output": 0.95,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V3.2": {
-      "input": 0.28,
-      "output": 0.4,
+      "input": 0.26,
+      "output": 0.38,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Flash": {
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.07,
+      "output": 0.14,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Flash-0731": {
-      "input": 0.14,
-      "output": 0.28,
+      "input": 0.07,
+      "output": 0.14,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {
-      "input": 0.44,
-      "output": 1.32,
+      "input": 0.2156,
+      "output": 0.6468,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro": {
-      "cacheRead": 0.003625,
-      "input": 0.435,
-      "output": 0.87,
+      "input": 0.686174,
+      "output": 1.5498,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": {
-      "input": 1.32,
-      "output": 3.96,
+      "input": 1.3,
+      "output": 2.6,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4.1-Flash": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.14,
+      "output": 0.42,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.04,
+      "output": 0.1,
       "source": "modelsDev"
     },
     "huggingface/dphn/Dolphin-Mistral-24B-Venice-Edition": {
@@ -68279,13 +68313,13 @@
       "source": "modelsDev"
     },
     "huggingface/google/gemma-4-26B-A4B-it": {
-      "input": 0.13,
-      "output": 0.4,
+      "input": 0.07,
+      "output": 0.24,
       "source": "modelsDev"
     },
     "huggingface/google/gemma-4-31B-it": {
-      "input": 0.14,
-      "output": 0.4,
+      "input": 0.34,
+      "output": 0.1,
       "source": "modelsDev"
     },
     "huggingface/Gryphe/MythoMax-L2-13b": {
@@ -68295,7 +68329,7 @@
     },
     "huggingface/ibm-granite/granite-4.2-8b": {
       "input": 0.06,
-      "output": 0.25,
+      "output": 0.15,
       "source": "modelsDev"
     },
     "huggingface/inclusionAI/Ling-3.0-flash": {
@@ -68309,8 +68343,8 @@
       "source": "modelsDev"
     },
     "huggingface/inclusionAI/Ling-3.0-flash-VL": {
-      "input": 0.075,
-      "output": 0.22,
+      "input": 0.06,
+      "output": 0.18,
       "source": "modelsDev"
     },
     "huggingface/inclusionAI/Ling-3.1-flash": {
@@ -68324,8 +68358,8 @@
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.1-8B-Instruct": {
-      "input": 0.06,
-      "output": 0.06,
+      "input": 0.02,
+      "output": 0.04,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.2-1B-Instruct": {
@@ -68334,13 +68368,13 @@
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.2-3B-Instruct": {
-      "input": 0.0509,
-      "output": 0.335,
+      "input": 0.05,
+      "output": 0.33,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.3-70B-Instruct": {
-      "input": 0.59,
-      "output": 0.79,
+      "input": 0.1,
+      "output": 0.32,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
@@ -68379,15 +68413,13 @@
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M2.5": {
-      "cacheRead": 0.03,
       "input": 0.3,
       "output": 1.2,
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M2.7": {
-      "cacheRead": 0.06,
-      "input": 0.3,
-      "output": 1.2,
+      "input": 0.6,
+      "output": 1.8,
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M3": {
@@ -68396,8 +68428,8 @@
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M3.1-Flash": {
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.1,
+      "output": 0.4,
       "source": "modelsDev"
     },
     "huggingface/mistralai/Mistral-Large-4-1T-A52B": {
@@ -68422,30 +68454,28 @@
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K2.5": {
-      "cacheRead": 0.1,
       "input": 0.6,
       "output": 3,
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K2.6": {
-      "cacheRead": 0.16,
-      "input": 0.95,
-      "output": 4,
+      "input": 0.57,
+      "output": 2.4,
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K2.7-Code": {
-      "input": 0.95,
-      "output": 4,
+      "input": 0.6,
+      "output": 3,
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K3": {
-      "input": 3,
-      "output": 15,
+      "input": 0.276,
+      "output": 9.6,
       "source": "modelsDev"
     },
     "huggingface/moonshotai/Kimi-K3.1-Pro": {
-      "input": 2,
-      "output": 10,
+      "input": 1.24,
+      "output": 6.2,
       "source": "modelsDev"
     },
     "huggingface/NousResearch/Hermes-3-Llama-3.1-70B": {
@@ -68469,13 +68499,13 @@
       "source": "modelsDev"
     },
     "huggingface/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16": {
-      "input": 0.05,
-      "output": 0.2,
+      "input": 0.06,
+      "output": 0.16,
       "source": "modelsDev"
     },
     "huggingface/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
-      "input": 0.2,
-      "output": 0.5,
+      "input": 0.1,
+      "output": 0.4,
       "source": "modelsDev"
     },
     "huggingface/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4": {
@@ -68484,14 +68514,14 @@
       "source": "modelsDev"
     },
     "huggingface/openai/gpt-oss-120b": {
-      "input": 0.25,
-      "output": 0.69,
+      "input": 0.03,
+      "output": 0.15,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
     "huggingface/openai/gpt-oss-20b": {
-      "input": 0.1,
-      "output": 0.5,
+      "input": 0.018,
+      "output": 0.09,
       "source": "modelsDev"
     },
     "huggingface/openai/gpt-oss-safeguard-20b": {
@@ -68505,13 +68535,13 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Instruct-2507": {
-      "input": 0.14,
-      "output": 0.8,
+      "input": 0.15,
+      "output": 0.75,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Thinking-2507": {
-      "input": 0.3,
-      "output": 3,
+      "input": 0.45,
+      "output": 3.5,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-30B-A3B": {
@@ -68520,7 +68550,7 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-30B-A3B-Instruct-2507": {
-      "input": 0.09,
+      "input": 0.1,
       "output": 0.3,
       "source": "modelsDev"
     },
@@ -68535,8 +68565,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-30B-A3B-Instruct": {
-      "input": 0.07,
-      "output": 0.26,
+      "input": 0.15,
+      "output": 0.6,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
@@ -68545,8 +68575,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-Next": {
-      "input": 0.2,
-      "output": 1.5,
+      "input": 0.12,
+      "output": 0.8,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Embedding-4B": {
@@ -68560,18 +68590,18 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Next-80B-A3B-Instruct": {
-      "input": 0.25,
-      "output": 1,
+      "input": 0.09,
+      "output": 1.1,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-VL-235B-A22B-Instruct": {
-      "input": 0.3,
-      "output": 1.5,
+      "input": 0.2,
+      "output": 0.88,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-VL-30B-A3B-Instruct": {
-      "input": 0.2,
-      "output": 0.7,
+      "input": 0.15,
+      "output": 0.6,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.5-122B-A10B": {
@@ -68580,33 +68610,33 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.5-27B": {
-      "input": 0.3,
-      "output": 2.4,
+      "input": 0.26,
+      "output": 2.6,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.5-35B-A3B": {
-      "input": 0.25,
-      "output": 2,
+      "input": 0.14,
+      "output": 1,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.5-397B-A17B": {
-      "input": 0.6,
-      "output": 3.6,
+      "input": 0.45,
+      "output": 3,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.5-9B": {
-      "input": 0.17,
-      "output": 0.25,
+      "input": 0.1,
+      "output": 0.15,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.6-27B": {
-      "input": 0.47,
-      "output": 3.19,
+      "input": 0.32,
+      "output": 3.2,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.6-35B-A3B": {
-      "input": 0.15,
-      "output": 0.95,
+      "input": 0.1,
+      "output": 0.89,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.8-2.4T-A95B": {
@@ -68615,8 +68645,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.8-27B": {
-      "input": 0.4,
-      "output": 3,
+      "input": 0.04,
+      "output": 1.35,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.8-Flash-Next-FP8": {
@@ -68625,8 +68655,8 @@
       "source": "modelsDev"
     },
     "huggingface/reflection/Beam-1.0-501B-A23B": {
-      "input": 0.4,
-      "output": 1.2,
+      "input": 0.25,
+      "output": 1,
       "source": "modelsDev"
     },
     "huggingface/stepfun-ai/Step-3.5-Flash": {
@@ -68665,17 +68695,17 @@
       "source": "modelsDev"
     },
     "huggingface/thinkingmachines/Inkling-2-Mini": {
-      "input": 0.12,
-      "output": 0.5,
+      "input": 0.075,
+      "output": 0.3,
       "source": "modelsDev"
     },
     "huggingface/thinkingmachines/Inkling-2-Small": {
-      "input": 0.3,
-      "output": 1,
+      "input": 0.15,
+      "output": 0.5,
       "source": "modelsDev"
     },
     "huggingface/thinkingmachines/Inkling-Small": {
-      "input": 0.5,
+      "input": 0.45,
       "output": 1.2,
       "source": "modelsDev"
     },
@@ -68715,8 +68745,8 @@
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-4.6": {
-      "input": 0.55,
-      "output": 2.2,
+      "input": 0.43,
+      "output": 1.75,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-4.6V": {
@@ -68730,18 +68760,16 @@
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-4.7": {
-      "cacheRead": 0.11,
-      "input": 0.6,
-      "output": 2.2,
+      "input": 0.4,
+      "output": 1.75,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-4.7-Flash": {
-      "input": 0.06,
+      "input": 0.0605,
       "output": 0.4,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5": {
-      "cacheRead": 0.2,
       "input": 1,
       "output": 3.2,
       "source": "modelsDev"
@@ -68753,18 +68781,18 @@
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.2": {
-      "input": 0.62,
-      "output": 2.42,
+      "input": 0.5625,
+      "output": 1.8,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.3": {
-      "input": 1.4,
-      "output": 4.4,
+      "input": 0.0699,
+      "output": 1.4,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.3-Flash": {
-      "input": 0.15,
-      "output": 0.5,
+      "input": 0.0356,
+      "output": 0.0815,
       "source": "modelsDev"
     },
     "hyperbolic/deepseek-ai/DeepSeek-R1": {
@@ -76232,9 +76260,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.001442,
-      "input": 0.04532,
-      "output": 0.13596,
+      "cacheRead": 0.035,
+      "input": 0.047,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -76972,7 +77000,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.045599999999999995,
+      "input": 0.047,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -77009,9 +77037,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.001014,
-      "input": 0.050699999999999995,
-      "output": 0.20279999999999998,
+      "cacheRead": 0.004200000000000001,
+      "input": 0.14,
+      "output": 0.42,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -79901,9 +79929,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-35b-a3b": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.049999999999999996,
-      "output": 0.7,
+      "cacheRead": 0.035,
+      "input": 0.09999999999999999,
+      "output": 0.8899999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.6-flash": {
@@ -80045,9 +80073,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b": {
-      "cacheRead": 0.059,
-      "input": 0.06,
-      "output": 1.96,
+      "cacheRead": 0.0175,
+      "input": 0.035,
+      "output": 1.5,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
@@ -80249,9 +80277,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.020625,
-      "input": 0.0825,
-      "output": 0.33,
+      "cacheRead": 0.032999999999999995,
+      "input": 0.13199999999999998,
+      "output": 0.5279999999999999,
       "source": "openRouter"
     },
     "openrouter/tencent/hy4": {
@@ -80267,9 +80295,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.0378,
-      "input": 0.7505999999999999,
-      "output": 2.2509,
+      "cacheRead": 0.041999999999999996,
+      "input": 0.834,
+      "output": 2.501,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -80358,10 +80386,22 @@
       "output": 0,
       "source": "liteLLM"
     },
+    "openrouter/upstage/solar-mini-4-5": {
+      "cacheRead": 0.001,
+      "input": 0.01,
+      "output": 0.04,
+      "source": "openRouter"
+    },
     "openrouter/upstage/solar-mini4": {
       "cacheRead": 0.005,
       "input": 0.049999999999999996,
       "output": 0.19999999999999998,
+      "source": "openRouter"
+    },
+    "openrouter/upstage/solar-pro-4-contributor": {
+      "cacheRead": 0.009,
+      "input": 0.09,
+      "output": 0.36,
       "source": "openRouter"
     },
     "openrouter/upstage/solar-pro4": {
@@ -80624,6 +80664,12 @@
       "output": 0.28,
       "source": "openRouter"
     },
+    "openrouter/xiaomi/mimo-v2.6-flash-mopd": {
+      "cacheRead": 0.02,
+      "input": 0.15,
+      "output": 0.42,
+      "source": "openRouter"
+    },
     "openrouter/xiaomi/mimo-v2.6-pro": {
       "cacheRead": 0.0036,
       "input": 0.435,
@@ -80714,9 +80760,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.03,
-      "input": 0.15,
-      "output": 0.5,
+      "cacheRead": 0.02,
+      "input": 0.12,
+      "output": 0.38,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
