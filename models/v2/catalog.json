@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795595381227,
+  "generatedAt": 1795609984704,
   "models": [
     {
       "id": "abliterated-model",
@@ -5887,7 +5887,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "Google serves gemini-2.5-flash as gemini-3.5-flash-lite from Dec 1, 2026, billed at that model's rate. Choose a replacement model."
     },
     {
       "id": "gemini-2.5-flash-lite",
@@ -5952,7 +5954,9 @@
         ],
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "Google serves gemini-2.5-pro as gemini-3.8-flash from Dec 1, 2026, billed at that model's rate. Choose a replacement model."
     },
     {
       "id": "gemini-3-flash-preview",
@@ -39301,9 +39305,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -40164,8 +40168,8 @@
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3.5-lightning": {
-      "cacheRead": 0.01,
-      "input": 0.049999999999999996,
+      "cacheRead": 0.04,
+      "input": 0.07,
       "output": 0.19999999999999998,
       "source": "openRouter"
     },
@@ -42067,7 +42071,7 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "input": 0.16999999999999998,
+      "input": 0.09999999999999999,
       "output": 0.25,
       "source": "openRouter"
     },
@@ -42875,9 +42879,8 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5-air": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.13,
-      "output": 0.85,
+      "input": 0.14,
+      "output": 0.86,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5v": {
@@ -42893,7 +42896,7 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6v": {
-      "cacheRead": 0.055,
+      "cacheRead": 0.049999999999999996,
       "input": 0.3,
       "output": 0.8999999999999999,
       "source": "openRouter"
@@ -44382,7 +44385,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "08973519f3414bdd1ea73a83036a0d87b7a5358b",
+  "sourceCommit": "4254357796d32fe43ba0a492439d934151867cb7",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -75947,9 +75950,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -76834,8 +76837,8 @@
       "source": "openRouter"
     },
     "openrouter/nvidia/nemotron-3.5-lightning": {
-      "cacheRead": 0.01,
-      "input": 0.049999999999999996,
+      "cacheRead": 0.04,
+      "input": 0.07,
       "output": 0.19999999999999998,
       "source": "openRouter"
     },
@@ -78765,7 +78768,7 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "input": 0.16999999999999998,
+      "input": 0.09999999999999999,
       "output": 0.25,
       "source": "openRouter"
     },
@@ -79593,9 +79596,8 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5-air": {
-      "cacheRead": 0.024999999999999998,
-      "input": 0.13,
-      "output": 0.85,
+      "input": 0.14,
+      "output": 0.86,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.5v": {
@@ -79611,7 +79613,7 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-4.6v": {
-      "cacheRead": 0.055,
+      "cacheRead": 0.049999999999999996,
       "input": 0.3,
       "output": 0.8999999999999999,
       "source": "openRouter"
