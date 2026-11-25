@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795567502706,
+  "generatedAt": 1795580930781,
   "models": [
     {
       "id": "abliterated-model",
@@ -1975,24 +1975,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "tencent/Hy4",
-      "provider": "chutes",
-      "contextWindow": 1048576,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 65536,
-      "name": "Hy4",
-      "pricing": {
-        "source": "chutes",
-        "status": "unavailable"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "chutes no longer lists this model in its public model inventory."
     },
     {
       "id": "zai-org/GLM-5.1-TEE",
@@ -6964,13 +6946,13 @@
       "input": [
         "text"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0456,
+        "input": 0.047,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -8329,7 +8311,7 @@
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0456,
+        "input": 0.047,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -8412,11 +8394,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
-        "cacheRead": 0.001014,
+        "cacheRead": 0.0042,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0507,
-        "output": 0.2028,
+        "input": 0.14,
+        "output": 0.42,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9047,11 +9029,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.023,
+        "cacheRead": 0.025,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.047,
-        "output": 0.169,
+        "input": 0.05,
+        "output": 0.18,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9862,18 +9844,18 @@
     {
       "id": "minimax/minimax-m2.5",
       "provider": "kilocode",
-      "contextWindow": 198000,
+      "contextWindow": 65536,
       "input": [
         "text"
       ],
-      "maxTokens": 32768,
+      "maxTokens": 58982,
       "name": "MiniMax-M2.5",
       "pricing": {
-        "cacheRead": 0.03,
+        "cacheRead": 0.06,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.27,
-        "output": 0.95,
+        "input": 0.3,
+        "output": 1.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9931,14 +9913,14 @@
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0.0075,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.1,
-        "output": 0.4,
+        "input": 0.075,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13724,11 +13706,11 @@
       "maxTokens": 235929,
       "name": "Qwen3.6 35B-A3B",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.05,
-        "output": 0.7,
+        "input": 0.1,
+        "output": 0.89,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -13873,7 +13855,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 235929,
+      "maxTokens": 131072,
       "name": "Qwen3.8 27B",
       "pricing": {
         "cacheRead": 0.1,
@@ -14558,6 +14540,27 @@
       "reasoning": false
     },
     {
+      "id": "upstage/solar-mini-4-5",
+      "provider": "kilocode",
+      "contextWindow": 524288,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Upstage: Solar Mini 4.5 (Preview)",
+      "pricing": {
+        "cacheRead": 0.01,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.1,
+        "output": 0.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "upstage/solar-mini4",
       "provider": "kilocode",
       "contextWindow": 524288,
@@ -14572,6 +14575,27 @@
         "currency": "USD",
         "input": 0.1,
         "output": 0.4,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "upstage/solar-pro-4-contributor",
+      "provider": "kilocode",
+      "contextWindow": 524288,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Upstage: Solar Pro 4 Contributor",
+      "pricing": {
+        "cacheRead": 0.03,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 1.2,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14845,6 +14869,28 @@
         "currency": "USD",
         "input": 0.1,
         "output": 0.28,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash-mopd",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 32768,
+      "name": "Xiaomi: MiMo-V2.6-Flash-MOPD",
+      "pricing": {
+        "cacheRead": 0.02,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.42,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15215,12 +15261,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048575,
+      "contextWindow": 1048576,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943717,
+      "maxTokens": 943718,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -24416,6 +24462,27 @@
       "reasoning": true
     },
     {
+      "id": "ricursive-ai/Ripple-65B-Preview",
+      "provider": "together",
+      "contextWindow": 131072,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 131072,
+      "name": "Ripple 65B Preview",
+      "pricing": {
+        "cacheRead": 0.02,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.2,
+        "output": 0.6,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "tencent/Hy4",
       "provider": "together",
       "contextWindow": 1048576,
@@ -26108,28 +26175,6 @@
       "reasoning": true
     },
     {
-      "id": "kimi-k2-7-code",
-      "provider": "venice",
-      "contextWindow": 256000,
-      "input": [
-        "text",
-        "image"
-      ],
-      "maxTokens": 65536,
-      "name": "Kimi K2.7 Code",
-      "pricing": {
-        "cacheRead": 0.16,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.75,
-        "output": 3.5,
-        "source": "venice",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
       "id": "kimi-k3",
       "provider": "venice",
       "contextWindow": 1000000,
@@ -27758,12 +27803,12 @@
     {
       "id": "qwen-4-max",
       "provider": "venice",
-      "contextWindow": 1000000,
+      "contextWindow": 262144,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 65536,
       "name": "Qwen 4 Max",
       "pricing": {
         "cacheRead": 0.09375,
@@ -28223,48 +28268,6 @@
         "currency": "USD",
         "input": 0.4,
         "output": 1.75,
-        "source": "venice",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "zai-org-glm-5",
-      "provider": "venice",
-      "contextWindow": 198000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 32000,
-      "name": "GLM 5",
-      "pricing": {
-        "cacheRead": 0.2,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1,
-        "output": 3.2,
-        "source": "venice",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true
-    },
-    {
-      "id": "zai-org-glm-5-1",
-      "provider": "venice",
-      "contextWindow": 200000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 80000,
-      "name": "GLM 5.1",
-      "pricing": {
-        "cacheRead": 0.247,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 1.33,
-        "output": 4.18,
         "source": "venice",
         "status": "known",
         "unit": "million_tokens"
@@ -38215,33 +38218,6 @@
       "output": 2.5,
       "source": "modelsDev"
     },
-    "kilocode/xiaomi/mimo-v2.5": {
-      "cacheRead": 0.08,
-      "input": 0.4,
-      "output": 2,
-      "source": "modelsDev",
-      "tieredPricing": [
-        {
-          "cacheRead": 0.08,
-          "cacheWrite": 0,
-          "input": 0.4,
-          "output": 2,
-          "range": [
-            0,
-            256000
-          ]
-        },
-        {
-          "cacheRead": 0.16,
-          "cacheWrite": 0,
-          "input": 0.8,
-          "output": 4,
-          "range": [
-            256000
-          ]
-        }
-      ]
-    },
     "kimi-coding/kimi-k2.5": {
       "cacheRead": 0.09999999999999999,
       "input": 0.6,
@@ -39713,9 +39689,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.001,
-      "input": 0.03,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.01,
+      "input": 0.036,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -40468,9 +40444,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.001,
-      "input": 0.03,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -41088,9 +41064,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -43752,7 +43728,7 @@
       "source": "openRouter"
     },
     "openrouter/upstage/solar-pro-4-contributor": {
-      "cacheRead": 0.009,
+      "cacheRead": 0.018,
       "input": 0.09,
       "output": 0.36,
       "source": "openRouter"
@@ -44876,6 +44852,24 @@
         }
       ]
     },
+    "venice/kimi-k2-7-code": {
+      "cacheRead": 0.16,
+      "input": 0.75,
+      "output": 3.5,
+      "source": "venice"
+    },
+    "venice/zai-org-glm-5": {
+      "cacheRead": 0.2,
+      "input": 1,
+      "output": 3.2,
+      "source": "venice"
+    },
+    "venice/zai-org-glm-5-1": {
+      "cacheRead": 0.247,
+      "input": 1.33,
+      "output": 4.18,
+      "source": "venice"
+    },
     "vercel-ai-gateway/amazon/nova-2-lite": {
       "cacheRead": 0.0825,
       "input": 0.33,
@@ -45542,7 +45536,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "ddc8340133755ada3415a89500d86f204a9545b4",
+  "sourceCommit": "5750fb88fe024d55554dc26cfe60b5e9d8076425",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -68200,6 +68194,30 @@
       "output": 0,
       "source": "liteLLM"
     },
+    "huawei_maas/deepseek-v4.1-flash": {
+      "cacheRead": 0.03,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "liteLLM"
+    },
+    "huawei_maas/deepseek-v4.1-flash-1017": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "liteLLM"
+    },
+    "huawei_maas/glm-5.2": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
+      "source": "liteLLM"
+    },
+    "huawei_maas/glm-5.3": {
+      "cacheRead": 0.26,
+      "input": 1.4,
+      "output": 4.4,
+      "source": "liteLLM"
+    },
     "huggingface/aisingapore/Gemma-SEA-LION-v4-27B-IT": {
       "input": 0.2,
       "output": 0.4,
@@ -68268,8 +68286,8 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro": {
-      "input": 0.686174,
-      "output": 1.5498,
+      "input": 0.888188,
+      "output": 1.5082,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": {
@@ -68308,8 +68326,8 @@
       "source": "modelsDev"
     },
     "huggingface/google/gemma-3-4b-it": {
-      "input": 0.05,
-      "output": 0.1,
+      "input": 0.04,
+      "output": 0.05,
       "source": "modelsDev"
     },
     "huggingface/google/gemma-4-26B-A4B-it": {
@@ -68428,8 +68446,8 @@
       "source": "modelsDev"
     },
     "huggingface/MiniMaxAI/MiniMax-M3.1-Flash": {
-      "input": 0.1,
-      "output": 0.4,
+      "input": 0.075,
+      "output": 0.3,
       "source": "modelsDev"
     },
     "huggingface/mistralai/Mistral-Large-4-1T-A52B": {
@@ -68481,6 +68499,11 @@
     "huggingface/NousResearch/Hermes-3-Llama-3.1-70B": {
       "input": 0.7,
       "output": 0.7,
+      "source": "modelsDev"
+    },
+    "huggingface/NousResearch/Hermes-4-405B": {
+      "input": 1,
+      "output": 3,
       "source": "modelsDev"
     },
     "huggingface/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16": {
@@ -68535,8 +68558,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Instruct-2507": {
-      "input": 0.15,
-      "output": 0.75,
+      "input": 0.14,
+      "output": 0.8,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Thinking-2507": {
@@ -68570,8 +68593,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
-      "input": 0.35,
-      "output": 1.5,
+      "input": 0.3,
+      "output": 1,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Coder-Next": {
@@ -68649,6 +68672,11 @@
       "output": 1.35,
       "source": "modelsDev"
     },
+    "huggingface/Qwen/Qwen3.8-Flash-Next": {
+      "input": 0.15,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
     "huggingface/Qwen/Qwen3.8-Flash-Next-FP8": {
       "input": 0.15,
       "output": 0.47,
@@ -68675,8 +68703,8 @@
       "source": "modelsDev"
     },
     "huggingface/tencent/Hy4": {
-      "input": 0.834,
-      "output": 2.501,
+      "input": 0.7089,
+      "output": 2.12585,
       "source": "modelsDev"
     },
     "huggingface/tencent/Hy4-flash": {
@@ -76248,9 +76276,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-flash-latest": {
-      "cacheRead": 0.001,
-      "input": 0.03,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.01,
+      "input": 0.036,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
@@ -77043,9 +77071,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.001,
-      "input": 0.03,
-      "output": 0.19999999999999998,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -77687,9 +77715,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.0075,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -80399,7 +80427,7 @@
       "source": "openRouter"
     },
     "openrouter/upstage/solar-pro-4-contributor": {
-      "cacheRead": 0.009,
+      "cacheRead": 0.018,
       "input": 0.09,
       "output": 0.36,
       "source": "openRouter"
@@ -87226,6 +87254,13 @@
       "passthroughOnly": true,
       "source": "modelsDev"
     },
+    "together/ricursive-ai/Ripple-65B-Preview": {
+      "cacheRead": 0.02,
+      "input": 0.2,
+      "output": 0.6,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
     "together/tencent/Hy4": {
       "cacheRead": 0.042,
       "input": 0.834,
@@ -87374,6 +87409,12 @@
       "cacheRead": 0.04,
       "input": 0.4,
       "output": 1.2,
+      "source": "modelsDev"
+    },
+    "togetherai/ricursive-ai/Ripple-65B-Preview": {
+      "cacheRead": 0.02,
+      "input": 0.2,
+      "output": 0.6,
       "source": "modelsDev"
     },
     "togetherai/tencent/Hy4": {
