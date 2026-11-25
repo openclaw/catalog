@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795609984704,
+  "generatedAt": 1795624154861,
   "models": [
     {
       "id": "abliterated-model",
@@ -8841,11 +8841,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.023,
+        "cacheRead": 0.025,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.045,
-        "output": 0.163,
+        "input": 0.05,
+        "output": 0.18,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14698,11 +14698,11 @@
       "maxTokens": 32768,
       "name": "Xiaomi: MiMo-V2.6-Flash-MOPD",
       "pricing": {
-        "cacheRead": 0.02,
+        "cacheRead": 0.05,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.15,
-        "output": 0.42,
+        "input": 0.5,
+        "output": 1,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14781,14 +14781,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 98304,
+      "maxTokens": 117964,
       "name": "GLM-4.5-Air",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.13,
-        "output": 0.85,
+        "input": 0.14,
+        "output": 0.86,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -14849,7 +14849,7 @@
       "maxTokens": 32768,
       "name": "GLM-4.6V",
       "pricing": {
-        "cacheRead": 0.055,
+        "cacheRead": 0.05,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.3,
@@ -19614,6 +19614,50 @@
       }
     },
     {
+      "id": "gpt-6-astra-healthcare",
+      "provider": "openai",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "GPT-6 Astra Healthcare",
+      "pricing": {
+        "cacheRead": 1,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 10,
+        "output": 50,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 1,
+            "cacheWrite": 0,
+            "input": 10,
+            "output": 50,
+            "range": [
+              0,
+              272000
+            ]
+          },
+          {
+            "cacheRead": 2,
+            "cacheWrite": 0,
+            "input": 20,
+            "output": 75,
+            "range": [
+              272000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "gpt-6-luna",
       "provider": "openai",
       "compat": {
@@ -19802,6 +19846,50 @@
       }
     },
     {
+      "id": "gpt-6.1-sol-healthcare",
+      "provider": "openai",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "GPT-6.1 Sol Healthcare",
+      "pricing": {
+        "cacheRead": 0.1,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.1,
+            "cacheWrite": 0,
+            "input": 2,
+            "output": 10,
+            "range": [
+              0,
+              272000
+            ]
+          },
+          {
+            "cacheRead": 0.2,
+            "cacheWrite": 0,
+            "input": 4,
+            "output": 15,
+            "range": [
+              272000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "gpt-6.1-terra",
       "provider": "openai",
       "contextWindow": 1050000,
@@ -19910,6 +19998,50 @@
       }
     },
     {
+      "id": "gpt-6.2-astra-healthcare",
+      "provider": "openai",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "GPT-6.2 Astra Healthcare",
+      "pricing": {
+        "cacheRead": 0.4,
+        "cacheWrite": 10,
+        "currency": "USD",
+        "input": 8,
+        "output": 40,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.4,
+            "cacheWrite": 10,
+            "input": 8,
+            "output": 40,
+            "range": [
+              0,
+              272000
+            ]
+          },
+          {
+            "cacheRead": 0.8,
+            "cacheWrite": 20,
+            "input": 16,
+            "output": 60,
+            "range": [
+              272000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "gpt-6.2-sol",
       "provider": "openai",
       "compat": {
@@ -19972,6 +20104,50 @@
         "off": null,
         "xhigh": "xhigh"
       }
+    },
+    {
+      "id": "gpt-6.2-sol-healthcare",
+      "provider": "openai",
+      "contextWindow": 1050000,
+      "input": [
+        "text",
+        "image",
+        "document"
+      ],
+      "maxTokens": 128000,
+      "name": "GPT-6.2 Sol Healthcare",
+      "pricing": {
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "currency": "USD",
+        "input": 2,
+        "output": 10,
+        "source": "modelsDev",
+        "status": "known",
+        "tieredPricing": [
+          {
+            "cacheRead": 0.1,
+            "cacheWrite": 2.5,
+            "input": 2,
+            "output": 10,
+            "range": [
+              0,
+              272000
+            ]
+          },
+          {
+            "cacheRead": 0.2,
+            "cacheWrite": 5,
+            "input": 4,
+            "output": 15,
+            "range": [
+              272000
+            ]
+          }
+        ],
+        "unit": "million_tokens"
+      },
+      "reasoning": true
     },
     {
       "id": "gpt-daybreak-blue-latest",
@@ -36472,7 +36648,6 @@
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-2.5-flash-image": {
-      "cacheRead": 0.075,
       "input": 0.3,
       "output": 2.5,
       "source": "modelsDev"
@@ -36971,7 +37146,7 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "input": 0.17,
+      "input": 0.1,
       "output": 0.25,
       "source": "modelsDev"
     },
@@ -38562,9 +38737,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.035,
-      "input": 0.047,
-      "output": 0.3,
+      "cacheRead": 0.001442,
+      "input": 0.04532,
+      "output": 0.13596,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -39270,7 +39445,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.047,
+      "input": 0.045599999999999995,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -39287,9 +39462,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro": {
-      "cacheRead": 0.108,
-      "input": 1.28,
-      "output": 2.56,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.777524,
+      "output": 1.5852000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -39299,9 +39474,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004200000000000001,
-      "input": 0.14,
-      "output": 0.42,
+      "cacheRead": 0.001014,
+      "input": 0.050699999999999995,
+      "output": 0.20279999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -39925,9 +40100,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -42071,7 +42246,7 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "input": 0.09999999999999999,
+      "input": 0.16999999999999998,
       "output": 0.25,
       "source": "openRouter"
     },
@@ -42482,9 +42657,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy4": {
@@ -42500,9 +42675,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -44385,7 +44560,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "4254357796d32fe43ba0a492439d934151867cb7",
+  "sourceCommit": "0b99555d5f7ddf7b08db15e4355d1b840f0a8743",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -65762,7 +65937,6 @@
       "source": "modelsDev"
     },
     "google-gemini-cli/gemini-2.5-flash-image": {
-      "cacheRead": 0.075,
       "input": 0.3,
       "output": 2.5,
       "source": "modelsDev"
@@ -66635,7 +66809,6 @@
       "source": "modelsDev"
     },
     "google/gemini-2.5-flash-image": {
-      "cacheRead": 0.075,
       "input": 0.3,
       "output": 2.5,
       "source": "modelsDev"
@@ -67150,8 +67323,8 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Flash": {
-      "input": 0.07,
-      "output": 0.14,
+      "input": 0.09,
+      "output": 0.18,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Flash-0731": {
@@ -67205,8 +67378,8 @@
       "source": "modelsDev"
     },
     "huggingface/google/gemma-3-4b-it": {
-      "input": 0.05,
-      "output": 0.1,
+      "input": 0.04,
+      "output": 0.05,
       "source": "modelsDev"
     },
     "huggingface/google/gemma-4-26B-A4B-it": {
@@ -67538,7 +67711,7 @@
     },
     "huggingface/Qwen/Qwen3.6-35B-A3B": {
       "input": 0.1,
-      "output": 0.9,
+      "output": 0.89,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.8-2.4T-A95B": {
@@ -73853,10 +74026,40 @@
       ]
     },
     "openai/gpt-6-astra-healthcare": {
+      "alternatives": [
+        {
+          "cacheRead": 1,
+          "input": 10,
+          "output": 50,
+          "source": "liteLLM"
+        }
+      ],
       "cacheRead": 1,
       "input": 10,
       "output": 50,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 1,
+          "cacheWrite": 0,
+          "input": 10,
+          "output": 50,
+          "range": [
+            0,
+            272000
+          ]
+        },
+        {
+          "cacheRead": 2,
+          "cacheWrite": 0,
+          "input": 20,
+          "output": 75,
+          "range": [
+            272000
+          ]
+        }
+      ]
     },
     "openai/gpt-6-astra-law": {
       "cacheRead": 1,
@@ -73993,10 +74196,40 @@
       ]
     },
     "openai/gpt-6.1-sol-healthcare": {
-      "cacheRead": 0.09999999999999999,
+      "alternatives": [
+        {
+          "cacheRead": 0.09999999999999999,
+          "input": 2,
+          "output": 10,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.1,
       "input": 2,
       "output": 10,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 0,
+          "input": 2,
+          "output": 10,
+          "range": [
+            0,
+            272000
+          ]
+        },
+        {
+          "cacheRead": 0.2,
+          "cacheWrite": 0,
+          "input": 4,
+          "output": 15,
+          "range": [
+            272000
+          ]
+        }
+      ]
     },
     "openai/gpt-6.1-terra": {
       "alternatives": [
@@ -74075,11 +74308,42 @@
       ]
     },
     "openai/gpt-6.2-astra-healthcare": {
-      "cacheRead": 0.39999999999999997,
+      "alternatives": [
+        {
+          "cacheRead": 0.39999999999999997,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 40,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.4,
       "cacheWrite": 10,
       "input": 8,
       "output": 40,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.4,
+          "cacheWrite": 10,
+          "input": 8,
+          "output": 40,
+          "range": [
+            0,
+            272000
+          ]
+        },
+        {
+          "cacheRead": 0.8,
+          "cacheWrite": 20,
+          "input": 16,
+          "output": 60,
+          "range": [
+            272000
+          ]
+        }
+      ]
     },
     "openai/gpt-6.2-astra-law": {
       "cacheRead": 0.39999999999999997,
@@ -74127,11 +74391,42 @@
       ]
     },
     "openai/gpt-6.2-sol-healthcare": {
-      "cacheRead": 0.09999999999999999,
+      "alternatives": [
+        {
+          "cacheRead": 0.09999999999999999,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 10,
+          "source": "liteLLM"
+        }
+      ],
+      "cacheRead": 0.1,
       "cacheWrite": 2.5,
       "input": 2,
       "output": 10,
-      "source": "liteLLM"
+      "passthroughOnly": true,
+      "source": "modelsDev",
+      "tieredPricing": [
+        {
+          "cacheRead": 0.1,
+          "cacheWrite": 2.5,
+          "input": 2,
+          "output": 10,
+          "range": [
+            0,
+            272000
+          ]
+        },
+        {
+          "cacheRead": 0.2,
+          "cacheWrite": 5,
+          "input": 4,
+          "output": 15,
+          "range": [
+            272000
+          ]
+        }
+      ]
     },
     "openai/gpt-audio": {
       "input": 2.5,
@@ -75167,9 +75462,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.035,
-      "input": 0.047,
-      "output": 0.3,
+      "cacheRead": 0.001442,
+      "input": 0.04532,
+      "output": 0.13596,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -75907,7 +76202,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.047,
+      "input": 0.045599999999999995,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -75932,9 +76227,9 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.108,
-      "input": 1.28,
-      "output": 2.56,
+      "cacheRead": 0.19999999999999998,
+      "input": 0.777524,
+      "output": 1.5852000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -75944,9 +76239,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004200000000000001,
-      "input": 0.14,
-      "output": 0.42,
+      "cacheRead": 0.001014,
+      "input": 0.050699999999999995,
+      "output": 0.20279999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -76594,9 +76889,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -78768,7 +79063,7 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "input": 0.09999999999999999,
+      "input": 0.16999999999999998,
       "output": 0.25,
       "source": "openRouter"
     },
@@ -79184,9 +79479,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy4": {
@@ -79202,9 +79497,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
