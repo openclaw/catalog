@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795667312242,
+  "generatedAt": 1795681816188,
   "models": [
     {
       "id": "abliterated-model",
@@ -6780,7 +6780,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
         "cacheRead": 0.097,
@@ -8188,7 +8188,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.888188,
-        "output": 1.5463,
+        "output": 1.5082,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -15028,12 +15028,12 @@
     {
       "id": "z-ai/glm-5.3-flash",
       "provider": "kilocode",
-      "contextWindow": 1048576,
+      "contextWindow": 1048575,
       "input": [
         "text",
         "image"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 943717,
       "name": "GLM-5.3-Flash",
       "pricing": {
         "cacheRead": 0.03,
@@ -39336,9 +39336,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -39746,9 +39746,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -42993,9 +42993,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.02,
-      "input": 0.12,
-      "output": 0.38,
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
@@ -43644,67 +43644,22 @@
       "output": 1.2,
       "source": "venice"
     },
+    "venice/e2ee-deepseek-v4-1-flash-1017": {
+      "cacheRead": 0.038,
+      "input": 0.182,
+      "output": 0.373,
+      "source": "venice"
+    },
     "venice/e2ee-deepseek-v4-1-flash-1017-abliterated": {
       "cacheRead": 0.0075,
       "input": 0.375,
       "output": 1.5,
       "source": "venice"
     },
-    "venice/e2ee-deepseek-v4-flash": {
-      "cacheRead": 0.038,
-      "input": 0.182,
-      "output": 0.373,
-      "source": "venice"
-    },
-    "venice/e2ee-gemma-4-26b-a4b-uncensored-p": {
-      "input": 0.19,
-      "output": 0.88,
-      "source": "venice"
-    },
-    "venice/e2ee-glm-5-2-p": {
-      "cacheRead": 0.3,
-      "input": 1.75,
-      "output": 5.75,
-      "source": "venice"
-    },
     "venice/e2ee-glm-5-3-flash": {
       "cacheRead": 0.038,
       "input": 0.16,
       "output": 0.54,
-      "source": "venice"
-    },
-    "venice/e2ee-glm-5-3-p": {
-      "cacheRead": 0.325,
-      "input": 1.75,
-      "output": 5.5,
-      "source": "venice"
-    },
-    "venice/e2ee-gpt-oss-120b-p": {
-      "input": 0.13,
-      "output": 0.65,
-      "source": "venice"
-    },
-    "venice/e2ee-kimi-k2-6": {
-      "cacheRead": 0.44,
-      "input": 0.87,
-      "output": 4.12,
-      "source": "venice"
-    },
-    "venice/e2ee-kimi-k3-1-pro-p": {
-      "cacheRead": 0.25,
-      "input": 2.5,
-      "output": 12.5,
-      "source": "venice"
-    },
-    "venice/e2ee-kimi-k3-p": {
-      "cacheRead": 0.375,
-      "input": 3.75,
-      "output": 18.75,
-      "source": "venice"
-    },
-    "venice/e2ee-qwen-2-5-7b-p": {
-      "input": 0.05,
-      "output": 0.13,
       "source": "venice"
     },
     "venice/e2ee-qwen3-6-35b-a3b": {
@@ -43719,7 +43674,7 @@
       "output": 3.53,
       "source": "venice"
     },
-    "venice/e2ee-qwen3-vl-30b-a3b-p": {
+    "venice/e2ee-qwen3-vl-30b-a3b": {
       "input": 0.25,
       "output": 0.9,
       "source": "venice"
@@ -44434,7 +44389,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "1140fc54a32dc3715e8f95f62f541ae634e97c18",
+  "sourceCommit": "fa9fa2c5436150645fbfbb887e0722b71db0cbec",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -67262,7 +67217,7 @@
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro": {
       "input": 0.888188,
-      "output": 1.5463,
+      "output": 1.5082,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": {
@@ -67366,8 +67321,8 @@
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.3-70B-Instruct": {
-      "input": 0.1,
-      "output": 0.32,
+      "input": 0.22,
+      "output": 0.5,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
@@ -76161,9 +76116,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -76580,9 +76535,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -79890,9 +79845,9 @@
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash": {
-      "cacheRead": 0.02,
-      "input": 0.12,
-      "output": 0.38,
+      "cacheRead": 0.03,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
