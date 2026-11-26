@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795696380209,
+  "generatedAt": 1795710499317,
   "models": [
     {
       "id": "abliterated-model",
@@ -2253,7 +2253,9 @@
         "source": "deepinfra",
         "status": "unavailable"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "deepinfra no longer lists this model in its public model inventory."
     },
     {
       "id": "ByteDance/Seed-2.0-code",
@@ -2285,7 +2287,9 @@
         "source": "deepinfra",
         "status": "unavailable"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "deepinfra no longer lists this model in its public model inventory."
     },
     {
       "id": "ByteDance/Seed-2.0-pro",
@@ -2703,29 +2707,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "ibm-granite/granite-4.2-8b",
-      "provider": "deepinfra",
-      "contextWindow": 131072,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 117964,
-      "name": "Granite 4.2 8B",
-      "pricing": {
-        "cacheRead": 0.015000000000000001,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.060000000000000005,
-        "output": 0.25,
-        "source": "deepinfra",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "deepinfra no longer lists this model in its public model inventory."
     },
     {
       "id": "inclusionAI/Ling-3.0-flash",
@@ -4097,6 +4078,28 @@
       "reasoning": true
     },
     {
+      "id": "accounts/fireworks/models/inkling-2-mini",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 65536,
+      "name": "Inkling 2 Mini",
+      "pricing": {
+        "cacheRead": 0.015,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.15,
+        "output": 0.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "accounts/fireworks/models/kimi-k3",
       "provider": "fireworks",
       "contextWindow": 1048576,
@@ -4676,6 +4679,28 @@
         "currency": "USD",
         "input": 4.5,
         "output": 22.5,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "accounts/fireworks/routers/kimi-k3p1-pro-ultrafast",
+      "provider": "fireworks",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 1048576,
+      "name": "Kimi K3.1 Pro Ultra-fast",
+      "pricing": {
+        "cacheRead": 0.5,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 5,
+        "output": 25,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -6806,11 +6831,11 @@
       "maxTokens": 943718,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.06,
-        "output": 0.18,
+        "input": 0.047,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8140,14 +8165,14 @@
       "input": [
         "text"
       ],
-      "maxTokens": 384000,
+      "maxTokens": 943718,
       "name": "DeepSeek V4 Flash 0731",
       "pricing": {
-        "cacheRead": 0.015,
+        "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.06,
-        "output": 0.18,
+        "input": 0.047,
+        "output": 0.3,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8839,7 +8864,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 16384,
+      "maxTokens": 117964,
       "name": "Gemma 3 27B IT",
       "pricing": {
         "cacheRead": 0,
@@ -8864,11 +8889,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0.023,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.05,
-        "output": 0.18,
+        "input": 0.047,
+        "output": 0.168,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8931,29 +8956,6 @@
         "unit": "million_tokens"
       },
       "reasoning": true
-    },
-    {
-      "id": "inception/mercury-3",
-      "provider": "kilocode",
-      "contextWindow": 1000000,
-      "input": [
-        "text"
-      ],
-      "maxTokens": 131072,
-      "name": "Mercury 3",
-      "pricing": {
-        "cacheRead": 0.01,
-        "cacheWrite": 0,
-        "currency": "USD",
-        "input": 0.1,
-        "output": 0.35,
-        "source": "modelsDev",
-        "status": "known",
-        "unit": "million_tokens"
-      },
-      "reasoning": true,
-      "status": "deprecated",
-      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "inclusionai/ling-3.0-flash",
@@ -13692,7 +13694,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 131072,
+      "maxTokens": 235929,
       "name": "Qwen3.8 27B",
       "pricing": {
         "cacheRead": 0.0175,
@@ -16448,7 +16450,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "deepseek/deepseek-r1-turbo",
@@ -16469,7 +16473,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "deepseek/deepseek-v4-flash-0731",
@@ -16601,7 +16607,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "google/gemma-4-31b-it",
@@ -16623,7 +16631,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "inclusionai/ling-3.0-flash",
@@ -16750,7 +16760,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false
+      "reasoning": false,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "mindai/macaron-v1-tall",
@@ -16995,7 +17007,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": false
+      "reasoning": false,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "moonshotai/kimi-k2-thinking",
@@ -17016,7 +17030,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "moonshotai/kimi-k2.5",
@@ -17082,7 +17098,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "moonshotai/kimi-k3",
@@ -17172,7 +17190,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "openai/gpt-6.1-terra",
@@ -17331,7 +17351,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-omni-30b-a3b-thinking",
@@ -17353,7 +17375,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -17450,7 +17474,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.5-27b",
@@ -17494,7 +17520,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",
@@ -17516,7 +17544,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.6-27b",
@@ -17538,7 +17568,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.6-35b-a3b",
@@ -17560,7 +17592,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.7-max",
@@ -17572,16 +17606,18 @@
       "maxTokens": 65536,
       "name": "Qwen3.7-Max",
       "pricing": {
-        "cacheRead": 0.25,
-        "cacheWrite": 0,
+        "cacheRead": 0.33,
+        "cacheWrite": 2.063,
         "currency": "USD",
-        "input": 1.25,
-        "output": 3.75,
+        "input": 1.65,
+        "output": 4.951,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "qwen/qwen3.8-2.4t-a95b",
@@ -17678,7 +17714,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 262000,
+      "maxTokens": 262144,
       "name": "Qwen4 Max",
       "pricing": {
         "cacheRead": 0.071,
@@ -17820,7 +17856,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "xiaomimimo/mimo-v2.5",
@@ -17954,7 +17992,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "zai-org/glm-4.6",
@@ -17997,7 +18037,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "zai-org/glm-4.7",
@@ -18039,7 +18081,9 @@
         "status": "known",
         "unit": "million_tokens"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "novita no longer lists this model in its public model inventory."
     },
     {
       "id": "zai-org/glm-5",
@@ -35826,6 +35870,12 @@
       "output": 0.12000000000000001,
       "source": "deepinfra"
     },
+    "deepinfra/ibm-granite/granite-4.2-8b": {
+      "cacheRead": 0.015000000000000001,
+      "input": 0.060000000000000005,
+      "output": 0.25,
+      "source": "deepinfra"
+    },
     "deepinfra/inclusionAI/Ling-3.0-flash-Fin": {
       "cacheRead": 0.012000000000000002,
       "input": 0.060000000000000005,
@@ -35836,6 +35886,12 @@
       "cacheRead": 0.009000000000000001,
       "input": 0.045000000000000005,
       "output": 0.13500000000000004,
+      "source": "deepinfra"
+    },
+    "deepinfra/inclusionAI/LingSante-3.1-air-VL": {
+      "cacheRead": 0.012000000000000002,
+      "input": 0.060000000000000005,
+      "output": 0.18,
       "source": "deepinfra"
     },
     "deepinfra/KoboldAI/LLaMA2-13B-Tiefighter": {
@@ -38603,9 +38659,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.035,
-      "input": 0.047,
-      "output": 0.3,
+      "cacheRead": 0.001442,
+      "input": 0.04532,
+      "output": 0.13596,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -39305,7 +39361,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.047,
+      "input": 0.045599999999999995,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -39323,8 +39379,8 @@
     },
     "openrouter/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.19999999999999998,
-      "input": 0.888188,
-      "output": 1.5082,
+      "input": 0.80458,
+      "output": 1.5593000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -39334,9 +39390,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004200000000000001,
-      "input": 0.14,
-      "output": 0.42,
+      "cacheRead": 0.001014,
+      "input": 0.050699999999999995,
+      "output": 0.20279999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -39797,6 +39853,12 @@
       "output": 0.22499999999999998,
       "source": "openRouter"
     },
+    "openrouter/inclusionai/lingsante-3.1-air-vl": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18,
+      "source": "openRouter"
+    },
     "openrouter/inference-net/schematron-v2-small": {
       "cacheRead": 0.049999999999999996,
       "input": 0.049999999999999996,
@@ -39961,9 +40023,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -42542,9 +42604,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy4": {
@@ -42560,9 +42622,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -43650,9 +43712,9 @@
       "source": "venice"
     },
     "venice/e2ee-deepseek-v4-1-flash-1017": {
-      "cacheRead": 0.038,
-      "input": 0.182,
-      "output": 0.373,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "venice"
     },
     "venice/e2ee-deepseek-v4-1-flash-1017-abliterated": {
@@ -44394,7 +44456,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "ea27b2143ecd3c773a20f9a12cf91abdbc80ee89",
+  "sourceCommit": "628c1cdb92f107fa0971f6fb8f29030848ba9e3a",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -63219,6 +63281,12 @@
       "output": 0.281,
       "source": "modelsDev"
     },
+    "fireworks-ai/accounts/fireworks/models/inkling-2-mini": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.5,
+      "source": "modelsDev"
+    },
     "fireworks-ai/accounts/fireworks/models/kimi-k3": {
       "cacheRead": 0.3,
       "input": 3,
@@ -63381,6 +63449,12 @@
       "output": 22.5,
       "source": "modelsDev"
     },
+    "fireworks-ai/accounts/fireworks/routers/kimi-k3p1-pro-ultrafast": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25,
+      "source": "modelsDev"
+    },
     "fireworks-ai/accounts/fireworks/routers/kimi-k3p1-pro-us": {
       "cacheRead": 0.25,
       "input": 2.5,
@@ -63444,6 +63518,13 @@
       "cacheRead": 0.003,
       "input": 0.07,
       "output": 0.281,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "fireworks/accounts/fireworks/models/inkling-2-mini": {
+      "cacheRead": 0.015,
+      "input": 0.15,
+      "output": 0.5,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -63633,6 +63714,13 @@
       "cacheRead": 0.45,
       "input": 4.5,
       "output": 22.5,
+      "passthroughOnly": true,
+      "source": "modelsDev"
+    },
+    "fireworks/accounts/fireworks/routers/kimi-k3p1-pro-ultrafast": {
+      "cacheRead": 0.5,
+      "input": 5,
+      "output": 25,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -67326,8 +67414,8 @@
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.3-70B-Instruct": {
-      "input": 0.22,
-      "output": 0.5,
+      "input": 0.1,
+      "output": 0.32,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
@@ -67744,8 +67832,8 @@
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.2": {
-      "input": 0.5625,
-      "output": 1.8,
+      "input": 0.643,
+      "output": 1.978,
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.3": {
@@ -70699,8 +70787,8 @@
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen-mt-plus": {
-      "input": 0.25,
-      "output": 0.75,
+      "input": 0.259,
+      "output": 0.775,
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen3-embedding-8b": {
@@ -70792,9 +70880,10 @@
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen3.7-max": {
-      "cacheRead": 0.25,
-      "input": 1.25,
-      "output": 3.75,
+      "cacheRead": 0.33,
+      "cacheWrite": 2.063,
+      "input": 1.65,
+      "output": 4.951,
       "source": "modelsDev"
     },
     "novita-ai/qwen/qwen3.8-2.4t-a95b": {
@@ -71896,8 +71985,8 @@
           "source": "liteLLM"
         }
       ],
-      "input": 0.25,
-      "output": 0.75,
+      "input": 0.259,
+      "output": 0.775,
       "source": "modelsDev"
     },
     "novita/qwen/qwen2.5-7b-instruct": {
@@ -72181,9 +72270,10 @@
           "source": "liteLLM"
         }
       ],
-      "cacheRead": 0.25,
-      "input": 1.25,
-      "output": 3.75,
+      "cacheRead": 0.33,
+      "cacheWrite": 2.063,
+      "input": 1.65,
+      "output": 4.951,
       "passthroughOnly": true,
       "source": "modelsDev"
     },
@@ -75344,9 +75434,9 @@
       "source": "openRouter"
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
-      "cacheRead": 0.035,
-      "input": 0.047,
-      "output": 0.3,
+      "cacheRead": 0.001442,
+      "input": 0.04532,
+      "output": 0.13596,
       "source": "openRouter"
     },
     "openrouter/~google/gemini-flash-latest": {
@@ -76078,7 +76168,7 @@
     },
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
-      "input": 0.047,
+      "input": 0.045599999999999995,
       "output": 0.3,
       "source": "openRouter"
     },
@@ -76104,8 +76194,8 @@
         }
       ],
       "cacheRead": 0.19999999999999998,
-      "input": 0.888188,
-      "output": 1.5082,
+      "input": 0.80458,
+      "output": 1.5593000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -76115,9 +76205,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.004200000000000001,
-      "input": 0.14,
-      "output": 0.42,
+      "cacheRead": 0.001014,
+      "input": 0.050699999999999995,
+      "output": 0.20279999999999998,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -76592,6 +76682,12 @@
       "output": 0.22499999999999998,
       "source": "openRouter"
     },
+    "openrouter/inclusionai/lingsante-3.1-air-vl": {
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.18,
+      "source": "openRouter"
+    },
     "openrouter/inference-net/schematron-v2-small": {
       "cacheRead": 0.049999999999999996,
       "input": 0.049999999999999996,
@@ -76766,9 +76862,9 @@
       "source": "openRouter"
     },
     "openrouter/minimax/minimax-m3.1-flash": {
-      "cacheRead": 0.015,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.0075,
+      "input": 0.075,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/mistralai/codestral-2508": {
@@ -79380,9 +79476,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy3": {
-      "cacheRead": 0.032999999999999995,
-      "input": 0.13199999999999998,
-      "output": 0.5279999999999999,
+      "cacheRead": 0.020625,
+      "input": 0.0825,
+      "output": 0.33,
       "source": "openRouter"
     },
     "openrouter/tencent/hy4": {
@@ -79398,9 +79494,9 @@
       "source": "openRouter"
     },
     "openrouter/tencent/hy4-preview": {
-      "cacheRead": 0.041999999999999996,
-      "input": 0.834,
-      "output": 2.501,
+      "cacheRead": 0.0378,
+      "input": 0.7505999999999999,
+      "output": 2.2509,
       "source": "openRouter"
     },
     "openrouter/thedrummer/cydonia-24b-v4.1": {
@@ -83960,12 +84056,6 @@
       "output": 6,
       "source": "modelsDev"
     },
-    "requesty/hy3": {
-      "cacheRead": 0.035,
-      "input": 0.14,
-      "output": 0.58,
-      "source": "modelsDev"
-    },
     "requesty/inkling": {
       "cacheRead": 0.374,
       "input": 1.87,
@@ -84277,12 +84367,6 @@
       "cacheRead": 0.1,
       "input": 0.5,
       "output": 3,
-      "source": "modelsDev"
-    },
-    "requesty/step-3.7-flash": {
-      "cacheRead": 0.04,
-      "input": 0.2,
-      "output": 1.15,
       "source": "modelsDev"
     },
     "requesty/step-5-preview": {
