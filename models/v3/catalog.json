@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795768178756,
+  "generatedAt": 1795782780708,
   "models": [
     {
       "id": "abliterated-model",
@@ -9528,7 +9528,9 @@
       "pricing": {
         "status": "unknown"
       },
-      "reasoning": true
+      "reasoning": true,
+      "status": "deprecated",
+      "statusReason": "kilocode no longer lists this model in its public model inventory."
     },
     {
       "id": "inclusionai/lingsante-3.1-air-vl",
@@ -40772,9 +40774,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -41225,6 +41227,12 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.22499999999999998,
+      "source": "openRouter"
+    },
+    "openrouter/inclusionai/ling-3.2-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.8999999999999999,
       "source": "openRouter"
     },
     "openrouter/inclusionai/lingsante-3.1-air-vl": {
@@ -44348,9 +44356,9 @@
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash-mopd": {
-      "cacheRead": 0.035,
-      "input": 0.35,
-      "output": 0.7,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1,
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-pro": {
@@ -45879,7 +45887,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "fd681ab8786e062045fa5ec6261b1b06f60832eb",
+  "sourceCommit": "d6e33c5904c462abc1c88bef239453f15c095673",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -77706,9 +77714,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.006,
-      "input": 0.3,
-      "output": 1.2,
+      "cacheRead": 0.003,
+      "input": 0.15,
+      "output": 0.6,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -78173,6 +78181,12 @@
       "cacheRead": 0.015,
       "input": 0.075,
       "output": 0.22499999999999998,
+      "source": "openRouter"
+    },
+    "openrouter/inclusionai/ling-3.2-flash": {
+      "cacheRead": 0.06,
+      "input": 0.3,
+      "output": 0.8999999999999999,
       "source": "openRouter"
     },
     "openrouter/inclusionai/lingsante-3.1-air-vl": {
@@ -81354,9 +81368,9 @@
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash-mopd": {
-      "cacheRead": 0.035,
-      "input": 0.35,
-      "output": 0.7,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.5,
+      "output": 1,
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-pro": {
