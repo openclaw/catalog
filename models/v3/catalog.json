@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795796868652,
+  "generatedAt": 1795811187712,
   "models": [
     {
       "id": "abliterated-model",
@@ -7238,13 +7238,13 @@
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 131072,
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "pricing": {
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.047,
+        "input": 0.0456,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -8581,7 +8581,7 @@
         "cacheRead": 0.035,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.047,
+        "input": 0.0456,
         "output": 0.3,
         "source": "modelsDev",
         "status": "known",
@@ -8621,11 +8621,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.2,
+        "cacheRead": 0.21,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.888188,
-        "output": 1.5082,
+        "input": 0.70487,
+        "output": 1.5228,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8664,11 +8664,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4.1 Flash",
       "pricing": {
-        "cacheRead": 0.0042,
+        "cacheRead": 0.001014,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.14,
-        "output": 0.42,
+        "input": 0.0507,
+        "output": 0.2028,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9299,11 +9299,11 @@
       "maxTokens": 235929,
       "name": "Gemma 4 26B A4B IT",
       "pricing": {
-        "cacheRead": 0.023,
+        "cacheRead": 0.022,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.047,
-        "output": 0.169,
+        "input": 0.044,
+        "output": 0.158,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9503,6 +9503,28 @@
       ],
       "maxTokens": 262144,
       "name": "inclusionAI: Ling 3.1 Flash 1019",
+      "pricing": {
+        "cacheRead": 0.06,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.3,
+        "output": 0.9,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.2-flash",
+      "provider": "kilocode",
+      "contextWindow": 1048576,
+      "input": [
+        "text",
+        "image"
+      ],
+      "maxTokens": 262144,
+      "name": "inclusionAI: Ling 3.2 Flash",
       "pricing": {
         "cacheRead": 0.06,
         "cacheWrite": 0,
@@ -12978,11 +13000,11 @@
       "maxTokens": 117964,
       "name": "GPT OSS 20B",
       "pricing": {
-        "cacheRead": 0.00765,
+        "cacheRead": 0.0085,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.0153,
-        "output": 0.0765,
+        "input": 0.017,
+        "output": 0.085,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -38412,8 +38434,9 @@
       "source": "modelsDev"
     },
     "kilocode/qwen/qwen3.5-9b": {
-      "input": 0.08,
-      "output": 0.12,
+      "cacheRead": 0.035,
+      "input": 0.038,
+      "output": 0.057,
       "source": "modelsDev"
     },
     "kilocode/rekaai/reka-flash-3": {
@@ -40740,8 +40763,8 @@
     },
     "openrouter/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.21,
-      "input": 0.76571,
-      "output": 1.5007000000000001,
+      "input": 0.64403,
+      "output": 1.5651000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -40751,9 +40774,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.001014,
-      "input": 0.050699999999999995,
-      "output": 0.20279999999999998,
+      "cacheRead": 0.018,
+      "input": 0.051,
+      "output": 0.5670000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -41166,9 +41189,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -44032,8 +44055,8 @@
     },
     "openrouter/thinkingmachines/inkling-2-small": {
       "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-small": {
@@ -44499,6 +44522,34 @@
       "output": 20,
       "source": "modelsDev"
     },
+    "qwen-token-plan/mindlab/macaron-v1-tall": {
+      "cacheRead": 0.08,
+      "cacheWrite": 0.08,
+      "input": 0.45,
+      "output": 2.6,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/mindlab/macaron-v1.1-coding-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/mindlab/macaron-v1.1-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/mindlab/macaron-v1.1-venti-pro": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
     "qwen-token-plan/qwen-flash": {
       "cacheRead": 0.01,
       "cacheWrite": 0.0625,
@@ -44815,6 +44866,34 @@
       "cacheRead": 0.2,
       "input": 4,
       "output": 20,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1-tall": {
+      "cacheRead": 0.08,
+      "cacheWrite": 0.08,
+      "input": 0.45,
+      "output": 2.6,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1.1-coding-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1.1-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1.1-venti-pro": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "input": 2,
+      "output": 10,
       "source": "modelsDev"
     },
     "qwen/qwen-flash": {
@@ -45870,7 +45949,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "aad27192a863b19b9f136f778594b92b1f9f1059",
+  "sourceCommit": "cbfed7c161400c8f81a00da83fcdbe78f647ca93",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -46514,6 +46593,34 @@
       "cacheRead": 0.2,
       "input": 4,
       "output": 20,
+      "source": "modelsDev"
+    },
+    "alibaba/mindlab/macaron-v1-tall": {
+      "cacheRead": 0.08,
+      "cacheWrite": 0.08,
+      "input": 0.45,
+      "output": 2.6,
+      "source": "modelsDev"
+    },
+    "alibaba/mindlab/macaron-v1.1-coding-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "alibaba/mindlab/macaron-v1.1-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "alibaba/mindlab/macaron-v1.1-venti-pro": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "input": 2,
+      "output": 10,
       "source": "modelsDev"
     },
     "alibaba/qwen-flash": {
@@ -67769,6 +67876,12 @@
       "output": 1.68,
       "source": "modelsDev"
     },
+    "google-vertex/deepseek-ai/deepseek-v4.1-flash-1017-maas": {
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
+      "source": "modelsDev"
+    },
     "google-vertex/gemini-2.5-flash": {
       "cacheRead": 0.03,
       "input": 0.3,
@@ -68760,8 +68873,8 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro": {
-      "input": 0.888188,
-      "output": 1.5082,
+      "input": 0.71501,
+      "output": 1.5228,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": {
@@ -68870,8 +68983,8 @@
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.3-70B-Instruct": {
-      "input": 0.22,
-      "output": 0.5,
+      "input": 0.1,
+      "output": 0.32,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
@@ -69042,8 +69155,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Instruct-2507": {
-      "input": 0.14,
-      "output": 0.8,
+      "input": 0.15,
+      "output": 0.75,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-235B-A22B-Thinking-2507": {
@@ -69207,8 +69320,8 @@
       "source": "modelsDev"
     },
     "huggingface/tencent/Hy4-preview": {
-      "input": 0.834,
-      "output": 2.501,
+      "input": 1.0425,
+      "output": 3.12625,
       "source": "modelsDev"
     },
     "huggingface/thinkingmachines/Inkling": {
@@ -77680,8 +77793,8 @@
         }
       ],
       "cacheRead": 0.21,
-      "input": 0.76571,
-      "output": 1.5007000000000001,
+      "input": 0.64403,
+      "output": 1.5651000000000002,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-pro-0813": {
@@ -77691,9 +77804,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash": {
-      "cacheRead": 0.001014,
-      "input": 0.050699999999999995,
-      "output": 0.20279999999999998,
+      "cacheRead": 0.018,
+      "input": 0.051,
+      "output": 0.5670000000000001,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
@@ -78115,9 +78228,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.09,
-      "output": 0.3,
+      "cacheRead": 0.0375,
+      "input": 0.0675,
+      "output": 0.22499999999999998,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -81029,8 +81142,8 @@
     },
     "openrouter/thinkingmachines/inkling-2-small": {
       "cacheRead": 0.03,
-      "input": 0.3,
-      "output": 1,
+      "input": 0.15,
+      "output": 0.5,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-small": {
@@ -82645,6 +82758,34 @@
       "output": 20,
       "source": "modelsDev"
     },
+    "qwen-token-plan/mindlab/macaron-v1-tall": {
+      "cacheRead": 0.08,
+      "cacheWrite": 0.08,
+      "input": 0.45,
+      "output": 2.6,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/mindlab/macaron-v1.1-coding-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/mindlab/macaron-v1.1-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen-token-plan/mindlab/macaron-v1.1-venti-pro": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "input": 2,
+      "output": 10,
+      "source": "modelsDev"
+    },
     "qwen-token-plan/qwen-flash": {
       "cacheRead": 0.01,
       "cacheWrite": 0.0625,
@@ -83080,6 +83221,34 @@
       "cacheRead": 0.2,
       "input": 4,
       "output": 20,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1-tall": {
+      "cacheRead": 0.08,
+      "cacheWrite": 0.08,
+      "input": 0.45,
+      "output": 2.6,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1.1-coding-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1.1-venti": {
+      "cacheRead": 0.22,
+      "cacheWrite": 0.22,
+      "input": 1.19,
+      "output": 3.74,
+      "source": "modelsDev"
+    },
+    "qwen/mindlab/macaron-v1.1-venti-pro": {
+      "cacheRead": 0.1,
+      "cacheWrite": 0.1,
+      "input": 2,
+      "output": 10,
       "source": "modelsDev"
     },
     "qwen/qwen-flash": {
