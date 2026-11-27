@@ -39,7 +39,7 @@ The catalog is **not hand-edited**. A [scheduled workflow](.github/workflows/pub
 assembles it from the `modelCatalog` blocks in the plugin manifests of
 [openclaw/openclaw](https://github.com/openclaw/openclaw) (`extensions/*/openclaw.plugin.json`),
 enriches per-token pricing, checks every 4 hours, validates it with the same schema the client enforces,
-and commits the versions it wrote **only when any version's content actually changed** —
+and publishes the versions it wrote through a pull request **only when any version's content actually changed** —
 so the file history is a readable changelog of model additions and pricing updates.
 
 One publisher invocation generates v1, v2, and v3 from the same source snapshot.
@@ -54,7 +54,7 @@ generations behind v2/v3.
 
 v1 and v2 are frozen. Released clients reject a v1/v2 file with any field or
 value they do not know, and then stop refreshing. The workflow runs the hosting
-tests and build on a new catalog commit before pushing it, so a catalog that
+tests and build on a new catalog commit before opening its pull request, so a catalog that
 would not deploy never reaches `main`. Before committing, the workflow
 runs `scripts/released-readers.mjs`, which runs openclaw/openclaw's
 `scripts/catalog-compare-released.mts --check` once per written feed against the
@@ -108,9 +108,45 @@ The response is UTF-8 JSON with public CORS, an exposed native `ETag`, and
 copy, and unchanged content returns `304`. Cloudflare manages its asset cache
 and deployment invalidation; the catalog does not use an immutable browser TTL.
 
+The publisher creates an immutable `automation/catalog/<run>-<attempt>` branch and
+pull request. Before merging, it requires an active, non-bypassable rule for
+`main` that requires **Publication merge admission**, pins that status to the
+GitHub Actions App, and requires branches to be up to date. `main` must also
+reject non-fast-forward updates. The publisher reads the effective rules and
+their active source ruleset; absent, inaccessible or weaker rules leave the PR
+pending and fail the run before merge or deployment. No additional credential
+is used.
+
+An administrator must activate this rule with no bypass actors and verify that
+configuration through an administrative readback. GitHub [redacts
+`bypass_actors` without ruleset write access](https://docs.github.com/en/rest/repos/rules#get-a-repository-ruleset),
+so the workflow accepts an omitted list; it does not prove that the list is empty.
+An exposed list must be empty, and an exposed `current_user_can_bypass` must be
+`never`. This separates the administrator's no-bypass prerequisite from the
+workflow's effective strict-rule checks without granting it administration access.
+
+The metadata-only `pull_request_target` gate runs trusted base code, never PR
+code. It posts neutral admission success only when the PR is still open against
+this repository's `main` and its head matches the event. Obsolete events skip
+without writing a status. This gate does not judge the branch's payload.
+
+The publisher owns catalog validation: reserved publication branches must come
+from this repository, change only catalog files, and have one parent, the
+recorded generation base, which must still be current `main`. It verifies the
+remote candidate's complete tree against its tested local tree, then posts the
+same neutral admission success itself. It does not wait for the PR event gate.
+GitHub's strict rule enforces freshness at merge time, including a base update
+after the publisher's last read.
+
+The publisher requests a normal SHA-bound squash merge and verifies the actual
+merged commit's parent and complete tree against the tested candidate. Pending,
+failed or uncertain requests produce no deployment SHA. Candidate branches and
+PRs are retained for inspection; resolve an existing publication PR before the
+next update. An orphan branch from an uncertain PR request is never overwritten.
+
 The publish workflow deploys an isolated `openclaw-catalog-preview` first, verifies
 it, then deploys the same staged bytes to `catalog.openclaw.ai`. It verifies the
-actual post-commit `main` SHA before deployment and fails if another push made
+actual merged `main` SHA before deployment and fails if another push made
 the run stale. Deployments share the generator's concurrency group and also run
 when generation found no change, so a failed deployment can be retried without
 manufacturing a catalog update. Hosting changes pushed to `main` deploy the
@@ -189,7 +225,7 @@ Every rollback is a roll forward: the good content with a new `generatedAt`.
    (an oversized v1 the publisher kept) is restored as it was, sharing the new
    `generatedAt`. The run then uses the normal publish path: the released-reader
    guard, a commit (always, even when only `generatedAt` changed), the hosting
-   tests and build on the committed files, the push to `main`, the preview
+   tests and build on the committed files, the verified PR merge, the preview
    deployment, production, and the smoke checks.
 4. Verify: `curl -s https://catalog.openclaw.ai/models/v3/catalog.json | jq '.generatedAt, .sourceCommit'`
    shows the new stamp and the restored source commit, and
