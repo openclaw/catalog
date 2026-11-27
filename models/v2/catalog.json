@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795753739140,
+  "generatedAt": 1795768178756,
   "models": [
     {
       "id": "abliterated-model",
@@ -6858,13 +6858,13 @@
       "input": [
         "text"
       ],
-      "maxTokens": 943718,
+      "maxTokens": 393216,
       "name": "DeepSeek: DeepSeek Pro Latest",
       "pricing": {
-        "cacheRead": 0.125,
+        "cacheRead": 0.0999,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.25,
+        "input": 0.0999,
         "output": 5,
         "source": "modelsDev",
         "status": "known",
@@ -8238,14 +8238,14 @@
         "text",
         "image"
       ],
-      "maxTokens": 393216,
+      "maxTokens": 262144,
       "name": "DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "cacheRead": 0.028,
+        "cacheRead": 0.00686,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.44,
-        "output": 1.32,
+        "input": 0.2156,
+        "output": 0.6468,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8266,7 +8266,7 @@
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.888188,
-        "output": 1.5039,
+        "output": 1.5082,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -8283,10 +8283,10 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4 Pro 0813",
       "pricing": {
-        "cacheRead": 0.125,
+        "cacheRead": 0.0999,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.25,
+        "input": 0.0999,
         "output": 5,
         "source": "modelsDev",
         "status": "known",
@@ -8915,7 +8915,7 @@
         "text",
         "image"
       ],
-      "maxTokens": 117964,
+      "maxTokens": 16384,
       "name": "Gemma 3 27B IT",
       "pricing": {
         "cacheRead": 0,
@@ -13639,11 +13639,11 @@
       "maxTokens": 235929,
       "name": "Qwen3.6 35B-A3B",
       "pricing": {
-        "cacheRead": 0.025,
+        "cacheRead": 0.024,
         "cacheWrite": 0,
         "currency": "USD",
         "input": 0.05,
-        "output": 0.7,
+        "output": 0.69,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -18480,7 +18480,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 65536,
       "name": "deepseek-v4-pro",
       "pricing": {
         "status": "unknown"
@@ -18498,7 +18498,7 @@
       "input": [
         "text"
       ],
-      "maxTokens": 1048576,
+      "maxTokens": 65536,
       "name": "DeepSeek V4 Pro 0813",
       "pricing": {
         "status": "unknown"
@@ -39492,9 +39492,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -39891,9 +39891,8 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-27b-it": {
-      "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.44999999999999996,
+      "output": 0.16,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -39902,9 +39901,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -42755,9 +42754,9 @@
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-mini": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.24,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-small": {
@@ -43069,9 +43068,9 @@
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash-mopd": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.5,
-      "output": 1,
+      "cacheRead": 0.035,
+      "input": 0.35,
+      "output": 0.7,
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-pro": {
@@ -44588,7 +44587,7 @@
     }
   },
   "schemaVersion": 2,
-  "sourceCommit": "0a26c24b23e68ce3a05c0c7c15136ad12a34b13a",
+  "sourceCommit": "fd681ab8786e062045fa5ec6261b1b06f60832eb",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -67478,8 +67477,8 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro": {
-      "input": 0.640586,
-      "output": 1.5039,
+      "input": 0.888188,
+      "output": 1.5082,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": {
@@ -67528,8 +67527,8 @@
       "source": "modelsDev"
     },
     "huggingface/google/gemma-4-31B-it": {
-      "input": 0.34,
-      "output": 0.1,
+      "input": 0.164,
+      "output": 0.275,
       "source": "modelsDev"
     },
     "huggingface/Gryphe/MythoMax-L2-13b": {
@@ -67815,7 +67814,7 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3-Next-80B-A3B-Instruct": {
-      "input": 0.09,
+      "input": 0.1,
       "output": 1.1,
       "source": "modelsDev"
     },
@@ -76415,9 +76414,9 @@
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017": {
-      "cacheRead": 0.003,
-      "input": 0.15,
-      "output": 0.6,
+      "cacheRead": 0.006,
+      "input": 0.3,
+      "output": 1.2,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -76823,9 +76822,8 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-27b-it": {
-      "cacheRead": 0.04,
       "input": 0.08,
-      "output": 0.44999999999999996,
+      "output": 0.16,
       "source": "openRouter"
     },
     "openrouter/google/gemma-3-4b-it": {
@@ -76834,9 +76832,9 @@
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
-      "cacheRead": 0.042499999999999996,
-      "input": 0.0765,
-      "output": 0.255,
+      "cacheRead": 0.049999999999999996,
+      "input": 0.09,
+      "output": 0.3,
       "source": "openRouter"
     },
     "openrouter/google/gemma-4-31b-it": {
@@ -79735,9 +79733,9 @@
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-mini": {
-      "cacheRead": 0.015,
-      "input": 0.075,
-      "output": 0.3,
+      "cacheRead": 0.012,
+      "input": 0.06,
+      "output": 0.24,
       "source": "openRouter"
     },
     "openrouter/thinkingmachines/inkling-2-small": {
@@ -80064,9 +80062,9 @@
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-flash-mopd": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.5,
-      "output": 1,
+      "cacheRead": 0.035,
+      "input": 0.35,
+      "output": 0.7,
       "source": "openRouter"
     },
     "openrouter/xiaomi/mimo-v2.6-pro": {
