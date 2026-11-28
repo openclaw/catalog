@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1795840072998,
+  "generatedAt": 1795854478023,
   "models": [
     {
       "id": "abliterated-model",
@@ -3776,11 +3776,11 @@
       "maxTokens": 65536,
       "name": "Hy4",
       "pricing": {
-        "cacheRead": 0.035699998419,
+        "cacheRead": 0.04199999814,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.7089,
-        "output": 2.12585,
+        "input": 0.834,
+        "output": 2.501,
         "source": "deepinfra",
         "status": "known",
         "unit": "million_tokens"
@@ -8621,11 +8621,11 @@
       "maxTokens": 393216,
       "name": "DeepSeek V4 Pro",
       "pricing": {
-        "cacheRead": 0.22,
+        "cacheRead": 0.24,
         "cacheWrite": 0,
         "currency": "USD",
-        "input": 0.51221,
-        "output": 1.5651,
+        "input": 0.30941,
+        "output": 1.5358,
         "source": "modelsDev",
         "status": "known",
         "unit": "million_tokens"
@@ -9342,7 +9342,14 @@
       "maxTokens": 32768,
       "name": "Ampersand v0.1",
       "pricing": {
-        "status": "unknown"
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1,
+        "output": 5.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -26758,6 +26765,27 @@
       "reasoning": true
     },
     {
+      "id": "nvidia-nemotron-3-5-lightning-30b-a3b",
+      "provider": "venice",
+      "contextWindow": 262144,
+      "input": [
+        "text"
+      ],
+      "maxTokens": 32768,
+      "name": "NVIDIA Nemotron 3.5 Lightning 30B",
+      "pricing": {
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 0.075,
+        "output": 0.3,
+        "source": "venice",
+        "status": "known",
+        "unit": "million_tokens"
+      },
+      "reasoning": true
+    },
+    {
       "id": "nvidia-nemotron-3-5-super-vl-120b-a12b",
       "provider": "venice",
       "contextWindow": 262144,
@@ -30556,7 +30584,14 @@
       "maxTokens": 32768,
       "name": "Ampersand v0.1",
       "pricing": {
-        "status": "unknown"
+        "cacheRead": 0.2,
+        "cacheWrite": 0,
+        "currency": "USD",
+        "input": 1,
+        "output": 5.2,
+        "source": "modelsDev",
+        "status": "known",
+        "unit": "million_tokens"
       },
       "reasoning": true
     },
@@ -39976,9 +40011,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 11.0055,
+      "cacheRead": 0.14,
+      "input": 0.1453,
+      "output": 12.289399999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -40659,7 +40694,7 @@
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
       "input": 0.045599999999999995,
-      "output": 0.3,
+      "output": 0.27,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
@@ -40676,7 +40711,7 @@
     },
     "openrouter/deepseek/deepseek-v4-pro": {
       "cacheRead": 0.24,
-      "input": 0.37025,
+      "input": 0.25871,
       "output": 1.5791,
       "source": "openRouter"
     },
@@ -43499,9 +43534,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.0765,
-      "input": 0.08499999999999999,
-      "output": 0.125,
+      "cacheRead": 0.06,
+      "input": 0.06599999999999999,
+      "output": 0.09699999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -43766,8 +43801,8 @@
       "source": "openRouter"
     },
     "openrouter/reflection/beam-1.0-501b-a23b": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.25,
+      "cacheRead": 0.04,
+      "input": 0.3,
       "output": 1,
       "source": "openRouter"
     },
@@ -44352,12 +44387,6 @@
       "cacheRead": 0.14,
       "input": 0.62,
       "output": 2.42,
-      "source": "openRouter"
-    },
-    "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
@@ -45187,11 +45216,6 @@
       "output": 1.5,
       "source": "venice"
     },
-    "venice/nvidia-nemotron-3-5-lightning-30b-a3b": {
-      "input": 0.075,
-      "output": 0.3,
-      "source": "venice"
-    },
     "venice/nvidia-nemotron-3-nano-30b-a3b": {
       "input": 0.075,
       "output": 0.3,
@@ -45881,7 +45905,7 @@
     }
   },
   "schemaVersion": 3,
-  "sourceCommit": "e48cf45035e17f1d716e37ef23a8c39b6dee0085",
+  "sourceCommit": "701a12780dec818114e7382b795cfeb745d8ce9b",
   "upstreamPricing": {
     "abliteration/abliterated-model": {
       "cacheRead": 0.09999999999999999,
@@ -68780,8 +68804,8 @@
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro": {
-      "input": 0.53249,
-      "output": 1.5651,
+      "input": 0.32969,
+      "output": 1.5086,
       "source": "modelsDev"
     },
     "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": {
@@ -68890,8 +68914,8 @@
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-3.3-70B-Instruct": {
-      "input": 0.22,
-      "output": 0.5,
+      "input": 0.1,
+      "output": 0.32,
       "source": "modelsDev"
     },
     "huggingface/meta-llama/Llama-4-Maverick-17B-128E-Instruct": {
@@ -69152,8 +69176,8 @@
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.5-9B": {
-      "input": 0.085,
-      "output": 0.125,
+      "input": 0.075,
+      "output": 0.11,
       "source": "modelsDev"
     },
     "huggingface/Qwen/Qwen3.6-27B": {
@@ -69348,8 +69372,8 @@
       "source": "modelsDev"
     },
     "huggingface/zai-org/GLM-5.3-Flash": {
-      "input": 0.042,
-      "output": 0.184,
+      "input": 0.0356,
+      "output": 0.0815,
       "source": "modelsDev"
     },
     "hyperbolic/deepseek-ai/DeepSeek-R1": {
@@ -76960,9 +76984,9 @@
       "source": "openRouter"
     },
     "openrouter/~moonshotai/kimi-latest": {
-      "cacheRead": 0.18,
-      "input": 0.18239999999999998,
-      "output": 11.0055,
+      "cacheRead": 0.14,
+      "input": 0.1453,
+      "output": 12.289399999999999,
       "source": "openRouter"
     },
     "openrouter/~openai/gpt-astra-latest": {
@@ -77675,7 +77699,7 @@
     "openrouter/deepseek/deepseek-v4-flash-0731": {
       "cacheRead": 0.035,
       "input": 0.045599999999999995,
-      "output": 0.3,
+      "output": 0.27,
       "source": "openRouter"
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
@@ -77700,7 +77724,7 @@
         }
       ],
       "cacheRead": 0.24,
-      "input": 0.37025,
+      "input": 0.25871,
       "output": 1.5791,
       "source": "openRouter"
     },
@@ -80575,9 +80599,9 @@
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-9b": {
-      "cacheRead": 0.0765,
-      "input": 0.08499999999999999,
-      "output": 0.125,
+      "cacheRead": 0.06,
+      "input": 0.06599999999999999,
+      "output": 0.09699999999999999,
       "source": "openRouter"
     },
     "openrouter/qwen/qwen3.5-flash-02-23": {
@@ -80842,8 +80866,8 @@
       "source": "openRouter"
     },
     "openrouter/reflection/beam-1.0-501b-a23b": {
-      "cacheRead": 0.049999999999999996,
-      "input": 0.25,
+      "cacheRead": 0.04,
+      "input": 0.3,
       "output": 1,
       "source": "openRouter"
     },
@@ -81448,12 +81472,6 @@
       "cacheRead": 0.14,
       "input": 0.62,
       "output": 2.42,
-      "source": "openRouter"
-    },
-    "openrouter/z-ai/glm-5.2:batch": {
-      "cacheRead": 0.109,
-      "input": 0.322,
-      "output": 0.989,
       "source": "openRouter"
     },
     "openrouter/z-ai/glm-5.3": {
